@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aaron Zhang — No Magic, Only Method</title>
+<meta name="description" content="AI products I shipped on TikTok LIVE — and the method behind them. A single-file portfolio by Aaron Zhang, Product Manager. No magic, only method.">
+<meta property="og:title" content="Aaron Zhang — No Magic, Only Method">
+<meta property="og:description" content="AI products I shipped on TikTok LIVE — and the method behind them. A portfolio by Aaron Zhang, Product Manager.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aaronartistzhang-afk.github.io/ai-portfolio/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://aaronartistzhang-afk.github.io/ai-portfolio/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08080b; --ink:#f3eee3; --muted:#9b9488; --dim:#615c51;
+  --accent:#8aa0ff; --accent-deep:#6E8BFF;
+  --gold:#d8b782; --gold-bright:#eccf9a;
+  --mint:#66e0b2; --coral:#ff6d78;
+  --hair:rgba(243,238,227,.09); --hair-2:rgba(243,238,227,.055);
+  --panel:rgba(243,238,227,.028);
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Inter",-apple-system,"Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --cn:"Noto Serif SC",serif;
+  --sig:"Snell Roundhand","Brush Script MT","Segoe Script",cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidden;-webkit-font-smoothing:antialiased}
+.bgfx{position:fixed;inset:0;z-index:0;pointer-events:none}
+.bgfx .glow{position:absolute;inset:0;background:
+  radial-gradient(60vw 46vw at 82% 6%, rgba(110,139,255,.13), transparent 62%),
+  radial-gradient(52vw 42vw at 10% 104%, rgba(216,183,130,.07), transparent 60%),
+  radial-gradient(120vw 120vh at 50% 50%, transparent 42%, rgba(0,0,0,.55) 100%);}
+.bgfx .grain{position:absolute;inset:-50%;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+.deck{position:fixed;inset:0;z-index:1}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;padding:7vh 8vw 8vh}
+.slide.active{display:flex;animation:fade .55s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.slide>*{position:relative}
+.center{align-items:center;text-align:center;justify-content:center}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:1.6rem;display:flex;gap:1rem;align-items:center}
+.eyebrow.c{justify-content:center}
+.eyebrow .tick{width:30px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);flex:0 0 auto}
+.eyebrow .zh{font-family:var(--cn);letter-spacing:.12em;color:var(--gold)}
+.d1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,5.8vw,5.2rem);line-height:1.05;letter-spacing:-.015em}
+.d2{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.9rem);line-height:1.14;letter-spacing:-.01em}
+.d3{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.8vw,2.3rem);line-height:1.2}
+.lead{font-size:clamp(1rem,1.4vw,1.28rem);color:var(--muted);font-weight:400;line-height:1.6;max-width:54ch;margin-top:1.5rem}
+.lead.n{margin-top:0}
+.accent{color:var(--accent)} .mint{color:var(--mint)} .coral{color:var(--coral)} .goldt{color:var(--gold-bright)}
+.cn{font-family:var(--cn)}
+
+.panel{background:var(--panel);border:1px solid var(--hair);border-radius:18px;backdrop-filter:blur(8px);box-shadow:0 30px 80px -50px rgba(0,0,0,.8)}
+.grid{display:grid;gap:1.2rem;margin-top:2rem}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+.card{padding:1.5rem 1.6rem}
+.card .ct{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:.8rem}
+.card p{color:var(--ink);font-size:.96rem;line-height:1.5;font-weight:400}
+.card.warn{border-color:rgba(255,109,120,.22)} .card.warn .ct{color:var(--coral)}
+.card.g{border-color:rgba(216,183,130,.22)} .card.g .ct{color:var(--gold-bright)}
+.punch{margin-top:1.8rem}
+.punch .en{font-family:var(--serif);font-size:clamp(1.3rem,2.1vw,1.9rem);line-height:1.25;color:var(--ink)}
+.punch .sub{font-family:var(--sans);font-size:clamp(.96rem,1.3vw,1.12rem);color:var(--muted);margin-top:.55rem;font-weight:400}
+.punch .sub b{color:var(--gold-bright);font-weight:500}
+
+.spine{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.8vw,3.3rem);line-height:1.28}
+.spine div+div{margin-top:.4rem}
+.rq{font-family:var(--mono);font-size:clamp(.86rem,1.2vw,1rem);letter-spacing:.02em;color:var(--gold);margin-top:2rem;border-left:2px solid rgba(216,183,130,.4);padding-left:1.1rem;line-height:1.55}
+.chapline{font-family:var(--mono);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:2.4rem}
+.caption{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-top:1.6rem}
+.byline{font-family:var(--mono);font-size:.82rem;letter-spacing:.1em;color:var(--muted);margin-top:2rem}
+.navhint{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--dim);margin-top:1.1rem}
+.mocklab{font-family:var(--mono);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-left:auto;padding-left:.9rem;white-space:nowrap}
+.pscr-top .mocklab{font-size:.5rem;letter-spacing:.14em}
+
+.ladwrap{display:flex;gap:2vw;align-items:stretch;margin-top:.5rem}
+.axis{font-family:var(--mono);font-size:.66rem;letter-spacing:.28em;color:var(--dim);writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;padding-bottom:1rem}
+.ladder{flex:1;display:flex;align-items:flex-end;gap:1.4vw;height:clamp(300px,42vh,460px)}
+.rung{flex:1;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:flex-end}
+.col{position:relative;border-radius:14px 14px 0 0;padding:1.15rem 1.05rem 1.25rem;background:linear-gradient(180deg,rgba(243,238,227,.05),rgba(243,238,227,.012));border:1px solid var(--hair-2);border-bottom:none}
+.col::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.5}
+.rung:nth-child(1) .col{min-height:46%}.rung:nth-child(2) .col{min-height:64%}
+.rung:nth-child(3) .col{min-height:76%}.rung:nth-child(4) .col{min-height:88%}
+.rung:nth-child(5) .col{min-height:100%;background:linear-gradient(180deg,rgba(216,183,130,.12),rgba(216,183,130,.02));border-color:rgba(216,183,130,.28)}
+.rung:nth-child(5) .col::before{background:linear-gradient(90deg,transparent,var(--gold-bright),transparent);opacity:.9}
+.rlvl{font-family:var(--mono);font-size:.68rem;color:var(--dim);letter-spacing:.14em}
+.rname{font-family:var(--sans);font-weight:600;font-size:1.12rem;color:var(--ink);margin-top:.5rem;letter-spacing:-.01em}
+.rcn{font-family:var(--cn);font-size:.94rem;font-weight:600;margin-top:.1rem;color:var(--gold)}
+.rung:nth-child(5) .rname{color:var(--gold-bright)}
+.rdesc{font-size:.74rem;color:var(--muted);margin-top:.5rem;line-height:1.38}
+.outward{align-self:flex-start;font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--gold-bright);border:1px solid rgba(216,183,130,.4);border-radius:20px;padding:.4rem .8rem;margin-bottom:1rem;white-space:nowrap}
+.ladcap{margin-top:1.6rem;font-family:var(--serif);font-size:clamp(1.05rem,1.6vw,1.4rem);color:var(--muted);max-width:70ch}
+.ladcap b{color:var(--ink);font-weight:500}
+.ladder .rung>*{animation:rungrise .6s cubic-bezier(.2,.7,.2,1) both}
+.ladder .rung:nth-child(1)>*{animation-delay:.14s}
+.ladder .rung:nth-child(2)>*{animation-delay:.28s}
+.ladder .rung:nth-child(3)>*{animation-delay:.42s}
+.ladder .rung:nth-child(4)>*{animation-delay:.56s}
+.ladder .rung:nth-child(5)>*{animation-delay:.70s}
+@keyframes rungrise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.flow>*{animation:flowin .44s cubic-bezier(.2,.7,.2,1) both}
+.flow>*:nth-child(1){animation-delay:.06s}.flow>*:nth-child(2){animation-delay:.16s}
+.flow>*:nth-child(3){animation-delay:.26s}.flow>*:nth-child(4){animation-delay:.36s}
+.flow>*:nth-child(5){animation-delay:.46s}.flow>*:nth-child(6){animation-delay:.56s}
+.flow>*:nth-child(7){animation-delay:.66s}.flow>*:nth-child(8){animation-delay:.76s}
+.flow>*:nth-child(9){animation-delay:.86s}.flow>*:nth-child(10){animation-delay:.96s}
+.flow>*:nth-child(11){animation-delay:1.06s}.flow>*:nth-child(12){animation-delay:1.16s}
+@keyframes flowin{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.p2line{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.15s ease-in-out both}
+@keyframes draw{to{stroke-dashoffset:0}}
+.p2end{opacity:0;animation:p2fade .5s ease 1.05s forwards}
+@keyframes p2fade{to{opacity:1}}
+
+.flow{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-top:1.8rem}
+.node{font-family:var(--mono);font-size:.8rem;letter-spacing:.02em;color:var(--ink);border:1px solid var(--hair);background:var(--panel);border-radius:10px;padding:.85rem 1.1rem;white-space:nowrap;backdrop-filter:blur(6px)}
+.node.a{border-color:var(--accent-deep);color:var(--accent)}
+.node.g{border-color:rgba(216,183,130,.4);color:var(--gold-bright)}
+.node.human{border-style:dashed;border-color:rgba(216,183,130,.5);color:var(--gold-bright)}
+.arr{color:var(--dim);font-family:var(--mono);font-size:1rem}
+
+.casewrap{display:grid;gap:2.2rem;align-items:center;margin-top:1.3rem;grid-template-columns:1fr 1fr}
+.shot{border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:#0b0b10;box-shadow:0 46px 100px -55px rgba(0,0,0,.95);position:relative}
+.shot .bar{min-height:30px;display:flex;align-items:center;gap:6px;padding:0 12px;background:rgba(243,238,227,.035);border-bottom:1px solid var(--hair-2)}
+.shot .bar i{width:8px;height:8px;border-radius:50%;background:var(--dim);opacity:.55;display:block;flex:0 0 auto}
+.shotcap{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;color:var(--muted);margin-top:.7rem;line-height:1.5}
+.pins{list-style:none;margin-top:.7rem;display:flex;flex-direction:column;gap:.5rem}
+.pins li{font-size:.9rem;color:var(--ink);padding-left:1.25rem;position:relative;line-height:1.4}
+.pins li::before{content:"";position:absolute;left:0;top:.42em;width:7px;height:7px;border-radius:50%;background:var(--coral)}
+.pins li b{color:var(--coral);font-weight:600}
+
+.digest .bar .btitle{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
+.digest .dbody{padding:1.15rem 1.3rem 1.2rem}
+.digest .dhead{font-family:var(--serif);font-size:1.12rem;color:var(--ink);margin-bottom:.35rem}
+.digest .dtag{font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.01em;padding-bottom:.65rem;border-bottom:1px solid var(--hair-2);margin-bottom:.7rem}
+.digest .dtag .red{color:var(--coral)}.digest .dtag .yel{color:var(--gold-bright)}
+.digest .dsec{font-size:.85rem;color:var(--ink);line-height:1.4;margin:.5rem 0}
+.digest .dsec.red{border-left:2px solid var(--coral);padding-left:.7rem}
+.digest .dsec.yel{border-left:2px solid rgba(216,183,130,.5);padding-left:.7rem}
+.digest .dsec b{font-weight:600}
+.digest .darrow{display:block;font-family:var(--mono);font-size:.68rem;color:var(--muted);margin-top:.18rem}
+.digest .dhead .dstamp{font-family:var(--mono);font-size:.6rem;color:var(--dim);letter-spacing:.02em}
+.dfoot{font-family:var(--mono);font-size:.6rem;color:var(--gold);letter-spacing:.01em;border-top:1px solid var(--hair-2);padding-top:.5rem;margin-top:.3rem;line-height:1.5}
+.dtag .dimt{color:var(--dim)}
+.dinsight{font-size:.8rem;color:var(--accent);margin:.7rem 0 .1rem;line-height:1.4}
+
+.tiles{display:grid;gap:1rem;margin-top:1.6rem}
+.tiles.t2{grid-template-columns:repeat(2,1fr)}
+.tiles.t3{grid-template-columns:repeat(3,1fr)}
+.tiles.t4{grid-template-columns:repeat(4,1fr)}
+.tile{padding:1.4rem 1.5rem;background:var(--panel);border:1px solid var(--hair);border-radius:16px}
+.tile .num{font-family:var(--serif);font-weight:300;font-size:clamp(1.8rem,3.1vw,2.7rem);line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.tile .num.gold{color:var(--gold-bright)}.tile .num.mint{color:var(--mint)}.tile .num.accent{color:var(--accent)}
+.tile .lab{font-family:var(--mono);font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:.7rem;line-height:1.5}
+.tile.q{display:flex;align-items:center}
+.tile .qt{font-family:var(--serif);font-size:1.12rem;line-height:1.3;color:var(--ink)}
+
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1.8rem}
+.bcard{padding:1.6rem 1.6rem 1.7rem;background:linear-gradient(180deg,rgba(243,238,227,.045),rgba(243,238,227,.012));border:1px solid var(--hair);border-radius:16px;display:flex;flex-direction:column;gap:.85rem}
+.bcard .bname{font-family:var(--serif);font-size:1.4rem;color:var(--ink)}
+.bcard .bdesc{color:var(--muted);font-size:.92rem;line-height:1.5}
+.live{align-self:flex-start;font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;color:var(--mint);border:1px solid rgba(102,224,178,.4);border-radius:20px;padding:.28rem .62rem;display:inline-flex;align-items:center;gap:.42rem}
+.live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mint);box-shadow:0 0 8px var(--mint)}
+
+.chat{padding:0;overflow:hidden;max-width:520px}
+.chat-bar{display:flex;align-items:center;gap:.6rem;padding:.7rem 1rem;border-bottom:1px solid var(--hair-2);background:rgba(243,238,227,.03)}
+.cdot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);flex:0 0 auto}
+.cname{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;color:var(--ink)}
+.chat-body{padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.8rem}
+.bub{border-radius:12px;padding:.8rem 1rem;font-size:.9rem;line-height:1.5}
+.bub.user{align-self:flex-end;max-width:88%;background:rgba(138,160,255,.12);border:1px solid rgba(138,160,255,.25);color:var(--ink)}
+.bub.ai{align-self:flex-start;width:100%;background:var(--panel);border:1px solid var(--hair)}
+.mrow{display:flex;justify-content:space-between;align-items:center;padding:.42rem 0;border-bottom:1px solid var(--hair-2);font-size:.82rem}
+.mrow:last-of-type{border-bottom:none}
+.mrow .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.02em;color:var(--muted)}
+.mrow .v{color:var(--ink)}.mrow .v.up{color:var(--mint)}.mrow .v.down{color:var(--coral)}
+.next{margin-top:.65rem;padding-top:.7rem;border-top:1px solid var(--hair-2);font-size:.84rem;color:var(--accent);line-height:1.5}
+.modelabel{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:1.6rem;margin-bottom:.7rem}
+.modestrip{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.mtag{font-family:var(--mono);font-size:.78rem;letter-spacing:.02em;color:var(--gold-bright);border:1px solid rgba(216,183,130,.35);border-radius:10px;padding:.55rem .85rem;background:rgba(216,183,130,.05)}
+.marr{color:var(--dim);font-family:var(--mono)}
+
+.alert{padding:0;overflow:hidden;border-color:rgba(255,109,120,.25)}
+.alert-head{display:flex;align-items:center;gap:.6rem;padding:.7rem 1rem;border-bottom:1px solid var(--hair-2);font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--coral)}
+.adot{width:9px;height:9px;border-radius:50%;background:var(--coral);box-shadow:0 0 10px var(--coral);flex:0 0 auto}
+.alert-body{padding:1.1rem 1.3rem}
+.atitle{font-family:var(--serif);font-size:1.25rem;color:var(--ink);margin-bottom:.5rem}
+.adesc{color:var(--muted);font-size:.9rem;line-height:1.5;margin-bottom:1rem}
+.fixbtn{display:inline-block;font-family:var(--mono);font-size:.74rem;letter-spacing:.05em;color:var(--gold-bright);border:1px solid rgba(216,183,130,.4);border-radius:10px;padding:.55rem .9rem;background:rgba(216,183,130,.06)}
+
+.outrow{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;margin-top:1.8rem;align-items:start;border-top:1px solid var(--hair-2);padding-top:1.5rem}
+.omatrix{padding:1rem 1.1rem 1.1rem}
+.ohead{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;margin-bottom:.7rem}
+.ogrid{display:grid;grid-template-columns:auto repeat(3,1fr);gap:.4rem;font-family:var(--mono);font-size:.66rem}
+.ocorner{color:var(--dim);font-size:.55rem;display:flex;align-items:flex-end}
+.ocol{color:var(--muted);text-align:center;padding:.3rem 0;letter-spacing:.03em}
+.orow{color:var(--muted);display:flex;align-items:center}
+.ocell{color:var(--gold-bright);text-align:center;padding:.5rem 0;border:1px solid rgba(216,183,130,.2);border-radius:7px;background:rgba(216,183,130,.04)}
+
+.phone{width:clamp(232px,25vw,292px);margin:0 auto;border:1px solid var(--hair);border-radius:32px;padding:12px;background:linear-gradient(180deg,rgba(243,238,227,.045),rgba(243,238,227,.01));box-shadow:0 46px 100px -55px rgba(0,0,0,.95)}
+.phone-notch{width:34%;height:6px;border-radius:6px;background:var(--dim);opacity:.4;margin:2px auto 12px}
+.phone-screen{background:#0b0b10;border:1px solid var(--hair-2);border-radius:22px;padding:1rem;display:flex;flex-direction:column;gap:.7rem}
+.pscr-top{font-family:var(--mono);font-size:.6rem;letter-spacing:.05em;color:var(--muted);display:flex;align-items:center;padding-bottom:.5rem;border-bottom:1px solid var(--hair-2)}
+.coach-card{background:rgba(216,183,130,.06);border:1px solid rgba(216,183,130,.22);border-radius:12px;padding:.9rem}
+.cc-lab{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cc-big{font-family:var(--serif);font-weight:300;font-size:2.1rem;color:var(--gold-bright);line-height:1;margin-top:.15rem}
+.cc-bar{height:5px;border-radius:5px;background:rgba(243,238,227,.08);margin-top:.55rem;overflow:hidden}
+.cc-bar span{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+.coach-row{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;padding:.35rem 0;border-bottom:1px solid var(--hair-2)}
+.cc-k{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
+.cc-v{color:var(--ink)}.cc-v.mint{color:var(--mint)}
+.coach-cta{margin-top:.25rem;text-align:center;font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;color:var(--accent);border:1px solid rgba(138,160,255,.3);border-radius:10px;padding:.55rem;background:rgba(138,160,255,.06)}
+
+.urlpill{font-family:var(--mono);font-size:.6rem;color:var(--muted);background:rgba(243,238,227,.05);border:1px solid var(--hair-2);border-radius:20px;padding:.2rem .7rem;margin-left:.4rem}
+.agentbanner{display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.01em;color:var(--accent);background:rgba(138,160,255,.09);border-bottom:1px solid rgba(138,160,255,.2);padding:.7rem 1rem;line-height:1.4}
+.agdot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);flex:0 0 auto;animation:blink 1.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.formrows{padding:1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem}
+.frow{display:grid;grid-template-columns:1fr auto auto;gap:.8rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--hair-2)}
+.frow:last-child{border-bottom:none}
+.fk{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
+.fv{font-size:.76rem;color:var(--ink);opacity:.75}
+.ftick{color:var(--mint);font-size:.9rem}
+.breadth{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.2rem}
+.bchip{font-family:var(--mono);font-size:.72rem;color:var(--muted);border:1px solid var(--hair);border-radius:20px;padding:.4rem .8rem}
+
+.attr-head{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;margin-bottom:.7rem}
+.calmos{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin-top:.7rem}
+.calcard{border:1px solid var(--hair-2);border-radius:7px;background:rgba(243,238,227,.02);padding:.4rem;aspect-ratio:1/1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:2px}
+.calcard span{background:rgba(243,238,227,.05);border-radius:1px}
+
+.tool{display:block;text-decoration:none;transition:border-color .2s,transform .2s;padding:1.3rem 1.4rem}
+.tool:hover{border-color:rgba(138,160,255,.45);transform:translateY(-2px)}
+.tool p{margin-top:.15rem;color:var(--muted);font-size:.9rem;line-height:1.45}
+.tool p b{color:var(--ink);font-weight:600;font-size:1.08rem}
+.tlink{font-family:var(--mono);font-size:.66rem;color:var(--accent);margin-top:.9rem;letter-spacing:.02em;word-break:break-all}
+.tlink a{color:inherit;text-decoration:none}.tlink a:hover{text-decoration:underline}
+.tool.g{border-color:rgba(216,183,130,.24)}.tool.g:hover{border-color:rgba(216,183,130,.5)}
+.tool.g .ct{color:var(--gold-bright)}.tool.g .tlink{color:var(--gold-bright)}
+
+.contact{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:2rem;font-family:var(--mono);font-size:.82rem;letter-spacing:.03em}
+.contact a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(138,160,255,.3);padding-bottom:2px;overflow-wrap:anywhere}
+.contact a:hover{border-color:var(--accent)}
+.cdiv{color:var(--dim)}
+
+.close-title{font-family:var(--serif);font-weight:400;font-size:clamp(3rem,8vw,7rem);letter-spacing:-.02em;line-height:1.02}
+.close-sub{font-family:var(--mono);letter-spacing:.28em;color:var(--muted);margin-top:1.8rem;text-transform:uppercase;font-size:.8rem}
+
+.sig{position:fixed;right:max(2.6vw,env(safe-area-inset-right,0px));bottom:calc(3vh + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:9px;color:var(--gold);opacity:.9;z-index:5;user-select:none}
+.sig svg{flex:0 0 auto;filter:drop-shadow(0 0 9px rgba(216,183,130,.16))}
+.sig .t{font-family:var(--sig);font-size:20px;line-height:1;color:var(--gold-bright);letter-spacing:.01em;white-space:nowrap}
+.counter{position:fixed;left:max(2.6vw,env(safe-area-inset-left,0px));bottom:calc(3vh + env(safe-area-inset-bottom,0px));font-family:var(--mono);font-size:.72rem;color:var(--dim);z-index:5;letter-spacing:.1em}
+.counter b{color:var(--muted);font-weight:400}
+.progress{position:fixed;left:0;bottom:0;height:1px;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:6;transition:width .55s cubic-bezier(.2,.7,.2,1);opacity:.7}
+.egg{position:absolute;bottom:6vh;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:.72rem;letter-spacing:.03em;color:var(--dim);text-align:center;max-width:64ch;line-height:1.6}
+.egg b{color:var(--gold);font-weight:400}
+
+@media (prefers-reduced-motion:reduce){
+  .slide.active{animation:none}
+  .ladder .rung>*,.flow>*{animation:none}
+  .p2line{stroke-dashoffset:0;animation:none}
+  .p2end{opacity:1;animation:none}
+  .agdot{animation:none}
+}
+.bcard .stagetag{margin-top:auto}
+.stagetag{align-self:flex-start;font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(138,160,255,.3);border-radius:20px;padding:.26rem .62rem;background:rgba(138,160,255,.06)}
+.stagetag.g{color:var(--gold-bright);border-color:rgba(216,183,130,.35);background:rgba(216,183,130,.06)}
+.scale{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-top:1.5rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.03em}
+.scale .sname{flex:0 0 100%;color:var(--dim);letter-spacing:.14em;text-transform:uppercase;font-size:.58rem;margin-bottom:.15rem}
+.scale .stg{border:1px solid var(--hair);border-radius:8px;padding:.42rem .7rem;color:var(--muted)}
+.scale .stg.on{color:var(--accent);border-color:rgba(138,160,255,.35);background:rgba(138,160,255,.06)}
+.scale .stg.on.g{color:var(--gold-bright);border-color:rgba(216,183,130,.35);background:rgba(216,183,130,.06)}
+.scale .sarr{color:var(--dim)}
+.scale .stg{position:relative}
+.scale .stg.next{border-style:dashed;border-color:rgba(216,183,130,.32);color:var(--gold-bright);background:transparent}
+.scale .here,.scale .soon{display:block;font-size:.54rem;letter-spacing:.14em;text-transform:uppercase;margin-top:.28rem}
+.scale .here{color:var(--accent)}
+.scale .soon{color:var(--gold)}
+.mstrip-lab{font-family:var(--mono);font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-top:.9rem}
+.monthstrip{display:grid;grid-template-columns:repeat(15,1fr);gap:4px;margin-top:.5rem}
+.monthstrip i{display:block;aspect-ratio:1;border-radius:3px;background:rgba(243,238,227,.05);border:1px solid var(--hair-2)}
+.monthstrip i.on{background:rgba(138,160,255,.32);border-color:rgba(138,160,255,.28)}
+.monthstrip i.hi{background:rgba(216,183,130,.34);border-color:rgba(216,183,130,.3)}
+.scaleread{margin-top:1.1rem;font-size:.88rem;line-height:1.6;color:var(--muted);max-width:88ch}
+.scaleread b{color:var(--ink);font-weight:500}
+.cchat{display:flex;flex-direction:column;gap:.5rem}
+.ctx{align-self:center;font-family:var(--mono);font-size:.54rem;letter-spacing:.05em;color:var(--gold);border:1px solid rgba(216,183,130,.3);border-radius:20px;padding:.26rem .6rem;background:rgba(216,183,130,.05)}
+.ubub{align-self:flex-end;max-width:90%;background:rgba(138,160,255,.12);border:1px solid rgba(138,160,255,.2);border-radius:12px 12px 4px 12px;padding:.48rem .62rem;font-size:.72rem;color:var(--ink);line-height:1.35}
+.cwho{display:flex;align-items:center;gap:.35rem;font-family:var(--mono);font-size:.58rem;color:var(--muted)}
+.cwho .cav{width:14px;height:14px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--accent))}
+.cans{background:rgba(243,238,227,.04);border:1px solid var(--hair-2);border-radius:4px 12px 12px 12px;padding:.65rem .7rem;display:flex;flex-direction:column;gap:.45rem}
+.cstep{font-family:var(--mono);font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim)}
+.chead{font-size:.84rem;font-weight:600;color:var(--gold-bright);line-height:1.25}
+.cdiag{font-size:.7rem;color:var(--ink);line-height:1.55}
+.cdiag b{color:var(--coral);font-weight:600}
+.csrc{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--hair-2);border-radius:8px;overflow:hidden}
+.csrc div{padding:.32rem .28rem;text-align:center;font-family:var(--mono);font-size:.54rem;color:var(--muted);border-right:1px solid var(--hair-2)}
+.csrc div:nth-child(3n){border-right:none}
+.csrc .cv{color:var(--ink);font-size:.66rem;border-top:1px solid var(--hair-2)}
+.cdo{font-size:.7rem;color:var(--muted);line-height:1.5}
+.cdo b{color:var(--ink);font-weight:500}
+.cbtns{display:flex;gap:.32rem;flex-wrap:wrap}
+.cbtn{font-family:var(--mono);font-size:.56rem;letter-spacing:.03em;color:#0b0b10;background:var(--gold-bright);border-radius:7px;padding:.38rem .58rem}
+.cbtn.o{background:transparent;color:var(--gold-bright);border:1px solid rgba(216,183,130,.4)}
+.cask{font-family:var(--mono);font-size:.54rem;color:var(--dim);border:1px solid var(--hair-2);border-radius:20px;padding:.38rem .7rem;text-align:left}
+.cstack{display:flex;flex-direction:column;gap:.9rem;margin-top:1.3rem}
+.cstack .cs{display:flex;gap:.75rem;align-items:flex-start}
+.cstack .csn{font-family:var(--mono);font-size:.6rem;color:var(--gold-bright);border:1px solid rgba(216,183,130,.35);border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:.1rem}
+.cstack .csb{font-size:.9rem;line-height:1.5;color:var(--muted)}
+.cstack .csb b{color:var(--ink);font-weight:500}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:.9rem;align-items:stretch;margin-top:1.1rem}
+.vs .vcard{background:var(--panel);border:1px solid var(--hair);border-radius:14px;padding:.85rem 1rem}
+.vs .vcard.on{border-color:rgba(216,183,130,.3);background:rgba(216,183,130,.05)}
+.vs .vk{font-family:var(--mono);font-size:.57rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem}
+.vs .vcard.on .vk{color:var(--gold-bright)}
+.vs .vt{font-size:.84rem;line-height:1.45;color:var(--ink)}
+.vs .vsep{align-self:center;font-family:var(--mono);font-size:.58rem;color:var(--dim)}
+.nextbox{margin-top:1.5rem;border:1px solid rgba(216,183,130,.25);background:rgba(216,183,130,.05);border-radius:14px;padding:.95rem 1.3rem;max-width:62ch}
+.nextbox .nk{font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:.4rem}
+.nextbox .nt{font-size:.9rem;line-height:1.55;color:var(--muted)}
+.nextbox .nt b{color:var(--ink);font-weight:500}
+@media (min-width:1800px){.slide{padding-left:calc((100vw - 1660px)/2);padding-right:calc((100vw - 1660px)/2)}}
+@media (max-height:900px) and (min-width:761px){.slide{padding-top:5.5vh;padding-bottom:6vh}.ladder{height:clamp(260px,38vh,380px)}}
+@media (min-width:761px) and (max-width:1080px){
+  .outward{display:none}
+}
+@media (max-height:640px) and (min-width:761px){
+  .slide{overflow-y:auto;justify-content:flex-start;padding-top:4vh;padding-bottom:4vh}
+}
+@media (max-width:760px){
+  .slide{padding:5vh 6vw;overflow-y:auto;justify-content:flex-start}
+  .slide.center{justify-content:safe center}
+  .eyebrow{flex-wrap:wrap;letter-spacing:.16em;font-size:.62rem;margin-bottom:1.2rem}
+  .casewrap,.outrow{grid-template-columns:1fr!important;gap:1.4rem}
+  .grid.g2,.grid.g3{grid-template-columns:1fr!important}
+  .grid[style*="repeat(3"]{grid-template-columns:1fr!important}
+  .bento{grid-template-columns:1fr}
+  .tiles.t2,.tiles.t3,.tiles.t4{grid-template-columns:1fr!important}
+  .chat{max-width:none}
+  .modestrip{flex-direction:column;align-items:flex-start}
+  .vs{grid-template-columns:1fr}
+  .vs .vsep{display:none}
+  .scale{font-size:.6rem}
+  .cstack{gap:.7rem}
+  .flow{flex-direction:column;align-items:stretch;gap:.5rem}
+  .flow .node{white-space:normal;width:100%;max-width:100%}
+  .casewrap>*,.outrow>*,.grid>*{min-width:0}
+  .shot{max-width:100%;min-width:0;overflow:hidden}
+  .shot .bar{flex-wrap:wrap;height:auto;row-gap:.2rem;padding:.35rem .6rem}
+  .shot .bar .mocklab{margin-left:0;padding-left:0}
+  .mocklab{white-space:normal}
+  .flow .arr{transform:rotate(90deg)}
+  .ladwrap{flex-direction:column;gap:.6rem}
+  .axis{writing-mode:horizontal-tb;transform:none;flex-direction:row;padding:0 0 .4rem}
+  .ladder{flex-direction:column;height:auto;align-items:stretch;gap:.7rem}
+  .rung{height:auto}
+  .rung .col{height:auto!important;min-height:0!important;border-radius:12px;border-bottom:1px solid var(--hair-2)}
+  .rung{min-height:0;flex:0 0 auto}
+  .phone{width:100%;max-width:none;padding:10px;border-radius:26px}
+  .phone-screen{padding:.85rem;border-radius:18px}
+  .monthstrip{grid-template-columns:repeat(10,1fr)}
+  .outward{margin-bottom:.7rem}
+  .close-title{font-size:clamp(2.4rem,11vw,3.4rem)}
+  .contact{flex-direction:column;gap:.6rem;font-size:.76rem}
+  .cdiv{display:none}
+  .ogrid{font-size:.6rem}
+  .calmos{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="bgfx"><div class="glow"></div><div class="grain"></div></div>
+<div class="progress" id="prog"></div>
+<div class="deck" id="deck">
+
+  <section class="slide center">
+    <div class="eyebrow c"><span class="tick"></span>PORTFOLIO · AI × LIVESTREAMING OPS<span class="tick"></span></div>
+    <div class="close-title">No Magic, <span class="accent">Only Method.</span></div>
+    <p class="lead" style="text-align:center;max-width:46ch">AI products I shipped — and the method behind them.</p>
+    <div class="byline">Aaron Zhang · Product Manager @ TikTok LIVE</div>
+    <div class="navhint">→ / space / swipe · F fullscreen</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>the operating belief</div>
+    <div class="spine">
+      <div>I don't ask AI for magic.</div>
+      <div>I teach it how I work.</div>
+      <div>Own the problem — <span class="accent">own the AI.</span></div>
+    </div>
+    <div class="chapline">Ch.1 &nbsp;What I shipped &nbsp;·&nbsp; Ch.2 &nbsp;How I work</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · SHIPPED · three AI products live in production</div>
+    <h2 class="d2" style="max-width:24ch">Three products, one thesis: put AI where the work actually happens.</h2>
+    <div class="bento">
+      <div class="bcard"><span class="live">LIVE</span><div class="bname">Campaign AI</div><div class="bdesc">An AI teammate for campaign ops — data, diagnosis, next-best action.</div><span class="stagetag">workflow-embedded</span></div>
+      <div class="bcard"><span class="live">LIVE</span><div class="bname">Smart Diagnosis &amp; Outreach</div><div class="bdesc">Finds campaign issues before anyone asks — and fixes them in one click.</div><span class="stagetag">workflow-embedded</span></div>
+      <div class="bcard"><span class="live">LIVE</span><div class="bname">Creator Coach</div><div class="bdesc">Turns expert playbooks into real-time next steps for every creator.</div><span class="stagetag">workflow-embedded</span></div>
+    </div>
+    <div class="scale">
+      <span class="sname">how I read AI product maturity</span>
+      <span class="stg">copilot · you ask, it helps</span><span class="sarr">→</span>
+      <span class="stg on">workflow-embedded · runs inside the work<span class="here">all three are here</span></span><span class="sarr">→</span>
+      <span class="stg next">AI-native · exists only because of AI<span class="soon">where I'm headed</span></span>
+    </div>
+    <div class="scaleread">Take the AI out and all three still have a platform underneath — so none of them is AI-native yet. Knowing which rung you are actually on is the job; <b>the coach products I'm building next are the ones designed AI-native from day one.</b></div>
+    <div class="caption" style="margin-top:.9rem">shipped on TikTok LIVE · 2025–2026</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · CAMPAIGN AI — my role: 0→1 product owner</div>
+    <h2 class="d2" style="margin-bottom:.2rem">An AI teammate that knows the data and the playbook.</h2>
+    <div class="casewrap" style="grid-template-columns:1.05fr .95fr;margin-top:1rem;align-items:start">
+      <div class="panel chat">
+        <div class="chat-bar"><span class="cdot"></span><span class="cname">Campaign AI</span><span class="mocklab">illustrative mockup</span></div>
+        <div class="chat-body">
+          <div class="bub user">How is my campaign doing this week?</div>
+          <div class="bub ai">
+            <div class="mrow"><span class="k">Participating creators</span><span class="v up">▲ on track</span></div>
+            <div class="mrow"><span class="k">Reach rate</span><span class="v down">▼ below benchmark</span></div>
+            <div class="mrow"><span class="k">Rewards spend</span><span class="v">on pace</span></div>
+            <div class="next">Next best action → refresh the outreach push for the lagging audience. Drafts ready to review.</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="lead n" style="margin-top:0">Ask it in plain language. It reads the live data, works out what is actually going on, and hands back the next move — not just a chart to interpret.</p>
+        <div class="modelabel">where it sits today</div>
+        <div class="modestrip"><span class="mtag">workflow-embedded</span></div>
+        <p class="lead n" style="margin-top:1rem;font-size:.9rem">It has moved past the chat box: it lives inside the campaign workflow, so the answer shows up where the decision is actually made.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · CAMPAIGN AI · how it runs</div>
+    <h2 class="d3" style="margin-bottom:.3rem">From a question to the next action — in one loop.</h2>
+    <div class="flow">
+      <span class="node">You ask (or it notices)</span><span class="arr">→</span>
+      <span class="node a">Reads the live data</span><span class="arr">→</span>
+      <span class="node a">Weighs history &amp; comparable campaigns</span><span class="arr">→</span>
+      <span class="node a">Checks config, audience &amp; pacing</span><span class="arr">→</span>
+      <span class="node g">Recommends the next action</span>
+    </div>
+    <div class="caption" style="margin-top:1.1rem">the diagnosis is the hard part — not one benchmark check, but rules, history, comparable campaigns, config and audience weighed together</div>
+    <div class="tiles t3">
+      <div class="tile"><div class="num accent">50%+</div><div class="lab">of campaign operators use it</div></div>
+      <div class="tile"><div class="num">10+</div><div class="lab">messages per active user each week</div></div>
+      <div class="tile q"><div class="qt">From dashboard-digging to a 30-second answer.</div></div>
+    </div>
+    <div class="punch"><div class="en">Not a chatbot bolted on — <span class="goldt">a teammate in the workflow.</span></div></div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · SMART DIAGNOSIS — my role: 0→1 product owner</div>
+    <h2 class="d2" style="margin-bottom:.4rem">It doesn't wait to be asked.</h2>
+    <div class="casewrap" style="grid-template-columns:1.05fr .95fr;margin-top:.8rem;align-items:start">
+      <div>
+        <div class="flow" style="margin-top:0">
+          <span class="node">Watches every live campaign</span><span class="arr">→</span>
+          <span class="node a">Detects the anomaly</span><span class="arr">→</span>
+          <span class="node a">Notifies the owner</span><span class="arr">→</span>
+          <span class="node g">One-click fix</span>
+        </div>
+        <div class="caption" style="margin-top:1.8rem">the diagnosis arrives before anyone asks</div>
+      </div>
+      <div class="panel alert">
+        <div class="alert-head"><span class="adot"></span>Config alert<span class="mocklab">illustrative mockup</span></div>
+        <div class="alert-body">
+          <div class="atitle">A config issue puts exposure at risk</div>
+          <div class="adesc">An unnamed live campaign is set to under-deliver. Detected automatically — before the owner noticed.</div>
+          <div><span class="fixbtn" data-noadvance>One-click fix available</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · SMART DIAGNOSIS · impact</div>
+    <div class="tiles t3">
+      <div class="tile"><div class="num">thousands</div><div class="lab">of campaigns covered each quarter</div></div>
+      <div class="tile"><div class="num gold">85%+</div><div class="lab">fix adoption — flagged issues actually resolved</div></div>
+      <div class="tile q"><div class="qt">Tens of millions of impressions protected.</div></div>
+    </div>
+    <div class="outrow">
+      <div>
+        <div class="d3" style="font-size:clamp(1.2rem,2vw,1.6rem)">…and when reach lags, it drafts the outreach plan.</div>
+        <div class="lead n" style="margin-top:.5rem;font-size:.92rem">Three dimensions at once — <b style="color:var(--ink);font-weight:500">phase × language × audience segment</b>. Who to reach, when, and in which language: a whole plan, ready to review.</div>
+        <div class="tiles t2" style="margin-top:1.1rem">
+          <div class="tile"><div class="num accent">70%+</div><div class="lab">of campaign messages AI-created</div></div>
+          <div class="tile"><div class="num mint">10%+</div><div class="lab">lift in reach rate</div></div>
+        </div>
+      </div>
+      <div class="panel omatrix">
+        <div class="ohead">outreach plan<span class="mocklab">illustrative mockup</span></div>
+        <div class="ogrid">
+          <div class="ocorner">phase ↓ / audience →</div>
+          <div class="ocol">New</div><div class="ocol">Active</div><div class="ocol">Lapsed</div>
+          <div class="orow">Phase 1</div><div class="ocell">×3 langs</div><div class="ocell">×2 langs</div><div class="ocell">×3 langs</div>
+          <div class="orow">Phase 2</div><div class="ocell">×2 langs</div><div class="ocell">×3 langs</div><div class="ocell">×1 lang</div>
+          <div class="orow">Phase 3</div><div class="ocell">×1 lang</div><div class="ocell">×2 langs</div><div class="ocell">×2 langs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · CREATOR COACH — my role: 0→1 product owner</div>
+    <h2 class="d2" style="margin-bottom:.2rem">It hears the worry first — <span class="accent">then does the math.</span></h2>
+    <div class="casewrap" style="grid-template-columns:.72fr 1.28fr;margin-top:.8rem;align-items:center">
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="pscr-top">Creator Coach<span class="mocklab">illustrative mockup</span></div>
+          <div class="cchat">
+            <div class="ctx">now on · a flagship campaign</div>
+            <div class="ubub">Can I still make the next round?</div>
+            <div class="cwho"><span class="cav"></span>Coach</div>
+            <div class="cans">
+              <div class="cstep">1 · hears the intent</div>
+              <div class="chead">You can still catch up.</div>
+              <div class="cstep">2 · diagnoses</div>
+              <div class="cdiag">You're <b>#78</b> with <b>12,580</b> points — about <b>340 short</b> of the top-50 cut-off.</div>
+              <div class="csrc">
+                <div>Gifts</div><div>Match</div><div>Tasks</div>
+                <div class="cv">6,200</div><div class="cv">3,800</div><div class="cv">2,580</div>
+              </div>
+              <div class="cstep">3 · hands back the move</div>
+              <div class="cdo"><b>3h left.</b> Set a live goal now, then start a match — the fastest way to close the gap.</div>
+              <div class="cbtns"><span class="cbtn">Set goal</span><span class="cbtn">Start match</span><span class="cbtn o">See tasks</span></div>
+            </div>
+            <div class="cask">Ask me anything…</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="lead n" style="margin-top:0">A creator doesn't want a dashboard. They ask <em>"am I still in it?"</em> — and the answer has to come back as a decision, not a number.</p>
+        <div class="cstack">
+          <div class="cs"><span class="csn">1</span><span class="csb"><b>Meet the intent, not the words.</b> "Can I still make it?" is a worry before it is a query. Answer the worry first, or nothing after it lands.</span></div>
+          <div class="cs"><span class="csn">2</span><span class="csb"><b>Diagnose against something checkable.</b> Rank, the exact gap, and where the points came from — so the advice can be argued with instead of believed.</span></div>
+          <div class="cs"><span class="csn">3</span><span class="csb"><b>End on one doable move.</b> Not "engage more" — a specific action, sized to the time actually left.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · CREATOR COACH · impact</div>
+    <h2 class="d2">Tens of thousands of creators coached daily at peak.</h2>
+    <div class="tiles t3" style="margin-top:1.8rem">
+      <div class="tile"><div class="num mint">95%+</div><div class="lab">positive rating</div></div>
+      <div class="tile"><div class="num accent">10%+</div><div class="lab">revisit rate</div></div>
+      <div class="tile q"><div class="qt">Participation and revenue both moved — <span class="goldt">A/B-validated.</span></div></div>
+    </div>
+    <div class="punch"><div class="en">Expertise that reached the top creators — <span class="goldt">now it reaches everyone.</span></div></div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.1 · in one page</div>
+    <div class="tiles t4" style="margin-top:2rem">
+      <div class="tile"><div class="num">3</div><div class="lab">AI products live</div></div>
+      <div class="tile"><div class="num">thousands</div><div class="lab">of campaigns served each quarter</div></div>
+      <div class="tile q"><div class="qt">Tens of thousands coached daily.</div></div>
+      <div class="tile q"><div class="qt">Revenue lift, <span class="goldt">A/B-validated.</span></div></div>
+    </div>
+    <div class="punch" style="margin-top:2.2rem"><div class="en">Shipped, adopted, measured.</div></div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>CH.2 · HOW I WORK · the magician's climb</div>
+    <div class="ladwrap">
+      <div class="axis">AUTONOMY&nbsp;↑</div>
+      <div class="ladder">
+        <div class="rung"><div class="col"><div class="rlvl">L1 · ASK</div><div class="rname">Apprentice</div><div class="rcn">学徒</div><div class="rdesc">It answers. You still do the work.</div></div></div>
+        <div class="rung"><div class="col"><div class="rlvl">L2 · ACT</div><div class="rname">Spellcaster</div><div class="rcn">法师</div><div class="rdesc">It does the task. You check it after.</div></div></div>
+        <div class="rung"><div class="col"><div class="rlvl">L3 · EMBED</div><div class="rname">Enchanter</div><div class="rcn">阵法师</div><div class="rdesc">It runs the workflow. You hold the gate.</div></div></div>
+        <div class="rung"><div class="col"><div class="rlvl">L4 · GOVERN</div><div class="rname">Archmage</div><div class="rcn">魔导师</div><div class="rdesc">It runs the system. You set the goal &amp; limits.</div></div></div>
+        <div class="rung"><div class="outward">→ PORTABLE OWNERSHIP</div><div class="col"><div class="rlvl">L5 · TEACH</div><div class="rname">Grandmaster</div><div class="rcn">宗师</div><div class="rdesc">You share the method. Anyone can run it.</div></div></div>
+      </div>
+    </div>
+    <div class="ladcap">Find your rung with one test: <b>if AI did your repeated task confidently wrong tomorrow — would you catch it?</b> That's how high you can safely climb.</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>L1 · ASK · own the meaning</div>
+    <h2 class="d2" style="margin-bottom:.2rem">Same data. Same weeks. <span class="accent">Opposite answer.</span></h2>
+    <div class="casewrap" style="grid-template-columns:.62fr 1.38fr;margin-top:1.1rem">
+      <div>
+        <p class="lead n" style="margin-top:0">AI found the culprit in seconds — clean, confident, and wrong. It had counted the wrong denominator. Count only the eligible base, and the same weeks read a steady <b style="color:var(--mint)">91–96%</b>. The <b class="coral">−19.6%</b> was a definition pretending to be reality.</p>
+        <div class="punch" style="margin-top:1.4rem"><div class="en">Fast confidence is not correctness.</div></div>
+      </div>
+      <div>
+        <div class="panel" style="padding:1.3rem 1.6rem 1.1rem">
+          <svg viewBox="0 0 640 320" width="100%" style="max-height:44vh;display:block">
+            <g stroke="rgba(243,238,227,.07)" stroke-width="1">
+              <line x1="70" y1="66" x2="600" y2="66"/><line x1="70" y1="150" x2="600" y2="150"/><line x1="70" y1="270" x2="600" y2="270"/>
+            </g>
+            <g font-family="'JetBrains Mono'" font-size="11" fill="#615c51"><text x="34" y="70">95%</text><text x="34" y="154">85%</text><text x="34" y="274">75%</text></g>
+            <polyline class="p2line" pathLength="1" fill="none" stroke="#ff6d78" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="70,89 176,105 282,129 388,160 494,199 600,239"/>
+            <polyline class="p2line" pathLength="1" fill="none" stroke="#66e0b2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="70,81 176,74 282,89 388,74 494,81 600,66"/>
+            <circle class="p2end" cx="600" cy="239" r="4.5" fill="#ff6d78"/><circle class="p2end" cx="600" cy="66" r="4.5" fill="#66e0b2"/>
+            <text class="p2end" x="600" y="262" text-anchor="end" font-family="Fraunces" font-size="22" fill="#ff6d78">&#8722;19.6%</text>
+            <text class="p2end" x="600" y="56" text-anchor="end" font-family="'JetBrains Mono'" font-size="12" fill="#66e0b2">steady 91&#8211;96%</text>
+            <g font-family="'JetBrains Mono'" font-size="10" fill="#615c51" text-anchor="middle"><text x="70" y="290">W1</text><text x="176" y="290">W2</text><text x="282" y="290">W3</text><text x="388" y="290">W4</text><text x="494" y="290">W5</text><text x="600" y="290">W6</text></g>
+            <g font-family="'JetBrains Mono'" font-size="11"><rect x="70" y="305" width="14" height="3" fill="#ff6d78"/><text x="90" y="311" fill="#9b9488">counted against everyone</text><rect x="330" y="305" width="14" height="3" fill="#66e0b2"/><text x="350" y="311" fill="#9b9488">counted against the eligible base</text></g>
+          </svg>
+        </div>
+        <div class="shotcap">one metric · two denominators — which one is real?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>L2 · ACT · own the proof</div>
+    <h2 class="d2" style="margin-bottom:.2rem">It doesn't hand you a draft — <span class="accent">it operates your tools.</span></h2>
+    <div class="casewrap" style="grid-template-columns:1.3fr .7fr;margin-top:1rem;align-items:start">
+      <div>
+        <div class="shot">
+          <div class="bar"><i></i><i></i><i></i><span class="urlpill">campaign-config · admin</span><span class="mocklab">illustrative mockup</span></div>
+          <div class="agentbanner"><span class="agdot"></span>AI agent is controlling this tab — batch-filling campaign config · 14 fields · 6 languages</div>
+          <div class="formrows">
+            <div class="frow"><span class="fk">Campaign name</span><span class="fv">filled</span><span class="ftick">✓</span></div>
+            <div class="frow"><span class="fk">Start / end window</span><span class="fv">filled</span><span class="ftick">✓</span></div>
+            <div class="frow"><span class="fk">Reward tiers</span><span class="fv">filled</span><span class="ftick">✓</span></div>
+            <div class="frow"><span class="fk">Eligibility rules</span><span class="fv">filled</span><span class="ftick">✓</span></div>
+            <div class="frow"><span class="fk">Localized copy · 6 languages</span><span class="fv">filling…</span><span class="ftick">✓</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="lead n" style="margin-top:0">The leap: it doesn't just answer — it drives your tools, doing the repetitive back-office clicking field by field, on its own.</p>
+        <div class="breadth">
+          <span class="bchip">meeting notes</span><span class="bchip">design files</span><span class="bchip">weekly reports</span>
+        </div>
+        <div class="punch" style="margin-top:1.2rem"><div class="en" style="font-size:1.3rem">It acts on its own —<br>so verification is born.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>L2 · ACT · so I pointed it at something that mattered</div>
+    <p class="lead n" style="margin-top:0;margin-bottom:.7rem;max-width:74ch;font-size:.94rem">Filling a form is low stakes — if it slips, you see it. So I handed it something where a mistake would travel: the monthly review other people make decisions on.</p>
+    <h2 class="d2" style="margin-bottom:.2rem">It built the whole thing in seconds. <span class="coral">Early versions were quietly wrong — 3×.</span></h2>
+    <div class="casewrap" style="grid-template-columns:1.25fr .75fr;margin-top:.9rem;align-items:start">
+      <div>
+        <div class="panel" style="padding:1.1rem 1.3rem">
+          <div class="attr-head">attribution breakdown<span class="mocklab">illustrative mockup</span></div>
+          <svg viewBox="0 0 520 180" width="100%" style="max-height:22vh;display:block">
+            <g stroke="rgba(243,238,227,.08)" stroke-width="1"><line x1="20" y1="150" x2="500" y2="150"/></g>
+            <rect x="40" y="55" width="46" height="95" rx="3" fill="#8aa0ff" opacity="0.8"/>
+            <rect x="120" y="32" width="46" height="118" rx="3" fill="#8aa0ff" opacity="0.8"/>
+            <rect x="200" y="86" width="46" height="64" rx="3" fill="#d8b782" opacity="0.8"/>
+            <rect x="280" y="48" width="46" height="102" rx="3" fill="#8aa0ff" opacity="0.8"/>
+            <rect x="360" y="106" width="46" height="44" rx="3" fill="#d8b782" opacity="0.8"/>
+            <rect x="440" y="72" width="46" height="78" rx="3" fill="#66e0b2" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="mstrip-lab">every day of the month · pulled, checked, written</div>
+        <div class="monthstrip"><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class="hi"></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class="hi"></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class="hi"></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class="hi"></i><i class=""></i></div>
+        <div class="shotcap">one month — pulled, broken down by cause, charted, and written before coffee</div>
+      </div>
+      <div>
+        <div class="panel card warn">
+          <div class="ct">but early versions were quietly wrong — 3×</div>
+          <ul class="pins">
+            <li><b>Ranked wrong</b> — leaderboard sorted the wrong way</li>
+            <li><b>Counted twice</b> — one campaign double-summed</li>
+            <li><b>Week started Sunday</b> — one rule flipped the conclusion</li>
+          </ul>
+        </div>
+        <div class="punch" style="margin-top:1.1rem"><div class="en" style="font-size:1.35rem">Demo is easy.<br>Production is right <em>every</em> time.</div><div class="sub">Fix the rules, not the answer.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>L3 · EMBED · own the workflow</div>
+    <h2 class="d2" style="margin-bottom:.3rem">The loop runs — and closes — <span class="accent">without me starting it.</span></h2>
+    <div class="flow">
+      <span class="node">Something happens</span><span class="arr">→</span>
+      <span class="node a">AI drafts</span><span class="arr">→</span>
+      <span class="node human">I approve</span><span class="arr">→</span>
+      <span class="node">Task opened</span><span class="arr">→</span>
+      <span class="node g">Tracked to closure</span>
+    </div>
+    <div class="casewrap" style="grid-template-columns:1fr 1fr;margin-top:1.4rem;align-items:start">
+      <div class="shot digest">
+        <div class="bar"><i></i><i></i><i></i><span class="btitle">weekly review</span><span class="mocklab">illustrative mockup</span></div>
+        <div class="dbody">
+          <div class="dhead">🧭 Weekly on-call digest</div>
+          <div class="dtag"><span class="red">grouped by severity</span> · drafted for approval · tracked to closure</div>
+          <div class="dsec red"><b>Open threads</b> grouped by severity<span class="darrow">→ the highest-risk items surface first</span></div>
+          <div class="dsec yel"><b>One escalation</b> drafted for approval<span class="darrow">→ nothing escalates without my sign-off</span></div>
+          <div class="dinsight">💡 every item is tracked until it closes</div>
+        </div>
+      </div>
+      <div>
+        <p class="lead n" style="margin-top:0">I don't kick this off. The workflow watches, drafts, and — once I approve — opens the task and follows it to closure. <b style="color:var(--ink);font-weight:500">This is a process I already knew how to run</b>: I wrote the steps down, and now it runs them. I hold the gate; the loop does the legwork.</p>
+        <div class="caption" style="margin-top:1.2rem">gates · escalation · closure</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>L4 · GOVERN · own the system</div>
+    <h2 class="d2" style="margin-bottom:.3rem">I stopped telling it what to look at — <span class="accent">I told it what I care about.</span></h2>
+    <div class="vs">
+      <div class="vcard"><div class="vk">L3 · embed</div><div class="vt">I designed the steps. It runs a process I already knew how to run, and stops at my gate.</div></div>
+      <div class="vsep">vs</div>
+      <div class="vcard on"><div class="vk">L4 · govern</div><div class="vt">I never wrote the steps. It decides what deserves attention out of an open world — in a field I don't know. I set only the goal and the guardrails.</div></div>
+    </div>
+    <div class="casewrap" style="grid-template-columns:1.04fr .96fr;margin-top:1.1rem;align-items:start">
+      <div class="shot digest">
+        <div class="bar"><i></i><i></i><i></i><span class="btitle">Trend Intelligence Engine · my own side project</span></div>
+        <div class="dbody">
+          <div class="dhead">🧭 Daily AI digest <span class="dstamp">· one day's run, 2026-07-03</span></div>
+          <div class="dtag"><span class="red">1 major</span> · <span class="yel">2 watch</span> · <span class="dimt">2 monitor</span> &nbsp;|&nbsp; 70 sources → 436 raw → 308 leads → 1 digest</div>
+          <div class="dsec red"><b>Model access is now gated by policy &amp; safety</b> — a frontier model re-deployed behind cyber-guardrails<span class="darrow">→ build regional fallback &amp; degrade paths</span></div>
+          <div class="dsec yel"><b>Open models enter coding-agent cost/routing</b> — Codex ↔ GLM · Copilot adds Kimi K2.7<span class="darrow">→ make model routing a config knob, not a rewrite</span></div>
+          <div class="dinsight">💡 read-out: switch models by task to keep cost and risk in check</div>
+          <div class="dfoot">🚨 tracked with deadlines: legacy model retirement · EU AI Act obligations</div>
+        </div>
+      </div>
+      <div>
+        <p class="lead n" style="margin-top:0"><span class="goldt">I knew nothing about intelligence-mining.</span> I owned the question — <em>"what actually deserves our attention?"</em> — and the verification. AI supplied the domain's tricks. Built on public sources, on my own time.</p>
+        <div class="rq" style="margin-top:1.1rem">what's left to own? →<br><span class="goldt">the system — the goal &amp; the guardrails.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>L5 · TEACH · own the method</div>
+    <h2 class="d2" style="margin-bottom:.2rem">The method that caught my <span class="coral">−19.6%</span> — <span class="goldt">now anyone can install it.</span></h2>
+    <p class="lead" style="max-width:64ch">I froze the whole "who counts?" checking method into a Skill — a reusable instruction pack, an SOP for AI. A teammate who never saw the trap now gets the corrected answer. Ownership stopped living only in my head.</p>
+    <div class="grid g2" style="margin-top:1.6rem">
+      <div class="panel card g"><div class="ct">what it took to ship one safely</div><p>A second AI reviewed it and found 6 things I'd gotten wrong. It was tested again and again. A human still had to approve it before it could go live.</p></div>
+      <div class="panel card warn"><div class="ct">the trap at the top</div><p>Package your first Skill and you feel unstoppable. That's the most dangerous moment — mastery is a moving target.</p></div>
+    </div>
+    <div class="punch"><div class="en">Demo → production is still <span class="goldt">a very long road.</span></div></div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>the enabler · the harness</div>
+    <h2 class="d2">A raw model is a genius on day one — <span class="coral">no laptop, no logins, no memory.</span></h2>
+    <div class="grid g3" style="margin-top:1.4rem">
+      <div class="panel card"><div class="ct">Acts · <span class="cn">自己干活</span></div><p>calls the tools, runs the steps</p></div>
+      <div class="panel card"><div class="ct">Self-checks · <span class="cn">自己评测</span></div><p>reads the result, picks the next move</p></div>
+      <div class="panel card"><div class="ct">Remembers · <span class="cn">持续记忆</span></div><p>keeps the context over time</p></div>
+    </div>
+    <div class="flow" style="margin-top:1.4rem">
+      <span class="node">cheap AI fetches</span><span class="arr">→</span><span class="node a">smart AI judges</span><span class="arr">→</span><span class="node">cheap AI writes it up</span><span class="arr">→</span><span class="node human">I approve</span>
+    </div>
+    <div class="punch" style="margin-top:1.4rem"><div class="en">The model is not the product — <span class="goldt">the harness is.</span></div></div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>three principles I keep</div>
+    <div class="grid g3" style="margin-top:1.8rem">
+      <div class="panel card"><div class="ct">01 · own the meaning</div><p>Fast confidence ≠ correctness — own what the number means.</p></div>
+      <div class="panel card"><div class="ct">02 · own the proof</div><p>Demo → production is a very long road — own the proof.</p></div>
+      <div class="panel card g"><div class="ct">03 · own your taste</div><p>The tools are the same for everyone — your taste is the 10×.</p></div>
+    </div>
+    <div class="punch" style="margin-top:2rem"><div class="en">The suit doesn't fly the pilot. <span class="goldt">The pilot flies the suit.</span></div></div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow"><span class="tick"></span>steal these · my public stack</div>
+    <h2 class="d2" style="margin-bottom:.1rem">The toolbox.</h2>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:1.4rem">
+      <a class="panel card tool" href="https://claude.ai/download" target="_blank" rel="noopener" data-noadvance><div class="ct">Desktop app</div><p><b>Claude Code</b><br>Download the app · Mac / Windows / Linux.</p><div class="tlink">claude.ai/download</div></a>
+      <a class="panel card tool" href="https://openai.com/codex/" target="_blank" rel="noopener" data-noadvance><div class="ct">Desktop app</div><p><b>Codex</b><br>Download the app · Mac / Windows.</p><div class="tlink">openai.com/codex</div></a>
+      <div class="panel card tool" data-noadvance><div class="ct">Browser</div><p><b>Chrome extension</b><br>Let Claude / Codex drive the browser &amp; batch-fill any config.</p><div class="tlink"><a href="https://claude.ai/chrome" target="_blank" rel="noopener" data-noadvance>Claude for Chrome</a> · <a href="https://developers.openai.com/codex/app/chrome-extension" target="_blank" rel="noopener" data-noadvance>Codex</a></div></div>
+      <a class="panel card tool g" href="https://github.com/larksuite/cli" target="_blank" rel="noopener" data-noadvance><div class="ct">Lark-native</div><p><b>Larki CLI</b><br>Lark / Feishu docs · sheets · IM as agent tools.</p><div class="tlink">github.com/larksuite/cli</div></a>
+      <a class="panel card tool" href="https://github.com/aaronartistzhang-afk/DailyWork" target="_blank" rel="noopener" data-noadvance><div class="ct">My skills</div><p><b>Daily Work skills</b><br>Meeting notes · on-call summary · reports.</p><div class="tlink">github.com/aaronartistzhang-afk/DailyWork</div></a>
+      <a class="panel card tool" href="https://claude.ai" target="_blank" rel="noopener" data-noadvance><div class="ct">Design</div><p><b>Claude design</b><br>Describe it — or paste a screenshot — and get a working prototype you can iterate on by chatting.</p><div class="tlink">claude.ai</div></a>
+    </div>
+    <div class="punch" style="margin-top:1.6rem"><div class="en">The tools are the same for everyone. <span class="goldt">Your taste is the 10×.</span></div></div>
+  </section>
+
+  <section class="slide center">
+    <div class="close-title">No Magic, <span class="accent">Only Method.</span></div>
+    <div class="close-sub">Own the problem, own the AI.</div>
+    <div class="nextbox">
+      <div class="nk">what I'm building next</div>
+      <div class="nt">I'm working on <b>coach-style AI products</b> — career coaching, study-abroad advising, and more. If you're building in this space, I'd genuinely like to compare notes.</div>
+    </div>
+    <div class="contact">
+      <a href="mailto:aaronartistzhang@gmail.com" data-noadvance>aaronartistzhang@gmail.com</a>
+      <span class="cdiv">·</span>
+      <a href="https://www.linkedin.com/in/shengfeng-aaron-zhang-609313a0/" target="_blank" rel="noopener" data-noadvance>linkedin.com/in/shengfeng-aaron-zhang-609313a0</a>
+    </div>
+    <div class="egg">🤖 built with AI — <b>I owned the story, the facts, and the judgment.</b></div>
+  </section>
+
+</div>
+
+<div class="counter"><b id="cur">01</b> &nbsp;/&nbsp; <span id="tot">21</span></div>
+<div class="sig" aria-label="by Aaron Zhang">
+  <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+    <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="64" cy="64" r="13.5" fill="#f3eee3"/><circle cx="92" cy="36" r="8.5" fill="#f3eee3"/><circle cx="36" cy="84" r="8.5" fill="#f3eee3"/>
+    <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.16" stroke-width="1"/>
+  </svg>
+  <span class="t">by Aaron Zhang</span>
+</div>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];let i=0;const tot=slides.length;
+document.getElementById('tot').textContent=String(tot).padStart(2,'0');
+function show(n){i=Math.max(0,Math.min(tot-1,n));slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+  document.getElementById('cur').textContent=String(i+1).padStart(2,'0');
+  document.getElementById('prog').style.width=((i+1)/tot*100)+'%';}
+document.addEventListener('keydown',e=>{
+  if(['ArrowRight','PageDown'].includes(e.key)){show(i+1);}
+  else if(e.key===' '){e.preventDefault();show(i+1);}
+  else if(['ArrowLeft','PageUp'].includes(e.key)){show(i-1);}
+  else if(e.key==='Home'){show(0);}
+  else if(e.key==='End'){show(tot-1);}
+  else if(e.key==='f'||e.key==='F'){if(!document.fullscreenElement){document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();}else{document.exitFullscreen&&document.exitFullscreen();}}
+});
+document.getElementById('deck').addEventListener('click',e=>{
+  if(e.target.closest('a,button,[data-noadvance]'))return;
+  show(e.clientX/window.innerWidth<0.25?i-1:i+1);
+});
+let tsx=0,tsy=0;
+document.addEventListener('touchstart',e=>{tsx=e.changedTouches[0].clientX;tsy=e.changedTouches[0].clientY;},{passive:true});
+document.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tsx,dy=e.changedTouches[0].clientY-tsy;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){show(dx<0?i+1:i-1);}},{passive:true});
+show(0);
+</script>
+</body>
+</html>
