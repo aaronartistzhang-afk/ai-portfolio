@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · Aaron Zhang</title>
+<meta name="description" content="Aaron Zhang, product manager at TikTok LIVE, Sydney. Ten years of campaign products across telecom, finance, e-commerce and live streaming.">
+<link rel="canonical" href="https://aaronzhang.ai/about/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Aaron Zhang">
+<meta property="og:title" content="About · Aaron Zhang">
+<meta property="og:description" content="Ten years of campaign products across telecom, finance, e-commerce and live streaming.">
+<meta property="og:url" content="https://aaronzhang.ai/about/">
+<meta property="og:image" content="https://aaronzhang.ai/card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aaronzhang.ai/card.png">
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf6;
+    --card: #ffffff;
+    --fg: #1f1d1a;
+    --muted: #5d5a54;
+    --rule: #e6e2d9;
+    --accent: #b45309;
+    --measure: 72rem;
+    --prose: 72ch;
+    --sans: ui-sans-serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    --fig-ink:   #77736a;
+    --fig-true:  #2e7d5b;
+    --fig-paper: #f5f3ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0f1216; --card:#151a20; --fg:#e9e6e0; --muted:#a39f97;
+      --rule:#272d35; --accent:#e3a35b;
+      --fig-ink:#8d8981; --fig-true:#5fbf94; --fig-paper:#12171d;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 18.5px/1.65 Charter, Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    padding: 2.6rem clamp(1.4rem, 5vw, 4rem) 5rem;
+  }
+  @media (min-width: 1800px) { body { font-size: 21px; } }
+  main { max-width: var(--measure); margin: 0 auto; }
+
+  header.site {
+    font-family: var(--sans); font-size: 0.85rem; color: var(--muted);
+    display: flex; gap: 1.6rem; align-items: center; margin-bottom: clamp(2.6rem, 6vh, 4rem);
+  }
+  header.site .name {
+    color: var(--fg); font-weight: 600; margin-right: auto;
+    display: flex; align-items: center; gap: 0.55rem;
+  }
+  header.site .name svg { display: block; flex: 0 0 auto; }
+  header.site a { color: inherit; text-decoration: none; }
+  header.site a:hover { color: var(--accent); }
+  header.site .name:hover { color: var(--fg); }
+
+  h1 {
+    font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+    line-height: 1.15; letter-spacing: -0.015em;
+    margin: 0 0 1.2rem; font-weight: 700;
+  }
+  h2 {
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--muted); font-weight: 500;
+    margin: 3rem 0 1.3rem; display: flex; align-items: center; gap: 0.85rem;
+  }
+  h2::before {
+    content: ""; width: 26px; height: 1px; flex: 0 0 auto;
+    background: linear-gradient(90deg, var(--accent), transparent);
+  }
+  p { margin: 0 0 1.25rem; max-width: var(--prose); }
+  .lede { font-size: 1.3rem; text-wrap: balance; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  em { font-style: italic; }
+
+  /* jobs:宽屏两列 */
+  ul.jobs { list-style: none; margin: 0; padding: 0; }
+  @media (min-width: 1000px) {
+    ul.jobs { display: grid; grid-template-columns: 1fr 1fr; column-gap: 3.5rem; }
+  }
+  ul.jobs li {
+    display: grid; grid-template-columns: 46px 1fr; gap: 1.05rem;
+    padding: 1.05rem 0; border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .jlogo {
+    width: 46px; height: 46px; border-radius: 9px;
+    background: #fff; border: 1px solid var(--rule);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .jlogo img { width: 26px; height: 26px; object-fit: contain; image-rendering: -webkit-optimize-contrast; }
+  .jlogo img.wide { width: 38px; height: 38px; }
+  .jrole { display: block; font-size: 1.02rem; font-weight: 700; line-height: 1.3; }
+  .jmeta {
+    display: block; font-family: var(--mono); font-size: 0.68rem;
+    letter-spacing: 0.06em; color: var(--fig-ink); margin-top: 0.18rem;
+    text-transform: uppercase;
+  }
+  .jmeta a { color: inherit; text-decoration-color: var(--rule); }
+  .jmeta a:hover { color: var(--accent); }
+  ul.jobs p { margin: 0.4rem 0 0; font-size: 0.95rem; color: var(--muted); }
+
+  ul.plain { list-style: none; margin: 0; padding: 0; }
+  @media (min-width: 1000px) {
+    ul.plain { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 3.5rem; }
+  }
+  ul.plain li { margin: 0 0 1.25rem; }
+  ul.plain .h { font-weight: 700; }
+  ul.plain p { margin: 0.2rem 0 0; font-size: 0.95rem; color: var(--muted); }
+
+  footer {
+    font-family: var(--sans); font-size: 0.85rem; color: var(--muted);
+    margin-top: 3.5rem; padding-top: 1.3rem; border-top: 1px solid var(--rule);
+  }
+  footer a { color: inherit; }
+  @media (max-width: 520px) {
+    body { font-size: 17.5px; }
+    header.site { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <a class="name" href="/">
+      <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="64" cy="64" r="13.5" fill="currentColor"/><circle cx="92" cy="36" r="8.5" fill="currentColor"/><circle cx="36" cy="84" r="8.5" fill="currentColor"/>
+        <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.18" stroke-width="2"/>
+      </svg>
+      Aaron Zhang
+    </a>
+    <a href="/#writing">Writing</a>
+    <a href="/about/">About</a>
+    <a href="/deck/">Talk</a>
+  </header>
+
+  <h1>About</h1>
+
+  <p class="lede">I'm Aaron Zhang, a product manager at TikTok LIVE, based in
+  Sydney. I build AI products for the people who run the platform's campaigns
+  and the creators who go live on it.</p>
+
+  <p>I've built campaign products for ten years, across telecom, finance,
+  e-commerce and now live streaming. The industry kept changing; the product
+  didn't. Decide who you're trying to move, reach them, then find out whether
+  the number moved because of you.</p>
+
+  <p>Half the work is efficiency, taking hours out of a process. The half I
+  care about is effect, and effect is where the arguments start. That's what I
+  <a href="/#writing">write</a> about.</p>
+
+  <h2>Where I've worked</h2>
+
+  <!-- logo 已本地化到 logos/;zju 为官网 favicon(16px),部署前可手动换高清校徽 -->
+  <ul class="jobs">
+    <li>
+      <span class="jlogo"><img src="/logos/tiktok.png" alt="" loading="lazy"></span>
+      <div>
+        <span class="jrole">AI products for campaigns and creators</span>
+        <span class="jmeta"><a href="https://www.tiktok.com/live">TikTok LIVE</a> · 2024 &rarr; now · Sydney</span>
+        <p>I build the AI products for TikTok LIVE's campaign operators and
+        creators. Three agents in production; one lifted participation and
+        revenue under a controlled A/B test.</p>
+      </div>
+    </li>
+    <li>
+      <span class="jlogo"><img src="/logos/dingdong.png" alt="" loading="lazy"></span>
+      <div>
+        <span class="jrole">Marketing and creative platforms</span>
+        <span class="jmeta"><a href="https://www.100.me">Dingdong Maicai</a> · 2021 &rarr; 2024 · Shanghai</span>
+        <p>I built the campaign platform 0&rarr;1, folding ten separate systems
+        into one, and a creative platform that generated about ten thousand AI
+        product images a month, with a patent on the rendering.</p>
+      </div>
+    </li>
+    <li>
+      <span class="jlogo"><img src="/logos/meituan.png" alt="" loading="lazy"></span>
+      <div>
+        <span class="jrole">Marketing algorithms, financial services</span>
+        <span class="jmeta"><a href="https://www.meituan.com">Meituan</a> · 2021 · Shanghai</span>
+        <p>I worked on card-acquisition campaigns, separating hand-written rules
+        from the models so analysts could tune a strategy without a deploy.</p>
+      </div>
+    </li>
+    <li>
+      <span class="jlogo"><img src="/logos/pingan.png" alt="" loading="lazy"></span>
+      <div>
+        <span class="jrole">Call-centre marketing AI</span>
+        <span class="jmeta"><a href="https://www.pingan.com">Ping An</a> · 2019 &rarr; 2021 · Shanghai</span>
+        <p>I built live intent and eligibility scoring for two hundred
+        call-centre agents, and the marketing bot inside the banking app.</p>
+      </div>
+    </li>
+    <li>
+      <span class="jlogo"><img class="wide" src="/logos/opera.jpg" alt="" loading="lazy"></span>
+      <div>
+        <span class="jrole">Marketing analytics for a US telecom carrier</span>
+        <span class="jmeta">Opera Solutions · 2017 &rarr; 2019 · Shanghai</span>
+        <p>My first job. I built Report AI, which cut report generation from
+        three hours to forty-five minutes.</p>
+      </div>
+    </li>
+    <li>
+      <span class="jlogo"><img src="/logos/zju.png" alt="" loading="lazy"></span>
+      <div>
+        <span class="jrole">Automation and control, second degree in finance</span>
+        <span class="jmeta"><a href="https://www.zju.edu.cn">Zhejiang University</a> · 2013 &rarr; 2017 · Hangzhou</span>
+      </div>
+    </li>
+  </ul>
+
+  <h2>On my own time</h2>
+
+  <ul class="plain">
+    <li>
+      <span class="h"><a href="https://github.com/aaronartistzhang-afk/DailyWork">DailyWork</a></span>
+      <p>Open-source agent skills I run in a real work week: eval gates,
+      blind A/B verification, metric attribution, cross-model review. Built
+      for Claude Code and Codex CLI.</p>
+    </li>
+    <li>
+      <span class="h">Trend Intelligence Engine</span>
+      <p>A daily digest that reads about seventy sources and hands back the
+      few things worth acting on. I knew nothing about intelligence mining; I
+      owned the question and the standard for checking answers.</p>
+    </li>
+    <li>
+      <span class="h"><a href="/deck/">No Magic, Only Method</a></span>
+      <p>A talk about how far you can let AI climb and what you still have to
+      own at every rung. Published as a deck you can fork.</p>
+    </li>
+  </ul>
+
+  <h2>Next</h2>
+
+  <p>Coach-style AI products: career coaching, study-abroad advising,
+  adjacent things. Same shape as everything above, a person facing a real
+  decision who needs an answer they can argue with. If you're building here,
+  I'd like to compare notes.</p>
+
+  <footer>
+    Aaron Zhang (Shengfeng Zhang) · Sydney ·
+    <a href="https://github.com/aaronartistzhang-afk">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/shengfeng-aaron-zhang-609313a0/">LinkedIn</a> ·
+    <a href="mailto:aaronartistzhang@gmail.com">Email</a> ·
+    <a href="/feed.xml">RSS</a>
+  </footer>
+
+</main>
+</body>
+</html>

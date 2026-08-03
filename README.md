@@ -1,19 +1,14 @@
-# No Magic, Only Method — AI Portfolio
+# aaronzhang.ai
 
-A public portfolio deck by Aaron Zhang (Product Manager, TikTok LIVE): the AI products I shipped, and the method behind them.
+Personal site. Static HTML, no build step.
 
-It is a single self-contained `index.html` — one file, no build step, no dependencies beyond Google Fonts. Every visual (charts, mockups, diagrams) is native HTML/CSS/SVG; there are no images. The deck pages through 21 slides with keyboard (arrows / space), click zones, and touch swipe; press `F` for fullscreen.
+```
+index.html        →  aaronzhang.ai/
+about/            →  aaronzhang.ai/about/
+deck/             →  aaronzhang.ai/deck/     "No Magic, Only Method" (21-slide talk)
+logos/            →  company marks used on /about/
+CNAME             →  custom domain for GitHub Pages
+```
 
-Live: https://aaronartistzhang-afk.github.io/ai-portfolio/
-
-## Contents
-
-- **Ch.1 — What I shipped:** three AI products live in production — Campaign AI, Smart Diagnosis & Outreach, and Creator Coach.
-- **Ch.2 — How I work:** a five-level ladder from asking AI to teaching it, with the working method behind each level.
-
-## Contact
-
-- Email: aaronartistzhang@gmail.com
-- LinkedIn: https://www.linkedin.com/in/shengfeng-aaron-zhang-609313a0/
-
-Built with AI. I owned the story, the facts, and the judgment.
+Source of truth for `/` and `/about/` lives in the author's local
+`AI_Plan/site/` directory; edits there are copied here on deploy.
