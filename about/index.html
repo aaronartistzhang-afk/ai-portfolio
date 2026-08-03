@@ -32,6 +32,10 @@
     --fig-ink:   #77736a;
     --fig-true:  #2e7d5b;
     --fig-paper: #f5f3ec;
+    /* 时间轴几何:日期槽 / 节点 / 列间距,rail 位置由这三个算出来 */
+    --gut: 6.5rem;
+    --node: 46px;
+    --cgap: 1.5rem;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -84,24 +88,75 @@
   a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
   em { font-style: italic; }
 
-  /* jobs:宽屏两列 */
-  ul.jobs { list-style: none; margin: 0; padding: 0; }
-  @media (min-width: 1000px) {
-    ul.jobs { display: grid; grid-template-columns: 1fr 1fr; column-gap: 3.5rem; }
+  /* ---- 页首:正文 + 右侧速览栏(把宽屏右边的空白吃掉) ---- */
+  .top { display: grid; gap: 0 clamp(2rem, 5vw, 4.5rem); }
+  @media (min-width: 940px) {
+    .top { grid-template-columns: minmax(0, 1fr) minmax(12.5rem, 15.5rem); align-items: start; }
+    .top .rail { padding-top: 0.6rem; }
   }
-  ul.jobs li {
-    display: grid; grid-template-columns: 46px 1fr; gap: 1.05rem;
-    padding: 1.05rem 0; border-bottom: 1px solid var(--rule);
-    align-items: start;
+  .rail { font-family: var(--sans); font-size: 0.9rem; line-height: 1.5; }
+  @media (max-width: 939px) {
+    .rail { margin: 0.6rem 0 0; padding-top: 1.4rem; border-top: 1px solid var(--rule); }
   }
-  .jlogo {
-    width: 46px; height: 46px; border-radius: 9px;
-    background: #fff; border: 1px solid var(--rule);
-    display: flex; align-items: center; justify-content: center;
-    overflow: hidden;
+  .rgroup { margin: 0 0 1.35rem; padding-bottom: 1.35rem; border-bottom: 1px solid var(--rule); }
+  .rgroup:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+  .rlabel {
+    font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--muted);
+    display: flex; align-items: center; gap: 0.7rem; margin: 0 0 0.5rem;
   }
-  .jlogo img { width: 26px; height: 26px; object-fit: contain; image-rendering: -webkit-optimize-contrast; }
-  .jlogo img.wide { width: 38px; height: 38px; }
+  .rlabel::before {
+    content: ""; width: 16px; height: 1px; flex: 0 0 auto;
+    background: linear-gradient(90deg, var(--accent), transparent);
+  }
+  .rline { color: var(--fg); }
+  .rsub {
+    font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--fig-ink); margin-top: 0.2rem;
+  }
+  .rlinks { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; }
+  .rlinks a { text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .rlinks a:hover { border-bottom-color: var(--accent); }
+
+  /* ---- 履历时间轴:日期槽 | 竖轴(logo 即节点) | 职位 | 说明 ---- */
+  ol.timeline {
+    list-style: none; margin: 0; padding: 0;
+    --rail-x: calc(var(--node) / 2);
+  }
+  ol.timeline li {
+    position: relative;
+    display: grid;
+    grid-template-columns: var(--node) minmax(0, 1fr);
+    column-gap: 1.1rem; row-gap: 0.3rem;
+    padding: 1.3rem 0;
+  }
+  ol.timeline li + li { border-top: 1px solid var(--rule); }
+  ol.timeline li::before {           /* 竖轴 */
+    content: ""; position: absolute; top: 0; bottom: 0;
+    left: var(--rail-x); width: 1px; background: var(--rule);
+  }
+  ol.timeline li:first-child::before { top: calc(1.3rem + var(--node) / 2); }
+  ol.timeline li:last-child::before  { bottom: calc(100% - 1.3rem - var(--node) / 2); }
+
+  .node {
+    grid-column: 1; grid-row: 1 / -1; align-self: start;
+    position: relative; z-index: 1;
+    width: var(--node); height: var(--node); border-radius: 10px;
+    background: #fff; border: 1px solid var(--rule);   /* 深色模式下 logo 仍坐白底 */
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+  }
+  .node img { width: 26px; height: 26px; object-fit: contain; image-rendering: -webkit-optimize-contrast; }
+  .node img.wide { width: 36px; height: 36px; }
+  .node img.seal { width: 40px; height: 40px; }        /* 圆形校徽,笔画细,给足尺寸 */
+  li.now .node { border-color: var(--accent); }
+
+  .when {
+    grid-column: 2; grid-row: 1;
+    font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--fig-ink); padding-top: 0.2rem;
+  }
+  li.now .when { color: var(--accent); }
+  .what { grid-column: 2; }
   .jrole { display: block; font-size: 1.02rem; font-weight: 700; line-height: 1.3; }
   .jmeta {
     display: block; font-family: var(--mono); font-size: 0.68rem;
@@ -110,15 +165,50 @@
   }
   .jmeta a { color: inherit; text-decoration-color: var(--rule); }
   .jmeta a:hover { color: var(--accent); }
-  ul.jobs p { margin: 0.4rem 0 0; font-size: 0.95rem; color: var(--muted); }
+  .jdesc { grid-column: 2; margin: 0.15rem 0 0; font-size: 0.95rem; color: var(--muted); max-width: 60ch; }
+
+  @media (min-width: 800px) {
+    ol.timeline { --rail-x: calc(var(--gut) + var(--cgap) + var(--node) / 2); }
+    ol.timeline li {
+      grid-template-columns: var(--gut) var(--node) minmax(0, 1fr);
+      column-gap: var(--cgap);
+    }
+    .when { grid-column: 1; grid-row: 1; text-align: right; padding-top: 0.55rem; }
+    .node { grid-column: 2; }
+    .what { grid-column: 3; grid-row: 1; }
+    .jdesc { grid-column: 3; grid-row: 2; }
+  }
+  @media (min-width: 1120px) {
+    ol.timeline li {
+      grid-template-columns: var(--gut) var(--node) minmax(0, 21rem) minmax(0, 1fr);
+      align-items: start;
+    }
+    .what { grid-column: 3; grid-row: 1; }
+    .jdesc { grid-column: 4; grid-row: 1; margin-top: 0.1rem; }
+  }
 
   ul.plain { list-style: none; margin: 0; padding: 0; }
-  @media (min-width: 1000px) {
-    ul.plain { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 3.5rem; }
+  @media (min-width: 900px) {
+    ul.plain { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 clamp(2rem, 4vw, 3.5rem); }
   }
   ul.plain li { margin: 0 0 1.25rem; }
   ul.plain .h { font-weight: 700; }
-  ul.plain p { margin: 0.2rem 0 0; font-size: 0.95rem; color: var(--muted); }
+  ul.plain p { margin: 0.2rem 0 0; font-size: 0.95rem; color: var(--muted); max-width: none; }
+
+  /* ---- Next:整幅面板,收尾不再留半张空白 ---- */
+  .panel {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 10px;
+    padding: 1.35rem 1.6rem; display: grid; gap: 1rem 2.5rem; align-items: center;
+  }
+  @media (min-width: 860px) { .panel { grid-template-columns: minmax(0, 1fr) auto; } }
+  .panel p { margin: 0; max-width: 66ch; }
+  .panel .cta {
+    font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em;
+    text-transform: uppercase; text-decoration: none; white-space: nowrap;
+    border: 1px solid var(--rule); border-radius: 6px; padding: 0.6rem 1rem;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .panel .cta:hover { border-color: var(--accent); }
 
   footer {
     font-family: var(--sans); font-size: 0.85rem; color: var(--muted);
@@ -148,80 +238,113 @@
     <a href="/deck/">Talk</a>
   </header>
 
-  <h1>About</h1>
+  <div class="top">
+    <div class="bio">
+      <h1>About</h1>
 
-  <p class="lede">I'm Aaron Zhang, a product manager at TikTok LIVE, based in
-  Sydney. I build AI products for the people who run the platform's campaigns
-  and the creators who go live on it.</p>
+      <p class="lede">I'm Aaron Zhang, a product manager at TikTok LIVE, based in
+      Sydney. I build AI products for the people who run the platform's campaigns
+      and the creators who go live on it.</p>
 
-  <p>I've built campaign products for ten years, across telecom, finance,
-  e-commerce and now live streaming. The industry kept changing; the product
-  didn't. Decide who you're trying to move, reach them, then find out whether
-  the number moved because of you.</p>
+      <p>I've built campaign products for ten years, across telecom, finance,
+      e-commerce and now live streaming. The industry kept changing; the product
+      didn't. Decide who you're trying to move, reach them, then find out whether
+      the number moved because of you.</p>
 
-  <p>Half the work is efficiency, taking hours out of a process. The half I
-  care about is effect, and effect is where the arguments start. That's what I
-  <a href="/#writing">write</a> about.</p>
+      <p>Half the work is efficiency, taking hours out of a process. The half I
+      care about is effect, and effect is where the arguments start. That's what I
+      <a href="/#writing">write</a> about.</p>
+    </div>
+
+    <aside class="rail">
+      <div class="rgroup">
+        <div class="rlabel">Now</div>
+        <div class="rline">Product manager, TikTok LIVE</div>
+        <div class="rsub">Sydney · since 2024</div>
+      </div>
+      <div class="rgroup">
+        <div class="rlabel">Before</div>
+        <div class="rline">Telecom, finance, e&#8209;commerce</div>
+        <div class="rsub">Shanghai · 2017 &rarr; 2024</div>
+      </div>
+      <div class="rgroup">
+        <div class="rlabel">Elsewhere</div>
+        <div class="rlinks">
+          <a href="https://github.com/aaronartistzhang-afk">GitHub</a>
+          <a href="https://www.linkedin.com/in/shengfeng-aaron-zhang-609313a0/">LinkedIn</a>
+          <a href="mailto:aaronartistzhang@gmail.com">Email</a>
+          <a href="/deck/">Talk</a>
+        </div>
+      </div>
+    </aside>
+  </div>
 
   <h2>Where I've worked</h2>
 
-  <!-- logo 已本地化到 logos/;zju 为官网 favicon(16px),部署前可手动换高清校徽 -->
-  <ul class="jobs">
-    <li>
-      <span class="jlogo"><img src="/logos/tiktok.png" alt="" loading="lazy"></span>
-      <div>
+  <!-- logo 已本地化到 logos/(无第三方请求);zju.webp 为 500px 官方校徽 -->
+  <ol class="timeline">
+    <li class="now">
+      <span class="when">2024 &rarr; now</span>
+      <span class="node"><img src="../logos/tiktok.png" alt="" loading="lazy"></span>
+      <div class="what">
         <span class="jrole">AI products for campaigns and creators</span>
-        <span class="jmeta"><a href="https://www.tiktok.com/live">TikTok LIVE</a> · 2024 &rarr; now · Sydney</span>
-        <p>I build the AI products for TikTok LIVE's campaign operators and
-        creators. Three agents in production; one lifted participation and
-        revenue under a controlled A/B test.</p>
+        <span class="jmeta"><a href="https://www.tiktok.com/live">TikTok LIVE</a> · Sydney</span>
       </div>
+      <p class="jdesc">I build the AI products for TikTok LIVE's campaign operators and
+      creators. Three agents in production; one lifted participation and
+      revenue under a controlled A/B test.</p>
     </li>
     <li>
-      <span class="jlogo"><img src="/logos/dingdong.png" alt="" loading="lazy"></span>
-      <div>
+      <span class="when">2021 &rarr; 2024</span>
+      <span class="node"><img src="../logos/dingdong.png" alt="" loading="lazy"></span>
+      <div class="what">
         <span class="jrole">Marketing and creative platforms</span>
-        <span class="jmeta"><a href="https://www.100.me">Dingdong Maicai</a> · 2021 &rarr; 2024 · Shanghai</span>
-        <p>I built the campaign platform 0&rarr;1, folding ten separate systems
-        into one, and a creative platform that generated about ten thousand AI
-        product images a month, with a patent on the rendering.</p>
+        <span class="jmeta"><a href="https://www.100.me">Dingdong Maicai</a> · Shanghai</span>
       </div>
+      <p class="jdesc">I built the campaign platform 0&rarr;1, folding ten separate systems
+      into one, and a creative platform that generated about ten thousand AI
+      product images a month, with a patent on the rendering.</p>
     </li>
     <li>
-      <span class="jlogo"><img src="/logos/meituan.png" alt="" loading="lazy"></span>
-      <div>
+      <span class="when">2021</span>
+      <span class="node"><img src="../logos/meituan.png" alt="" loading="lazy"></span>
+      <div class="what">
         <span class="jrole">Marketing algorithms, financial services</span>
-        <span class="jmeta"><a href="https://www.meituan.com">Meituan</a> · 2021 · Shanghai</span>
-        <p>I worked on card-acquisition campaigns, separating hand-written rules
-        from the models so analysts could tune a strategy without a deploy.</p>
+        <span class="jmeta"><a href="https://www.meituan.com">Meituan</a> · Shanghai</span>
       </div>
+      <p class="jdesc">I worked on card-acquisition campaigns, separating hand-written rules
+      from the models so analysts could tune a strategy without a deploy.</p>
     </li>
     <li>
-      <span class="jlogo"><img src="/logos/pingan.png" alt="" loading="lazy"></span>
-      <div>
+      <span class="when">2019 &rarr; 2021</span>
+      <span class="node"><img src="../logos/pingan.png" alt="" loading="lazy"></span>
+      <div class="what">
         <span class="jrole">Call-centre marketing AI</span>
-        <span class="jmeta"><a href="https://www.pingan.com">Ping An</a> · 2019 &rarr; 2021 · Shanghai</span>
-        <p>I built live intent and eligibility scoring for two hundred
-        call-centre agents, and the marketing bot inside the banking app.</p>
+        <span class="jmeta"><a href="https://www.pingan.com">Ping An</a> · Shanghai</span>
       </div>
+      <p class="jdesc">I built live intent and eligibility scoring for two hundred
+      call-centre agents, and the marketing bot inside the banking app.</p>
     </li>
     <li>
-      <span class="jlogo"><img class="wide" src="/logos/opera.jpg" alt="" loading="lazy"></span>
-      <div>
+      <span class="when">2017 &rarr; 2019</span>
+      <span class="node"><img class="wide" src="../logos/opera.jpg" alt="" loading="lazy"></span>
+      <div class="what">
         <span class="jrole">Marketing analytics for a US telecom carrier</span>
-        <span class="jmeta">Opera Solutions · 2017 &rarr; 2019 · Shanghai</span>
-        <p>My first job. I built Report AI, which cut report generation from
-        three hours to forty-five minutes.</p>
+        <span class="jmeta">Opera Solutions · Shanghai</span>
       </div>
+      <p class="jdesc">My first job. I built Report AI, which cut report generation from
+      three hours to forty-five minutes.</p>
     </li>
     <li>
-      <span class="jlogo"><img src="/logos/zju.png" alt="" loading="lazy"></span>
-      <div>
-        <span class="jrole">Automation and control, second degree in finance</span>
-        <span class="jmeta"><a href="https://www.zju.edu.cn">Zhejiang University</a> · 2013 &rarr; 2017 · Hangzhou</span>
+      <span class="when">2013 &rarr; 2017</span>
+      <span class="node"><img class="seal" src="../logos/zju.webp" alt="" loading="lazy"></span>
+      <div class="what">
+        <span class="jrole">Automation and control</span>
+        <span class="jmeta"><a href="https://www.zju.edu.cn">Zhejiang University</a> · Hangzhou</span>
       </div>
+      <p class="jdesc">A second degree in finance alongside it.</p>
     </li>
-  </ul>
+  </ol>
 
   <h2>On my own time</h2>
 
@@ -247,10 +370,13 @@
 
   <h2>Next</h2>
 
-  <p>Coach-style AI products: career coaching, study-abroad advising,
-  adjacent things. Same shape as everything above, a person facing a real
-  decision who needs an answer they can argue with. If you're building here,
-  I'd like to compare notes.</p>
+  <div class="panel">
+    <p>Coach-style AI products: career coaching, study-abroad advising,
+    adjacent things. Same shape as everything above, a person facing a real
+    decision who needs an answer they can argue with. If you're building here,
+    I'd like to compare notes.</p>
+    <a class="cta" href="mailto:aaronartistzhang@gmail.com">Compare notes &rarr;</a>
+  </div>
 
   <footer>
     Aaron Zhang (Shengfeng Zhang) · Sydney ·
