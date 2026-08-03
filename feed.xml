@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aaron Zhang</title>
+    <link>https://aaronzhang.ai/</link>
+    <atom:link href="https://aaronzhang.ai/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>I build AI agents for people who don't write code, then work out whether they actually did anything.</description>
+    <language>en</language>
+    <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
+
+    <!-- 9/8 发布日:把下面这块取消注释,换成真实 pubDate(RFC-822) -->
+    <!--
+    <item>
+      <title>Your AI didn't find the cause. It found your definition.</title>
+      <link>https://aaronzhang.ai/denominator/</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/denominator/</guid>
+      <pubDate>Tue, 08 Sep 2026 12:00:00 +1000</pubDate>
+      <description>A completion rate looked like it fell 19.6% in a month. It had not moved.</description>
+    </item>
+    -->
+  </channel>
+</rss>
