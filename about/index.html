@@ -83,7 +83,9 @@
     content: ""; width: 26px; height: 1px; flex: 0 0 auto;
     background: linear-gradient(90deg, var(--accent), transparent);
   }
-  p { margin: 0 0 1.25rem; max-width: var(--prose); }
+  /* pretty:只管末行孤字和难看的折行,不撑满行宽。不支持的浏览器自动忽略。
+     .lede 用 balance(见下),那是给短标题式段落的,两者分工不同 */
+  p { margin: 0 0 1.25rem; max-width: var(--prose); text-wrap: pretty; }
   .lede { font-size: 1.3rem; text-wrap: balance; }
   a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
   em { font-style: italic; }
