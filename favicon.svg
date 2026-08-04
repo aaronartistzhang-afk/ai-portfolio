@@ -10,6 +10,6 @@
   </style>
   <path class="m" d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke-width="9" stroke-linecap="round"/>
   <circle class="d" cx="64" cy="64" r="15"/>
-  <circle class="d" cx="92" cy="36" r="10"/>
-  <circle class="d" cx="36" cy="84" r="10"/>
+  <circle class="d" cx="93.1" cy="34.9" r="10"/>
+  <circle class="d" cx="31.7" cy="87" r="10"/>
 </svg>
