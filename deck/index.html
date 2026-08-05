@@ -87,6 +87,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidd
 .chapline{font-family:var(--mono);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:2.4rem}
 .caption{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-top:1.6rem}
 .byline{font-family:var(--mono);font-size:.82rem;letter-spacing:.1em;color:var(--muted);margin-top:2rem}
+.proofline{font-family:var(--mono);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:1.7rem;display:flex;gap:.85rem;align-items:center;justify-content:center;flex-wrap:wrap}
+.proofline .sep{width:3px;height:3px;border-radius:50%;background:var(--gold);flex:0 0 auto}
 .navhint{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--dim);margin-top:1.1rem}
 .mocklab{font-family:var(--mono);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-left:auto;padding-left:.9rem;white-space:nowrap}
 .pscr-top .mocklab{font-size:.5rem;letter-spacing:.14em}
@@ -348,6 +350,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidd
   .slide{padding:5vh 6vw;overflow-y:auto;justify-content:flex-start}
   .slide.center{justify-content:safe center}
   .eyebrow{flex-wrap:wrap;letter-spacing:.16em;font-size:.62rem;margin-bottom:1.2rem}
+  .proofline{font-size:.64rem;letter-spacing:.12em;gap:.6rem;margin-top:1.3rem}
   .casewrap,.outrow{grid-template-columns:1fr!important;gap:1.4rem}
   .grid.g2,.grid.g3{grid-template-columns:1fr!important}
   .grid[style*="repeat(3"]{grid-template-columns:1fr!important}
@@ -394,6 +397,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidd
     <div class="eyebrow c"><span class="tick"></span>PORTFOLIO · AI × LIVESTREAMING OPS<span class="tick"></span></div>
     <div class="close-title">No Magic, <span class="accent">Only Method.</span></div>
     <p class="lead" style="text-align:center;max-width:46ch">AI products I shipped — and the method behind them.</p>
+    <div class="proofline">3 AI products live<span class="sep"></span>revenue lift, <span class="goldt">A/B-validated</span></div>
     <div class="byline">Aaron Zhang · Product Manager @ TikTok LIVE</div>
     <div class="navhint">→ / space / swipe · F fullscreen</div>
   </section>
