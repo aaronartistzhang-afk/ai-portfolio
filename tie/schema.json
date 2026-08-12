@@ -100,14 +100,20 @@
     "coverage": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["sources_configured", "sources_reporting", "signals_raw", "signals_accepted", "clusters_total"],
+      "required": ["sources_configured", "source_keys_reporting", "signals_raw", "signals_accepted", "clusters_total"],
       "description": "Collection accounting for this run. Published so a reader can tell a quiet day from a broken one.",
       "properties": {
         "sources_configured": { "type": "integer" },
-        "sources_reporting": { "type": "integer", "description": "Sources that returned at least one item inside the window." },
+        "source_keys_reporting": {
+          "type": "integer",
+          "description": "Distinct source keys that contributed at least one accepted signal. ⚠️ NOT a subset of `sources_configured`, and not a count of registry entries: an aggregator's sub-feeds report under their own `aihot:*` keys, so this can exceed `sources_configured`. It counts reporting keys."
+        },
         "signals_raw": { "type": "integer", "description": "Items fetched, before dedup." },
         "signals_accepted": { "type": "integer", "description": "Items surviving dedup and scoring." },
-        "clusters_total": { "type": "integer" },
+        "clusters_total": {
+          "type": ["integer", "null"],
+          "description": "Null when this run recorded no cluster accounting. That covers two different situations, and `status` does not distinguish them: synthesis never succeeded (`--no-llm`, an LLM failure, a budget degrade), OR synthesis succeeded normally but ran without the input-budget selection that produces these counts. A healthy `status: ok` record can carry null here."
+        },
         "clusters_synthesized": { "type": ["integer", "null"], "description": "Clusters that fit the synthesis context budget. clusters_total - clusters_synthesized were NOT seen by the model." },
         "by_source": {
           "type": "object",
@@ -129,13 +135,98 @@
       }
     },
 
-    "risk_flags": {
+    "source_flags": {
       "type": "array",
       "items": { "type": "string" },
-      "description": "Machine-readable warnings raised during the run, e.g. 'dead_source:meta_ai_blog', 'llm_call_failed'. Published verbatim."
+      "description": "Machine-readable warnings raised during the run, e.g. 'dead_source:meta_ai_blog', 'llm_call_failed'. Published verbatim. This is the machine half of the run's flags: every entry starts with one of a known set of prefixes. The prose half is in `caveats`. Before 2026-08-10 both halves were published together under a single `risk_flags` key."
+    },
+    "caveats": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "The prose half of the run's flags — reader-facing sentences the synthesis step wrote about its own output, rather than machine warnings (those are in `source_flags`). Expected to be EMPTY on runs from 2026-08-10 onward: the channel that let the synthesis model author whole flags was closed at the parse boundary on that date. A non-empty array on a recent record means prose reached the flag channel by some other route."
+    },
+    "style_flags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What the style probe could not fix by itself, plus any notes from the English translation step. See METHODOLOGY §10 for what this does and does not mean — in particular, an empty array is not a claim that the prose is clean. Auto-fixed rewrites are not listed here."
     },
 
-    "license": { "const": "CC-BY-4.0" },
+    "insights": {
+      "type": "array",
+      "description": "Cross-trend observations: the issue's executive summary. Built by the render layer, so it reaches this record via the published markdown rather than via the internal digest.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "refs"],
+        "properties": {
+          "text": { "type": "string" },
+          "refs": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "description": "1-based positions in `trends` that this insight points at. Insights carry no inline links by design; these pointers are how an insight is tied back to its evidence."
+          }
+        }
+      }
+    },
+    "since_last": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "The continuity ledger: which of the prior issue's headline trends advanced, held, or dropped out. Prose, one sentence per entry. `trend_evolution` is the structured view of the same idea."
+    },
+    "countdowns": {
+      "type": "array",
+      "description": "Dated deadlines extracted from this window's signals — AI pricing changes, deprecations and policy enforcement dates. Re-rendered on every run until the date passes, so the same countdown appears on consecutive days with a decreasing `days_left`.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "kind", "effective_date", "days_left", "description", "url"],
+        "properties": {
+          "title": { "type": "string" },
+          "kind": { "type": "string", "description": "Human-readable label for the deadline type (pricing change / deprecation / policy). Localized, not a stable enum — do not key on it." },
+          "effective_date": {
+            "type": "string",
+            "description": "ISO `YYYY-MM-DD` when stated by the source. NOT `format: date`: the empty string is emitted when no date could be recovered from the rendered line."
+          },
+          "days_left": { "type": ["integer", "null"], "description": "Days from the issue date to `effective_date`, as counted at render time. Null when it could not be recovered." },
+          "description": { "type": "string" },
+          "url": { "type": "string", "description": "Source link, or the empty string when the rendered line carried none. NOT `format: uri` for that reason." }
+        }
+      }
+    },
+    "leaderboard": {
+      "type": "array",
+      "description": "Benchmark position changes claimed inside this window, previous → new.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["benchmark", "from", "to", "url"],
+        "properties": {
+          "benchmark": { "type": "string" },
+          "from": { "type": "string", "description": "Prior holder and score, as a single string. Empty when the rendered line stated no prior." },
+          "to": { "type": "string", "description": "New holder and score. Scores are copied verbatim from the source, units included ('76.2%', '1410 Elo') — never normalized." },
+          "url": { "type": "string", "description": "Source link, or the empty string. NOT `format: uri` for that reason." }
+        }
+      }
+    },
+    "sections": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The desk sections. Each is topic-triggered: a desk appears only on days its topic cleared a threshold, so a missing key means 'nothing qualified today', not 'this desk was removed'. `sections_missing` reports which headings were not found at all.",
+      "properties": {
+        "pricing":    { "$ref": "#/$defs/desk" },
+        "media":      { "$ref": "#/$defs/desk" },
+        "incidents":  { "$ref": "#/$defs/desk" },
+        "tools":      { "$ref": "#/$defs/desk" },
+        "frameworks": { "$ref": "#/$defs/desk" }
+      }
+    },
+    "sections_missing": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Render-layer modules whose heading was not found when this record was assembled. Normally a subset of `insights`, `since_last`, `countdowns`, `leaderboard`, `pricing`, `media`, `incidents`, `tools`, `frameworks` — low-frequency desks are expected here on a given day, whereas a missing `insights` or `since_last` is worth looking at. ⚠️ Deliberately NOT an enum: when the issue's markdown is absent entirely this carries the single sentinel `\"-\"`, which is not a module name."
+    },
+
+    "license": { "const": "MIT" },
     "author": {
       "type": "object",
       "additionalProperties": false,
@@ -152,6 +243,23 @@
       "enum": ["emerging", "rising", "peak", "declining", "dormant", "expired", "recurring"]
     },
     "level": { "enum": ["high", "medium", "low"] },
+
+    "desk": {
+      "type": "array",
+      "description": "One desk section. All five share this row shape.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "note", "source", "why", "url"],
+        "properties": {
+          "title":  { "type": "string" },
+          "note":   { "type": "string", "description": "What to look at, or what the thing does. Empty when the rendered row carried no such line." },
+          "source": { "type": "string", "description": "Where it came from — the publisher, not the aggregator or search engine that surfaced it. Empty when the rendered row carried no source line." },
+          "why":    { "type": "string", "description": "Why it was picked. Only the tools desk writes this; empty elsewhere." },
+          "url":    { "type": "string", "description": "Source link, or the empty string. NOT `format: uri` for that reason." }
+        }
+      }
+    },
 
     "trend": {
       "type": "object",
@@ -233,8 +341,8 @@
           "enum": ["primary_release", "independent_validation", "attention", "companion"]
         },
         "used_for": {
-          "enum": ["existence", "momentum", "impact", "sentiment"],
-          "description": "Which part of the trend claim this citation supports. `existence` = the thing happened; `momentum` = it is accelerating; `impact` = it matters; `sentiment` = how it is being received."
+          "enum": ["existence", "momentum", "impact", "sentiment", "creator_relevance"],
+          "description": "Which part of the trend claim this citation supports. `existence` = the thing happened; `momentum` = it is accelerating; `impact` = it matters; `sentiment` = how it is being received. `creator_relevance` is rare on this feed — the synthesis prompt is shared across domains and offers it everywhere, so it can appear on an AI record even though it reads as a creator-economy category."
         }
       }
     }
