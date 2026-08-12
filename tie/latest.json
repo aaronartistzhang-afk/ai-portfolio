@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-08-12",
+  "executed_at": "2026-08-12T01:00:07.878201Z",
+  "run_id": "2026-08-09-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-08-09T11:00:07.878177+10:00",
+    "to": "2026-08-12T11:00:07.878177+10:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-08-12T11:00:07.878177+10:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "c3a2fb168c1fd9fa",
+      "run_trend_id": "GLOBAL_20260812_AGENTS_TOOLING_PORTABLE_CONTEXT_SKILLS",
+      "name": "Agent context and skills become transferable assets",
+      "category": "agents_and_tooling",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "expired",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "Projects, chat histories, skills and plugins are starting to move across agents. Persistent memory and specialist skill libraries are becoming components of real workflows.",
+      "attention_driver": "ChatGPT Work and Codex support importing work data from other agents, while the community is expanding cross-session memory and reusable scientific skills.",
+      "evidence": [
+        {
+          "url": "https://x.com/OpenAIDevs/status/2087242829076791392",
+          "quote": "你现在可以将其他智能体的工作内容与 ChatGPT Work 和 Codex 保持同步。",
+          "claim": "This update supports the claim that ChatGPT Work and Codex can synchronize work data from other agents.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://github.com/thedotmack/claude-mem",
+          "quote": "Persistent Context Across Sessions for Every Agent",
+          "claim": "This project supports the growing demand for compressing, saving and injecting agent context across sessions.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+          "quote": "Turn any AI agent into an AI Scientist.",
+          "claim": "This skill library supports the distribution of reusable specialist capabilities across multiple agent tools.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-08-10T07:01:00Z",
+      "last_signal_update": "2026-08-12T00:44:57Z",
+      "so_what": "Treat skills and context as exportable, versionable product assets rather than attachments to a single session. Prioritize history import, permission boundaries and conflict handling, or migration will weaken user trust."
+    },
+    {
+      "canonical_id": "b0080cbe961226f5",
+      "run_trend_id": "GLOBAL_20260812_POLICY_SAFETY_REASONING_TRACE_EXPOSURE",
+      "name": "Proprietary model reasoning traces can be replayed across sessions",
+      "category": "policy_and_safety",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Security questions have emerged around the packaging and replay boundaries of reasoning traces, affecting the design of model logs, caches and multi-model orchestration.",
+      "attention_driver": "Research disclosures say encrypted reasoning blocks from several proprietary model APIs can be replayed across users, sessions and models, and may induce plaintext output.",
+      "evidence": [
+        {
+          "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces",
+          "quote": "Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users, and models.",
+          "claim": "This report supports research findings that reasoning traces from proprietary LLM APIs can be replayed and extracted.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://arxiv.org/abs/2608.09867",
+          "quote": "加密块可跨会话互换引发解密越狱",
+          "claim": "This paper abstract supports the claim that attackers can force reasoning content into plaintext output through weaker models.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://the-decoder.com/but-marinade-and-leaked-passwords-are-what-researchers-found-in-chatgpts-hidden-reasoning",
+          "quote": "扫描约7000条公开会话发现62个API密钥、33个邮箱和33个密码。",
+          "claim": "Independent reporting shows that the issue has been extended to risks of API key and sensitive information exposure.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-08-10T00:00:00Z",
+      "last_signal_update": "2026-08-11T22:40:45Z",
+      "so_what": "Do not treat encrypted reasoning blocks as internal metadata that can be safely stored and transferred. Within two weeks, audit logs, caches and cross-session replay paths. Multi-model products need to handle reasoning content, credentials and tool permissions separately."
+    },
+    {
+      "canonical_id": "d16611c126257092",
+      "run_trend_id": "GLOBAL_20260812_MONETIZATION_CHATGPT_AD_TEST",
+      "name": "ChatGPT tests ads to support free access",
+      "category": "monetization",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "ChatGPT has started testing ad monetization. At the same time, reports on the user scale of ChatGPT and Gemini have increased attention on conversational ad experiences.",
+      "attention_driver": "OpenAI announced that it is testing ads in ChatGPT and listed answer independence, privacy protection and user control as design principles.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/testing-ads-in-chatgpt",
+          "quote": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
+          "claim": "OpenAI has formally announced that it is testing ads in ChatGPT.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
+          "quote": "ChatGPT and Gemini both just passed 1 billion users",
+          "claim": "This report supports the market context that leading general-purpose chat products already have large-scale user reach.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-08-11T10:00:00Z",
+      "last_signal_update": "2026-08-11T19:41:42Z",
+      "so_what": "The unit economics of free tiers may include advertising, and product design needs clear boundaries between answers and commercial content. Track whether user control, privacy commitments and ad attribution become industry expectations."
+    }
+  ],
+  "watch_list": [],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 69,
+    "source_keys_reporting": 66,
+    "signals_raw": 432,
+    "signals_accepted": 420,
+    "clusters_total": 257,
+    "clusters_synthesized": 122,
+    "by_source": {
+      "anthropic": 2,
+      "anthropic_engineering": 1,
+      "apple_podcasts_a16z_podcast": 2,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 2,
+      "astral_codex_ten": 1,
+      "brave_search_ai": 84,
+      "buzzing_hn_zh": 1,
+      "crunchbase_news": 4,
+      "dwarkesh_blog": 1,
+      "ec_digital_strategy": 1,
+      "exponential_view": 2,
+      "gary_marcus": 3,
+      "github": 20,
+      "github_awesome_claude": 4,
+      "github_awesome_llm": 2,
+      "github_claude_skills": 14,
+      "github_cursor_rules": 2,
+      "glm": 1,
+      "google_blog_ai_rss": 1,
+      "google_cloud_databases_rss": 1,
+      "hn": 17,
+      "huggingface_blog": 4,
+      "huggingface_papers": 22,
+      "import_ai": 1,
+      "infoq_ai_zh": 20,
+      "interconnects_lambert": 2,
+      "ithome": 2,
+      "latent_space": 2,
+      "lennys_newsletter": 4,
+      "ling": 1,
+      "lmsys_blog_chatbot_arena": 2,
+      "mistral": 1,
+      "nvidia_blog": 4,
+      "openai": 10,
+      "platformer": 1,
+      "pragmatic_engineer": 1,
+      "producthunt": 20,
+      "qbitai": 10,
+      "reddit_chatgptcoding": 7,
+      "reddit_ml": 8,
+      "reddit_promptengineering": 12,
+      "semianalysis": 1,
+      "sequoia_blog": 1,
+      "simon_willison": 7,
+      "stratechery": 2,
+      "techcrunch_ai": 17,
+      "techcrunch_venture": 2,
+      "the_decoder": 1,
+      "verge_ai": 10,
+      "wired_ai": 8,
+      "x_googlelabs": 1,
+      "x_jensen_huang_jensenhuang": 1,
+      "x_levie": 2,
+      "x_openai_developers_openaidevs": 1,
+      "x_petergyang": 2,
+      "x_rauchg": 3,
+      "x_realmadhuguru": 3,
+      "x_runway_runwayml": 1,
+      "x_sundar_pichai_sundarpichai": 1,
+      "x_swyx": 3,
+      "x_thsottiaux": 3,
+      "x_trq212": 3,
+      "youtube_ai": 7,
+      "zh_podcast_crossing": 1,
+      "zh_podcast_guigu101": 1
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "ab4bbe03e5439576",
+    "prompt_hash": "b8d450426b823ad0"
+  },
+  "insights": [
+    {
+      "text": "Agent assets are becoming portable: work records and specialist skills can synchronize across tools, and products need to address permissions and version conflicts first",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "Reasoning data enters security audits: cross-session replay risks make isolation of caches, logs and tool credentials necessary",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "Audio and video entry points are still expanding: five new signals cluster around character reference, voice and agent products, and real-time creative interaction is worth tracking",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "6 trends from the previous issue have left this issue's focus.",
+    "20 days remain until Sonnet 5 pricing is restored."
+  ],
+  "countdowns": [
+    {
+      "title": "Sonnet 5 pricing restoration",
+      "kind": "Pricing",
+      "effective_date": "2026-09-01",
+      "days_left": 20,
+      "description": "Claude Sonnet 5 promotional pricing runs through 2026-08-31; afterward, pricing returns to $3/million input and $15/million output. Source",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5"
+    },
+    {
+      "title": "Cloudflare crawler routing",
+      "kind": "Policy",
+      "effective_date": "2026-09-15",
+      "days_left": 34,
+      "description": "AI companies need to distinguish search, training and agent crawlers, or they may be blocked by default by publishers. Source",
+      "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
+    },
+    {
+      "title": "Mandatory national standard for L3/L4 takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 323,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China's L3/L4 national safety standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 323,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems in Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027, and related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "media": [
+      {
+        "title": "Runway Seedance 2.5 上线，支持50角色参考",
+        "note": "Generate a 50-character music-synced short video",
+        "source": "aihot:x_runway_runwayml",
+        "why": "",
+        "url": "https://x.com/runwayml/status/2087251184658657346"
+      },
+      {
+        "title": "Introducing Muse Glimmer",
+        "note": "Deploy an Apache open-source 30B model locally",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything"
+      },
+      {
+        "title": "The best AI agents in 2026 | Product Hunt",
+        "note": "Build voice customer service and workflow orchestration agents",
+        "source": "brave_search_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/categories/ai-agents"
+      },
+      {
+        "title": "Build Low-Latency Multilingual Voice Agents: Open…",
+        "note": "Deploy low-latency multilingual voice agents",
+        "source": "huggingface_blog",
+        "why": "",
+        "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+      },
+      {
+        "title": "Sci-VBench: Evaluating Knowledge- and Reasoning-In…",
+        "note": "Evaluate reasoning capabilities in scientific video generation",
+        "source": "huggingface_papers",
+        "why": "",
+        "url": "https://huggingface.co/papers/2608.09873"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "Stealing Reasoning Traces from Proprietary LLM API…",
+        "note": "Prevent reasoning traces from being replayed across sessions",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything"
+      },
+      {
+        "title": "Decoupled Descent: Enforcing Exact Train-Test Erro…",
+        "note": "Avoid zero training error with failed generalization",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1vlu1se/decoupled_descent_enforcing_exact_traintest_error/"
+      },
+      {
+        "title": "OpenAI’s AI Agents Just Crossed A Line",
+        "note": "Investigate AI agent overreach and security boundaries",
+        "source": "youtube_ai",
+        "why": "",
+        "url": "https://www.youtube.com/watch?v=JQ97GiDwPxc"
+      },
+      {
+        "title": "‘Zoomsday’ hack uncovered using fewer than 20 AI p…",
+        "note": "Use AI prompts to find meeting software vulnerabilities",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/977909/zoom-vulnerability-ai-attack"
+      },
+      {
+        "title": "Planning/RL for a stochastic single-player merge p…",
+        "note": "Address search failures in random long-horizon planning",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1vlfavg/planningrl_for_a_stochastic_singleplayer_merge/"
+      }
+    ],
+    "tools": [
+      {
+        "title": "ajayfastfooted329/claude-linkedin-post-creator",
+        "note": "Generate LinkedIn posts in a personal style",
+        "source": "github_awesome_claude",
+        "why": "GitHub topic:awesome-claude 早期（1 ⭐），匹配你关注的「claude / code / creator」 · 查看",
+        "url": "https://github.com/ajayfastfooted329/claude-linkedin-post-creator"
+      },
+      {
+        "title": "TheSamMan123/Claude-Pro",
+        "note": "Subscribe to and renew Claude Pro following a guide",
+        "source": "github_awesome_claude",
+        "why": "GitHub topic:awesome-claude 早期（5 ⭐），匹配你关注的「claude / coding / ide」 · 查看",
+        "url": "https://github.com/TheSamMan123/Claude-Pro"
+      },
+      {
+        "title": "KbWen/agentic-os",
+        "note": "Manage coding agents with a five-step evidence flow",
+        "source": "github_cursor_rules",
+        "why": "GitHub topic:cursor-rules 成长中（123 ⭐），值得早看，匹配你关注的「agent / agents / claude」 · 查看",
+        "url": "https://github.com/KbWen/agentic-os"
+      },
+      {
+        "title": "Tines 3B",
+        "note": "Run agents in isolation and protect credentials",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI 精选 · 366 票 · 41 评论，匹配你关注的「agent / agents / automation」 · 查看",
+        "url": "https://www.producthunt.com/products/tines?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "BetterClaw",
+        "note": "Deploy scheduled email chat agents without code",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI 精选 · 292 票 · 82 评论，匹配你关注的「agent / agents / code」 · 查看",
+        "url": "https://www.producthunt.com/products/betterclaw?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "pricing",
+    "frameworks"
+  ],
+  "source_flags": [
+    "dead_source:ieee_spectrum_ai",
+    "evidence_rewritten:GLOBAL_2-f97eaa4b28923e28",
+    "evidence_rewritten:GLOBAL_2-1624dd46f86353b4",
+    "critic_missed:cluster-a0bb09e2da253576",
+    "critic_missed:cluster-4afe7fe8cbc06617"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}

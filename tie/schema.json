@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aaronzhang.ai/tie/schema/tie-daily.schema.json",
+  "title": "TIE Daily Record",
+  "description": "One day's published output of the Trend Intelligence Engine. This is a PUBLIC PROJECTION of the internal DigestReport, not a copy of it: internal routing, delivery and audience-lens fields are dropped at export time, never redacted after the fact.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "date",
+    "run_id",
+    "executed_at",
+    "domain",
+    "locale",
+    "window",
+    "generated_at",
+    "status",
+    "trends",
+    "coverage",
+    "provenance",
+    "license"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "The day this record is ABOUT: the END of the observation window. Also the filename stem, and the date in the human-readable header. Use this for anything reader-facing."
+    },
+    "executed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the pipeline actually ran. Normally the same calendar day as `date`, but not guaranteed — a catch-up run can produce a record days later."
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}-ai_industry$",
+      "description": "Opaque internal run identifier, carried through for traceability. ⚠️ THE DATE INSIDE run_id IS THE WINDOW START, NOT `date` AND NOT THE RUN DATE. For a 3-day window, run_id `2026-08-03-ai_industry` has date `2026-08-06` and executed on 2026-08-06. Never parse a date out of run_id — read `date`, `window`, or `executed_at`."
+    },
+    "domain": { "const": "ai_industry" },
+    "locale": {
+      "enum": ["en", "zh"],
+      "description": "Language of the human-readable prose fields (trend_name, short_description, attention_driver, so_what)."
+    },
+
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to", "timezone", "days"],
+      "description": "The observation window. AI runs use a 3-day rolling window: lab blogs and arXiv do not publish daily, so a 24h window is mostly empty and over-weights news aggregators.",
+      "properties": {
+        "from": { "type": "string", "format": "date-time" },
+        "to": { "type": "string", "format": "date-time" },
+        "timezone": { "type": "string", "examples": ["Australia/Sydney"] },
+        "days": { "type": "integer", "minimum": 1 }
+      }
+    },
+
+    "generated_at": { "type": "string", "format": "date-time" },
+
+    "status": {
+      "enum": ["ok", "empty", "failed"],
+      "description": "ok = at least one trend published. empty = the pipeline ran but synthesis produced nothing usable (output-side gate withheld it). failed = the run did not complete, most often because the input-side gate refused to emit on zero raw input. `empty` and `failed` days are PUBLISHED, with trends: []. Silently skipping bad days would make the archive look healthier than the pipeline is — and a `failed` day is usually the safety design working, not the engine guessing."
+    },
+    "status_detail": {
+      "type": ["string", "null"],
+      "description": "Present when status != ok. Plain-language reason, e.g. 'zero raw input; cannot distinguish quiet window from unavailable sources'."
+    },
+
+    "trends": {
+      "type": "array",
+      "maxItems": 3,
+      "items": { "$ref": "#/$defs/trend" },
+      "description": "The day's headline trends. Capped at 3 by design — this is a reading aid, not a feed."
+    },
+    "watch_list": {
+      "type": "array",
+      "maxItems": 5,
+      "items": { "$ref": "#/$defs/trend" },
+      "description": "Detected but below the bar for `trends`. Published so that promotions into `trends` on later days are auditable."
+    },
+    "trend_evolution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["trend_name", "canonical_id", "prior_stage", "current_stage", "delta_description"],
+        "properties": {
+          "trend_name": { "type": "string" },
+          "canonical_id": { "type": "string" },
+          "prior_stage": { "$ref": "#/$defs/lifecycle" },
+          "current_stage": { "$ref": "#/$defs/lifecycle" },
+          "delta_description": { "type": "string" }
+        }
+      },
+      "description": "Lifecycle transitions since the previous run, keyed by canonical_id. This is what makes the archive a time series rather than 90 unrelated snapshots."
+    },
+
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sources_configured", "sources_reporting", "signals_raw", "signals_accepted", "clusters_total"],
+      "description": "Collection accounting for this run. Published so a reader can tell a quiet day from a broken one.",
+      "properties": {
+        "sources_configured": { "type": "integer" },
+        "sources_reporting": { "type": "integer", "description": "Sources that returned at least one item inside the window." },
+        "signals_raw": { "type": "integer", "description": "Items fetched, before dedup." },
+        "signals_accepted": { "type": "integer", "description": "Items surviving dedup and scoring." },
+        "clusters_total": { "type": "integer" },
+        "clusters_synthesized": { "type": ["integer", "null"], "description": "Clusters that fit the synthesis context budget. clusters_total - clusters_synthesized were NOT seen by the model." },
+        "by_source": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" },
+          "description": "Accepted signal count per source id. Keys match ids in sources.json."
+        }
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pipeline_version", "config_hash", "prompt_hash"],
+      "description": "Reproducibility surface, and deliberately nothing more. The pipeline source is not public; these three let a reader verify that two days came from the same configuration and the same prompts, and date the day a methodology changed. The model name, the reasoning effort and the per-run cost are not published: nothing here promises them, no reader can act on them, and an MIT-licensed file cannot be unpublished once it is forked.",
+      "properties": {
+        "pipeline_version": { "type": "string", "examples": ["tie-0.2.0"] },
+        "config_hash": { "type": "string", "description": "Hash over the source registry + runtime config. A change here means the input set or scoring parameters moved." },
+        "prompt_hash": { "type": "string", "description": "Hash over the synthesis prompts. A change here means the analysis instructions moved." }
+      }
+    },
+
+    "risk_flags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Machine-readable warnings raised during the run, e.g. 'dead_source:meta_ai_blog', 'llm_call_failed'. Published verbatim."
+    },
+
+    "license": { "const": "CC-BY-4.0" },
+    "author": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    }
+  },
+
+  "$defs": {
+    "lifecycle": {
+      "enum": ["emerging", "rising", "peak", "declining", "dormant", "expired", "recurring"]
+    },
+    "level": { "enum": ["high", "medium", "low"] },
+
+    "trend": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_id",
+        "name",
+        "category",
+        "lifecycle_stage",
+        "momentum",
+        "impact_level",
+        "confidence_level",
+        "summary",
+        "attention_driver",
+        "evidence",
+        "first_detected",
+        "last_signal_update"
+      ],
+      "properties": {
+        "canonical_id": {
+          "type": "string",
+          "description": "Identity across runs. The SAME trend keeps this id as it moves through lifecycle stages, so a reader can reconstruct its history from the archive. Prefer this over `run_trend_id` for any cross-day join."
+        },
+        "run_trend_id": {
+          "type": "string",
+          "description": "Human-readable id minted by this run. Not stable across runs."
+        },
+        "name": { "type": "string" },
+        "category": {
+          "type": "string",
+          "description": "Taxonomy bucket, e.g. safety_and_governance. Vocabulary is in taxonomy.json."
+        },
+        "primary_region": { "type": "string" },
+        "secondary_regions": { "type": "array", "items": { "type": "string" } },
+        "lifecycle_stage": { "$ref": "#/$defs/lifecycle" },
+        "momentum": { "enum": ["accelerating", "stable", "decelerating"] },
+        "impact_level": { "$ref": "#/$defs/level" },
+        "opportunity_level": { "$ref": "#/$defs/level" },
+        "confidence_level": {
+          "$ref": "#/$defs/level",
+          "description": "Model-assigned, driven mainly by the tier mix of the evidence behind the trend. Not a calibrated probability."
+        },
+        "summary": { "type": "string", "description": "What happened." },
+        "attention_driver": { "type": "string", "description": "Why it is being noticed now." },
+        "so_what": {
+          "type": ["string", "null"],
+          "description": "Reader-facing implication. OPTIONAL and audience-dependent — omitted unless the run was rendered under a published, neutral lens. Never export a so_what written for a private audience."
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/evidence" },
+          "description": "Every trend carries at least one citation. A trend with no evidence is not published."
+        },
+        "first_detected": { "type": "string", "format": "date-time" },
+        "last_signal_update": { "type": "string", "format": "date-time" }
+      }
+    },
+
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "quote", "claim", "source_tier", "used_for"],
+      "properties": {
+        "content_hash": {
+          "type": "string",
+          "description": "Stable identity for the underlying item. This is the ONLY key that survives across the pipeline's internal artifacts — item ids and canonical URLs are both rewritten during normalization. Use `content_hash`, or `url`, to join evidence across days; never assume an id is stable."
+        },
+        "url": { "type": "string", "format": "uri" },
+        "quote": {
+          "type": "string",
+          "description": "VERBATIM excerpt from the cited page. Not a paraphrase. Truncated, never edited."
+        },
+        "claim": {
+          "type": "string",
+          "description": "The specific assertion this quote is being used to support."
+        },
+        "source_tier": {
+          "enum": ["primary_release", "independent_validation", "attention", "companion"]
+        },
+        "used_for": {
+          "enum": ["existence", "momentum", "impact", "sentiment"],
+          "description": "Which part of the trend claim this citation supports. `existence` = the thing happened; `momentum` = it is accelerating; `impact` = it matters; `sentiment` = how it is being received."
+        }
+      }
+    }
+  }
+}

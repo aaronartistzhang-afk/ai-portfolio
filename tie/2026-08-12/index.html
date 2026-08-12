@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>AI Daily — 2026-08-12</title>
+<meta name="description" content="Projects, chat histories, skills and plugins are starting to move across agents. Persistent memory and specialist skill libraries are becoming components of rea">
+<link rel="canonical" href="https://aaronzhang.ai/tie/2026-08-12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="aaronzhang.ai">
+<meta property="og:title" content="AI Daily — 2026-08-12">
+<meta property="og:description" content="Projects, chat histories, skills and plugins are starting to move across agents. Persistent memory and specialist skill libraries are becoming components of rea">
+<meta property="og:url" content="https://aaronzhang.ai/tie/2026-08-12">
+<meta property="og:image" content="https://aaronzhang.ai/card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aaronzhang42">
+<meta name="twitter:creator" content="@aaronzhang42">
+<link rel="alternate" type="application/rss+xml" title="AI Daily" href="https://aaronzhang.ai/tie/feed.xml">
+<link rel="stylesheet" href="/tie/tie.css">
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <a class="name" href="/">
+      <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="64" cy="64" r="13.5" fill="currentColor"/><circle cx="93.1" cy="34.9" r="8.5" fill="currentColor"/><circle cx="31.7" cy="87" r="8.5" fill="currentColor"/>
+        <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.18" stroke-width="2"/>
+      </svg>
+      Aaron Zhang
+    </a>
+    <a href="/#writing">Writing</a>
+    <details class="menu">
+      <summary>AI Daily</summary>
+      <div class="menupanel">
+        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this weekday</span></a>
+        <a href="/tie/archive?from=menu"><b>Archive</b><span>Every issue so far, quiet days included</span></a>
+        <a href="/tie/how-it-works?from=menu"><b>How it works</b><span>How 69 sources become three trends, in two pictures</span></a>
+        <a href="/tie/sources?from=menu"><b>What it reads</b><span>All 69 sources and how much weight each carries</span></a>
+        <a href="/tie/data?from=menu"><b>Get it as data</b><span>A JSON file per issue. No key, no rate limit</span></a>
+        <a href="/tie/terms?from=menu"><b>Licence</b><span>MIT, and what that lets you do with the data</span></a>
+      </div>
+    </details>
+    <a href="/deck/?from=nav">Talk</a>
+    <a href="/about/">About</a>
+  </header>
+
+  <div class="tiegrid">
+  <article class="tie">
+    <p class="crumb"><a href="/tie/">AI Daily</a><span class="sep">/</span><a href="/tie/archive">Archive</a><span class="sep">/</span><span class="here">Issue</span> <span class="sep">&middot;</span> 2026-08-12</p>
+    <h1>AI Daily</h1>
+    <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
+    69 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
+
+    <p class="runbar"><span class="live"></span> <b>~3 min read</b>
+      &middot; covering 9&ndash;12 August &middot; updated weekdays, 11:00 Sydney</p>
+
+    <div class="ribbon">
+      <p><span class="lbl">Deadlines</span> <a href="https://www.anthropic.com/news/claude-sonnet-5" rel="nofollow noopener"><b>20d</b> Sonnet 5 pricing restoration</a> <span class="sep">·</span> <a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/" rel="nofollow noopener"><b>34d</b> Cloudflare crawler routing</a> <span class="sep">·</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener"><b>323d</b> Mandatory national standard for L3/L4 takes effect</a> <a class="more" href="#deadlines">see all 4 &rarr;</a></p>
+    </div>
+
+    <section class="lead">
+      <h2 id="the-read">The read</h2>
+      <ul>
+        <li>Agent assets are becoming portable: work records and specialist skills can synchronize across tools, and products need to address permissions and version conflicts first <a class="xref" href="#t1">#1</a></li>
+        <li>Reasoning data enters security audits: cross-session replay risks make isolation of caches, logs and tool credentials necessary <a class="xref" href="#t2">#2</a></li>
+        <li>Audio and video entry points are still expanding: five new signals cluster around character reference, voice and agent products, and real-time creative interaction is worth tracking </li>
+      </ul>
+    </section>
+
+    <p class="counts"><b>1</b> major &middot; <b>2</b> watch
+      &middot; <b>0</b> monitoring</p>
+
+    <article class="trend major" id="t1">
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Agents and tooling</span></p>
+      <h2 id="agent-context-and-skills-become-transferable-assets">Agent context and skills become transferable assets</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 3 press</span></p>
+      <p class="body">Projects, chat histories, skills and plugins are starting to move across agents. Persistent memory and specialist skill libraries are becoming components of real workflows.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Treat skills and context as exportable, versionable product assets rather than attachments to a single session. Prioritize history import, permission boundaries and conflict handling, or migration will weaken user trust.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it happened</span>
+          <a href="https://x.com/OpenAIDevs/status/2087242829076791392" rel="nofollow noopener">x.com</a></p>
+        <p class="quote">&ldquo;你现在可以将其他智能体的工作内容与 ChatGPT Work 和 Codex 保持同步。&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://github.com/thedotmack/claude-mem" rel="nofollow noopener">github.com</a></p>
+        <p class="quote">&ldquo;Persistent Context Across Sessions for Every Agent&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://github.com/K-Dense-AI/scientific-agent-skills" rel="nofollow noopener">github.com</a></p>
+        <p class="quote">&ldquo;Turn any AI agent into an AI Scientist.&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t2">
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Policy and safety</span></p>
+      <h2 id="proprietary-model-reasoning-traces-can-be-replayed-across-sessions">Proprietary model reasoning traces can be replayed across sessions</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 3 independent</span></p>
+      <p class="body">Security questions have emerged around the packaging and replay boundaries of reasoning traces, affecting the design of model logs, caches and multi-model orchestration.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Do not treat encrypted reasoning blocks as internal metadata that can be safely stored and transferred. Within two weeks, audit logs, caches and cross-session replay paths. Multi-model products need to handle reasoning content, credentials and tool permissions separately.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it happened</span>
+          <a href="https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces" rel="nofollow noopener">simonwillison.net</a></p>
+        <p class="quote">&ldquo;Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users, and models.&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://arxiv.org/abs/2608.09867" rel="nofollow noopener">arxiv.org</a></p>
+        <p class="quote">&ldquo;加密块可跨会话互换引发解密越狱&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/but-marinade-and-leaked-passwords-are-what-researchers-found-in-chatgpts-hidden-reasoning" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;扫描约7000条公开会话发现62个API密钥、33个邮箱和33个密码。&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t3">
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Monetization</span></p>
+      <h2 id="chatgpt-tests-ads-to-support-free-access">ChatGPT tests ads to support free access</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 press</span></p>
+      <p class="body">ChatGPT has started testing ad monetization. At the same time, reports on the user scale of ChatGPT and Gemini have increased attention on conversational ad experiences.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>The unit economics of free tiers may include advertising, and product design needs clear boundaries between answers and commercial content. Track whether user control, privacy commitments and ad attribution become industry expectations.</p>
+      <details>
+        <summary>Evidence &middot; 2</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://openai.com/index/testing-ads-in-chatgpt" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users" rel="nofollow noopener">theverge.com</a></p>
+        <p class="quote">&ldquo;ChatGPT and Gemini both just passed 1 billion users&rdquo;</p>
+      </div>
+      </details>
+    </article>
+
+
+    <section class="mod">
+      <h3 id="since-last-issue">Since last issue</h3>
+      <ul class="bullets">
+        <li>6 trends from the previous issue have left this issue&#x27;s focus.</li>
+        <li>20 days remain until Sonnet 5 pricing is restored.</li>
+      </ul>
+    </section>
+
+
+    <section class="also">
+      <h3 id="also-worth-knowing">Also worth knowing &middot; 19</h3>
+      <p class="sub">Everything else that made the cut today but was not big enough to lead.
+      Grouped by desk, open only what you need.</p>
+      <details class="cat" id="deadlines">
+        <summary><span class="cname">Deadlines ahead</span><span class="cn">4</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><span class="dd">20d</span> <a href="https://www.anthropic.com/news/claude-sonnet-5" rel="nofollow noopener">Sonnet 5 pricing restoration</a> &middot; 2026-09-01</p><p class="n">Claude Sonnet 5 promotional pricing runs through 2026-08-31; afterward, pricing returns to $3/million input and $15/million output. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">34d</span> <a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/" rel="nofollow noopener">Cloudflare crawler routing</a> &middot; 2026-09-15</p><p class="n">AI companies need to distinguish search, training and agent crawlers, or they may be blocked by default by publishers. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">323d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory national standard for L3/L4 takes effect</a> &middot; 2027-07-01</p><p class="n">The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine hand</p></div>
+        <div class="r"><p class="t"><span class="dd">323d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China&#x27;s L3/L4 national safety standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Autonomous Driving Systems in Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027, and related auton</p></div>
+        </div>
+      </details>
+      <details class="cat" id="media">
+        <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://x.com/runwayml/status/2087251184658657346" rel="nofollow noopener">Runway Seedance 2.5 上线，支持50角色参考</a></p><p class="n">Generate a 50-character music-synced short video</p><p class="m">AIHOT</p></div>
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything" rel="nofollow noopener">Introducing Muse Glimmer</a></p><p class="n">Deploy an Apache open-source 30B model locally</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/categories/ai-agents" rel="nofollow noopener">The best AI agents in 2026 | Product Hunt</a></p><p class="n">Build voice customer service and workflow orchestration agents</p><p class="m">Brave Search</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents" rel="nofollow noopener">Build Low-Latency Multilingual Voice Agents: Open…</a></p><p class="n">Deploy low-latency multilingual voice agents</p><p class="m">Hugging Face Blog</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2608.09873" rel="nofollow noopener">Sci-VBench: Evaluating Knowledge- and Reasoning-In…</a></p><p class="n">Evaluate reasoning capabilities in scientific video generation</p><p class="m">Hugging Face Papers</p></div>
+        </div>
+      </details>
+      <details class="cat" id="incidents">
+        <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything" rel="nofollow noopener">Stealing Reasoning Traces from Proprietary LLM API…</a></p><p class="n">Prevent reasoning traces from being replayed across sessions</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/MachineLearning/comments/1vlu1se/decoupled_descent_enforcing_exact_traintest_error/" rel="nofollow noopener">Decoupled Descent: Enforcing Exact Train-Test Erro…</a></p><p class="n">Avoid zero training error with failed generalization</p><p class="m">r/MachineLearning</p></div>
+        <div class="r"><p class="t"><a href="https://www.youtube.com/watch?v=JQ97GiDwPxc" rel="nofollow noopener">OpenAI’s AI Agents Just Crossed A Line</a></p><p class="n">Investigate AI agent overreach and security boundaries</p><p class="m">YouTube · AI channels</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/ai-artificial-intelligence/977909/zoom-vulnerability-ai-attack" rel="nofollow noopener">‘Zoomsday’ hack uncovered using fewer than 20 AI p…</a></p><p class="n">Use AI prompts to find meeting software vulnerabilities</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/MachineLearning/comments/1vlfavg/planningrl_for_a_stochastic_singleplayer_merge/" rel="nofollow noopener">Planning/RL for a stochastic single-player merge p…</a></p><p class="n">Address search failures in random long-horizon planning</p><p class="m">r/MachineLearning</p></div>
+        </div>
+      </details>
+      <details class="cat" id="tools">
+        <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/ajayfastfooted329/claude-linkedin-post-creator" rel="nofollow noopener">ajayfastfooted329/claude-linkedin-post-creator</a></p><p class="n">Generate LinkedIn posts in a personal style</p><p class="m">GitHub · topic:awesome-claude</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/TheSamMan123/Claude-Pro" rel="nofollow noopener">TheSamMan123/Claude-Pro</a></p><p class="n">Subscribe to and renew Claude Pro following a guide</p><p class="m">GitHub · topic:awesome-claude</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/KbWen/agentic-os" rel="nofollow noopener">KbWen/agentic-os</a></p><p class="n">Manage coding agents with a five-step evidence flow</p><p class="m">GitHub · topic:cursor-rules</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/tines?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Tines 3B</a></p><p class="n">Run agents in isolation and protect credentials</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/betterclaw?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">BetterClaw</a></p><p class="n">Deploy scheduled email chat agents without code</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+    </section>
+
+    <p class="tiefoot">Read 420 stories across
+      69 sources today and published 3.
+      <a href="/tie/archive">Archive</a> &middot;
+      <a href="/tie/2026-08-12.json">This issue as data</a> &middot;
+      <a href="/tie/sources">What it reads</a></p>
+  </article>
+
+    <aside class="rail">
+      <h2>AI Daily</h2>
+      <nav>
+        <a href="/tie/">Today&#x27;s issue</a>
+        <a href="/tie/archive">Archive</a>
+        <a href="/tie/how-it-works">How it works</a>
+        <a href="/tie/sources">What it reads</a>
+        <a href="/tie/data">Get it as data</a>
+        <a href="/tie/terms">Licence</a>
+      </nav>
+      <h2>On this page</h2>
+      <nav class="toc">
+        <a href="#the-read">The read</a>
+        <a href="#agent-context-and-skills-become-transferable-assets">Agent context and skills become transferable assets</a>
+        <a href="#proprietary-model-reasoning-traces-can-be-replayed-across-sessions">Proprietary model reasoning traces can be replayed across sessions</a>
+        <a href="#chatgpt-tests-ads-to-support-free-access">ChatGPT tests ads to support free access</a>
+        <a href="#since-last-issue">Since last issue</a>
+        <a href="#also-worth-knowing">Also worth knowing</a>
+      </nav>
+      <a class="back" href="/">&larr; aaronzhang.ai</a>
+    </aside>
+  </div>
+
+  <footer>
+    Aaron Zhang ·
+    <a href="/#writing">Writing</a> ·
+    <a href="/tie/">AI Daily</a> ·
+    <a href="/deck/">Talk</a> ·
+    <a href="/about/">About</a> ·
+    <a href="https://x.com/aaronzhang42">X</a> ·
+    <a href="https://github.com/aaronartistzhang-afk">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/aaronzhangai/">LinkedIn</a> ·
+    <a href="mailto:aaronartistzhang@gmail.com">Email</a> ·
+    <a href="/feed.xml">RSS</a>
+  </footer>
+
+</main>
+<script>
+  // The menu is a <details>: it opens, closes and takes keyboard focus without
+  // this. All that is missing natively is click-away and Escape.
+  (function () {
+    var shut = function (skip) {
+      document.querySelectorAll('header.site .menu[open]').forEach(function (d) {
+        if (!skip || !d.contains(skip)) d.open = false;
+      });
+    };
+    document.addEventListener('click', function (e) { shut(e.target); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(null); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a693901685644241abd983662d731b5f"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

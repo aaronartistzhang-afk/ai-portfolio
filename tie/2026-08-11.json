@@ -1,0 +1,438 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-08-11",
+  "executed_at": "2026-08-11T01:00:08.007801Z",
+  "run_id": "2026-08-08-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-08-08T11:00:08.007752+10:00",
+    "to": "2026-08-11T11:00:08.007752+10:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-08-11T11:00:08.007752+10:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "2c0cd67adea20706",
+      "run_trend_id": "GLOBAL_20260811_MODEL_RELEASES_CLAUDE_OPUS5_LONG_RUNNING_AGENTS",
+      "name": "Claude Opus 5 strengthens long-horizon agent capabilities",
+      "category": "model_releases",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Anthropic released Claude Opus 5 and made Claude Code's automatic mode the default option, raising expectations for the automatic execution of long-horizon coding and professional tasks.",
+      "attention_driver": "Reliability of long-horizon tasks and the cost of human oversight",
+      "evidence": [
+        {
+          "url": "https://anthropic.com/news/claude-opus-5",
+          "quote": "Opus 5 is a step change improvement for the Opus tier powering long-running agents",
+          "claim": "The official announcement says Opus 5 improves capabilities for long-horizon agents, coding and professional work.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Aug/8/auto-mode",
+          "quote": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+          "claim": "Claude Code has made automatic mode the default choice for multiple subscription tiers.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://benchlm.ai/benchmarks/swe-bench-verified",
+          "quote": "Claude Opus 5 leads with 96%.",
+          "claim": "Public leaderboards list Claude Opus 5 as a SWE-bench Verified leader.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-08-08T22:36:03Z",
+      "last_signal_update": "2026-08-10T00:00:00Z",
+      "so_what": "【Capabilities, evaluation】Break long-horizon tasks into recoverable steps, and use real workflows to evaluate success rates, rework rates and the frequency of human handoffs. Do not choose the default model based only on a single coding leaderboard."
+    },
+    {
+      "canonical_id": "c81744ef52e1716f",
+      "run_trend_id": "GLOBAL_20260811_OPEN_SOURCE_RELEASES_META_MUSE_GLIMMER",
+      "name": "Meta returns to open-weight agent models with Muse Glimmer",
+      "category": "open_source_releases",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "Meta released the 30B open-weight Muse Glimmer, with messaging focused on local, multimodal and continuously running agent workflows. Discussion of its personal AI narrative has also expanded.",
+      "attention_driver": "Control over local deployment and persistent agent experiences",
+      "evidence": [
+        {
+          "url": "https://huggingface.co/blog/muse-glimmer",
+          "quote": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+          "claim": "An independent release note describes Muse Glimmer as a local, agentic, multimodal and open model.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer",
+          "quote": "Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license",
+          "claim": "Reports say the 30B model uses the Apache 2.0 license and is positioned for end-to-end agent use.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision",
+          "quote": "Meta’s new open-weight Muse Glimmer model offers a glimpse of Mark Zuckerberg’s personal superintelligence vision",
+          "claim": "Media link Glimmer to Meta's vision for personal agent products.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-08-10T00:00:00Z",
+      "last_signal_update": "2026-08-10T23:56:03Z",
+      "so_what": "【Capabilities, monetization】For privacy-sensitive or high-frequency tasks, evaluate tiered approaches that pair local models with cloud models. Product value should be measured by sustained task completion and deployment cost, rather than parameter scale alone."
+    },
+    {
+      "canonical_id": "02f1e8cf22caa74c",
+      "run_trend_id": "GLOBAL_20260811_AUDIO_VIDEO_NVIDIA_OPEN_VOICE_AGENTS",
+      "name": "Open voice agents target low latency and tool calling",
+      "category": "audio_video_and_voice",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "NVIDIA-related open-source releases cover multilingual low-latency voice and full-duplex conversational tool calling. Deployment control and interaction latency for voice agents have become points of competition.",
+      "attention_driver": "Near-real-time voice interaction and self-hosting needs",
+      "evidence": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+          "quote": "Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control",
+          "claim": "NVIDIA Magpie TTS is positioned as a voice agent component with low latency, multilingual support and full deployment control.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://marktechpost.com/2026/08/09/nvidia-releases-nemotronlabs-voicechat-11b-an-open-full-duplex-speech-to-speech-model-with-450-ms-turn-taking-and-live-tool-calling",
+          "quote": "支持约 450 毫秒轮换与实时工具调用",
+          "claim": "Reports mention that open full-duplex voice models support about 450 milliseconds of turn-taking and real-time tool calling.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-08-09T23:58:34Z",
+      "last_signal_update": "2026-08-10T16:25:36Z",
+      "so_what": "【Capabilities, infrastructure】Voice products should treat turn-taking latency, interruption handling and tool-calling error rates as core experience metrics. Open weights can reduce deployment lock-in, but real-time inference costs still need to be calculated."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "e0d2d6bb512e4573",
+      "run_trend_id": "GLOBAL_20260811_RESEARCH_BREAKTHROUGHS_WEATHERNEXT_CYCLONES",
+      "name": "WeatherNext shows the value of human-model collaboration in high-risk forecasting",
+      "category": "research_breakthroughs",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "stable",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "DeepMind's WeatherNext was reported to provide additional warning time in a hurricane forecasting case, emphasizing that model value needs to be validated through specific decision windows.",
+      "attention_driver": "Quantifiable time gained for earlier decisions",
+      "evidence": [
+        {
+          "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day",
+          "quote": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
+          "claim": "Reports say WeatherNext gained an additional day of warning time for forecasters.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones",
+          "quote": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+          "claim": "DeepMind published progress by WeatherNext in cyclone forecasting.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        }
+      ],
+      "first_detected": "2026-08-08T09:18:50Z",
+      "last_signal_update": "2026-08-08T11:05:50Z",
+      "so_what": "【Evaluation, capabilities】High-risk products should evaluate models by \"how much usable decision time is gained in advance\" and the quality of human adoption. Offline accuracy should not be treated as equivalent to business value."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 69,
+    "source_keys_reporting": 60,
+    "signals_raw": 334,
+    "signals_accepted": 331,
+    "clusters_total": 203,
+    "clusters_synthesized": 95,
+    "by_source": {
+      "anthropic": 1,
+      "anthropic_engineering": 1,
+      "app": 1,
+      "apple_podcasts_a16z_podcast": 1,
+      "apple_podcasts_the_cognitive_revolution": 2,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai_rss": 1,
+      "astral_codex_ten": 1,
+      "brave_search_ai": 85,
+      "buzzing_hn_zh": 2,
+      "crunchbase_news": 2,
+      "ec_digital_strategy": 1,
+      "exponential_view": 2,
+      "gary_marcus": 1,
+      "github": 20,
+      "github_awesome_claude": 2,
+      "github_awesome_llm": 1,
+      "github_claude_skills": 12,
+      "github_cursor_rules": 2,
+      "hn": 12,
+      "huggingface_blog": 3,
+      "import_ai": 1,
+      "infoq_ai_zh": 19,
+      "interconnects_lambert": 2,
+      "ithome": 4,
+      "latent_space": 1,
+      "lennys_newsletter": 4,
+      "marktechpost_rss": 1,
+      "mistral": 1,
+      "nvidia_blog": 1,
+      "openai": 8,
+      "producthunt": 19,
+      "qbitai": 10,
+      "reddit_chatgptcoding": 9,
+      "reddit_ml": 5,
+      "semianalysis": 1,
+      "sequoia_blog": 1,
+      "simon_willison": 7,
+      "stratechery": 1,
+      "techcrunch_ai": 11,
+      "techcrunch_venture": 1,
+      "unknown": 1,
+      "verge_ai": 6,
+      "wired_ai": 5,
+      "x_amasad": 2,
+      "x_bcherny": 1,
+      "x_elon_musk_elonmusk_xai": 1,
+      "x_garrytan": 1,
+      "x_levie": 2,
+      "x_mattturck": 1,
+      "x_petergyang": 3,
+      "x_qwen_alibaba_qwen": 1,
+      "x_rauchg": 3,
+      "x_realmadhuguru": 2,
+      "x_swyx": 3,
+      "x_thenanyu": 1,
+      "x_thsottiaux": 1,
+      "youtube_ai": 2,
+      "zh_podcast_crossing": 1,
+      "zh_podcast_guigu101": 1
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "046f0c593813877b",
+    "prompt_hash": "a7e990423fc364d5"
+  },
+  "insights": [
+    {
+      "text": "The threshold for default automatic execution rises: As long-horizon task capabilities improve, the frequency of human handoffs will become a key metric for whether a default mode can launch.",
+      "refs": [
+        1,
+        2
+      ]
+    },
+    {
+      "text": "Voice experience can be quantified: Turn-taking latency and tool-calling error rates should enter the core experience metrics for voice agents.",
+      "refs": [
+        3
+      ]
+    },
+    {
+      "text": "Framework selection gains attention: Five new signals are concentrated in agent frameworks, and product teams need to track differences between managed and local toolchains.",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "None of the 6 trends featured as headlines in the previous issue continued this issue.",
+    "21 days remain until Sonnet 5 pricing returns."
+  ],
+  "countdowns": [
+    {
+      "title": "Sonnet 5 pricing returns",
+      "kind": "Pricing",
+      "effective_date": "2026-09-01",
+      "days_left": 21,
+      "description": "Claude Sonnet 5's temporary pricing lasts until 2026-08-31; afterward, it returns to $3/million input and $15/million output. Source",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5"
+    },
+    {
+      "title": "Cloudflare crawler routing",
+      "kind": "Policy",
+      "effective_date": "2026-09-15",
+      "days_left": 35,
+      "description": "AI companies must distinguish search, training and agent crawlers, or publishers may block them by default. Source",
+      "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
+    },
+    {
+      "title": "Mandatory L3/L4 national standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 324,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handoff and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China's L3/L4 safety national standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 324,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is planned to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "incidents": [
+      {
+        "title": "Expanding Daybreak as the Cyber Defense Window Nar…",
+        "note": "Shorten the window for vulnerability validation and defensive response",
+        "source": "openai_blog",
+        "why": "",
+        "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
+      },
+      {
+        "title": "The spontaneous coordination in the OpenAI-Hugging…",
+        "note": "Guide agent collaboration to serve public safety",
+        "source": "follow_builders:amasad",
+        "why": "",
+        "url": "https://x.com/amasad/status/2086628413322981747"
+      },
+      {
+        "title": "Agent Arena | AI Agent Performance Leaderboard",
+        "note": "Choose agent models based on tool execution capabilities",
+        "source": "brave_search_ai",
+        "why": "",
+        "url": "https://arena.ai/leaderboard/agent"
+      },
+      {
+        "title": "Prompt injection is the most common way that scamm…",
+        "note": "Prevent web prompt injection from stealing credentials",
+        "source": "follow_builders:bcherny",
+        "why": "",
+        "url": "https://x.com/bcherny/status/2086520950259118464"
+      },
+      {
+        "title": "Lindy Teammate: Flo Crivello on Multiplayer Agents…",
+        "note": "Manage team memory for Slack agents",
+        "source": "apple_podcasts_the_cognitive_revolution",
+        "why": "",
+        "url": "https://www.cognitiverevolution.ai/lindy-teammate-flo-crivello-on-multiplayer-agents-memory-why-he-d-ban-the-chinese-models-he-uses/"
+      }
+    ],
+    "tools": [
+      {
+        "title": "K-Dense-AI/scientific-agent-skills",
+        "note": "Connect research agents to an experimental skills library",
+        "source": "GitHub topic:claude-skills 明星仓库",
+        "why": "GitHub topic:claude-skills 明星仓库（33,151 ⭐），匹配你关注的「agent / claude / code」 · 查看",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+      },
+      {
+        "title": "VoltAgent/awesome-agent-skills",
+        "note": "Select reusable skills for different agents",
+        "source": "GitHub topic:claude-skills 明星仓库",
+        "why": "GitHub topic:claude-skills 明星仓库（29,953 ⭐），匹配你关注的「agent / claude / code」 · 查看",
+        "url": "https://github.com/VoltAgent/awesome-agent-skills"
+      },
+      {
+        "title": "teng-lin/notebooklm-py",
+        "note": "Use Python to automate NotebookLM workflows",
+        "source": "GitHub topic:claude-skills 明星仓库",
+        "why": "GitHub topic:claude-skills 明星仓库（18,615 ⭐），匹配你关注的「agent / agents / claude」 · 查看",
+        "url": "https://github.com/teng-lin/notebooklm-py"
+      },
+      {
+        "title": "oqoqo",
+        "note": "Build private benchmarks to evaluate agent performance",
+        "source": "Product Hunt AI 精选",
+        "why": "Product Hunt AI 精选 · 311 票 · 29 评论，匹配你关注的「agent / agents / eval」 · 查看",
+        "url": "https://www.producthunt.com/products/oqoqo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Paritok",
+        "note": "Compress context to reduce coding agent costs",
+        "source": "Product Hunt AI 精选",
+        "why": "Product Hunt AI 精选 · 234 票 · 28 评论，匹配你关注的「agent / coding / tool」 · 查看",
+        "url": "https://www.producthunt.com/products/paritok?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "frameworks": [
+      {
+        "title": "Introducing Muse Glimmer",
+        "note": "Evaluate the Apache open-source 30B agent model",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything"
+      },
+      {
+        "title": "openclaw/Peekaboo",
+        "note": "Have agents take screenshots and perform visual question answering",
+        "source": "github_trending",
+        "why": "",
+        "url": "https://github.com/openclaw/Peekaboo"
+      },
+      {
+        "title": "微软正式发布 Agent Framework Harness 和 Hosted Agents",
+        "note": "Try Microsoft's managed agent runtime framework",
+        "source": "infoq_ai_zh",
+        "why": "",
+        "url": "https://www.infoq.cn/article/aDEJegvNSKwvue2JZ0yI?utm_source=rss&utm_medium=article"
+      },
+      {
+        "title": "Hexis",
+        "note": "Use Git to centrally manage agent skills and tools",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/bevel-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Toolport",
+        "note": "Share tools through a local MCP gateway",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/conduit-12?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "pricing",
+    "media"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-692138408ad08ed3",
+    "evidence_rewritten:GLOBAL_2-05c689415d01effd",
+    "evidence_rewritten:GLOBAL_2-c5f779de349c865b",
+    "evidence_rewritten:GLOBAL_2-7d0ac470bafb0035",
+    "critic_missed:cluster-4afe7fe8cbc06617",
+    "critic_missed:cluster-a8e76bb66845bc11"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}

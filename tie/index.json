@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-08-12",
+    "status": "ok",
+    "trends": 3,
+    "watch": 0,
+    "headline": "Agent context and skills become transferable assets",
+    "sub": "",
+    "url": "/tie/2026-08-12"
+  },
+  {
+    "date": "2026-08-11",
+    "status": "ok",
+    "trends": 3,
+    "watch": 1,
+    "headline": "Claude Opus 5 strengthens long-horizon agent capabilities",
+    "sub": "",
+    "url": "/tie/2026-08-11"
+  },
+  {
+    "date": "2026-08-10",
+    "status": "ok",
+    "trends": 3,
+    "watch": 1,
+    "headline": "Frontier cyber capabilities trigger model release controls",
+    "sub": "",
+    "url": "/tie/2026-08-10"
+  },
+  {
+    "date": "2026-07-27",
+    "status": "ok",
+    "trends": 3,
+    "watch": 1,
+    "headline": "Claude Opus 5 resets the price-performance line for frontier agents",
+    "sub": "",
+    "url": "/tie/2026-07-27"
+  }
+]

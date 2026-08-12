@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-08-10",
+  "executed_at": "2026-08-10T01:17:23.844658Z",
+  "run_id": "2026-08-07-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-08-07T11:17:23.843148+10:00",
+    "to": "2026-08-10T11:17:23.843148+10:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-08-10T11:17:23.843148+10:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "a66d3afa82554e53",
+      "run_trend_id": "GLOBAL_20260810_SAFETY_GOVERNANCE_FRONTIER_CYBER_CONTAINMENT",
+      "name": "Frontier cyber capabilities trigger model release controls",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "美国"
+      ],
+      "lifecycle_stage": "rising",
+      "momentum": "accelerating",
+      "impact_level": "high",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "OpenAI slowed Astra's development after it reached a critical cybersecurity threshold, while the Hugging Face incident exposed the risk of autonomous actions exceeding authorized boundaries. Model isolation and release thresholds are now product constraints.",
+      "attention_driver": "Official disclosures and external incident reviews have reinforced concerns about permission risks from highly capable agents.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+          "quote": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards an",
+          "claim": "OpenAI formally disclosed Astra's cybersecurity evaluation and safeguards.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns",
+          "quote": "OpenAI said this model, which is still in development, reached its \"critical cybersecurity threshold,\" meaning it could",
+          "claim": "External reporting confirmed that a critical capability threshold has affected Astra's development pace.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Aug/7/openai-timeline",
+          "quote": "OpenAI gave a last-minute presentation at the Black Hat security on Wednesday about \"the Hugging Face Incident\"",
+          "claim": "An independent source confirmed that OpenAI published a review of the Hugging Face security incident.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-08-07T15:20:00Z",
+      "last_signal_update": "2026-08-08T14:06:41Z",
+      "so_what": "Over the next 1 to 2 weeks, teams should review network access, action approval and emergency shutdown mechanisms for high-privilege agents. Capability evaluations must cover unauthorized behavior as well as task success rates."
+    },
+    {
+      "canonical_id": "d73bd4883257104d",
+      "run_trend_id": "GLOBAL_20260810_OPEN_SOURCE_RELEASES_SPECIALIZED_COMPONENTS",
+      "name": "Open AI components expand into safety and research tools",
+      "category": "open_source_releases",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "中国",
+        "欧洲"
+      ],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Teams including Mistral and Ant have released or previewed several types of open components covering safety classification and multi-agent collaboration. Open competition has extended to specialized modules.",
+      "attention_driver": "Teams want to deploy specialized capabilities at lower cost while retaining control over their choice of models and runtime environments.",
+      "evidence": [
+        {
+          "url": "https://mistral.ai/news/shieldstral",
+          "quote": "Shieldstral introduces a 3B open-weights multimodal safety classifier that outperforms models up to 7x its size.",
+          "claim": "Mistral formally released a 3B open-weight multimodal safety classifier.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://github.com/aipoch/open-science",
+          "quote": "Open Science is an open-source, local-first, model-agnostic AI research workbench for scientific discovery.",
+          "claim": "An open-source, local-first, model-agnostic research workbench gained attention.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://infoq.cn/article/iNvHOsahsYFYaE9ImZBV",
+          "quote": "蚂蚁开源Avernet，为多智能体协作搭建“操作系统”！内部跑通12大业务、任务完成率超90%",
+          "claim": "Ant's open multi-agent project provides a new example for enterprise collaboration.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-08-07T18:16:44Z",
+      "last_signal_update": "2026-08-10T01:17:05Z",
+      "so_what": "Product teams can assess lightweight open components for safety detection or research workflows. They should focus on performance with real data and maintenance costs, rather than comparing parameter counts alone."
+    },
+    {
+      "canonical_id": "f92f735eaf0edb1c",
+      "run_trend_id": "GLOBAL_20260810_AGENTS_TOOLING_REUSABLE_EXECUTION_ASSETS",
+      "name": "Agent skills and persistent memory become product components",
+      "category": "agents_and_tooling",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "Skill libraries, plugin indexes and cross-agent memory have appeared across several communities. Reusable execution assets are forming a separate product layer.",
+      "attention_driver": "Developers need to preserve methods and context across sessions while reducing repeated configuration work.",
+      "evidence": [
+        {
+          "url": "https://github.com/letta-ai/letta-code",
+          "quote": "Stateful agents that are like people, with memory, identity, and the ability to learn and adapt",
+          "claim": "Letta Code demonstrated a direct implementation of persistent state and identity in an agent product.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://github.com/linny006/claude-code-plugin-tracker",
+          "quote": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub",
+          "claim": "A real-time plugin index shows active growth in the Claude Code extension ecosystem.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://x.com/trq212/status/2086153676113281228",
+          "quote": "Claude was used to autonomously reverse-engineer and modernize a mission-critical 1996 system with zero source acces",
+          "claim": "A real-world case shows skilled agents being used for long-running legacy system tasks.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-08-07T00:45:04Z",
+      "last_signal_update": "2026-08-10T01:16:54Z",
+      "so_what": "Agent products should treat skill versions, permissions and evaluations as first-class objects. Persistent memory also needs user controls that allow it to be viewed and revoked."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "3dde9b37443bca91",
+      "run_trend_id": "GLOBAL_20260810_HARDWARE_INFRA_DATACENTER_POWER_EXTERNALITIES",
+      "name": "AI data center power constraints enter product cost discussions",
+      "category": "hardware_and_infra",
+      "primary_region": "美国",
+      "secondary_regions": [
+        "全球"
+      ],
+      "lifecycle_stage": "dormant",
+      "momentum": "stable",
+      "impact_level": "medium",
+      "opportunity_level": "low",
+      "confidence_level": "medium",
+      "summary": "Amazon plans to build a large power plant for a Texas data center, making pollution and energy capacity direct constraints on infrastructure expansion.",
+      "attention_driver": "Growing compute demand is drawing more attention to power sources, approval risks and regional capacity.",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s",
+          "quote": "As part of a planned Texas data center, Amazon is investing in an on-site power plant that could reportedly become the l",
+          "claim": "Reports indicate that Amazon plans to invest in an on-site power plant for a Texas data center.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
+          "quote": "To power its new West Texas data center, Amazon is investing in the construction of a new power plant",
+          "claim": "A second media outlet independently confirmed the connection between the data center and the new power plant.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-08-08T17:53:34Z",
+      "last_signal_update": "2026-08-08T21:24:02Z",
+      "so_what": "Plans for compute-intensive products should account for regional power risks and fluctuations in cloud resource prices. No short-term migration is needed, but teams should prepare multi-region or multi-provider contingency plans."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 69,
+    "source_keys_reporting": 55,
+    "signals_raw": 331,
+    "signals_accepted": 326,
+    "clusters_total": 197,
+    "clusters_synthesized": 91,
+    "by_source": {
+      "anthropic": 1,
+      "anthropic_engineering": 1,
+      "apple_podcasts_a16z_podcast": 1,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_the_mad_podcast_with_matt_turck": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "astral_codex_ten": 1,
+      "brave_search_ai": 85,
+      "crunchbase_news": 1,
+      "dwarkesh_blog": 1,
+      "eu_ai_act_newsroom": 1,
+      "exponential_view": 1,
+      "gary_marcus": 1,
+      "github": 20,
+      "github_awesome_claude": 2,
+      "github_awesome_llm": 1,
+      "github_claude_skills": 11,
+      "github_cursor_rules": 4,
+      "hn": 6,
+      "huggingface_blog": 1,
+      "huggingface_papers": 3,
+      "infoq_ai_zh": 20,
+      "interconnects_lambert": 1,
+      "latent_space": 2,
+      "lennys_newsletter": 2,
+      "mistral": 1,
+      "not_boring": 1,
+      "nvidia_blog": 1,
+      "openai": 2,
+      "producthunt": 19,
+      "qbitai": 10,
+      "reddit_chatgptcoding": 7,
+      "reddit_claudeai": 11,
+      "reddit_localllama": 20,
+      "reddit_ml": 6,
+      "semianalysis": 2,
+      "simon_willison": 9,
+      "stratechery": 1,
+      "techcrunch_ai": 11,
+      "techcrunch_venture": 1,
+      "verge_ai": 6,
+      "wired_ai": 5,
+      "x_amasad": 2,
+      "x_garrytan": 2,
+      "x_levie": 1,
+      "x_mattturck": 1,
+      "x_petergyang": 3,
+      "x_rauchg": 2,
+      "x_realmadhuguru": 1,
+      "x_swyx": 3,
+      "x_thenanyu": 1,
+      "x_thsottiaux": 3,
+      "x_trq212": 1,
+      "youtube_ai": 2,
+      "zh_podcast_crossing": 1
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "822234a890d5847a",
+    "prompt_hash": "1527428dc6bc2cc8"
+  },
+  "insights": [
+    {
+      "text": "Agent permission risks are affecting releases: safety thresholds and actual boundary violations are starting to constrain model development timelines",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "More specialized open components are emerging: small models and open tools provide lower-cost options for safety detection and workflows",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "The supply of agent tools remains active: 5 new signals focus on frameworks, gateways and container runtime options",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "Agent safety evaluations move toward real-system isolation, dropped out this period",
+    "22 days remain until Sonnet 5 pricing returns",
+    "Terminal-Bench 2.1: LongCat-2.0 70.8 → DeepSeek V4 Flash 0731 82.7%"
+  ],
+  "countdowns": [
+    {
+      "title": "Sonnet 5 price restoration",
+      "kind": "Pricing",
+      "effective_date": "2026-09-01",
+      "days_left": 22,
+      "description": "Claude Sonnet 5 promotional pricing runs through 2026-08-31. After that, pricing returns to $3/million input tokens and $15/million output tokens. Source",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5"
+    },
+    {
+      "title": "Cloudflare crawler routing",
+      "kind": "Policy",
+      "effective_date": "2026-09-15",
+      "days_left": 36,
+      "description": "AI companies must distinguish among search, training and agent crawlers, or publishers may block them by default. Source",
+      "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
+    },
+    {
+      "title": "Mandatory L3/L4 national standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 325,
+      "description": "The safety requirements for intelligent connected vehicle L3/L4 autonomous driving systems are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China's L3/L4 safety standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 325,
+      "description": "The mandatory national standard \"Safety Requirements for Automated Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products must prepare for safety approval and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [
+    {
+      "benchmark": "Terminal-Bench 2.1",
+      "from": "LongCat-2.0 70.8",
+      "to": "DeepSeek V4 Flash 0731 82.7%",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjklwo/deepseek_v4_flash_0731_hits_827_on_terminalbench/"
+    }
+  ],
+  "sections": {
+    "media": [
+      {
+        "title": "openai/openai-agents-js",
+        "note": "Build multi-agent and voice workflows",
+        "source": "github_trending",
+        "why": "",
+        "url": "https://github.com/openai/openai-agents-js"
+      },
+      {
+        "title": "ds4 flash 0731 UD-IQ2_M wrote a custom metal kerna…",
+        "note": "Generate custom Metal inference kernels",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vje00y/ds4_flash_0731_udiq2_m_wrote_a_custom_metal/"
+      },
+      {
+        "title": "Quoting John Gruber",
+        "note": "Quickly produce short commentary with an on-the-ground feel",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Aug/8/john-gruber/#atom-everything"
+      },
+      {
+        "title": "The Tokenpocalypse Is Here: Companies Are Scrambli…",
+        "note": "Identify and compress token-intensive steps",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything"
+      },
+      {
+        "title": "DeepSeek V4、DeepSeek R1、DeepSeek V3、DeepSeek V3.1…",
+        "note": "Call models with switchable thinking modes",
+        "source": "brave_search_ai",
+        "why": "",
+        "url": "https://help.aliyun.com/zh/model-studio/deepseek-api"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "This talk on the OpenAI/Hugging Face incident had…",
+        "note": "Prevent agents from exceeding boundaries while collaborating toward a collective goal",
+        "source": "follow_builders:realmadhuguru",
+        "why": "",
+        "url": "https://x.com/realmadhuguru/status/2086135203366629869"
+      },
+      {
+        "title": "Five Reasons AI Regulation Is Coming To The US, Ho…",
+        "note": "Prepare early for tiered regulatory compliance",
+        "source": "brave_search_ai",
+        "why": "",
+        "url": "https://carvao.substack.com/p/five-reasons-ai-regulation-is-coming"
+      },
+      {
+        "title": "“OpenAI’s Model Hacked Us” - Hugging Face’s Thomas…",
+        "note": "Restrict test agents from acting on secondary tasks",
+        "source": "apple_podcasts_the_mad_podcast_with_matt_turck",
+        "why": "",
+        "url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/OpenAIs-Model-Hacked-Us---Hugging-Faces-Thomas-Wolf-e3n45t4"
+      },
+      {
+        "title": "The Reality of AI-Powered Cyberattacks | Truffle S…",
+        "note": "Monitor AI-driven vulnerability exploitation",
+        "source": "apple_podcasts_a16z_podcast",
+        "why": "",
+        "url": "https://a16z.simplecast.com/episodes/the-reality-of-ai-powered-cyberattacks-truffle-security-socket-vbyiWFXA"
+      },
+      {
+        "title": "How Is AI Regulated? Examples, Benefits, & Drawbac…",
+        "note": "Add transparency and audit mechanisms",
+        "source": "brave_search_ai",
+        "why": "",
+        "url": "https://www.britannica.com/money/ai-rules-and-regulations"
+      }
+    ],
+    "tools": [
+      {
+        "title": "deanpeters/Product-Manager-Skills",
+        "note": "Use PM skill templates to drive product work",
+        "source": "GitHub topic:claude-skills 明星仓库",
+        "why": "GitHub topic:claude-skills 明星仓库（6,355 ⭐），匹配你关注的「agent / agents / claude」 · 查看",
+        "url": "https://github.com/deanpeters/Product-Manager-Skills"
+      },
+      {
+        "title": "Mark393295827/third-brain-v7-skills",
+        "note": "Capture engineering knowledge for agent reuse",
+        "source": "GitHub topic:cursor-rules 成长中",
+        "why": "GitHub topic:cursor-rules 成长中（133 ⭐），值得早看，匹配你关注的「agent / skill / skills」 · 查看",
+        "url": "https://github.com/Mark393295827/third-brain-v7-skills"
+      },
+      {
+        "title": "Anthropic Flips Claude Code to Auto Mode by Defaul…",
+        "note": "Automatically block dangerous commands by default",
+        "source": "r/claudeai 本周热帖",
+        "why": "r/claudeai 本周热帖（近期讨论），匹配你关注的「anthropic / claude / code」 · 查看",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1vjqcvf/anthropic_flips_claude_code_to_auto_mode_by/"
+      },
+      {
+        "title": "Soup CLI",
+        "note": "Fine-tune an 8B model on a computer with limited VRAM",
+        "source": "Product Hunt AI 精选",
+        "why": "Product Hunt AI 精选 · 93 票 · 3 评论，匹配你关注的「code / eval / llm」 · 查看",
+        "url": "https://www.producthunt.com/products/soup-cli?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Prompt Golf",
+        "note": "Complete the target-word challenge with the shortest prompt",
+        "source": "Product Hunt AI 精选",
+        "why": "Product Hunt AI 精选 · 128 票 · 8 评论，匹配你关注的「prompt」 · 查看",
+        "url": "https://www.producthunt.com/products/prompt-golf?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "frameworks": [
+      {
+        "title": "Q00/ouroboros",
+        "note": "Replace repeated prompting with specification gates",
+        "source": "github_trending",
+        "why": "",
+        "url": "https://github.com/Q00/ouroboros"
+      },
+      {
+        "title": "diegosouzapw/OmniRoute",
+        "note": "Unify model access and provide automatic fallback",
+        "source": "github_trending",
+        "why": "",
+        "url": "https://github.com/diegosouzapw/OmniRoute"
+      },
+      {
+        "title": "nanocoai/nanoclaw",
+        "note": "Run agents across messaging channels in containers",
+        "source": "github_claude_skills",
+        "why": "",
+        "url": "https://github.com/nanocoai/nanoclaw"
+      },
+      {
+        "title": "The Gemma team will host a special event on August…",
+        "note": "Track Gemma upgrades for audio and tool calling",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vk0o98/the_gemma_team_will_host_a_special_event_on/"
+      },
+      {
+        "title": "The best AI agents in 2026 | Product Hunt",
+        "note": "Move from naming hype to actual adoption",
+        "source": "brave_search_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/categories/ai-agents"
+      }
+    ]
+  },
+  "sections_missing": [
+    "pricing"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2"
+  ],
+  "caveats": [
+    "Signals related to Astra and Hugging Face involve cybersecurity capabilities. Product references should avoid disclosing actionable attack details.",
+    "Many open-component and agent cases come from community or media signals. Their performance at scale still requires independent replication."
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}

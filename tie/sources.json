@@ -1,0 +1,497 @@
+{
+  "schema_version": "1.0",
+  "domain": "ai_industry",
+  "generated_at": null,
+  "tier_weights": {
+    "primary_release": 1.5,
+    "independent_validation": 1.3,
+    "attention": 1.0,
+    "companion": 0.6
+  },
+  "sources": [
+    {
+      "id": "openai_blog",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "openai.com",
+      "status": "ok"
+    },
+    {
+      "id": "deepmind_blog",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "deepmind.google",
+      "status": "degraded_fine"
+    },
+    {
+      "id": "cohere_blog",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "cohere.com",
+      "status": "ok"
+    },
+    {
+      "id": "anthropic_news",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "www.anthropic.com",
+      "status": "ok"
+    },
+    {
+      "id": "anthropic_engineering",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "www.anthropic.com",
+      "status": "ok"
+    },
+    {
+      "id": "mistral_news",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "mistral.ai",
+      "status": "ok"
+    },
+    {
+      "id": "meta_ai_blog",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "ai.meta.com",
+      "status": "ok"
+    },
+    {
+      "id": "arxiv",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "export.arxiv.org",
+      "status": "ok"
+    },
+    {
+      "id": "huggingface_papers",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "huggingface.co",
+      "status": "ok"
+    },
+    {
+      "id": "stratechery",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "stratechery.com",
+      "status": "ok"
+    },
+    {
+      "id": "lennys_newsletter",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.lennysnewsletter.com",
+      "status": "ok"
+    },
+    {
+      "id": "latent_space",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.latent.space",
+      "status": "ok"
+    },
+    {
+      "id": "import_ai",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "importai.substack.com",
+      "status": "ok"
+    },
+    {
+      "id": "one_useful_thing",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.oneusefulthing.org",
+      "status": "ok"
+    },
+    {
+      "id": "simon_willison",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "simonwillison.net",
+      "status": "ok"
+    },
+    {
+      "id": "interconnects_lambert",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.interconnects.ai",
+      "status": "ok"
+    },
+    {
+      "id": "algorithmic_bridge",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "thealgorithmicbridge.substack.com",
+      "status": "ok"
+    },
+    {
+      "id": "sequoia_blog",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.sequoiacap.com",
+      "status": "ok"
+    },
+    {
+      "id": "a16z_future",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "future.com",
+      "status": "blocked_abandoned"
+    },
+    {
+      "id": "index_ventures",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.indexventures.com",
+      "status": "ok"
+    },
+    {
+      "id": "dwarkesh_blog",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.dwarkesh.com",
+      "status": "ok"
+    },
+    {
+      "id": "pragmatic_engineer",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "newsletter.pragmaticengineer.com",
+      "status": "ok"
+    },
+    {
+      "id": "eugene_yan",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "eugeneyan.com",
+      "status": "ok"
+    },
+    {
+      "id": "chip_huyen",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "huyenchip.com",
+      "status": "blocked_abandoned"
+    },
+    {
+      "id": "astral_codex_ten",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.astralcodexten.com",
+      "status": "ok"
+    },
+    {
+      "id": "not_boring",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.notboring.co",
+      "status": "ok"
+    },
+    {
+      "id": "exponential_view",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "www.exponentialview.co",
+      "status": "ok"
+    },
+    {
+      "id": "huggingface_blog",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "huggingface.co",
+      "status": "ok"
+    },
+    {
+      "id": "rundown_ai",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "therundown.substack.com",
+      "status": "ok"
+    },
+    {
+      "id": "semianalysis",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "newsletter.semianalysis.com",
+      "status": "ok"
+    },
+    {
+      "id": "qbitai",
+      "tier": "independent_validation",
+      "type": "news",
+      "host": "www.qbitai.com",
+      "status": "ok"
+    },
+    {
+      "id": "toms_hardware_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "",
+      "status": "blocked_403"
+    },
+    {
+      "id": "hn",
+      "tier": "attention",
+      "type": "aggregator",
+      "host": "hn.algolia.com",
+      "status": "ok"
+    },
+    {
+      "id": "aihot_items",
+      "tier": "attention",
+      "type": "aggregator",
+      "host": "aihot.virxact.com",
+      "status": "ok"
+    },
+    {
+      "id": "follow_builders_x",
+      "tier": "attention",
+      "type": "social",
+      "host": "raw.githubusercontent.com",
+      "status": "ok"
+    },
+    {
+      "id": "producthunt_ai",
+      "tier": "attention",
+      "type": "aggregator",
+      "host": "",
+      "status": "ok"
+    },
+    {
+      "id": "reddit_ml",
+      "tier": "attention",
+      "type": "social",
+      "host": "www.reddit.com",
+      "status": "ok"
+    },
+    {
+      "id": "reddit_localllama",
+      "tier": "attention",
+      "type": "social",
+      "host": "www.reddit.com",
+      "status": "ok"
+    },
+    {
+      "id": "github_trending",
+      "tier": "attention",
+      "type": "repo",
+      "host": "api.github.com",
+      "status": "ok"
+    },
+    {
+      "id": "github_claude_skills",
+      "tier": "attention",
+      "type": "repo",
+      "host": "api.github.com",
+      "status": "ok"
+    },
+    {
+      "id": "github_cursor_rules",
+      "tier": "attention",
+      "type": "repo",
+      "host": "api.github.com",
+      "status": "ok"
+    },
+    {
+      "id": "github_awesome_llm",
+      "tier": "attention",
+      "type": "repo",
+      "host": "api.github.com",
+      "status": "ok"
+    },
+    {
+      "id": "github_awesome_claude",
+      "tier": "attention",
+      "type": "repo",
+      "host": "api.github.com",
+      "status": "ok"
+    },
+    {
+      "id": "reddit_chatgptcoding",
+      "tier": "attention",
+      "type": "social",
+      "host": "www.reddit.com",
+      "status": "ok"
+    },
+    {
+      "id": "reddit_claudeai",
+      "tier": "attention",
+      "type": "social",
+      "host": "www.reddit.com",
+      "status": "ok"
+    },
+    {
+      "id": "reddit_promptengineering",
+      "tier": "attention",
+      "type": "social",
+      "host": "www.reddit.com",
+      "status": "ok"
+    },
+    {
+      "id": "techcrunch_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "techcrunch.com",
+      "status": "ok"
+    },
+    {
+      "id": "verge_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.theverge.com",
+      "status": "ok"
+    },
+    {
+      "id": "wired_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.wired.com",
+      "status": "ok"
+    },
+    {
+      "id": "venturebeat_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "venturebeat.com",
+      "status": "ok"
+    },
+    {
+      "id": "techcrunch_venture",
+      "tier": "attention",
+      "type": "news",
+      "host": "techcrunch.com",
+      "status": "ok"
+    },
+    {
+      "id": "crunchbase_news",
+      "tier": "attention",
+      "type": "news",
+      "host": "news.crunchbase.com",
+      "status": "ok"
+    },
+    {
+      "id": "politico_morningtech",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.politico.com",
+      "status": "blocked_403"
+    },
+    {
+      "id": "syncedreview",
+      "tier": "attention",
+      "type": "news",
+      "host": "syncedreview.com",
+      "status": "blocked_abandoned"
+    },
+    {
+      "id": "infoq_ai_zh",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.infoq.cn",
+      "status": "ok"
+    },
+    {
+      "id": "x_twitter_ai",
+      "tier": "attention",
+      "type": "social",
+      "host": "",
+      "status": "ok"
+    },
+    {
+      "id": "youtube_ai",
+      "tier": "attention",
+      "type": "video",
+      "host": "",
+      "status": "ok"
+    },
+    {
+      "id": "brave_search_ai",
+      "tier": "attention",
+      "type": "aggregator",
+      "host": "",
+      "status": "ok"
+    },
+    {
+      "id": "nvidia_blog",
+      "tier": "attention",
+      "type": "official",
+      "host": "blogs.nvidia.com",
+      "status": "ok"
+    },
+    {
+      "id": "ieee_spectrum_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "spectrum.ieee.org",
+      "status": "ok"
+    },
+    {
+      "id": "platformer",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.platformer.news",
+      "status": "ok"
+    },
+    {
+      "id": "eu_ai_act_newsroom",
+      "tier": "attention",
+      "type": "news",
+      "host": "artificialintelligenceact.eu",
+      "status": "ok"
+    },
+    {
+      "id": "gary_marcus",
+      "tier": "attention",
+      "type": "blog",
+      "host": "garymarcus.substack.com",
+      "status": "ok"
+    },
+    {
+      "id": "ec_digital_strategy",
+      "tier": "attention",
+      "type": "official",
+      "host": "digital-strategy.ec.europa.eu",
+      "status": "ok"
+    },
+    {
+      "id": "kr36_ai",
+      "tier": "companion",
+      "type": "news",
+      "host": "36kr.com",
+      "status": "ok"
+    },
+    {
+      "id": "apple_podcasts_search_ai",
+      "tier": "companion",
+      "type": "podcast",
+      "host": "itunes.apple.com",
+      "status": "ok"
+    },
+    {
+      "id": "zh_podcast_guigu101",
+      "tier": "companion",
+      "type": "podcast",
+      "host": "feeds.fireside.fm",
+      "status": "ok"
+    },
+    {
+      "id": "zh_podcast_crossing",
+      "tier": "companion",
+      "type": "podcast",
+      "host": "feed.xyzfm.space",
+      "status": "ok"
+    },
+    {
+      "id": "zh_podcast_zhangxiaojun",
+      "tier": "companion",
+      "type": "podcast",
+      "host": "feed.xyzfm.space",
+      "status": "ok"
+    }
+  ],
+  "count": 69
+}
