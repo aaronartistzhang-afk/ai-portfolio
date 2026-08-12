@@ -375,8 +375,13 @@ header.site .menu > summary:focus-visible { outline: 2px solid var(--accent); ou
 .fig { margin: 2rem 0 2.4rem; }
 .figscroll { overflow-x: auto; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
 .fig svg { min-width: 470px; max-width: 100%; height: auto; display: block; color: var(--fg); }
+/* No max-width here. The caption belongs to the figure, so its rule has to span
+   the figure; capping it at 46ch drew a half-width line under a full-width
+   drawing and squeezed the text into a narrow stack beside all that white. The
+   article is already 72ch, so nothing runs long. */
 .fig figcaption { font-size: 0.88rem; line-height: 1.6; color: var(--muted);
-  margin-top: 1rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); max-width: 46ch; }
+  margin-top: 1rem; padding-top: 0.8rem; border-top: 1px solid var(--rule);
+  max-width: none; text-wrap: pretty; }
 .fig .hint { display: none; font-family: var(--mono); font-size: 0.62rem;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--fig-ink);
   margin: 0 0 0.5rem; max-width: none; }
