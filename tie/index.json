@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-08-13",
+    "status": "ok",
+    "trends": 3,
+    "watch": 1,
+    "headline": "Claude text watermark sparks detectability debate",
+    "sub": "lark_send_failed: lark-cli failed with non-zero exit 1; stdout=; stderr={\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"api\",\n    \"subtype\": \"unknown\",\n    \"code\": 230001,\n    \"message\": \"Your request contains an invalid request parameter, ext=invalid message content, ext=parse \\\"[https://theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai](https://theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai\\\": first path segment in URL cannot contain colon\",\n    \"log_id\": \"20260813090259D7F5567CCF",
+    "url": "/tie/2026-08-13"
+  },
+  {
     "date": "2026-08-12",
     "status": "ok",
     "trends": 3,
