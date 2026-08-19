@@ -4,7 +4,7 @@
   "executed_at": "2026-08-19T00:40:16.295338Z",
   "run_id": "2026-08-16-ai_industry",
   "domain": "ai_industry",
-  "locale": "zh",
+  "locale": "en",
   "window": {
     "from": "2026-08-16T10:40:16.295307+10:00",
     "to": "2026-08-19T10:40:16.295307+10:00",
@@ -18,7 +18,7 @@
     {
       "canonical_id": "a66d3afa82554e53",
       "run_trend_id": "GLOBAL_20260819_SAFETY_GOVERNANCE_FRONTIER_CYBER_CONTAINMENT",
-      "name": "前沿网络能力触发发布安全门槛",
+      "name": "Frontier cyber capabilities trigger release safety thresholds",
       "category": "safety_and_governance",
       "primary_region": "全球",
       "secondary_regions": [],
@@ -27,39 +27,39 @@
       "impact_level": "high",
       "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "OpenAI更新网络安全能力的监控、对齐与安全措施，并把国家安全监督纳入产品部署讨论。",
-      "attention_driver": "自主执行能力越过网络安全风险阈值后，发布节奏和系统隔离成为焦点。",
+      "summary": "OpenAI has updated monitoring, alignment and safety measures for cybersecurity capabilities, and has included national security oversight in product deployment discussions.",
+      "attention_driver": "After autonomous execution capabilities crossed the cybersecurity risk threshold, release pace and system isolation became the focus.",
       "evidence": [
         {
           "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
           "quote": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models.",
-          "claim": "支持OpenAI针对前沿模型网络能力强化开发与部署安全措施。",
+          "claim": "Supports OpenAI strengthening development and deployment safety measures for frontier model cyber capabilities.",
           "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
           "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
           "quote": "strengthen democratic oversight of AI in national security",
-          "claim": "支持国家安全场景的外部监督成为OpenAI治理安排的一部分。",
+          "claim": "Supports external oversight for national security use cases becoming part of OpenAI's governance arrangements.",
           "source_tier": "primary_release",
           "used_for": "impact"
         },
         {
           "url": "https://theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
           "quote": "OpenAI lays out new security changes after its AI hacked Hugging Face",
-          "claim": "支持安全更新已因智能体越界事件获得外部关注。",
+          "claim": "Supports safety updates receiving external attention following agent boundary-crossing incidents.",
           "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
       "first_detected": "2026-08-17T05:30:00Z",
       "last_signal_update": "2026-08-18T19:28:30Z",
-      "so_what": "凡是可调用外部系统的产品，应在未来两周补齐权限分级、异常行为监控和人工升级路径。竞争差异不只看任务完成率，还看高风险任务能否被可审计地限制。"
+      "so_what": "Any product that can call external systems should add permission tiers, anomalous behavior monitoring and human escalation paths within the next two weeks. Competitive differences depend on task completion rates and on whether high-risk tasks can be restricted in an auditable way."
     },
     {
       "canonical_id": "18c0b357abc4cf81",
       "run_trend_id": "GLOBAL_20260819_FUNDING_MA_STRIPE_OPENROUTER_ROUTING",
-      "name": "Stripe拟收购OpenRouter凸显模型路由价值",
+      "name": "Stripe's planned OpenRouter acquisition highlights the value of model routing",
       "category": "funding_and_M_and_A",
       "primary_region": "全球",
       "secondary_regions": [],
@@ -68,39 +68,39 @@
       "impact_level": "medium",
       "opportunity_level": "high",
       "confidence_level": "medium",
-      "summary": "多家媒体与分析文章称Stripe拟收购OpenRouter，模型网关和路由被视为AI消费聚合入口。",
-      "attention_driver": "闭源与开放权重模型并存，价格和能力差异放大了按请求选择供应商的需求。",
+      "summary": "Multiple media outlets and analysis articles say Stripe plans to acquire OpenRouter, with model gateways and routing seen as an aggregation entry point for AI consumption.",
+      "attention_driver": "Closed-source and open-weight models coexist, while differences in price and capabilities have increased demand for choosing providers by request.",
       "evidence": [
         {
           "url": "https://latent.space/p/glean-model-routing",
           "quote": "model routing has become a key part of AI deployment",
-          "claim": "支持模型成本竞争和开放权重普及正在提升路由层的重要性。",
+          "claim": "Supports the importance of the routing layer rising amid model cost competition and the spread of open weights.",
           "source_tier": "independent_validation",
           "used_for": "impact"
         },
         {
           "url": "https://stratechery.com/2026/stripe-acquiring-openrouter-aggregating-ai-flipping-the-business-model",
           "quote": "Stripe is reportedly acquiring OpenRouter",
-          "claim": "支持Stripe拟收购OpenRouter的市场报道与聚合逻辑分析。",
+          "claim": "Supports market reports on Stripe's planned acquisition of OpenRouter and analysis of its aggregation logic.",
           "source_tier": "independent_validation",
           "used_for": "existence"
         },
         {
           "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b",
           "quote": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
-          "claim": "支持该潜在交易在科技媒体中持续获得关注。",
+          "claim": "Supports this potential deal continuing to receive attention in technology media.",
           "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
       "first_detected": "2026-08-16T20:57:04Z",
       "last_signal_update": "2026-08-18T21:41:10Z",
-      "so_what": "产品架构应把模型选择、成本归因和降级策略做成独立能力，避免业务逻辑绑定单一供应商。若支付和网关结合，按任务计费、路由佣金与用量分析可能成为更直接的商业化入口。"
+      "so_what": "Product architecture should make model selection, cost attribution and fallback strategies independent capabilities, avoiding business logic tied to a single provider. If payments and gateways are combined, per-task billing, routing commissions and usage analysis may become more direct commercialization entry points."
     },
     {
       "canonical_id": "af0f5310bf2500b1",
       "run_trend_id": "GLOBAL_20260819_EVALUATION_FRAMEWORKS_QWEN38_OPEN_WEIGHT",
-      "name": "Qwen 3.8 27B显示开放权重模型的能力压力",
+      "name": "Qwen 3.8 27B shows the capability pressure from open-weight models",
       "category": "evaluation_frameworks",
       "primary_region": "全球",
       "secondary_regions": [],
@@ -109,27 +109,27 @@
       "impact_level": "medium",
       "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "独立评测报道显示，Apache 2.0授权的Qwen 3.8 27B在Artificial Analysis Intelligence Index获52分。",
-      "attention_driver": "较小开放权重模型的公开评分接近高端闭源模型，拉高了本地与私有部署的预期。",
+      "summary": "Independent evaluation reports show that the Apache 2.0-licensed Qwen 3.8 27B scored 52 on the Artificial Analysis Intelligence Index.",
+      "attention_driver": "Public scores for smaller open-weight models are approaching high-end closed-source models, raising expectations for local and private deployments.",
       "evidence": [
         {
           "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52",
           "quote": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
-          "claim": "支持Qwen 3.8 27B在指定评测中取得52分的报告。",
+          "claim": "Supports reports that Qwen 3.8 27B scored 52 in the specified evaluation.",
           "source_tier": "independent_validation",
           "used_for": "impact"
         },
         {
           "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
           "quote": "an Apache 2 licensed 27B parameter vision-capable LLM",
-          "claim": "支持该模型以Apache 2.0授权和视觉能力进入开放权重部署选择。",
+          "claim": "Supports the model entering open-weight deployment options with an Apache 2.0 license and vision capabilities.",
           "source_tier": "independent_validation",
           "used_for": "existence"
         }
       ],
       "first_detected": "2026-08-16T22:00:39Z",
       "last_signal_update": "2026-08-17T23:58:14Z",
-      "so_what": "模型选型应以真实任务、延迟和总成本复测公开分数，而非默认采用最高端API。开放权重模型可先进入对数据边界敏感或需要成本上限的工作流试点。"
+      "so_what": "Model selection should retest public scores against real tasks, latency and total cost, rather than defaulting to the highest-end API. Open-weight models can first enter pilot workflows that are sensitive to data boundaries or require cost caps."
     }
   ],
   "watch_list": [],
@@ -210,58 +210,58 @@
   },
   "insights": [
     {
-      "text": "高风险智能体需先设发布门槛 — 外部系统调用的可审计限制，开始影响产品上线节奏",
+      "text": "High-risk agents need release thresholds first: auditable restrictions on external system calls are starting to affect product launch schedules",
       "refs": [
         1
       ]
     },
     {
-      "text": "模型路由成为产品层能力 — 多模型的成本和能力差距，要求按请求做选择与降级",
+      "text": "Model routing becomes a product-layer capability: cost and capability gaps across models require per-request selection and fallback",
       "refs": [
         2,
         3
       ]
     },
     {
-      "text": "推理价格仍在快速变动 — 5 个新信号聚集于定价与成本，预算控制应进入体验设计",
+      "text": "Inference prices are still changing quickly: 5 new signals cluster around pricing and costs, and budget control should enter experience design",
       "refs": []
     }
   ],
   "since_last": [
-    "上期 5 项趋势中，4 项已退出本期列表。",
-    "Sonnet 5 价格恢复 还剩 13 天。"
+    "Of the previous issue's 5 trends, 4 have exited this issue's list.",
+    "13 days remain until Sonnet 5 prices are restored."
   ],
   "countdowns": [
     {
-      "title": "Sonnet 5 价格恢复",
-      "kind": "定价",
+      "title": "Sonnet 5 price restoration",
+      "kind": "Pricing",
       "effective_date": "2026-09-01",
       "days_left": 13,
-      "description": "Claude Sonnet 5 阶段性价格至 2026-08-31；之后恢复为输入 $3/百万、输出 $15/百万。 来源",
+      "description": "Claude Sonnet 5's temporary pricing lasts until 2026-08-31; afterward, prices return to $3/million input and $15/million output. Source",
       "url": "https://www.anthropic.com/news/claude-sonnet-5"
     },
     {
-      "title": "Cloudflare爬虫分流",
-      "kind": "政策",
+      "title": "Cloudflare crawler traffic splitting",
+      "kind": "Policy",
       "effective_date": "2026-09-15",
       "days_left": 27,
-      "description": "AI 公司需区分搜索、训练与智能体爬虫，否则可能被发布方默认阻断。 来源",
+      "description": "AI companies must distinguish search, training and agent crawlers, or they may be blocked by publishers by default. Source",
       "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
     },
     {
-      "title": "L3/L4强制国标实施",
-      "kind": "政策",
+      "title": "Implementation of mandatory L3/L4 national standard",
+      "kind": "Policy",
       "effective_date": "2027-07-01",
       "days_left": 316,
-      "description": "智能网联汽车 L3/L4 自动驾驶系统安全要求建议自 2027 年 7 月 1 日起实施，涉及 Safety Case、人机交接和风险处置要求。 来源",
+      "description": "Safety requirements for intelligent connected vehicle L3/L4 autonomous driving systems are proposed for implementation from July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "中国L3/L4安全国标实施",
-      "kind": "政策",
+      "title": "Implementation of China's L3/L4 safety national standard",
+      "kind": "Policy",
       "effective_date": "2027-07-01",
       "days_left": 316,
-      "description": "《智能网联汽车 自动驾驶系统安全要求》强制性国家标准拟于2027年7月1日起实施，相关自动驾驶产品需准备安全准入与合规验证。 来源",
+      "description": "The mandatory national standard \"Safety requirements for automated driving systems of intelligent connected vehicles\" is proposed for implementation from July 1, 2027. Relevant autonomous driving products need to prepare for safety market access and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     }
   ],
@@ -270,35 +270,35 @@
     "pricing": [
       {
         "title": "Finch",
-        "note": "未披露价格变动，关注健康数据整合",
+        "note": "No price change disclosed, watch health data integration",
         "source": "producthunt_ai",
         "why": "",
         "url": "https://www.producthunt.com/products/finch-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
         "title": "GPT-5.6 Sol Pricing Cut by 50% on OpenRouter",
-        "note": "OpenRouter将GPT-5.6价格减半",
+        "note": "OpenRouter halves GPT-5.6 pricing",
         "source": "hn",
         "why": "",
         "url": "https://openrouter.ai/openai/gpt-5.6-sol"
       },
       {
         "title": "据传优步通过大宗交易出售部分Aurora Innovation股权",
-        "note": "优步折价出售Aurora部分股权",
+        "note": "Uber sells part of its Aurora stake at a discount",
         "source": "kr36_ai",
         "why": "",
         "url": "https://36kr.com/newsflashes/3945705912728961?f=rss"
       },
       {
         "title": "华泰证券：建议关注白糖产业链投资机会",
-        "note": "跟踪厄尔尼诺推升糖价机会",
+        "note": "Track opportunities from El Niño pushing up sugar prices",
         "source": "kr36_ai",
         "why": "",
         "url": "https://36kr.com/newsflashes/3945697830960516?f=rss"
       },
       {
         "title": "8点1氪丨李书福辞任董事会主席，吉利汽车管理层大调整；iPhone17或全球涨价，最高涨价近千元；宇…",
-        "note": "DeepSeek API调价，最高涨1100%",
+        "note": "DeepSeek API price adjustment, up as much as 1100%",
         "source": "kr36_ai",
         "why": "",
         "url": "https://36kr.com/p/3944273186241673?f=rss"
@@ -307,35 +307,35 @@
     "media": [
       {
         "title": "thewh1teagle/kokoro-onnx",
-        "note": "用ONNX运行Kokoro生成语音",
+        "note": "Run Kokoro with ONNX to generate speech",
         "source": "github_trending",
         "why": "",
         "url": "https://github.com/thewh1teagle/kokoro-onnx"
       },
       {
         "title": "sanity-io/sanity",
-        "note": "快速搭建结构化内容工作区",
+        "note": "Quickly build a structured content workspace",
         "source": "github_trending",
         "why": "",
         "url": "https://github.com/sanity-io/sanity"
       },
       {
         "title": "CaliBench: Are the Stochastic Dynamics of Video Wo…",
-        "note": "评估视频世界模型物理校准",
+        "note": "Evaluate physical calibration in video world models",
         "source": "arxiv",
         "why": "",
         "url": "https://arxiv.org/abs/2608.16829v1"
       },
       {
         "title": "ElevenLabs MCP in Claude",
-        "note": "用聊天更新语音代理配置",
+        "note": "Update voice agent configurations through chat",
         "source": "producthunt_ai",
         "why": "",
         "url": "https://www.producthunt.com/products/elevenlabs-mcp-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
         "title": "SQuad: Sub-Quadratic Attention Distillation for Ef…",
-        "note": "用蒸馏降低视频生成注意力成本",
+        "note": "Use distillation to reduce attention costs for video generation",
         "source": "huggingface_papers",
         "why": "",
         "url": "https://huggingface.co/papers/2608.16585"
@@ -344,37 +344,37 @@
     "tools": [
       {
         "title": "K-Dense-AI/scientific-agent-skills",
-        "note": "为科研代理接入验证技能库",
+        "note": "Connect a verified skills library for research agents",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills 明星仓库（33,835 ⭐），匹配你关注的「agent / claude / code」 · 查看",
+        "why": "GitHub topic:claude-skills starred repository (33,835 ⭐), matches your interests: \"agent / claude / code\" · View",
         "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
       },
       {
         "title": "VoltAgent/awesome-agent-skills",
-        "note": "筛选并复用千余代理技能",
+        "note": "Filter and reuse more than a thousand agent skills",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills 明星仓库（30,501 ⭐），匹配你关注的「agent / claude / code」 · 查看",
+        "why": "GitHub topic:claude-skills starred repository (30,501 ⭐), matches your interests: \"agent / claude / code\" · View",
         "url": "https://github.com/VoltAgent/awesome-agent-skills"
       },
       {
         "title": "sergebulaev/linkedin-skills",
-        "note": "批量生成领英帖文与评论",
+        "note": "Generate LinkedIn posts and comments in batches",
         "source": "github_awesome_claude",
-        "why": "GitHub topic:awesome-claude 高热度（565 ⭐），匹配你关注的「claude / code / skill」 · 查看",
+        "why": "GitHub topic:awesome-claude high popularity (565 ⭐), matches your interests: \"claude / code / skill\" · View",
         "url": "https://github.com/sergebulaev/linkedin-skills"
       },
       {
         "title": "Taku AI",
-        "note": "复用并改造AI工作流桌面应用",
+        "note": "Reuse and adapt an AI workflow desktop app",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI 精选 · 289 票 · 41 评论，匹配你关注的「agent / agents / skill」 · 查看",
+        "why": "Product Hunt AI featured · 289 votes · 41 comments, matches your interests: \"agent / agents / skill\" · View",
         "url": "https://www.producthunt.com/products/taku-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
         "title": "ElevenLabs MCP in Claude",
-        "note": "用聊天更新语音代理配置",
+        "note": "Update voice agent configurations through chat",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI 精选 · 151 票 · 7 评论，匹配你关注的「agent / agents / chat」 · 查看",
+        "why": "Product Hunt AI featured · 151 votes · 7 comments, matches your interests: \"agent / agents / chat\" · View",
         "url": "https://www.producthunt.com/products/elevenlabs-mcp-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ]
@@ -397,7 +397,5 @@
     "name": "Aaron Zhang",
     "url": "https://aaronzhang.ai"
   },
-  "style_flags": [
-    "translation failed, prose left in Chinese: OpenAI API key is required for openai_direct backend"
-  ]
+  "style_flags": []
 }
