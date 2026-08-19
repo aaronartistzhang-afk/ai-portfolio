@@ -18,7 +18,7 @@
     {
       "canonical_id": "a66d3afa82554e53",
       "run_trend_id": "GLOBAL_20260819_SAFETY_GOVERNANCE_FRONTIER_CYBER_CONTAINMENT",
-      "name": "Frontier cyber capabilities trigger deployment safety thresholds",
+      "name": "Frontier cyber capabilities trigger release safety thresholds",
       "category": "safety_and_governance",
       "primary_region": "全球",
       "secondary_regions": [],
@@ -27,8 +27,8 @@
       "impact_level": "high",
       "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "OpenAI has updated monitoring, alignment, and safety measures for cybersecurity capabilities, and has included national security oversight in product deployment discussions.",
-      "attention_driver": "After autonomous capabilities crossed the cybersecurity risk threshold, deployment pace and system isolation became focal points.",
+      "summary": "OpenAI has updated monitoring and alignment, along with safety measures for cybersecurity capabilities, and included national security oversight in product deployment discussions.",
+      "attention_driver": "After autonomous execution capabilities crossed the cybersecurity risk threshold, release pace and system isolation became the focus.",
       "evidence": [
         {
           "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
@@ -47,14 +47,14 @@
         {
           "url": "https://theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
           "quote": "OpenAI lays out new security changes after its AI hacked Hugging Face",
-          "claim": "Supports safety updates receiving outside attention following agent boundary-crossing incidents.",
+          "claim": "Supports security updates receiving external attention because of agent boundary-crossing incidents.",
           "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
       "first_detected": "2026-08-17T05:30:00Z",
       "last_signal_update": "2026-08-18T19:28:30Z",
-      "so_what": "Any product that can call external systems should complete permission tiers, anomalous behavior monitoring, and human escalation paths within the next two weeks. Competitive differentiation depends on task completion rates and whether high-risk tasks can be restricted in an auditable way."
+      "so_what": "Any product that can call external systems should complete permission tiers, anomalous behavior monitoring and human escalation paths within the next two weeks. Competitive differences depend on task completion rates and whether high-risk tasks can be limited in an auditable way."
     },
     {
       "canonical_id": "18c0b357abc4cf81",
@@ -68,34 +68,34 @@
       "impact_level": "medium",
       "opportunity_level": "high",
       "confidence_level": "medium",
-      "summary": "Multiple media outlets and analysis articles say Stripe plans to acquire OpenRouter, with model gateways and routing seen as aggregation entry points for AI consumption.",
-      "attention_driver": "Closed and open-weight models coexist, while differences in price and capability increase demand for selecting providers by request.",
+      "summary": "Multiple media outlets and analysis articles say Stripe plans to acquire OpenRouter, with model gateways and routing seen as aggregation points for AI spending.",
+      "attention_driver": "Proprietary and open-weight models coexist, while differences in price and capability increase demand for selecting providers by request.",
       "evidence": [
         {
           "url": "https://latent.space/p/glean-model-routing",
           "quote": "model routing has become a key part of AI deployment",
-          "claim": "Supports model cost competition and the spread of open weights increasing the importance of the routing layer.",
+          "claim": "Supports model cost competition and the adoption of open weights increasing the importance of the routing layer.",
           "source_tier": "independent_validation",
           "used_for": "impact"
         },
         {
           "url": "https://stratechery.com/2026/stripe-acquiring-openrouter-aggregating-ai-flipping-the-business-model",
           "quote": "Stripe is reportedly acquiring OpenRouter",
-          "claim": "Supports market reports on Stripe's planned acquisition of OpenRouter and analysis of the aggregation logic.",
+          "claim": "Supports market reports on Stripe's planned acquisition of OpenRouter and analysis of its aggregation logic.",
           "source_tier": "independent_validation",
           "used_for": "existence"
         },
         {
           "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b",
           "quote": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
-          "claim": "Supports the potential deal continuing to receive attention in technology media.",
+          "claim": "Supports the potential transaction continuing to receive attention in technology media.",
           "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
       "first_detected": "2026-08-16T20:57:04Z",
       "last_signal_update": "2026-08-18T21:41:10Z",
-      "so_what": "Product architecture should make model selection, cost attribution, and fallback strategies independent capabilities, avoiding business logic tied to a single provider. If payments and gateways are combined, task-based billing, routing commissions, and usage analytics may become more direct monetization entry points."
+      "so_what": "Product architecture should make model selection and cost attribution, along with fallback strategies, independent capabilities to avoid tying business logic to a single provider. If payments and gateways are combined, task-based billing, routing commissions and usage analytics may become more direct commercialization entry points."
     },
     {
       "canonical_id": "af0f5310bf2500b1",
@@ -110,7 +110,7 @@
       "opportunity_level": "medium",
       "confidence_level": "medium",
       "summary": "Independent evaluation reports show that the Apache 2.0-licensed Qwen 3.8 27B scored 52 on the Artificial Analysis Intelligence Index.",
-      "attention_driver": "Public scores for smaller open-weight models are approaching high-end closed models, raising expectations for local and private deployment.",
+      "attention_driver": "Public scores for smaller open-weight models are approaching those of high-end proprietary models, raising expectations for local and private deployment.",
       "evidence": [
         {
           "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52",
@@ -122,14 +122,14 @@
         {
           "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
           "quote": "an Apache 2 licensed 27B parameter vision-capable LLM",
-          "claim": "Supports the model entering open-weight deployment options with an Apache 2.0 license and vision capabilities.",
+          "claim": "Supports the model entering open-weight deployment options with its Apache 2.0 license and vision capabilities.",
           "source_tier": "independent_validation",
           "used_for": "existence"
         }
       ],
       "first_detected": "2026-08-16T22:00:39Z",
       "last_signal_update": "2026-08-17T23:58:14Z",
-      "so_what": "Model selection should retest public scores against real tasks, latency, and total cost, rather than defaulting to the highest-end API. Open-weight models can first enter pilot workflows that are sensitive to data boundaries or require cost caps."
+      "so_what": "Model selection should retest public scores against real tasks, latency and total cost rather than defaulting to the highest-end API. Open-weight models can first enter pilots for workflows that are sensitive to data boundaries or require cost caps."
     }
   ],
   "watch_list": [],
@@ -210,58 +210,58 @@
   },
   "insights": [
     {
-      "text": "High-risk agents need deployment thresholds first: auditable restrictions on external system calls are starting to affect product launch schedules",
+      "text": "High-risk agents need release thresholds first: auditable limits on external system calls are starting to affect product launch schedules",
       "refs": [
         1
       ]
     },
     {
-      "text": "Model routing becomes a product-layer capability: cost and capability gaps across models require request-level selection and fallback",
+      "text": "Model routing becomes a product capability: cost and capability gaps across models require selection and fallback by request",
       "refs": [
         2,
         3
       ]
     },
     {
-      "text": "Inference prices are still changing quickly: 5 new signals cluster around pricing and cost, and budget control should enter experience design",
+      "text": "Inference prices are still changing quickly: 5 new signals cluster around pricing and costs, and budget control should enter experience design",
       "refs": []
     }
   ],
   "since_last": [
-    "Of the previous issue's 5 trends, 4 have left this issue's list.",
-    "Sonnet 5 price restoration is 13 days away."
+    "Of the 5 trends in the previous issue, 4 have left this issue's list.",
+    "13 days remain until Sonnet 5 prices are restored."
   ],
   "countdowns": [
     {
       "title": "Sonnet 5 price restoration",
-      "kind": "pricing",
+      "kind": "Pricing",
       "effective_date": "2026-09-01",
       "days_left": 13,
-      "description": "Claude Sonnet 5 promotional pricing runs through 2026-08-31; afterward, prices return to $3/million input and $15/million output. Source",
+      "description": "Claude Sonnet 5 has temporary pricing through 2026-08-31; afterward, prices return to $3/million input and $15/million output. Source",
       "url": "https://www.anthropic.com/news/claude-sonnet-5"
     },
     {
-      "title": "Cloudflare crawler routing",
-      "kind": "policy",
+      "title": "Cloudflare crawler differentiation",
+      "kind": "Policy",
       "effective_date": "2026-09-15",
       "days_left": 27,
-      "description": "AI companies must distinguish search, training, and agent crawlers, or they may be blocked by publishers by default. Source",
+      "description": "AI companies must distinguish search, training and agent crawlers, or they may be blocked by default by publishers. Source",
       "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
     },
     {
-      "title": "L3/L4 mandatory national standard implementation",
-      "kind": "policy",
+      "title": "Implementation of mandatory L3/L4 national standard",
+      "kind": "Policy",
       "effective_date": "2027-07-01",
       "days_left": 316,
-      "description": "Safety requirements for L3/L4 automated driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, involving requirements for Safety Case, human-machine handover, and risk handling. Source",
+      "description": "Safety requirements for L3/L4 automated driving systems in intelligent connected vehicles are recommended for implementation from July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "China L3/L4 safety national standard implementation",
-      "kind": "policy",
+      "title": "Implementation of China's L3/L4 safety national standard",
+      "kind": "Policy",
       "effective_date": "2027-07-01",
       "days_left": 316,
-      "description": "The mandatory national standard \"Intelligent Connected Vehicles: Safety Requirements for Automated Driving Systems\" is planned to take effect on July 1, 2027. Relevant automated driving products need to prepare for safety market access and compliance validation. Source",
+      "description": "The mandatory national standard \"Safety requirements for automated driving systems of intelligent connected vehicles\" is planned for implementation from July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     }
   ],
@@ -270,7 +270,7 @@
     "pricing": [
       {
         "title": "Finch",
-        "note": "No price changes disclosed, watch health data integration",
+        "note": "No price change disclosed, focus on health data integration",
         "source": "producthunt_ai",
         "why": "",
         "url": "https://www.producthunt.com/products/finch-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
@@ -291,14 +291,14 @@
       },
       {
         "title": "华泰证券：建议关注白糖产业链投资机会",
-        "note": "Track opportunities from El Niño pushing up sugar prices",
+        "note": "Track opportunities from El Niño-driven sugar price increases",
         "source": "kr36_ai",
         "why": "",
         "url": "https://36kr.com/newsflashes/3945697830960516?f=rss"
       },
       {
         "title": "8点1氪丨李书福辞任董事会主席，吉利汽车管理层大调整；iPhone17或全球涨价，最高涨价近千元；宇…",
-        "note": "DeepSeek API price adjustment, up as much as 1100%",
+        "note": "DeepSeek API price adjustment, increases up to 1100%",
         "source": "kr36_ai",
         "why": "",
         "url": "https://36kr.com/p/3944273186241673?f=rss"
@@ -328,7 +328,7 @@
       },
       {
         "title": "ElevenLabs MCP in Claude",
-        "note": "Update voice agent configuration through chat",
+        "note": "Update voice agent configurations through chat",
         "source": "producthunt_ai",
         "why": "",
         "url": "https://www.producthunt.com/products/elevenlabs-mcp-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
@@ -344,37 +344,37 @@
     "tools": [
       {
         "title": "K-Dense-AI/scientific-agent-skills",
-        "note": "Connect a verified skills library to research agents",
+        "note": "Connect a verified skills library for research agents",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (33,835 ⭐), matches your interests: \"agent / claude / code\" · View",
+        "why": "GitHub topic:claude-skills starred repository (33,835 stars), matches your interests in \"agent / claude / code\" · View",
         "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
       },
       {
         "title": "VoltAgent/awesome-agent-skills",
         "note": "Filter and reuse more than a thousand agent skills",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (30,501 ⭐), matches your interests: \"agent / claude / code\" · View",
+        "why": "GitHub topic:claude-skills starred repository (30,501 stars), matches your interests in \"agent / claude / code\" · View",
         "url": "https://github.com/VoltAgent/awesome-agent-skills"
       },
       {
         "title": "sergebulaev/linkedin-skills",
         "note": "Generate LinkedIn posts and comments in batches",
         "source": "github_awesome_claude",
-        "why": "GitHub topic:awesome-claude high popularity (565 ⭐), matches your interests: \"claude / code / skill\" · View",
+        "why": "GitHub topic:awesome-claude high popularity (565 stars), matches your interests in \"claude / code / skill\" · View",
         "url": "https://github.com/sergebulaev/linkedin-skills"
       },
       {
         "title": "Taku AI",
-        "note": "Reuse and modify an AI workflow desktop app",
+        "note": "Reuse and adapt an AI workflow desktop app",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI pick · 289 votes · 41 comments, matches your interests: \"agent / agents / skill\" · View",
+        "why": "Product Hunt AI featured selection · 289 votes · 41 comments, matches your interests in \"agent / agents / skill\" · View",
         "url": "https://www.producthunt.com/products/taku-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
         "title": "ElevenLabs MCP in Claude",
-        "note": "Update voice agent configuration through chat",
+        "note": "Update voice agent configurations through chat",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI pick · 151 votes · 7 comments, matches your interests: \"agent / agents / chat\" · View",
+        "why": "Product Hunt AI featured selection · 151 votes · 7 comments, matches your interests in \"agent / agents / chat\" · View",
         "url": "https://www.producthunt.com/products/elevenlabs-mcp-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ]
