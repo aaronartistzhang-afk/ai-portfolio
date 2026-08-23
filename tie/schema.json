@@ -26,7 +26,7 @@
     "date": {
       "type": "string",
       "format": "date",
-      "description": "The day this record is ABOUT: the END of the observation window. Also the filename stem, and the date in the human-readable header. Use this for anything reader-facing."
+      "description": "The day this record is ABOUT: the END of the observation window, as a calendar date in America/Los_Angeles. Also the filename stem, and the date in the human-readable header. Use this for anything reader-facing. Note it will NOT match the date you get by slicing `window.to`, which carries an Australia/Sydney offset and is usually one day later — same instant, different calendar."
     },
     "executed_at": {
       "type": "string",
