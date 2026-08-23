@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Daily</title>
+    <link>https://aaronzhang.ai/tie/</link>
+    <atom:link href="https://aaronzhang.ai/tie/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
+    <language>en</language>
+    <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
+    <lastBuildDate>Thu, 20 Aug 2026 17:40:21 -0700</lastBuildDate>
+    <item>
+      <title>Frontier cyber capabilities trigger release and governance thresholds</title>
+      <link>https://aaronzhang.ai/tie/2026-08-21</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-21</guid>
+      <pubDate>Thu, 20 Aug 2026 17:40:21 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent releases must first pass risk gates: models that can operate real systems will have their release pace constrained by permissions, audits and human confirmation&lt;/li&gt;&lt;li&gt;Discovery traffic can be reconfigured by users: natural-language preferences and source selection will change distribution metrics for content products&lt;/li&gt;&lt;li&gt;The tool connection layer is expanding: gateway and WebMCP signals around Agent framework are increasing, so integration protocols need room for replacement&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Agent runtimes add memory, isolation and skills layers</title>
+      <link>https://aaronzhang.ai/tie/2026-08-20</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-20</guid>
+      <pubDate>Wed, 19 Aug 2026 17:40:17 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent reliability depends on the runtime: long-running products must include state recovery and permission controls in acceptance testing, rather than testing model outputs alone&lt;/li&gt;&lt;li&gt;Routing is starting to affect the paid experience: default models, failure switching and usage attribution directly affect product gross margins and user perception&lt;/li&gt;&lt;li&gt;Cost volatility is still passing through: several pricing and low-cost model signals have appeared, and products need replaceable inference configurations&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Frontier cyber capabilities trigger release safety thresholds</title>
+      <link>https://aaronzhang.ai/tie/2026-08-19</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-19</guid>
+      <pubDate>Tue, 18 Aug 2026 17:40:16 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;High-risk agents need release thresholds first: auditable limits on external system calls are starting to affect product launch schedules&lt;/li&gt;&lt;li&gt;Model routing becomes a product capability: cost and capability gaps across models require selection and fallback by request&lt;/li&gt;&lt;li&gt;Inference prices are still changing quickly: 5 new signals cluster around pricing and costs, and budget control should enter experience design&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>A portable layer emerges for agent skills and runners</title>
+      <link>https://aaronzhang.ai/tie/2026-08-18</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-18</guid>
+      <pubDate>Mon, 17 Aug 2026 18:00:05 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;A portable layer is beginning to take shape: skill libraries and runner interfaces are appearing together, so agent products need to separate workflow assets from execution engines by design&lt;/li&gt;&lt;li&gt;Supply constraints enter experience design: latency and queuing for long-running tasks need to be handled as product capabilities rather than back-end operations issues&lt;/li&gt;&lt;li&gt;More MCP integration signals: 5 new signals point to containerized operation and tool integration, and interoperability merits continued tracking&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Qwen3.8 open weights lower the barrier to local multimodality</title>
+      <link>https://aaronzhang.ai/tie/2026-08-17</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-17</guid>
+      <pubDate>Sun, 16 Aug 2026 18:10:29 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Local multimodality enters routing options: open-weight 27B-class models are now feasible to run locally on consumer hardware, and products need to compare quality and cost using real tasks&lt;/li&gt;&lt;li&gt;The gateway layer affects pricing control: model routing, usage attribution and bill reconciliation cannot be fully handed over to vendor interfaces&lt;/li&gt;&lt;li&gt;More audio and video signals this issue: this issue aggregates 5 updates on audio, video and speech models, suitable for tracking live content production pipelines&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>DeepSeek launches V4-Pro and open-source Harness simultaneously</title>
+      <link>https://aaronzhang.ai/tie/2026-08-14</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-14</guid>
+      <pubDate>Thu, 13 Aug 2026 18:00:10 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Model selection should measure end-to-end tasks: models, orchestration tools, and invocation costs are being packaged together, so chat scores alone are no longer enough&lt;/li&gt;&lt;li&gt;Multi-agent systems need runtime constraints: collaboration can expand task coverage and amplify resource abuse and cascading permission risks&lt;/li&gt;&lt;li&gt;More inference pricing signals: this issue has 5 cost and pricing-related signals, and speed tiers and invocation costs need to be assessed together&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Claude text watermark sparks detectability debate</title>
+      <link>https://aaronzhang.ai/tie/2026-08-13</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-13</guid>
+      <pubDate>Wed, 12 Aug 2026 18:00:10 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Training consent becomes part of the product interface: content marking and default training consent both bring user trust into generation, export, and permission settings&lt;/li&gt;&lt;li&gt;Open weights enter the selection pool: decide on long-context models only after stress-testing task throughput, VRAM use, and per-run cost&lt;/li&gt;&lt;li&gt;Model prices continue to fall: API pricing changes directly affect the feature boundaries and plan design of high-frequency agents&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Agent context and skills become transferable assets</title>
+      <link>https://aaronzhang.ai/tie/2026-08-12</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-12</guid>
+      <pubDate>Tue, 11 Aug 2026 18:00:07 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent assets are becoming portable: work records and specialist skills can synchronize across tools, and products need to address permissions and version conflicts first&lt;/li&gt;&lt;li&gt;Reasoning data enters security audits: cross-session replay risks make isolation of caches, logs and tool credentials necessary&lt;/li&gt;&lt;li&gt;Audio and video entry points are still expanding: five new signals cluster around character reference, voice and agent products, and real-time creative interaction is worth tracking&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Claude Opus 5 strengthens long-horizon agent capabilities</title>
+      <link>https://aaronzhang.ai/tie/2026-08-11</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-11</guid>
+      <pubDate>Mon, 10 Aug 2026 18:00:08 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;The threshold for default automatic execution rises: As long-horizon task capabilities improve, the frequency of human handoffs will become a key metric for whether a default mode can launch.&lt;/li&gt;&lt;li&gt;Voice experience can be quantified: Turn-taking latency and tool-calling error rates should enter the core experience metrics for voice agents.&lt;/li&gt;&lt;li&gt;Framework selection gains attention: Five new signals are concentrated in agent frameworks, and product teams need to track differences between managed and local toolchains.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Frontier cyber capabilities trigger model release controls</title>
+      <link>https://aaronzhang.ai/tie/2026-08-10</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-10</guid>
+      <pubDate>Sun, 09 Aug 2026 18:17:23 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent permission risks are affecting releases: safety thresholds and actual boundary violations are starting to constrain model development timelines&lt;/li&gt;&lt;li&gt;More specialized open components are emerging: small models and open tools provide lower-cost options for safety detection and workflows&lt;/li&gt;&lt;li&gt;The supply of agent tools remains active: 5 new signals focus on frameworks, gateways and container runtime options&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Claude Opus 5 resets the price-performance line for frontier agents</title>
+      <link>https://aaronzhang.ai/tie/2026-07-27</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-07-27</guid>
+      <pubDate>Mon, 27 Jul 2026 06:59:59 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Frontier model routing faces reassessment: capabilities, safety and cost must be validated together on real long-running tasks&lt;/li&gt;&lt;li&gt;The focus of production-grade multimodal systems is moving: competitive metrics are expanding from sample quality to real-time performance and workflows&lt;/li&gt;&lt;li&gt;Cost is now a model selection variable: pricing signals continue to affect model routing and product budgets&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
