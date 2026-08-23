@@ -1,14 +1,14 @@
 # AI Daily
 
-> A machine reads 69 AI-industry sources every weekday and publishes three trends. Every claim it makes carries the verbatim quote it rests on, tagged with the job that quote does. Built and operated by Aaron Zhang.
+> A machine reads 69 AI-industry sources every US weekday and publishes three trends. Every claim it makes carries the verbatim quote it rests on, tagged with the job that quote does. Built and operated by Aaron Zhang.
 
-AI Daily is the public output of the Trend Intelligence Engine (TIE). One issue per weekday, covering a rolling three-day window, published as static JSON on a static site. There is no API key, no sign-up and no rate limit.
+AI Daily is the public output of the Trend Intelligence Engine (TIE). One issue per weekday on the `America/Los_Angeles` calendar, covering a rolling three-day window, published as static JSON on a static site. There is no API key, no sign-up and no rate limit.
 
 What makes the data unusual is the evidence model. A trend is not published unless at least one source can be quoted for it, and each quote records four things: the URL, the passage copied word for word, the specific claim it supports, and which of `existence` / `impact` / `momentum` / `sentiment` it is evidence for. A consumer can therefore check any claim rather than trusting a summary. Days when the pipeline produced nothing are published too, with the reason attached.
 
 ## Data
 
-- [Latest record](https://aaronzhang.ai/tie/latest.json): the newest issue as a JSON record. Overwritten each weekday.
+- [Latest record](https://aaronzhang.ai/tie/latest.json): the newest issue as a JSON record. Overwritten each US weekday.
 - [Record by date](https://aaronzhang.ai/tie/2026-07-27.json): one immutable record per issue, named for the day it covers (`/tie/YYYY-MM-DD.json`). The date is the END of the observation window, on the America/Los_Angeles calendar.
 - [Index of records](https://aaronzhang.ai/tie/index.json): every record so far, newest first, including the days that produced nothing.
 - [Source registry](https://aaronzhang.ai/tie/sources.json): all 69 sources, the group each sits in, and whether it currently works.

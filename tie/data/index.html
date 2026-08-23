@@ -35,7 +35,7 @@
     <details class="menu">
       <summary>AI Daily</summary>
       <div class="menupanel">
-        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this weekday</span></a>
+        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this US weekday</span></a>
         <a href="/tie/archive?from=menu"><b>Archive</b><span>Every issue so far, quiet days included</span></a>
         <a href="/tie/how-it-works?from=menu"><b>How it works</b><span>How 69 sources become three trends, in two pictures</span></a>
         <a href="/tie/sources?from=menu"><b>What it reads</b><span>All 69 sources and how much weight each carries</span></a>
@@ -55,7 +55,7 @@
     no rate limit.</p>
 
     <div class="dfiles">
-      <div class="df"><span class="fn"><a href="/tie/latest.json">/tie/latest.json</a></span><span class="fd">The newest record. Overwritten each weekday.</span></div>
+      <div class="df"><span class="fn"><a href="/tie/latest.json">/tie/latest.json</a></span><span class="fd">The newest record. Overwritten each US weekday.</span></div>
       <div class="df"><span class="fn"><a href="/tie/2026-08-21.json">/tie/2026-08-21.json</a></span><span class="fd">One record per issue, named for the day it covers. These never change once written.</span></div>
       <div class="df"><span class="fn"><a href="/tie/index.json">/tie/index.json</a></span><span class="fd">Every record so far, newest first, including the days that produced nothing.</span></div>
       <div class="df"><span class="fn"><a href="/tie/sources.json">/tie/sources.json</a></span><span class="fd">All 69 sources with their group and whether they currently work.</span></div>
@@ -74,8 +74,10 @@
     <code>quote</code> is copied word for word from the source and <code>claim</code> is what I
     am using it to support. If you are checking a fact, follow the <code>url</code>.</p>
     <p><b>Dates are not what you would guess.</b> A record's <code>date</code> is the end of its
-    three-day window. The <code>run_id</code> also contains a date and that one is the window
-    start. Never parse a date out of <code>run_id</code>.</p>
+    three-day window, on the US Pacific calendar. <code>window.to</code> is that same instant
+    written with an Australia/Sydney offset, so slicing a date off it usually gives the next day
+    &mdash; same moment, different calendar. The <code>run_id</code> also contains a date and
+    that one is the window start. Never parse a date out of <code>run_id</code>.</p>
 
     <h2 id="what-there-isnt">What there isn't</h2>
     <p>No REST API, no webhook, no streaming, and none are planned. These are static files on a
