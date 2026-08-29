@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 27 Aug 2026 17:00:21 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 17:00:18 -0700</lastBuildDate>
+    <item>
+      <title>Agent execution stacks fill gaps in browsers, memory and task control</title>
+      <link>https://aaronzhang.ai/tie/2026-08-28</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-28</guid>
+      <pubDate>Fri, 28 Aug 2026 17:00:18 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Long-horizon agents: browser environments and cross-session memory are appearing together, and product reliability depends on visible state and recoverable failures&lt;/li&gt;&lt;li&gt;Open models enter the replacement pool: new open-weight models from GLM and Qwen require model selection to retest cost and stability on real tasks&lt;/li&gt;&lt;li&gt;The tool ecosystem is still expanding: there are 5 signals related to agent frameworks, with structured state and semantic actions receiving attention&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>OpenAI Jalapeño brings proprietary inference chips into product cost decisions</title>
       <link>https://aaronzhang.ai/tie/2026-08-27</link>
