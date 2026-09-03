@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 01 Sep 2026 17:00:19 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 17:00:23 -0700</lastBuildDate>
+    <item>
+      <title>Claude Fable 5.1 competes on long-running tasks and lower cache prices</title>
+      <link>https://aaronzhang.ai/tie/2026-09-02</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-02</guid>
+      <pubDate>Wed, 02 Sep 2026 17:00:23 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Long-task costs show signs of falling: lower cache read prices alongside model releases require end-to-end task costs instead of single-call pricing&lt;/li&gt;&lt;li&gt;Industry data connections are becoming a product threshold: high-value assistants need permission boundaries and auditable citations in the main workflow&lt;/li&gt;&lt;li&gt;The tool layer is still diverging quickly: leave room to replace combinations of plugin-based runners and lightweight models&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>OpenAI Astra reaches the critical cyber capability threshold</title>
       <link>https://aaronzhang.ai/tie/2026-09-01</link>
