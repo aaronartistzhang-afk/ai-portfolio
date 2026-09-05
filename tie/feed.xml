@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 03 Sep 2026 17:00:24 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 17:00:16 -0700</lastBuildDate>
+    <item>
+      <title>Claude Code extension and skills ecosystem gains momentum</title>
+      <link>https://aaronzhang.ai/tie/2026-09-04</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-04</guid>
+      <pubDate>Fri, 04 Sep 2026 17:00:16 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Verifiable outputs are starting to command a price: tasks that can connect to compilers or rule engines are better suited to delivering results with failure localization and reproduction records&lt;/li&gt;&lt;li&gt;Agent extensions need governance first: plugins and memory expand workflow coverage, while bringing permissions and task-level evaluation to the product foreground&lt;/li&gt;&lt;li&gt;Cost signals are appearing frequently: this issue has 5 pricing or cost-change signals, and model selection needs to consider cost per task at the same time&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>GPT-6 Astra is released and reaches a key cybersecurity threshold</title>
       <link>https://aaronzhang.ai/tie/2026-09-03</link>
