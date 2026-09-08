@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Fri, 04 Sep 2026 17:00:16 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 17:00:18 -0700</lastBuildDate>
+    <item>
+      <title>GPT-6 Astra expands to premium subscriptions and cloud APIs</title>
+      <link>https://aaronzhang.ai/tie/2026-09-07</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-07</guid>
+      <pubDate>Mon, 07 Sep 2026 17:00:18 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Model quotas become a retention variable: access order, limits, and compensation for high-capability models directly affect whether teams accept the default routing&lt;/li&gt;&lt;li&gt;Agent interfaces need revocation: tool control standards and incident disclosure both require authorization, receipts, and pause capability in product design&lt;/li&gt;&lt;li&gt;Audio and video tools continue to emerge incrementally: 5 new signals cover audio reasoning and video understanding, suitable for tracking the cost performance of real-time interaction&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Claude Code extension and skills ecosystem gains momentum</title>
       <link>https://aaronzhang.ai/tie/2026-09-04</link>
