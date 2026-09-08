@@ -8,15 +8,12 @@
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
 
-    <!-- 9/8 发布日:把下面这块取消注释,换成真实 pubDate(RFC-822) -->
-    <!--
     <item>
       <title>Your AI didn't find the cause. It found your definition.</title>
       <link>https://aaronzhang.ai/writing/denominator/</link>
       <guid isPermaLink="true">https://aaronzhang.ai/writing/denominator/</guid>
-      <pubDate>Tue, 08 Sep 2026 12:00:00 +1000</pubDate>
+      <pubDate>Wed, 09 Sep 2026 08:30:00 +1000</pubDate>
       <description>A completion rate looked like it fell 19.6% in a month. It had not moved.</description>
     </item>
-    -->
   </channel>
 </rss>

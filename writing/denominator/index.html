@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 日期口径：站面向美国读者，可见日期与 JSON-LD 一律用美西日历。
+     发布动作在悉尼周三 2026-09-09 08:30 AEST 执行 = 美西周二 2026-09-08 15:30 PT，
+     所以这里写 09-08 是对的，不要"顺手改成 09-09"。feed.xml 的 pubDate 用带时区的
+     Wed, 09 Sep 2026 08:30:00 +1000，美国订阅者的阅读器会显示成 Tue Sep 8，两边一致。
+     发布日仍需放置 card.png（1200x630，标题已烤进图里）到本目录。 -->
+<title>Your AI didn't find the cause. It found your definition.</title>
+<meta name="description" content="A completion rate looked like it fell 19.6% in a month. It had not moved. The AI attribution was arithmetically correct and completely useless, because nobody owned the definition of the denominator.">
+<link rel="canonical" href="https://aaronzhang.ai/writing/denominator/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Your AI didn't find the cause. It found your definition.">
+<meta property="og:description" content="A completion rate looked like it fell 19.6% in a month. It had not moved.">
+<meta property="og:url" content="https://aaronzhang.ai/writing/denominator/">
+<meta property="og:image" content="https://aaronzhang.ai/writing/denominator/card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your AI didn't find the cause. It found your definition.">
+<meta name="twitter:description" content="A completion rate looked like it fell 19.6% in a month. It had not moved.">
+<meta name="twitter:image" content="https://aaronzhang.ai/writing/denominator/card.png">
+
+<!-- GEO: named author, visible date, machine-readable article. This is what gets you cited by answer engines. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Your AI didn't find the cause. It found your definition.",
+  "description": "A completion rate looked like it fell 19.6% in a month. It had not moved. The AI attribution was arithmetically correct and completely useless, because nobody owned the definition of the denominator.",
+  "datePublished": "2026-09-08",
+  "dateModified": "2026-09-08",
+  "author": {
+    "@type": "Person",
+    "name": "Aaron Zhang",
+    "jobTitle": "AI Product Manager",
+    "url": "https://aaronzhang.ai/about/"
+  },
+  "publisher": { "@type": "Person", "name": "Aaron Zhang" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aaronzhang.ai/writing/denominator/" },
+  "about": ["AI evaluation", "product analytics", "metric attribution"]
+}
+</script>
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf6;
+    --card: #ffffff;
+    --fg: #1f1d1a;
+    --muted: #5d5a54;
+    --rule: #e6e2d9;
+    --accent: #b45309;
+    --quote-bg: #f5f3ec;
+    /* Reading column. 43rem measures ~74 characters at this size, the top of the
+       60–75 band. `ch` is not usable here: it keys off the "0" glyph, which is
+       wide in Charter, so 72ch renders as 82 characters. */
+    --measure: 43rem;
+    --frame: 72rem;     /* site chrome, same container as the other pages */
+    --sans: ui-sans-serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    /* shared figure language — same tokens as the homepage (site/index.html) */
+    --fig-false: #c94f44;
+    --fig-true:  #2e7d5b;
+    --fig-ink:   #77736a;
+    --fig-grid:  #e9e5db;
+    --fig-paper: #f5f3ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216;
+      --card: #151a20;
+      --fg: #e9e6e0;
+      --muted: #a39f97;
+      --rule: #272d35;
+      --accent: #e3a35b;
+      --quote-bg: #171c23;
+      --fig-false:#e07a6d; --fig-true:#5fbf94; --fig-ink:#8d8981;
+      --fig-grid:#242a32; --fig-paper:#12171d;
+    }
+    .menupanel { box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5); }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; font-size: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 1.1875rem/1.65 Charter, Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    padding: 2.6rem clamp(1.4rem, 5vw, 4rem) 6rem;   /* matches the other pages */
+  }
+  /* 27 寸及以上大屏:缩放 html,让 --measure 等 rem 布局跟着放大。
+     和 site/index.html、site/about/index.html 同一套做法。 */
+  @media (min-width: 1800px) { html { font-size: 113.5%; } }
+  /* The header is site chrome and spans the full frame like every other page.
+     Only the prose is held to a reading measure. */
+  main { max-width: var(--frame); margin: 0 auto; }
+
+  /* Same shape as /tie/: the 72rem frame is wider than any prose column, which
+     used to leave a dead strip down the right. The strip now carries the
+     headings of this page. Below 1100px it collapses and the article is alone. */
+  .grid {
+    display: grid; grid-template-columns: minmax(0, var(--measure)) 1fr;
+    gap: clamp(2rem, 4vw, 3.6rem); align-items: start;
+  }
+  article { max-width: var(--measure); margin: 0; }
+  .rail { position: sticky; top: 1.6rem; font-family: var(--sans); }
+  .rail h2 {
+    font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--fig-ink); font-weight: 500;
+    margin: 0 0 0.7rem;
+  }
+  .rail nav { display: flex; flex-direction: column; }
+  .rail a {
+    display: block; padding: 0.3rem 0 0.3rem 0.85rem; margin-left: -0.05rem;
+    border-left: 2px solid var(--rule);
+    font-size: 0.85rem; line-height: 1.4; color: var(--muted); text-decoration: none;
+  }
+  .rail a:hover { color: var(--accent); border-left-color: var(--accent); }
+  .rail a[aria-current] { color: var(--fg); font-weight: 600; border-left-color: var(--accent); }
+  .rail .back {
+    display: inline-block; border: 0; padding: 0; margin: 1.6rem 0 0;
+    font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; color: var(--fig-ink);
+  }
+  .rail .back:hover { color: var(--accent); }
+  @media (max-width: 1100px) {
+    .grid { grid-template-columns: minmax(0, 1fr); }
+    .rail { display: none; }
+  }
+
+  header.site {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    margin-bottom: 3.2rem;
+  }
+  header.site .name {
+    color: var(--fg); font-weight: 600; margin-right: auto;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  header.site .name svg { display: block; flex: 0 0 auto; }
+  header.site a { color: inherit; text-decoration: none; }
+  header.site a:hover { color: var(--accent); }
+  header.site .name:hover { color: var(--fg); }
+
+  /* Sub-page menu, same as the rest of the site: one nav tab owns six pages, so
+     the tab opens instead of leading to one and leaving five to be guessed at.
+     <details> gives open/close and keyboard support with no script. */
+  header.site .menu { position: relative; }
+  header.site .menu > summary {
+    list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.34rem;
+  }
+  header.site .menu > summary::-webkit-details-marker { display: none; }
+  header.site .menu > summary::after {
+    content: ""; width: 0.32em; height: 0.32em; opacity: 0.5;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: translateY(-0.12em) rotate(45deg);
+  }
+  header.site .menu > summary:hover { color: var(--accent); }
+  header.site .menu[open] > summary { color: var(--accent); }
+  header.site .menu[open] > summary::after { transform: translateY(0.06em) rotate(225deg); }
+  header.site .menu > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+  .menupanel {
+    position: absolute; top: calc(100% + 0.8rem); right: 0; z-index: 40;
+    display: grid; grid-template-columns: repeat(2, 14.2rem); gap: 0.1rem;
+    width: max-content; max-width: calc(100vw - 2.8rem);
+    padding: 0.6rem; background: var(--card); border: 1px solid var(--rule);
+    border-radius: 5px; box-shadow: 0 14px 36px rgba(31, 29, 26, 0.11);
+  }
+  .menupanel a { display: block; padding: 0.5rem 0.65rem; border-radius: 4px; text-decoration: none; }
+  .menupanel a:hover, .menupanel a:focus-visible { background: var(--fig-paper); }
+  .menupanel b {
+    display: block; font-family: Charter, Georgia, 'Iowan Old Style', serif;
+    font-size: 0.96rem; font-weight: 600; color: var(--fg); margin-bottom: 0.05rem;
+  }
+  .menupanel a:hover b, .menupanel a:focus-visible b { color: var(--accent); }
+  .menupanel span { display: block; font-size: 0.77rem; line-height: 1.45; color: var(--muted); }
+  @media (max-width: 640px) {
+    /* Anchor to the header rather than the tab, so the panel spans the column
+       without depending on this page's padding, which differs from the others. */
+    header.site { position: relative; }
+    header.site .menu { position: static; }
+    .menupanel {
+      left: 0; right: 0; width: auto; max-width: none;
+      grid-template-columns: 1fr; max-height: 74vh; overflow-y: auto;
+    }
+  }
+
+  h1 {
+    font-size: 2.05rem;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin: 2.75rem 0 0.85rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .byline {
+    font-family: ui-sans-serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 0.87rem;
+    color: var(--muted);
+    margin: 0 0 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .byline a { color: inherit; }
+  p { margin: 0 0 1.3rem; }
+  .lede { font-size: 1.18rem; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 700; }
+
+  figure {
+    margin: 2.5rem 0;
+    background: var(--fig-paper);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 1.2rem 1.3rem 0.9rem;
+  }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    margin-top: 0.75rem;
+    line-height: 1.5;
+  }
+  figcaption b { color: var(--fg); font-weight: 600; }
+
+  blockquote {
+    margin: 2rem 0;
+    padding: 1.1rem 1.4rem;
+    background: var(--quote-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+  }
+  blockquote p { margin: 0; font-size: 1.35rem; font-weight: 700; }
+
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0 2rem; }
+  .endnote {
+    font-family: ui-sans-serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  /* ---- action bar, sits under the byline (reusable: reads title + canonical
+         from the DOM, nothing hard-coded).
+         Borderless by design. An earlier version boxed the group and boxed every
+         button inside it, which turned a row of actions into a row of chips and
+         put all the visual weight on hairlines. One filled disc marks the primary
+         action, the speed toggle is the only outlined thing, everything else is
+         text that lights up on hover. Register is the byline's sans, not the
+         small-caps mono used for figure and index labels. ---- */
+  .byline { margin-bottom: 1.1rem; padding-bottom: 1.1rem; }
+  .share[hidden] { display: none; }
+  .share {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.1rem;
+    margin: 0 0 2.6rem; font-family: var(--sans);
+  }
+  .share a, .share button {
+    display: inline-flex; align-items: center; gap: 0.42rem;
+    background: none; border: 0; border-radius: 6px; cursor: pointer;
+    padding: 0.42rem 0.55rem; color: var(--muted); text-decoration: none;
+    font-family: var(--sans); font-size: 0.88rem; line-height: 1;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+  .share a:hover, .share button:hover { color: var(--accent); background: var(--fig-paper); }
+  .share a[hidden], .share button[hidden], .share svg[hidden] { display: none; }
+  .share svg { display: block; width: 16px; height: 16px; flex: 0 0 auto; }
+  .share button.ok { color: var(--fig-true); }
+  .share .spacer { flex: 1 1 1rem; min-width: 0; }
+
+  .player { display: inline-flex; align-items: center; gap: 0.1rem; }
+  .player .toggle { padding: 0 0.55rem 0 0; gap: 0.6rem; }
+  .player .disc {
+    width: 34px; height: 34px; border-radius: 50%; flex: 0 0 auto;
+    background: var(--fig-paper); color: var(--fg);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .player .toggle:hover { background: none; }
+  .player .toggle:hover .disc { background: var(--accent); color: var(--bg); }
+  .player .disc svg { width: 13px; height: 13px; }
+  .player .time {
+    font-size: 0.88rem; color: var(--fig-ink); padding: 0 0.55rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .player[data-on="1"] .time { color: var(--accent); }
+  .player .skip span { font-size: 0.72rem; }
+  /* The one outlined control, as in the reference: it is a setting, not an action. */
+  .player .rate {
+    border: 1px solid var(--rule); border-radius: 999px;
+    padding: 0.22rem 0.55rem; font-size: 0.78rem; margin-left: 0.3rem;
+  }
+  /* Icon swap rides on data-on, not the hidden attribute: <svg> is not an HTML
+     element, so el.hidden = true never reaches the DOM and both icons show. */
+  .player .i-pause, .player[data-on="1"] .i-play { display: none; }
+  .player[data-on="1"] .i-pause { display: block; }
+  .player .whileplaying { display: none; }
+  .player[data-on="1"] .whileplaying { display: inline-flex; }
+  .player[data-on="1"] .whileidle { display: none; }
+
+  @media (max-width: 480px) {
+    body { font-size: 18px; padding-top: 2rem; }
+    h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <a class="name" href="/">
+      <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="64" cy="64" r="13.5" fill="currentColor"/><circle cx="93.1" cy="34.9" r="8.5" fill="currentColor"/><circle cx="31.7" cy="87" r="8.5" fill="currentColor"/>
+        <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.18" stroke-width="2"/>
+      </svg>
+      Aaron Zhang
+    </a>
+    <a href="/#writing">Writing</a>
+    <details class="menu">
+      <summary>AI Daily</summary>
+      <div class="menupanel">
+        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this weekday</span></a>
+        <a href="/tie/archive?from=menu"><b>Archive</b><span>Every issue so far, quiet days included</span></a>
+        <a href="/tie/how-it-works?from=menu"><b>How it works</b><span>How 69 sources become three trends, in two pictures</span></a>
+        <a href="/tie/sources?from=menu"><b>What it reads</b><span>All 69 sources and how much weight each carries</span></a>
+        <a href="/tie/data?from=menu"><b>Get it as data</b><span>A JSON file per issue. No key, no rate limit</span></a>
+        <a href="/tie/terms?from=menu"><b>Licence</b><span>MIT, and what that lets you do with the data</span></a>
+      </div>
+    </details>
+    <a href="/deck/?from=nav">Talk</a>
+    <a href="/about/">About</a>
+  </header>
+
+<div class="grid">
+<article>
+
+  <h1>Your AI didn't find the cause. It found your definition.</h1>
+
+  <p class="byline">
+    By <a href="https://aaronzhang.ai/about/" rel="author">Aaron Zhang</a>, AI Product Manager
+    &middot; <time datetime="2026-09-08">8 September 2026</time>
+    &middot; 6 min read
+  </p>
+
+  <div class="share" hidden>
+    <!-- The running time lives in .time as visible text and nowhere else. It used
+         to also sit in a data-duration attribute, so updating the audio could
+         change one and not the other, and the stale one was the one on screen. -->
+    <div class="player" data-audio="denominator.m4a" data-on="0" hidden>
+      <button type="button" class="toggle" aria-label="Play">
+        <span class="disc">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="i-play"><path d="M8 5.2v13.6a.8.8 0 0 0 1.22.68l10.9-6.8a.8.8 0 0 0 0-1.36L9.22 4.52A.8.8 0 0 0 8 5.2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="i-pause"><path d="M7 4.5h3.4v15H7zm6.6 0H17v15h-3.4z"/></svg>
+        </span>
+        <span class="whileidle">Listen to article</span>
+      </button>
+      <span class="time">6:16</span>
+      <button type="button" class="whileplaying skip" data-skip="-15" aria-label="Back 15 seconds">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11.5 5.5 7.8 8.4l3.7 2.9"/><path d="M7.8 8.4h5.4a5.6 5.6 0 1 1-5.4 7"/>
+        </svg><span>15</span>
+      </button>
+      <button type="button" class="whileplaying skip" data-skip="15" aria-label="Forward 15 seconds">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12.5 5.5l3.7 2.9-3.7 2.9"/><path d="M16.2 8.4h-5.4a5.6 5.6 0 1 0 5.4 7"/>
+        </svg><span>15</span>
+      </button>
+      <button type="button" class="whileplaying rate" aria-label="Playback speed">1x</button>
+    </div>
+    <span class="spacer"></span>
+    <button type="button" data-share="copy">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+        <path d="M10.6 13.4a3.5 3.5 0 0 0 4.95 0l3.18-3.18a3.5 3.5 0 0 0-4.95-4.95L12.5 6.55"/>
+        <path d="M13.4 10.6a3.5 3.5 0 0 0-4.95 0L5.27 13.78a3.5 3.5 0 0 0 4.95 4.95l1.28-1.28"/>
+      </svg><span class="txt">Share</span>
+    </button>
+    <a class="ico" data-share="x" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg>
+    </a>
+    <a class="ico" data-share="li" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+    </a>
+    <a class="ico" data-share="hn" target="_blank" rel="noopener" aria-label="Submit to Hacker News" title="Submit to Hacker News">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="1.6" y="1.6" width="20.8" height="20.8" rx="2.4" stroke="currentColor" stroke-width="1.9"/>
+        <path d="M7.6 6.4 12 12.5l4.4-6.1M12 12.5V18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <p class="lede">A business metric I own looked like it fell 19.6% month over month. It had not moved.</p>
+
+  <p>I asked our analysis agent what happened. A few seconds later it told me that 92.6% of the decline came from one user segment. Specific number, named segment, no hedging. I had the shape of the story and I was about twenty minutes from writing the doc that would have sent three people chasing a problem that did not exist.</p>
+
+  <p>What stopped me was not a process. The number did not feel right, and the thing I had not checked was the denominator.</p>
+
+  <h2>The model was not wrong</h2>
+
+  <p>I want to get this part out of the way, because "the AI hallucinated" is the wrong lesson and it lets everybody off the hook.</p>
+
+  <p>The metric was a completion rate: of the people who could do a thing, how many did it. The version in the dashboard divided completions by the whole population. But a large chunk of that population was never able to complete the flow at all. They were excluded for structural reasons that had nothing to do with whether the product was healthy.</p>
+
+  <p>That month, the mix shifted. More people entered the population who could never have completed anything. The numerator held. The denominator grew. The rate fell.</p>
+
+  <p>So when I asked which segment drove the drop, the agent gave me the segment whose share had grown. That is the correct answer. The arithmetic was right, the attribution was right, and it answered exactly the question I asked on exactly the data I pointed it at.</p>
+
+  <p>The answer was still useless, because the question had a bad assumption inside it and neither of us checked.</p>
+
+  <p>Recompute against only the people who could actually complete the flow and the same six weeks read 91 to 96%. Flat. A little boring. True.</p>
+
+  <figure>
+    <!-- y axis is linear: 95% = y52, 85% = y144, 75% = y236 (9.2px per point).
+         Red runs 94.0 -> 75.6, which is exactly -19.6%. Do not eyeball these. -->
+    <svg viewBox="0 0 680 300" role="img" aria-label="Six weeks of a completion rate computed two ways. Counted against everyone, the rate falls 19.6 percent. Counted against only the people who were eligible to complete the flow, it holds steady between 91 and 96 percent.">
+      <g stroke="var(--fig-grid)" stroke-width="1">
+        <line x1="64" y1="52" x2="560" y2="52"/>
+        <line x1="64" y1="144" x2="560" y2="144"/>
+        <line x1="64" y1="236" x2="560" y2="236"/>
+      </g>
+      <g font-family="ui-monospace,Menlo,monospace" font-size="11" fill="var(--fig-ink)">
+        <text x="30" y="56">95%</text><text x="30" y="148">85%</text><text x="30" y="240">75%</text>
+      </g>
+      <polyline fill="none" stroke="var(--fig-false)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"
+        points="64,61 163,89 262,121 361,162 460,199 560,230.5"/>
+      <polyline fill="none" stroke="var(--fig-true)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"
+        points="64,61 163,80 262,43 361,89 460,70 560,80"/>
+      <circle cx="560" cy="230.5" r="4.5" fill="var(--fig-false)"/>
+      <circle cx="560" cy="80" r="4.5" fill="var(--fig-true)"/>
+      <text x="576" y="236" font-family="Charter,Georgia,serif" font-size="19" font-weight="700" fill="var(--fig-false)">&#8722;19.6%</text>
+      <text x="576" y="84" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="var(--fig-true)">steady 91&#8211;96%</text>
+      <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="var(--fig-ink)" text-anchor="middle">
+        <text x="64" y="258">W1</text><text x="163" y="258">W2</text><text x="262" y="258">W3</text>
+        <text x="361" y="258">W4</text><text x="460" y="258">W5</text><text x="560" y="258">W6</text>
+      </g>
+      <g font-family="ui-monospace,Menlo,monospace" font-size="11">
+        <rect x="64" y="276" width="14" height="3" fill="var(--fig-false)"/>
+        <text x="84" y="282" fill="var(--fig-ink)">counted against everyone</text>
+        <rect x="330" y="276" width="14" height="3" fill="var(--fig-true)"/>
+        <text x="350" y="282" fill="var(--fig-ink)">counted against the eligible base</text>
+      </g>
+    </svg>
+    <figcaption><b>fig. 1</b> · same weeks, same numerator. The only thing that changed is who was counted.</figcaption>
+  </figure>
+
+  <h2>Every rate has an eligibility rule, and almost nobody writes it down</h2>
+
+  <p>Pick any rate metric you look at weekly. Conversion, activation, reply rate, resolution rate, retention. Each one is a fraction, and each denominator carries a claim about who was even in a position to produce the numerator.</p>
+
+  <p>That claim is usually not written anywhere. It lives in the head of whoever built the pipeline, and it was probably correct on the day they built it. Then the population changes underneath it. A new market opens. A gating rule ships. A segment grows. The definition does not update, because definitions do not have owners the way dashboards have owners.</p>
+
+  <p>You end up with a number that is computed correctly, monitored carefully, reviewed weekly, and quietly measuring something nobody meant to measure.</p>
+
+  <p>I have started calling this an <strong>ineligible denominator</strong>, mostly so I have something short to say in review meetings. The check that catches it is three words:</p>
+
+  <blockquote><p>Who could have?</p></blockquote>
+
+  <p>For whatever rate you are looking at: who was actually in a position to produce this outcome? Is that the group in the denominator? If the answer is "I think so," it is not.</p>
+
+  <p>It takes about a minute when the pipeline is documented and about an afternoon when it is not. The afternoon version is the one worth doing, because that is the case where nobody has looked in a while.</p>
+
+  <h2>Why this gets worse with AI, and it is not the reason people usually give</h2>
+
+  <p>The obvious worry is that models make things up. That is a real problem and it is not this one. This one is more annoying, because the failure has none of the warning signs we have been trained to look for.</p>
+
+  <p>Speed removes the pause. When a query takes an analyst two days, there is slack in the process. Someone reads it on the way. Someone asks a dumb question in a thread. When the answer lands in four seconds, the pause is gone, and the pause was doing more work than anyone credited it for.</p>
+
+  <p>Confidence removes the tell. A junior analyst hands you an answer with a hedge attached, because they are unsure and it shows. The agent hands you 92.6% with no hedge, because it is not unsure. It has no way to be unsure about a definition it was never asked to evaluate.</p>
+
+  <p>And volume changes the shape of the mistake. One wrong analysis is an incident. A wrong definition wired into something that runs on a schedule is not an incident, it is a slow drift in what your whole team believes about the product, and there is no moment where an alarm goes off.</p>
+
+  <p>None of that is a model problem. The model did what it was asked. The gap is that no human had signed their name to the sentence "here is what right means for this number," and once nobody owns that, faster tools just get you to the wrong place sooner.</p>
+
+  <h2>What this doesn't prove</h2>
+
+  <p>Some things I want to be honest about, since it would be easy to over-read a single story.</p>
+
+  <p>It does not prove the 19.6% was meaningless. Against a different question, it is a real and interesting number. If you want to know how the overall population is shifting, that is exactly the metric to look at. It just was not the question anyone was asking that week.</p>
+
+  <p>It does not prove AI attribution is a bad idea. I still use it constantly and it is much better than what I did before. The agent found the segment faster than I would have, and once the denominator was fixed it re-ran in seconds. Speed is not the problem. Unowned definitions are the problem, and they were there long before any of this.</p>
+
+  <p>It does not prove I have solved anything. I caught this because something felt off, not because I had a check in place. I have one now. I do not know yet how many other numbers I look at every week have the same hole in them, and I am fairly sure the answer is not zero.</p>
+
+  <p>And one story is one story. I have not gone and measured how often this happens across a bunch of teams. If you have, I would like to read it.</p>
+
+  <h2>The part that is actually good news</h2>
+
+  <p>The fix here is not a framework and not a tool. Nobody has to build anything. Somebody has to answer one question in writing, once per metric, and put their name on it.</p>
+
+  <p>That is a strange thing to be optimistic about. But most of the AI failures I have run into at work have this shape. The model is fine. The pipeline is fine. There is a definition sitting in the middle of it that everyone assumed somebody else had checked, and the tooling got fast enough that the assumption now propagates before anyone notices.</p>
+
+  <p>So before you hand a metric to something that answers in four seconds, ask who could have. It is not a big ask. It is the smallest version of owning the thing.</p>
+
+  <hr>
+
+  <!-- 🔴 这句里的 "we A/B tested" 是刻意保留的(2026-09-06 定,别再改回 I)。
+       全文四处 we/our 只有这一处把动作归给团队,但:认错那半句已经是 "the three ways
+       I nearly got that number wrong",人称规矩想保的东西已经保住;公司里的 A/B test
+       本来就是团队干的,写 we 准确。而改它要重跑整段朗读音频 —— 这句在朗读文本里。
+       代价与收益不成比例。曾拟的替代版(存档,别误当待办):
+       "Next up: the A/B test that put one of these agents against revenue, and the
+        three ways I nearly got that number wrong too." -->
+  <p class="endnote">I work on evaluation for AI products that non-technical operators actually use. Next up: what happened when we A/B tested one of these agents against revenue, and the three ways I nearly got that number wrong too.</p>
+
+</article>
+
+  <aside class="rail" hidden>
+    <h2>On this page</h2>
+    <nav class="toc"></nav>
+    <a class="back" href="/#writing">&larr; All writing</a>
+  </aside>
+</div>
+</main>
+
+<script>
+/* Side index. Built from the article's own h2s rather than hand-listed, so the
+   next article gets one by copying this block and changing nothing. Ids are
+   derived from the heading text, which is left untouched. */
+(function () {
+  var rail = document.querySelector('.rail');
+  var toc = rail && rail.querySelector('.toc');
+  var heads = [].slice.call(document.querySelectorAll('article h2'));
+  if (!toc || heads.length < 2) return;          // one heading is not an index
+
+  var slug = function (s) {
+    return s.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-');
+  };
+  var links = heads.map(function (h) {
+    if (!h.id) h.id = slug(h.textContent);
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    toc.appendChild(a);
+    return a;
+  });
+  rail.hidden = false;
+
+  // Mark the heading you are currently under, the way /tie/ does.
+  if (!('IntersectionObserver' in window)) return;
+  var seen = {};
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { seen[e.target.id] = e.isIntersecting ? e.boundingClientRect.top : null; });
+    var current = null;
+    heads.forEach(function (h) {
+      if (h.getBoundingClientRect().top < window.innerHeight * 0.35) current = h.id;
+    });
+    links.forEach(function (a) {
+      if (a.getAttribute('href') === '#' + current) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+  }, { rootMargin: '0px 0px -60% 0px', threshold: [0, 1] });
+  heads.forEach(function (h) { io.observe(h); });
+})();
+</script>
+
+<script>
+// The menu is a <details>: it opens, closes and takes keyboard focus without
+// this. All that is missing natively is click-away and Escape.
+(function () {
+  var shut = function (skip) {
+    document.querySelectorAll('header.site .menu[open]').forEach(function (d) {
+      if (!skip || !d.contains(skip)) d.open = false;
+    });
+  };
+  document.addEventListener('click', function (e) { shut(e.target); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(null); });
+})();
+</script>
+
+<script>
+/* Player. Source-agnostic on purpose: with data-audio it plays that file, and
+   without one it falls back to the browser's own voice, so an article that never
+   gets an audio file still gets the same control. Nothing is fetched until the
+   button is pressed, so the page costs the same for readers who never use it.
+   The idle running time is the text already in .time, not audio metadata, since
+   reading metadata would mean a request before anyone asked for one. */
+(function () {
+  var box = document.querySelector('.player');
+  if (!box) return;
+  var toggle = box.querySelector('.toggle');
+  var time = box.querySelector('.time');
+  var rateBtn = box.querySelector('.rate');
+  var src = box.getAttribute('data-audio');
+  var idle = (time.textContent || '').trim();   // whatever the markup shows is the truth
+  var RATES = [1, 1.25, 1.5, 2];
+  var audio = null, ri = 0;
+
+  var clock = function (s) {
+    s = Math.max(0, Math.floor(s || 0));
+    return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2);
+  };
+  var setOn = function (on) {
+    box.setAttribute('data-on', on ? '1' : '0');
+    toggle.setAttribute('aria-label', on ? 'Pause' : 'Play');
+    if (!on && audio && !audio.currentTime) time.textContent = idle;
+  };
+
+  if (src) {
+    var build = function () {
+      audio = new Audio();
+      // No preload attribute. Nothing is fetched early anyway, because this
+      // element is not built until the first press; preload='none' on top of
+      // that told Chrome to hold off even then, and it never started.
+      audio.src = src;
+      audio.playbackRate = RATES[ri];
+      audio.addEventListener('timeupdate', function () { time.textContent = clock(audio.currentTime); });
+      audio.addEventListener('ended', function () { setOn(false); time.textContent = idle; });
+      // A file that will not load has to say so. Without this the button flips to
+      // playing, nothing comes out, and the page looks broken for no stated reason.
+      audio.addEventListener('error', function () { setOn(false); time.textContent = 'Unavailable'; });
+    };
+    toggle.addEventListener('click', function () {
+      if (!audio) build();
+      if (audio.paused) {
+        setOn(true);
+        time.textContent = clock(audio.currentTime);   // switch off the duration at once
+        var started = audio.play();
+        // play() rejects on a decode failure or a blocked gesture. Leaving it
+        // unhandled is what made a failure look like a dead button.
+        if (started && started.catch) started.catch(function () {
+          setOn(false);
+          time.textContent = 'Unavailable';
+        });
+      } else { audio.pause(); setOn(false); }
+    });
+    [].forEach.call(box.querySelectorAll('.skip'), function (b) {
+      b.addEventListener('click', function () {
+        if (!audio) return;
+        audio.currentTime = Math.max(0, audio.currentTime + parseFloat(b.getAttribute('data-skip')));
+      });
+    });
+    rateBtn.addEventListener('click', function () {
+      ri = (ri + 1) % RATES.length;
+      rateBtn.textContent = RATES[ri] + 'x';
+      if (audio) audio.playbackRate = RATES[ri];
+    });
+    box.hidden = false;
+    return;
+  }
+
+  // No file: read the page aloud with the browser's voice, if it has one.
+  if (!('speechSynthesis' in window)) return;
+  var chunks = [].slice.call(document.querySelectorAll('article h1, article h2, article p'))
+    .filter(function (el) { return !el.closest('.share'); })
+    .map(function (el) { return el.textContent.trim(); }).filter(Boolean);
+  var speaking = false;
+  time.textContent = '';
+  toggle.addEventListener('click', function () {
+    if (speaking) { speechSynthesis.cancel(); speaking = false; setOn(false); return; }
+    speechSynthesis.cancel();
+    chunks.forEach(function (t, i) {
+      var u = new SpeechSynthesisUtterance(t);
+      u.rate = RATES[ri];
+      if (i === chunks.length - 1) u.onend = function () { speaking = false; setOn(false); };
+      speechSynthesis.speak(u);
+    });
+    speaking = true; setOn(true);
+  });
+  rateBtn.addEventListener('click', function () {
+    ri = (ri + 1) % RATES.length; rateBtn.textContent = RATES[ri] + 'x';
+  });
+  window.addEventListener('beforeunload', function () { speechSynthesis.cancel(); });
+  box.hidden = false;
+})();
+</script>
+
+<script>
+/* Share row. Self-contained and article-agnostic: paste the .share markup plus
+   this block into any article and it wires itself from <h1> and rel=canonical.
+   No third-party SDK, so no external request and nothing to leak to. */
+(function () {
+  var box = document.querySelector('.share');
+  if (!box) return;
+
+  var canon = document.querySelector('link[rel="canonical"]');
+  // Always share the canonical URL, never location.href: tracking params must
+  // not ride along into other people's timelines.
+  var url = canon ? canon.href : location.origin + location.pathname;
+  var h1 = document.querySelector('article h1');
+  var title = (h1 ? h1.textContent : document.title).trim();
+  var u = encodeURIComponent(url), t = encodeURIComponent(title);
+
+  var intents = {
+    x:  'https://x.com/intent/post?text=' + t + '&url=' + u,
+    // LinkedIn dropped title/summary from share-offsite years ago, and shareUrl
+    // only attaches a link. `text` on the feed composer is the one parameter
+    // that still prefills the post body, which is what X's intent does.
+    li: 'https://www.linkedin.com/feed/?shareActive=true&text=' + encodeURIComponent(title + '\n\n' + url),
+    // Readers submit, because the strategy is no longer self-submission.
+    hn: 'https://news.ycombinator.com/submitlink?u=' + u + '&t=' + t
+  };
+  Object.keys(intents).forEach(function (k) {
+    var el = box.querySelector('[data-share="' + k + '"]');
+    if (el) el.setAttribute('href', intents[k]);
+  });
+
+  var copy = box.querySelector('[data-share="copy"]');
+  var copyTxt = copy.querySelector('.txt');   // swap the label only, never the icon
+
+  // Touch opens the OS sheet, desktop copies. Not because one is better, but
+  // because "share" means different things on the two: on a phone it means
+  // hand this to another app, and on a laptop it means put it on my clipboard
+  // so I can paste it. Keying off navigator.share alone got this wrong, since
+  // desktop browsers have it too and would open a sheet nobody asked for.
+  var done = function () {
+    copyTxt.textContent = 'Copied';
+    copy.classList.add('ok');
+    setTimeout(function () { copyTxt.textContent = 'Share'; copy.classList.remove('ok'); }, 1600);
+  };
+  // execCommand is deprecated but still the only path that works when the
+  // clipboard API is missing or refuses, which includes plain file:// testing.
+  var legacyCopy = function () {
+    var ta = document.createElement('textarea');
+    ta.value = url;
+    ta.setAttribute('readonly', '');
+    ta.style.cssText = 'position:fixed;top:-9999px;opacity:0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) {}
+    document.body.removeChild(ta);
+  };
+  var touch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  copy.addEventListener('click', function () {
+    if (touch && navigator.share) {
+      // Falls through to copying if the sheet cannot open; a dismissed sheet
+      // rejects too, so only treat a real failure as a reason to fall back.
+      navigator.share({ title: title, url: url }).catch(function (err) {
+        if (!err || err.name !== 'AbortError') legacyCopy();
+      });
+    } else if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(done, legacyCopy);
+    } else {
+      legacyCopy();
+    }
+  });
+
+  box.hidden = false;
+})();
+</script>
+</body>
+</html>
