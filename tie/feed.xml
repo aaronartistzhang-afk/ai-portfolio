@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 08 Sep 2026 17:00:19 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 17:00:16 -0700</lastBuildDate>
+    <item>
+      <title>Anthropic discloses Claude cybersecurity evaluation incidents</title>
+      <link>https://aaronzhang.ai/tie/2026-09-09</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-09</guid>
+      <pubDate>Wed, 09 Sep 2026 17:00:16 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent permissions become release conditions: internet access, execution, and write capabilities need to ship with audit and shutdown mechanisms&lt;/li&gt;&lt;li&gt;Coding agents begin to be assessed by delivery acceptance: test feedback and repository rules determine whether migration projects can expand in scope&lt;/li&gt;&lt;li&gt;The agent tool ecosystem is still expanding: supply of frameworks and tool calls is increasing, and products need to define controllable task boundaries first&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Mistral raises €3 billion to bet on sovereign open-weight AI</title>
       <link>https://aaronzhang.ai/tie/2026-09-08</link>
