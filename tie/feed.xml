@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 10 Sep 2026 17:00:20 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 17:00:17 -0700</lastBuildDate>
+    <item>
+      <title>Claude abuse disclosures bring agent safety controls forward</title>
+      <link>https://aaronzhang.ai/tie/2026-09-11</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-11</guid>
+      <pubDate>Fri, 11 Sep 2026 17:00:17 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent control layers have become essential: after multiple models run in parallel, state records, cost attribution and reversible artifacts will determine whether teams can use agents at scale&lt;/li&gt;&lt;li&gt;Voice interaction is starting to use tiered billing: the real-time voice layer and back-end reasoning can be scheduled separately, and duration control will directly affect product gross margins&lt;/li&gt;&lt;li&gt;Voice compression is still accelerating: five audio and video signals are clustering, and low bitrates and streaming processing are worth adding to real-time product roadmaps&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>DeepSeek-V4.1-Flash makes long-context costs a competitive point</title>
       <link>https://aaronzhang.ai/tie/2026-09-10</link>
