@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 15 Sep 2026 17:00:17 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 17:00:17 -0700</lastBuildDate>
+    <item>
+      <title>Claude combines work products and conversations</title>
+      <link>https://aaronzhang.ai/tie/2026-09-16</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-16</guid>
+      <pubDate>Wed, 16 Sep 2026 17:00:17 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Deliverables become the main experience interface: core metrics for conversational products need to cover finished-product quality, completion rate and per-task cost&lt;/li&gt;&lt;li&gt;Commercial conversations need to balance trust: once ads take on tasks, conversion design needs clear sponsorship labels and handoff boundaries&lt;/li&gt;&lt;li&gt;Cost signals are appearing in concentration: this issue has 5 pricing and cost-related signals, and model selection needs to be included in product gross margin calculations&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Agent skills, memory, and orchestration are becoming components</title>
       <link>https://aaronzhang.ai/tie/2026-09-15</link>
