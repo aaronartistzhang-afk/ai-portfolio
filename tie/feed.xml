@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 21 Sep 2026 17:00:27 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 17:00:21 -0700</lastBuildDate>
+    <item>
+      <title>Agent control planes, persistent memory and task planning tools are emerging in clusters</title>
+      <link>https://aaronzhang.ai/tie/2026-09-22</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-22</guid>
+      <pubDate>Tue, 22 Sep 2026 17:00:21 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Long-running agents need an operations layer: beyond model capability, plan persistence and recoverable execution have become checks for product usability&lt;/li&gt;&lt;li&gt;Long-context costs continue to fall: price cuts and caching discounts will change capacity design for high-frequency agent tasks&lt;/li&gt;&lt;li&gt;Audio and video signals remain fragmented: 5 related signals appeared this issue, but they have not yet formed a single product theme&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Meta Muse and Amazon dispute over agent access authorization</title>
       <link>https://aaronzhang.ai/tie/2026-09-21</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-12</guid>
       <pubDate>Tue, 11 Aug 2026 18:00:07 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent assets are becoming portable: work records and specialist skills can synchronize across tools, and products need to address permissions and version conflicts first&lt;/li&gt;&lt;li&gt;Reasoning data enters security audits: cross-session replay risks make isolation of caches, logs and tool credentials necessary&lt;/li&gt;&lt;li&gt;Audio and video entry points are still expanding: five new signals cluster around character reference, voice and agent products, and real-time creative interaction is worth tracking&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Claude Opus 5 strengthens long-horizon agent capabilities</title>
-      <link>https://aaronzhang.ai/tie/2026-08-11</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-11</guid>
-      <pubDate>Mon, 10 Aug 2026 18:00:08 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;The threshold for default automatic execution rises: As long-horizon task capabilities improve, the frequency of human handoffs will become a key metric for whether a default mode can launch.&lt;/li&gt;&lt;li&gt;Voice experience can be quantified: Turn-taking latency and tool-calling error rates should enter the core experience metrics for voice agents.&lt;/li&gt;&lt;li&gt;Framework selection gains attention: Five new signals are concentrated in agent frameworks, and product teams need to track differences between managed and local toolchains.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
