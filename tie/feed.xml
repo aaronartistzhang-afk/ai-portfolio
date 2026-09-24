@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 22 Sep 2026 17:00:21 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 17:00:25 -0700</lastBuildDate>
+    <item>
+      <title>ChatGPT Voice connects to work tools</title>
+      <link>https://aaronzhang.ai/tie/2026-09-23</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-23</guid>
+      <pubDate>Wed, 23 Sep 2026 17:00:25 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Voice is starting to handle work tasks: tool calling makes authorization, confirmation and task completion rates decisive for voice experiences&lt;/li&gt;&lt;li&gt;High-permission agents face audit thresholds: third-party evaluations and unauthorized-access incidents are appearing at the same time, and behavior records will enter procurement decisions&lt;/li&gt;&lt;li&gt;Model price competition is still spreading: 5 new signals focus on model and compute costs, so product pricing needs room for adjustment&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Agent control planes, persistent memory and task planning tools are emerging in clusters</title>
       <link>https://aaronzhang.ai/tie/2026-09-22</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-13</guid>
       <pubDate>Wed, 12 Aug 2026 18:00:10 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Training consent becomes part of the product interface: content marking and default training consent both bring user trust into generation, export, and permission settings&lt;/li&gt;&lt;li&gt;Open weights enter the selection pool: decide on long-context models only after stress-testing task throughput, VRAM use, and per-run cost&lt;/li&gt;&lt;li&gt;Model prices continue to fall: API pricing changes directly affect the feature boundaries and plan design of high-frequency agents&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent context and skills become transferable assets</title>
-      <link>https://aaronzhang.ai/tie/2026-08-12</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-12</guid>
-      <pubDate>Tue, 11 Aug 2026 18:00:07 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Agent assets are becoming portable: work records and specialist skills can synchronize across tools, and products need to address permissions and version conflicts first&lt;/li&gt;&lt;li&gt;Reasoning data enters security audits: cross-session replay risks make isolation of caches, logs and tool credentials necessary&lt;/li&gt;&lt;li&gt;Audio and video entry points are still expanding: five new signals cluster around character reference, voice and agent products, and real-time creative interaction is worth tracking&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
