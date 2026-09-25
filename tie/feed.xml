@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Wed, 23 Sep 2026 17:00:25 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 17:00:27 -0700</lastBuildDate>
+    <item>
+      <title>Gemini 3.8 expands real-time voice and avatars</title>
+      <link>https://aaronzhang.ai/tie/2026-09-24</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-24</guid>
+      <pubDate>Thu, 24 Sep 2026 17:00:27 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Voice agents are starting to complete tasks: real-time voice, avatars, and outbound phone calls are being placed in one product line, and experience should be measured by task completion rates&lt;/li&gt;&lt;li&gt;Long-task costs become a product variable: price competition for coding agents now covers long-context workloads, and routing and caching affect plan design&lt;/li&gt;&lt;li&gt;The agent tool layer is still expanding: MCP and lightweight frameworks continue to emerge, and permission models for tool access should come before feature accumulation&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>ChatGPT Voice connects to work tools</title>
       <link>https://aaronzhang.ai/tie/2026-09-23</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-14</guid>
       <pubDate>Thu, 13 Aug 2026 18:00:10 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Model selection should measure end-to-end tasks: models, orchestration tools, and invocation costs are being packaged together, so chat scores alone are no longer enough&lt;/li&gt;&lt;li&gt;Multi-agent systems need runtime constraints: collaboration can expand task coverage and amplify resource abuse and cascading permission risks&lt;/li&gt;&lt;li&gt;More inference pricing signals: this issue has 5 cost and pricing-related signals, and speed tiers and invocation costs need to be assessed together&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Claude text watermark sparks detectability debate</title>
-      <link>https://aaronzhang.ai/tie/2026-08-13</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-13</guid>
-      <pubDate>Wed, 12 Aug 2026 18:00:10 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Training consent becomes part of the product interface: content marking and default training consent both bring user trust into generation, export, and permission settings&lt;/li&gt;&lt;li&gt;Open weights enter the selection pool: decide on long-context models only after stress-testing task throughput, VRAM use, and per-run cost&lt;/li&gt;&lt;li&gt;Model prices continue to fall: API pricing changes directly affect the feature boundaries and plan design of high-frequency agents&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
