@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 24 Sep 2026 17:00:27 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 17:00:15 -0700</lastBuildDate>
+    <item>
+      <title>Claude plugin directory becomes an extension distribution entry point</title>
+      <link>https://aaronzhang.ai/tie/2026-09-25</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-25</guid>
+      <pubDate>Fri, 25 Sep 2026 17:00:15 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent distribution is becoming productized: plugin directories and cross-environment component libraries are increasing, and review and compatibility of tool interfaces will affect adoption&lt;/li&gt;&lt;li&gt;Capacity commitments need slack: data center commissioning and power supply plans have become uncertain, so real-time products cannot be scheduled based only on nominal compute capacity&lt;/li&gt;&lt;li&gt;Cost signals continue to grow: 5 pricing and cost-related signals have appeared together, and products should continue to calculate task unit economics&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Gemini 3.8 expands real-time voice and avatars</title>
       <link>https://aaronzhang.ai/tie/2026-09-24</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-17</guid>
       <pubDate>Sun, 16 Aug 2026 18:10:29 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Local multimodality enters routing options: open-weight 27B-class models are now feasible to run locally on consumer hardware, and products need to compare quality and cost using real tasks&lt;/li&gt;&lt;li&gt;The gateway layer affects pricing control: model routing, usage attribution and bill reconciliation cannot be fully handed over to vendor interfaces&lt;/li&gt;&lt;li&gt;More audio and video signals this issue: this issue aggregates 5 updates on audio, video and speech models, suitable for tracking live content production pipelines&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>DeepSeek launches V4-Pro and open-source Harness simultaneously</title>
-      <link>https://aaronzhang.ai/tie/2026-08-14</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-14</guid>
-      <pubDate>Thu, 13 Aug 2026 18:00:10 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Model selection should measure end-to-end tasks: models, orchestration tools, and invocation costs are being packaged together, so chat scores alone are no longer enough&lt;/li&gt;&lt;li&gt;Multi-agent systems need runtime constraints: collaboration can expand task coverage and amplify resource abuse and cascading permission risks&lt;/li&gt;&lt;li&gt;More inference pricing signals: this issue has 5 cost and pricing-related signals, and speed tiers and invocation costs need to be assessed together&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
