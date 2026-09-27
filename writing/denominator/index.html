@@ -10,17 +10,17 @@
      Wed, 09 Sep 2026 08:30:00 +1000，美国订阅者的阅读器会显示成 Tue Sep 8，两边一致。
      发布日仍需放置 card.png（1200x630，标题已烤进图里）到本目录。 -->
 <title>Your AI didn't find the cause. It found your definition.</title>
-<meta name="description" content="A completion rate looked like it fell 19.6% in a month. It had not moved. The AI attribution was arithmetically correct and completely useless, because nobody owned the definition of the denominator.">
+<meta name="description" content="A reach rate looked like it fell 19.6% in a month. It had not moved. The AI attribution was arithmetically correct and completely useless, because nobody owned the definition of the denominator.">
 <link rel="canonical" href="https://aaronzhang.ai/writing/denominator/">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="Your AI didn't find the cause. It found your definition.">
-<meta property="og:description" content="A completion rate looked like it fell 19.6% in a month. It had not moved.">
+<meta property="og:description" content="A reach rate looked like it fell 19.6% in a month. It had not moved.">
 <meta property="og:url" content="https://aaronzhang.ai/writing/denominator/">
 <meta property="og:image" content="https://aaronzhang.ai/writing/denominator/card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Your AI didn't find the cause. It found your definition.">
-<meta name="twitter:description" content="A completion rate looked like it fell 19.6% in a month. It had not moved.">
+<meta name="twitter:description" content="A reach rate looked like it fell 19.6% in a month. It had not moved.">
 <meta name="twitter:image" content="https://aaronzhang.ai/writing/denominator/card.png">
 
 <!-- GEO: named author, visible date, machine-readable article. This is what gets you cited by answer engines. -->
@@ -29,7 +29,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Your AI didn't find the cause. It found your definition.",
-  "description": "A completion rate looked like it fell 19.6% in a month. It had not moved. The AI attribution was arithmetically correct and completely useless, because nobody owned the definition of the denominator.",
+  "description": "A reach rate looked like it fell 19.6% in a month. It had not moved. The AI attribution was arithmetically correct and completely useless, because nobody owned the definition of the denominator.",
   "datePublished": "2026-09-08",
   "dateModified": "2026-09-08",
   "author": {
@@ -367,7 +367,7 @@
         </span>
         <span class="whileidle">Listen to article</span>
       </button>
-      <span class="time">6:16</span>
+      <span class="time">6:28</span>
       <button type="button" class="whileplaying skip" data-skip="-15" aria-label="Back 15 seconds">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M11.5 5.5 7.8 8.4l3.7 2.9"/><path d="M7.8 8.4h5.4a5.6 5.6 0 1 1-5.4 7"/>
@@ -403,28 +403,28 @@
 
   <p class="lede">A business metric I own looked like it fell 19.6% month over month. It had not moved.</p>
 
-  <p>I asked our analysis agent what happened. A few seconds later it told me that 92.6% of the decline came from one user segment. Specific number, named segment, no hedging. I had the shape of the story and I was about twenty minutes from writing the doc that would have sent three people chasing a problem that did not exist.</p>
+  <p>I was at my desk trying to work out how to explain a rate that kept falling, so I asked our analysis agent what happened. A few minutes later it came back with a detailed attribution report, conclusion and supporting data included: 92.6% of the decline came from one user segment. Specific number, named segment, no hedging. I had the shape of the story and I was about twenty minutes from writing the doc that would have sent three people chasing a problem that did not exist.</p>
 
-  <p>What stopped me was not a process. The number did not feel right, and the thing I had not checked was the denominator.</p>
+  <p>What stopped me was not a process. It was that the number could not guide any decision. Our monthly business review looks only at creators who actually went live, while this rate was counted against everyone. The two did not line up, and the thing I had not checked was the denominator.</p>
 
   <h2>The model was not wrong</h2>
 
   <p>I want to get this part out of the way, because "the AI hallucinated" is the wrong lesson and it lets everybody off the hook.</p>
 
-  <p>The metric was a completion rate: of the people who could do a thing, how many did it. The version in the dashboard divided completions by the whole population. But a large chunk of that population was never able to complete the flow at all. They were excluded for structural reasons that had nothing to do with whether the product was healthy.</p>
+  <p>The metric was a reach rate. The version in the dashboard divided by the whole population. But a large share of that population had not gone live that month, and the monthly review does not look at them at all. Counting them had nothing to do with whether the product was healthy.</p>
 
-  <p>That month, the mix shifted. More people entered the population who could never have completed anything. The numerator held. The denominator grew. The rate fell.</p>
+  <p>That month, the mix shifted. More creators who had not gone live entered the population. The numerator held. The denominator grew. The rate fell.</p>
 
   <p>So when I asked which segment drove the drop, the agent gave me the segment whose share had grown. That is the correct answer. The arithmetic was right, the attribution was right, and it answered exactly the question I asked on exactly the data I pointed it at.</p>
 
   <p>The answer was still useless, because the question had a bad assumption inside it and neither of us checked.</p>
 
-  <p>Recompute against only the people who could actually complete the flow and the same six weeks read 91 to 96%. Flat. A little boring. True.</p>
+  <p>Recompute against only the creators who actually went live and the same six weeks read 91 to 96%. Flat. A little boring. True.</p>
 
   <figure>
     <!-- y axis is linear: 95% = y52, 85% = y144, 75% = y236 (9.2px per point).
          Red runs 94.0 -> 75.6, which is exactly -19.6%. Do not eyeball these. -->
-    <svg viewBox="0 0 680 300" role="img" aria-label="Six weeks of a completion rate computed two ways. Counted against everyone, the rate falls 19.6 percent. Counted against only the people who were eligible to complete the flow, it holds steady between 91 and 96 percent.">
+    <svg viewBox="0 0 680 300" role="img" aria-label="Six weeks of a reach rate computed two ways. Counted against everyone, the rate falls 19.6 percent. Counted against only the creators who went live, it holds steady between 91 and 96 percent.">
       <g stroke="var(--fig-grid)" stroke-width="1">
         <line x1="64" y1="52" x2="560" y2="52"/>
         <line x1="64" y1="144" x2="560" y2="144"/>
@@ -449,10 +449,10 @@
         <rect x="64" y="276" width="14" height="3" fill="var(--fig-false)"/>
         <text x="84" y="282" fill="var(--fig-ink)">counted against everyone</text>
         <rect x="330" y="276" width="14" height="3" fill="var(--fig-true)"/>
-        <text x="350" y="282" fill="var(--fig-ink)">counted against the eligible base</text>
+        <text x="350" y="282" fill="var(--fig-ink)">counted against creators who went live</text>
       </g>
     </svg>
-    <figcaption><b>fig. 1</b> · same weeks, same numerator. The only thing that changed is who was counted.</figcaption>
+    <figcaption><b>fig. 1</b> · same weeks, same data. The only thing that changed is who was counted.</figcaption>
   </figure>
 
   <h2>Every rate has an eligibility rule, and almost nobody writes it down</h2>
@@ -475,7 +475,7 @@
 
   <p>The obvious worry is that models make things up. That is a real problem and it is not this one. This one is more annoying, because the failure has none of the warning signs we have been trained to look for.</p>
 
-  <p>Speed removes the pause. When a query takes an analyst two days, there is slack in the process. Someone reads it on the way. Someone asks a dumb question in a thread. When the answer lands in four seconds, the pause is gone, and the pause was doing more work than anyone credited it for.</p>
+  <p>Speed removes the pause. When a query takes an analyst two days, there is slack in the process. Someone reads it on the way. Someone asks a dumb question in a thread. When the answer lands in a few minutes, the pause is gone, and the pause was doing more work than anyone credited it for.</p>
 
   <p>Confidence removes the tell. A junior analyst hands you an answer with a hedge attached, because they are unsure and it shows. The agent hands you 92.6% with no hedge, because it is not unsure. It has no way to be unsure about a definition it was never asked to evaluate.</p>
 
@@ -489,9 +489,9 @@
 
   <p>It does not prove the 19.6% was meaningless. Against a different question, it is a real and interesting number. If you want to know how the overall population is shifting, that is exactly the metric to look at. It just was not the question anyone was asking that week.</p>
 
-  <p>It does not prove AI attribution is a bad idea. I still use it constantly and it is much better than what I did before. The agent found the segment faster than I would have, and once the denominator was fixed it re-ran in seconds. Speed is not the problem. Unowned definitions are the problem, and they were there long before any of this.</p>
+  <p>It does not prove AI attribution is a bad idea. I still use it constantly and it is much better than what I did before. The agent found the segment faster than I would have, and once the denominator was fixed it re-ran in minutes. Speed is not the problem. Unowned definitions are the problem, and they were there long before any of this.</p>
 
-  <p>It does not prove I have solved anything. I caught this because something felt off, not because I had a check in place. I have one now. I do not know yet how many other numbers I look at every week have the same hole in them, and I am fairly sure the answer is not zero.</p>
+  <p>It does not prove I have solved anything. I caught this because I happened to be working out how to explain that number to the business, and I knew which group the review looks at, not because I had a check in place. I have one now: we rebuilt the metric around creators who went live, and I turned the "who is this counting?" check into a reusable instruction pack for AI and put it on our internal AI platform for operations, so anyone there can use it without knowing the trap exists. I do not know yet how many other numbers I look at every week have the same hole in them, and I am fairly sure the answer is not zero.</p>
 
   <p>And one story is one story. I have not gone and measured how often this happens across a bunch of teams. If you have, I would like to read it.</p>
 
@@ -501,7 +501,7 @@
 
   <p>That is a strange thing to be optimistic about. But most of the AI failures I have run into at work have this shape. The model is fine. The pipeline is fine. There is a definition sitting in the middle of it that everyone assumed somebody else had checked, and the tooling got fast enough that the assumption now propagates before anyone notices.</p>
 
-  <p>So before you hand a metric to something that answers in four seconds, ask who could have. It is not a big ask. It is the smallest version of owning the thing.</p>
+  <p>So before you hand a metric to something that answers in a few minutes, ask who could have. It is not a big ask. It is the smallest version of owning the thing.</p>
 
   <hr>
 
