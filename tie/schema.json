@@ -106,7 +106,7 @@
         "sources_configured": { "type": "integer" },
         "source_keys_reporting": {
           "type": "integer",
-          "description": "Distinct source keys that contributed at least one accepted signal. ⚠️ NOT a subset of `sources_configured`, and not a count of registry entries: an aggregator's sub-feeds report under their own `aihot:*` keys, so this can exceed `sources_configured`. It counts reporting keys."
+          "description": "Distinct publishers that contributed at least one accepted signal (the keys of `by_source`). ⚠️ Not a count of registry entries: a company's feeds fold into one publisher, and items that arrive through an aggregator (AIHOT) count under their original publisher, so this can be smaller or larger than `sources_configured`."
         },
         "signals_raw": { "type": "integer", "description": "Items fetched, before dedup." },
         "signals_accepted": { "type": "integer", "description": "Items surviving dedup and scoring." },
@@ -118,7 +118,7 @@
         "by_source": {
           "type": "object",
           "additionalProperties": { "type": "integer" },
-          "description": "Accepted signal count per source id. Keys match ids in sources.json."
+          "description": "Accepted signal count per publisher id. A company's feeds fold into one key (google, meta, openai); items that arrive through an aggregator (AIHOT) count under their original publisher (its mapped id, or a slug of its name). Not the same keys as sources.json."
         }
       }
     },

@@ -4,10 +4,17 @@
     <title>AI Daily</title>
     <link>https://aaronzhang.ai/tie/</link>
     <atom:link href="https://aaronzhang.ai/tie/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Three trends a day, each bound to a quoted source. Machine-produced over 69 sources; nothing hand-picked.</description>
+    <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Fri, 25 Sep 2026 17:00:15 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 17:00:21 -0700</lastBuildDate>
+    <item>
+      <title>Agent privilege escalation drives demand for isolation and auditing</title>
+      <link>https://aaronzhang.ai/tie/2026-09-28</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-28</guid>
+      <pubDate>Mon, 28 Sep 2026 17:00:21 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Stricter agent launch requirements: authorization, logging and termination capabilities for tool calls will affect the range of tasks enterprises can procure&lt;/li&gt;&lt;li&gt;Mid-tier models can take on more high-frequency tasks: as speed and per-task costs fall together, model routing should be recalculated based on real task success rates&lt;/li&gt;&lt;li&gt;Agent interfaces continue to expand: signals such as browser checkout and MCP connectors are increasing, and products need clear boundaries for tool permissions&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Claude plugin directory becomes an extension distribution entry point</title>
       <link>https://aaronzhang.ai/tie/2026-09-25</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-18</guid>
       <pubDate>Mon, 17 Aug 2026 18:00:05 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;A portable layer is beginning to take shape: skill libraries and runner interfaces are appearing together, so agent products need to separate workflow assets from execution engines by design&lt;/li&gt;&lt;li&gt;Supply constraints enter experience design: latency and queuing for long-running tasks need to be handled as product capabilities rather than back-end operations issues&lt;/li&gt;&lt;li&gt;More MCP integration signals: 5 new signals point to containerized operation and tool integration, and interoperability merits continued tracking&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Qwen3.8 open weights lower the barrier to local multimodality</title>
-      <link>https://aaronzhang.ai/tie/2026-08-17</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-17</guid>
-      <pubDate>Sun, 16 Aug 2026 18:10:29 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Local multimodality enters routing options: open-weight 27B-class models are now feasible to run locally on consumer hardware, and products need to compare quality and cost using real tasks&lt;/li&gt;&lt;li&gt;The gateway layer affects pricing control: model routing, usage attribution and bill reconciliation cannot be fully handed over to vendor interfaces&lt;/li&gt;&lt;li&gt;More audio and video signals this issue: this issue aggregates 5 updates on audio, video and speech models, suitable for tracking live content production pipelines&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

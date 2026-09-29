@@ -21,7 +21,7 @@
       "tier": "primary_release",
       "type": "official",
       "host": "deepmind.google",
-      "status": "degraded_fine"
+      "status": "ok"
     },
     {
       "id": "cohere_blog",
@@ -56,6 +56,13 @@
       "tier": "primary_release",
       "type": "official",
       "host": "ai.meta.com",
+      "status": "ok"
+    },
+    {
+      "id": "google_gemini_blog",
+      "tier": "primary_release",
+      "type": "official",
+      "host": "blog.google",
       "status": "ok"
     },
     {
@@ -209,7 +216,7 @@
       "id": "rundown_ai",
       "tier": "independent_validation",
       "type": "blog",
-      "host": "therundown.substack.com",
+      "host": "www.therundown.ai",
       "status": "ok"
     },
     {
@@ -227,10 +234,66 @@
       "status": "ok"
     },
     {
+      "id": "google_research_blog",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "research.google",
+      "status": "ok"
+    },
+    {
+      "id": "microsoft_research_blog",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "www.microsoft.com",
+      "status": "ok"
+    },
+    {
+      "id": "amazon_science",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "www.amazon.science",
+      "status": "ok"
+    },
+    {
+      "id": "apple_ml_research",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "machinelearning.apple.com",
+      "status": "ok"
+    },
+    {
+      "id": "nextplatform",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "www.nextplatform.com",
+      "status": "ok"
+    },
+    {
+      "id": "chipsandcheese",
+      "tier": "independent_validation",
+      "type": "research",
+      "host": "chipsandcheese.com",
+      "status": "ok"
+    },
+    {
+      "id": "the_decoder",
+      "tier": "independent_validation",
+      "type": "news",
+      "host": "the-decoder.com",
+      "status": "ok"
+    },
+    {
+      "id": "zvi_mowshowitz",
+      "tier": "independent_validation",
+      "type": "blog",
+      "host": "thezvi.wordpress.com",
+      "status": "ok"
+    },
+    {
       "id": "toms_hardware_ai",
       "tier": "attention",
       "type": "news",
-      "host": "",
+      "host": "www.tomshardware.com",
       "status": "blocked_403"
     },
     {
@@ -357,7 +420,7 @@
       "tier": "attention",
       "type": "news",
       "host": "venturebeat.com",
-      "status": "ok"
+      "status": "blocked_challenge"
     },
     {
       "id": "techcrunch_venture",
@@ -399,7 +462,7 @@
       "tier": "attention",
       "type": "social",
       "host": "",
-      "status": "ok"
+      "status": "blocked_superseded"
     },
     {
       "id": "youtube_ai",
@@ -458,10 +521,115 @@
       "status": "ok"
     },
     {
+      "id": "google_blog_ai",
+      "tier": "attention",
+      "type": "official",
+      "host": "blog.google",
+      "status": "ok"
+    },
+    {
+      "id": "google_cloud_ai_blog",
+      "tier": "attention",
+      "type": "official",
+      "host": "cloudblog.withgoogle.com",
+      "status": "ok"
+    },
+    {
+      "id": "meta_engineering",
+      "tier": "attention",
+      "type": "blog",
+      "host": "engineering.fb.com",
+      "status": "ok"
+    },
+    {
+      "id": "pytorch_blog",
+      "tier": "attention",
+      "type": "blog",
+      "host": "pytorch.org",
+      "status": "ok"
+    },
+    {
+      "id": "microsoft_blog",
+      "tier": "attention",
+      "type": "official",
+      "host": "blogs.microsoft.com",
+      "status": "ok"
+    },
+    {
+      "id": "aws_news_blog",
+      "tier": "attention",
+      "type": "official",
+      "host": "aws.amazon.com",
+      "status": "ok"
+    },
+    {
+      "id": "nvidia_newsroom",
+      "tier": "attention",
+      "type": "official",
+      "host": "nvidianews.nvidia.com",
+      "status": "ok"
+    },
+    {
+      "id": "servethehome",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.servethehome.com",
+      "status": "ok"
+    },
+    {
+      "id": "zhidx",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.zhidx.com",
+      "status": "ok"
+    },
+    {
+      "id": "mit_tech_review_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "www.technologyreview.com",
+      "status": "ok"
+    },
+    {
+      "id": "ars_technica_ai",
+      "tier": "attention",
+      "type": "news",
+      "host": "arstechnica.com",
+      "status": "ok"
+    },
+    {
       "id": "kr36_ai",
       "tier": "companion",
       "type": "news",
       "host": "36kr.com",
+      "status": "ok"
+    },
+    {
+      "id": "meta_newsroom",
+      "tier": "companion",
+      "type": "official",
+      "host": "about.fb.com",
+      "status": "ok"
+    },
+    {
+      "id": "apple_newsroom",
+      "tier": "companion",
+      "type": "official",
+      "host": "www.apple.com",
+      "status": "ok"
+    },
+    {
+      "id": "eetimes",
+      "tier": "companion",
+      "type": "news",
+      "host": "www.eetimes.com",
+      "status": "ok"
+    },
+    {
+      "id": "tldr_ai",
+      "tier": "companion",
+      "type": "news",
+      "host": "tldr.tech",
       "status": "ok"
     },
     {
@@ -493,5 +661,5 @@
       "status": "ok"
     }
   ],
-  "count": 69
+  "count": 93
 }
