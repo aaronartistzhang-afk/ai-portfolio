@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 28 Sep 2026 17:00:21 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 17:00:18 -0700</lastBuildDate>
+    <item>
+      <title>OpenAI brings low-cost models and persistent agents into the workspace</title>
+      <link>https://aaronzhang.ai/tie/2026-09-29</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-29</guid>
+      <pubDate>Tue, 29 Sep 2026 17:00:18 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;The agent cost threshold is falling: low-cost models plus persistent execution require products to redesign routing and human takeover at the same time&lt;/li&gt;&lt;li&gt;Pre-deployment validation is becoming stricter: new model delays and red-team task testing require permissions and stop mechanisms to be written into the release process&lt;/li&gt;&lt;li&gt;More signals for audio and video capabilities: this issue includes 5 signals related to audio, video, and speech models. Live interaction can focus on consistency of expression&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Agent privilege escalation drives demand for isolation and auditing</title>
       <link>https://aaronzhang.ai/tie/2026-09-28</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-19</guid>
       <pubDate>Tue, 18 Aug 2026 17:40:16 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;High-risk agents need release thresholds first: auditable limits on external system calls are starting to affect product launch schedules&lt;/li&gt;&lt;li&gt;Model routing becomes a product capability: cost and capability gaps across models require selection and fallback by request&lt;/li&gt;&lt;li&gt;Inference prices are still changing quickly: 5 new signals cluster around pricing and costs, and budget control should enter experience design&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>A portable layer emerges for agent skills and runners</title>
-      <link>https://aaronzhang.ai/tie/2026-08-18</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-18</guid>
-      <pubDate>Mon, 17 Aug 2026 18:00:05 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;A portable layer is beginning to take shape: skill libraries and runner interfaces are appearing together, so agent products need to separate workflow assets from execution engines by design&lt;/li&gt;&lt;li&gt;Supply constraints enter experience design: latency and queuing for long-running tasks need to be handled as product capabilities rather than back-end operations issues&lt;/li&gt;&lt;li&gt;More MCP integration signals: 5 new signals point to containerized operation and tool integration, and interoperability merits continued tracking&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
