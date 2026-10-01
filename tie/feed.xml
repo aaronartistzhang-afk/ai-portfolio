@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 29 Sep 2026 17:00:18 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 17:00:21 -0700</lastBuildDate>
+    <item>
+      <title>Gemini 4 Argon joins the frontier model competition</title>
+      <link>https://aaronzhang.ai/tie/2026-09-30</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-30</guid>
+      <pubDate>Wed, 30 Sep 2026 17:00:21 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Multi-model routing becomes a required capability: as frontier model gaps narrow, task success rates and per-task costs should jointly determine calling strategy&lt;/li&gt;&lt;li&gt;Agent reliability enters purchasing criteria: recovery, permissions, and evidence verification for long-running tasks directly affect paid workflow retention&lt;/li&gt;&lt;li&gt;Inference cost discussion heats up: pricing and cost signals appear in concentration, and products need to put usage controls into experience design&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>OpenAI brings low-cost models and persistent agents into the workspace</title>
       <link>https://aaronzhang.ai/tie/2026-09-29</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-20</guid>
       <pubDate>Wed, 19 Aug 2026 17:40:17 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent reliability depends on the runtime: long-running products must include state recovery and permission controls in acceptance testing, rather than testing model outputs alone&lt;/li&gt;&lt;li&gt;Routing is starting to affect the paid experience: default models, failure switching and usage attribution directly affect product gross margins and user perception&lt;/li&gt;&lt;li&gt;Cost volatility is still passing through: several pricing and low-cost model signals have appeared, and products need replaceable inference configurations&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Frontier cyber capabilities trigger release safety thresholds</title>
-      <link>https://aaronzhang.ai/tie/2026-08-19</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-19</guid>
-      <pubDate>Tue, 18 Aug 2026 17:40:16 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;High-risk agents need release thresholds first: auditable limits on external system calls are starting to affect product launch schedules&lt;/li&gt;&lt;li&gt;Model routing becomes a product capability: cost and capability gaps across models require selection and fallback by request&lt;/li&gt;&lt;li&gt;Inference prices are still changing quickly: 5 new signals cluster around pricing and costs, and budget control should enter experience design&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
