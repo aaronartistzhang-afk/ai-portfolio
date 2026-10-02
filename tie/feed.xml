@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Wed, 30 Sep 2026 17:00:21 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 17:00:20 -0700</lastBuildDate>
+    <item>
+      <title>OpenAI bundles persistent agents with high-priced subscriptions</title>
+      <link>https://aaronzhang.ai/tie/2026-10-01</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-01</guid>
+      <pubDate>Thu, 01 Oct 2026 17:00:20 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Persistent agents begin testing high-priced subscriptions, reliable delivery of long-running tasks and per-task costs are jointly determining the pricing ceiling&lt;/li&gt;&lt;li&gt;Agent runtimes open programmable interfaces, extension ecosystems will add functional supply while increasing pressure on permission audits&lt;/li&gt;&lt;li&gt;More signals are emerging from lightweight agent frameworks, containerization and tool orchestration remain active directions in the developer ecosystem&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Gemini 4 Argon joins the frontier model competition</title>
       <link>https://aaronzhang.ai/tie/2026-09-30</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-21</guid>
       <pubDate>Thu, 20 Aug 2026 17:40:21 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent releases must first pass risk gates: models that can operate real systems will have their release pace constrained by permissions, audits and human confirmation&lt;/li&gt;&lt;li&gt;Discovery traffic can be reconfigured by users: natural-language preferences and source selection will change distribution metrics for content products&lt;/li&gt;&lt;li&gt;The tool connection layer is expanding: gateway and WebMCP signals around Agent framework are increasing, so integration protocols need room for replacement&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent runtimes add memory, isolation and skills layers</title>
-      <link>https://aaronzhang.ai/tie/2026-08-20</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-20</guid>
-      <pubDate>Wed, 19 Aug 2026 17:40:17 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Agent reliability depends on the runtime: long-running products must include state recovery and permission controls in acceptance testing, rather than testing model outputs alone&lt;/li&gt;&lt;li&gt;Routing is starting to affect the paid experience: default models, failure switching and usage attribution directly affect product gross margins and user perception&lt;/li&gt;&lt;li&gt;Cost volatility is still passing through: several pricing and low-cost model signals have appeared, and products need replaceable inference configurations&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
