@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 01 Oct 2026 17:00:20 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 17:00:21 -0700</lastBuildDate>
+    <item>
+      <title>Apple tightens Full Disk Access permissions for macOS agents</title>
+      <link>https://aaronzhang.ai/tie/2026-10-02</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-02</guid>
+      <pubDate>Fri, 02 Oct 2026 17:00:21 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Permission design has become a threshold for agent products: tighter system permissions and regulatory investigations are appearing at the same time, so authorization records and human confirmation should enter default workflows&lt;/li&gt;&lt;li&gt;Audio generation depends on editability: speech and music can be generated in one step, but product retention depends on whether later revisions are stable&lt;/li&gt;&lt;li&gt;Cost and pricing affect model selection: 5 related signals have appeared together, and model routing needs to compare quality and price together&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>OpenAI bundles persistent agents with high-priced subscriptions</title>
       <link>https://aaronzhang.ai/tie/2026-10-01</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-24</guid>
       <pubDate>Mon, 24 Aug 2026 17:00:18 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Task costs will outweigh model unit prices: token consumption and verification steps for long-running agents both raise cost per task&lt;/li&gt;&lt;li&gt;Acceptability enters the main product flow: long-running execution needs test evidence and recovery design to build user trust&lt;/li&gt;&lt;li&gt;MCP security tools continue to increase: the agent framework ecosystem already shows several signals around protocols and permission controls&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Frontier cyber capabilities trigger release and governance thresholds</title>
-      <link>https://aaronzhang.ai/tie/2026-08-21</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-21</guid>
-      <pubDate>Thu, 20 Aug 2026 17:40:21 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Agent releases must first pass risk gates: models that can operate real systems will have their release pace constrained by permissions, audits and human confirmation&lt;/li&gt;&lt;li&gt;Discovery traffic can be reconfigured by users: natural-language preferences and source selection will change distribution metrics for content products&lt;/li&gt;&lt;li&gt;The tool connection layer is expanding: gateway and WebMCP signals around Agent framework are increasing, so integration protocols need room for replacement&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
