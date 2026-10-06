@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Fri, 02 Oct 2026 17:00:21 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 17:00:17 -0700</lastBuildDate>
+    <item>
+      <title>EU text provenance marking moves into the product layer</title>
+      <link>https://aaronzhang.ai/tie/2026-10-05</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-05</guid>
+      <pubDate>Mon, 05 Oct 2026 17:00:17 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;AI acceptance testing needs evidence: static leaderboards cannot cover test memory and low-quality submissions, so products need to verify real execution results&lt;/li&gt;&lt;li&gt;Compliance interfaces enter default design: provenance marking and data permissions will both affect product paths for enterprise and EU users&lt;/li&gt;&lt;li&gt;More cost and pricing signals: this issue has 5 related signals, and cost control will continue to affect product packaging&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Apple tightens Full Disk Access permissions for macOS agents</title>
       <link>https://aaronzhang.ai/tie/2026-10-02</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-25</guid>
       <pubDate>Tue, 25 Aug 2026 17:00:25 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Inference costs are starting to constrain agent experience: response speed and cost per task for long-running tasks need to enter product selection and pricing design&lt;/li&gt;&lt;li&gt;Memory must come with revocable controls: memory across entry points reduces repeated explanations, but also expands the scope of impact from incorrect information&lt;/li&gt;&lt;li&gt;Agent tools are starting to compete on production usability: frameworks, data integration, and containerization are increasing at the same time, and products need to define operating boundaries earlier&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent inference enters competition for full-stack throughput</title>
-      <link>https://aaronzhang.ai/tie/2026-08-24</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-24</guid>
-      <pubDate>Mon, 24 Aug 2026 17:00:18 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Task costs will outweigh model unit prices: token consumption and verification steps for long-running agents both raise cost per task&lt;/li&gt;&lt;li&gt;Acceptability enters the main product flow: long-running execution needs test evidence and recovery design to build user trust&lt;/li&gt;&lt;li&gt;MCP security tools continue to increase: the agent framework ecosystem already shows several signals around protocols and permission controls&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
