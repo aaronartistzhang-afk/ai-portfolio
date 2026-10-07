@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 05 Oct 2026 17:00:17 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 17:00:30 -0700</lastBuildDate>
+    <item>
+      <title>Open multimodal embedding models become an option for lightweight deployment</title>
+      <link>https://aaronzhang.ai/tie/2026-10-06</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-06</guid>
+      <pubDate>Tue, 06 Oct 2026 17:00:30 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;The retrieval layer can be separated from large models: open multimodal embedding models allow the quality and cost of local recall to be optimized separately&lt;/li&gt;&lt;li&gt;Enterprise agents must clear governance first: knowledge access and external actions both require permissions, auditing and fallback to come first&lt;/li&gt;&lt;li&gt;Lightweight agent tools are increasing: containerization and tool-calling frameworks are appearing frequently, while integration costs still need testing&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>EU text provenance marking moves into the product layer</title>
       <link>https://aaronzhang.ai/tie/2026-10-05</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-26</guid>
       <pubDate>Wed, 26 Aug 2026 17:00:17 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Action permissions need to be productized: after the expansion of browser-based task execution, authorization, auditing, and human confirmation will directly affect whether users dare to hand over tasks&lt;/li&gt;&lt;li&gt;Long-running task costs are harder to estimate: agent retrieval and retries amplify token consumption, so pricing based on chat costs is easily distorted&lt;/li&gt;&lt;li&gt;There are more entry points for agent tools: more signals are appearing for applications and content tools that agents can call, so interface design should prioritize verifiable execution&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>OpenAI&#x27;s in-house Jalapeño pushes inference efficiency into product competition</title>
-      <link>https://aaronzhang.ai/tie/2026-08-25</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-25</guid>
-      <pubDate>Tue, 25 Aug 2026 17:00:25 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Inference costs are starting to constrain agent experience: response speed and cost per task for long-running tasks need to enter product selection and pricing design&lt;/li&gt;&lt;li&gt;Memory must come with revocable controls: memory across entry points reduces repeated explanations, but also expands the scope of impact from incorrect information&lt;/li&gt;&lt;li&gt;Agent tools are starting to compete on production usability: frameworks, data integration, and containerization are increasing at the same time, and products need to define operating boundaries earlier&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
