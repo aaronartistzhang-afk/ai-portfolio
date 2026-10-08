@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 06 Oct 2026 17:00:30 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 17:00:26 -0700</lastBuildDate>
+    <item>
+      <title>GPT-6 extends chat output into interactive interfaces and structured decisions</title>
+      <link>https://aaronzhang.ai/tie/2026-10-07</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-07</guid>
+      <pubDate>Wed, 07 Oct 2026 17:00:26 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Chat will handle task operations: interactive components and typed decisions need separate measurement of completion rates and response times&lt;/li&gt;&lt;li&gt;Model routing is beginning to affect gross margin: after small-model price cuts, quality thresholds and retry costs determine whether savings materialize&lt;/li&gt;&lt;li&gt;Agent frameworks are still changing interfaces: Skills, MCP state management, and design tool integration are appearing at the same time&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Open multimodal embedding models become an option for lightweight deployment</title>
       <link>https://aaronzhang.ai/tie/2026-10-06</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-27</guid>
       <pubDate>Thu, 27 Aug 2026 17:00:21 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Inference costs are becoming more usable in product design: proprietary chips and multiple pricing signals this period require linked calculations of latency, throughput and task costs&lt;/li&gt;&lt;li&gt;Agent pricing is starting to focus on delivery outcomes: growth in enterprise calls supports validating payment based on task completion and reliable delivery, rather than selling only seats&lt;/li&gt;&lt;li&gt;High-privilege execution needs control design first: once agents connect to devices, permission granularity and human takeover directly affect the scope in which products can be sold&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>The security control plane for actionable agents becomes a product focus</title>
-      <link>https://aaronzhang.ai/tie/2026-08-26</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-26</guid>
-      <pubDate>Wed, 26 Aug 2026 17:00:17 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Action permissions need to be productized: after the expansion of browser-based task execution, authorization, auditing, and human confirmation will directly affect whether users dare to hand over tasks&lt;/li&gt;&lt;li&gt;Long-running task costs are harder to estimate: agent retrieval and retries amplify token consumption, so pricing based on chat costs is easily distorted&lt;/li&gt;&lt;li&gt;There are more entry points for agent tools: more signals are appearing for applications and content tools that agents can call, so interface design should prioritize verifiable execution&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
