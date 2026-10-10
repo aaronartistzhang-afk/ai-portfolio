@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 08 Oct 2026 17:00:21 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 17:00:27 -0700</lastBuildDate>
+    <item>
+      <title>The cost of agent errors in external actions becomes explicit</title>
+      <link>https://aaronzhang.ai/tie/2026-10-09</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 17:00:27 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent acceptance testing must measure erroneous actions: large-scale orchestration increases output, while also increasing the consequences of unauthorized calls. Permission and recovery design must come first.&lt;/li&gt;&lt;li&gt;Supplier costs can no longer be assumed to be static: revenue expectations and fundraising discussions will affect pricing, capacity, and long-term service planning.&lt;/li&gt;&lt;li&gt;Pricing signals were concentrated this period: 5 pricing/cost change signals indicate that feature budgets should support dynamic limits.&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Claude will add governance and open-source security scanning to its service capabilities</title>
       <link>https://aaronzhang.ai/tie/2026-10-08</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-31</guid>
       <pubDate>Mon, 31 Aug 2026 17:00:16 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Direct model supply can become a product risk: if a tool product relies on a single model access point, costs and user retention can be affected by partnership boundaries&lt;/li&gt;&lt;li&gt;Agents need to deliver auditable results: completion rates for long-horizon tasks cannot be measured separately from execution traces and review mechanisms&lt;/li&gt;&lt;li&gt;Free-tier economics receive more attention: pricing and cost signals are appearing together, and products need to recalculate unit revenue for high-frequency use&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent execution stacks fill gaps in browsers, memory and task control</title>
-      <link>https://aaronzhang.ai/tie/2026-08-28</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-28</guid>
-      <pubDate>Fri, 28 Aug 2026 17:00:18 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Long-horizon agents: browser environments and cross-session memory are appearing together, and product reliability depends on visible state and recoverable failures&lt;/li&gt;&lt;li&gt;Open models enter the replacement pool: new open-weight models from GLM and Qwen require model selection to retest cost and stability on real tasks&lt;/li&gt;&lt;li&gt;The tool ecosystem is still expanding: there are 5 signals related to agent frameworks, with structured state and semantic actions receiving attention&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
