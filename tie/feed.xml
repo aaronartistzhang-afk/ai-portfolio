@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Fri, 09 Oct 2026 17:00:27 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 17:00:26 -0700</lastBuildDate>
+    <item>
+      <title>Agent orchestration focuses on context and cost control</title>
+      <link>https://aaronzhang.ai/tie/2026-10-12</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-12</guid>
+      <pubDate>Mon, 12 Oct 2026 17:00:26 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Long-task costs need separate governance: multi-agent quality gains are limited, while historical context and call strategies have a greater effect on task economics&lt;/li&gt;&lt;li&gt;Model selection returns to the per-task ledger: improved agent capabilities in new models may come with substantially higher per-task costs&lt;/li&gt;&lt;li&gt;The tool ecosystem is still expanding: MCP, skill packages and inference monitoring tools are all appearing, and products need to control their integration surface&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>The cost of agent errors in external actions becomes explicit</title>
       <link>https://aaronzhang.ai/tie/2026-10-09</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-01</guid>
       <pubDate>Tue, 01 Sep 2026 17:00:19 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;High-privilege agents need release thresholds first: after capability improvements, permissions, auditing and task validation together determine whether they can enter production environments&lt;/li&gt;&lt;li&gt;Office suites compete for the creation entry point: product differences in image generation depend more on existing context, collaboration workflows and revision records&lt;/li&gt;&lt;li&gt;More cost signals this period: 5 pricing and cost-change signals are worth including in model routing and plan design&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>OpenAI stops directly supplying models to Cursor</title>
-      <link>https://aaronzhang.ai/tie/2026-08-31</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-08-31</guid>
-      <pubDate>Mon, 31 Aug 2026 17:00:16 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Direct model supply can become a product risk: if a tool product relies on a single model access point, costs and user retention can be affected by partnership boundaries&lt;/li&gt;&lt;li&gt;Agents need to deliver auditable results: completion rates for long-horizon tasks cannot be measured separately from execution traces and review mechanisms&lt;/li&gt;&lt;li&gt;Free-tier economics receive more attention: pricing and cost signals are appearing together, and products need to recalculate unit revenue for high-frequency use&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
