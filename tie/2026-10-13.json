@@ -1,0 +1,503 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-13",
+  "executed_at": "2026-10-14T00:00:19.094363Z",
+  "run_id": "2026-10-11-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-10-11T11:00:19.094298+11:00",
+    "to": "2026-10-14T11:00:19.094298+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-10-14T11:00:19.094298+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "effe5d7c08af6b1a",
+      "run_trend_id": "GLOBAL_20261003_MODEL_RELEASES_GEMINI_4_ARGON",
+      "name": "Gemini 4 Argon launches globally and enters the developer toolchain",
+      "category": "model_releases",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Google has integrated Gemini 4 Argon into its API, Gemini app, and developer tools, and is using limited-time discounts to seek developer adoption.",
+      "attention_driver": "Frontier reasoning and agentic coding capabilities are being distributed through multiple entry points, and developers are starting to compare pricing and task performance.",
+      "evidence": [
+        {
+          "url": "https://deepmind.google/blog/introducing-gemini-4-argon",
+          "quote": "Gemini 4 Argon: Built to solve your hardest problems",
+          "claim": "Gemini 4 Argon has been officially released by Google DeepMind.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon",
+          "quote": "Build complex software and cybersecurity workflows with Google Gemini 4 Argon.",
+          "claim": "The model is available to developers for complex software and security workflows.",
+          "source_tier": "primary_release",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model",
+          "quote": "available worldwide through its API, the Gemini app, and Google Antigravity",
+          "claim": "The model has been distributed through multiple global product entry points.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-10-01T16:00:00Z",
+      "last_signal_update": "2026-10-13T18:00:49Z",
+      "so_what": "Product teams should rerun model routing tests in real workflows, with a focus on verifying success rates and cost per task for complex coding tasks. Rolling out subscription entry points and APIs at the same time will shorten the time for individual trials to translate into team procurement."
+    },
+    {
+      "canonical_id": "bc37a3908b649d7f",
+      "run_trend_id": "GLOBAL_20261002_SAFETY_AND_GOVERNANCE_MODEL_DISTILLATION_DEFENSE",
+      "name": "Anthropic discloses the results of its reasoning distillation defenses",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "declining",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "high",
+      "summary": "Anthropic says its new defenses have reduced the extraction of Claude reasoning tokens by about 90% to 99%, and it has banned a large number of related accounts.",
+      "attention_driver": "The risk of reasoning processes being extracted at scale is prompting model providers to strengthen abuse detection and access controls.",
+      "evidence": [
+        {
+          "url": "https://anthropic.com/research/distillation-defenses",
+          "quote": "早期证据显示这些方法使蒸馏者获取的数据减少约 90% 到 99%。",
+          "claim": "Anthropic has formally disclosed the effectiveness of its distillation defenses.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/anthropic-says-it-cut-claude-reasoning-token-theft-by-up-to-99-in-fight-against-industrial-scale-distillation",
+          "quote": "has already banned tens of thousands of accounts",
+          "claim": "The defense has been accompanied by action against accounts at scale.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-01T18:14:42Z",
+      "last_signal_update": "2026-10-13T11:06:46Z",
+      "so_what": "When using third-party models, visible reasoning text and tool traces should be treated as controlled data rather than product interfaces that can be relied on over the long term. Compatibility layers are needed in case model providers tighten access or change output formats."
+    },
+    {
+      "canonical_id": "2a1dac67746ff030",
+      "run_trend_id": "GLOBAL_20261014_DEVELOPER_EXPERIENCE_GOOGLE_PLAY_VIBE_CODED_APPS",
+      "name": "Google Play supports distribution of private vibe-coded apps",
+      "category": "developer_experience",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "recurring",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "Google Play lets users build and run private Android apps, and also plans to support broader publishing for some personally AI-generated apps.",
+      "attention_driver": "AI coding products are bringing prototype generation, device installation, and app distribution into the same channel.",
+      "evidence": [
+        {
+          "url": "https://arstechnica.com/google/2026/10/google-wants-to-host-your-personal-vibe-coded-apps-in-the-play-store",
+          "quote": "Google plans to help turn those personal AI-generated apps into wide releases.",
+          "claim": "Google plans to enable broader publishing for personally AI-generated apps.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you",
+          "quote": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
+          "claim": "Google Play already supports building and running private vibe-coded Android apps.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+          "quote": "Google makes it easier to launch your vibe-coded apps",
+          "claim": "The capability has drawn coverage from multiple media outlets.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-10-13T17:00:00Z",
+      "last_signal_update": "2026-10-13T17:00:39Z",
+      "so_what": "AI creation products for end users can make \"generated, installable, and shareable\" a core experience rather than stopping at code export. Product design needs to set up permission explanations, data boundaries, and pre-publication checks early to avoid low-barrier distribution amplifying quality issues."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "fc7d15f3c0e8f536",
+      "run_trend_id": "GLOBAL_20261014_MONETIZATION_XAI_X_SUBSCRIPTION",
+      "name": "XAI bundles Grok and Cursor into a subscription",
+      "category": "monetization",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "XAI has launched a subscription plan combining X Premium, Grok, and Cursor, covering consumer features and developer tools.",
+      "attention_driver": "Model providers are using bundled subscriptions to tie together content platforms and productivity tools in pursuit of higher user retention.",
+      "evidence": [
+        {
+          "url": "https://x.ai/news/x-subscription",
+          "quote": "将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划",
+          "claim": "xAI has officially launched a subscription plan combining Grok, Cursor, and X Premium.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription",
+          "quote": "combines X's paid features with AI tools like Grok and Cursor",
+          "claim": "The subscription bundle has drawn external media attention.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-10-12T00:00:00Z",
+      "last_signal_update": "2026-10-13T13:50:19Z",
+      "so_what": "The unit of competition for AI products is no longer only an individual model seat. Teams should compare actual usage of bundled subscriptions with the cost of buying products separately. If a product depends on external developer tools, it also needs to guard against user migration caused by changes to vendor plans."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 84,
+    "signals_raw": 560,
+    "signals_accepted": 544,
+    "clusters_total": 323,
+    "clusters_synthesized": 123,
+    "by_source": {
+      "404_media_rss": 1,
+      "amazon": 3,
+      "anthropic": 1,
+      "anthropic_engineering": 1,
+      "app": 1,
+      "apple": 8,
+      "apple_newsroom_rss": 1,
+      "apple_podcasts_a16z_podcast": 3,
+      "ars_technica_ai": 8,
+      "astral_codex_ten": 1,
+      "brave_search_ai": 105,
+      "comfy_blog": 1,
+      "crunchbase_news": 2,
+      "deepmind": 3,
+      "eetimes": 9,
+      "exponential_view": 2,
+      "gary_marcus": 1,
+      "github": 13,
+      "github_awesome_claude": 4,
+      "github_awesome_llm": 2,
+      "github_claude_skills": 16,
+      "github_cursor_rules": 4,
+      "google": 5,
+      "hn": 20,
+      "huggingface_blog": 1,
+      "ieee_spectrum_ai": 3,
+      "import_ai": 1,
+      "index_ventures": 5,
+      "infoq_ai_zh": 20,
+      "kr36_ai": 20,
+      "langchain_blog_rss": 1,
+      "latent_space": 3,
+      "lennys_newsletter": 4,
+      "liquid_ai": 1,
+      "meta": 9,
+      "microsoft": 2,
+      "mistral": 1,
+      "mit_tech_review_ai": 2,
+      "nextplatform": 2,
+      "not_boring": 1,
+      "nvidia": 5,
+      "openai": 1,
+      "pragmatic_engineer": 1,
+      "prime_intellect": 1,
+      "producthunt": 20,
+      "pydantic_ai": 1,
+      "pytorch_blog": 1,
+      "qbitai": 10,
+      "reddit_chatgptcoding": 3,
+      "reddit_claudeai": 7,
+      "reddit_localllama": 20,
+      "reddit_ml": 13,
+      "reddit_promptengineering": 11,
+      "rundown_ai": 3,
+      "servethehome": 4,
+      "simon_willison": 10,
+      "stratechery": 2,
+      "techcrunch_ai": 19,
+      "techcrunch_venture": 3,
+      "the_decoder": 10,
+      "tldr_ai": 2,
+      "unknown": 1,
+      "verge_ai": 10,
+      "wired_ai": 7,
+      "x_arena_arena": 1,
+      "x_artificial_analysis_artificialanlys": 1,
+      "x_elevenlabs_elevenlabs": 1,
+      "x_joshwoodward": 1,
+      "x_levie": 3,
+      "x_openai_newsroom_openainewsroom": 1,
+      "x_openrouter_openrouter": 1,
+      "x_petergyang": 3,
+      "x_rauchg": 3,
+      "x_ryolu_": 2,
+      "x_swyx": 3,
+      "x_thenanyu": 1,
+      "x_thsottiaux": 3,
+      "x_trq212": 1,
+      "x_vaibhav_srivastav_openai_reach_vb": 1,
+      "xai": 1,
+      "youtube_ai": 11,
+      "zh_podcast_crossing": 1,
+      "zhidx": 10,
+      "zvi_mowshowitz": 2
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "ea4c8f7ff008577d",
+    "prompt_hash": "156cebdd6869a34c"
+  },
+  "insights": [
+    {
+      "text": "Model selection moves into task testing, multi-entry-point launches let individual trials reach team procurement faster, and task success rates and costs need to be compared together",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "Generated apps are closer to direct distribution, private apps can be installed and shared, and products need to address permissions and publication checks early",
+      "refs": [
+        3
+      ]
+    },
+    {
+      "text": "More agent observability tools are available, tools such as natural-language trace search lower the barrier to diagnosing complex workflows",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "The cost of errors in agents' external actions becomes explicit recurring → declining",
+    "Gemini image model deprecation, 15 days remaining",
+    "Code Arena: WebDev: Claude Opus 5.5（Max） 1818 points → Meta Muse Wonder (Max) 1651 points"
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini image model deprecation",
+      "kind": "Deprecation",
+      "effective_date": "2026-10-29",
+      "days_left": 15,
+      "description": "gemini-3.1-flash-image will be deprecated on October 29, 2026. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
+    },
+    {
+      "title": "OpenAI ends direct supply to Cursor",
+      "kind": "Deprecation",
+      "effective_date": "2026-11-12",
+      "days_left": 29,
+      "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774"
+    },
+    {
+      "title": "Mandatory national standard for L3/L4 takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 260,
+      "description": "The safety requirements for L3/L4 automated driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover, and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China's L3/L4 safety national standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 260,
+      "description": "The mandatory national standard \"Intelligent Connected Vehicles, Safety Requirements for Automated Driving Systems\" is proposed to take effect on July 1, 2027, and related automated driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [
+    {
+      "benchmark": "Code Arena: WebDev",
+      "from": "Claude Opus 5.5（Max） 1818 分",
+      "to": "Meta Muse Wonder (Max) 1651分",
+      "url": "https://x.com/arena/status/2110120205464846828"
+    }
+  ],
+  "sections": {
+    "pricing": [
+      {
+        "title": "llm-gemini 0.35",
+        "note": "Watch Gemini subscription pricing and API thresholds",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/"
+      },
+      {
+        "title": "[AINews] Meta Muse Wonder & Wonder Full: MSL’s Cla…",
+        "note": "Compare changes in tiered pricing for the Muse series",
+        "source": "latent_space",
+        "why": "",
+        "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+      },
+      {
+        "title": "手机解锁先见 AI，不再先找 App：阶跃星辰首款智能体手机来了，定价 3999",
+        "note": "Watch the 3999 yuan pricing of the AI phone",
+        "source": "infoq_ai_zh",
+        "why": "",
+        "url": "https://www.infoq.cn/article/p2TobACROBC8UBPlRKXx?utm_source=rss&utm_medium=article"
+      },
+      {
+        "title": "Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter",
+        "note": "Use Argon to handle automated tasks",
+        "source": "X: OpenRouter",
+        "why": "",
+        "url": "https://x.com/OpenRouter/status/2110044453977403412"
+      },
+      {
+        "title": "Gemini 4 Argon - Out and Tested!!",
+        "note": "Evaluate Argon pricing and tested performance",
+        "source": "youtube_ai",
+        "why": "",
+        "url": "https://www.youtube.com/watch?v=4iK_UFzW6Zw"
+      }
+    ],
+    "media": [
+      {
+        "title": "Runway: Learning From Watching the World",
+        "note": "Generate controllable video world model content",
+        "source": "not_boring",
+        "why": "",
+        "url": "https://www.notboring.co/p/runway-learning-from-watching-the"
+      },
+      {
+        "title": "I don’t miss the camera on the Ray-Ban Meta Audio…",
+        "note": "Play audio and interact by voice through glasses",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables"
+      },
+      {
+        "title": "A prompt for turning a reference video into a shot…",
+        "note": "Break down reference videos into storyboard plans",
+        "source": "reddit_promptengineering",
+        "why": "",
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1x52y0l/a_prompt_for_turning_a_reference_video_into_a/"
+      },
+      {
+        "title": "Google makes it easier to launch your vibe-coded a…",
+        "note": "Publish AI-generated Android apps directly",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch"
+      },
+      {
+        "title": "Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter",
+        "note": "Use Argon to handle automated tasks",
+        "source": "X: OpenRouter",
+        "why": "",
+        "url": "https://x.com/OpenRouter/status/2110044453977403412"
+      }
+    ],
+    "tools": [
+      {
+        "title": "ajayfastfooted329/claude-linkedin-post-creator",
+        "note": "Generate LinkedIn posts in a personal style",
+        "source": "github_awesome_claude",
+        "why": "GitHub topic:awesome-claude early stage (1 ⭐), matches your interests in \"claude / code / creator\" · View",
+        "url": "https://github.com/ajayfastfooted329/claude-linkedin-post-creator"
+      },
+      {
+        "title": "TheSamMan123/Claude-Pro",
+        "note": "Manage a Claude Pro subscription using a guide",
+        "source": "github_awesome_claude",
+        "why": "GitHub topic:awesome-claude early stage (7 ⭐), matches your interests in \"claude / coding / ide\" · View",
+        "url": "https://github.com/TheSamMan123/Claude-Pro"
+      },
+      {
+        "title": "tt-a1i/archify",
+        "note": "Turn ideas or code into interactive diagrams",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (83,030 ⭐), matches your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/tt-a1i/archify"
+      },
+      {
+        "title": "Articos MCP",
+        "note": "Test buyer reactions to copy before publishing",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI featured · 298 votes · 84 comments, matches your interests in \"agent / chat / claude\" · View",
+        "url": "https://www.producthunt.com/products/articos?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Muse Wonder",
+        "note": "Build a personal agent with long-term memory",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI featured · 211 votes · 2 comments, matches your interests in \"agent / agents / code\" · View",
+        "url": "https://www.producthunt.com/products/meta-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "frameworks": [
+      {
+        "title": "LangSmith 推出 AI Search，用自然语言按行为搜索 agent 轨迹",
+        "note": "Search agent traces using natural language",
+        "source": "LangChain: Blog",
+        "why": "",
+        "url": "https://www.langchain.com/blog/agent-traces-ai-search-langsmith"
+      },
+      {
+        "title": "Articos MCP",
+        "note": "Test buyer reactions to copy before publishing",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/articos?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "PostNitro for Agents",
+        "note": "Have an agent design and publish social media posts",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/postnitro?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Coding CLIs keep getting more complicated. Daemons…",
+        "note": "Simplify a CLI into a lightweight local tool",
+        "source": "@rauchg",
+        "why": "",
+        "url": "https://x.com/rauchg/status/2109734766107099312"
+      },
+      {
+        "title": "TaplioOfficial/taplio-linkedin-claude-skills",
+        "note": "Run LinkedIn using Claude skills",
+        "source": "github_awesome_claude",
+        "why": "",
+        "url": "https://github.com/TaplioOfficial/taplio-linkedin-claude-skills"
+      }
+    ]
+  },
+  "sections_missing": [
+    "incidents"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-a1afd770fed84c7d",
+    "evidence_rewritten:GLOBAL_2-1e999031e3d91d5b",
+    "evidence_rewritten:GLOBAL_2-692e1a8f434c0122",
+    "evidence_rewritten:GLOBAL_2-8f46d5a5526dba34",
+    "critic_missed:cluster-5936d474b210872b"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}
