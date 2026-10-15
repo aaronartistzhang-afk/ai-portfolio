@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 13 Oct 2026 17:00:19 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 17:00:27 -0700</lastBuildDate>
+    <item>
+      <title>Long-running multi-agent operation enters the cost engineering stage</title>
+      <link>https://aaronzhang.ai/tie/2026-10-14</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 17:00:27 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Long-running agents need full cost accounting: beyond success rates, runtime, concurrency, and orchestration costs are starting to determine whether a product can scale&lt;/li&gt;&lt;li&gt;Generated content needs origin information: labels, edit records, and appeal channels will affect distribution clicks and creator revenue assessment&lt;/li&gt;&lt;li&gt;More signals on voice capabilities: this issue has 5 updates on audio, video, and voice models, and real-time interactive products are worth tracking&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Gemini 4 Argon launches globally and enters the developer toolchain</title>
       <link>https://aaronzhang.ai/tie/2026-10-13</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-03</guid>
       <pubDate>Thu, 03 Sep 2026 17:00:24 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Control high-privilege agents before wider access, as improved computer-use and security-testing capabilities make permissions and auditing directly affect the range of products that can be sold&lt;/li&gt;&lt;li&gt;Calculate validation costs before scaling parallel coding, as larger multi-agent concurrency makes merge validation and filtering invalid runs determine per-task cost&lt;/li&gt;&lt;li&gt;Lightweight voice stacks are still emerging, with small TTS and cross-platform audio tools appearing, so real-time interactive products can watch on-device latency&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Claude Fable 5.1 competes on long-running tasks and lower cache prices</title>
-      <link>https://aaronzhang.ai/tie/2026-09-02</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-02</guid>
-      <pubDate>Wed, 02 Sep 2026 17:00:23 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Long-task costs show signs of falling: lower cache read prices alongside model releases require end-to-end task costs instead of single-call pricing&lt;/li&gt;&lt;li&gt;Industry data connections are becoming a product threshold: high-value assistants need permission boundaries and auditable citations in the main workflow&lt;/li&gt;&lt;li&gt;The tool layer is still diverging quickly: leave room to replace combinations of plugin-based runners and lightweight models&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
