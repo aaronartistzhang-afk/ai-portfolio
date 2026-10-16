@@ -1,234 +1,275 @@
 {
   "schema_version": "1.0",
-  "date": "2026-10-14",
-  "executed_at": "2026-10-15T00:00:27.610474Z",
-  "run_id": "2026-10-12-ai_industry",
+  "date": "2026-10-15",
+  "executed_at": "2026-10-16T00:00:26.323521Z",
+  "run_id": "2026-10-13-ai_industry",
   "domain": "ai_industry",
   "locale": "en",
   "window": {
-    "from": "2026-10-12T11:00:27.610412+11:00",
-    "to": "2026-10-15T11:00:27.610412+11:00",
+    "from": "2026-10-13T11:00:26.323460+11:00",
+    "to": "2026-10-16T11:00:26.323460+11:00",
     "timezone": "Australia/Sydney",
     "days": 3
   },
-  "generated_at": "2026-10-15T11:00:27.610412+11:00",
+  "generated_at": "2026-10-16T11:00:26.323460+11:00",
   "status": "ok",
   "status_detail": null,
   "trends": [
     {
-      "canonical_id": "ca25b40e3c431f8a",
-      "run_trend_id": "GLOBAL_20261015_AGENTS_TOOLING_LONG_HORIZON_AGENT_OPERATIONS",
-      "name": "Long-running multi-agent operation enters the cost engineering stage",
-      "category": "agents_and_tooling",
+      "canonical_id": "effe5d7c08af6b1a",
+      "run_trend_id": "GLOBAL_20261016_MODEL_RELEASES_GEMINI_4_ARGON",
+      "name": "Gemini 4 Argon expands to development and robotics tasks",
+      "category": "model_releases",
       "primary_region": "全球",
       "secondary_regions": [],
-      "lifecycle_stage": "emerging",
+      "lifecycle_stage": "dormant",
       "momentum": "accelerating",
-      "impact_level": "high",
+      "impact_level": "medium",
       "opportunity_level": "high",
       "confidence_level": "high",
-      "summary": "OpenAI demonstrated cross-code-task and ten-thousand-scale long-running agent operation, while Cohere reported that team orchestration can significantly reduce costs.",
-      "attention_driver": "Product teams are starting to treat agent runtime, concurrency, and coordination overhead as core product constraints.",
+      "summary": "Google is rolling out Gemini 4 Argon to developers, the Gemini app and robotics use cases, and has published safe development guidance.",
+      "attention_driver": "The release cadence has the same model covering coding agents, app entry points and embodied tasks.",
       "evidence": [
         {
-          "url": "https://openai.com/index/amp-beyond-coding",
-          "quote": "Amp pushes the frontier of what agents can do with GPT-6 Astra",
-          "claim": "Supports OpenAI extending agent capabilities to tasks beyond coding.",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon",
+          "quote": "Build complex software and cybersecurity workflows with Google Gemini 4 Argon.",
+          "claim": "Supports that Gemini 4 Argon is available to developers for complex software and security workflows.",
           "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://openai.com/index/third-moment-research",
-          "quote": "runs 10,000 agents for 36+ hours",
-          "claim": "Supports the emergence of public practice cases for high-concurrency, long-running agent operation.",
+          "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+          "quote": "Gemini 4 Argon for Robotics",
+          "claim": "Supports that Google has expanded the model to robotics tasks.",
           "source_tier": "primary_release",
           "used_for": "impact"
         },
         {
-          "url": "https://cohere.com/blog/lessons-from-scaling-teams-of-frontier-coding-agents",
-          "quote": "reach the frontier at 30% of the cost",
-          "claim": "Supports agent team orchestration being explicitly positioned as a cost optimization method.",
-          "source_tier": "primary_release",
-          "used_for": "impact"
-        },
-        {
-          "url": "https://latent.space/p/crossing-the-threshold",
-          "quote": "Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents",
-          "claim": "Supports continued industry attention to more autonomous agents and their safety thresholds.",
+          "url": "https://simonwillison.net/2026/Oct/13/llm-gemini",
+          "quote": "I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Ge",
+          "claim": "Supports that the developer ecosystem has started integrating the new model.",
           "source_tier": "independent_validation",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-10-14T07:00:00Z",
-      "last_signal_update": "2026-10-14T21:40:52Z",
-      "so_what": "Include task success rates and total cost per completed task in release thresholds. Products need to explicitly provide budgets, checkpoints, human takeover, and replayable traces. Differences in long tasks come more from orchestration and runtime control than from individual model calls."
+      "first_detected": "2026-10-13T16:00:00Z",
+      "last_signal_update": "2026-10-15T16:35:47Z",
+      "so_what": "Product teams should evaluate by task rather than treat general model scores as procurement conclusions; they should focus on failure modes in code workflows and multimodal operations. The model entering both user-facing products and APIs will raise expectations for consistency across platforms."
     },
     {
-      "canonical_id": "abe7cb6291f8c859",
-      "run_trend_id": "GLOBAL_20261015_SAFETY_AND_GOVERNANCE_YOUTUBE_MUSIC_AI_LABELS",
-      "name": "YouTube Music adds generation labels for AI music",
-      "category": "safety_and_governance",
+      "canonical_id": "c81744ef52e1716f",
+      "run_trend_id": "GLOBAL_20261016_OPEN_SOURCE_RELEASES_META_MUSE_SPARK_OPEN",
+      "name": "Meta releases Muse Spark Open and rapidly integrates it into the inference ecosystem",
+      "category": "open_source_releases",
       "primary_region": "全球",
       "secondary_regions": [],
       "lifecycle_stage": "expired",
       "momentum": "accelerating",
       "impact_level": "medium",
-      "opportunity_level": "medium",
+      "opportunity_level": "high",
       "confidence_level": "medium",
-      "summary": "Multiple media outlets reported that YouTube Music will label tracks fully or partly generated by AI.",
-      "attention_driver": "As generated music enters streaming platforms, transparency about content origins has become a distribution and user trust issue.",
+      "summary": "Meta has released the open-weight multimodal MoE model Muse Spark Open, with Modal, Together AI, vLLM and others offering hosting or inference support on the same day.",
+      "attention_driver": "An open-weight frontier model and paths for Mac, local and hosted inference have appeared at the same time.",
       "evidence": [
         {
-          "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms",
-          "quote": "The label will appear on the player page and include songs entirely generated by AI or partially",
-          "claim": "Supports YouTube Music setting player-page labels for music generated with AI involvement.",
-          "source_tier": "attention",
+          "url": "https://huggingface.co/blog/meta-muse-spark-open",
+          "quote": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+          "claim": "Supports that Muse Spark Open has been released as an open-weight multimodal model.",
+          "source_tier": "independent_validation",
           "used_for": "existence"
         },
         {
-          "url": "https://theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
-          "quote": "YouTube is adding a \"Made with AI\" label to tracks",
-          "claim": "Independent reporting corroborates that an AI music labeling mechanism is being introduced.",
+          "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs",
+          "quote": "Meta launches an open-weight AI model that runs on Macs",
+          "claim": "Supports media coverage of the model's distribution narrative for running on Mac.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
+          "quote": "vLLM 提供 Muse Spark Open Day 0 支持",
+          "claim": "Supports that mainstream inference frameworks integrated the model on its release day.",
           "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-10-14T18:22:56Z",
-      "last_signal_update": "2026-10-14T18:23:46Z",
-      "so_what": "Products containing generated audio should make origin declarations, edit records, and appeal channels part of the content workflow. If they rely on distribution platforms, they need to reserve capacity to assess how label displays affect clicks, recommendations, and creator revenue."
+      "first_detected": "2026-10-15T17:55:52Z",
+      "last_signal_update": "2026-10-15T20:04:53Z",
+      "so_what": "Include open models in the candidate stack, but first test latency, long-context cost and tool-calling success rates on real tasks. Rapid hosting support lowers the barrier to trying them and will also compress pricing room for general agent features."
     },
     {
-      "canonical_id": "c471e0e630725b09",
-      "run_trend_id": "GLOBAL_20261015_HARDWARE_AND_INFRA_MICROSOFT_MAIA_SCALEOUT",
-      "name": "Microsoft advances multi-gigawatt deployment of Maia inference chips",
-      "category": "hardware_and_infra",
+      "canonical_id": "8c38eb9c771cb6ff",
+      "run_trend_id": "GLOBAL_20261016_SAFETY_AND_GOVERNANCE_ANTHROPIC_INDEPENDENT_EVALUATORS",
+      "name": "Anthropic expands access for independent evaluators",
+      "category": "safety_and_governance",
       "primary_region": "全球",
       "secondary_regions": [],
-      "lifecycle_stage": "expired",
+      "lifecycle_stage": "dormant",
       "momentum": "stable",
       "impact_level": "medium",
       "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "Microsoft said Maia 200 is in production and plans to use Maia 300 to support multi-gigawatt inference deployments.",
-      "attention_driver": "Major cloud providers continue to develop their own inference chips, driving competition in bandwidth, deployment scale, and inference cost per unit.",
+      "summary": "Anthropic has updated its arrangements for independent evaluators; media reports say METR will assess its risks, incidents and practices with employee-level access.",
+      "attention_driver": "Frontier model providers are incorporating external review capabilities into their safety governance narrative.",
       "evidence": [
         {
-          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments",
-          "quote": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027",
-          "claim": "Supports Microsoft having deployed Maia 200 and announced follow-up plans for Maia 300.",
-          "source_tier": "attention",
+          "url": "https://anthropic.com/news/an-update-on-independent-evaluators",
+          "quote": "Anthropic announces updates to embedding independent evaluators",
+          "claim": "Supports that Anthropic has announced an update to its independent evaluator arrangements.",
+          "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://nextplatform.com/compute/2026/10/13/microsofts-clea-maia-300-inference-xpu-is-a-bandwidth-beast/5302874",
-          "quote": "Microsoft’s “Clea” Maia 300 Inference XPU Is A Bandwidth Beast",
-          "claim": "Independent reporting views Maia 300's bandwidth characteristics as an important competitive point for its inference system.",
-          "source_tier": "independent_validation",
+          "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access",
+          "quote": "Anthropic is letting METR researchers look under the hood with employee-level access",
+          "claim": "Supports reporting that external researchers have received deeper access permissions.",
+          "source_tier": "attention",
           "used_for": "impact"
         }
       ],
-      "first_detected": "2026-10-12T13:01:29Z",
-      "last_signal_update": "2026-10-13T18:17:46Z",
-      "so_what": "Cloud products should avoid tying performance and cost assumptions to a single GPU path, and retain benchmarking and routing capabilities for heterogeneous hardware. Competition among inference providers will gradually affect the latency, throughput, and pricing that can be committed."
+      "first_detected": "2026-10-15T17:20:00Z",
+      "last_signal_update": "2026-10-15T19:14:26Z",
+      "so_what": "For high-permission agents, audit evidence, incident disclosures and external review will become closer to product entry requirements. Roadmaps should reserve exportable logs and reproducible experiment interfaces rather than rely only on internal evaluations."
     }
   ],
-  "watch_list": [],
+  "watch_list": [
+    {
+      "canonical_id": "5f20d6c00ee8d901",
+      "run_trend_id": "GLOBAL_20261016_HARDWARE_AND_INFRA_APPLE_HOMEVIEW_SIRI_AI",
+      "name": "Apple puts Siri AI into the home control entry point with HomeView",
+      "category": "hardware_and_infra",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "stable",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Apple has released HomeView, Apple TV 4K and HomePod mini 2, putting Siri AI into entry points for home entertainment and device management.",
+      "attention_driver": "Shared home screens and voice devices are becoming persistent entry points for AI interaction.",
+      "evidence": [
+        {
+          "url": "https://apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home",
+          "quote": "Apple today introduced Apple HomeView, designed to be central to the home and personal to everyone in it.",
+          "claim": "Supports that Apple has released HomeView, positioned as a home hub.",
+          "source_tier": "companion",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k",
+          "quote": "Apple unveils the new Apple TV 4K, supercharged by Siri AI",
+          "claim": "Supports that Siri AI has been included in the new generation of Apple TV 4K.",
+          "source_tier": "companion",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story",
+          "quote": "Apple HomeView, The New Apple TV, The App Story",
+          "claim": "Supports external analysis linking HomeView with Apple TV and app distribution.",
+          "source_tier": "independent_validation",
+          "used_for": "sentiment"
+        }
+      ],
+      "first_detected": "2026-10-13T12:57:08.267000Z",
+      "last_signal_update": "2026-10-14T10:00:00Z",
+      "so_what": "AI on shared devices cannot follow the logic of single-user chat products; identity switching, visibility and confirmation steps will directly determine usability. Hardware entry points also make service retention more dependent on continuous cross-device experiences than on the quality of a single answer."
+    }
+  ],
   "trend_evolution": [],
   "coverage": {
     "sources_configured": 93,
-    "source_keys_reporting": 89,
-    "signals_raw": 636,
-    "signals_accepted": 619,
+    "source_keys_reporting": 88,
+    "signals_raw": 635,
+    "signals_accepted": 613,
     "clusters_total": 362,
-    "clusters_synthesized": 137,
+    "clusters_synthesized": 158,
     "by_source": {
-      "amazon": 4,
-      "anthropic": 2,
-      "anthropic_engineering": 1,
-      "apple": 9,
+      "algorithmic_bridge": 1,
+      "amazon": 2,
+      "anthropic": 4,
+      "apple": 11,
       "apple_podcasts_a16z_podcast": 3,
       "apple_podcasts_the_cognitive_revolution": 1,
-      "ars_technica_ai": 13,
-      "astral_codex_ten": 1,
-      "brave_search_ai": 104,
-      "cohere": 3,
+      "apple_podcasts_the_mad_podcast_with_matt_turck": 1,
+      "apple_podcasts_twiml_ai_podcast": 1,
+      "ars_technica_ai": 11,
+      "astral_codex_ten": 2,
+      "black_forest_labs_blog": 1,
+      "brave_search_ai": 105,
+      "cohere": 5,
       "comfy_blog": 1,
-      "crunchbase_news": 5,
-      "deepmind": 4,
+      "crunchbase_news": 9,
+      "deepmind": 5,
       "eetimes": 10,
       "exponential_view": 1,
-      "gary_marcus": 2,
-      "github": 14,
-      "github_awesome_claude": 5,
-      "github_awesome_llm": 2,
-      "github_claude_skills": 15,
+      "gary_marcus": 3,
+      "github": 13,
+      "github_awesome_claude": 7,
+      "github_awesome_llm": 1,
+      "github_claude_skills": 14,
       "github_cursor_rules": 4,
-      "google": 9,
-      "hn": 20,
-      "huggingface_blog": 2,
+      "google": 12,
+      "google_dev": 1,
+      "huggingface_blog": 5,
       "huggingface_papers": 20,
-      "ieee_spectrum_ai": 3,
-      "import_ai": 1,
+      "ieee_spectrum_ai": 1,
       "index_ventures": 5,
       "infoq_ai_zh": 20,
-      "it": 1,
-      "johann_rehberger_embrace_the_red_rss": 1,
       "kr36_ai": 20,
       "latent_space": 6,
-      "lennys_newsletter": 4,
-      "lovable_blog": 1,
-      "meta": 11,
-      "microsoft": 2,
+      "lennys_newsletter": 2,
+      "lmsys_blog": 1,
+      "meta": 12,
+      "microsoft": 1,
+      "microsoft_ai": 1,
       "mistral": 1,
-      "mit_news_rss": 1,
       "mit_tech_review_ai": 2,
       "modal_rss": 1,
-      "nextplatform": 3,
+      "nextplatform": 5,
       "not_boring": 1,
-      "nvidia": 9,
-      "openai": 6,
-      "platformer": 1,
-      "pragmatic_engineer": 2,
-      "prime_intellect": 1,
+      "nvidia": 14,
+      "openai": 8,
+      "platformer": 2,
+      "pragmatic_engineer": 3,
       "producthunt": 20,
-      "pydantic_ai": 1,
-      "pytorch_blog": 1,
+      "pytorch_blog": 3,
       "qbitai": 10,
-      "reddit_chatgptcoding": 3,
+      "reddit_chatgptcoding": 1,
       "reddit_claudeai": 10,
       "reddit_localllama": 20,
-      "reddit_ml": 10,
-      "reddit_promptengineering": 9,
+      "reddit_ml": 5,
+      "reddit_promptengineering": 12,
       "rundown_ai": 3,
-      "servethehome": 5,
-      "simon_willison": 10,
+      "semianalysis": 1,
+      "servethehome": 2,
+      "simon_willison": 8,
+      "stepfun": 1,
       "stratechery": 3,
       "techcrunch_ai": 20,
       "techcrunch_venture": 3,
       "the_decoder": 10,
       "tldr_ai": 2,
-      "unknown": 1,
+      "together_ai_rss": 1,
       "verge_ai": 10,
       "vllm_rss": 1,
-      "wired_ai": 9,
-      "x_amasad": 3,
-      "x_arena_arena": 2,
-      "x_artificial_analysis_artificialanlys": 1,
-      "x_elon_musk_elonmusk_xai": 1,
-      "x_garrytan": 1,
-      "x_gemini_geminiapp": 1,
-      "x_joshwoodward": 3,
-      "x_khazix0918": 1,
-      "x_levie": 2,
-      "x_openai_newsroom_openainewsroom": 1,
+      "wired_ai": 10,
+      "x_amandaaskell": 1,
+      "x_aravind_srinivas_perplexity_ceo_aravsrinivas": 1,
+      "x_arc_prize_arcprize": 1,
+      "x_arena_arena": 1,
+      "x_chatgpt_chatgpt": 1,
+      "x_claude_devs_claudedevs": 1,
+      "x_garrytan": 2,
+      "x_mattturck": 1,
+      "x_openrouter_openrouter": 2,
       "x_petergyang": 3,
-      "x_rauchg": 1,
-      "x_swyx": 3,
-      "x_thenanyu": 2,
-      "x_thsottiaux": 1,
-      "x_trq212": 1,
-      "xai": 1,
-      "youtube_ai": 11,
+      "x_rauchg": 3,
+      "x_swyx": 1,
+      "x_thsottiaux": 3,
+      "x_trq212": 3,
+      "x_zarazhangrui": 3,
+      "youtube_ai": 9,
+      "zh_podcast_zhangxiaojun": 1,
       "zhidx": 20,
       "zvi_mowshowitz": 3
     }
@@ -236,226 +277,226 @@
   "provenance": {
     "pipeline_version": "tie-0.2.0",
     "config_hash": "ea4c8f7ff008577d",
-    "prompt_hash": "1bd94b3d248ba110"
+    "prompt_hash": "cb7267cf420fb3b4"
   },
   "insights": [
     {
-      "text": "Long-running agents need full cost accounting: beyond success rates, runtime, concurrency, and orchestration costs are starting to determine whether a product can scale",
+      "text": "Model entry points have broader coverage: the same model serves development, apps and robotics, so procurement evaluations need to return to specific tasks",
       "refs": [
-        1,
-        3
+        1
       ]
     },
     {
-      "text": "Generated content needs origin information: labels, edit records, and appeal channels will affect distribution clicks and creator revenue assessment",
+      "text": "The barrier to trying open models is lower: local operation and Day 0 hosted support will compress premiums for general agents",
       "refs": [
         2
       ]
     },
     {
-      "text": "More signals on voice capabilities: this issue has 5 updates on audio, video, and voice models, and real-time interactive products are worth tracking",
+      "text": "The supply of agent tools is still increasing: lightweight frameworks and development tools continue to appear, and integration cost will become a selection criterion",
       "refs": []
     }
   ],
   "since_last": [
-    "6 trends from the previous issue have exited this issue's ranking",
-    "14 days remain until the Gemini image model is discontinued"
+    "Gemini 4 Argon global release and entry into developer toolchains continues to be reported",
+    "Topics such as long-running multi-agent operations and Maia chips have left the list this issue",
+    "Gemini image model deprecation: 13 days remaining"
   ],
   "countdowns": [
     {
-      "title": "Gemini image model discontinuation",
+      "title": "Gemini image model deprecation",
       "kind": "Deprecation",
       "effective_date": "2026-10-29",
-      "days_left": 14,
-      "description": "gemini-3.1-flash-image will be discontinued on October 29, 2026. Source",
+      "days_left": 13,
+      "description": "gemini-3.1-flash-image will be deprecated on October 29, 2026. Source",
       "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
     },
     {
-      "title": "OpenAI's direct supply to Cursor ends",
+      "title": "OpenAI ends direct supply to Cursor",
       "kind": "Deprecation",
       "effective_date": "2026-11-12",
-      "days_left": 28,
+      "days_left": 27,
       "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
       "url": "https://x.com/thsottiaux/status/2093515916076343774"
     },
     {
-      "title": "Implementation of mandatory national standards for L3/L4",
+      "title": "Mandatory L3/L4 national standard takes effect",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 259,
-      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handover, and risk handling requirements. Source",
+      "days_left": 258,
+      "description": "The intelligent connected vehicle L3/L4 autonomous driving system safety requirements are proposed to take effect on July 1, 2027, covering requirements for Safety Case, human-machine handover and risk handling. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "Implementation of China's L3/L4 safety national standard",
+      "title": "China's L3/L4 safety national standard takes effect",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 259,
-      "description": "The mandatory national standard, \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles,\" is proposed to take effect on July 1, 2027. Relevant autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "days_left": 258,
+      "description": "The mandatory national standard \"Intelligent Connected Vehicles: Safety Requirements for Automated Driving Systems\" is proposed to take effect on July 1, 2027, and related autonomous driving products need to prepare for safety entry approval and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     }
   ],
   "leaderboard": [],
   "sections": {
-    "pricing": [
-      {
-        "title": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI…",
-        "note": "Check Gemini 4 pricing and benchmarks",
-        "source": "latent_space",
-        "why": "",
-        "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon"
-      },
-      {
-        "title": "英伟达支持的AI制药公司Iambic IPO定价16美元，预计募资1.5亿美元",
-        "note": "Track Iambic's $16 per share IPO",
-        "source": "kr36_ai",
-        "why": "",
-        "url": "https://36kr.com/newsflashes/4026343205965696?f=rss"
-      },
-      {
-        "title": "ChatGPT will plan your entire move: work backwards…",
-        "note": "Have ChatGPT work backward to plan a moving checklist",
-        "source": "reddit_promptengineering",
-        "why": "",
-        "url": "https://www.reddit.com/r/PromptEngineering/comments/1x4p00o/chatgpt_will_plan_your_entire_move_work_backwards/"
-      },
-      {
-        "title": "干掉Fable 5.1！Meta甩出最强模型，即将上线Muse",
-        "note": "Watch pricing after Muse launches",
-        "source": "zhidx",
-        "why": "",
-        "url": "https://zhidx.com/p/600299.html"
-      },
-      {
-        "title": "8点1氪丨茶百道涉IPO欺诈，被暂停交易；苹果连夜发布3款智能家居新品，总市值再创历史新高；Deep…",
-        "note": "Assess Tencent's bond issuance to support AI spending",
-        "source": "kr36_ai",
-        "why": "",
-        "url": "https://36kr.com/p/4025027267580036?f=rss"
-      }
-    ],
     "media": [
       {
-        "title": "Alleged OpenAI spy vibe-coded a surveillance devic…",
-        "note": "Use a chat account to create a listening device",
+        "title": "Chirp Pong",
+        "note": "Connect a static web game using mobile microphone sound waves",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/"
+      },
+      {
+        "title": "Muse Spark Open is Meta's answer to Qwen, GLM, and…",
+        "note": "Process multimodal tasks with a million-token context",
         "source": "the_decoder",
         "why": "",
-        "url": "https://the-decoder.com/alleged-openai-spy-vibe-coded-a-surveillance-device-using-his-wifes-chatbot-account/"
+        "url": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/"
       },
       {
-        "title": "xAI 发布 Grok Voice 3.0 语音模型",
-        "note": "Generate low-latency real-time voice conversations",
-        "source": "xAI: News（网页）",
+        "title": "ibm-granite/granite-switch-4.1 30B/8B",
+        "note": "Switch between chat, decision-making and voice capabilities through a single endpoint",
+        "source": "reddit_localllama",
         "why": "",
-        "url": "https://x.ai/news/grok-voice-3"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6wwx2/ibmgranitegraniteswitch41_30b8b/"
       },
       {
-        "title": "Musk 称 Grok Voice 3.0 登顶 Artificial Analysis 语音模型评…",
-        "note": "Connect voice models through the Realtime API",
-        "source": "X: Elon Musk",
+        "title": "Meta and Apple team up to make Muse AI models run…",
+        "note": "Run an extremely large open-source model on a Mac desktop",
+        "source": "verge_ai",
         "why": "",
-        "url": "https://x.com/elonmusk/status/2110483960312799675"
+        "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
       },
       {
-        "title": "The Design Space of Tri-Modal Masked Diffusion Mod…",
-        "note": "Generate text, images, and audio in one place",
+        "title": "Local and Distributed Large LLM Inference with MLX…",
+        "note": "Use MLX and RDMA for local distributed inference",
         "source": "apple_ml_research",
         "why": "",
-        "url": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion"
-      },
-      {
-        "title": "The best AI agents in 2026 | Product Hunt",
-        "note": "Build real-time voice and workflow agents",
-        "source": "Producthunt",
-        "why": "",
-        "url": "https://www.producthunt.com/categories/ai-agents"
+        "url": "https://machinelearning.apple.com/research/mlx-distributed-inference"
       }
     ],
     "incidents": [
       {
-        "title": "Crossing the Threshold: How OpenAI and Anthropic A…",
-        "note": "Limit autonomous operating permissions for financial agents",
-        "source": "latent_space",
+        "title": "Anthropic is letting METR researchers look under t…",
+        "note": "Open employee-level audits to expose model risks",
+        "source": "techcrunch_ai",
         "why": "",
-        "url": "https://www.latent.space/p/crossing-the-threshold"
+        "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/"
       },
       {
-        "title": "Eight states sue OpenAI, saying ChatGPT isn&#8217;…",
-        "note": "Investigate risks from children using ChatGPT",
-        "source": "verge_ai",
+        "title": "2026 World Cup: Breaking Records, Spiky Charts and…",
+        "note": "Review reliability under World Cup traffic spikes",
+        "source": "meta_engineering",
         "why": "",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+        "url": "https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale/"
       },
       {
-        "title": "406 scientists demand AI models be cut off from th…",
-        "note": "Cut off internet access for high-risk models",
-        "source": "the_decoder",
+        "title": "Chicken-coop shed AI PC",
+        "note": "Assess cooling risks in civilian shed GPU clusters",
+        "source": "reddit_localllama",
         "why": "",
-        "url": "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately/"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6c5px/chickencoop_shed_ai_pc/"
       },
       {
-        "title": "EU’s AI rules face first enforcement test over lab…",
-        "note": "Prepare materials for AI Act enforcement review",
-        "source": "Euronews",
+        "title": "τ-Emotion-Bench: Exposing the Interaction Fragilit…",
+        "note": "Test agent interaction failures triggered by emotional users",
+        "source": "huggingface_papers",
         "why": "",
-        "url": "https://www.euronews.com/2026/10/14/eus-ai-rules-face-first-enforcement-test-over-lab-incidents"
+        "url": "https://huggingface.co/papers/2610.19560"
       },
       {
-        "title": "Character.ai will shut down if no buyer emerges, c…",
-        "note": "Assess shutdowns caused by litigation involving minors",
-        "source": "the_decoder",
+        "title": "SafeDriveVLA: Navigation-Conditioned World Model D…",
+        "note": "Identify conflicting decision risks in autonomous driving VLA",
+        "source": "huggingface_papers",
         "why": "",
-        "url": "https://the-decoder.com/character-ai-will-shut-down-if-no-buyer-emerges-capping-a-fall-from-2-7-billion-google-deal-to-bankruptcy/"
+        "url": "https://huggingface.co/papers/2610.20609"
       }
     ],
     "tools": [
       {
-        "title": "code-yeongyu/oh-my-openagent",
-        "note": "Orchestrate graph engineering agents with prompts",
+        "title": "K-Dense-AI/scientific-agent-skills",
+        "note": "Add scientific research skills and database access to agents",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (70,032 ⭐), matches your interests: \"agent / code / prompt\" · View",
-        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+        "why": "GitHub topic:claude-skills starred repository (50,443 ⭐), matches your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
       },
       {
-        "title": "coreyhaines31/marketingskills",
-        "note": "Have agents perform marketing growth tasks",
+        "title": "thedotmack/claude-mem",
+        "note": "Save and inject memory for agents across sessions",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (54,758 ⭐), matches your interests: \"agent / agents / claude\" · View",
-        "url": "https://github.com/coreyhaines31/marketingskills"
+        "why": "GitHub topic:claude-skills starred repository (101,044 ⭐), matches your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/thedotmack/claude-mem"
       },
       {
-        "title": "wshobson/agents",
-        "note": "Install agent plugins across IDEs",
+        "title": "teng-lin/notebooklm-py",
+        "note": "Automate NotebookLM workflows with Python",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (40,771 ⭐), matches your interests: \"agent / agents / claude\" · View",
-        "url": "https://github.com/wshobson/agents"
+        "why": "GitHub topic:claude-skills starred repository (19,750 ⭐), matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/teng-lin/notebooklm-py"
+      },
+      {
+        "title": "Navige",
+        "note": "Route small models and cache results to reduce agent costs",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 204 votes · 52 comments, matches your interests in \"agent / model / tool\" · View",
+        "url": "https://www.producthunt.com/products/navige?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "GLM-Legal",
+        "note": "Use a legal model to review contracts and verify evidence compliance",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 159 votes · 2 comments, matches your interests in \"agent / ide / model\" · View",
+        "url": "https://www.producthunt.com/products/z-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "frameworks": [
+      {
+        "title": "nanocoai/nanoclaw",
+        "note": "Use containers to isolate and deploy multi-channel messaging agents",
+        "source": "github_claude_skills",
+        "why": "",
+        "url": "https://github.com/nanocoai/nanoclaw"
       },
       {
         "title": "Pancake",
-        "note": "Deploy customer acquisition campaigns from ideas",
+        "note": "Directly deploy and execute AI-generated GTM plans",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI pick · 488 votes · 71 comments, matches your interests: \"agent / claude / code\" · View",
+        "why": "",
         "url": "https://www.producthunt.com/products/pancake-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "Inferock",
-        "note": "Compare inference failure rates and costs",
+        "title": "daily.dev for agents",
+        "note": "Let agents read developer trends and discussions",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI pick · 337 votes · 34 comments, matches your interests: \"claude / llm / model\" · View",
-        "url": "https://www.producthunt.com/products/inferock?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "",
+        "url": "https://www.producthunt.com/products/daily-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Gemini 4 Argon全球上线，API限时五折，谷歌要杀回第一梯队！",
+        "note": "Access Gemini 4 Argon through an API",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/600633.html"
+      },
+      {
+        "title": "Show HN: SolidCraft – Open-Source Parametric CAD i…",
+        "note": "Use MCP to let AI control parametric CAD",
+        "source": "Daily",
+        "why": "",
+        "url": "https://daily.dev/posts/show-hn-solidcraft-open-source-parametric-cad-in-rust-with-mcp-support--pgwocqwlj"
       }
     ]
   },
   "sections_missing": [
     "leaderboard",
-    "frameworks"
+    "pricing"
   ],
   "source_flags": [
-    "evidence_rewritten:GLOBAL_2-734935f0ed2e1138",
-    "evidence_rewritten:GLOBAL_2-125198d6c0b42a6c",
-    "evidence_rewritten:GLOBAL_2-083e3bf381722152",
-    "critic_missed:cluster-266b3da440ab5eb5",
-    "critic_missed:cluster-c123ef6f8f305325"
+    "evidence_rewritten:GLOBAL_2-9685f069634900cd",
+    "evidence_rewritten:GLOBAL_2-63b05dfb7a398313",
+    "evidence_rewritten:GLOBAL_2-754da3ccb6c86bd6",
+    "evidence_rewritten:GLOBAL_2-d8083b46c0fc4e72",
+    "critic_missed:cluster-53e745de9cb70d03"
   ],
   "caveats": [],
   "license": "MIT",
