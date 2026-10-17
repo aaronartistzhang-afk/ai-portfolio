@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 15 Oct 2026 17:00:26 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 17:00:22 -0700</lastBuildDate>
+    <item>
+      <title>NVIDIA launches enterprise agent models and local AI PCs</title>
+      <link>https://aaronzhang.ai/tie/2026-10-16</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 17:00:22 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Local execution needs capability tiers: as models and devices update together, low-latency and private-data features can be made available based on device capability&lt;/li&gt;&lt;li&gt;Agent launches require in-house acceptance sets: high scores on general-purpose leaderboards cannot prove that complex tasks can be delivered reliably&lt;/li&gt;&lt;li&gt;More tool orchestration signals: updates related to Agent Harness and MCP are appearing in concentration, and products need room to replace tool protocols&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Gemini 4 Argon expands to development and robotics tasks</title>
       <link>https://aaronzhang.ai/tie/2026-10-15</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-07</guid>
       <pubDate>Mon, 07 Sep 2026 17:00:18 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Model quotas become a retention variable: access order, limits, and compensation for high-capability models directly affect whether teams accept the default routing&lt;/li&gt;&lt;li&gt;Agent interfaces need revocation: tool control standards and incident disclosure both require authorization, receipts, and pause capability in product design&lt;/li&gt;&lt;li&gt;Audio and video tools continue to emerge incrementally: 5 new signals cover audio reasoning and video understanding, suitable for tracking the cost performance of real-time interaction&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Claude Code extension and skills ecosystem gains momentum</title>
-      <link>https://aaronzhang.ai/tie/2026-09-04</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-04</guid>
-      <pubDate>Fri, 04 Sep 2026 17:00:16 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Verifiable outputs are starting to command a price: tasks that can connect to compilers or rule engines are better suited to delivering results with failure localization and reproduction records&lt;/li&gt;&lt;li&gt;Agent extensions need governance first: plugins and memory expand workflow coverage, while bringing permissions and task-level evaluation to the product foreground&lt;/li&gt;&lt;li&gt;Cost signals are appearing frequently: this issue has 5 pricing or cost-change signals, and model selection needs to consider cost per task at the same time&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

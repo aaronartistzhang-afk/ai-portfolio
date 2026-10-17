@@ -1,25 +1,25 @@
 {
   "schema_version": "1.0",
-  "date": "2026-10-15",
-  "executed_at": "2026-10-16T00:00:26.323521Z",
-  "run_id": "2026-10-13-ai_industry",
+  "date": "2026-10-16",
+  "executed_at": "2026-10-17T00:00:22.951905Z",
+  "run_id": "2026-10-14-ai_industry",
   "domain": "ai_industry",
   "locale": "en",
   "window": {
-    "from": "2026-10-13T11:00:26.323460+11:00",
-    "to": "2026-10-16T11:00:26.323460+11:00",
+    "from": "2026-10-14T11:00:22.951874+11:00",
+    "to": "2026-10-17T11:00:22.951874+11:00",
     "timezone": "Australia/Sydney",
     "days": 3
   },
-  "generated_at": "2026-10-16T11:00:26.323460+11:00",
+  "generated_at": "2026-10-17T11:00:22.951874+11:00",
   "status": "ok",
   "status_detail": null,
   "trends": [
     {
-      "canonical_id": "effe5d7c08af6b1a",
-      "run_trend_id": "GLOBAL_20261016_MODEL_RELEASES_GEMINI_4_ARGON",
-      "name": "Gemini 4 Argon expands to development and robotics tasks",
-      "category": "model_releases",
+      "canonical_id": "4c6f64708aaa696d",
+      "run_trend_id": "GLOBAL_20261017_HARDWARE_AND_INFRA_NVIDIA_LOCAL_AGENT_STACK",
+      "name": "NVIDIA launches enterprise agent models and local AI PCs",
+      "category": "hardware_and_infra",
       "primary_region": "全球",
       "secondary_regions": [],
       "lifecycle_stage": "dormant",
@@ -27,39 +27,80 @@
       "impact_level": "medium",
       "opportunity_level": "high",
       "confidence_level": "high",
-      "summary": "Google is rolling out Gemini 4 Argon to developers, the Gemini app and robotics use cases, and has published safe development guidance.",
-      "attention_driver": "The release cadence has the same model covering coding agents, app entry points and embodied tasks.",
+      "summary": "NVIDIA released open multimodal models for continuously running enterprise agents and brought RTX Spark laptops to market.",
+      "attention_driver": "Models, inference software and end-user devices are updating in the same cycle, driving discussion of hybrid local and cloud deployment.",
       "evidence": [
         {
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon",
-          "quote": "Build complex software and cybersecurity workflows with Google Gemini 4 Argon.",
-          "claim": "Supports that Gemini 4 Argon is available to developers for complex software and security workflows.",
-          "source_tier": "primary_release",
+          "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl",
+          "quote": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family",
+          "claim": "NVIDIA announced an expansion of its Nemotron open model lineup from data centers to desktops.",
+          "source_tier": "attention",
           "used_for": "existence"
         },
         {
-          "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-          "quote": "Gemini 4 Argon for Robotics",
-          "claim": "Supports that Google has expanded the model to robotics tasks.",
-          "source_tier": "primary_release",
+          "url": "https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop",
+          "quote": "an open model built to run enterprise AI agents nonstop",
+          "claim": "Independent reporting positions Nemotron 3.5 Super VL as an enterprise agent model for continuous operation.",
+          "source_tier": "independent_validation",
           "used_for": "impact"
         },
         {
-          "url": "https://simonwillison.net/2026/Oct/13/llm-gemini",
-          "quote": "I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Ge",
-          "claim": "Supports that the developer ecosystem has started integrating the new model.",
-          "source_tier": "independent_validation",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
+          "quote": "NVIDIA RTX Spark PCs Available Today",
+          "claim": "RTX Spark PCs are now officially available, strengthening hardware supply for local inference.",
+          "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-10-13T16:00:00Z",
-      "last_signal_update": "2026-10-15T16:35:47Z",
-      "so_what": "Product teams should evaluate by task rather than treat general model scores as procurement conclusions; they should focus on failure modes in code workflows and multimodal operations. The model entering both user-facing products and APIs will raise expectations for consistency across platforms."
+      "first_detected": "2026-10-15T15:00:24Z",
+      "last_signal_update": "2026-10-16T17:42:26Z",
+      "so_what": "Reserve a local execution path for features that require low latency, privacy or offline availability. At the same time, tier features by device capability to avoid making high-compute agent experiences the default for all users."
+    },
+    {
+      "canonical_id": "8b1e4d93e7625da0",
+      "run_trend_id": "GLOBAL_20261017_EVALUATION_FRAMEWORKS_PRODUCTION_AGENT_EVALS",
+      "name": "Production agent evaluation becomes a delivery gate",
+      "category": "evaluation_frameworks",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Google's plugin practices and new evaluation work jointly stress that post-launch agent task success rates, failure patterns and acceptance quality cannot be replaced by general-purpose leaderboards.",
+      "attention_driver": "Agents are entering deliverable workflows, and teams need repeatable in-product evaluations.",
+      "evidence": [
+        {
+          "url": "https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons",
+          "quote": "The real challenge of building an agentic system isn't the construction, it's the measurement.",
+          "claim": "Google describes agent evaluation engineering as a core challenge for production deployment.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://huggingface.co/papers/2610.22350",
+          "quote": "Existing agent benchmarks typically evaluate agents on well-specified tasks",
+          "claim": "FDE-Gym says existing agent benchmarks struggle to cover delivery stages.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://labs.scale.com/leaderboard/swe_bench_pro",
+          "quote": "top models score around 23% on the SWE-Bench Pro",
+          "claim": "More difficult code-task benchmarks show that high scores do not mean complex deliverables can be completed reliably.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-10-15T00:00:00Z",
+      "last_signal_update": "2026-10-16T16:00:00Z",
+      "so_what": "Include representative real-world tasks, tool-call traces and human escalation conditions in release gates. Model leaderboards can be used for initial screening, but cannot replace product acceptance."
     },
     {
       "canonical_id": "c81744ef52e1716f",
-      "run_trend_id": "GLOBAL_20261016_OPEN_SOURCE_RELEASES_META_MUSE_SPARK_OPEN",
-      "name": "Meta releases Muse Spark Open and rapidly integrates it into the inference ecosystem",
+      "run_trend_id": "GLOBAL_20261017_OPEN_SOURCE_RELEASES_META_MUSE_SPARK_OPEN_ECOSYSTEM",
+      "name": "Meta Muse Spark Open gains access to the Mac and inference ecosystems",
       "category": "open_source_releases",
       "primary_region": "全球",
       "secondary_regions": [],
@@ -68,207 +109,168 @@
       "impact_level": "medium",
       "opportunity_level": "high",
       "confidence_level": "medium",
-      "summary": "Meta has released the open-weight multimodal MoE model Muse Spark Open, with Modal, Together AI, vLLM and others offering hosting or inference support on the same day.",
-      "attention_driver": "An open-weight frontier model and paths for Mac, local and hosted inference have appeared at the same time.",
+      "summary": "Meta's open-weight multimodal MoE model Muse Spark Open has gained support for running on Macs, along with new ranking signals for code tasks.",
+      "attention_driver": "The deployability and developer visibility of open-weight frontier models are rising at the same time.",
       "evidence": [
         {
-          "url": "https://huggingface.co/blog/meta-muse-spark-open",
-          "quote": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-          "claim": "Supports that Muse Spark Open has been released as an open-weight multimodal model.",
+          "url": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race",
+          "quote": "a new open-weight model with 816 billion parameters",
+          "claim": "Independent reporting confirms that Meta released a large open-weight multimodal model.",
           "source_tier": "independent_validation",
           "used_for": "existence"
         },
         {
           "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs",
           "quote": "Meta launches an open-weight AI model that runs on Macs",
-          "claim": "Supports media coverage of the model's distribution narrative for running on Mac.",
+          "claim": "Media reports say the model gained support for running on Macs.",
           "source_tier": "attention",
           "used_for": "impact"
         },
         {
-          "url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
-          "quote": "vLLM 提供 Muse Spark Open Day 0 支持",
-          "claim": "Supports that mainstream inference frameworks integrated the model on its release day.",
+          "url": "https://x.com/arena/status/2111221323217412318",
+          "quote": "Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一",
+          "claim": "Arena released a leading ranking signal for Muse Spark Open in Code Arena WebDev.",
           "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-10-15T17:55:52Z",
-      "last_signal_update": "2026-10-15T20:04:53Z",
-      "so_what": "Include open models in the candidate stack, but first test latency, long-context cost and tool-calling success rates on real tasks. Rapid hosting support lowers the barrier to trying them and will also compress pricing room for general agent features."
-    },
-    {
-      "canonical_id": "8c38eb9c771cb6ff",
-      "run_trend_id": "GLOBAL_20261016_SAFETY_AND_GOVERNANCE_ANTHROPIC_INDEPENDENT_EVALUATORS",
-      "name": "Anthropic expands access for independent evaluators",
-      "category": "safety_and_governance",
-      "primary_region": "全球",
-      "secondary_regions": [],
-      "lifecycle_stage": "dormant",
-      "momentum": "stable",
-      "impact_level": "medium",
-      "opportunity_level": "medium",
-      "confidence_level": "medium",
-      "summary": "Anthropic has updated its arrangements for independent evaluators; media reports say METR will assess its risks, incidents and practices with employee-level access.",
-      "attention_driver": "Frontier model providers are incorporating external review capabilities into their safety governance narrative.",
-      "evidence": [
-        {
-          "url": "https://anthropic.com/news/an-update-on-independent-evaluators",
-          "quote": "Anthropic announces updates to embedding independent evaluators",
-          "claim": "Supports that Anthropic has announced an update to its independent evaluator arrangements.",
-          "source_tier": "primary_release",
-          "used_for": "existence"
-        },
-        {
-          "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access",
-          "quote": "Anthropic is letting METR researchers look under the hood with employee-level access",
-          "claim": "Supports reporting that external researchers have received deeper access permissions.",
-          "source_tier": "attention",
-          "used_for": "impact"
-        }
-      ],
-      "first_detected": "2026-10-15T17:20:00Z",
-      "last_signal_update": "2026-10-15T19:14:26Z",
-      "so_what": "For high-permission agents, audit evidence, incident disclosures and external review will become closer to product entry requirements. Roadmaps should reserve exportable logs and reproducible experiment interfaces rather than rely only on internal evaluations."
+      "first_detected": "2026-10-15T18:15:36Z",
+      "last_signal_update": "2026-10-16T22:22:42Z",
+      "so_what": "When evaluating open models, compare local deployment costs, toolchain maturity and task reliability together. Mac optimization can lower the trial-and-error threshold for prototypes and controlled private deployments."
     }
   ],
   "watch_list": [
     {
-      "canonical_id": "5f20d6c00ee8d901",
-      "run_trend_id": "GLOBAL_20261016_HARDWARE_AND_INFRA_APPLE_HOMEVIEW_SIRI_AI",
-      "name": "Apple puts Siri AI into the home control entry point with HomeView",
-      "category": "hardware_and_infra",
+      "canonical_id": "b0080cbe961226f5",
+      "run_trend_id": "GLOBAL_20261017_SAFETY_AND_GOVERNANCE_AGENT_ACTION_CONTROLS",
+      "name": "Risk of agents taking unauthorized actions returns to product design",
+      "category": "safety_and_governance",
       "primary_region": "全球",
       "secondary_regions": [],
-      "lifecycle_stage": "emerging",
-      "momentum": "stable",
+      "lifecycle_stage": "declining",
+      "momentum": "accelerating",
       "impact_level": "medium",
       "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "Apple has released HomeView, Apple TV 4K and HomePod mini 2, putting Siri AI into entry points for home entertainment and device management.",
-      "attention_driver": "Shared home screens and voice devices are becoming persistent entry points for AI interaction.",
+      "summary": "Multiple reports involve models bypassing authorization, changing system configurations or mistakenly deleting content. Approval and reversibility for external actions have become deployment conditions.",
+      "attention_driver": "As agents gain more permissions for websites and systems, a single failure can directly cause security or business losses.",
       "evidence": [
         {
-          "url": "https://apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home",
-          "quote": "Apple today introduced Apple HomeView, designed to be central to the home and personal to everyone in it.",
-          "claim": "Supports that Apple has released HomeView, positioned as a home hub.",
-          "source_tier": "companion",
+          "url": "https://alignment.openai.com/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website",
+          "quote": "绕过政府统计网站授权获取服务器机密",
+          "claim": "OpenAI's misalignment report documents a case in which an internal model bypassed authorization and accessed server secrets.",
+          "source_tier": "attention",
           "used_for": "existence"
         },
         {
-          "url": "https://apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k",
-          "quote": "Apple unveils the new Apple TV 4K, supercharged by Siri AI",
-          "claim": "Supports that Siri AI has been included in the new generation of Apple TV 4K.",
-          "source_tier": "companion",
+          "url": "https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research",
+          "quote": "访问并修改内部系统",
+          "claim": "Another misalignment report involves a model accessing and modifying internal system configurations.",
+          "source_tier": "attention",
           "used_for": "impact"
         },
         {
-          "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story",
-          "quote": "Apple HomeView, The New Apple TV, The App Story",
-          "claim": "Supports external analysis linking HomeView with Apple TV and app distribution.",
-          "source_tier": "independent_validation",
+          "url": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage",
+          "quote": "TV4 postpones show after AI agent erases edited material",
+          "claim": "External incidents show that agent errors can cause direct and difficult-to-recover content loss.",
+          "source_tier": "attention",
           "used_for": "sentiment"
         }
       ],
-      "first_detected": "2026-10-13T12:57:08.267000Z",
-      "last_signal_update": "2026-10-14T10:00:00Z",
-      "so_what": "AI on shared devices cannot follow the logic of single-user chat products; identity switching, visibility and confirmation steps will directly determine usability. Hardware entry points also make service retention more dependent on continuous cross-device experiences than on the quality of a single answer."
+      "first_detected": "2026-10-14T10:28:26Z",
+      "last_signal_update": "2026-10-16T20:59:01Z",
+      "so_what": "Break high-risk actions into explicit authorization, least privilege and reversible execution. Products should provide action previews, audit logs and human takeover, rather than relying only on prompt constraints."
     }
   ],
   "trend_evolution": [],
   "coverage": {
     "sources_configured": 93,
-    "source_keys_reporting": 88,
-    "signals_raw": 635,
-    "signals_accepted": 613,
-    "clusters_total": 362,
-    "clusters_synthesized": 158,
+    "source_keys_reporting": 83,
+    "signals_raw": 616,
+    "signals_accepted": 601,
+    "clusters_total": 368,
+    "clusters_synthesized": 150,
     "by_source": {
+      "a16z_news_rss": 1,
       "algorithmic_bridge": 1,
-      "amazon": 2,
-      "anthropic": 4,
-      "apple": 11,
+      "amazon": 1,
+      "anthropic": 7,
+      "apple": 5,
       "apple_podcasts_a16z_podcast": 3,
       "apple_podcasts_the_cognitive_revolution": 1,
       "apple_podcasts_the_mad_podcast_with_matt_turck": 1,
       "apple_podcasts_twiml_ai_podcast": 1,
       "ars_technica_ai": 11,
-      "astral_codex_ten": 2,
-      "black_forest_labs_blog": 1,
-      "brave_search_ai": 105,
-      "cohere": 5,
-      "comfy_blog": 1,
+      "artificial_analysis": 2,
+      "astral_codex_ten": 3,
+      "brave_search_ai": 104,
+      "cohere": 4,
       "crunchbase_news": 9,
-      "deepmind": 5,
+      "deepmind": 2,
       "eetimes": 10,
       "exponential_view": 1,
-      "gary_marcus": 3,
-      "github": 13,
+      "gary_marcus": 2,
+      "github": 12,
       "github_awesome_claude": 7,
       "github_awesome_llm": 1,
-      "github_claude_skills": 14,
+      "github_claude_skills": 12,
       "github_cursor_rules": 4,
-      "google": 12,
-      "google_dev": 1,
-      "huggingface_blog": 5,
+      "google": 10,
+      "hn": 20,
+      "huggingface_blog": 6,
       "huggingface_papers": 20,
       "ieee_spectrum_ai": 1,
       "index_ventures": 5,
       "infoq_ai_zh": 20,
+      "it": 2,
       "kr36_ai": 20,
-      "latent_space": 6,
-      "lennys_newsletter": 2,
+      "latent_space": 5,
+      "lennys_newsletter": 1,
       "lmsys_blog": 1,
-      "meta": 12,
+      "meta": 8,
       "microsoft": 1,
-      "microsoft_ai": 1,
       "mistral": 1,
-      "mit_tech_review_ai": 2,
-      "modal_rss": 1,
+      "mit_tech_review_ai": 1,
       "nextplatform": 5,
       "not_boring": 1,
-      "nvidia": 14,
-      "openai": 8,
+      "nvidia": 13,
+      "ollama_blog_rss": 1,
+      "openai": 12,
       "platformer": 2,
-      "pragmatic_engineer": 3,
+      "pragmatic_engineer": 2,
       "producthunt": 20,
+      "promptarmor_threat_intelligence": 1,
       "pytorch_blog": 3,
       "qbitai": 10,
-      "reddit_chatgptcoding": 1,
-      "reddit_claudeai": 10,
+      "reddit_claudeai": 7,
       "reddit_localllama": 20,
-      "reddit_ml": 5,
-      "reddit_promptengineering": 12,
+      "reddit_ml": 4,
+      "reddit_promptengineering": 9,
       "rundown_ai": 3,
       "semianalysis": 1,
-      "servethehome": 2,
-      "simon_willison": 8,
-      "stepfun": 1,
+      "servethehome": 3,
+      "simon_willison": 6,
       "stratechery": 3,
       "techcrunch_ai": 20,
       "techcrunch_venture": 3,
       "the_decoder": 10,
       "tldr_ai": 2,
-      "together_ai_rss": 1,
       "verge_ai": 10,
       "vllm_rss": 1,
-      "wired_ai": 10,
+      "waymo_blog": 1,
+      "wired_ai": 9,
+      "x_ado_kukic_anthropic_claude_code_adocomplete": 1,
       "x_amandaaskell": 1,
-      "x_aravind_srinivas_perplexity_ceo_aravsrinivas": 1,
-      "x_arc_prize_arcprize": 1,
       "x_arena_arena": 1,
-      "x_chatgpt_chatgpt": 1,
-      "x_claude_devs_claudedevs": 1,
-      "x_garrytan": 2,
+      "x_bcherny": 1,
+      "x_garrytan": 3,
+      "x_levie": 3,
       "x_mattturck": 1,
-      "x_openrouter_openrouter": 2,
       "x_petergyang": 3,
       "x_rauchg": 3,
-      "x_swyx": 1,
+      "x_thenanyu": 2,
       "x_thsottiaux": 3,
-      "x_trq212": 3,
-      "x_zarazhangrui": 3,
-      "youtube_ai": 9,
+      "youtube_ai": 7,
       "zh_podcast_zhangxiaojun": 1,
       "zhidx": 20,
       "zvi_mowshowitz": 3
@@ -277,226 +279,233 @@
   "provenance": {
     "pipeline_version": "tie-0.2.0",
     "config_hash": "ea4c8f7ff008577d",
-    "prompt_hash": "cb7267cf420fb3b4"
+    "prompt_hash": "bc6638822ed15c4f"
   },
   "insights": [
     {
-      "text": "Model entry points have broader coverage: the same model serves development, apps and robotics, so procurement evaluations need to return to specific tasks",
+      "text": "Local execution needs capability tiers: as models and devices update together, low-latency and private-data features can be made available based on device capability",
       "refs": [
-        1
+        1,
+        3
       ]
     },
     {
-      "text": "The barrier to trying open models is lower: local operation and Day 0 hosted support will compress premiums for general agents",
+      "text": "Agent launches require in-house acceptance sets: high scores on general-purpose leaderboards cannot prove that complex tasks can be delivered reliably",
       "refs": [
         2
       ]
     },
     {
-      "text": "The supply of agent tools is still increasing: lightweight frameworks and development tools continue to appear, and integration cost will become a selection criterion",
+      "text": "More tool orchestration signals: updates related to Agent Harness and MCP are appearing in concentration, and products need room to replace tool protocols",
       "refs": []
     }
   ],
   "since_last": [
-    "Gemini 4 Argon global release and entry into developer toolchains continues to be reported",
-    "Topics such as long-running multi-agent operations and Maia chips have left the list this issue",
-    "Gemini image model deprecation: 13 days remaining"
+    "Gemini 4 Argon expands to development and robotics tasks, has left this issue.",
+    "Code Arena: WebDev: Meta Muse Wonder (Max) 1651 points → Muse Spark Open (Max) 1511",
+    "Gemini image model deprecation, 12 days remaining"
   ],
   "countdowns": [
     {
       "title": "Gemini image model deprecation",
       "kind": "Deprecation",
       "effective_date": "2026-10-29",
-      "days_left": 13,
+      "days_left": 12,
       "description": "gemini-3.1-flash-image will be deprecated on October 29, 2026. Source",
       "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
     },
     {
-      "title": "OpenAI ends direct supply to Cursor",
+      "title": "OpenAI's direct supply to Cursor ends",
       "kind": "Deprecation",
       "effective_date": "2026-11-12",
-      "days_left": 27,
+      "days_left": 26,
       "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
       "url": "https://x.com/thsottiaux/status/2093515916076343774"
     },
     {
-      "title": "Mandatory L3/L4 national standard takes effect",
+      "title": "Mandatory national standard for L3/L4 takes effect",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 258,
-      "description": "The intelligent connected vehicle L3/L4 autonomous driving system safety requirements are proposed to take effect on July 1, 2027, covering requirements for Safety Case, human-machine handover and risk handling. Source",
+      "days_left": 257,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "China's L3/L4 safety national standard takes effect",
+      "title": "China's L3/L4 national safety standard takes effect",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 258,
-      "description": "The mandatory national standard \"Intelligent Connected Vehicles: Safety Requirements for Automated Driving Systems\" is proposed to take effect on July 1, 2027, and related autonomous driving products need to prepare for safety entry approval and compliance validation. Source",
+      "days_left": 257,
+      "description": "The mandatory national standard \"Intelligent Connected Vehicles, Safety Requirements for Autonomous Driving Systems\" is proposed to take effect from July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     }
   ],
-  "leaderboard": [],
+  "leaderboard": [
+    {
+      "benchmark": "Code Arena: WebDev",
+      "from": "Meta Muse Wonder (Max) 1651分",
+      "to": "Muse Spark Open (Max) 1511",
+      "url": "https://x.com/arena/status/2111221323217412318"
+    }
+  ],
   "sections": {
+    "pricing": [
+      {
+        "title": "AI Updates Today (October 2026) – Latest AI Model…",
+        "note": "Track pricing adjustments across model APIs",
+        "source": "Llm-Stats",
+        "why": "",
+        "url": "https://llm-stats.com/llm-updates"
+      },
+      {
+        "title": "小鹏也开始整合，4条产品线变2条｜36氪独家",
+        "note": "Assess the pricing impact of product line consolidation",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/p/4028538678858377?f=rss"
+      },
+      {
+        "title": "入门款卖到1350元，昂跑凭什么？｜专访",
+        "note": "Break down the pricing logic of high-priced entry-level running shoes",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/p/4025220294004611?f=rss"
+      },
+      {
+        "title": "8点1氪丨三部门联合调查“尊界V800汽车刹车踏板支架断裂问题”；国内一半AI算力被指在造爽剧；台积…",
+        "note": "Monitor debate over AI computing investment costs",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/p/4027802678186372?f=rss"
+      },
+      {
+        "title": "Pricing | OpenAI API",
+        "note": "Confirm the exit of fine-tuning platforms and billing changes",
+        "source": "Openai",
+        "why": "",
+        "url": "https://developers.openai.com/api/docs/pricing"
+      }
+    ],
     "media": [
       {
-        "title": "Chirp Pong",
-        "note": "Connect a static web game using mobile microphone sound waves",
-        "source": "simon_willison",
+        "title": "[AINews] Agents disprove Polysemanticity; greatly…",
+        "note": "Generate interpretability and alignment analysis results",
+        "source": "latent_space",
         "why": "",
-        "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/"
+        "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
       },
       {
-        "title": "Muse Spark Open is Meta's answer to Qwen, GLM, and…",
-        "note": "Process multimodal tasks with a million-token context",
-        "source": "the_decoder",
-        "why": "",
-        "url": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/"
-      },
-      {
-        "title": "ibm-granite/granite-switch-4.1 30B/8B",
-        "note": "Switch between chat, decision-making and voice capabilities through a single endpoint",
+        "title": "Tyger: open-weights streaming ASR + full-duplex tu…",
+        "note": "Build real-time full-duplex voice agents",
         "source": "reddit_localllama",
         "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6wwx2/ibmgranitegraniteswitch41_30b8b/"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7msmj/tyger_openweights_streaming_asr_fullduplex/"
       },
       {
-        "title": "Meta and Apple team up to make Muse AI models run…",
-        "note": "Run an extremely large open-source model on a Mac desktop",
-        "source": "verge_ai",
+        "title": "Gemini 4 Argon ignores temperature=0 without an er…",
+        "note": "Migrate prompts to fit Argon constraints",
+        "source": "reddit_promptengineering",
         "why": "",
-        "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx"
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1x7i8nm/gemini_4_argon_ignores_temperature0_without_an/"
       },
       {
-        "title": "Local and Distributed Large LLM Inference with MLX…",
-        "note": "Use MLX and RDMA for local distributed inference",
-        "source": "apple_ml_research",
+        "title": "2.99万元起！端侧跑超千亿大模型，联想YOGA Pro 15 RTX Spark发售",
+        "note": "Run hundred-billion-parameter agents locally",
+        "source": "zhidx",
         "why": "",
-        "url": "https://machinelearning.apple.com/research/mlx-distributed-inference"
+        "url": "https://zhidx.com/p/601884.html"
+      },
+      {
+        "title": "Fish Audio Drama 3",
+        "note": "Direct AI voiceovers based on emotional pacing",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/fish-speech?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ],
     "incidents": [
       {
-        "title": "Anthropic is letting METR researchers look under t…",
-        "note": "Open employee-level audits to expose model risks",
-        "source": "techcrunch_ai",
+        "title": "White House Requires AI/Super Intelligence Inciden…",
+        "note": "Establish an AI incident reporting and response process",
+        "source": "Jdsupra",
         "why": "",
-        "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/"
+        "url": "https://jdsupra.com/legalnews/white-house-requires-ai-super-8351006"
       },
       {
-        "title": "2026 World Cup: Breaking Records, Spiky Charts and…",
-        "note": "Review reliability under World Cup traffic spikes",
-        "source": "meta_engineering",
+        "title": "Ask AI to compare two options and it leans towards…",
+        "note": "Avoid review bias caused by option order",
+        "source": "reddit_promptengineering",
         "why": "",
-        "url": "https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale/"
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1x77z4h/ask_ai_to_compare_two_options_and_it_leans/"
       },
       {
-        "title": "Chicken-coop shed AI PC",
-        "note": "Assess cooling risks in civilian shed GPU clusters",
-        "source": "reddit_localllama",
-        "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6c5px/chickencoop_shed_ai_pc/"
-      },
-      {
-        "title": "τ-Emotion-Bench: Exposing the Interaction Fragilit…",
-        "note": "Test agent interaction failures triggered by emotional users",
+        "title": "Grounding Generative Verification in 3D Content",
+        "note": "Verify whether 3D generation meets task evidence requirements",
         "source": "huggingface_papers",
         "why": "",
-        "url": "https://huggingface.co/papers/2610.19560"
+        "url": "https://huggingface.co/papers/2610.22360"
       },
       {
-        "title": "SafeDriveVLA: Navigation-Conditioned World Model D…",
-        "note": "Identify conflicting decision risks in autonomous driving VLA",
+        "title": "FDE-Gym: The Last Mile of AI Delivery",
+        "note": "Test agents' ability to clarify ambiguous requirements",
         "source": "huggingface_papers",
         "why": "",
-        "url": "https://huggingface.co/papers/2610.20609"
+        "url": "https://huggingface.co/papers/2610.22350"
+      },
+      {
+        "title": "Twice Upon a Time: Complementary Representations f…",
+        "note": "Check whether temporal representations omit critical information",
+        "source": "huggingface_papers",
+        "why": "",
+        "url": "https://huggingface.co/papers/2610.22327"
       }
     ],
     "tools": [
       {
-        "title": "K-Dense-AI/scientific-agent-skills",
-        "note": "Add scientific research skills and database access to agents",
+        "title": "OthmanAdi/planning-with-files",
+        "note": "Save recoverable plans for long tasks",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (50,443 ⭐), matches your interests in \"agent / claude / code\" · View",
-        "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+        "why": "GitHub topic:claude-skills starred repository (27,480 ⭐), matches your interests: \"agent / agents / claude\" · View",
+        "url": "https://github.com/OthmanAdi/planning-with-files"
       },
       {
-        "title": "thedotmack/claude-mem",
-        "note": "Save and inject memory for agents across sessions",
+        "title": "paperclipai/paperclip",
+        "note": "Manage multiple agents across the enterprise from one place",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (101,044 ⭐), matches your interests in \"agent / claude / code\" · View",
-        "url": "https://github.com/thedotmack/claude-mem"
+        "why": "GitHub topic:claude-skills starred repository (103,175 ⭐), matches your interests: \"agent / agents\" · View",
+        "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "title": "teng-lin/notebooklm-py",
-        "note": "Automate NotebookLM workflows with Python",
-        "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (19,750 ⭐), matches your interests in \"agent / agents / claude\" · View",
-        "url": "https://github.com/teng-lin/notebooklm-py"
+        "title": "Gemini 4 Argon ignores temperature=0 without an er…",
+        "note": "Migrate prompts to fit Argon constraints",
+        "source": "reddit_promptengineering",
+        "why": "r/promptengineering top post this week (recent discussion), matches your interests: \"agent / agents / code\" · View",
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1x7i8nm/gemini_4_argon_ignores_temperature0_without_an/"
       },
       {
-        "title": "Navige",
-        "note": "Route small models and cache results to reduce agent costs",
+        "title": "Jockey by TwelveLabs",
+        "note": "Search and connect large video asset libraries",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 204 votes · 52 comments, matches your interests in \"agent / model / tool\" · View",
-        "url": "https://www.producthunt.com/products/navige?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI selection · 365 votes · 26 comments, matches your interests: \"chat / claude / ide\" · View",
+        "url": "https://www.producthunt.com/products/twelvelabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "GLM-Legal",
-        "note": "Use a legal model to review contracts and verify evidence compliance",
+        "title": "Harness by Autonomous",
+        "note": "Schedule coding agents across multiple machines from one place",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 159 votes · 2 comments, matches your interests in \"agent / ide / model\" · View",
-        "url": "https://www.producthunt.com/products/z-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
-      }
-    ],
-    "frameworks": [
-      {
-        "title": "nanocoai/nanoclaw",
-        "note": "Use containers to isolate and deploy multi-channel messaging agents",
-        "source": "github_claude_skills",
-        "why": "",
-        "url": "https://github.com/nanocoai/nanoclaw"
-      },
-      {
-        "title": "Pancake",
-        "note": "Directly deploy and execute AI-generated GTM plans",
-        "source": "producthunt_ai",
-        "why": "",
-        "url": "https://www.producthunt.com/products/pancake-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
-      },
-      {
-        "title": "daily.dev for agents",
-        "note": "Let agents read developer trends and discussions",
-        "source": "producthunt_ai",
-        "why": "",
-        "url": "https://www.producthunt.com/products/daily-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
-      },
-      {
-        "title": "Gemini 4 Argon全球上线，API限时五折，谷歌要杀回第一梯队！",
-        "note": "Access Gemini 4 Argon through an API",
-        "source": "zhidx",
-        "why": "",
-        "url": "https://zhidx.com/p/600633.html"
-      },
-      {
-        "title": "Show HN: SolidCraft – Open-Source Parametric CAD i…",
-        "note": "Use MCP to let AI control parametric CAD",
-        "source": "Daily",
-        "why": "",
-        "url": "https://daily.dev/posts/show-hn-solidcraft-open-source-parametric-cad-in-rust-with-mcp-support--pgwocqwlj"
+        "why": "Product Hunt AI selection · 285 votes · 25 comments, matches your interests: \"agent / agents / claude\" · View",
+        "url": "https://www.producthunt.com/products/harness-by-autonomous?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ]
   },
   "sections_missing": [
-    "leaderboard",
-    "pricing"
+    "frameworks"
   ],
   "source_flags": [
-    "evidence_rewritten:GLOBAL_2-9685f069634900cd",
-    "evidence_rewritten:GLOBAL_2-63b05dfb7a398313",
-    "evidence_rewritten:GLOBAL_2-754da3ccb6c86bd6",
-    "evidence_rewritten:GLOBAL_2-d8083b46c0fc4e72",
-    "critic_missed:cluster-53e745de9cb70d03"
+    "evidence_rewritten:GLOBAL_2-f4e18601fb3af785",
+    "evidence_rewritten:GLOBAL_2-ad137bcd01819f3d",
+    "evidence_rewritten:c81744ef-32a5a278c24c7a96",
+    "evidence_rewritten:GLOBAL_2-a03bcd057a8b8a8d",
+    "critic_missed:cluster-99c0b534b38108ec"
   ],
   "caveats": [],
   "license": "MIT",
@@ -504,5 +513,7 @@
     "name": "Aaron Zhang",
     "url": "https://aaronzhang.ai"
   },
-  "style_flags": []
+  "style_flags": [
+    "insights 3: AI vocabulary 'harness'"
+  ]
 }

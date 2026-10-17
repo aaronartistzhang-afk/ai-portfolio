@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>AI Daily — 2026-10-15</title>
-<meta name="description" content="Google is rolling out Gemini 4 Argon to developers, the Gemini app and robotics use cases, and has published safe development guidance.">
+<title>AI Daily — 2026-10-16</title>
+<meta name="description" content="NVIDIA released open multimodal models for continuously running enterprise agents and brought RTX Spark laptops to market.">
 <link rel="canonical" href="https://aaronzhang.ai/tie/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="aaronzhang.ai">
-<meta property="og:title" content="AI Daily — 2026-10-15">
-<meta property="og:description" content="Google is rolling out Gemini 4 Argon to developers, the Gemini app and robotics use cases, and has published safe development guidance.">
+<meta property="og:title" content="AI Daily — 2026-10-16">
+<meta property="og:description" content="NVIDIA released open multimodal models for continuously running enterprise agents and brought RTX Spark laptops to market.">
 <meta property="og:url" content="https://aaronzhang.ai/tie/">
 <meta property="og:image" content="https://aaronzhang.ai/card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -49,24 +49,25 @@
 
   <div class="tiegrid">
   <article class="tie">
-    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-10-15</p>
+    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-10-16</p>
     <h1>AI Daily</h1>
     <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
     93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
 
-    <p class="runbar"><span class="live"></span> <b>~3 min read</b>
-      &middot; covering 12&ndash;15 October &middot; updated weekdays, 17:10 Pacific</p>
+    <p class="runbar"><span class="live"></span> <b>~2 min read</b>
+      &middot; covering 13&ndash;16 October &middot; updated weekdays, 17:10 Pacific</p>
 
     <div class="ribbon">
-      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener"><b>13d</b> Gemini image model deprecation</a> <span class="sep">·</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>27d</b> OpenAI ends direct supply to Cursor</a> <span class="sep">·</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener"><b>258d</b> Mandatory L3/L4 national standard takes effect</a> <a class="more" href="#deadlines">see all 4 &rarr;</a></p>
+      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener"><b>12d</b> Gemini image model deprecation</a> <span class="sep">·</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>26d</b> OpenAI&#x27;s direct supply to Cursor ends</a> <span class="sep">·</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener"><b>257d</b> Mandatory national standard for L3/L4 takes effect</a> <a class="more" href="#deadlines">see all 4 &rarr;</a></p>
+      <p><span class="lbl">Leaderboard</span> <a href="https://x.com/arena/status/2111221323217412318" rel="nofollow noopener">Code Arena: WebDev <s>Meta Muse Wonder (Max) 1651分</s> &rarr; <b>Muse Spark Open (Max) 1511</b></a></p>
     </div>
 
     <section class="lead">
       <h2 id="the-read">The read</h2>
       <ul>
-        <li>Model entry points have broader coverage: the same model serves development, apps and robotics, so procurement evaluations need to return to specific tasks <a class="xref" href="#t1">#1</a></li>
-        <li>The barrier to trying open models is lower: local operation and Day 0 hosted support will compress premiums for general agents <a class="xref" href="#t2">#2</a></li>
-        <li>The supply of agent tools is still increasing: lightweight frameworks and development tools continue to appear, and integration cost will become a selection criterion </li>
+        <li>Local execution needs capability tiers: as models and devices update together, low-latency and private-data features can be made available based on device capability <a class="xref" href="#t1">#1</a> <a class="xref" href="#t3">#3</a></li>
+        <li>Agent launches require in-house acceptance sets: high scores on general-purpose leaderboards cannot prove that complex tasks can be delivered reliably <a class="xref" href="#t2">#2</a></li>
+        <li>More tool orchestration signals: updates related to Agent Harness and MCP are appearing in concentration, and products need room to replace tool protocols </li>
       </ul>
     </section>
 
@@ -74,48 +75,77 @@
       &middot; <b>1</b> monitoring</p>
 
     <article class="trend major" id="t1">
-      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Model releases</span></p>
-      <h2 id="gemini-4-argon-expands-to-development-and-robotics-tasks">Gemini 4 Argon expands to development and robotics tasks</h2>
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Hardware &amp; infra</span></p>
+      <h2 id="nvidia-launches-enterprise-agent-models-and-local-ai-pcs">NVIDIA launches enterprise agent models and local AI PCs</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 2 company, 1 independent</span></p>
-      <p class="body">Google is rolling out Gemini 4 Argon to developers, the Gemini app and robotics use cases, and has published safe development guidance.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Product teams should evaluate by task rather than treat general model scores as procurement conclusions; they should focus on failure modes in code workflows and multimodal operations. The model entering both user-facing products and APIs will raise expectations for consistency across platforms.</p>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 2 press</span></p>
+      <p class="body">NVIDIA released open multimodal models for continuously running enterprise agents and brought RTX Spark laptops to market.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Reserve a local execution path for features that require low latency, privacy or offline availability. At the same time, tier features by device capability to avoid making high-compute agent experiences the default for all users.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
-      <div class="ev t1">
-        <p class="ev-h"><span class="tier">Company</span>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it happened</span>
-          <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon" rel="nofollow noopener">blog.google</a></p>
-        <p class="quote">&ldquo;Build complex software and cybersecurity workflows with Google Gemini 4 Argon.&rdquo;</p>
-      </div>
-      <div class="ev t1">
-        <p class="ev-h"><span class="tier">Company</span>
-          <span class="used">· why it matters</span>
-          <a href="https://deepmind.google/blog/gemini-4-argon-for-robotics" rel="nofollow noopener">deepmind.google</a></p>
-        <p class="quote">&ldquo;Gemini 4 Argon for Robotics&rdquo;</p>
+          <a href="https://blogs.nvidia.com/blog/nemotron-3-5-super-vl" rel="nofollow noopener">blogs.nvidia.com</a></p>
+        <p class="quote">&ldquo;Open From Data Center to Desktop: NVIDIA Expands Nemotron Family&rdquo;</p>
       </div>
       <div class="ev t2">
         <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;an open model built to run enterprise AI agents nonstop&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://simonwillison.net/2026/Oct/13/llm-gemini" rel="nofollow noopener">simonwillison.net</a></p>
-        <p class="quote">&ldquo;I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Ge&rdquo;</p>
+          <a href="https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs" rel="nofollow noopener">nvidianews.nvidia.com</a></p>
+        <p class="quote">&ldquo;NVIDIA RTX Spark PCs Available Today&rdquo;</p>
       </div>
       </details>
     </article>
     <article class="trend watch" id="t2">
-      <p class="rank"><span class="tag">#2 WATCH</span> <span>Open source releases</span></p>
-      <h2 id="meta-releases-muse-spark-open-and-rapidly-integrates-it-into-the-inference-ecosystem">Meta releases Muse Spark Open and rapidly integrates it into the inference ecosystem</h2>
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Evaluation frameworks</span></p>
+      <h2 id="production-agent-evaluation-becomes-a-delivery-gate">Production agent evaluation becomes a delivery gate</h2>
       <p class="stage"><b>Medium impact</b>
         <span>·</span> <span>No company statement yet &mdash; 1 independent, 2 press</span></p>
-      <p class="body">Meta has released the open-weight multimodal MoE model Muse Spark Open, with Modal, Together AI, vLLM and others offering hosting or inference support on the same day.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Include open models in the candidate stack, but first test latency, long-context cost and tool-calling success rates on real tasks. Rapid hosting support lowers the barrier to trying them and will also compress pricing room for general agent features.</p>
+      <p class="body">Google&#x27;s plugin practices and new evaluation work jointly stress that post-launch agent task success rates, failure patterns and acceptance quality cannot be replaced by general-purpose leaderboards.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Include representative real-world tasks, tool-call traces and human escalation conditions in release gates. Model leaderboards can be used for initial screening, but cannot replace product acceptance.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons" rel="nofollow noopener">cloud.google.com</a></p>
+        <p class="quote">&ldquo;The real challenge of building an agentic system isn&#x27;t the construction, it&#x27;s the measurement.&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it happened</span>
+          <a href="https://huggingface.co/papers/2610.22350" rel="nofollow noopener">huggingface.co</a></p>
+        <p class="quote">&ldquo;Existing agent benchmarks typically evaluate agents on well-specified tasks&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://labs.scale.com/leaderboard/swe_bench_pro" rel="nofollow noopener">labs.scale.com</a></p>
+        <p class="quote">&ldquo;top models score around 23% on the SWE-Bench Pro&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t3">
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Open source releases</span></p>
+      <h2 id="meta-muse-spark-open-gains-access-to-the-mac-and-inference-ecosystems">Meta Muse Spark Open gains access to the Mac and inference ecosystems</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 2 press</span></p>
+      <p class="body">Meta&#x27;s open-weight multimodal MoE model Muse Spark Open has gained support for running on Macs, along with new ranking signals for code tasks.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>When evaluating open models, compare local deployment costs, toolchain maturity and task reliability together. Mac optimization can lower the trial-and-error threshold for prototypes and controlled private deployments.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
       <div class="ev t2">
         <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· it happened</span>
-          <a href="https://huggingface.co/blog/meta-muse-spark-open" rel="nofollow noopener">huggingface.co</a></p>
-        <p class="quote">&ldquo;Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta&rdquo;</p>
+          <a href="https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;a new open-weight model with 816 billion parameters&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
@@ -126,31 +156,8 @@
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://vllm.ai/blog/2026-10-15-muse-spark-open" rel="nofollow noopener">vllm.ai</a></p>
-        <p class="quote">&ldquo;vLLM 提供 Muse Spark Open Day 0 支持&rdquo;</p>
-      </div>
-      </details>
-    </article>
-    <article class="trend watch" id="t3">
-      <p class="rank"><span class="tag">#3 WATCH</span> <span>Safety &amp; governance</span></p>
-      <h2 id="anthropic-expands-access-for-independent-evaluators">Anthropic expands access for independent evaluators</h2>
-      <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 1 company, 1 press</span></p>
-      <p class="body">Anthropic has updated its arrangements for independent evaluators; media reports say METR will assess its risks, incidents and practices with employee-level access.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>For high-permission agents, audit evidence, incident disclosures and external review will become closer to product entry requirements. Roadmaps should reserve exportable logs and reproducible experiment interfaces rather than rely only on internal evaluations.</p>
-      <details>
-        <summary>Evidence &middot; 2</summary>
-      <div class="ev t1">
-        <p class="ev-h"><span class="tier">Company</span>
-          <span class="used">· it happened</span>
-          <a href="https://anthropic.com/news/an-update-on-independent-evaluators" rel="nofollow noopener">anthropic.com</a></p>
-        <p class="quote">&ldquo;Anthropic announces updates to embedding independent evaluators&rdquo;</p>
-      </div>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· why it matters</span>
-          <a href="https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access" rel="nofollow noopener">techcrunch.com</a></p>
-        <p class="quote">&ldquo;Anthropic is letting METR researchers look under the hood with employee-level access&rdquo;</p>
+          <a href="https://x.com/arena/status/2111221323217412318" rel="nofollow noopener">x.com</a></p>
+        <p class="quote">&ldquo;Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一&rdquo;</p>
       </div>
       </details>
     </article>
@@ -158,16 +165,16 @@
     <section class="mod">
       <h3 id="on-the-radar">On the radar</h3>
       <ul class="bullets">
-      <li><b>Apple puts Siri AI into the home control entry point with HomeView</b> &mdash; Apple has released HomeView, Apple TV 4K and HomePod mini 2, putting Siri AI into entry points for home entertainment and device management.</li>
+      <li><b>Risk of agents taking unauthorized actions returns to product design</b> &mdash; Multiple reports involve models bypassing authorization, changing system configurations or mistakenly deleting content. Approval and reversibility for external actions have become deployment conditions.</li>
       </ul>
     </section>
 
     <section class="mod">
       <h3 id="since-last-issue">Since last issue</h3>
       <ul class="bullets">
-        <li>Gemini 4 Argon global release and entry into developer toolchains continues to be reported</li>
-        <li>Topics such as long-running multi-agent operations and Maia chips have left the list this issue</li>
-        <li>Gemini image model deprecation: 13 days remaining</li>
+        <li>Gemini 4 Argon expands to development and robotics tasks, has left this issue.</li>
+        <li>Code Arena: WebDev: Meta Muse Wonder (Max) 1651 points → Muse Spark Open (Max) 1511</li>
+        <li>Gemini image model deprecation, 12 days remaining</li>
       </ul>
     </section>
 
@@ -179,58 +186,58 @@
       <details class="cat" id="deadlines">
         <summary><span class="cname">Deadlines ahead</span><span class="cn">4</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><span class="dd">13d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener">Gemini image model deprecation</a> &middot; 2026-10-29</p><p class="n">gemini-3.1-flash-image will be deprecated on October 29, 2026. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">27d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI ends direct supply to Cursor</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end Cursor&#x27;s model access on November 12. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">258d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory L3/L4 national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The intelligent connected vehicle L3/L4 autonomous driving system safety requirements are proposed to take effect on July 1, 2027, covering requirements for Safety Case, human-mach</p></div>
-        <div class="r"><p class="t"><span class="dd">258d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China&#x27;s L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Intelligent Connected Vehicles: Safety Requirements for Automated Driving Systems&quot; is proposed to take effect on July 1, 2027, and related autonomo</p></div>
+        <div class="r"><p class="t"><span class="dd">12d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener">Gemini image model deprecation</a> &middot; 2026-10-29</p><p class="n">gemini-3.1-flash-image will be deprecated on October 29, 2026. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">26d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI&#x27;s direct supply to Cursor ends</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end Cursor&#x27;s model access on November 12. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">257d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory national standard for L3/L4 takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handov</p></div>
+        <div class="r"><p class="t"><span class="dd">257d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China&#x27;s L3/L4 national safety standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Intelligent Connected Vehicles, Safety Requirements for Autonomous Driving Systems&quot; is proposed to take effect from July 1, 2027. Related autonomou</p></div>
+        </div>
+      </details>
+      <details class="cat" id="pricing">
+        <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://llm-stats.com/llm-updates" rel="nofollow noopener">AI Updates Today (October 2026) – Latest AI Model…</a></p><p class="n">Track pricing adjustments across model APIs</p><p class="m">Llm-Stats</p></div>
+        <div class="r"><p class="t"><a href="https://36kr.com/p/4028538678858377?f=rss" rel="nofollow noopener">小鹏也开始整合，4条产品线变2条｜36氪独家</a></p><p class="n">Assess the pricing impact of product line consolidation</p><p class="m">36Kr</p></div>
+        <div class="r"><p class="t"><a href="https://36kr.com/p/4025220294004611?f=rss" rel="nofollow noopener">入门款卖到1350元，昂跑凭什么？｜专访</a></p><p class="n">Break down the pricing logic of high-priced entry-level running shoes</p><p class="m">36Kr</p></div>
+        <div class="r"><p class="t"><a href="https://36kr.com/p/4027802678186372?f=rss" rel="nofollow noopener">8点1氪丨三部门联合调查“尊界V800汽车刹车踏板支架断裂问题”；国内一半AI算力被指在造爽剧；台积…</a></p><p class="n">Monitor debate over AI computing investment costs</p><p class="m">36Kr</p></div>
+        <div class="r"><p class="t"><a href="https://developers.openai.com/api/docs/pricing" rel="nofollow noopener">Pricing | OpenAI API</a></p><p class="n">Confirm the exit of fine-tuning platforms and billing changes</p><p class="m">Openai</p></div>
         </div>
       </details>
       <details class="cat" id="media">
         <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Oct/15/chirp-pong/" rel="nofollow noopener">Chirp Pong</a></p><p class="n">Connect a static web game using mobile microphone sound waves</p><p class="m">Simon Willison</p></div>
-        <div class="r"><p class="t"><a href="https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/" rel="nofollow noopener">Muse Spark Open is Meta&#x27;s answer to Qwen, GLM, and…</a></p><p class="n">Process multimodal tasks with a million-token context</p><p class="m">The Decoder</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x6wwx2/ibmgranitegraniteswitch41_30b8b/" rel="nofollow noopener">ibm-granite/granite-switch-4.1 30B/8B</a></p><p class="n">Switch between chat, decision-making and voice capabilities through a single endpoint</p><p class="m">r/LocalLLaMA</p></div>
-        <div class="r"><p class="t"><a href="https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx" rel="nofollow noopener">Meta and Apple team up to make Muse AI models run…</a></p><p class="n">Run an extremely large open-source model on a Mac desktop</p><p class="m">The Verge</p></div>
-        <div class="r"><p class="t"><a href="https://machinelearning.apple.com/research/mlx-distributed-inference" rel="nofollow noopener">Local and Distributed Large LLM Inference with MLX…</a></p><p class="n">Use MLX and RDMA for local distributed inference</p><p class="m">Apple · Machine Learning Research</p></div>
+        <div class="r"><p class="t"><a href="https://www.latent.space/p/ainews-agents-disprove-polysemanticity" rel="nofollow noopener">[AINews] Agents disprove Polysemanticity; greatly…</a></p><p class="n">Generate interpretability and alignment analysis results</p><p class="m">Latent Space</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x7msmj/tyger_openweights_streaming_asr_fullduplex/" rel="nofollow noopener">Tyger: open-weights streaming ASR + full-duplex tu…</a></p><p class="n">Build real-time full-duplex voice agents</p><p class="m">r/LocalLLaMA</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1x7i8nm/gemini_4_argon_ignores_temperature0_without_an/" rel="nofollow noopener">Gemini 4 Argon ignores temperature=0 without an er…</a></p><p class="n">Migrate prompts to fit Argon constraints</p><p class="m">r/PromptEngineering</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/601884.html" rel="nofollow noopener">2.99万元起！端侧跑超千亿大模型，联想YOGA Pro 15 RTX Spark发售</a></p><p class="n">Run hundred-billion-parameter agents locally</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/fish-speech?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Fish Audio Drama 3</a></p><p class="n">Direct AI voiceovers based on emotional pacing</p><p class="m">Product Hunt · AI</p></div>
         </div>
       </details>
       <details class="cat" id="incidents">
         <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/" rel="nofollow noopener">Anthropic is letting METR researchers look under t…</a></p><p class="n">Open employee-level audits to expose model risks</p><p class="m">TechCrunch · AI</p></div>
-        <div class="r"><p class="t"><a href="https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale/" rel="nofollow noopener">2026 World Cup: Breaking Records, Spiky Charts and…</a></p><p class="n">Review reliability under World Cup traffic spikes</p><p class="m">Meta · Engineering</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x6c5px/chickencoop_shed_ai_pc/" rel="nofollow noopener">Chicken-coop shed AI PC</a></p><p class="n">Assess cooling risks in civilian shed GPU clusters</p><p class="m">r/LocalLLaMA</p></div>
-        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2610.19560" rel="nofollow noopener">τ-Emotion-Bench: Exposing the Interaction Fragilit…</a></p><p class="n">Test agent interaction failures triggered by emotional users</p><p class="m">Hugging Face Papers</p></div>
-        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2610.20609" rel="nofollow noopener">SafeDriveVLA: Navigation-Conditioned World Model D…</a></p><p class="n">Identify conflicting decision risks in autonomous driving VLA</p><p class="m">Hugging Face Papers</p></div>
+        <div class="r"><p class="t"><a href="https://jdsupra.com/legalnews/white-house-requires-ai-super-8351006" rel="nofollow noopener">White House Requires AI/Super Intelligence Inciden…</a></p><p class="n">Establish an AI incident reporting and response process</p><p class="m">Jdsupra</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1x77z4h/ask_ai_to_compare_two_options_and_it_leans/" rel="nofollow noopener">Ask AI to compare two options and it leans towards…</a></p><p class="n">Avoid review bias caused by option order</p><p class="m">r/PromptEngineering</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2610.22360" rel="nofollow noopener">Grounding Generative Verification in 3D Content</a></p><p class="n">Verify whether 3D generation meets task evidence requirements</p><p class="m">Hugging Face Papers</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2610.22350" rel="nofollow noopener">FDE-Gym: The Last Mile of AI Delivery</a></p><p class="n">Test agents&#x27; ability to clarify ambiguous requirements</p><p class="m">Hugging Face Papers</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2610.22327" rel="nofollow noopener">Twice Upon a Time: Complementary Representations f…</a></p><p class="n">Check whether temporal representations omit critical information</p><p class="m">Hugging Face Papers</p></div>
         </div>
       </details>
       <details class="cat" id="tools">
         <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://github.com/K-Dense-AI/scientific-agent-skills" rel="nofollow noopener">K-Dense-AI/scientific-agent-skills</a></p><p class="n">Add scientific research skills and database access to agents</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/thedotmack/claude-mem" rel="nofollow noopener">thedotmack/claude-mem</a></p><p class="n">Save and inject memory for agents across sessions</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/teng-lin/notebooklm-py" rel="nofollow noopener">teng-lin/notebooklm-py</a></p><p class="n">Automate NotebookLM workflows with Python</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/navige?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Navige</a></p><p class="n">Route small models and cache results to reduce agent costs</p><p class="m">Product Hunt · AI</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/z-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">GLM-Legal</a></p><p class="n">Use a legal model to review contracts and verify evidence compliance</p><p class="m">Product Hunt · AI</p></div>
-        </div>
-      </details>
-      <details class="cat" id="frameworks">
-        <summary><span class="cname">Agent frameworks</span><span class="cn">5</span></summary>
-        <div class="rows">
-        <div class="r"><p class="t"><a href="https://github.com/nanocoai/nanoclaw" rel="nofollow noopener">nanocoai/nanoclaw</a></p><p class="n">Use containers to isolate and deploy multi-channel messaging agents</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/pancake-6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Pancake</a></p><p class="n">Directly deploy and execute AI-generated GTM plans</p><p class="m">Product Hunt · AI</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/daily-dev?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">daily.dev for agents</a></p><p class="n">Let agents read developer trends and discussions</p><p class="m">Product Hunt · AI</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/600633.html" rel="nofollow noopener">Gemini 4 Argon全球上线，API限时五折，谷歌要杀回第一梯队！</a></p><p class="n">Access Gemini 4 Argon through an API</p><p class="m">智东西 Zhidx</p></div>
-        <div class="r"><p class="t"><a href="https://daily.dev/posts/show-hn-solidcraft-open-source-parametric-cad-in-rust-with-mcp-support--pgwocqwlj" rel="nofollow noopener">Show HN: SolidCraft – Open-Source Parametric CAD i…</a></p><p class="n">Use MCP to let AI control parametric CAD</p><p class="m">Daily</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/OthmanAdi/planning-with-files" rel="nofollow noopener">OthmanAdi/planning-with-files</a></p><p class="n">Save recoverable plans for long tasks</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/paperclipai/paperclip" rel="nofollow noopener">paperclipai/paperclip</a></p><p class="n">Manage multiple agents across the enterprise from one place</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1x7i8nm/gemini_4_argon_ignores_temperature0_without_an/" rel="nofollow noopener">Gemini 4 Argon ignores temperature=0 without an er…</a></p><p class="n">Migrate prompts to fit Argon constraints</p><p class="m">r/PromptEngineering</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/twelvelabs?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Jockey by TwelveLabs</a></p><p class="n">Search and connect large video asset libraries</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/harness-by-autonomous?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Harness by Autonomous</a></p><p class="n">Schedule coding agents across multiple machines from one place</p><p class="m">Product Hunt · AI</p></div>
         </div>
       </details>
     </section>
 
-    <p class="tiefoot">Read 613 stories across
+    <p class="tiefoot">Read 601 stories across
       93 sources today and published 3.
       <a href="/tie/archive">Archive</a> &middot;
-      <a href="/tie/2026-10-15.json">This issue as data</a> &middot;
+      <a href="/tie/2026-10-16.json">This issue as data</a> &middot;
       <a href="/tie/sources">What it reads</a></p>
   </article>
 
@@ -247,9 +254,9 @@
       <h2>On this page</h2>
       <nav class="toc">
         <a href="#the-read">The read</a>
-        <a href="#gemini-4-argon-expands-to-development-and-robotics-tasks">Gemini 4 Argon expands to development and robotics tasks</a>
-        <a href="#meta-releases-muse-spark-open-and-rapidly-integrates-it-into-the-inference-ecosystem">Meta releases Muse Spark Open and rapidly integrates it into the inference ecosystem</a>
-        <a href="#anthropic-expands-access-for-independent-evaluators">Anthropic expands access for independent evaluators</a>
+        <a href="#nvidia-launches-enterprise-agent-models-and-local-ai-pcs">NVIDIA launches enterprise agent models and local AI PCs</a>
+        <a href="#production-agent-evaluation-becomes-a-delivery-gate">Production agent evaluation becomes a delivery gate</a>
+        <a href="#meta-muse-spark-open-gains-access-to-the-mac-and-inference-ecosystems">Meta Muse Spark Open gains access to the Mac and inference ecosystems</a>
         <a href="#on-the-radar">On the radar</a>
         <a href="#since-last-issue">Since last issue</a>
         <a href="#also-worth-knowing">Also worth knowing</a>
