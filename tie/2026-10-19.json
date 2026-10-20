@@ -1,0 +1,489 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-19",
+  "executed_at": "2026-10-20T00:00:33.551484Z",
+  "run_id": "2026-10-17-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-10-17T11:00:33.551417+11:00",
+    "to": "2026-10-20T11:00:33.551417+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-10-20T11:00:33.551417+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "1a9406ce44a5166f",
+      "run_trend_id": "GLOBAL_20261020_INFERENCE_ECONOMICS_FLASH_CODING_MODELS",
+      "name": "Lightweight coding models compete on performance and price",
+      "category": "inference_economics",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "中国"
+      ],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "high",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "MiniMax M3.1 Flash and DeepSeek V4.1 Flash launched in the same period with coding and agent tasks as their focus, with competition centered on throughput, task cost, and open-source deployability.",
+      "attention_driver": "The usable performance of low-cost models on coding leaderboards and agent tasks is prompting teams to compare their default model mix again.",
+      "evidence": [
+        {
+          "url": "https://minimax.io/blog/minimax-m31f",
+          "quote": "MiniMax 发布 M3.1 Flash，推理提速近三倍、用量成本降低 70%",
+          "claim": "Supports MiniMax positioning its new model as a faster, lower-cost inference option.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight",
+          "quote": "42 on the Artificial Analysis Intelligence Index, at half the cost.",
+          "claim": "Supports the new generation of lightweight models competing on price-performance.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://x.com/arena/status/2111894091168682086",
+          "quote": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首",
+          "claim": "Supports DeepSeek Flash receiving leading attention in open-source web development evaluations.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://reddit.com/r/LocalLLaMA/comments/1x9umtv/deepseek_v41_flash_at_261_bpw_engram_26_ts_on",
+          "quote": "DeepSeek V4.1 Flash at 2.61 bpw + Engram: 26 t/s on dual RTX 3090s",
+          "claim": "Supports the community exploring deployment of DeepSeek Flash under low-VRAM conditions.",
+          "source_tier": "attention",
+          "used_for": "creator_relevance"
+        }
+      ],
+      "first_detected": "2026-10-17T10:05:08Z",
+      "last_signal_update": "2026-10-19T18:22:30Z",
+      "so_what": "Add model routing and task-level cost tracking to the near-term roadmap. High-frequency coding and batch agent tasks should no longer default to the most expensive models. Procurement evaluations should consider real task success rates, latency, and cost per completion."
+    },
+    {
+      "canonical_id": "b0080cbe961226f5",
+      "run_trend_id": "GLOBAL_20261020_SAFETY_AND_GOVERNANCE_AGENT_EXTERNAL_ACTIONS",
+      "name": "Permission and liability pressure rises for agent external actions",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "美国",
+        "德国"
+      ],
+      "lifecycle_stage": "declining",
+      "momentum": "accelerating",
+      "impact_level": "high",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Use cases for agents to shop, access websites, and operate enterprise tools are expanding, alongside risk signals involving account abuse, website blocking, and liability for generated content.",
+      "attention_driver": "Real transactions and system access expand what agents can execute, while increasing the importance of permissions, auditing, and compensation liability.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers",
+          "quote": "AI agents are increasingly using Stripe's payment service Link to shop for their users",
+          "claim": "Supports agents beginning to enter real payment and purchasing flows.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted",
+          "quote": "Microsoft wants enterprises to closely watch the agents employees use",
+          "claim": "Supports enterprises treating agent access as an internal permission governance issue.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts",
+          "quote": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+          "claim": "Supports real loss risks emerging around account and usage controls for agent tools.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say",
+          "quote": "Two German courts now hold Google liable for what its AI overviews say",
+          "claim": "Supports judicial attention toward liability for the outputs of generative systems.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-19T12:51:12Z",
+      "last_signal_update": "2026-10-19T22:49:02Z",
+      "so_what": "For features that can spend money, access the internet, or change external systems, use tiered authorization, spending limits, and auditable records by default. Product acceptance testing must measure refusal, human escalation, and reversal paths alongside task completion rates."
+    },
+    {
+      "canonical_id": "3dde9b37443bca91",
+      "run_trend_id": "GLOBAL_20261020_HARDWARE_AND_INFRA_CLOUD_CAPACITY_REPRICING",
+      "name": "Compute supply enters a period of consolidation and alternatives",
+      "category": "hardware_and_infra",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "美国"
+      ],
+      "lifecycle_stage": "dormant",
+      "momentum": "stable",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Funding and procurement pressure facing emerging AI cloud providers is drawing attention, while AWS continues to lower the barrier to running Hugging Face models on Trainium.",
+      "attention_driver": "Large-scale compute contracts and software tools for alternative chips coexist, making inference capacity, vendor concentration, and migration costs operational variables for product teams.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/the-neocloud-shakeout-is-coming-and-nvidia-has-the-most-to-lose",
+          "quote": "only seven to ten of the hundreds of AI cloud providers to survive",
+          "claim": "Supports rising market expectations of consolidation among emerging AI cloud providers.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool",
+          "quote": "Amazon wants to break Nvidia’s hold on PyTorch",
+          "claim": "Supports alternative accelerators competing for PyTorch workloads through development tools.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://huggingface.co/blog/hf-torchneuron",
+          "quote": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+          "claim": "Supports continued reductions in the barrier to using Trainium with Hugging Face models.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal",
+          "quote": "discussing yet another deal of the same magnitude",
+          "claim": "Supports major model companies continuing to pursue discussions on hyperscale compute procurement.",
+          "source_tier": "attention",
+          "used_for": "sentiment"
+        }
+      ],
+      "first_detected": "2026-10-19T00:00:00Z",
+      "last_signal_update": "2026-10-19T23:39:38Z",
+      "so_what": "Separate inference deployment into portable model, runtime, and observability layers to avoid lock-in to a single cloud or chip path. Products with large capacity commitments should retain failover mechanisms and unit-cost review processes."
+    }
+  ],
+  "watch_list": [],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 76,
+    "signals_raw": 470,
+    "signals_accepted": 453,
+    "clusters_total": 269,
+    "clusters_synthesized": 119,
+    "by_source": {
+      "amazon": 1,
+      "anthropic": 1,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "ars_technica_ai": 4,
+      "astral_codex_ten": 1,
+      "brave_search_ai": 105,
+      "chipsandcheese": 1,
+      "crunchbase_news": 2,
+      "ec_digital_strategy": 1,
+      "eetimes": 4,
+      "exponential_view": 2,
+      "github": 16,
+      "github_awesome_claude": 2,
+      "github_awesome_llm": 2,
+      "github_claude_skills": 12,
+      "github_cursor_rules": 5,
+      "google": 4,
+      "hacker_news_ai": 1,
+      "huggingface_blog": 1,
+      "ieee_spectrum_ai": 1,
+      "import_ai": 1,
+      "inclusionai_github": 1,
+      "index_ventures": 5,
+      "infoq_ai_zh": 20,
+      "interconnects_lambert": 1,
+      "kr36_ai": 20,
+      "latent_space": 1,
+      "lennys_newsletter": 4,
+      "meta": 4,
+      "microsoft": 1,
+      "minimax_blog": 1,
+      "mistral": 1,
+      "mit_tech_review_ai": 3,
+      "nvidia": 4,
+      "openai": 1,
+      "producthunt": 20,
+      "pytorch_blog": 2,
+      "qbitai": 6,
+      "reddit_chatgptcoding": 2,
+      "reddit_claudeai": 13,
+      "reddit_localllama": 20,
+      "reddit_ml": 10,
+      "reddit_promptengineering": 10,
+      "rundown_ai": 1,
+      "semianalysis": 1,
+      "sequoia_blog": 2,
+      "servethehome": 2,
+      "simon_willison": 4,
+      "stratechery": 1,
+      "techcrunch_ai": 16,
+      "techcrunch_venture": 2,
+      "the_decoder": 10,
+      "tldr_ai": 1,
+      "verge_ai": 8,
+      "wired_ai": 6,
+      "x_arena_arena": 3,
+      "x_artificial_analysis_artificialanlys": 1,
+      "x_fal_fal": 1,
+      "x_garrytan": 1,
+      "x_levie": 1,
+      "x_mattturck": 1,
+      "x_nikunj": 1,
+      "x_openrouter_openrouter": 1,
+      "x_petergyang": 3,
+      "x_rauchg": 3,
+      "x_steipete": 1,
+      "x_swyx": 3,
+      "x_tencent_workbuddy_workbuddy_ai": 1,
+      "x_thsottiaux": 3,
+      "x_trq212": 3,
+      "youtube_ai": 6,
+      "zh_podcast_crossing": 1,
+      "zh_podcast_guigu101": 1,
+      "zhidx": 11,
+      "zvi_mowshowitz": 2
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "ea4c8f7ff008577d",
+    "prompt_hash": "db1506cbe4822b4d"
+  },
+  "insights": [
+    {
+      "text": "Default models will be tiered by task, as the cost advantage for high-frequency coding and batch agent tasks grows, routing capability will directly affect product gross margin",
+      "refs": [
+        1,
+        3
+      ]
+    },
+    {
+      "text": "External execution needs built-in reversal, as agents begin shopping and accessing enterprise tools, permission boundaries and human escalation paths must come before scaling",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "More audio and video signals this period, 5 new signals are concentrated in stereo, multilingual lip sync, and audio models",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "Production agent evaluation as a delivery gate has left this period's trends.",
+    "Gemini image model deprecation, 9 days remaining."
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini image model deprecation",
+      "kind": "Deprecation",
+      "effective_date": "2026-10-29",
+      "days_left": 9,
+      "description": "gemini-3.1-flash-image will be deprecated on October 29, 2026. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
+    },
+    {
+      "title": "OpenAI direct supply to Cursor ends",
+      "kind": "Deprecation",
+      "effective_date": "2026-11-12",
+      "days_left": 23,
+      "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774"
+    },
+    {
+      "title": "Mandatory L3/L4 national standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 254,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handover, and risk handling requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China's L3/L4 national safety standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 254,
+      "description": "The mandatory national standard, \"Safety Requirements for Autonomous Driving Systems in Intelligent Connected Vehicles,\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "pricing": [
+      {
+        "title": "The RTX 5090 Isn’t 'Alive' if It Costs $10,000, No…",
+        "note": "Track RTX5090 premiums reaching RMB 10,000",
+        "source": "Gizmodo",
+        "why": "",
+        "url": "https://gizmodo.com/nvidia-rtx-5090-availability-2000827661"
+      },
+      {
+        "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter",
+        "note": "Try Mercury 3 at half price",
+        "source": "X: OpenRouter",
+        "why": "",
+        "url": "https://x.com/OpenRouter/status/2112225779782398131"
+      },
+      {
+        "title": "正面硬刚DeepSeek！MiniMax M3.1 Flash发布，输出卷到200+TPS，价格砍到…",
+        "note": "Evaluate replacing with M3.1 Flash at half the price",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/602354.html"
+      },
+      {
+        "title": "Meta's New Models & Agent",
+        "note": "Check Meta open-source model pricing",
+        "source": "youtube_ai",
+        "why": "",
+        "url": "https://www.youtube.com/watch?v=aKVfjG7_R4g"
+      },
+      {
+        "title": "夯爆！DeepSeek又拿下全球第一",
+        "note": "Compare DeepSeek open-source price-performance",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/601977.html"
+      }
+    ],
+    "media": [
+      {
+        "title": "Kling AI drops version 4.0 with stereo audio, mult…",
+        "note": "Generate a 30-second multilingual lip-sync video",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
+      },
+      {
+        "title": "llama.cpp support for Cohere models",
+        "note": "Run Cohere models in llama.cpp",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa0cyz/llamacpp_support_for_cohere_models/"
+      },
+      {
+        "title": "inclusionAI releases Ming-3.0-audio-flash: 126B Mo…",
+        "note": "Process recordings and produce voice responses",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yrfi/inclusionai_releases_ming30audioflash_126b_moe/"
+      },
+      {
+        "title": "inclusionAI/Ming-3.0-audio-tiny · Hugging Face",
+        "note": "Use a small model for voice Q&A",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yf3m/inclusionaiming30audiotiny_hugging_face/"
+      },
+      {
+        "title": "inclusionAI/Ming-3.0-audio-flash · Hugging Face",
+        "note": "Handle audio understanding and transcription",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yd01/inclusionaiming30audioflash_hugging_face/"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "Two German courts now hold Google liable for what…",
+        "note": "Guard against infringement liability from AI summaries",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/"
+      },
+      {
+        "title": "Who judges the judge? Three helpful ways to audit…",
+        "note": "Audit LLM evaluator bias",
+        "source": "google_cloud_ai_blog",
+        "why": "",
+        "url": "https://cloud.google.com/blog/topics/consulting/three-ways-to-audit-your-llm-evaluators/"
+      },
+      {
+        "title": "The Thin Orchestrator: How We Made Our AI Agents M…",
+        "note": "Reduce router responsibilities to improve reliability",
+        "source": "meta_engineering",
+        "why": "",
+        "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+      },
+      {
+        "title": "Disney found a way to buy Character.AI without buy…",
+        "note": "Isolate litigation risk for AI companion products",
+        "source": "ars_technica_ai",
+        "why": "",
+        "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/"
+      },
+      {
+        "title": "Securing the agentic insider",
+        "note": "Strengthen defenses against agentic insider threats",
+        "source": "microsoft_blog",
+        "why": "",
+        "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/"
+      }
+    ],
+    "tools": [
+      {
+        "title": "nanocoai/nanoclaw",
+        "note": "Run message agents securely in containers",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (30,972 ⭐), matches your interests in \"agent / agents / anthropic\" · View",
+        "url": "https://github.com/nanocoai/nanoclaw"
+      },
+      {
+        "title": "ayghri/i-have-adhd",
+        "note": "Have coding agents give the conclusion first",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (57,850 ⭐), matches your interests in \"agent / coding / skill\" · View",
+        "url": "https://github.com/ayghri/i-have-adhd"
+      },
+      {
+        "title": "jnMetaCode/agency-agents-zh",
+        "note": "Coordinate 277 experts working together",
+        "source": "github_cursor_rules",
+        "why": "GitHub topic:cursor-rules starred repository (21,385 ⭐), matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/jnMetaCode/agency-agents-zh"
+      },
+      {
+        "title": "Kai Resolve by Gleap",
+        "note": "Automatically diagnose and respond to customer support tickets",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 136 votes · 23 comments, matches your interests in \"agent / code / coding\" · View",
+        "url": "https://www.producthunt.com/products/gleap?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Beam",
+        "note": "Deploy a 501B model as a code agent",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 125 votes · 1 comment, matches your interests in \"agent / coding / model\" · View",
+        "url": "https://www.producthunt.com/products/beam-13?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "frameworks"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-5dfb5110b4cb492b",
+    "evidence_rewritten:GLOBAL_2-25c6817f3820c86d",
+    "evidence_rewritten:GLOBAL_2-f589e1db614ec116",
+    "critic_missed:cluster-764fdd6007e33e5b",
+    "critic_missed:cluster-d38eff82f637e490"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}
