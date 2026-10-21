@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>AI Daily — 2026-10-19</title>
-<meta name="description" content="MiniMax M3.1 Flash and DeepSeek V4.1 Flash launched in the same period with coding and agent tasks as their focus, with competition centered on throughput, task">
+<title>AI Daily — 2026-10-20</title>
+<meta name="description" content="Google provides native TorchTPU inference support for vLLM and SGLang, expanding accelerator options for PyTorch inference.">
 <link rel="canonical" href="https://aaronzhang.ai/tie/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="aaronzhang.ai">
-<meta property="og:title" content="AI Daily — 2026-10-19">
-<meta property="og:description" content="MiniMax M3.1 Flash and DeepSeek V4.1 Flash launched in the same period with coding and agent tasks as their focus, with competition centered on throughput, task">
+<meta property="og:title" content="AI Daily — 2026-10-20">
+<meta property="og:description" content="Google provides native TorchTPU inference support for vLLM and SGLang, expanding accelerator options for PyTorch inference.">
 <meta property="og:url" content="https://aaronzhang.ai/tie/">
 <meta property="og:image" content="https://aaronzhang.ai/card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -49,142 +49,124 @@
 
   <div class="tiegrid">
   <article class="tie">
-    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-10-19</p>
+    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-10-20</p>
     <h1>AI Daily</h1>
     <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
     93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
 
     <p class="runbar"><span class="live"></span> <b>~3 min read</b>
-      &middot; covering 16&ndash;19 October &middot; updated weekdays, 17:10 Pacific</p>
+      &middot; covering 17&ndash;20 October &middot; updated weekdays, 17:10 Pacific</p>
 
     <div class="ribbon">
-      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener"><b>9d</b> Gemini image model deprecation</a> <span class="sep">·</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>23d</b> OpenAI direct supply to Cursor ends</a> <span class="sep">·</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener"><b>254d</b> Mandatory L3/L4 national standard takes effect</a> <a class="more" href="#deadlines">see all 4 &rarr;</a></p>
+      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener"><b>8d</b> Gemini image model discontinuation</a> <span class="sep">·</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>22d</b> OpenAI ends direct supply to Cursor</a> <span class="sep">·</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener"><b>253d</b> Mandatory national standard for L3/L4 takes effect</a> <a class="more" href="#deadlines">see all 4 &rarr;</a></p>
     </div>
 
     <section class="lead">
       <h2 id="the-read">The read</h2>
       <ul>
-        <li>Default models will be tiered by task, as the cost advantage for high-frequency coding and batch agent tasks grows, routing capability will directly affect product gross margin <a class="xref" href="#t1">#1</a> <a class="xref" href="#t3">#3</a></li>
-        <li>External execution needs built-in reversal, as agents begin shopping and accessing enterprise tools, permission boundaries and human escalation paths must come before scaling <a class="xref" href="#t2">#2</a></li>
-        <li>More audio and video signals this period, 5 new signals are concentrated in stereo, multilingual lip sync, and audio models </li>
+        <li>Non-NVIDIA inference is becoming more viable: PyTorch inference teams should include cross-accelerator benchmarks in cost and supply decisions <a class="xref" href="#t1">#1</a></li>
+        <li>Specialized workflows are being brought in-house by model vendors: general-purpose model companies are filling out execution paths in high-value domains, and products need to retain data and experience differentiation <a class="xref" href="#t2">#2</a></li>
+        <li>More real-time voice options are available: model choices for voice interaction are expanding, making measured latency and per-call costs more necessary </li>
       </ul>
     </section>
 
     <p class="counts"><b>1</b> major &middot; <b>2</b> watch
-      &middot; <b>0</b> monitoring</p>
+      &middot; <b>1</b> monitoring</p>
 
     <article class="trend major" id="t1">
-      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Inference economics</span></p>
-      <h2 id="lightweight-coding-models-compete-on-performance-and-price">Lightweight coding models compete on performance and price</h2>
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Hardware &amp; infra</span></p>
+      <h2 id="greater-accelerator-substitutability-for-pytorch-inference">Greater accelerator substitutability for PyTorch inference</h2>
       <p class="stage"><b>High impact</b>
-        <span>·</span> <span>No company statement yet &mdash; 1 independent, 3 press</span></p>
-      <p class="body">MiniMax M3.1 Flash and DeepSeek V4.1 Flash launched in the same period with coding and agent tasks as their focus, with competition centered on throughput, task cost, and open-source deployability.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Add model routing and task-level cost tracking to the near-term roadmap. High-frequency coding and batch agent tasks should no longer default to the most expensive models. Procurement evaluations should consider real task success rates, latency, and cost per completion.</p>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent, 1 press</span></p>
+      <p class="body">Google provides native TorchTPU inference support for vLLM and SGLang, expanding accelerator options for PyTorch inference.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>If a product relies on PyTorch inference, it should establish performance and migration tests across CUDA and TPU, as well as Trainium, within two weeks. Hardware substitutability is starting to directly affect per-request costs and supply risk.</p>
       <details>
-        <summary>Evidence &middot; 4</summary>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· why it matters</span>
-          <a href="https://minimax.io/blog/minimax-m31f" rel="nofollow noopener">minimax.io</a></p>
-        <p class="quote">&ldquo;MiniMax 发布 M3.1 Flash，推理提速近三倍、用量成本降低 70%&rdquo;</p>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu" rel="nofollow noopener">developers.googleblog.com</a></p>
+        <p class="quote">&ldquo;Google 在 PyTorch 相关公告中推出基于 TorchTPU 的 vLLM 和 SGLang 原生 PyTorch 推理引擎&rdquo;</p>
       </div>
       <div class="ev t2">
         <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· why it matters</span>
-          <a href="https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight" rel="nofollow noopener">the-decoder.com</a></p>
-        <p class="quote">&ldquo;42 on the Artificial Analysis Intelligence Index, at half the cost.&rdquo;</p>
+          <a href="https://huggingface.co/blog/hf-torchtpu" rel="nofollow noopener">huggingface.co</a></p>
+        <p class="quote">&ldquo;Hugging Face ❤️ TorchTPU: TPUs, Natively&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://x.com/arena/status/2111894091168682086" rel="nofollow noopener">x.com</a></p>
-        <p class="quote">&ldquo;DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首&rdquo;</p>
-      </div>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· creator_relevance</span>
-          <a href="https://reddit.com/r/LocalLLaMA/comments/1x9umtv/deepseek_v41_flash_at_261_bpw_engram_26_ts_on" rel="nofollow noopener">reddit.com</a></p>
-        <p class="quote">&ldquo;DeepSeek V4.1 Flash at 2.61 bpw + Engram: 26 t/s on dual RTX 3090s&rdquo;</p>
+          <a href="https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Google has joined Amazon in releasing a developer tool that makes it easy for PyTorch users to move their apps off Nvidi&rdquo;</p>
       </div>
       </details>
     </article>
     <article class="trend watch" id="t2">
-      <p class="rank"><span class="tag">#2 WATCH</span> <span>Safety &amp; governance</span></p>
-      <h2 id="permission-and-liability-pressure-rises-for-agent-external-actions">Permission and liability pressure rises for agent external actions</h2>
-      <p class="stage"><b>High impact</b>
-        <span>·</span> <span>No company statement yet &mdash; 2 independent, 2 press</span></p>
-      <p class="body">Use cases for agents to shop, access websites, and operate enterprise tools are expanding, alongside risk signals involving account abuse, website blocking, and liability for generated content.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>For features that can spend money, access the internet, or change external systems, use tiered authorization, spending limits, and auditable records by default. Product acceptance testing must measure refusal, human escalation, and reversal paths alongside task completion rates.</p>
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Funding and M&amp;A</span></p>
+      <h2 id="openai-acquisition-of-orchestra-bio-expands-scientific-research-workflows">OpenAI acquisition of Orchestra Bio expands scientific research workflows</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 press</span></p>
+      <p class="body">OpenAI will acquire Orchestra Bio, bringing its team and technology into Rosalind, its life sciences R&amp;D model.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Product teams should watch how quickly model vendors package general capabilities into end-to-end workflows. Competition will center on data connections and validation steps, alongside domain delivery experience. Products with deep dependence on external models should leave room for replacement and differentiation.</p>
       <details>
-        <summary>Evidence &middot; 4</summary>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
+        <summary>Evidence &middot; 2</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
           <span class="used">· it happened</span>
-          <a href="https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers" rel="nofollow noopener">the-decoder.com</a></p>
-        <p class="quote">&ldquo;AI agents are increasingly using Stripe&#x27;s payment service Link to shop for their users&rdquo;</p>
+          <a href="https://openai.com/index/openai-to-acquire-orchestra-bio" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&amp;D&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· why it matters</span>
-          <a href="https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted" rel="nofollow noopener">techcrunch.com</a></p>
-        <p class="quote">&ldquo;Microsoft wants enterprises to closely watch the agents employees use&rdquo;</p>
-      </div>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· why it matters</span>
-          <a href="https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts" rel="nofollow noopener">techcrunch.com</a></p>
-        <p class="quote">&ldquo;Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
-          <span class="used">· why it matters</span>
-          <a href="https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say" rel="nofollow noopener">the-decoder.com</a></p>
-        <p class="quote">&ldquo;Two German courts now hold Google liable for what its AI overviews say&rdquo;</p>
+          <a href="https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;OpenAI says it&#x27;s adding Orchestra&#x27;s team and technology to work on Rosalind, its AI model for life sciences research&rdquo;</p>
       </div>
       </details>
     </article>
     <article class="trend watch" id="t3">
-      <p class="rank"><span class="tag">#3 WATCH</span> <span>Hardware &amp; infra</span></p>
-      <h2 id="compute-supply-enters-a-period-of-consolidation-and-alternatives">Compute supply enters a period of consolidation and alternatives</h2>
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Safety &amp; governance</span></p>
+      <h2 id="meta-muse-faces-pressure-on-growth-and-privacy-controls">Meta Muse faces pressure on growth and privacy controls</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>No company statement yet &mdash; 2 independent, 2 press</span></p>
-      <p class="body">Funding and procurement pressure facing emerging AI cloud providers is drawing attention, while AWS continues to lower the barrier to running Hugging Face models on Trainium.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Separate inference deployment into portable model, runtime, and observability layers to avoid lock-in to a single cloud or chip path. Products with large capacity commitments should retain failover mechanisms and unit-cost review processes.</p>
+        <span>·</span> <span>No company statement yet &mdash; 3 press</span></p>
+      <p class="body">Meta Muse surpassed 10 million downloads in the United States within 40 days of launch, but paused its conversation-sharing feature because of privacy exposure issues.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Consumer-facing assistants should design conversation sharing as a minimum-disclosure process and test link visibility and sensitive-information detection before release. Growth metrics cannot replace an assessment of trust loss and retention risk.</p>
       <details>
-        <summary>Evidence &middot; 4</summary>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
-          <span class="used">· why it matters</span>
-          <a href="https://the-decoder.com/the-neocloud-shakeout-is-coming-and-nvidia-has-the-most-to-lose" rel="nofollow noopener">the-decoder.com</a></p>
-        <p class="quote">&ldquo;only seven to ten of the hundreds of AI cloud providers to survive&rdquo;</p>
-      </div>
+        <summary>Evidence &middot; 3</summary>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool" rel="nofollow noopener">techcrunch.com</a></p>
-        <p class="quote">&ldquo;Amazon wants to break Nvidia’s hold on PyTorch&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
-          <span class="used">· it happened</span>
-          <a href="https://huggingface.co/blog/hf-torchneuron" rel="nofollow noopener">huggingface.co</a></p>
-        <p class="quote">&ldquo;TorchNeuron: running HF models on AWS Trainium is easier than ever&rdquo;</p>
+          <a href="https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Meta&#x27;s AI companion Muse has surpassed 10 million U.S. downloads in its first 40 days&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· how it landed</span>
-          <a href="https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal" rel="nofollow noopener">techcrunch.com</a></p>
-        <p class="quote">&ldquo;discussing yet another deal of the same magnitude&rdquo;</p>
+          <span class="used">· why it matters</span>
+          <a href="https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations" rel="nofollow noopener">arstechnica.com</a></p>
+        <p class="quote">&ldquo;Meta is suspending the sharing feature while it investigates its privacy.&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it happened</span>
+          <a href="https://theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats" rel="nofollow noopener">theverge.com</a></p>
+        <p class="quote">&ldquo;Meta says it paused a Muse feature that lets you share conversations with the AI assistant&rdquo;</p>
       </div>
       </details>
     </article>
 
+    <section class="mod">
+      <h3 id="on-the-radar">On the radar</h3>
+      <ul class="bullets">
+      <li><b>US federal civilian agencies restrict DeepSeek</b> &mdash; The US Department of Homeland Security requires federal civilian agencies to stop using DeepSeek technology and remove related products and third-party services.</li>
+      </ul>
+    </section>
 
     <section class="mod">
       <h3 id="since-last-issue">Since last issue</h3>
       <ul class="bullets">
-        <li>Production agent evaluation as a delivery gate has left this period&#x27;s trends.</li>
-        <li>Gemini image model deprecation, 9 days remaining.</li>
+        <li>6 trends from the previous issue have left the focus list this issue.</li>
+        <li>8 days remain until the Gemini image model is discontinued.</li>
       </ul>
     </section>
 
@@ -196,58 +178,58 @@
       <details class="cat" id="deadlines">
         <summary><span class="cname">Deadlines ahead</span><span class="cn">4</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><span class="dd">9d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener">Gemini image model deprecation</a> &middot; 2026-10-29</p><p class="n">gemini-3.1-flash-image will be deprecated on October 29, 2026. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">23d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI direct supply to Cursor ends</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end Cursor&#x27;s model access on November 12. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">254d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory L3/L4 national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine ha</p></div>
-        <div class="r"><p class="t"><span class="dd">254d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China&#x27;s L3/L4 national safety standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard, &quot;Safety Requirements for Autonomous Driving Systems in Intelligent Connected Vehicles,&quot; is proposed to take effect on July 1, 2027. Related autonom</p></div>
+        <div class="r"><p class="t"><span class="dd">8d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener">Gemini image model discontinuation</a> &middot; 2026-10-29</p><p class="n">gemini-3.1-flash-image will be discontinued on October 29, 2026. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">22d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI ends direct supply to Cursor</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end Cursor&#x27;s model access on November 12. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">253d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory national standard for L3/L4 takes effect</a> &middot; 2027-07-01</p><p class="n">The intelligent connected vehicle L3/L4 autonomous driving system safety requirements are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handover, a</p></div>
+        <div class="r"><p class="t"><span class="dd">253d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Intelligent Connected Vehicles: Safety Requirements for Automated Driving Systems&quot; is proposed to take effect on July 1, 2027. Relevant autonomous </p></div>
         </div>
       </details>
       <details class="cat" id="pricing">
         <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://gizmodo.com/nvidia-rtx-5090-availability-2000827661" rel="nofollow noopener">The RTX 5090 Isn’t &#x27;Alive&#x27; if It Costs $10,000, No…</a></p><p class="n">Track RTX5090 premiums reaching RMB 10,000</p><p class="m">Gizmodo</p></div>
-        <div class="r"><p class="t"><a href="https://x.com/OpenRouter/status/2112225779782398131" rel="nofollow noopener">Inception 扩散模型 Mercury 3 上线 OpenRouter</a></p><p class="n">Try Mercury 3 at half price</p><p class="m">X: OpenRouter</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/602354.html" rel="nofollow noopener">正面硬刚DeepSeek！MiniMax M3.1 Flash发布，输出卷到200+TPS，价格砍到…</a></p><p class="n">Evaluate replacing with M3.1 Flash at half the price</p><p class="m">智东西 Zhidx</p></div>
-        <div class="r"><p class="t"><a href="https://www.youtube.com/watch?v=aKVfjG7_R4g" rel="nofollow noopener">Meta&#x27;s New Models &amp; Agent</a></p><p class="n">Check Meta open-source model pricing</p><p class="m">YouTube · AI channels</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/601977.html" rel="nofollow noopener">夯爆！DeepSeek又拿下全球第一</a></p><p class="n">Compare DeepSeek open-source price-performance</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://openai.com/index/ted-taylor-restaurant" rel="nofollow noopener">Franchisee reconciles cash in 94% less time with C…</a></p><p class="n">Use ChatGPT to update menu prices in bulk</p><p class="m">OpenAI</p></div>
+        <div class="r"><p class="t"><a href="https://the-decoder.com/deepseek-open-sources-the-inference-engine-that-powers-its-fastest-and-cheapest-ai-model/" rel="nofollow noopener">Deepseek open-sources the inference engine that po…</a></p><p class="n">Open-source inference engines lower model invocation costs</p><p class="m">The Decoder</p></div>
+        <div class="r"><p class="t"><a href="https://www.latent.space/p/ainews-not-much-happened-today-f09" rel="nofollow noopener">[AINews] not much happened today</a></p><p class="n">Watch whether lower Flash model prices can become widespread</p><p class="m">Latent Space</p></div>
+        <div class="r"><p class="t"><a href="https://www.youtube.com/watch?v=bEO_QeJU7U0" rel="nofollow noopener">Do Diffusion LLMs Scale? Testing Mercury 3 + Decid…</a></p><p class="n">Use high-speed diffusion LLMs to reduce generation latency</p><p class="m">YouTube · AI channels</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2610.26860v1" rel="nofollow noopener">OpenVLHarness: Real World Visual Agentic Tool-Use…</a></p><p class="n">Assess the cost of visual agent evidence-collection tools</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
         </div>
       </details>
       <details class="cat" id="media">
         <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/" rel="nofollow noopener">Kling AI drops version 4.0 with stereo audio, mult…</a></p><p class="n">Generate a 30-second multilingual lip-sync video</p><p class="m">The Decoder</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xa0cyz/llamacpp_support_for_cohere_models/" rel="nofollow noopener">llama.cpp support for Cohere models</a></p><p class="n">Run Cohere models in llama.cpp</p><p class="m">r/LocalLLaMA</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x9yrfi/inclusionai_releases_ming30audioflash_126b_moe/" rel="nofollow noopener">inclusionAI releases Ming-3.0-audio-flash: 126B Mo…</a></p><p class="n">Process recordings and produce voice responses</p><p class="m">r/LocalLLaMA</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x9yf3m/inclusionaiming30audiotiny_hugging_face/" rel="nofollow noopener">inclusionAI/Ming-3.0-audio-tiny · Hugging Face</a></p><p class="n">Use a small model for voice Q&amp;A</p><p class="m">r/LocalLLaMA</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1x9yd01/inclusionaiming30audioflash_hugging_face/" rel="nofollow noopener">inclusionAI/Ming-3.0-audio-flash · Hugging Face</a></p><p class="n">Handle audio understanding and transcription</p><p class="m">r/LocalLLaMA</p></div>
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Oct/20/battledrones/" rel="nofollow noopener">Battle Drones - a vibe coded RTS with audio-based…</a></p><p class="n">Use AI to generate playable RTS games</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://the-decoder.com/elevenlabs-releases-two-new-speech-to-speech-models-designed-for-real-time-ai-conversations/" rel="nofollow noopener">Elevenlabs releases two new speech-to-speech model…</a></p><p class="n">Generate low-latency real-time conversational voice</p><p class="m">The Decoder</p></div>
+        <div class="r"><p class="t"><a href="https://the-decoder.com/mistral-ai-launches-voxtral-3-a-full-voice-agent-stack-that-listens-thinks-and-talks-in-real-time/" rel="nofollow noopener">Mistral AI launches Voxtral 3, a full voice agent…</a></p><p class="n">Build multilingual real-time voice agents</p><p class="m">The Decoder</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xaw2vt/phonon_is_now_opensource_31m_and_40m_tts_models/" rel="nofollow noopener">Phonon is now open-source, 31M and 40M TTS models…</a></p><p class="n">Run small TTS models on-device</p><p class="m">r/LocalLLaMA</p></div>
+        <div class="r"><p class="t"><a href="https://cloud.google.com/blog/products/ai-machine-learning/claude-opus-55-and-claude-sonnet-55-available-in-antigravity/" rel="nofollow noopener">Claude Opus 5.5 and Claude Sonnet 5.5 are now avai…</a></p><p class="n">Use Claude in Antigravity to write code</p><p class="m">Google Cloud · AI &amp; ML</p></div>
         </div>
       </details>
       <details class="cat" id="incidents">
         <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/" rel="nofollow noopener">Two German courts now hold Google liable for what…</a></p><p class="n">Guard against infringement liability from AI summaries</p><p class="m">The Decoder</p></div>
-        <div class="r"><p class="t"><a href="https://cloud.google.com/blog/topics/consulting/three-ways-to-audit-your-llm-evaluators/" rel="nofollow noopener">Who judges the judge? Three helpful ways to audit…</a></p><p class="n">Audit LLM evaluator bias</p><p class="m">Google Cloud · AI &amp; ML</p></div>
-        <div class="r"><p class="t"><a href="https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/" rel="nofollow noopener">The Thin Orchestrator: How We Made Our AI Agents M…</a></p><p class="n">Reduce router responsibilities to improve reliability</p><p class="m">Meta · Engineering</p></div>
-        <div class="r"><p class="t"><a href="https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/" rel="nofollow noopener">Disney found a way to buy Character.AI without buy…</a></p><p class="n">Isolate litigation risk for AI companion products</p><p class="m">Ars Technica</p></div>
-        <div class="r"><p class="t"><a href="https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/" rel="nofollow noopener">Securing the agentic insider</a></p><p class="n">Strengthen defenses against agentic insider threats</p><p class="m">Microsoft</p></div>
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Oct/20/emudhra-certificates/" rel="nofollow noopener">eMudhra Intermediate CA Compromise</a></p><p class="n">Rotate compromised CA certificate private keys</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed" rel="nofollow noopener">Judge dismisses Sam Altman’s sister’s sexual abuse…</a></p><p class="n">Track the impact of the dismissal of the Altman lawsuit</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1xaz40y/anyone_seen_this_ai_workplace_idea_that_let_you/" rel="nofollow noopener">Anyone seen this AI workplace idea that let you ce…</a></p><p class="n">Manage team prompts and agents centrally</p><p class="m">r/PromptEngineering</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2610.26827v1" rel="nofollow noopener">KEEP-Bench: Evaluating Evidence Preservation in Co…</a></p><p class="n">Check whether compressed context loses evidence</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/602635.html" rel="nofollow noopener">梁圣大气！DeepSeek推理框架全开源，公布日均吞吐和毛利，真正的OpenAI来了</a></p><p class="n">Verify profit data for open-source inference frameworks</p><p class="m">智东西 Zhidx</p></div>
         </div>
       </details>
       <details class="cat" id="tools">
         <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://github.com/nanocoai/nanoclaw" rel="nofollow noopener">nanocoai/nanoclaw</a></p><p class="n">Run message agents securely in containers</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/ayghri/i-have-adhd" rel="nofollow noopener">ayghri/i-have-adhd</a></p><p class="n">Have coding agents give the conclusion first</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/jnMetaCode/agency-agents-zh" rel="nofollow noopener">jnMetaCode/agency-agents-zh</a></p><p class="n">Coordinate 277 experts working together</p><p class="m">GitHub · topic:cursor-rules</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/gleap?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Kai Resolve by Gleap</a></p><p class="n">Automatically diagnose and respond to customer support tickets</p><p class="m">Product Hunt · AI</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/beam-13?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Beam</a></p><p class="n">Deploy a 501B model as a code agent</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/sergebulaev/linkedin-skills" rel="nofollow noopener">sergebulaev/linkedin-skills</a></p><p class="n">Generate LinkedIn content in the terminal</p><p class="m">GitHub · topic:awesome-claude</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1xaz40y/anyone_seen_this_ai_workplace_idea_that_let_you/" rel="nofollow noopener">Anyone seen this AI workplace idea that let you ce…</a></p><p class="n">Manage team prompts and agents centrally</p><p class="m">r/PromptEngineering</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/linny006/claude-code-plugin-tracker" rel="nofollow noopener">linny006/claude-code-plugin-tracker</a></p><p class="n">Track Claude Code plugin updates</p><p class="m">GitHub · topic:awesome-claude</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/composio?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Composio Instant</a></p><p class="n">Let agents buy external tools as needed</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/harness-104?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Harness²</a></p><p class="n">Let agents automatically optimize prompt tool memory</p><p class="m">Product Hunt · AI</p></div>
         </div>
       </details>
     </section>
 
-    <p class="tiefoot">Read 453 stories across
+    <p class="tiefoot">Read 572 stories across
       93 sources today and published 3.
       <a href="/tie/archive">Archive</a> &middot;
-      <a href="/tie/2026-10-19.json">This issue as data</a> &middot;
+      <a href="/tie/2026-10-20.json">This issue as data</a> &middot;
       <a href="/tie/sources">What it reads</a></p>
   </article>
 
@@ -264,9 +246,10 @@
       <h2>On this page</h2>
       <nav class="toc">
         <a href="#the-read">The read</a>
-        <a href="#lightweight-coding-models-compete-on-performance-and-price">Lightweight coding models compete on performance and price</a>
-        <a href="#permission-and-liability-pressure-rises-for-agent-external-actions">Permission and liability pressure rises for agent external actions</a>
-        <a href="#compute-supply-enters-a-period-of-consolidation-and-alternatives">Compute supply enters a period of consolidation and alternatives</a>
+        <a href="#greater-accelerator-substitutability-for-pytorch-inference">Greater accelerator substitutability for PyTorch inference</a>
+        <a href="#openai-acquisition-of-orchestra-bio-expands-scientific-research-workflows">OpenAI acquisition of Orchestra Bio expands scientific research workflows</a>
+        <a href="#meta-muse-faces-pressure-on-growth-and-privacy-controls">Meta Muse faces pressure on growth and privacy controls</a>
+        <a href="#on-the-radar">On the radar</a>
         <a href="#since-last-issue">Since last issue</a>
         <a href="#also-worth-knowing">Also worth knowing</a>
       </nav>

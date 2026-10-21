@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-10-20",
+    "status": "ok",
+    "trends": 3,
+    "watch": 1,
+    "headline": "Greater accelerator substitutability for PyTorch inference",
+    "sub": "",
+    "url": "/tie/2026-10-20"
+  },
+  {
     "date": "2026-10-19",
     "status": "ok",
     "trends": 3,

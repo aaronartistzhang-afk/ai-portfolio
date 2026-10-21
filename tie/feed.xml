@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 19 Oct 2026 17:00:33 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 17:00:25 -0700</lastBuildDate>
+    <item>
+      <title>Greater accelerator substitutability for PyTorch inference</title>
+      <link>https://aaronzhang.ai/tie/2026-10-20</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 17:00:25 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Non-NVIDIA inference is becoming more viable: PyTorch inference teams should include cross-accelerator benchmarks in cost and supply decisions&lt;/li&gt;&lt;li&gt;Specialized workflows are being brought in-house by model vendors: general-purpose model companies are filling out execution paths in high-value domains, and products need to retain data and experience differentiation&lt;/li&gt;&lt;li&gt;More real-time voice options are available: model choices for voice interaction are expanding, making measured latency and per-call costs more necessary&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Lightweight coding models compete on performance and price</title>
       <link>https://aaronzhang.ai/tie/2026-10-19</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-09</guid>
       <pubDate>Wed, 09 Sep 2026 17:00:16 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent permissions become release conditions: internet access, execution, and write capabilities need to ship with audit and shutdown mechanisms&lt;/li&gt;&lt;li&gt;Coding agents begin to be assessed by delivery acceptance: test feedback and repository rules determine whether migration projects can expand in scope&lt;/li&gt;&lt;li&gt;The agent tool ecosystem is still expanding: supply of frameworks and tool calls is increasing, and products need to define controllable task boundaries first&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Mistral raises €3 billion to bet on sovereign open-weight AI</title>
-      <link>https://aaronzhang.ai/tie/2026-09-08</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-08</guid>
-      <pubDate>Tue, 08 Sep 2026 17:00:19 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Model supply needs room for replacement: stronger funding for open-weight providers means private deployment and API routing should avoid single points of dependency&lt;/li&gt;&lt;li&gt;Generative images can enter high-frequency processes: if latency and multi-round editing performance remain stable, products should be accepted based on task completion rates rather than single-image results&lt;/li&gt;&lt;li&gt;China compliance requirements need to be built into interactions early: portrait, voice and automated decision features need authorization and appeal paths retained during the design stage&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
