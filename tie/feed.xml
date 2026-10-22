@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 20 Oct 2026 17:00:25 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 17:00:33 -0700</lastBuildDate>
+    <item>
+      <title>Agent vulnerability discovery enters coordinated response workflows</title>
+      <link>https://aaronzhang.ai/tie/2026-10-21</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-21</guid>
+      <pubDate>Wed, 21 Oct 2026 17:00:33 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Security agents need controls by default: models can now discover high-severity vulnerabilities, so evidence trails and human review should be part of product workflows&lt;/li&gt;&lt;li&gt;Multi-model access becomes a configuration issue: cloud aggregation lowers the barrier to trials, making task-level evaluation and cost routing more important&lt;/li&gt;&lt;li&gt;Inference costs still face volatility pressure: GPU supply and open-source inference optimisation are appearing at the same time, so pricing needs flexibility&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Greater accelerator substitutability for PyTorch inference</title>
       <link>https://aaronzhang.ai/tie/2026-10-20</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-10</guid>
       <pubDate>Thu, 10 Sep 2026 17:00:20 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Long-session costs enter the selection table: memory use and total cost for 1M context need to be compared alongside task success rates&lt;/li&gt;&lt;li&gt;Agent entry points are being consolidated by platforms: data connections, persistent memory and hosted orchestration are starting to appear in the same product path&lt;/li&gt;&lt;li&gt;Supply for voice interfaces is heating up: this issue has 5 updates on audio, video and voice models, and real-time interactive products need to track latency and usage costs&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Anthropic discloses Claude cybersecurity evaluation incidents</title>
-      <link>https://aaronzhang.ai/tie/2026-09-09</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-09</guid>
-      <pubDate>Wed, 09 Sep 2026 17:00:16 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Agent permissions become release conditions: internet access, execution, and write capabilities need to ship with audit and shutdown mechanisms&lt;/li&gt;&lt;li&gt;Coding agents begin to be assessed by delivery acceptance: test feedback and repository rules determine whether migration projects can expand in scope&lt;/li&gt;&lt;li&gt;The agent tool ecosystem is still expanding: supply of frameworks and tool calls is increasing, and products need to define controllable task boundaries first&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

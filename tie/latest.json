@@ -1,513 +1,465 @@
 {
   "schema_version": "1.0",
-  "date": "2026-10-20",
-  "executed_at": "2026-10-21T00:00:25.912897Z",
-  "run_id": "2026-10-18-ai_industry",
+  "date": "2026-10-21",
+  "executed_at": "2026-10-22T00:00:33.519618Z",
+  "run_id": "2026-10-19-ai_industry",
   "domain": "ai_industry",
   "locale": "en",
   "window": {
-    "from": "2026-10-18T11:00:25.912849+11:00",
-    "to": "2026-10-21T11:00:25.912849+11:00",
+    "from": "2026-10-19T11:00:33.519570+11:00",
+    "to": "2026-10-22T11:00:33.519570+11:00",
     "timezone": "Australia/Sydney",
     "days": 3
   },
-  "generated_at": "2026-10-21T11:00:25.912849+11:00",
+  "generated_at": "2026-10-22T11:00:33.519570+11:00",
   "status": "ok",
   "status_detail": null,
   "trends": [
     {
-      "canonical_id": "f93029cdd009d0ef",
-      "run_trend_id": "GLOBAL_20261021_HARDWARE_AND_INFRA_PYTORCH_ACCELERATOR_PORTABILITY",
-      "name": "Greater accelerator substitutability for PyTorch inference",
-      "category": "hardware_and_infra",
+      "canonical_id": "a66d3afa82554e53",
+      "run_trend_id": "GLOBAL_20261022_SAFETY_AND_GOVERNANCE_AGENT_VULNERABILITY_RESPONSE",
+      "name": "Agent vulnerability discovery enters coordinated response workflows",
+      "category": "safety_and_governance",
       "primary_region": "全球",
-      "secondary_regions": [
-        "美国"
-      ],
-      "lifecycle_stage": "expired",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
       "momentum": "accelerating",
       "impact_level": "high",
       "opportunity_level": "high",
       "confidence_level": "high",
-      "summary": "Google provides native TorchTPU inference support for vLLM and SGLang, expanding accelerator options for PyTorch inference.",
-      "attention_driver": "Google and Amazon are both lowering the barrier to PyTorch integration for non-NVIDIA accelerators.",
+      "summary": "OpenAI's vulnerability coordination program and independent reporting show that frontier models have participated in discovering a critical PHP vulnerability with wide-ranging impact.",
+      "attention_driver": "After models identify high-severity vulnerabilities, the need for coordination on disclosure, remediation, and review rises.",
       "evidence": [
         {
-          "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
-          "quote": "Google 在 PyTorch 相关公告中推出基于 TorchTPU 的 vLLM 和 SGLang 原生 PyTorch 推理引擎",
-          "claim": "Google released a native PyTorch inference engine for TPUs.",
+          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+          "quote": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabil",
+          "claim": "This supports that OpenAI is connecting agent-discovered vulnerabilities to coordinated disclosure and response mechanisms.",
           "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://huggingface.co/blog/hf-torchtpu",
-          "quote": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
-          "claim": "The Hugging Face ecosystem has validated native support for TorchTPU.",
+          "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites",
+          "quote": "OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon found critical PHP flaw affecting millions of websites",
+          "claim": "This supports that models have participated in discovering high-severity software vulnerabilities with broad impact.",
           "source_tier": "independent_validation",
           "used_for": "impact"
         },
         {
-          "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers",
-          "quote": "Google has joined Amazon in releasing a developer tool that makes it easy for PyTorch users to move their apps off Nvidi",
-          "claim": "Developer tools are reducing the friction of moving away from NVIDIA.",
-          "source_tier": "attention",
+          "url": "https://simonwillison.net/2026/Oct/21/php-security-release",
+          "quote": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+          "claim": "This supports that the vulnerability has prompted maintainers to release security updates.",
+          "source_tier": "independent_validation",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-10-19T16:00:00Z",
-      "last_signal_update": "2026-10-20T18:38:24Z",
-      "so_what": "If a product relies on PyTorch inference, it should establish performance and migration tests across CUDA and TPU, as well as Trainium, within two weeks. Hardware substitutability is starting to directly affect per-request costs and supply risk."
+      "first_detected": "2026-10-21T07:00:00Z",
+      "last_signal_update": "2026-10-21T19:45:01Z",
+      "so_what": "When incorporating agents into security development, teams should make evidence retention, human review, and responsible disclosure default product workflows rather than later additions. Models can expand the scope of investigation, but cannot replace remediation validation and access controls."
     },
     {
-      "canonical_id": "51cc76d3c4d091db",
-      "run_trend_id": "GLOBAL_20261021_FUNDING_AND_M_AND_A_OPENAI_ORCHESTRA_BIO",
-      "name": "OpenAI acquisition of Orchestra Bio expands scientific research workflows",
-      "category": "funding_and_M_and_A",
+      "canonical_id": "cdd1e629465b0bdf",
+      "run_trend_id": "GLOBAL_20261022_HARDWARE_AND_INFRA_MULTIMODEL_CLOUD_DISTRIBUTION",
+      "name": "Google Cloud adds OpenAI models and Codex workflows",
+      "category": "hardware_and_infra",
       "primary_region": "全球",
-      "secondary_regions": [
-        "美国"
-      ],
-      "lifecycle_stage": "dormant",
-      "momentum": "stable",
-      "impact_level": "medium",
-      "opportunity_level": "medium",
-      "confidence_level": "medium",
-      "summary": "OpenAI will acquire Orchestra Bio, bringing its team and technology into Rosalind, its life sciences R&D model.",
-      "attention_driver": "General-purpose model companies continue to use acquisitions to add execution capabilities for high-value specialized workflows.",
-      "evidence": [
-        {
-          "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-          "quote": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D",
-          "claim": "OpenAI announced its acquisition of Orchestra Bio.",
-          "source_tier": "primary_release",
-          "used_for": "existence"
-        },
-        {
-          "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business",
-          "quote": "OpenAI says it's adding Orchestra's team and technology to work on Rosalind, its AI model for life sciences research",
-          "claim": "Reports say the acquired team and technology will support Rosalind.",
-          "source_tier": "attention",
-          "used_for": "impact"
-        }
-      ],
-      "first_detected": "2026-10-20T00:00:00Z",
-      "last_signal_update": "2026-10-20T20:35:10Z",
-      "so_what": "Product teams should watch how quickly model vendors package general capabilities into end-to-end workflows. Competition will center on data connections and validation steps, alongside domain delivery experience. Products with deep dependence on external models should leave room for replacement and differentiation."
-    },
-    {
-      "canonical_id": "c86fd07f39fe605f",
-      "run_trend_id": "GLOBAL_20261021_SAFETY_AND_GOVERNANCE_META_MUSE_PRIVACY",
-      "name": "Meta Muse faces pressure on growth and privacy controls",
-      "category": "safety_and_governance",
-      "primary_region": "美国",
-      "secondary_regions": [
-        "全球"
-      ],
-      "lifecycle_stage": "expired",
-      "momentum": "accelerating",
-      "impact_level": "medium",
-      "opportunity_level": "medium",
-      "confidence_level": "medium",
-      "summary": "Meta Muse surpassed 10 million downloads in the United States within 40 days of launch, but paused its conversation-sharing feature because of privacy exposure issues.",
-      "attention_driver": "Rapid user acquisition for personal assistants has amplified product risks around memory and sharing of sensitive context.",
-      "evidence": [
-        {
-          "url": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps",
-          "quote": "Meta's AI companion Muse has surpassed 10 million U.S. downloads in its first 40 days",
-          "claim": "Meta Muse gained users rapidly in the United States.",
-          "source_tier": "attention",
-          "used_for": "momentum"
-        },
-        {
-          "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations",
-          "quote": "Meta is suspending the sharing feature while it investigates its privacy.",
-          "claim": "Meta paused its conversation-sharing feature because of privacy issues.",
-          "source_tier": "attention",
-          "used_for": "impact"
-        },
-        {
-          "url": "https://theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
-          "quote": "Meta says it paused a Muse feature that lets you share conversations with the AI assistant",
-          "claim": "Independent media confirmed the pause of the sharing feature.",
-          "source_tier": "attention",
-          "used_for": "existence"
-        }
-      ],
-      "first_detected": "2026-10-20T12:33:13Z",
-      "last_signal_update": "2026-10-20T18:07:34Z",
-      "so_what": "Consumer-facing assistants should design conversation sharing as a minimum-disclosure process and test link visibility and sensitive-information detection before release. Growth metrics cannot replace an assessment of trust loss and retention risk."
-    }
-  ],
-  "watch_list": [
-    {
-      "canonical_id": "cddaca8815680417",
-      "run_trend_id": "GLOBAL_20261021_REGIONAL_AND_GEOPOLITICAL_DEEPSEEK_US_FEDERAL_RESTRICTION",
-      "name": "US federal civilian agencies restrict DeepSeek",
-      "category": "regional_and_geopolitical",
-      "primary_region": "美国",
-      "secondary_regions": [
-        "中国",
-        "全球"
-      ],
+      "secondary_regions": [],
       "lifecycle_stage": "emerging",
       "momentum": "accelerating",
       "impact_level": "medium",
-      "opportunity_level": "medium",
-      "confidence_level": "medium",
-      "summary": "The US Department of Homeland Security requires federal civilian agencies to stop using DeepSeek technology and remove related products and third-party services.",
-      "attention_driver": "Government procurement and supply-chain compliance requirements directly affect the availability of models and related services.",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "OpenAI models and Codex workflows will enter Gemini Model Garden. Google Cloud says it provides Gemini, Claude, and OpenAI GPT on the same platform.",
+      "attention_driver": "Cloud model supply is consolidating, allowing enterprises to compare and combine models within fewer infrastructure boundaries.",
       "evidence": [
         {
-          "url": "https://the-decoder.com/us-bans-deepseek-technology-across-federal-civilian-agencies",
-          "quote": "The US Department of Homeland Security has banned federal civilian agencies from using AI technology from Chinese lab De",
-          "claim": "Reports say the US Department of Homeland Security restricted federal civilian agencies from using DeepSeek technology.",
-          "source_tier": "independent_validation",
+          "url": "https://openai.com/index/openai-models-google-cloud",
+          "quote": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden",
+          "claim": "This supports that OpenAI models and Codex workflows will be distributed through Google Cloud.",
+          "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems",
-          "quote": "The U.S. has ordered federal civilian agencies to remove DeepSeek products and third-party services built using its tech",
-          "claim": "The requirement covers removal of DeepSeek products and related third-party services.",
-          "source_tier": "attention",
+          "url": "https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three",
+          "quote": "Google Cloud is the first major cloud provider to offer Gemini, Claude, and OpenAI's GPTs on a single platform.",
+          "claim": "This supports changing competition among three mainstream models supplied on the same cloud platform.",
+          "source_tier": "independent_validation",
           "used_for": "impact"
-        },
-        {
-          "url": "https://reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19",
-          "quote": "DeepSeek banned from U.S. federal civilian agencies under new DHS order",
-          "claim": "The policy has received coverage across multiple media outlets.",
-          "source_tier": "attention",
-          "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-10-19T16:16:46Z",
-      "last_signal_update": "2026-10-20T13:07:24Z",
-      "so_what": "Products serving public-sector or regulated customers should review model origin and hosting paths, as well as third-party dependencies. Multi-model architectures need to treat geographic and procurement eligibility as configurable constraints rather than post-deployment exceptions."
+      "first_detected": "2026-10-21T12:00:00Z",
+      "last_signal_update": "2026-10-21T17:44:22Z",
+      "so_what": "Product teams should make model replacement, routing, and task-level evaluation configurable capabilities rather than tie themselves to a single vendor. Unified procurement and deployment lower the barrier to trials, but the permissions, data boundaries, and costs of different models still need separate governance."
+    },
+    {
+      "canonical_id": "b0080cbe961226f5",
+      "run_trend_id": "EU_20261022_REGULATION_AND_POLICY_AI_ACT_HARMONISED_QMS_STANDARD",
+      "name": "First EU AI Act harmonised quality management standard published",
+      "category": "regulation_and_policy",
+      "primary_region": "欧盟",
+      "secondary_regions": [
+        "全球"
+      ],
+      "lifecycle_stage": "declining",
+      "momentum": "stable",
+      "impact_level": "low",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "The Official Journal of the European Union has published the first harmonised standard supporting the AI Act, focused on AI quality management systems for regulatory use.",
+      "attention_driver": "Compliance requirements are gaining executable quality management references, and enterprises need to incorporate documentation and risk controls into delivery processes.",
+      "evidence": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal",
+          "quote": "First harmonised standard supporting the AI Act published in the Official Journal",
+          "claim": "This supports that the first harmonised standard supporting the AI Act has entered the Official Journal of the European Union.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://digital.nemko.com/news/en-18286-eu-ai-act-cites-new-harmonized-qms-standard",
+          "quote": "",
+          "claim": "This supports that the standard focuses on quality management systems for AI Act regulatory use.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-19T07:37:54Z",
+      "last_signal_update": "2026-10-19T07:37:54Z",
+      "so_what": "Teams serving EU customers should assess whether training data, change records, risk testing, and supplier responsibilities can form auditable evidence. Embedding quality management in release processes can reduce the cost of catch-up work when entering regulated markets later."
     }
   ],
+  "watch_list": [],
   "trend_evolution": [],
   "coverage": {
     "sources_configured": 93,
-    "source_keys_reporting": 89,
-    "signals_raw": 599,
-    "signals_accepted": 572,
-    "clusters_total": 356,
-    "clusters_synthesized": 152,
+    "source_keys_reporting": 82,
+    "signals_raw": 635,
+    "signals_accepted": 600,
+    "clusters_total": 364,
+    "clusters_synthesized": 163,
     "by_source": {
-      "ai2_allen_institute_for_ai_rss": 1,
+      "algorithmic_bridge": 1,
       "amazon": 3,
-      "anthropic": 2,
+      "anthropic": 4,
       "apple": 2,
       "apple_podcasts_a16z_podcast": 3,
       "apple_podcasts_the_cognitive_revolution": 1,
-      "ars_technica_ai": 9,
-      "arxiv": 20,
-      "astral_codex_ten": 2,
-      "brave_search_ai": 104,
+      "apple_podcasts_twiml_ai_podcast": 1,
+      "ars_technica_ai": 12,
+      "astral_codex_ten": 3,
+      "brave_search_ai": 102,
+      "chinatalk_rss": 1,
       "chipsandcheese": 1,
-      "crunchbase_news": 4,
-      "databricks_blog_rss": 1,
-      "deepseek": 1,
-      "ec_digital_strategy": 2,
-      "eetimes": 8,
-      "exponential_view": 2,
-      "fireworks_ai": 1,
+      "crunchbase_news": 6,
+      "ec_digital_strategy": 3,
+      "eetimes": 10,
+      "exponential_view": 1,
       "github": 18,
       "github_awesome_claude": 3,
       "github_awesome_llm": 3,
-      "github_claude_skills": 12,
+      "github_claude_skills": 14,
       "github_cursor_rules": 4,
-      "google": 7,
-      "google_dev": 1,
-      "hn": 20,
-      "huggingface_blog": 7,
-      "huggingface_papers": 11,
-      "ibm_research_ai": 1,
-      "ieee_spectrum_ai": 1,
+      "google": 10,
+      "huggingface_blog": 9,
+      "huggingface_papers": 20,
+      "ieee_spectrum_ai": 3,
       "import_ai": 1,
-      "index_ventures": 5,
+      "index_ventures": 2,
       "infoq_ai_zh": 20,
       "interconnects_lambert": 1,
       "kr36_ai": 20,
-      "latent_space": 2,
+      "latent_space": 5,
       "lennys_newsletter": 3,
       "meta": 4,
-      "metr_blog": 1,
-      "microsoft": 3,
+      "microsoft": 4,
       "mistral": 1,
       "mit_tech_review_ai": 6,
       "modal_rss": 1,
-      "nvidia": 4,
+      "nextplatform": 1,
+      "nvidia": 21,
       "one_useful_thing": 1,
-      "openai": 3,
-      "pragmatic_engineer": 1,
+      "openai": 13,
+      "platformer": 1,
+      "pragmatic_engineer": 2,
       "producthunt": 20,
-      "pytorch_blog": 7,
+      "pytorch_blog": 9,
       "qbitai": 10,
       "reddit_chatgptcoding": 1,
-      "reddit_claudeai": 11,
+      "reddit_claudeai": 8,
       "reddit_localllama": 20,
-      "reddit_ml": 2,
-      "reddit_promptengineering": 15,
-      "rundown_ai": 2,
-      "semianalysis": 1,
+      "reddit_ml": 3,
+      "reddit_promptengineering": 14,
+      "rundown_ai": 3,
+      "semianalysis": 2,
       "sequoia_blog": 2,
-      "servethehome": 3,
+      "servethehome": 4,
       "simon_willison": 5,
-      "stanford_hai_news": 1,
-      "stratechery": 2,
-      "techcrunch_ai": 20,
-      "techcrunch_venture": 4,
+      "stratechery": 4,
+      "techcrunch_ai": 19,
+      "techcrunch_venture": 5,
+      "tessl": 1,
       "the_decoder": 10,
       "tldr_ai": 2,
-      "unknown": 1,
       "verge_ai": 10,
-      "waymo_blog": 1,
-      "wired_ai": 7,
-      "x_adityaag": 1,
-      "x_aravind_srinivas_perplexity_ceo_aravsrinivas": 1,
-      "x_danshipper": 3,
-      "x_garrytan": 1,
+      "vllm_rss": 1,
+      "wired_ai": 10,
+      "wiz_research": 2,
+      "x_garrytan": 3,
+      "x_googlelabs": 1,
+      "x_joshwoodward": 3,
       "x_levie": 1,
-      "x_nikunj": 3,
+      "x_mattturck": 2,
+      "x_openai_openai": 1,
       "x_petergyang": 3,
-      "x_rauchg": 3,
-      "x_rohan_paul_rohanpaul_ai": 1,
-      "x_swyx": 1,
+      "x_rauchg": 2,
+      "x_rohan_paul_rohanpaul_ai": 3,
+      "x_swyx": 3,
       "x_thsottiaux": 2,
-      "x_trq212": 1,
-      "x_zarazhangrui": 1,
-      "youtube_ai": 5,
-      "zh_podcast_crossing": 1,
+      "youtube_ai": 8,
       "zh_podcast_guigu101": 1,
       "zh_podcast_zhangxiaojun": 1,
-      "zhidx": 17,
-      "zvi_mowshowitz": 2
+      "zhidx": 20,
+      "zvi_mowshowitz": 3
     }
   },
   "provenance": {
     "pipeline_version": "tie-0.2.0",
     "config_hash": "ea4c8f7ff008577d",
-    "prompt_hash": "01cff39e874f4398"
+    "prompt_hash": "c74abdc3f7f1d2cd"
   },
   "insights": [
     {
-      "text": "Non-NVIDIA inference is becoming more viable: PyTorch inference teams should include cross-accelerator benchmarks in cost and supply decisions",
+      "text": "Security agents need controls by default: models can now discover high-severity vulnerabilities, so evidence trails and human review should be part of product workflows",
       "refs": [
         1
       ]
     },
     {
-      "text": "Specialized workflows are being brought in-house by model vendors: general-purpose model companies are filling out execution paths in high-value domains, and products need to retain data and experience differentiation",
+      "text": "Multi-model access becomes a configuration issue: cloud aggregation lowers the barrier to trials, making task-level evaluation and cost routing more important",
       "refs": [
         2
       ]
     },
     {
-      "text": "More real-time voice options are available: model choices for voice interaction are expanding, making measured latency and per-call costs more necessary",
+      "text": "Inference costs still face volatility pressure: GPU supply and open-source inference optimisation are appearing at the same time, so pricing needs flexibility",
       "refs": []
     }
   ],
   "since_last": [
-    "6 trends from the previous issue have left the focus list this issue.",
-    "8 days remain until the Gemini image model is discontinued."
+    "Five trends from the previous issue have left this issue's ranking.",
+    "7 days remain until the Gemini image model is discontinued.",
+    "LMArena (Chatbot Arena) Elo: Claude Opus 4.6 (Fast) 1500 → Gemini 4 Argon 1532"
   ],
   "countdowns": [
     {
       "title": "Gemini image model discontinuation",
       "kind": "Deprecation",
       "effective_date": "2026-10-29",
-      "days_left": 8,
+      "days_left": 7,
       "description": "gemini-3.1-flash-image will be discontinued on October 29, 2026. Source",
       "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
     },
     {
-      "title": "OpenAI ends direct supply to Cursor",
+      "title": "OpenAI direct supply to Cursor ends",
       "kind": "Deprecation",
       "effective_date": "2026-11-12",
-      "days_left": 22,
+      "days_left": 21,
       "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
       "url": "https://x.com/thsottiaux/status/2093515916076343774"
+    },
+    {
+      "title": "OpenAI access policy update",
+      "kind": "Policy",
+      "effective_date": "2026-11-20",
+      "days_left": 29,
+      "description": "Model routers and AI gateways must be reviewed and approved by OpenAI before providing direct model access. Source",
+      "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
     },
     {
       "title": "Mandatory national standard for L3/L4 takes effect",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 253,
-      "description": "The intelligent connected vehicle L3/L4 autonomous driving system safety requirements are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handover, and risk handling requirements. Source",
+      "days_left": 252,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover, and risk response requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
       "title": "China L3/L4 safety national standard takes effect",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 253,
-      "description": "The mandatory national standard \"Intelligent Connected Vehicles: Safety Requirements for Automated Driving Systems\" is proposed to take effect on July 1, 2027. Relevant autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "days_left": 252,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     }
   ],
-  "leaderboard": [],
+  "leaderboard": [
+    {
+      "benchmark": "LMArena (Chatbot Arena) Elo",
+      "from": "Claude Opus 4.6 (Fast) 1500",
+      "to": "Gemini 4 Argon 1532",
+      "url": "https://metatext.io/benchmarks/lmarena-elo"
+    }
+  ],
   "sections": {
     "pricing": [
       {
-        "title": "Franchisee reconciles cash in 94% less time with C…",
-        "note": "Use ChatGPT to update menu prices in bulk",
-        "source": "openai_blog",
-        "why": "",
-        "url": "https://openai.com/index/ted-taylor-restaurant"
-      },
-      {
-        "title": "Deepseek open-sources the inference engine that po…",
-        "note": "Open-source inference engines lower model invocation costs",
-        "source": "the_decoder",
-        "why": "",
-        "url": "https://the-decoder.com/deepseek-open-sources-the-inference-engine-that-powers-its-fastest-and-cheapest-ai-model/"
-      },
-      {
-        "title": "[AINews] not much happened today",
-        "note": "Watch whether lower Flash model prices can become widespread",
+        "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Infe…",
+        "note": "Evaluate DeepInfer to reduce inference costs",
         "source": "latent_space",
         "why": "",
-        "url": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+        "url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
       },
       {
-        "title": "Do Diffusion LLMs Scale? Testing Mercury 3 + Decid…",
-        "note": "Use high-speed diffusion LLMs to reduce generation latency",
-        "source": "youtube_ai",
+        "title": "Be prepared, GPU price increase incoming --> Samsu…",
+        "note": "Lock in GPU procurement budgets early",
+        "source": "reddit_localllama",
         "why": "",
-        "url": "https://www.youtube.com/watch?v=bEO_QeJU7U0"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbfhxp/be_prepared_gpu_price_increase_incoming_samsung/"
       },
       {
-        "title": "OpenVLHarness: Real World Visual Agentic Tool-Use…",
-        "note": "Assess the cost of visual agent evidence-collection tools",
-        "source": "arxiv",
+        "title": "How To Build A Billion-Dollar Company Without Vent…",
+        "note": "Use high-quality pricing to support bootstrapping",
+        "source": "crunchbase_news",
         "why": "",
-        "url": "https://arxiv.org/abs/2610.26860v1"
+        "url": "https://news.crunchbase.com/startups/bootstrapping-billion-dollar-company-ai-staffing-demarco-bairesdev/"
+      },
+      {
+        "title": "8点1氪丨将实施“消费才可入座”？星巴克中国回应；Anthropic上半年净亏807亿美元；日本优衣…",
+        "note": "Track the impact of Uniqlo price increases",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/p/4034867385537670?f=rss"
+      },
+      {
+        "title": "机构预计北京写字楼市场将于2028年企稳",
+        "note": "Reassess office location based on falling rents",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/p/4033965080155016?f=rss"
       }
     ],
     "media": [
       {
-        "title": "Battle Drones - a vibe coded RTS with audio-based…",
-        "note": "Use AI to generate playable RTS games",
-        "source": "simon_willison",
-        "why": "",
-        "url": "https://simonwillison.net/2026/Oct/20/battledrones/"
-      },
-      {
-        "title": "Elevenlabs releases two new speech-to-speech model…",
-        "note": "Generate low-latency real-time conversational voice",
-        "source": "the_decoder",
-        "why": "",
-        "url": "https://the-decoder.com/elevenlabs-releases-two-new-speech-to-speech-models-designed-for-real-time-ai-conversations/"
-      },
-      {
-        "title": "Mistral AI launches Voxtral 3, a full voice agent…",
-        "note": "Build multilingual real-time voice agents",
-        "source": "the_decoder",
-        "why": "",
-        "url": "https://the-decoder.com/mistral-ai-launches-voxtral-3-a-full-voice-agent-stack-that-listens-thinks-and-talks-in-real-time/"
-      },
-      {
-        "title": "Phonon is now open-source, 31M and 40M TTS models…",
-        "note": "Run small TTS models on-device",
+        "title": "Amazing free 3090 speedup hack, verified works 15%…",
+        "note": "Give 3090 owners free speed-up parameters",
         "source": "reddit_localllama",
         "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xaw2vt/phonon_is_now_opensource_31m_and_40m_tts_models/"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbuzj5/amazing_free_3090_speedup_hack_verified_works_15/"
       },
       {
-        "title": "Claude Opus 5.5 and Claude Sonnet 5.5 are now avai…",
-        "note": "Use Claude in Antigravity to write code",
-        "source": "google_cloud_ai_blog",
+        "title": "inclusionAI/Ming-3.0-TTS-0.5B",
+        "note": "Try 0.5B local speech synthesis",
+        "source": "reddit_localllama",
         "why": "",
-        "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-opus-55-and-claude-sonnet-55-available-in-antigravity/"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbq7ze/inclusionaiming30tts05b/"
+      },
+      {
+        "title": "I built a small on-device voice front-end for loca…",
+        "note": "Deploy local wake-word detection and voice filtering",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbmhct/i_built_a_small_ondevice_voice_frontend_for_local/"
+      },
+      {
+        "title": "UseIt Studio",
+        "note": "Generate editable design drafts from one sentence",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Big news in *open source* voice AI: a suite of tin…",
+        "note": "Test small open-source on-device TTS models",
+        "source": "@mattturck",
+        "why": "",
+        "url": "https://x.com/mattturck/status/2112623582098428015"
       }
     ],
     "incidents": [
       {
-        "title": "eMudhra Intermediate CA Compromise",
-        "note": "Rotate compromised CA certificate private keys",
+        "title": "Misaligned!",
+        "note": "Investigate this week's AI loss-of-control cases",
+        "source": "zvi_mowshowitz",
+        "why": "",
+        "url": "https://thezvi.wordpress.com/2026/10/21/misaligned/"
+      },
+      {
+        "title": "OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon f…",
+        "note": "Urgently check the critical PHP vulnerability",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/"
+      },
+      {
+        "title": "Today's PHP Security Release, and How We're Streng…",
+        "note": "Upgrade PHP 8.x patches immediately",
         "source": "simon_willison",
         "why": "",
-        "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/"
+        "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
       },
       {
-        "title": "Judge dismisses Sam Altman’s sister’s sexual abuse…",
-        "note": "Track the impact of the dismissal of the Altman lawsuit",
-        "source": "verge_ai",
+        "title": "Patch the Planet: global response coordination as…",
+        "note": "Connect to coordinated vulnerability disclosure workflows",
+        "source": "openai_blog",
         "why": "",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed"
+        "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
       },
       {
-        "title": "Anyone seen this AI workplace idea that let you ce…",
-        "note": "Manage team prompts and agents centrally",
-        "source": "reddit_promptengineering",
+        "title": "Judge rejects Trump’s wild claim EPA can dismiss d…",
+        "note": "Assess data center pollution litigation risk",
+        "source": "ars_technica_ai",
         "why": "",
-        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xaz40y/anyone_seen_this_ai_workplace_idea_that_let_you/"
-      },
-      {
-        "title": "KEEP-Bench: Evaluating Evidence Preservation in Co…",
-        "note": "Check whether compressed context loses evidence",
-        "source": "arxiv",
-        "why": "",
-        "url": "https://arxiv.org/abs/2610.26827v1"
-      },
-      {
-        "title": "梁圣大气！DeepSeek推理框架全开源，公布日均吞吐和毛利，真正的OpenAI来了",
-        "note": "Verify profit data for open-source inference frameworks",
-        "source": "zhidx",
-        "why": "",
-        "url": "https://zhidx.com/p/602635.html"
+        "url": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/"
       }
     ],
     "tools": [
       {
-        "title": "sergebulaev/linkedin-skills",
-        "note": "Generate LinkedIn content in the terminal",
-        "source": "github_awesome_claude",
-        "why": "GitHub topic:awesome-claude popular repository (5,007 ⭐), matches your interests in \"claude / code / skill\" · View",
-        "url": "https://github.com/sergebulaev/linkedin-skills"
+        "title": "code-yeongyu/oh-my-openagent",
+        "note": "Use keywords to orchestrate graphic projects in batches",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (70,250 ⭐), matches your interests in \"agent / code / prompt\" · View",
+        "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
-        "title": "Anyone seen this AI workplace idea that let you ce…",
-        "note": "Manage team prompts and agents centrally",
+        "title": "Claude Duet: Anthropic just casually dropped the p…",
+        "note": "Have Claude proactively organise personal tasks",
+        "source": "reddit_claudeai",
+        "why": "r/claudeai popular post this week (recent discussion), matches your interests in \"agent / anthropic / claude\" · View",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbwkgf/claude_duet_anthropic_just_casually_dropped_the/"
+      },
+      {
+        "title": "I'm not an expert. I learned this stuff on my own,…",
+        "note": "Apply ten highly constrained prompts",
         "source": "reddit_promptengineering",
-        "why": "r/promptengineering popular post this week (recent discussion), matches your interests in \"agent / ide / llm\" · View",
-        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xaz40y/anyone_seen_this_ai_workplace_idea_that_let_you/"
+        "why": "r/promptengineering popular post this week (recent discussion), matches your interests in \"chat / ide / model\" · View",
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xbofrk/im_not_an_expert_i_learned_this_stuff_on_my_own/"
       },
       {
-        "title": "linny006/claude-code-plugin-tracker",
-        "note": "Track Claude Code plugin updates",
-        "source": "github_awesome_claude",
-        "why": "GitHub topic:awesome-claude early-stage (6 ⭐), matches your interests in \"claude / code\" · View",
-        "url": "https://github.com/linny006/claude-code-plugin-tracker"
-      },
-      {
-        "title": "Composio Instant",
-        "note": "Let agents buy external tools as needed",
+        "title": "BAND for Developers",
+        "note": "Coordinate multiple coding agents for collaborative development",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 251 votes · 39 comments, matches your interests in \"agent / agents / tool\" · View",
-        "url": "https://www.producthunt.com/products/composio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI selection · 230 votes · 11 comments, matches your interests in \"agent / agents / coding\" · View",
+        "url": "https://www.producthunt.com/products/band?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "Harness²",
-        "note": "Let agents automatically optimize prompt tool memory",
+        "title": "Needle",
+        "note": "Use prompts to find leads and conduct outreach",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 166 votes · 7 comments, matches your interests in \"agent / agents / llm\" · View",
-        "url": "https://www.producthunt.com/products/harness-104?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI selection · 226 votes · 26 comments, matches your interests in \"agent / chat / claude\" · View",
+        "url": "https://www.producthunt.com/products/needle-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ]
   },
   "sections_missing": [
-    "leaderboard",
     "frameworks"
   ],
   "source_flags": [
-    "evidence_rewritten:c6a19f0d-1eda812004d3cbe9",
-    "evidence_rewritten:e42a931d-f5abe6e8a28e6e70",
-    "evidence_rewritten:de9874c1-130037f32298dfd2",
-    "evidence_rewritten:a7cf91d6-f206af8a0beec0e5",
-    "critic_missed:cluster-b7a565a2e01c041c",
-    "critic_missed:cluster-ab1110c0ecf2c456",
-    "critic_missed:cluster-b6059a15bfb9e237"
+    "dead_source:apple_ml_research",
+    "dead_source:gary_marcus",
+    "dead_source:meta_newsroom",
+    "evidence_rewritten:GLOBAL_2-576e37d03cf909f9",
+    "evidence_rewritten:GLOBAL_2-98ae9acd41debdcb",
+    "evidence_rewritten:EU_20261-8470893d529f652e",
+    "critic_missed:cluster-13380b655bfe5741"
   ],
   "caveats": [],
   "license": "MIT",
