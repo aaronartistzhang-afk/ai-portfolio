@@ -1,221 +1,278 @@
 {
   "schema_version": "1.0",
-  "date": "2026-10-21",
-  "executed_at": "2026-10-22T00:00:33.519618Z",
-  "run_id": "2026-10-19-ai_industry",
+  "date": "2026-10-22",
+  "executed_at": "2026-10-23T00:00:21.906321Z",
+  "run_id": "2026-10-20-ai_industry",
   "domain": "ai_industry",
   "locale": "en",
   "window": {
-    "from": "2026-10-19T11:00:33.519570+11:00",
-    "to": "2026-10-22T11:00:33.519570+11:00",
+    "from": "2026-10-20T11:00:21.906260+11:00",
+    "to": "2026-10-23T11:00:21.906260+11:00",
     "timezone": "Australia/Sydney",
     "days": 3
   },
-  "generated_at": "2026-10-22T11:00:33.519570+11:00",
+  "generated_at": "2026-10-23T11:00:21.906260+11:00",
   "status": "ok",
   "status_detail": null,
   "trends": [
     {
-      "canonical_id": "a66d3afa82554e53",
-      "run_trend_id": "GLOBAL_20261022_SAFETY_AND_GOVERNANCE_AGENT_VULNERABILITY_RESPONSE",
-      "name": "Agent vulnerability discovery enters coordinated response workflows",
-      "category": "safety_and_governance",
-      "primary_region": "全球",
-      "secondary_regions": [],
-      "lifecycle_stage": "dormant",
-      "momentum": "accelerating",
-      "impact_level": "high",
-      "opportunity_level": "high",
-      "confidence_level": "high",
-      "summary": "OpenAI's vulnerability coordination program and independent reporting show that frontier models have participated in discovering a critical PHP vulnerability with wide-ranging impact.",
-      "attention_driver": "After models identify high-severity vulnerabilities, the need for coordination on disclosure, remediation, and review rises.",
-      "evidence": [
-        {
-          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-          "quote": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabil",
-          "claim": "This supports that OpenAI is connecting agent-discovered vulnerabilities to coordinated disclosure and response mechanisms.",
-          "source_tier": "primary_release",
-          "used_for": "existence"
-        },
-        {
-          "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites",
-          "quote": "OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon found critical PHP flaw affecting millions of websites",
-          "claim": "This supports that models have participated in discovering high-severity software vulnerabilities with broad impact.",
-          "source_tier": "independent_validation",
-          "used_for": "impact"
-        },
-        {
-          "url": "https://simonwillison.net/2026/Oct/21/php-security-release",
-          "quote": "Today's PHP Security Release, and How We're Strengthening PHP Security",
-          "claim": "This supports that the vulnerability has prompted maintainers to release security updates.",
-          "source_tier": "independent_validation",
-          "used_for": "momentum"
-        }
-      ],
-      "first_detected": "2026-10-21T07:00:00Z",
-      "last_signal_update": "2026-10-21T19:45:01Z",
-      "so_what": "When incorporating agents into security development, teams should make evidence retention, human review, and responsible disclosure default product workflows rather than later additions. Models can expand the scope of investigation, but cannot replace remediation validation and access controls."
-    },
-    {
-      "canonical_id": "cdd1e629465b0bdf",
-      "run_trend_id": "GLOBAL_20261022_HARDWARE_AND_INFRA_MULTIMODEL_CLOUD_DISTRIBUTION",
-      "name": "Google Cloud adds OpenAI models and Codex workflows",
+      "canonical_id": "b5b4f04d90921825",
+      "run_trend_id": "GLOBAL_20261023_HARDWARE_AND_INFRA_ISOLATED_AGENT_RUNTIMES",
+      "name": "Isolated agent execution environments gain attention",
       "category": "hardware_and_infra",
       "primary_region": "全球",
       "secondary_regions": [],
       "lifecycle_stage": "emerging",
       "momentum": "accelerating",
       "impact_level": "medium",
-      "opportunity_level": "high",
-      "confidence_level": "high",
-      "summary": "OpenAI models and Codex workflows will enter Gemini Model Garden. Google Cloud says it provides Gemini, Claude, and OpenAI GPT on the same platform.",
-      "attention_driver": "Cloud model supply is consolidating, allowing enterprises to compare and combine models within fewer infrastructure boundaries.",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Google's Agent Compute Engine provides hardware-isolated micro virtual machines for Gemini agents. NVIDIA OpenShell also focuses on private, secure operation for autonomous agent clusters.",
+      "attention_driver": "Long-running agents that can use tools are making isolation, permissions and execution observability infrastructure capabilities.",
       "evidence": [
         {
-          "url": "https://openai.com/index/openai-models-google-cloud",
-          "quote": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden",
-          "claim": "This supports that OpenAI models and Codex workflows will be distributed through Google Cloud.",
+          "url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine",
+          "quote": "Google's Agent Compute Engine gives every Gemini agent its own hardware-isolated micro virtual machine",
+          "claim": "Supports Google's use of hardware-isolated execution environments for agent execution.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://github.com/NVIDIA/OpenShell",
+          "quote": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+          "claim": "Supports demand for private, secure runtimes for autonomous agent clusters.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync",
+          "quote": "Local Intelligence Powers Next Wave of Agents",
+          "claim": "Supports NVIDIA linking local computing devices with agent deployment needs.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-21T10:50:37Z",
+      "last_signal_update": "2026-10-22T23:56:23Z",
+      "so_what": "Product architecture should treat each task's identity, file system and network permissions as configurable resources, and tie costs and execution traces to the task level rather than recording only model calls."
+    },
+    {
+      "canonical_id": "7105b7a20918bcb5",
+      "run_trend_id": "GLOBAL_20261023_MODEL_RELEASES_DECISIONS_API",
+      "name": "OpenAI launches a low-cost decision API",
+      "category": "model_releases",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "recurring",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "OpenAI released the Decisions API, positioned for fast, low-cost in-app decision tasks. External reporting places it in the context of rising competition in enterprise decision models.",
+      "attention_driver": "It separates high-frequency judgment tasks from general-purpose conversational models, creating a dedicated low-latency call entry point.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/decisions-api",
+          "quote": "Fast, focused, low-cost decisions for any application.",
+          "claim": "Supports OpenAI positioning the Decisions API as a fast, low-cost interface for application decisions.",
           "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three",
-          "quote": "Google Cloud is the first major cloud provider to offer Gemini, Claude, and OpenAI's GPTs on a single platform.",
-          "claim": "This supports changing competition among three mainstream models supplied on the same cloud platform.",
-          "source_tier": "independent_validation",
+          "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up",
+          "quote": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
+          "claim": "Supports rising attention to competition in the decision model category.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://36kr.com/newsflashes/4037681043657600?f=rss",
+          "quote": "OpenAI宣布全面开放决策API",
+          "claim": "Supports signals that the API has been made broadly available to the market.",
+          "source_tier": "companion",
           "used_for": "impact"
         }
       ],
-      "first_detected": "2026-10-21T12:00:00Z",
-      "last_signal_update": "2026-10-21T17:44:22Z",
-      "so_what": "Product teams should make model replacement, routing, and task-level evaluation configurable capabilities rather than tie themselves to a single vendor. Unified procurement and deployment lower the barrier to trials, but the permissions, data boundaries, and costs of different models still need separate governance."
+      "first_detected": "2026-10-22T19:00:00Z",
+      "last_signal_update": "2026-10-22T23:49:06Z",
+      "so_what": "It is suitable for reassessing the boundaries of rule engines, model routing and human review. First compare decision accuracy, latency and exception fallback using real business samples, then replace existing processes."
     },
     {
       "canonical_id": "b0080cbe961226f5",
-      "run_trend_id": "EU_20261022_REGULATION_AND_POLICY_AI_ACT_HARMONISED_QMS_STANDARD",
-      "name": "First EU AI Act harmonised quality management standard published",
-      "category": "regulation_and_policy",
-      "primary_region": "欧盟",
+      "run_trend_id": "GLOBAL_20261023_SAFETY_AND_GOVERNANCE_AGENT_CREDENTIAL_BOUNDARIES",
+      "name": "Agent account access develops diverging boundaries",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
       "secondary_regions": [
-        "全球"
+        "美国"
       ],
       "lifecycle_stage": "declining",
-      "momentum": "stable",
-      "impact_level": "low",
+      "momentum": "accelerating",
+      "impact_level": "medium",
       "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "The Official Journal of the European Union has published the first harmonised standard supporting the AI Act, focused on AI quality management systems for regulatory use.",
-      "attention_driver": "Compliance requirements are gaining executable quality management references, and enterprises need to incorporate documentation and risk controls into delivery processes.",
+      "summary": "Bank of America has begun blocking agents that log in with user credentials. 1Password introduced an agent login method that does not expose passwords, while retail platforms have taken different positions on agent access.",
+      "attention_driver": "The security responsibility and transaction controls of account access have become practical barriers to agents completing external tasks.",
       "evidence": [
         {
-          "url": "https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal",
-          "quote": "First harmonised standard supporting the AI Act published in the Official Journal",
-          "claim": "This supports that the first harmonised standard supporting the AI Act has entered the Official Journal of the European Union.",
-          "source_tier": "attention",
+          "url": "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials",
+          "quote": "Major US banks are locking out AI agents that log in with customer credentials",
+          "claim": "Supports financial institutions restricting agents from using customer credentials to log in to accounts.",
+          "source_tier": "independent_validation",
           "used_for": "existence"
         },
         {
-          "url": "https://digital.nemko.com/news/en-18286-eu-ai-act-cites-new-harmonized-qms-standard",
-          "quote": "",
-          "claim": "This supports that the standard focuses on quality management systems for AI Act regulatory use.",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password",
+          "quote": "allows agents to log into a customer's personal accounts while still protecting the private credentials",
+          "claim": "Supports a product approach that provides agents with controlled account access through isolated credentials.",
           "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat",
+          "quote": "As Amazon blocks AI agents from shopping on its site, Walmart is taking the opposite approach",
+          "claim": "Supports service providers taking diverging approaches to agent access.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-10-21T19:30:00Z",
+      "last_signal_update": "2026-10-22T19:07:09Z",
+      "so_what": "Any product that lets agents operate user accounts should make authorization scope, transaction confirmation and auditable replay core interactions, rather than treating password custody as an access solution. When platforms block access, a human takeover path is needed."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "1e96d1a29c84adea",
+      "run_trend_id": "GLOBAL_20261023_MONETIZATION_CHATGPT_AD_STACK_EXPANSION",
+      "name": "ChatGPT ad products expand and disclose the ad stack",
+      "category": "monetization",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "recurring",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "OpenAI says ChatGPT Ads has expanded to 26 countries and serves more than 100,000 advertisers. It also disclosed an intent-understanding ad stack that separates ads from answers.",
+      "attention_driver": "Conversational search and decision scenarios are beginning to carry commercial placements at scale, with user trust becoming a key constraint on the ad experience.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+          "quote": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+          "claim": "Supports the expansion of ChatGPT Ads' country coverage and advertiser adoption scale.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://openai.com/index/building-chatgpt-ad-stack",
+          "quote": "keep ads separate from answers",
+          "claim": "Supports OpenAI treating the separation of ads and answers as part of trust design for its ad product.",
+          "source_tier": "primary_release",
           "used_for": "impact"
         }
       ],
-      "first_detected": "2026-10-19T07:37:54Z",
-      "last_signal_update": "2026-10-19T07:37:54Z",
-      "so_what": "Teams serving EU customers should assess whether training data, change records, risk testing, and supplier responsibilities can form auditable evidence. Embedding quality management in release processes can reduce the cost of catch-up work when entering regulated markets later."
+      "first_detected": "2026-10-21T07:00:00Z",
+      "last_signal_update": "2026-10-21T13:00:00Z",
+      "so_what": "For recommendation, search or assistant products, monetization design needs to clearly separate sponsored content from task answers, and continuously measure ads' effect on task success rates and retention."
     }
   ],
-  "watch_list": [],
   "trend_evolution": [],
   "coverage": {
     "sources_configured": 93,
-    "source_keys_reporting": 82,
-    "signals_raw": 635,
-    "signals_accepted": 600,
-    "clusters_total": 364,
-    "clusters_synthesized": 163,
+    "source_keys_reporting": 90,
+    "signals_raw": 656,
+    "signals_accepted": 622,
+    "clusters_total": 381,
+    "clusters_synthesized": 175,
     "by_source": {
+      "404_media_rss": 1,
       "algorithmic_bridge": 1,
-      "amazon": 3,
-      "anthropic": 4,
-      "apple": 2,
+      "amazon": 4,
+      "anthropic": 3,
+      "apple": 4,
       "apple_podcasts_a16z_podcast": 3,
       "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_the_mad_podcast_with_matt_turck": 1,
       "apple_podcasts_twiml_ai_podcast": 1,
-      "ars_technica_ai": 12,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 10,
       "astral_codex_ten": 3,
-      "brave_search_ai": 102,
-      "chinatalk_rss": 1,
-      "chipsandcheese": 1,
-      "crunchbase_news": 6,
-      "ec_digital_strategy": 3,
+      "brave_search_ai": 104,
+      "crunchbase_news": 8,
+      "deepmind": 1,
+      "dwarkesh_blog": 1,
+      "ec_digital_strategy": 2,
       "eetimes": 10,
-      "exponential_view": 1,
-      "github": 18,
+      "gary_marcus": 2,
+      "github": 14,
       "github_awesome_claude": 3,
       "github_awesome_llm": 3,
-      "github_claude_skills": 14,
-      "github_cursor_rules": 4,
-      "google": 10,
-      "huggingface_blog": 9,
+      "github_claude_skills": 12,
+      "github_cursor_rules": 3,
+      "google": 7,
+      "hn": 13,
+      "huggingface_blog": 7,
       "huggingface_papers": 20,
       "ieee_spectrum_ai": 3,
-      "import_ai": 1,
-      "index_ventures": 2,
+      "index_ventures": 5,
       "infoq_ai_zh": 20,
       "interconnects_lambert": 1,
+      "kling": 2,
       "kr36_ai": 20,
-      "latent_space": 5,
-      "lennys_newsletter": 3,
-      "meta": 4,
+      "latent_space": 8,
+      "lennys_newsletter": 1,
+      "meta": 1,
       "microsoft": 4,
+      "microsoft_ai": 1,
+      "minimax_blog": 1,
       "mistral": 1,
-      "mit_tech_review_ai": 6,
-      "modal_rss": 1,
-      "nextplatform": 1,
-      "nvidia": 21,
+      "mit_tech_review_ai": 7,
+      "newcomer_rss": 1,
+      "nextplatform": 3,
+      "nvidia": 23,
       "one_useful_thing": 1,
       "openai": 13,
       "platformer": 1,
-      "pragmatic_engineer": 2,
+      "pragmatic_engineer": 3,
       "producthunt": 20,
       "pytorch_blog": 9,
       "qbitai": 10,
-      "reddit_chatgptcoding": 1,
-      "reddit_claudeai": 8,
+      "reddit_claudeai": 9,
       "reddit_localllama": 20,
-      "reddit_ml": 3,
-      "reddit_promptengineering": 14,
+      "reddit_ml": 4,
+      "reddit_promptengineering": 13,
+      "redwood_research_blog_rss": 1,
+      "replit_blog_rss": 1,
       "rundown_ai": 3,
-      "semianalysis": 2,
+      "semianalysis": 1,
       "sequoia_blog": 2,
-      "servethehome": 4,
-      "simon_willison": 5,
+      "servethehome": 5,
+      "sierra_blog_rss": 1,
+      "simon_willison": 7,
       "stratechery": 4,
-      "techcrunch_ai": 19,
-      "techcrunch_venture": 5,
-      "tessl": 1,
+      "techcrunch_ai": 20,
+      "techcrunch_venture": 7,
       "the_decoder": 10,
       "tldr_ai": 2,
       "verge_ai": 10,
-      "vllm_rss": 1,
       "wired_ai": 10,
-      "wiz_research": 2,
-      "x_garrytan": 3,
+      "wiz_research": 1,
+      "x__catwu": 1,
+      "x_amasad": 1,
+      "x_claude_claudeai": 1,
+      "x_garrytan": 2,
       "x_googlelabs": 1,
-      "x_joshwoodward": 3,
-      "x_levie": 1,
-      "x_mattturck": 2,
-      "x_openai_openai": 1,
+      "x_khazix0918": 1,
+      "x_levie": 2,
+      "x_mattturck": 1,
       "x_petergyang": 3,
-      "x_rauchg": 2,
-      "x_rohan_paul_rohanpaul_ai": 3,
+      "x_rauchg": 3,
+      "x_rohan_paul_rohanpaul_ai": 2,
       "x_swyx": 3,
+      "x_thenanyu": 1,
       "x_thsottiaux": 2,
-      "youtube_ai": 8,
-      "zh_podcast_guigu101": 1,
+      "youtube_ai": 6,
       "zh_podcast_zhangxiaojun": 1,
       "zhidx": 20,
       "zvi_mowshowitz": 3
@@ -224,242 +281,234 @@
   "provenance": {
     "pipeline_version": "tie-0.2.0",
     "config_hash": "ea4c8f7ff008577d",
-    "prompt_hash": "c74abdc3f7f1d2cd"
+    "prompt_hash": "7e5c9e31ad38c8b2"
   },
   "insights": [
     {
-      "text": "Security agents need controls by default: models can now discover high-severity vulnerabilities, so evidence trails and human review should be part of product workflows",
+      "text": "Agent operating costs become visible, isolation, permissions and execution traces for long tasks are starting to require task-level measurement",
       "refs": [
-        1
+        1,
+        3
       ]
     },
     {
-      "text": "Multi-model access becomes a configuration issue: cloud aggregation lowers the barrier to trials, making task-level evaluation and cost routing more important",
+      "text": "Decision calls become a standalone product layer, low-latency decision interfaces can redraw the boundaries between rules, models and human review",
       "refs": [
         2
       ]
     },
     {
-      "text": "Inference costs still face volatility pressure: GPU supply and open-source inference optimisation are appearing at the same time, so pricing needs flexibility",
+      "text": "Call costs enter the selection table, 5 pricing and cost signals appeared this period, and products need task-level accounting",
       "refs": []
     }
   ],
   "since_last": [
-    "Five trends from the previous issue have left this issue's ranking.",
-    "7 days remain until the Gemini image model is discontinued.",
-    "LMArena (Chatbot Arena) Elo: Claude Opus 4.6 (Fast) 1500 → Gemini 4 Argon 1532"
+    "5 trends from the previous issue have left this issue's list",
+    "Gemini image model deprecation, 6 days remaining"
   ],
   "countdowns": [
     {
-      "title": "Gemini image model discontinuation",
+      "title": "Gemini image model deprecation",
       "kind": "Deprecation",
       "effective_date": "2026-10-29",
-      "days_left": 7,
-      "description": "gemini-3.1-flash-image will be discontinued on October 29, 2026. Source",
+      "days_left": 6,
+      "description": "gemini-3.1-flash-image will be deprecated on October 29, 2026. Source",
       "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
     },
     {
-      "title": "OpenAI direct supply to Cursor ends",
+      "title": "OpenAI ends direct supply to Cursor",
       "kind": "Deprecation",
       "effective_date": "2026-11-12",
-      "days_left": 21,
-      "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
+      "days_left": 20,
+      "description": "Reports say OpenAI will end model access for Cursor on November 12. Source",
       "url": "https://x.com/thsottiaux/status/2093515916076343774"
     },
     {
       "title": "OpenAI access policy update",
       "kind": "Policy",
       "effective_date": "2026-11-20",
-      "days_left": 29,
-      "description": "Model routers and AI gateways must be reviewed and approved by OpenAI before providing direct model access. Source",
+      "days_left": 28,
+      "description": "Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source",
       "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
     },
     {
-      "title": "Mandatory national standard for L3/L4 takes effect",
+      "title": "L3/L4 mandatory national standard implementation",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 252,
-      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover, and risk response requirements. Source",
+      "days_left": 251,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent and connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "China L3/L4 safety national standard takes effect",
+      "title": "China L3/L4 safety national standard implementation",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 252,
-      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "days_left": 251,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent and Connected Vehicles\" is proposed to take effect from July 1, 2027. Relevant autonomous driving products need to prepare for safety market access and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     }
   ],
-  "leaderboard": [
-    {
-      "benchmark": "LMArena (Chatbot Arena) Elo",
-      "from": "Claude Opus 4.6 (Fast) 1500",
-      "to": "Gemini 4 Argon 1532",
-      "url": "https://metatext.io/benchmarks/lmarena-elo"
-    }
-  ],
+  "leaderboard": [],
   "sections": {
     "pricing": [
       {
-        "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Infe…",
-        "note": "Evaluate DeepInfer to reduce inference costs",
-        "source": "latent_space",
+        "title": "Expanding Claude availability and deployment choic…",
+        "note": "Assess Claude deployment costs on GCP",
+        "source": "google_cloud_ai_blog",
         "why": "",
-        "url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud/"
       },
       {
-        "title": "Be prepared, GPU price increase incoming --> Samsu…",
-        "note": "Lock in GPU procurement budgets early",
-        "source": "reddit_localllama",
+        "title": "Cloudflare 两个月两改追踪定价，开发者该如何控制成本？",
+        "note": "Recalculate Cloudflare tracking costs",
+        "source": "infoq_ai_zh",
         "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbfhxp/be_prepared_gpu_price_increase_incoming_samsung/"
+        "url": "https://www.infoq.cn/article/hy9SMIBOjwjdZ4JduMzL?utm_source=rss&utm_medium=article"
       },
       {
-        "title": "How To Build A Billion-Dollar Company Without Vent…",
-        "note": "Use high-quality pricing to support bootstrapping",
-        "source": "crunchbase_news",
-        "why": "",
-        "url": "https://news.crunchbase.com/startups/bootstrapping-billion-dollar-company-ai-staffing-demarco-bairesdev/"
-      },
-      {
-        "title": "8点1氪丨将实施“消费才可入座”？星巴克中国回应；Anthropic上半年净亏807亿美元；日本优衣…",
-        "note": "Track the impact of Uniqlo price increases",
+        "title": "OpenAI宣布全面开放决策API",
+        "note": "Integrate the decision API at the new token price",
         "source": "kr36_ai",
         "why": "",
-        "url": "https://36kr.com/p/4034867385537670?f=rss"
+        "url": "https://36kr.com/newsflashes/4037681043657600?f=rss"
       },
       {
-        "title": "机构预计北京写字楼市场将于2028年企稳",
-        "note": "Reassess office location based on falling rents",
-        "source": "kr36_ai",
+        "title": "Grok Pricing 2026: X Subscription Plans and API Co…",
+        "note": "Compare Grok subscription and API costs",
+        "source": "Felloai",
         "why": "",
-        "url": "https://36kr.com/p/4033965080155016?f=rss"
+        "url": "https://felloai.com/grok-pricing/"
+      },
+      {
+        "title": "DeepSeek 新模型 V4.1 版本发布与功能介绍|DeepSeek|HuggingFace|M…",
+        "note": "Estimate search calls at 5 yuan per thousand",
+        "source": "Sina",
+        "why": "",
+        "url": "https://www.sina.cn/weibo/detail/5355312137640086.html"
       }
     ],
     "media": [
       {
-        "title": "Amazing free 3090 speedup hack, verified works 15%…",
-        "note": "Give 3090 owners free speed-up parameters",
+        "title": "Making Kokoro TTS 50-100x faster without knowing h…",
+        "note": "Use metrics to speed up iterative TTS inference",
         "source": "reddit_localllama",
         "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbuzj5/amazing_free_3090_speedup_hack_verified_works_15/"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcuqor/making_kokoro_tts_50100x_faster_without_knowing/"
       },
       {
-        "title": "inclusionAI/Ming-3.0-TTS-0.5B",
-        "note": "Try 0.5B local speech synthesis",
+        "title": "We shrank our steerable small TTS to 11.84 MB. WER…",
+        "note": "Run 11.84MB speech synthesis on-device",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xcum4s/we_shrank_our_steerable_small_tts_to_1184_mb_wer/"
+      },
+      {
+        "title": "Meta's 816B Muse Spark Open scores 39 on Artificia…",
+        "note": "Select cost-effective models by parameter count",
         "source": "reddit_localllama",
         "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbq7ze/inclusionaiming30tts05b/"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on/"
       },
       {
-        "title": "I built a small on-device voice front-end for loca…",
-        "note": "Deploy local wake-word detection and voice filtering",
-        "source": "reddit_localllama",
+        "title": "Wildwood’s director says AI is ‘antithetical to ev…",
+        "note": "Continue stop-motion production to avoid AI replacement",
+        "source": "verge_ai",
         "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbmhct/i_built_a_small_ondevice_voice_frontend_for_local/"
+        "url": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion"
       },
       {
-        "title": "UseIt Studio",
-        "note": "Generate editable design drafts from one sentence",
-        "source": "producthunt_ai",
+        "title": "Sierra 发布 𝜏-Entity 基准，检验语音智能体能否准确采集姓名、电话等实体信息",
+        "note": "Test entity extraction accuracy for voice agents",
+        "source": "Sierra: Blog",
         "why": "",
-        "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
-      },
-      {
-        "title": "Big news in *open source* voice AI: a suite of tin…",
-        "note": "Test small open-source on-device TTS models",
-        "source": "@mattturck",
-        "why": "",
-        "url": "https://x.com/mattturck/status/2112623582098428015"
+        "url": "https://sierra.ai/blog/tau-entity-can-voice-agents-get-the-details-right"
       }
     ],
     "incidents": [
       {
-        "title": "Misaligned!",
-        "note": "Investigate this week's AI loss-of-control cases",
-        "source": "zvi_mowshowitz",
+        "title": "[AINews] OpenAI’s Patch the Planet program is 1 of…",
+        "note": "Investigate the PHP2Shell vulnerability exposure surface",
+        "source": "latent_space",
         "why": "",
-        "url": "https://thezvi.wordpress.com/2026/10/21/misaligned/"
+        "url": "https://www.latent.space/p/ainews-openais-patch-the-planet-program"
       },
       {
-        "title": "OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon f…",
-        "note": "Urgently check the critical PHP vulnerability",
-        "source": "the_decoder",
+        "title": "Someone hacked the Switch 2 by using an old game a…",
+        "note": "Guard against AI-assisted host jailbreak attacks",
+        "source": "verge_ai",
         "why": "",
-        "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/"
+        "url": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai"
       },
       {
-        "title": "Today's PHP Security Release, and How We're Streng…",
-        "note": "Upgrade PHP 8.x patches immediately",
-        "source": "simon_willison",
-        "why": "",
-        "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
-      },
-      {
-        "title": "Patch the Planet: global response coordination as…",
-        "note": "Connect to coordinated vulnerability disclosure workflows",
-        "source": "openai_blog",
-        "why": "",
-        "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
-      },
-      {
-        "title": "Judge rejects Trump’s wild claim EPA can dismiss d…",
-        "note": "Assess data center pollution litigation risk",
+        "title": "Hackers got a four-day head start on epic PHP2Shel…",
+        "note": "Prioritize patching PHP vulnerabilities that have been probed",
         "source": "ars_technica_ai",
         "why": "",
-        "url": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/"
+        "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+      },
+      {
+        "title": "Mistral Voxtral 3",
+        "note": "Build multilingual transcription and voice agents",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/mistral-7b?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "If you wanted to know all the jobs that AI will pr…",
+        "note": "Increase enterprise AI security investment",
+        "source": "@levie",
+        "why": "",
+        "url": "https://x.com/levie/status/2113137032633757773"
       }
     ],
     "tools": [
       {
-        "title": "code-yeongyu/oh-my-openagent",
-        "note": "Use keywords to orchestrate graphic projects in batches",
+        "title": "VoltAgent/awesome-agent-skills",
+        "note": "Install general-purpose skills for different CLIs",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills starred repository (70,250 ⭐), matches your interests in \"agent / code / prompt\" · View",
-        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+        "why": "GitHub topic:claude-skills starred repository (36,186 ⭐), matches your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/VoltAgent/awesome-agent-skills"
       },
       {
-        "title": "Claude Duet: Anthropic just casually dropped the p…",
-        "note": "Have Claude proactively organise personal tasks",
-        "source": "reddit_claudeai",
-        "why": "r/claudeai popular post this week (recent discussion), matches your interests in \"agent / anthropic / claude\" · View",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbwkgf/claude_duet_anthropic_just_casually_dropped_the/"
+        "title": "coreyhaines31/marketingskills",
+        "note": "Have agents carry out marketing growth tasks",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (56,042 ⭐), matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/coreyhaines31/marketingskills"
       },
       {
-        "title": "I'm not an expert. I learned this stuff on my own,…",
-        "note": "Apply ten highly constrained prompts",
-        "source": "reddit_promptengineering",
-        "why": "r/promptengineering popular post this week (recent discussion), matches your interests in \"chat / ide / model\" · View",
-        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xbofrk/im_not_an_expert_i_learned_this_stuff_on_my_own/"
+        "title": "tt-a1i/archify",
+        "note": "Turn ideas or code into interactive diagrams",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (87,598 ⭐), matches your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/tt-a1i/archify"
       },
       {
-        "title": "BAND for Developers",
-        "note": "Coordinate multiple coding agents for collaborative development",
+        "title": "DeepCell",
+        "note": "Generate modeling reports and budget forecasts",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 230 votes · 11 comments, matches your interests in \"agent / agents / coding\" · View",
-        "url": "https://www.producthunt.com/products/band?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI Featured · 265 votes · 61 comments, matches your interests in \"agent / ide / model\" · View",
+        "url": "https://www.producthunt.com/products/deepcell?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "Needle",
-        "note": "Use prompts to find leads and conduct outreach",
+        "title": "Mistral Voxtral 3",
+        "note": "Build multilingual transcription and voice agents",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 226 votes · 26 comments, matches your interests in \"agent / chat / claude\" · View",
-        "url": "https://www.producthunt.com/products/needle-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI Featured · 194 votes · 3 comments, matches your interests in \"agent / agents / model\" · View",
+        "url": "https://www.producthunt.com/products/mistral-7b?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ]
   },
   "sections_missing": [
+    "leaderboard",
     "frameworks"
   ],
   "source_flags": [
     "dead_source:apple_ml_research",
-    "dead_source:gary_marcus",
     "dead_source:meta_newsroom",
-    "evidence_rewritten:GLOBAL_2-576e37d03cf909f9",
-    "evidence_rewritten:GLOBAL_2-98ae9acd41debdcb",
-    "evidence_rewritten:EU_20261-8470893d529f652e",
-    "critic_missed:cluster-13380b655bfe5741"
+    "evidence_rewritten:GLOBAL_2-d1e33f517360feca",
+    "evidence_rewritten:GLOBAL_2-7e6d02237175ad3c",
+    "evidence_rewritten:GLOBAL_2-811aeb6d16dc6748"
   ],
   "caveats": [],
   "license": "MIT",

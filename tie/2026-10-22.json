@@ -1,0 +1,520 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-22",
+  "executed_at": "2026-10-23T00:00:21.906321Z",
+  "run_id": "2026-10-20-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-10-20T11:00:21.906260+11:00",
+    "to": "2026-10-23T11:00:21.906260+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-10-23T11:00:21.906260+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "b5b4f04d90921825",
+      "run_trend_id": "GLOBAL_20261023_HARDWARE_AND_INFRA_ISOLATED_AGENT_RUNTIMES",
+      "name": "Isolated agent execution environments gain attention",
+      "category": "hardware_and_infra",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Google's Agent Compute Engine provides hardware-isolated micro virtual machines for Gemini agents. NVIDIA OpenShell also focuses on private, secure operation for autonomous agent clusters.",
+      "attention_driver": "Long-running agents that can use tools are making isolation, permissions and execution observability infrastructure capabilities.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine",
+          "quote": "Google's Agent Compute Engine gives every Gemini agent its own hardware-isolated micro virtual machine",
+          "claim": "Supports Google's use of hardware-isolated execution environments for agent execution.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://github.com/NVIDIA/OpenShell",
+          "quote": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+          "claim": "Supports demand for private, secure runtimes for autonomous agent clusters.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync",
+          "quote": "Local Intelligence Powers Next Wave of Agents",
+          "claim": "Supports NVIDIA linking local computing devices with agent deployment needs.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-21T10:50:37Z",
+      "last_signal_update": "2026-10-22T23:56:23Z",
+      "so_what": "Product architecture should treat each task's identity, file system and network permissions as configurable resources, and tie costs and execution traces to the task level rather than recording only model calls."
+    },
+    {
+      "canonical_id": "7105b7a20918bcb5",
+      "run_trend_id": "GLOBAL_20261023_MODEL_RELEASES_DECISIONS_API",
+      "name": "OpenAI launches a low-cost decision API",
+      "category": "model_releases",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "recurring",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "OpenAI released the Decisions API, positioned for fast, low-cost in-app decision tasks. External reporting places it in the context of rising competition in enterprise decision models.",
+      "attention_driver": "It separates high-frequency judgment tasks from general-purpose conversational models, creating a dedicated low-latency call entry point.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/decisions-api",
+          "quote": "Fast, focused, low-cost decisions for any application.",
+          "claim": "Supports OpenAI positioning the Decisions API as a fast, low-cost interface for application decisions.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up",
+          "quote": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
+          "claim": "Supports rising attention to competition in the decision model category.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://36kr.com/newsflashes/4037681043657600?f=rss",
+          "quote": "OpenAI宣布全面开放决策API",
+          "claim": "Supports signals that the API has been made broadly available to the market.",
+          "source_tier": "companion",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-22T19:00:00Z",
+      "last_signal_update": "2026-10-22T23:49:06Z",
+      "so_what": "It is suitable for reassessing the boundaries of rule engines, model routing and human review. First compare decision accuracy, latency and exception fallback using real business samples, then replace existing processes."
+    },
+    {
+      "canonical_id": "b0080cbe961226f5",
+      "run_trend_id": "GLOBAL_20261023_SAFETY_AND_GOVERNANCE_AGENT_CREDENTIAL_BOUNDARIES",
+      "name": "Agent account access develops diverging boundaries",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "美国"
+      ],
+      "lifecycle_stage": "declining",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Bank of America has begun blocking agents that log in with user credentials. 1Password introduced an agent login method that does not expose passwords, while retail platforms have taken different positions on agent access.",
+      "attention_driver": "The security responsibility and transaction controls of account access have become practical barriers to agents completing external tasks.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials",
+          "quote": "Major US banks are locking out AI agents that log in with customer credentials",
+          "claim": "Supports financial institutions restricting agents from using customer credentials to log in to accounts.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password",
+          "quote": "allows agents to log into a customer's personal accounts while still protecting the private credentials",
+          "claim": "Supports a product approach that provides agents with controlled account access through isolated credentials.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat",
+          "quote": "As Amazon blocks AI agents from shopping on its site, Walmart is taking the opposite approach",
+          "claim": "Supports service providers taking diverging approaches to agent access.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-10-21T19:30:00Z",
+      "last_signal_update": "2026-10-22T19:07:09Z",
+      "so_what": "Any product that lets agents operate user accounts should make authorization scope, transaction confirmation and auditable replay core interactions, rather than treating password custody as an access solution. When platforms block access, a human takeover path is needed."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "1e96d1a29c84adea",
+      "run_trend_id": "GLOBAL_20261023_MONETIZATION_CHATGPT_AD_STACK_EXPANSION",
+      "name": "ChatGPT ad products expand and disclose the ad stack",
+      "category": "monetization",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "recurring",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "OpenAI says ChatGPT Ads has expanded to 26 countries and serves more than 100,000 advertisers. It also disclosed an intent-understanding ad stack that separates ads from answers.",
+      "attention_driver": "Conversational search and decision scenarios are beginning to carry commercial placements at scale, with user trust becoming a key constraint on the ad experience.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+          "quote": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+          "claim": "Supports the expansion of ChatGPT Ads' country coverage and advertiser adoption scale.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://openai.com/index/building-chatgpt-ad-stack",
+          "quote": "keep ads separate from answers",
+          "claim": "Supports OpenAI treating the separation of ads and answers as part of trust design for its ad product.",
+          "source_tier": "primary_release",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-21T07:00:00Z",
+      "last_signal_update": "2026-10-21T13:00:00Z",
+      "so_what": "For recommendation, search or assistant products, monetization design needs to clearly separate sponsored content from task answers, and continuously measure ads' effect on task success rates and retention."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 90,
+    "signals_raw": 656,
+    "signals_accepted": 622,
+    "clusters_total": 381,
+    "clusters_synthesized": 175,
+    "by_source": {
+      "404_media_rss": 1,
+      "algorithmic_bridge": 1,
+      "amazon": 4,
+      "anthropic": 3,
+      "apple": 4,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_the_mad_podcast_with_matt_turck": 1,
+      "apple_podcasts_twiml_ai_podcast": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 10,
+      "astral_codex_ten": 3,
+      "brave_search_ai": 104,
+      "crunchbase_news": 8,
+      "deepmind": 1,
+      "dwarkesh_blog": 1,
+      "ec_digital_strategy": 2,
+      "eetimes": 10,
+      "gary_marcus": 2,
+      "github": 14,
+      "github_awesome_claude": 3,
+      "github_awesome_llm": 3,
+      "github_claude_skills": 12,
+      "github_cursor_rules": 3,
+      "google": 7,
+      "hn": 13,
+      "huggingface_blog": 7,
+      "huggingface_papers": 20,
+      "ieee_spectrum_ai": 3,
+      "index_ventures": 5,
+      "infoq_ai_zh": 20,
+      "interconnects_lambert": 1,
+      "kling": 2,
+      "kr36_ai": 20,
+      "latent_space": 8,
+      "lennys_newsletter": 1,
+      "meta": 1,
+      "microsoft": 4,
+      "microsoft_ai": 1,
+      "minimax_blog": 1,
+      "mistral": 1,
+      "mit_tech_review_ai": 7,
+      "newcomer_rss": 1,
+      "nextplatform": 3,
+      "nvidia": 23,
+      "one_useful_thing": 1,
+      "openai": 13,
+      "platformer": 1,
+      "pragmatic_engineer": 3,
+      "producthunt": 20,
+      "pytorch_blog": 9,
+      "qbitai": 10,
+      "reddit_claudeai": 9,
+      "reddit_localllama": 20,
+      "reddit_ml": 4,
+      "reddit_promptengineering": 13,
+      "redwood_research_blog_rss": 1,
+      "replit_blog_rss": 1,
+      "rundown_ai": 3,
+      "semianalysis": 1,
+      "sequoia_blog": 2,
+      "servethehome": 5,
+      "sierra_blog_rss": 1,
+      "simon_willison": 7,
+      "stratechery": 4,
+      "techcrunch_ai": 20,
+      "techcrunch_venture": 7,
+      "the_decoder": 10,
+      "tldr_ai": 2,
+      "verge_ai": 10,
+      "wired_ai": 10,
+      "wiz_research": 1,
+      "x__catwu": 1,
+      "x_amasad": 1,
+      "x_claude_claudeai": 1,
+      "x_garrytan": 2,
+      "x_googlelabs": 1,
+      "x_khazix0918": 1,
+      "x_levie": 2,
+      "x_mattturck": 1,
+      "x_petergyang": 3,
+      "x_rauchg": 3,
+      "x_rohan_paul_rohanpaul_ai": 2,
+      "x_swyx": 3,
+      "x_thenanyu": 1,
+      "x_thsottiaux": 2,
+      "youtube_ai": 6,
+      "zh_podcast_zhangxiaojun": 1,
+      "zhidx": 20,
+      "zvi_mowshowitz": 3
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "ea4c8f7ff008577d",
+    "prompt_hash": "7e5c9e31ad38c8b2"
+  },
+  "insights": [
+    {
+      "text": "Agent operating costs become visible, isolation, permissions and execution traces for long tasks are starting to require task-level measurement",
+      "refs": [
+        1,
+        3
+      ]
+    },
+    {
+      "text": "Decision calls become a standalone product layer, low-latency decision interfaces can redraw the boundaries between rules, models and human review",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "Call costs enter the selection table, 5 pricing and cost signals appeared this period, and products need task-level accounting",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "5 trends from the previous issue have left this issue's list",
+    "Gemini image model deprecation, 6 days remaining"
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini image model deprecation",
+      "kind": "Deprecation",
+      "effective_date": "2026-10-29",
+      "days_left": 6,
+      "description": "gemini-3.1-flash-image will be deprecated on October 29, 2026. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
+    },
+    {
+      "title": "OpenAI ends direct supply to Cursor",
+      "kind": "Deprecation",
+      "effective_date": "2026-11-12",
+      "days_left": 20,
+      "description": "Reports say OpenAI will end model access for Cursor on November 12. Source",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774"
+    },
+    {
+      "title": "OpenAI access policy update",
+      "kind": "Policy",
+      "effective_date": "2026-11-20",
+      "days_left": 28,
+      "description": "Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source",
+      "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
+    },
+    {
+      "title": "L3/L4 mandatory national standard implementation",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 251,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent and connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China L3/L4 safety national standard implementation",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 251,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent and Connected Vehicles\" is proposed to take effect from July 1, 2027. Relevant autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "pricing": [
+      {
+        "title": "Expanding Claude availability and deployment choic…",
+        "note": "Assess Claude deployment costs on GCP",
+        "source": "google_cloud_ai_blog",
+        "why": "",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud/"
+      },
+      {
+        "title": "Cloudflare 两个月两改追踪定价，开发者该如何控制成本？",
+        "note": "Recalculate Cloudflare tracking costs",
+        "source": "infoq_ai_zh",
+        "why": "",
+        "url": "https://www.infoq.cn/article/hy9SMIBOjwjdZ4JduMzL?utm_source=rss&utm_medium=article"
+      },
+      {
+        "title": "OpenAI宣布全面开放决策API",
+        "note": "Integrate the decision API at the new token price",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/newsflashes/4037681043657600?f=rss"
+      },
+      {
+        "title": "Grok Pricing 2026: X Subscription Plans and API Co…",
+        "note": "Compare Grok subscription and API costs",
+        "source": "Felloai",
+        "why": "",
+        "url": "https://felloai.com/grok-pricing/"
+      },
+      {
+        "title": "DeepSeek 新模型 V4.1 版本发布与功能介绍|DeepSeek|HuggingFace|M…",
+        "note": "Estimate search calls at 5 yuan per thousand",
+        "source": "Sina",
+        "why": "",
+        "url": "https://www.sina.cn/weibo/detail/5355312137640086.html"
+      }
+    ],
+    "media": [
+      {
+        "title": "Making Kokoro TTS 50-100x faster without knowing h…",
+        "note": "Use metrics to speed up iterative TTS inference",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcuqor/making_kokoro_tts_50100x_faster_without_knowing/"
+      },
+      {
+        "title": "We shrank our steerable small TTS to 11.84 MB. WER…",
+        "note": "Run 11.84MB speech synthesis on-device",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xcum4s/we_shrank_our_steerable_small_tts_to_1184_mb_wer/"
+      },
+      {
+        "title": "Meta's 816B Muse Spark Open scores 39 on Artificia…",
+        "note": "Select cost-effective models by parameter count",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcthj8/metas_816b_muse_spark_open_scores_39_on/"
+      },
+      {
+        "title": "Wildwood’s director says AI is ‘antithetical to ev…",
+        "note": "Continue stop-motion production to avoid AI replacement",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion"
+      },
+      {
+        "title": "Sierra 发布 𝜏-Entity 基准，检验语音智能体能否准确采集姓名、电话等实体信息",
+        "note": "Test entity extraction accuracy for voice agents",
+        "source": "Sierra: Blog",
+        "why": "",
+        "url": "https://sierra.ai/blog/tau-entity-can-voice-agents-get-the-details-right"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "[AINews] OpenAI’s Patch the Planet program is 1 of…",
+        "note": "Investigate the PHP2Shell vulnerability exposure surface",
+        "source": "latent_space",
+        "why": "",
+        "url": "https://www.latent.space/p/ainews-openais-patch-the-planet-program"
+      },
+      {
+        "title": "Someone hacked the Switch 2 by using an old game a…",
+        "note": "Guard against AI-assisted host jailbreak attacks",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai"
+      },
+      {
+        "title": "Hackers got a four-day head start on epic PHP2Shel…",
+        "note": "Prioritize patching PHP vulnerabilities that have been probed",
+        "source": "ars_technica_ai",
+        "why": "",
+        "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+      },
+      {
+        "title": "Mistral Voxtral 3",
+        "note": "Build multilingual transcription and voice agents",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/mistral-7b?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "If you wanted to know all the jobs that AI will pr…",
+        "note": "Increase enterprise AI security investment",
+        "source": "@levie",
+        "why": "",
+        "url": "https://x.com/levie/status/2113137032633757773"
+      }
+    ],
+    "tools": [
+      {
+        "title": "VoltAgent/awesome-agent-skills",
+        "note": "Install general-purpose skills for different CLIs",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (36,186 ⭐), matches your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/VoltAgent/awesome-agent-skills"
+      },
+      {
+        "title": "coreyhaines31/marketingskills",
+        "note": "Have agents carry out marketing growth tasks",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (56,042 ⭐), matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/coreyhaines31/marketingskills"
+      },
+      {
+        "title": "tt-a1i/archify",
+        "note": "Turn ideas or code into interactive diagrams",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (87,598 ⭐), matches your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/tt-a1i/archify"
+      },
+      {
+        "title": "DeepCell",
+        "note": "Generate modeling reports and budget forecasts",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI Featured · 265 votes · 61 comments, matches your interests in \"agent / ide / model\" · View",
+        "url": "https://www.producthunt.com/products/deepcell?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Mistral Voxtral 3",
+        "note": "Build multilingual transcription and voice agents",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI Featured · 194 votes · 3 comments, matches your interests in \"agent / agents / model\" · View",
+        "url": "https://www.producthunt.com/products/mistral-7b?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "frameworks"
+  ],
+  "source_flags": [
+    "dead_source:apple_ml_research",
+    "dead_source:meta_newsroom",
+    "evidence_rewritten:GLOBAL_2-d1e33f517360feca",
+    "evidence_rewritten:GLOBAL_2-7e6d02237175ad3c",
+    "evidence_rewritten:GLOBAL_2-811aeb6d16dc6748"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}
