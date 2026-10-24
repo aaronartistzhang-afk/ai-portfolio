@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>AI Daily — 2026-10-23</title>
+<meta name="description" content="OpenAI disclosed stronger isolation for frontier training in offline environments. External audit reporting also questioned the coverage of its safety monitorin">
+<link rel="canonical" href="https://aaronzhang.ai/tie/2026-10-23">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="aaronzhang.ai">
+<meta property="og:title" content="AI Daily — 2026-10-23">
+<meta property="og:description" content="OpenAI disclosed stronger isolation for frontier training in offline environments. External audit reporting also questioned the coverage of its safety monitorin">
+<meta property="og:url" content="https://aaronzhang.ai/tie/2026-10-23">
+<meta property="og:image" content="https://aaronzhang.ai/card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aaronzhang42">
+<meta name="twitter:creator" content="@aaronzhang42">
+<link rel="alternate" type="application/rss+xml" title="AI Daily" href="https://aaronzhang.ai/tie/feed.xml">
+<link rel="stylesheet" href="/tie/tie.css">
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <a class="name" href="/">
+      <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="64" cy="64" r="13.5" fill="currentColor"/><circle cx="93.1" cy="34.9" r="8.5" fill="currentColor"/><circle cx="31.7" cy="87" r="8.5" fill="currentColor"/>
+        <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.18" stroke-width="2"/>
+      </svg>
+      Aaron Zhang
+    </a>
+    <a href="/#writing">Writing</a>
+    <details class="menu">
+      <summary>AI Daily</summary>
+      <div class="menupanel">
+        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this US weekday</span></a>
+        <a href="/tie/archive?from=menu"><b>Archive</b><span>Every issue so far, quiet days included</span></a>
+        <a href="/tie/how-it-works?from=menu"><b>How it works</b><span>How the sources become three trends, in two pictures</span></a>
+        <a href="/tie/sources?from=menu"><b>What it reads</b><span>Every source and how much weight it carries</span></a>
+        <a href="/tie/data?from=menu"><b>Get it as data</b><span>A JSON file per issue. No key, no rate limit</span></a>
+        <a href="/tie/terms?from=menu"><b>Licence</b><span>MIT, and what that lets you do with the data</span></a>
+      </div>
+    </details>
+    <a href="/deck/?from=nav">Talk</a>
+    <a href="/about/">About</a>
+  </header>
+
+  <div class="tiegrid">
+  <article class="tie">
+    <p class="crumb"><a href="/tie/">AI Daily</a><span class="sep">/</span><a href="/tie/archive">Archive</a><span class="sep">/</span><span class="here">Issue</span> <span class="sep">&middot;</span> 2026-10-23</p>
+    <h1>AI Daily</h1>
+    <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
+    93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
+
+    <p class="runbar"><span class="live"></span> <b>~3 min read</b>
+      &middot; covering 20&ndash;23 October &middot; updated weekdays, 17:10 Pacific</p>
+
+    <div class="ribbon">
+      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener"><b>5d</b> Gemini image model retirement</a> <span class="sep">·</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>19d</b> OpenAI direct supply to Cursor ends</a> <span class="sep">·</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener"><b>27d</b> OpenAI access policy update</a> <a class="more" href="#deadlines">see all 5 &rarr;</a></p>
+    </div>
+
+    <section class="lead">
+      <h2 id="the-read">The read</h2>
+      <ul>
+        <li>Enterprise procurement focuses more on delivery, large-scale deployments already have examples, but returns remain scarce and products need to prove the value of a single workflow first <a class="xref" href="#t3">#3</a></li>
+        <li>Long-context supply is increasing, Kimi joins the competition with 1 million tokens and open weights, and model routing should retain room for replacement <a class="xref" href="#t2">#2</a></li>
+        <li>More agent tools are becoming available, this period has new signals for both frameworks and evaluation, and tool integration and quality validation need to be designed together </li>
+      </ul>
+    </section>
+
+    <p class="counts"><b>1</b> major &middot; <b>2</b> watch
+      &middot; <b>1</b> monitoring</p>
+
+    <article class="trend major" id="t1">
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Safety &amp; governance</span></p>
+      <h2 id="frontier-model-training-tightens-isolation-and-auditing">Frontier model training tightens isolation and auditing</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent, 1 press</span></p>
+      <p class="body">OpenAI disclosed stronger isolation for frontier training in offline environments. External audit reporting also questioned the coverage of its safety monitoring.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Products involving tool use or sensitive data should separate network access, credentials and high-risk operations into independently auditable control planes, rather than relying only on model behavior constraints. Isolation policies for training and production environments will gradually affect enterprise procurement security questionnaires and deployment costs.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://openai.com/index/securing-our-frontier-model-training-environment" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;strengthened containment for frontier model training and evaluation, including offline environmen&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;External auditors from METR and Redwood Research spent three weeks on-site at OpenAI examining the company&#x27;s internal mo&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;OpenAI will cut frontier models off from the internet&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t2">
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Open source releases</span></p>
+      <h2 id="kimi-k31-pro-joins-competition-in-long-context-open-weights">Kimi K3.1 Pro joins competition in long-context open weights</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 2 press</span></p>
+      <p class="body">Moonshot AI released Kimi K3.1 Pro, featuring 1 million token context and agent tasks, and committed to releasing open weights.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Long-context models provide another replaceable supply path for retrieval, memory and multi-step workflows, but teams should first test latency, tool success rates and total token cost on real tasks. Product architectures should retain model routing and fallback capabilities, rather than hard-coding a single model&#x27;s context advantage into the user experience.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it happened</span>
+          <a href="https://kimi.com/blog/kimi-k3-1-pro" rel="nofollow noopener">kimi.com</a></p>
+        <p class="quote">&ldquo;月之暗面发布 Kimi K3.1 Pro，100 万 token 上下文，开放权重将于 11 月 4 日前释出&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro" rel="nofollow noopener">simonwillison.net</a></p>
+        <p class="quote">&ldquo;Kimi K3.1 Pro landed on the Kimi API today&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks" rel="nofollow noopener">artificialanalysis.ai</a></p>
+        <p class="quote">&ldquo;Kimi K3.1 Pro 发布，以 55 分位列 Artificial Analysis Intelligence Index 第 4&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t3">
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Enterprise deployment</span></p>
+      <h2 id="enterprise-ai-deployments-rely-more-on-implementation-services-and-workflow-redesign">Enterprise AI deployments rely more on implementation services and workflow redesign</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 2 company, 1 independent</span></p>
+      <p class="body">Uber expanded its ChatGPT Work deployment, OpenAI defined forward-deployed engineering, and a survey shows that most enterprises have yet to achieve actual returns.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Product teams should treat integration, permissions, evaluation and change management as part of delivery, and design the first proof of value around one measurable workflow. Adding model capabilities alone is unlikely to solve weak enterprise returns, and implementation services need to be paired with product self-service configuration.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://openai.com/index/uber-chatgpt-work-rollout" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;Uber is rolling out ChatGPT Work to more than 30,000 employees&rdquo;</p>
+      </div>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· why it matters</span>
+          <a href="https://openai.com/index/forward-deployed-engineering-means" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;What forward deployed engineering means at OpenAI&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/only-13-percent-of-companies-see-real-returns-from-ai-gartner-survey-finds" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;Only 13 percent of companies see real returns from AI&rdquo;</p>
+      </div>
+      </details>
+    </article>
+
+    <section class="mod">
+      <h3 id="on-the-radar">On the radar</h3>
+      <ul class="bullets">
+      <li><b>AI factories make observability and local deployment product-layer capabilities</b> &mdash; NVIDIA released the Minerva observability platform and demonstrated DSX Pod and local AI hardware deployments in Europe.</li>
+      </ul>
+    </section>
+
+    <section class="mod">
+      <h3 id="since-last-issue">Since last issue</h3>
+      <ul class="bullets">
+        <li>Four trends from the previous issue have left this issue&#x27;s focus.</li>
+        <li>5 days remain until the Gemini image model is retired.</li>
+      </ul>
+    </section>
+
+
+    <section class="also">
+      <h3 id="also-worth-knowing">Also worth knowing &middot; 25</h3>
+      <p class="sub">Everything else that made the cut today but was not big enough to lead.
+      Grouped by desk, open only what you need.</p>
+      <details class="cat" id="deadlines">
+        <summary><span class="cname">Deadlines ahead</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><span class="dd">5d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#10-06-2026" rel="nofollow noopener">Gemini image model retirement</a> &middot; 2026-10-29</p><p class="n">gemini-3.1-flash-image will be retired on October 29, 2026. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">19d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI direct supply to Cursor ends</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end model access for Cursor on November 12. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">27d</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener">OpenAI access policy update</a> &middot; 2026-11-20</p><p class="n">Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">250d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory national standard for L3/L4 takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering requirements for Safety Case, </p></div>
+        <div class="r"><p class="t"><span class="dd">250d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China&#x27;s L3/L4 national safety standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Automated Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027, and related autono</p></div>
+        </div>
+      </details>
+      <details class="cat" id="pricing">
+        <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/" rel="nofollow noopener">Introducing Kimi K3.1 Pro</a></p><p class="n">Calculate Kimi high-speed version call costs</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://x.com/OpenRouter/status/2113699820124934334" rel="nofollow noopener">月之暗面 Kimi K3.1 Pro 上线 OpenRouter，1M 上下文多模态开源权重模型</a></p><p class="n">Estimate long-context costs at $2/$10</p><p class="m">X: OpenRouter</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/fal-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">FLUX 3 Max</a></p><p class="n">Evaluate the unit price of generating 12-second videos</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/cloudflare?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Cloudflare Clairic</a></p><p class="n">Compare billing advantages for extraction without generation</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://latent.space/p/ainews-deepseek-deepinfer-open-source/" rel="nofollow noopener">[AINews] DeepSeek DeepInfer: Open Source SOTA Infe…</a></p><p class="n">Track DeepInfer inference cost reductions</p><p class="m">Latent Space</p></div>
+        </div>
+      </details>
+      <details class="cat" id="media">
+        <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://www.amazon.science/blog/better-speech-synthesis-for-audiobooks" rel="nofollow noopener">Better speech synthesis for audiobooks</a></p><p class="n">Generate audiobook narration with consistent characters</p><p class="m">Amazon Science</p></div>
+        <div class="r"><p class="t"><a href="https://www.youtube.com/watch?v=BsfjQDSeTwI" rel="nofollow noopener">Flint - The First RSI Coding Model?</a></p><p class="n">Test high-speed MoE coding output</p><p class="m">YouTube · AI channels</p></div>
+        <div class="r"><p class="t"><a href="https://www.infoq.cn/article/Md0kdMxGI6flIbZXH1yg?utm_source=rss&amp;utm_medium=article" rel="nofollow noopener">讯飞发布新一代端到端交互模型：语音大模型调用量暴涨20倍，端侧已实现约70%云端能力</a></p><p class="n">Deploy on-device voice interaction capabilities</p><p class="m">InfoQ 中国</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/603939.html" rel="nofollow noopener">金蝶灵基连推三项核心升级，发布企业级智能体评测基准</a></p><p class="n">Connect enterprise context and ERP connectors</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/realtime-max-mini?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">ElevenLabs Realtime</a></p><p class="n">Build 570 ms voice customer service</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+      <details class="cat" id="incidents">
+        <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://latent.space/p/ainews-black-october/" rel="nofollow noopener">[AINews] Black October</a></p><p class="n">Investigate AI emails wrongly sent to spam</p><p class="m">Latent Space</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet" rel="nofollow noopener">OpenAI now trains its frontier AI models with no i…</a></p><p class="n">Isolate risks from internet-connected frontier model training</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://latent.space/p/ainews-openais-patch-the-planet-program/" rel="nofollow noopener">[AINews] OpenAI’s Patch the Planet program is 1 of…</a></p><p class="n">Patch critical PHP core vulnerabilities</p><p class="m">Latent Space</p></div>
+        <div class="r"><p class="t"><a href="https://x.com/petergyang/status/2113405131106742406" rel="nofollow noopener">6 steps you should take to secure your accounts ri…</a></p><p class="n">Generate account security reports with AI</p><p class="m">@petergyang</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2610.31623" rel="nofollow noopener">F2G-Pose: Geometry-Aware Foundation Feature Liftin…</a></p><p class="n">Address ambiguity in RGB-D pose estimation</p><p class="m">Hugging Face Papers</p></div>
+        </div>
+      </details>
+      <details class="cat" id="tools">
+        <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/thedotmack/claude-mem" rel="nofollow noopener">thedotmack/claude-mem</a></p><p class="n">Enable agents to remember context across sessions</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/SwankyMan88/ithaca" rel="nofollow noopener">SwankyMan88/ithaca</a></p><p class="n">Run multimodal AI locally on Windows</p><p class="m">GitHub · topic:awesome-llm</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/latent-spaces/brag" rel="nofollow noopener">latent-spaces/brag</a></p><p class="n">Generate short project launch videos in one click</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/movo-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">MOVO AI</a></p><p class="n">Create long-form video content on a phone</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/monid?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Agent Hunt</a></p><p class="n">View rankings of tools commonly used by agents</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+    </section>
+
+    <p class="tiefoot">Read 605 stories across
+      93 sources today and published 3.
+      <a href="/tie/archive">Archive</a> &middot;
+      <a href="/tie/2026-10-23.json">This issue as data</a> &middot;
+      <a href="/tie/sources">What it reads</a></p>
+  </article>
+
+    <aside class="rail">
+      <h2>AI Daily</h2>
+      <nav>
+        <a href="/tie/">Today&#x27;s issue</a>
+        <a href="/tie/archive">Archive</a>
+        <a href="/tie/how-it-works">How it works</a>
+        <a href="/tie/sources">What it reads</a>
+        <a href="/tie/data">Get it as data</a>
+        <a href="/tie/terms">Licence</a>
+      </nav>
+      <h2>On this page</h2>
+      <nav class="toc">
+        <a href="#the-read">The read</a>
+        <a href="#frontier-model-training-tightens-isolation-and-auditing">Frontier model training tightens isolation and auditing</a>
+        <a href="#kimi-k31-pro-joins-competition-in-long-context-open-weights">Kimi K3.1 Pro joins competition in long-context open weights</a>
+        <a href="#enterprise-ai-deployments-rely-more-on-implementation-services-and-workflow-redesign">Enterprise AI deployments rely more on implementation services and workflow redesign</a>
+        <a href="#on-the-radar">On the radar</a>
+        <a href="#since-last-issue">Since last issue</a>
+        <a href="#also-worth-knowing">Also worth knowing</a>
+      </nav>
+      <a class="back" href="/">&larr; aaronzhang.ai</a>
+    </aside>
+  </div>
+
+  <footer>
+    Aaron Zhang ·
+    <a href="/#writing">Writing</a> ·
+    <a href="/tie/">AI Daily</a> ·
+    <a href="/deck/">Talk</a> ·
+    <a href="/about/">About</a> ·
+    <a href="https://x.com/aaronzhang42">X</a> ·
+    <a href="https://github.com/aaronartistzhang-afk">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/aaronzhangai/">LinkedIn</a> ·
+    <a href="mailto:aaronartistzhang@gmail.com">Email</a> ·
+    <a href="/tie/feed.xml">RSS</a>
+  </footer>
+
+</main>
+<script>
+  // The menu is a <details>: it opens, closes and takes keyboard focus without
+  // this. All that is missing natively is click-away and Escape.
+  (function () {
+    var shut = function (skip) {
+      document.querySelectorAll('header.site .menu[open]').forEach(function (d) {
+        if (!skip || !d.contains(skip)) d.open = false;
+      });
+    };
+    document.addEventListener('click', function (e) { shut(e.target); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(null); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a693901685644241abd983662d731b5f"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
