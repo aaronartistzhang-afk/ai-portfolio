@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Fri, 23 Oct 2026 17:00:18 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 17:00:29 -0700</lastBuildDate>
+    <item>
+      <title>GPT-6.1 Terra brings computer-use capabilities to a lower price point</title>
+      <link>https://aaronzhang.ai/tie/2026-10-26</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-26</guid>
+      <pubDate>Mon, 26 Oct 2026 17:00:29 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Computer-use costs are falling: browser and desktop tasks can enter high-frequency pilots, and evaluation should focus on end-to-end cost per successful task&lt;/li&gt;&lt;li&gt;Model procurement must consider supply: public financial information brings capacity risk and price stability into product selection&lt;/li&gt;&lt;li&gt;Agent tools continue to expand: containerized execution, MCP and permission tools are appearing together, and the integration surface is still widening&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Frontier model training tightens isolation and auditing</title>
       <link>https://aaronzhang.ai/tie/2026-10-23</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-15</guid>
       <pubDate>Tue, 15 Sep 2026 17:00:17 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent reliability is externalized: memory, skill routing, and collaboration controls are split into independent components, and task completion rates are no longer enough to cover runtime quality&lt;/li&gt;&lt;li&gt;Real-time interaction needs tiers: voice and video interfaces are increasing, and products need to distinguish instant interaction from long-thinking tasks by response latency&lt;/li&gt;&lt;li&gt;Enterprise procurement looks at workflow packages: prebuilt workflows, connectors, and data residency jointly affect deployment decisions&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Expansion of agent skill libraries and control planes</title>
-      <link>https://aaronzhang.ai/tie/2026-09-14</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-14</guid>
-      <pubDate>Mon, 14 Sep 2026 17:00:15 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Agent team collaboration is starting to lack a control layer: skill supply and multi-agent orchestration tools are both increasing, while execution evidence and approvals will affect enterprise adoption&lt;/li&gt;&lt;li&gt;Low-cost models need to be compared using task ledgers: discussion of model speed is gaining attention, but selection should be based on real task success rates and unit cost&lt;/li&gt;&lt;li&gt;Supply for voice agent tools remains: 5 new signals are concentrated in voice agents and audio-video creation tools&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
