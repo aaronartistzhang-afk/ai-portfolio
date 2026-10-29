@@ -1,0 +1,531 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-28",
+  "executed_at": "2026-10-29T00:00:28.823947Z",
+  "run_id": "2026-10-26-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-10-26T11:00:28.823913+11:00",
+    "to": "2026-10-29T11:00:28.823913+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-10-29T11:00:28.823913+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "effe5d7c08af6b1a",
+      "run_trend_id": "GLOBAL_20261029_MODEL_RELEASES_GEMINI_4_CARBON",
+      "name": "Gemini 4 Carbon launches and accelerates the iteration pace",
+      "category": "model_releases",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "high",
+      "summary": "Google released Gemini 4 Carbon, just two weeks after Gemini 4 Argon; external reports point to improved capabilities in coding and agent tasks.",
+      "attention_driver": "High-frequency iteration of frontier models and competition over task capabilities.",
+      "evidence": [
+        {
+          "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
+          "quote": "Gemini 4 Carbon: Our next frontier model",
+          "claim": "This supports Google's official release of Gemini 4 Carbon.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board",
+          "quote": "Just two weeks after Gemini 4 Argon, Google DeepMind is releasing Gemini 4 Carbon",
+          "claim": "This supports Carbon following Argon closely and receiving independent media attention.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+          "quote": "",
+          "claim": "This supports the release being positioned as a capability upgrade for coding and agent tasks.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-28T17:00:58Z",
+      "last_signal_update": "2026-10-28T20:03:00Z",
+      "so_what": "Model selection should establish regression tests for specific workflows, rather than replace production models based on a single release or general rankings. Frequent updates shorten the lifespan of product capability differences, and routing, fallback, and evaluation data need to be updated quickly."
+    },
+    {
+      "canonical_id": "06f54bd523dc976c",
+      "run_trend_id": "GLOBAL_20261029_ENTERPRISE_DEPLOYMENT_WORKFLOW_AGENT_EMBEDDING",
+      "name": "Enterprise workflows accelerate the integration of executable agents",
+      "category": "enterprise_deployment",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "OpenAI, ServiceNow, and Legora announced workflow deployments, while product updates from Google and Anthropic have also brought third-party agents and professional tasks to the foreground.",
+      "attention_driver": "Enterprise software vendors are integrating model capabilities into existing systems and high-value processes.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+          "quote": "bring OpenAI models and agents into ServiceNow and ServiceNow workflows",
+          "claim": "This supports OpenAI and ServiceNow integrating models and agents into enterprise workflows.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://openai.com/index/legora",
+          "quote": "accelerate legal workflows, expand contract analysis",
+          "claim": "This supports agent products entering professional document and contract processing workflows.",
+          "source_tier": "primary_release",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis",
+          "quote": "Google is opening up Android Studio to third-party AI agents.",
+          "claim": "This supports development tools beginning to provide integration points for third-party agents.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://the-decoder.com/claude-for-legal-now-verifies-sources-automatically-then-hands-the-file-to-a-lawyer",
+          "quote": "verifies sources automatically, then hands the file to a lawyer",
+          "claim": "This supports professional settings combining automated execution with human review.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-26T07:00:00Z",
+      "last_signal_update": "2026-10-28T16:59:59Z",
+      "so_what": "The competitive point for products is no longer only answer quality, but whether they can fit into existing permissions, data, and handoff processes. First turn one high-frequency task into an auditable end-to-end process, then measure completion rate, human review rate, and cost per task."
+    },
+    {
+      "canonical_id": "15592fd1f2dc6571",
+      "run_trend_id": "GLOBAL_20261029_FUNDING_AND_M_AND_A_ANTHROPIC_S1_ECONOMICS",
+      "name": "Anthropic S-1 prompts scrutiny of model business economics",
+      "category": "funding_and_M_and_A",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Anthropic's S-1 filing has prompted concentrated discussion of revenue growth, compute costs, and model revenue cycles.",
+      "attention_driver": "Public listing disclosures provide new material for discussion of revenue quality and cost structures at frontier model companies.",
+      "evidence": [
+        {
+          "url": "https://thezvi.wordpress.com/2026/10/28/anthropic-files-its-s-1",
+          "quote": "Anthropic Files Its S-1",
+          "claim": "This supports Anthropic S-1 becoming a recent focus of industry discussion.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying",
+          "quote": "The Cost of Compute, Who Is Paying?",
+          "claim": "This supports market discussion focusing on compute costs and paying customers for model businesses.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://every.to/context-window/every-model-has-a-six-month-shelf-life-now",
+          "quote": "发布超过六个月的模型收入占比不足 20%",
+          "claim": "This supports the market interpretation that model revenue is closely tied to recent versions.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-10-26T20:10:57Z",
+      "last_signal_update": "2026-10-28T17:51:00Z",
+      "so_what": "Procurement and pricing design should assume that core models iterate quickly and avoid tying long-term product commitments to a single model version. Gross margin per task, model switching costs, and customer retention should be considered together in roadmap decisions."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "02f1e8cf22caa74c",
+      "run_trend_id": "GLOBAL_20261029_AUDIO_VIDEO_AND_VOICE_NEMOTRON_TRANSCRIBE",
+      "name": "Open multilingual speech transcription model expands voice product options",
+      "category": "audio_video_and_voice",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "expired",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "NVIDIA Nemotron 3.5 Transcribe has been reported as an open multilingual transcription model covering transcription, translation, and speaker identification.",
+      "attention_driver": "The open supply of speech understanding components is increasing.",
+      "evidence": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+          "quote": "Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "claim": "This supports NVIDIA launching multilingual transcription capabilities that can be prompted and adapted.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition",
+          "quote": "combines transcription, translation, and speaker recognition",
+          "claim": "This supports the model integrating transcription, translation, and speaker identification tasks.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model",
+          "quote": "a free speech-to-text model that can transcribe up to 40 languages",
+          "claim": "This supports media coverage of its positioning as open multilingual speech transcription.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-10-28T14:58:17Z",
+      "last_signal_update": "2026-10-28T15:49:39Z",
+      "so_what": "Products that need voice input can reassess the latency, accuracy, and data handling boundaries of self-hosting versus managed services. Separating transcription, translation, and speaker attribution into replaceable modules can reduce vendor switching costs."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 87,
+    "signals_raw": 615,
+    "signals_accepted": 591,
+    "clusters_total": 370,
+    "clusters_synthesized": 141,
+    "by_source": {
+      "a16z_news_rss": 1,
+      "amazon": 1,
+      "anthropic": 3,
+      "apple": 6,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_latent_space": 2,
+      "apple_podcasts_lex_fridman_podcast": 1,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_twiml_ai_podcast": 1,
+      "apple_podcasts_unsupervised_learning": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 9,
+      "astral_codex_ten": 2,
+      "brave_search_ai": 104,
+      "cartesia": 1,
+      "cohere": 1,
+      "crunchbase_news": 9,
+      "deepmind": 2,
+      "ec_digital_strategy": 1,
+      "ed_zitron_where_s_your_ed_at_rss": 1,
+      "eetimes": 10,
+      "every": 1,
+      "exponential_view": 2,
+      "gary_marcus": 2,
+      "github": 12,
+      "github_awesome_claude": 3,
+      "github_awesome_llm": 3,
+      "github_blog": 2,
+      "github_claude_skills": 13,
+      "github_cursor_rules": 4,
+      "google": 11,
+      "hn": 15,
+      "huggingface_blog": 3,
+      "huggingface_papers": 20,
+      "ieee_spectrum_ai": 4,
+      "import_ai": 1,
+      "index_ventures": 1,
+      "infoq_ai_zh": 20,
+      "interconnects_lambert": 1,
+      "it": 1,
+      "kr36_ai": 20,
+      "latent_space": 6,
+      "lennys_newsletter": 3,
+      "meta": 7,
+      "microsoft": 3,
+      "mistral": 1,
+      "mit_tech_review_ai": 5,
+      "nextplatform": 5,
+      "nvidia": 5,
+      "openai": 12,
+      "platformer": 1,
+      "pragmatic_engineer": 1,
+      "producthunt": 20,
+      "pytorch_blog": 2,
+      "qbitai": 10,
+      "reddit_chatgptcoding": 1,
+      "reddit_claudeai": 10,
+      "reddit_localllama": 20,
+      "reddit_ml": 9,
+      "reddit_promptengineering": 10,
+      "rundown_ai": 3,
+      "servethehome": 3,
+      "simon_willison": 8,
+      "stratechery": 3,
+      "techcrunch_ai": 20,
+      "techcrunch_venture": 2,
+      "the_decoder": 10,
+      "tldr_ai": 2,
+      "unknown": 1,
+      "verge_ai": 10,
+      "wired_ai": 9,
+      "x_amasad": 3,
+      "x_boris_cherny_bcherny": 1,
+      "x_garrytan": 2,
+      "x_levie": 1,
+      "x_petergyang": 3,
+      "x_rauchg": 2,
+      "x_rohan_paul_rohanpaul_ai": 1,
+      "x_saito_saitowu": 1,
+      "x_sundar_pichai_sundarpichai": 2,
+      "x_swyx": 3,
+      "x_thsottiaux": 3,
+      "x_trq212": 3,
+      "youtube_ai": 9,
+      "zh_podcast_guigu101": 1,
+      "zhidx": 17,
+      "zvi_mowshowitz": 3
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "782eb3b47bf1f071",
+    "prompt_hash": "3f8076a639faf42f"
+  },
+  "insights": [
+    {
+      "text": "Model replacement frequency rises: new model revenue cycles are compressed, and products need to make model routing and regression testing routine capabilities",
+      "refs": [
+        1,
+        3
+      ]
+    },
+    {
+      "text": "Agents first take workflow entry points: permissions, handoffs, and human review determine whether agents can enter high-value tasks",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "The price war continues to spread: 5 pricing and cost signals have appeared, and cost per task should inform feature trade-offs",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "Genie 4 drives world models that can be controlled in real time has left this issue's focus.",
+    "Anthropic S-1 makes revenue and compute constraints for enterprise AI more transparent remains under watch.",
+    "Gemini image model deprecation has 0 days remaining."
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini image model deprecation",
+      "kind": "Deprecation",
+      "effective_date": "2026-10-29",
+      "days_left": null,
+      "description": "gemini-3.1-flash-image will be deprecated on October 29, 2026. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026"
+    },
+    {
+      "title": "OpenAI direct supply to Cursor ends",
+      "kind": "Deprecation",
+      "effective_date": "2026-11-12",
+      "days_left": 14,
+      "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774"
+    },
+    {
+      "title": "OpenAI access policy update",
+      "kind": "Policy",
+      "effective_date": "2026-11-20",
+      "days_left": 22,
+      "description": "Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source",
+      "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
+    },
+    {
+      "title": "Mandatory L3/L4 national standard implementation",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 245,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handoff, and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China L3/L4 safety national standard implementation",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 245,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is planned to take effect from July 1, 2027, and relevant autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "pricing": [
+      {
+        "title": "大客户直接打1折、模型四个月降价80%：大模型价格战没有退路",
+        "note": "Track major customer discounts and the scale of model price cuts",
+        "source": "infoq_ai_zh",
+        "why": "",
+        "url": "https://www.infoq.cn/article/ejtljxPixrIuUsGYi5xa?utm_source=rss&utm_medium=article"
+      },
+      {
+        "title": "AI Updates Today (October 2026) – Latest AI Model…",
+        "note": "Compare API prices and version updates across providers",
+        "source": "Llm-Stats",
+        "why": "",
+        "url": "https://llm-stats.com/llm-updates"
+      },
+      {
+        "title": "电子布供需紧平衡，龙头业绩大增，加速产能扩张",
+        "note": "Assess the impact of electronic fiberglass cloth price increases on PCB costs",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/newsflashes/4046172835337096?f=rss"
+      },
+      {
+        "title": "Release Notes - Docs - Grok API Documentation - Sp…",
+        "note": "Calculate Grok 4.5 input and output invocation costs",
+        "source": "Docs",
+        "why": "",
+        "url": "https://docs.x.ai/developers/release-notes"
+      },
+      {
+        "title": "「微至航空」完成近亿元A轮融资，“云熊”累计飞行超12000公里，已获特许飞行证｜36氪首发",
+        "note": "Watch airworthiness certification and mass production investment after financing",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/p/4044989810692999?f=rss"
+      }
+    ],
+    "media": [
+      {
+        "title": "Google opens Android development to third-party AI…",
+        "note": "Integrate third-party coding agents in Android Studio",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/"
+      },
+      {
+        "title": "Cocktail-party audio as a reverse Turing test: hum…",
+        "note": "Test target speaker identification in noisy speech",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xhuado/cocktailparty_audio_as_a_reverse_turing_test/"
+      },
+      {
+        "title": "Mac Studio M5 Ultra 512gb Starts at $22,299.00 USD",
+        "note": "Assess hardware procurement costs for local large models",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhu3b0/mac_studio_m5_ultra_512gb_starts_at_2229900_usd/"
+      },
+      {
+        "title": "List of suggestions for Gemma 5.",
+        "note": "Propose a new Gemma architecture and inference improvement plan",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhtg61/list_of_suggestions_for_gemma_5/"
+      },
+      {
+        "title": "Voice AI in vogue: Nvidia releases new open transc…",
+        "note": "Transcribe recordings in 40 languages offline",
+        "source": "techcrunch_ai",
+        "why": "",
+        "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "GitHub Octoverse 2026",
+        "note": "Watch for AI code growth concealing maintenance risks",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
+      },
+      {
+        "title": "AI agents hacked Anthropic, maker of arguably the…",
+        "note": "Investigate internal data exposure caused by third-party software",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
+      },
+      {
+        "title": "CPT’d Qwen9B on Polish legal data. How to make it…",
+        "note": "Add chat reasoning and function calling capabilities to legal models",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xi21f9/cptd_qwen9b_on_polish_legal_data_how_to_make_it/"
+      },
+      {
+        "title": "xAI is buying out homeowners who promise not to su…",
+        "note": "Watch for resident litigation risks caused by data center noise",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit"
+      },
+      {
+        "title": "AMA this Wednesday: Stephen “Cas” Casper, Harvard…",
+        "note": "Review AI incident governance and safety protection issues",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xhpnfs/ama_this_wednesday_stephen_cas_casper_harvard/"
+      }
+    ],
+    "tools": [
+      {
+        "title": "teng-lin/notebooklm-py",
+        "note": "Use Python to automate NotebookLM functions",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills star repository (19,962 ⭐), matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/teng-lin/notebooklm-py"
+      },
+      {
+        "title": "MetcalfSolutions/Satori",
+        "note": "Call a local smart assistant in a CLI or IDE",
+        "source": "github_awesome_claude",
+        "why": "GitHub topic:awesome-claude growing (114 ⭐), worth seeing early, matches your interests in \"chat / claude / code\" · View",
+        "url": "https://github.com/MetcalfSolutions/Satori"
+      },
+      {
+        "title": "nanocoai/nanoclaw",
+        "note": "Use containers to securely run multi-channel messaging agents",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills star repository (31,044 ⭐), matches your interests in \"agent / agents / anthropic\" · View",
+        "url": "https://github.com/nanocoai/nanoclaw"
+      },
+      {
+        "title": "BotGauge",
+        "note": "Run adaptive red-team tests on agents",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI featured · 209 votes · 34 comments, matches your interests in \"agent / agents / eval\" · View",
+        "url": "https://www.producthunt.com/products/botgauge-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Trigger.dev: Webhooks for your AI agents",
+        "note": "Use Webhook to connect agents to services such as Slack",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI featured · 124 votes · 7 comments, matches your interests in \"agent / agents / code\" · View",
+        "url": "https://www.producthunt.com/products/trigger-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "frameworks"
+  ],
+  "source_flags": [
+    "fresh_but_empty:2",
+    "evidence_rewritten:GLOBAL_2-84c4b942c0d121b8",
+    "evidence_rewritten:GLOBAL_2-7cb6bfddd9f7e1b9",
+    "evidence_rewritten:GLOBAL_2-60ffa6fcc7aecefc",
+    "evidence_rewritten:GLOBAL_2-0a82f1f3c9b9304e",
+    "critic_missed:cluster-299676923c5a3787"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}
