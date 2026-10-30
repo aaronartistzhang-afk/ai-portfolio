@@ -69,7 +69,7 @@
       "id": "arxiv",
       "tier": "independent_validation",
       "type": "research",
-      "host": "export.arxiv.org",
+      "host": "rss.arxiv.org",
       "status": "ok"
     },
     {
