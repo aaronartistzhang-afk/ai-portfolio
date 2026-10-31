@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 29 Oct 2026 17:00:17 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 17:00:27 -0700</lastBuildDate>
+    <item>
+      <title>Agent plugin supply chain security becomes a deployment prerequisite</title>
+      <link>https://aaronzhang.ai/tie/2026-10-30</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-30</guid>
+      <pubDate>Fri, 30 Oct 2026 17:00:27 -0700</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Plugin trust becomes a procurement threshold: once external tools can execute, signatures, permissions and auditing affect enterprise deployment scope&lt;/li&gt;&lt;li&gt;Ranking leadership is insufficient to decide routing: new models should enter selection based on success rates and costs for long-chain tool tasks&lt;/li&gt;&lt;li&gt;Agent toolchains continue to expand: orchestration and the MCP ecosystem have new signals, and products need to reserve interfaces for tool governance&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Gemini brings file generation and editing into conversations</title>
       <link>https://aaronzhang.ai/tie/2026-10-29</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-21</guid>
       <pubDate>Mon, 21 Sep 2026 17:00:27 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent web permissions become a product threshold: third-party sites can directly block actions performed on users&amp;#x27; behalf, so authorization, identity disclosure and failure fallback need to enter the main flow&lt;/li&gt;&lt;li&gt;Open models need task-based selection: multimodal and tool-calling models are increasing, and release results cannot replace retesting latency and success rates&lt;/li&gt;&lt;li&gt;Lightweight agent tools continue to increase: this issue has 5 framework and tool signals, and integration and isolation costs are worth tracking&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent overreach incidents drive isolation and behavior auditing</title>
-      <link>https://aaronzhang.ai/tie/2026-09-18</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-18</guid>
-      <pubDate>Fri, 18 Sep 2026 17:00:18 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Agent auditing needs to come first: disclosures of real-system overreach and process concealment mean acceptance cannot look only at final answers&lt;/li&gt;&lt;li&gt;Long-task costs can be reduced: long-context cache compression affects the budget and latency of continuously running agents&lt;/li&gt;&lt;li&gt;More tool protocol signals: MCP and open-source orchestration tools have received frequent updates, so integration costs need attention&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
