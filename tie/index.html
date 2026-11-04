@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>AI Daily — 2026-11-02</title>
-<meta name="description" content="OpenAI released LifeVal, which covers everyday tasks; public scores on SWE-Bench Pro are significantly lower than on older benchmarks, and GDPx expands to high-">
+<title>AI Daily — 2026-11-03</title>
+<meta name="description" content="OpenAI has raised bug bounties and is preparing a new round of security sprints, increasing the intensity of investment in product security testing.">
 <link rel="canonical" href="https://aaronzhang.ai/tie/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="aaronzhang.ai">
-<meta property="og:title" content="AI Daily — 2026-11-02">
-<meta property="og:description" content="OpenAI released LifeVal, which covers everyday tasks; public scores on SWE-Bench Pro are significantly lower than on older benchmarks, and GDPx expands to high-">
+<meta property="og:title" content="AI Daily — 2026-11-03">
+<meta property="og:description" content="OpenAI has raised bug bounties and is preparing a new round of security sprints, increasing the intensity of investment in product security testing.">
 <meta property="og:url" content="https://aaronzhang.ai/tie/">
 <meta property="og:image" content="https://aaronzhang.ai/card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -49,24 +49,24 @@
 
   <div class="tiegrid">
   <article class="tie">
-    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-11-02</p>
+    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-11-03</p>
     <h1>AI Daily</h1>
     <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
     93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
 
     <p class="runbar"><span class="live"></span> <b>~3 min read</b>
-      &middot; covering 30&ndash;2 November &middot; updated weekdays, 17:10 Pacific</p>
+      &middot; covering 31&ndash;3 November &middot; updated weekdays, 17:10 Pacific</p>
 
     <div class="ribbon">
-      <p><span class="lbl">Deadlines</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>9d</b> OpenAI ends direct supply to Cursor</a> <span class="sep">·</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener"><b>17d</b> OpenAI access policy update</a> <span class="sep">·</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener"><b>240d</b> Mandatory L3/L4 national standard takes effect</a> <a class="more" href="#deadlines">see all 5 &rarr;</a></p>
+      <p><span class="lbl">Deadlines</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>8d</b> OpenAI direct supply to Cursor ends</a> <span class="sep">·</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener"><b>16d</b> OpenAI access policy update</a> <span class="sep">·</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>27d</b> Gemini 2.5 API automatic routing</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
     </div>
 
     <section class="lead">
       <h2 id="the-read">The read</h2>
       <ul>
-        <li>Old leaderboards are insufficient for agent acceptance: the gap in public scores on complex tasks is widening, and products need their own end-to-end acceptance testing <a class="xref" href="#t1">#1</a></li>
-        <li>Context management will widen experience gaps: skill reuse and long-conversation handoffs both affect task cost and response speed <a class="xref" href="#t3">#3</a></li>
-        <li>More signals of cost changes: this issue has accumulated 5 signals on pricing and costs, so room is needed for model switching </li>
+        <li>Agent permission experience becomes a product threshold: as cross-app execution entry points increase, confirmation, revocation, and auditing need to become default interactions <a class="xref" href="#t2">#2</a></li>
+        <li>Cost per task faces greater scrutiny: revenue growth has not eliminated compute spending, and long-chain agents must control call budgets <a class="xref" href="#t3">#3</a></li>
+        <li>Voice entry points continue to expand: continuous audio understanding has entered testing, and live products need to plan for accidental activation and privacy boundaries </li>
       </ul>
     </section>
 
@@ -74,89 +74,89 @@
       &middot; <b>1</b> monitoring</p>
 
     <article class="trend major" id="t1">
-      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Evaluation frameworks</span></p>
-      <h2 id="real-world-task-evaluation-becomes-a-basis-for-product-selection">Real-world task evaluation becomes a basis for product selection</h2>
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Safety &amp; governance</span></p>
+      <h2 id="openai-increases-investment-in-product-security">OpenAI increases investment in product security</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent, 1 press</span></p>
-      <p class="body">OpenAI released LifeVal, which covers everyday tasks; public scores on SWE-Bench Pro are significantly lower than on older benchmarks, and GDPx expands to high-value professional tasks.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Selection and release acceptance should add end-to-end testing that reflects an organization&#x27;s own tasks, and record success rates, human takeover rates, and cost per task. High scores on older leaderboards cannot be directly extrapolated into delivery capability for complex processes.</p>
+        <span>·</span> <span>Well sourced &mdash; 2 company, 1 independent</span></p>
+      <p class="body">OpenAI has raised bug bounties and is preparing a new round of security sprints, increasing the intensity of investment in product security testing.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Include external vulnerability feedback, permission audits, and emergency fixes in the product release cycle, rather than relying only on pre-launch reviews. Enterprise-facing features need to clearly explain data boundaries and security response responsibilities.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
       <div class="ev t1">
         <p class="ev-h"><span class="tier">Company</span>
           <span class="used">· it happened</span>
-          <a href="https://openai.com/index/lifeval" rel="nofollow noopener">openai.com</a></p>
-        <p class="quote">&ldquo;Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks&rdquo;</p>
+          <a href="https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses&rdquo;</p>
       </div>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
           <span class="used">· why it matters</span>
-          <a href="https://labs.scale.com/leaderboard/swe_bench_pro" rel="nofollow noopener">labs.scale.com</a></p>
-        <p class="quote">&ldquo;top models score around 23% on the SWE-Bench Pro public set, compared to 70%+ on SWE-Bench Verified&rdquo;</p>
+          <a href="https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses&rdquo;</p>
       </div>
       <div class="ev t2">
         <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities" rel="nofollow noopener">newsletter.semianalysis.com</a></p>
-        <p class="quote">&ldquo;GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains&rdquo;</p>
+          <a href="https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security&rdquo;</p>
       </div>
       </details>
     </article>
     <article class="trend watch" id="t2">
-      <p class="rank"><span class="tag">#2 WATCH</span> <span>Hardware &amp; infra</span></p>
-      <h2 id="compute-expansion-is-constrained-by-the-power-grid-and-communities">Compute expansion is constrained by the power grid and communities</h2>
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Agents and tooling</span></p>
+      <h2 id="siri-opens-third-party-app-actions">Siri opens third-party app actions</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent, 1 press</span></p>
-      <p class="body">OpenAI launched the Grid Protectors Program; resistance to data center permits and xAI pollution litigation show that power supply and community acceptance now affect expectations for compute supply.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Products that depend on large-scale inference should include regional capacity, power supply risks, and supplier diversity in their roadmaps, rather than estimating costs from list prices alone. External commitments on latency, quotas, and pricing need room for supply fluctuations.</p>
+        <span>·</span> <span>No company statement yet &mdash; 3 press</span></p>
+      <p class="body">Apple reportedly allows Siri to perform actions in third-party apps and is testing continuous audio understanding on Apple Watch.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>If a product relies on mobile task execution, it should design discoverable action interfaces, clear user confirmation, and reversible records in advance. Voice and ambient audio increase entry frequency, while also increasing accidental activation and privacy design costs.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
-      <div class="ev t1">
-        <p class="ev-h"><span class="tier">Company</span>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it happened</span>
-          <a href="https://openai.com/index/grid-protectors-program" rel="nofollow noopener">openai.com</a></p>
-        <p class="quote">&ldquo;work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs&rdquo;</p>
+          <a href="https://theverge.com/tech/1025694/apple-siri-ai-third-party-apps" rel="nofollow noopener">theverge.com</a></p>
+        <p class="quote">&ldquo;Apple will now let Siri AI perform actions across third-party apps.&rdquo;</p>
       </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· why it matters</span>
-          <a href="https://newsletter.semianalysis.com/p/the-datacenter-backlash-goes-bipartisan" rel="nofollow noopener">newsletter.semianalysis.com</a></p>
-        <p class="quote">&ldquo;a prolonged Texas permit freeze is now the biggest single risk to the US&rdquo;</p>
+          <a href="https://theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta" rel="nofollow noopener">theverge.com</a></p>
+        <p class="quote">&ldquo;Siri can tune into the Apple Watch&#x27;s mic with Audio Intelligence features&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward" rel="nofollow noopener">techcrunch.com</a></p>
-        <p class="quote">&ldquo;An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.&rdquo;</p>
+          <a href="https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Apple Watch’s AI features for rewinding and recapping conversations begin beta testing&rdquo;</p>
       </div>
       </details>
     </article>
     <article class="trend watch" id="t3">
-      <p class="rank"><span class="tag">#3 WATCH</span> <span>Agents and tooling</span></p>
-      <h2 id="agent-skill-packages-enter-team-workflows">Agent skill packages enter team workflows</h2>
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Funding and M&amp;A</span></p>
+      <h2 id="frontier-model-companies-face-pressure-on-compute-economics">Frontier model companies face pressure on compute economics</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent, 1 press</span></p>
-      <p class="body">Figma&#x27;s PM team uses 31 skill repositories, Anthropic introduced message threads, and directories of skills and plugins for cross-agent tools continue to grow.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Products should treat skills as configurable work units rather than prompt attachments: they need versions, permissions, input-output contracts, and outcome monitoring. The cost and latency of long tasks will depend more on context management and orchestration quality, rather than only on the selected model.</p>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 2 press</span></p>
+      <p class="body">Multiple reports focus on Anthropic&#x27;s rapid revenue growth alongside widening losses, as well as its long-term compute contract commitments.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Product pricing should be tested against the cost of completing tasks and retention value, rather than expanding based only on call volume. Prepare model tiers, caching, and budget controls for high-frequency or long-chain agents to avoid worsening gross margins as scale grows.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
       <div class="ev t2">
         <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· why it matters</span>
-          <a href="https://lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every" rel="nofollow noopener">lennysnewsletter.com</a></p>
-        <p class="quote">&ldquo;PM OS, a 31-skill repo used by 60+ PMs, and AutoXP, an agent that runs growth experiments with one human checkpoint&rdquo;</p>
-      </div>
-      <div class="ev t1">
-        <p class="ev-h"><span class="tier">Company</span>
-          <span class="used">· it happened</span>
-          <a href="https://claude.com/blog/message-threads" rel="nofollow noopener">claude.com</a></p>
-        <p class="quote">&ldquo;智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。&rdquo;</p>
+          <a href="https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· it&#x27;s spreading</span>
-          <a href="https://github.com/wshobson/agents" rel="nofollow noopener">github.com</a></p>
-        <p class="quote">&ldquo;Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot&rdquo;</p>
+          <span class="used">· how it landed</span>
+          <a href="https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Anthropic&#x27;s compute margins should be getting better, they’re getting worse.&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://x.com/rohanpaul_ai/status/2117368258571784296" rel="nofollow noopener">x.com</a></p>
+        <p class="quote">&ldquo;算力与基础设施合同承诺总额约 $895.4B，其中 $447.5B 须在 2031 年前支付&rdquo;</p>
       </div>
       </details>
     </article>
@@ -164,79 +164,80 @@
     <section class="mod">
       <h3 id="on-the-radar">On the radar</h3>
       <ul class="bullets">
-      <li><b>Permission and accountability controls for agent deployment are tightening</b> &mdash; Goldman Sachs has tightened access to coding tools for non-engineering roles; ChatGPT account takeover disclosures and Claude&#x27;s restrictions on game cloning both highlight boundaries around agent identity, permissions, and use cases.</li>
+      <li><b>NVIDIA compute supply faces regional constraints</b> &mdash; Reports say NVIDIA has asked some cloud customers to reduce their China business, while Rubin production hardware has begun shipping with updated specifications.</li>
       </ul>
     </section>
 
     <section class="mod">
       <h3 id="since-last-issue">Since last issue</h3>
       <ul class="bullets">
-        <li>5 items, including Gemini 4 Carbon, have left this issue.</li>
-        <li>9 days remain until OpenAI ends direct supply to Cursor.</li>
+        <li>Real-task evaluations as a basis for product selection did not continue this issue.</li>
+        <li>OpenAI direct supply to Cursor ends in 8 days.</li>
       </ul>
     </section>
 
 
     <section class="also">
-      <h3 id="also-worth-knowing">Also worth knowing &middot; 25</h3>
+      <h3 id="also-worth-knowing">Also worth knowing &middot; 26</h3>
       <p class="sub">Everything else that made the cut today but was not big enough to lead.
       Grouped by desk, open only what you need.</p>
       <details class="cat" id="deadlines">
-        <summary><span class="cname">Deadlines ahead</span><span class="cn">5</span></summary>
+        <summary><span class="cname">Deadlines ahead</span><span class="cn">6</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><span class="dd">9d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI ends direct supply to Cursor</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end Cursor&#x27;s model access on November 12. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">17d</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener">OpenAI access policy update</a> &middot; 2026-11-20</p><p class="n">Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">240d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory L3/L4 national standard takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover</p></div>
-        <div class="r"><p class="t"><span class="dd">240d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027. Relevant autonomo</p></div>
-        <div class="r"><p class="t"><span class="dd">394d</span> <a href="https://theagentindex.io/guides/eu-ai-act-timeline/" rel="nofollow noopener">EU AI Act high-risk rules</a> &middot; 2027-12-02</p><p class="n">The first clear applicability milestone for high-risk rules. Source</p></div>
-        </div>
-      </details>
-      <details class="cat" id="pricing">
-        <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
-        <div class="rows">
-        <div class="r"><p class="t"><a href="https://www.qbitai.com/2026/11/507107.html" rel="nofollow noopener">小米开源了个150元的AI小玩意，火到配件都涨价了</a></p><p class="n">150 yuan open-source hardware drives accessory price increases</p><p class="m">QbitAI 量子位</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xm33gr/yet_another_reason_to_self_host_anthropic_has/" rel="nofollow noopener">Yet another reason to self host: Anthropic has (ag…</a></p><p class="n">Claude further tightens reverse-engineering restrictions</p><p class="m">r/LocalLLaMA</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/MachineLearning/comments/1xlmffv/d_selfpromotion_thread/" rel="nofollow noopener">[D] Self-Promotion Thread</a></p><p class="n">Project submissions must state charges and pricing</p><p class="m">r/MachineLearning</p></div>
-        <div class="r"><p class="t"><a href="https://openai.com/index/introducing-gpt-6-1-sol/" rel="nofollow noopener">Introducing GPT-6.1 Sol | OpenAI</a></p><p class="n">GPT-6.1 opens first to paid work plans</p><p class="m">Openai</p></div>
-        <div class="r"><p class="t"><a href="https://36kr.com/p/4052338713056393?f=rss" rel="nofollow noopener">今日宜休王腾发布两款睡眠科技新品，对标Oura与Eight Sleep丨最前线</a></p><p class="n">Smart ring and temperature-controlled sleep products released</p><p class="m">36Kr</p></div>
+        <div class="r"><p class="t"><span class="dd">8d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI direct supply to Cursor ends</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end Cursor&#x27;s model access on November 12. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">16d</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener">OpenAI access policy update</a> &middot; 2026-11-20</p><p class="n">Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">27d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">239d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory L3/L4 national standard takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handov</p></div>
+        <div class="r"><p class="t"><span class="dd">239d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Automated Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027, and related autono</p></div>
+        <div class="r"><p class="t"><span class="dd">393d</span> <a href="https://theagentindex.io/guides/eu-ai-act-timeline/" rel="nofollow noopener">EU AI Act high-risk rules</a> &middot; 2027-12-02</p><p class="n">The first clear application date for high-risk rules. Source</p></div>
         </div>
       </details>
       <details class="cat" id="media">
         <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Nov/2/llm/" rel="nofollow noopener">llm 0.37</a></p><p class="n">LLM CLI can call GPT-6.1 models</p><p class="m">Simon Willison</p></div>
-        <div class="r"><p class="t"><a href="https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/" rel="nofollow noopener">Building Legal Agents When You Can&#x27;t See the Data…</a></p><p class="n">Legal agent tested on invisible client data</p><p class="m">Latent Space</p></div>
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2610.42135v1" rel="nofollow noopener">A Better Critic Matters for Distribution Matching…</a></p><p class="n">Stronger critic improves few-step distillation</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program" rel="nofollow noopener">OpenAI pitches data center power plants as a way t…</a></p><p class="n">Data centers can release power in emergencies</p><p class="m">The Verge</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xm0i9m/made_my_own_invoicing_dekstop_app_with_qwen_38/" rel="nofollow noopener">😃Made My Own Invoicing Dekstop App With Qwen 3.8 2…</a></p><p class="n">Local model generates a desktop invoicing application</p><p class="m">r/LocalLLaMA</p></div>
+        <div class="r"><p class="t"><a href="https://www.qbitai.com/2026/11/507419.html" rel="nofollow noopener">纯语音Personal Agent来了！或许，这就是乔布斯心中的Siri</a></p><p class="n">Use voice alone to have a personal assistant handle tasks</p><p class="m">QbitAI 量子位</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03605v1" rel="nofollow noopener">ufakzeka-kulak: Building and Evaluating a 31.6M-Pa…</a></p><p class="n">Transcribe Turkish while preserving punctuation and capitalization</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta" rel="nofollow noopener">Apple’s latest watchOS beta includes its new alway…</a></p><p class="n">Have a watch listen continuously and generate recaps</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates" rel="nofollow noopener">Indie games are missing launch dates because Steam…</a></p><p class="n">Allow more time for Steam review scheduling</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://www.infoq.cn/article/z1ZeGD2FDqi6xLvSJjSl?utm_source=rss&amp;utm_medium=article" rel="nofollow noopener">前迪士尼 AI 高管出任 CPO，Utopai Studios 技术布局再提速</a></p><p class="n">Accelerate AI product and technology development for film and television</p><p class="m">InfoQ 中国</p></div>
         </div>
       </details>
       <details class="cat" id="incidents">
         <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://openai.com/index/grid-protectors-program" rel="nofollow noopener">Introducing the Grid Protectors Program</a></p><p class="n">Power use at a compute campus creates grid pressure</p><p class="m">OpenAI</p></div>
-        <div class="r"><p class="t"><a href="https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times" rel="nofollow noopener">The New York Times sues Brave web browser for AI s…</a></p><p class="n">Brave sued over AI scraping that bypasses paywalls</p><p class="m">The Verge</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xm0uy0/running_uncensored_deepseekv41flash1017_on_a_12/" rel="nofollow noopener">Running UNCENSORED DeepSeek-V4.1-Flash-1017 on a 1…</a></p><p class="n">Uncensored quantized model reduces refusals to zero</p><p class="m">r/LocalLLaMA</p></div>
-        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" rel="nofollow noopener">How We Took Over ChatGPT Accounts</a></p><p class="n">HTML preview vulnerability can take over accounts</p><p class="m">Simon Willison</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/ivankovic/omnidiff" rel="nofollow noopener">Show HN: OmniDiff – Opensource, super fast, conten…</a></p><p class="n">Multi-format diff tools need to prevent incorrect change detection</p><p class="m">Hacker News</p></div>
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Nov/3/october-newsletter/" rel="nofollow noopener">October sponsors-only newsletter</a></p><p class="n">Watch for security vulnerabilities caused by vibe coding</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03641v1" rel="nofollow noopener">From Natural Language to Exact Cover: A Neuro-Symb…</a></p><p class="n">Avoid relying only on chain of thought to solve zebra puzzles</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03622v1" rel="nofollow noopener">D&amp;A: Decoupling Description and Assessment Enables…</a></p><p class="n">Separate description from evaluation to reduce reward hallucinations</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03599v1" rel="nofollow noopener">Should We Combine Our Data? Algorithms and Limits…</a></p><p class="n">Evaluate privately before deciding whether to merge data</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://news.ycombinator.com/item?id=50354336" rel="nofollow noopener">Gitbook Breached</a></p><p class="n">Include document platforms in leak response procedures</p><p class="m">Hacker News</p></div>
         </div>
       </details>
       <details class="cat" id="tools">
         <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://github.com/HoangNguyen0403/agent-skills-standard" rel="nofollow noopener">HoangNguyen0403/agent-skills-standard</a></p><p class="n">Constrain coding agents with skill specifications</p><p class="m">GitHub · topic:cursor-rules</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1xmbdpi/anyone_got_their_hands_on_ramps_glass/" rel="nofollow noopener">anyone got their hands on Ramp&#x27;s Glass?</a></p><p class="n">Reuse saved skills in team tools</p><p class="m">r/PromptEngineering</p></div>
-        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1xm8gh0/do_you_use_a_meta_prompt_to_build_your_expert/" rel="nofollow noopener">Do you use a meta prompt to build your expert prom…</a></p><p class="n">Use meta-prompts to generate expert prompts in batches</p><p class="m">r/PromptEngineering</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/xmind?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Xmind 2027</a></p><p class="n">Collaboratively develop ideas in a mind map</p><p class="m">Product Hunt · AI</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/cedric?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Cedric AI for Meetings</a></p><p class="n">Have AI attend meetings and give presentations and Q&amp;A</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/danielvm-git/bigpowers" rel="nofollow noopener">danielvm-git/bigpowers</a></p><p class="n">Apply engineering methods to constrain independent development agents</p><p class="m">GitHub · topic:cursor-rules</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/tt-a1i/archify" rel="nofollow noopener">tt-a1i/archify</a></p><p class="n">Turn an idea or codebase into an interactive diagram</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1xn45s3/how_to_structure_data_packages_for_system_reboots/" rel="nofollow noopener">How to Structure Data Packages for System Reboots…</a></p><p class="n">Package context to restart AI and prevent memory drift</p><p class="m">r/PromptEngineering</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/teamily-ai-human-ai-social-network?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Teamily AI</a></p><p class="n">Collaborate with people and agents in the same messaging space</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/machinemail?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">MachineMail</a></p><p class="n">Create dedicated email inboxes for AI agents</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+      <details class="cat" id="frameworks">
+        <summary><span class="cname">Agent frameworks</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/nanocoai/nanoclaw" rel="nofollow noopener">nanocoai/nanoclaw</a></p><p class="n">Use containers to isolate multi-channel agents</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://news.ycombinator.com/item?id=50354336" rel="nofollow noopener">Gitbook Breached</a></p><p class="n">Include document platforms in leak response procedures</p><p class="m">Hacker News</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/machinemail?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">MachineMail</a></p><p class="n">Create dedicated email inboxes for AI agents</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://x.com/rauchg/status/2117419661654720671" rel="nofollow noopener">So bullish on WebMCP https://t.co/5FjPcItSW4</a></p><p class="n">Track WebMCP expansion of web agent capabilities</p><p class="m">@rauchg</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/xmind?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Xmind 2027</a></p><p class="n">Upgrade mind maps into AI collaboration spaces</p><p class="m">Product Hunt · AI</p></div>
         </div>
       </details>
     </section>
 
-    <p class="tiefoot">Read 481 stories across
+    <p class="tiefoot">Read 543 stories across
       93 sources today and published 3.
       <a href="/tie/archive">Archive</a> &middot;
-      <a href="/tie/2026-11-02.json">This issue as data</a> &middot;
+      <a href="/tie/2026-11-03.json">This issue as data</a> &middot;
       <a href="/tie/sources">What it reads</a></p>
   </article>
 
@@ -253,9 +254,9 @@
       <h2>On this page</h2>
       <nav class="toc">
         <a href="#the-read">The read</a>
-        <a href="#real-world-task-evaluation-becomes-a-basis-for-product-selection">Real-world task evaluation becomes a basis for product selection</a>
-        <a href="#compute-expansion-is-constrained-by-the-power-grid-and-communities">Compute expansion is constrained by the power grid and communities</a>
-        <a href="#agent-skill-packages-enter-team-workflows">Agent skill packages enter team workflows</a>
+        <a href="#openai-increases-investment-in-product-security">OpenAI increases investment in product security</a>
+        <a href="#siri-opens-third-party-app-actions">Siri opens third-party app actions</a>
+        <a href="#frontier-model-companies-face-pressure-on-compute-economics">Frontier model companies face pressure on compute economics</a>
         <a href="#on-the-radar">On the radar</a>
         <a href="#since-last-issue">Since last issue</a>
         <a href="#also-worth-knowing">Also worth knowing</a>

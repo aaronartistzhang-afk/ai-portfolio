@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>AI Daily — 2026-11-03</title>
+<meta name="description" content="OpenAI has raised bug bounties and is preparing a new round of security sprints, increasing the intensity of investment in product security testing.">
+<link rel="canonical" href="https://aaronzhang.ai/tie/2026-11-03">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="aaronzhang.ai">
+<meta property="og:title" content="AI Daily — 2026-11-03">
+<meta property="og:description" content="OpenAI has raised bug bounties and is preparing a new round of security sprints, increasing the intensity of investment in product security testing.">
+<meta property="og:url" content="https://aaronzhang.ai/tie/2026-11-03">
+<meta property="og:image" content="https://aaronzhang.ai/card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aaronzhang42">
+<meta name="twitter:creator" content="@aaronzhang42">
+<link rel="alternate" type="application/rss+xml" title="AI Daily" href="https://aaronzhang.ai/tie/feed.xml">
+<link rel="stylesheet" href="/tie/tie.css">
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <a class="name" href="/">
+      <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="64" cy="64" r="13.5" fill="currentColor"/><circle cx="93.1" cy="34.9" r="8.5" fill="currentColor"/><circle cx="31.7" cy="87" r="8.5" fill="currentColor"/>
+        <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.18" stroke-width="2"/>
+      </svg>
+      Aaron Zhang
+    </a>
+    <a href="/#writing">Writing</a>
+    <details class="menu">
+      <summary>AI Daily</summary>
+      <div class="menupanel">
+        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this US weekday</span></a>
+        <a href="/tie/archive?from=menu"><b>Archive</b><span>Every issue so far, quiet days included</span></a>
+        <a href="/tie/how-it-works?from=menu"><b>How it works</b><span>How the sources become three trends, in two pictures</span></a>
+        <a href="/tie/sources?from=menu"><b>What it reads</b><span>Every source and how much weight it carries</span></a>
+        <a href="/tie/data?from=menu"><b>Get it as data</b><span>A JSON file per issue. No key, no rate limit</span></a>
+        <a href="/tie/terms?from=menu"><b>Licence</b><span>MIT, and what that lets you do with the data</span></a>
+      </div>
+    </details>
+    <a href="/deck/?from=nav">Talk</a>
+    <a href="/about/">About</a>
+  </header>
+
+  <div class="tiegrid">
+  <article class="tie">
+    <p class="crumb"><a href="/tie/">AI Daily</a><span class="sep">/</span><a href="/tie/archive">Archive</a><span class="sep">/</span><span class="here">Issue</span> <span class="sep">&middot;</span> 2026-11-03</p>
+    <h1>AI Daily</h1>
+    <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
+    93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
+
+    <p class="runbar"><span class="live"></span> <b>~3 min read</b>
+      &middot; covering 31&ndash;3 November &middot; updated weekdays, 17:10 Pacific</p>
+
+    <div class="ribbon">
+      <p><span class="lbl">Deadlines</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener"><b>8d</b> OpenAI direct supply to Cursor ends</a> <span class="sep">·</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener"><b>16d</b> OpenAI access policy update</a> <span class="sep">·</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>27d</b> Gemini 2.5 API automatic routing</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
+    </div>
+
+    <section class="lead">
+      <h2 id="the-read">The read</h2>
+      <ul>
+        <li>Agent permission experience becomes a product threshold: as cross-app execution entry points increase, confirmation, revocation, and auditing need to become default interactions <a class="xref" href="#t2">#2</a></li>
+        <li>Cost per task faces greater scrutiny: revenue growth has not eliminated compute spending, and long-chain agents must control call budgets <a class="xref" href="#t3">#3</a></li>
+        <li>Voice entry points continue to expand: continuous audio understanding has entered testing, and live products need to plan for accidental activation and privacy boundaries </li>
+      </ul>
+    </section>
+
+    <p class="counts"><b>1</b> major &middot; <b>2</b> watch
+      &middot; <b>1</b> monitoring</p>
+
+    <article class="trend major" id="t1">
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Safety &amp; governance</span></p>
+      <h2 id="openai-increases-investment-in-product-security">OpenAI increases investment in product security</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 2 company, 1 independent</span></p>
+      <p class="body">OpenAI has raised bug bounties and is preparing a new round of security sprints, increasing the intensity of investment in product security testing.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Include external vulnerability feedback, permission audits, and emergency fixes in the product release cycle, rather than relying only on pre-launch reviews. Enterprise-facing features need to clearly explain data boundaries and security response responsibilities.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses&rdquo;</p>
+      </div>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· why it matters</span>
+          <a href="https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t2">
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Agents and tooling</span></p>
+      <h2 id="siri-opens-third-party-app-actions">Siri opens third-party app actions</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 3 press</span></p>
+      <p class="body">Apple reportedly allows Siri to perform actions in third-party apps and is testing continuous audio understanding on Apple Watch.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>If a product relies on mobile task execution, it should design discoverable action interfaces, clear user confirmation, and reversible records in advance. Voice and ambient audio increase entry frequency, while also increasing accidental activation and privacy design costs.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it happened</span>
+          <a href="https://theverge.com/tech/1025694/apple-siri-ai-third-party-apps" rel="nofollow noopener">theverge.com</a></p>
+        <p class="quote">&ldquo;Apple will now let Siri AI perform actions across third-party apps.&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta" rel="nofollow noopener">theverge.com</a></p>
+        <p class="quote">&ldquo;Siri can tune into the Apple Watch&#x27;s mic with Audio Intelligence features&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Apple Watch’s AI features for rewinding and recapping conversations begin beta testing&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t3">
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Funding and M&amp;A</span></p>
+      <h2 id="frontier-model-companies-face-pressure-on-compute-economics">Frontier model companies face pressure on compute economics</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 2 press</span></p>
+      <p class="body">Multiple reports focus on Anthropic&#x27;s rapid revenue growth alongside widening losses, as well as its long-term compute contract commitments.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Product pricing should be tested against the cost of completing tasks and retention value, rather than expanding based only on call volume. Prepare model tiers, caching, and budget controls for high-frequency or long-chain agents to avoid worsening gross margins as scale grows.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· how it landed</span>
+          <a href="https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Anthropic&#x27;s compute margins should be getting better, they’re getting worse.&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://x.com/rohanpaul_ai/status/2117368258571784296" rel="nofollow noopener">x.com</a></p>
+        <p class="quote">&ldquo;算力与基础设施合同承诺总额约 $895.4B，其中 $447.5B 须在 2031 年前支付&rdquo;</p>
+      </div>
+      </details>
+    </article>
+
+    <section class="mod">
+      <h3 id="on-the-radar">On the radar</h3>
+      <ul class="bullets">
+      <li><b>NVIDIA compute supply faces regional constraints</b> &mdash; Reports say NVIDIA has asked some cloud customers to reduce their China business, while Rubin production hardware has begun shipping with updated specifications.</li>
+      </ul>
+    </section>
+
+    <section class="mod">
+      <h3 id="since-last-issue">Since last issue</h3>
+      <ul class="bullets">
+        <li>Real-task evaluations as a basis for product selection did not continue this issue.</li>
+        <li>OpenAI direct supply to Cursor ends in 8 days.</li>
+      </ul>
+    </section>
+
+
+    <section class="also">
+      <h3 id="also-worth-knowing">Also worth knowing &middot; 26</h3>
+      <p class="sub">Everything else that made the cut today but was not big enough to lead.
+      Grouped by desk, open only what you need.</p>
+      <details class="cat" id="deadlines">
+        <summary><span class="cname">Deadlines ahead</span><span class="cn">6</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><span class="dd">8d</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI direct supply to Cursor ends</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end Cursor&#x27;s model access on November 12. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">16d</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener">OpenAI access policy update</a> &middot; 2026-11-20</p><p class="n">Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">27d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">239d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory L3/L4 national standard takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handov</p></div>
+        <div class="r"><p class="t"><span class="dd">239d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Automated Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027, and related autono</p></div>
+        <div class="r"><p class="t"><span class="dd">393d</span> <a href="https://theagentindex.io/guides/eu-ai-act-timeline/" rel="nofollow noopener">EU AI Act high-risk rules</a> &middot; 2027-12-02</p><p class="n">The first clear application date for high-risk rules. Source</p></div>
+        </div>
+      </details>
+      <details class="cat" id="media">
+        <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://www.qbitai.com/2026/11/507419.html" rel="nofollow noopener">纯语音Personal Agent来了！或许，这就是乔布斯心中的Siri</a></p><p class="n">Use voice alone to have a personal assistant handle tasks</p><p class="m">QbitAI 量子位</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03605v1" rel="nofollow noopener">ufakzeka-kulak: Building and Evaluating a 31.6M-Pa…</a></p><p class="n">Transcribe Turkish while preserving punctuation and capitalization</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta" rel="nofollow noopener">Apple’s latest watchOS beta includes its new alway…</a></p><p class="n">Have a watch listen continuously and generate recaps</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates" rel="nofollow noopener">Indie games are missing launch dates because Steam…</a></p><p class="n">Allow more time for Steam review scheduling</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://www.infoq.cn/article/z1ZeGD2FDqi6xLvSJjSl?utm_source=rss&amp;utm_medium=article" rel="nofollow noopener">前迪士尼 AI 高管出任 CPO，Utopai Studios 技术布局再提速</a></p><p class="n">Accelerate AI product and technology development for film and television</p><p class="m">InfoQ 中国</p></div>
+        </div>
+      </details>
+      <details class="cat" id="incidents">
+        <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Nov/3/october-newsletter/" rel="nofollow noopener">October sponsors-only newsletter</a></p><p class="n">Watch for security vulnerabilities caused by vibe coding</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03641v1" rel="nofollow noopener">From Natural Language to Exact Cover: A Neuro-Symb…</a></p><p class="n">Avoid relying only on chain of thought to solve zebra puzzles</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03622v1" rel="nofollow noopener">D&amp;A: Decoupling Description and Assessment Enables…</a></p><p class="n">Separate description from evaluation to reduce reward hallucinations</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.03599v1" rel="nofollow noopener">Should We Combine Our Data? Algorithms and Limits…</a></p><p class="n">Evaluate privately before deciding whether to merge data</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://news.ycombinator.com/item?id=50354336" rel="nofollow noopener">Gitbook Breached</a></p><p class="n">Include document platforms in leak response procedures</p><p class="m">Hacker News</p></div>
+        </div>
+      </details>
+      <details class="cat" id="tools">
+        <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/danielvm-git/bigpowers" rel="nofollow noopener">danielvm-git/bigpowers</a></p><p class="n">Apply engineering methods to constrain independent development agents</p><p class="m">GitHub · topic:cursor-rules</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/tt-a1i/archify" rel="nofollow noopener">tt-a1i/archify</a></p><p class="n">Turn an idea or codebase into an interactive diagram</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/PromptEngineering/comments/1xn45s3/how_to_structure_data_packages_for_system_reboots/" rel="nofollow noopener">How to Structure Data Packages for System Reboots…</a></p><p class="n">Package context to restart AI and prevent memory drift</p><p class="m">r/PromptEngineering</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/teamily-ai-human-ai-social-network?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Teamily AI</a></p><p class="n">Collaborate with people and agents in the same messaging space</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/machinemail?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">MachineMail</a></p><p class="n">Create dedicated email inboxes for AI agents</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+      <details class="cat" id="frameworks">
+        <summary><span class="cname">Agent frameworks</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/nanocoai/nanoclaw" rel="nofollow noopener">nanocoai/nanoclaw</a></p><p class="n">Use containers to isolate multi-channel agents</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://news.ycombinator.com/item?id=50354336" rel="nofollow noopener">Gitbook Breached</a></p><p class="n">Include document platforms in leak response procedures</p><p class="m">Hacker News</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/machinemail?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">MachineMail</a></p><p class="n">Create dedicated email inboxes for AI agents</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://x.com/rauchg/status/2117419661654720671" rel="nofollow noopener">So bullish on WebMCP https://t.co/5FjPcItSW4</a></p><p class="n">Track WebMCP expansion of web agent capabilities</p><p class="m">@rauchg</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/xmind?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Xmind 2027</a></p><p class="n">Upgrade mind maps into AI collaboration spaces</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+    </section>
+
+    <p class="tiefoot">Read 543 stories across
+      93 sources today and published 3.
+      <a href="/tie/archive">Archive</a> &middot;
+      <a href="/tie/2026-11-03.json">This issue as data</a> &middot;
+      <a href="/tie/sources">What it reads</a></p>
+  </article>
+
+    <aside class="rail">
+      <h2>AI Daily</h2>
+      <nav>
+        <a href="/tie/">Today&#x27;s issue</a>
+        <a href="/tie/archive">Archive</a>
+        <a href="/tie/how-it-works">How it works</a>
+        <a href="/tie/sources">What it reads</a>
+        <a href="/tie/data">Get it as data</a>
+        <a href="/tie/terms">Licence</a>
+      </nav>
+      <h2>On this page</h2>
+      <nav class="toc">
+        <a href="#the-read">The read</a>
+        <a href="#openai-increases-investment-in-product-security">OpenAI increases investment in product security</a>
+        <a href="#siri-opens-third-party-app-actions">Siri opens third-party app actions</a>
+        <a href="#frontier-model-companies-face-pressure-on-compute-economics">Frontier model companies face pressure on compute economics</a>
+        <a href="#on-the-radar">On the radar</a>
+        <a href="#since-last-issue">Since last issue</a>
+        <a href="#also-worth-knowing">Also worth knowing</a>
+      </nav>
+      <a class="back" href="/">&larr; aaronzhang.ai</a>
+    </aside>
+  </div>
+
+  <footer>
+    Aaron Zhang ·
+    <a href="/#writing">Writing</a> ·
+    <a href="/tie/">AI Daily</a> ·
+    <a href="/deck/">Talk</a> ·
+    <a href="/about/">About</a> ·
+    <a href="https://x.com/aaronzhang42">X</a> ·
+    <a href="https://github.com/aaronartistzhang-afk">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/aaronzhangai/">LinkedIn</a> ·
+    <a href="mailto:aaronartistzhang@gmail.com">Email</a> ·
+    <a href="/tie/feed.xml">RSS</a>
+  </footer>
+
+</main>
+<script>
+  // The menu is a <details>: it opens, closes and takes keyboard focus without
+  // this. All that is missing natively is click-away and Escape.
+  (function () {
+    var shut = function (skip) {
+      document.querySelectorAll('header.site .menu[open]').forEach(function (d) {
+        if (!skip || !d.contains(skip)) d.open = false;
+      });
+    };
+    document.addEventListener('click', function (e) { shut(e.target); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(null); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a693901685644241abd983662d731b5f"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

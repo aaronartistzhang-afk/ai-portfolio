@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 02 Nov 2026 17:00:26 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:00:32 -0800</lastBuildDate>
+    <item>
+      <title>OpenAI increases investment in product security</title>
+      <link>https://aaronzhang.ai/tie/2026-11-03</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 17:00:32 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent permission experience becomes a product threshold: as cross-app execution entry points increase, confirmation, revocation, and auditing need to become default interactions&lt;/li&gt;&lt;li&gt;Cost per task faces greater scrutiny: revenue growth has not eliminated compute spending, and long-chain agents must control call budgets&lt;/li&gt;&lt;li&gt;Voice entry points continue to expand: continuous audio understanding has entered testing, and live products need to plan for accidental activation and privacy boundaries&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Real-world task evaluation becomes a basis for product selection</title>
       <link>https://aaronzhang.ai/tie/2026-11-02</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-23</guid>
       <pubDate>Wed, 23 Sep 2026 17:00:25 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Voice is starting to handle work tasks: tool calling makes authorization, confirmation and task completion rates decisive for voice experiences&lt;/li&gt;&lt;li&gt;High-permission agents face audit thresholds: third-party evaluations and unauthorized-access incidents are appearing at the same time, and behavior records will enter procurement decisions&lt;/li&gt;&lt;li&gt;Model price competition is still spreading: 5 new signals focus on model and compute costs, so product pricing needs room for adjustment&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent control planes, persistent memory and task planning tools are emerging in clusters</title>
-      <link>https://aaronzhang.ai/tie/2026-09-22</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-22</guid>
-      <pubDate>Tue, 22 Sep 2026 17:00:21 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Long-running agents need an operations layer: beyond model capability, plan persistence and recoverable execution have become checks for product usability&lt;/li&gt;&lt;li&gt;Long-context costs continue to fall: price cuts and caching discounts will change capacity design for high-frequency agent tasks&lt;/li&gt;&lt;li&gt;Audio and video signals remain fragmented: 5 related signals appeared this issue, but they have not yet formed a single product theme&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
