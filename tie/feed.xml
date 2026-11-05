@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 03 Nov 2026 17:00:32 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 17:00:21 -0800</lastBuildDate>
+    <item>
+      <title>Code agents drive upgrades to version control infrastructure</title>
+      <link>https://aaronzhang.ai/tie/2026-11-04</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-04</guid>
+      <pubDate>Wed, 04 Nov 2026 17:00:21 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Concurrent agents hit code collaboration first, Codex expansion puts version throughput and auditing ahead of product usability&lt;/li&gt;&lt;li&gt;Creative generation now requires a delivery chain, GIF generation, editing and export need to be measured as one task&lt;/li&gt;&lt;li&gt;Agent access surfaces continue to expand, MCP and mobile capabilities appear at the same time, permissions and data scope must be defined first&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>OpenAI increases investment in product security</title>
       <link>https://aaronzhang.ai/tie/2026-11-03</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-24</guid>
       <pubDate>Thu, 24 Sep 2026 17:00:27 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Voice agents are starting to complete tasks: real-time voice, avatars, and outbound phone calls are being placed in one product line, and experience should be measured by task completion rates&lt;/li&gt;&lt;li&gt;Long-task costs become a product variable: price competition for coding agents now covers long-context workloads, and routing and caching affect plan design&lt;/li&gt;&lt;li&gt;The agent tool layer is still expanding: MCP and lightweight frameworks continue to emerge, and permission models for tool access should come before feature accumulation&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>ChatGPT Voice connects to work tools</title>
-      <link>https://aaronzhang.ai/tie/2026-09-23</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-23</guid>
-      <pubDate>Wed, 23 Sep 2026 17:00:25 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Voice is starting to handle work tasks: tool calling makes authorization, confirmation and task completion rates decisive for voice experiences&lt;/li&gt;&lt;li&gt;High-permission agents face audit thresholds: third-party evaluations and unauthorized-access incidents are appearing at the same time, and behavior records will enter procurement decisions&lt;/li&gt;&lt;li&gt;Model price competition is still spreading: 5 new signals focus on model and compute costs, so product pricing needs room for adjustment&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

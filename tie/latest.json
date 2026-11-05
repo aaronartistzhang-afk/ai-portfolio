@@ -1,66 +1,107 @@
 {
   "schema_version": "1.0",
-  "date": "2026-11-03",
-  "executed_at": "2026-11-04T01:00:32.291289Z",
-  "run_id": "2026-11-01-ai_industry",
+  "date": "2026-11-04",
+  "executed_at": "2026-11-05T01:00:21.084825Z",
+  "run_id": "2026-11-02-ai_industry",
   "domain": "ai_industry",
   "locale": "en",
   "window": {
-    "from": "2026-11-01T12:00:32.291210+11:00",
-    "to": "2026-11-04T12:00:32.291210+11:00",
+    "from": "2026-11-02T12:00:21.084794+11:00",
+    "to": "2026-11-05T12:00:21.084794+11:00",
     "timezone": "Australia/Sydney",
     "days": 3
   },
-  "generated_at": "2026-11-04T12:00:32.291210+11:00",
+  "generated_at": "2026-11-05T12:00:21.084794+11:00",
   "status": "ok",
   "status_detail": null,
   "trends": [
     {
-      "canonical_id": "a66d3afa82554e53",
-      "run_trend_id": "GLOBAL_20261104_SAFETY_AND_GOVERNANCE_OPENAI_SECURITY_ASSURANCE",
-      "name": "OpenAI increases investment in product security",
-      "category": "safety_and_governance",
+      "canonical_id": "bdf56d6c0275a779",
+      "run_trend_id": "GLOBAL_20261105_DEVELOPER_EXPERIENCE_CODEX_GIT_INFRASTRUCTURE",
+      "name": "Code agents drive upgrades to version control infrastructure",
+      "category": "开发者体验",
       "primary_region": "全球",
       "secondary_regions": [],
-      "lifecycle_stage": "dormant",
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "high",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "OpenAI acquired Pierre and expanded Codex code understanding capabilities, while disclosing that it is building a Git-compatible backend for high-frequency agent development.",
+      "attention_driver": "Code agents increase the frequency of code changes, and concurrent execution creates new requirements for repository state, rule discovery and auditing.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/openai-to-acquire-pierre",
+          "quote": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+          "claim": "Supports that OpenAI expanded Codex's code building, understanding and review tools through the acquisition.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/openai-acquires-pierre-computer-company-to-make-git-keep-up-with-ai-coding-agents",
+          "quote": "OpenAI is buying Pierre Computer Company, the startup whose libraries already power the coding agent Codex.",
+          "claim": "Supports that Pierre's existing repository already served Codex, and the deal focuses on code agent workflows.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://openai.com/index/scaling-git-at-openai",
+          "quote": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+          "claim": "Supports that OpenAI has treated the development scale brought by Codex as a Git backend scaling issue.",
+          "source_tier": "primary_release",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-02T15:30:00Z",
+      "last_signal_update": "2026-11-04T18:41:03Z",
+      "so_what": "If a product allows agents to write code, it should make repository rules, isolated execution and auditable changes default capabilities. Beyond model capabilities, version control throughput will determine whether concurrent agents are usable."
+    },
+    {
+      "canonical_id": "173917b25abce61f",
+      "run_trend_id": "GLOBAL_20261105_AUDIO_VIDEO_AND_VOICE_IMAGES_26_GIF_CREATION",
+      "name": "ChatGPT adds prompt-based and image-based GIF generation",
+      "category": "音视频与语音",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
       "momentum": "accelerating",
       "impact_level": "medium",
       "opportunity_level": "medium",
       "confidence_level": "high",
-      "summary": "OpenAI has raised bug bounties and is preparing a new round of security sprints, increasing the intensity of investment in product security testing.",
-      "attention_driver": "High-value rewards and ongoing offensive and defensive activities make model and platform security a visible threshold in enterprise procurement.",
+      "summary": "OpenAI released Images 2.6, offering faster image generation, GIF creation, precise editing and new API controls.",
+      "attention_driver": "Moving image generation has entered a general-purpose conversational product directly, bringing lightweight creative asset production closer to everyday workflows.",
       "evidence": [
         {
-          "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-          "quote": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses",
-          "claim": "Supports reports that OpenAI has raised bug bounties and added reward mechanisms.",
+          "url": "https://openai.com/index/introducing-images-2-6",
+          "quote": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls",
+          "claim": "Supports that Images 2.6 adds GIF creation, precise editing and API controls.",
           "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-          "quote": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses",
-          "claim": "Supports reports that OpenAI continues to conduct targeted security strengthening tests.",
-          "source_tier": "primary_release",
+          "url": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model",
+          "quote": "users can create animated GIFs from text prompts",
+          "claim": "Supports that ChatGPT can generate animated GIFs through text prompts.",
+          "source_tier": "independent_validation",
           "used_for": "impact"
         },
         {
-          "url": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security",
-          "quote": "Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security",
-          "claim": "Independent reporting confirms that OpenAI has raised its maximum vulnerability reward and security investment.",
-          "source_tier": "independent_validation",
+          "url": "https://theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+          "quote": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot.",
+          "claim": "Supports that the feature accepts both prompts and uploaded photos as input.",
+          "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-11-02T18:00:00Z",
-      "last_signal_update": "2026-11-03T10:42:44Z",
-      "so_what": "Include external vulnerability feedback, permission audits, and emergency fixes in the product release cycle, rather than relying only on pre-launch reviews. Enterprise-facing features need to clearly explain data boundaries and security response responsibilities."
+      "first_detected": "2026-11-04T00:00:00Z",
+      "last_signal_update": "2026-11-04T19:44:20Z",
+      "so_what": "Creative products can connect generation, editing and format export into a single task, rather than only providing an image prompt box. The experience should be measured by editing success rates and delivery latency, rather than only first-pass generation results."
     },
     {
-      "canonical_id": "9de2062986191a92",
-      "run_trend_id": "GLOBAL_20261104_AGENTS_AND_TOOLING_SIRI_THIRD_PARTY_ACTIONS",
-      "name": "Siri opens third-party app actions",
-      "category": "agents_and_tooling",
+      "canonical_id": "7e302cbff631e8ca",
+      "run_trend_id": "GLOBAL_20261105_REGULATION_AND_POLICY_SCHOOL_AI_SEARCH_BUNDLING",
+      "name": "Backlash over tying schools' AI opt-out rights to search services",
+      "category": "监管与政策",
       "primary_region": "全球",
       "secondary_regions": [],
       "lifecycle_stage": "emerging",
@@ -68,246 +109,208 @@
       "impact_level": "medium",
       "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "Apple reportedly allows Siri to perform actions in third-party apps and is testing continuous audio understanding on Apple Watch.",
-      "attention_driver": "A system-level assistant has gained an entry point for cross-app execution, making action confirmation and permission experiences competitive points for assistant products.",
+      "summary": "Multiple media outlets reported that schools that disable Google's AI features will lose access to Google Search starting in 2027.",
+      "attention_driver": "Educational institutions want to retain search services while maintaining independent control over generative features.",
       "evidence": [
         {
-          "url": "https://theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
-          "quote": "Apple will now let Siri AI perform actions across third-party apps.",
-          "claim": "Supports reporting that Siri has gained the ability to perform actions in third-party apps.",
+          "url": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too",
+          "quote": "Google will let schools skip AI tools, but they have to give up search, too",
+          "claim": "Supports reports that schools must also give up search services when disabling AI tools.",
           "source_tier": "attention",
           "used_for": "existence"
         },
         {
-          "url": "https://theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
-          "quote": "Siri can tune into the Apple Watch's mic with Audio Intelligence features",
-          "claim": "Supports reporting that Apple is integrating continuous audio capabilities into Siri.",
+          "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search",
+          "quote": "Schools choosing to restrict AI altogether will no longer be able to access Google Search",
+          "claim": "Supports that the restriction concerns schools' access to Google Search.",
           "source_tier": "attention",
           "used_for": "impact"
         },
         {
-          "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing",
-          "quote": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
-          "claim": "Supports reports that the audio recap feature has entered testing.",
+          "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy",
+          "quote": "DuckDuckGo is courting schools frustrated by Google's AI restrictions",
+          "claim": "Supports that the policy has prompted competitors to market alternative solutions to schools.",
           "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-11-03T07:20:00Z",
-      "last_signal_update": "2026-11-03T20:16:17Z",
-      "so_what": "If a product relies on mobile task execution, it should design discoverable action interfaces, clear user confirmation, and reversible records in advance. Voice and ambient audio increase entry frequency, while also increasing accidental activation and privacy design costs."
-    },
-    {
-      "canonical_id": "15592fd1f2dc6571",
-      "run_trend_id": "GLOBAL_20261104_FUNDING_AND_M_AND_A_ANTHROPIC_COMPUTE_ECONOMICS",
-      "name": "Frontier model companies face pressure on compute economics",
-      "category": "funding_and_M_and_A",
-      "primary_region": "全球",
-      "secondary_regions": [],
-      "lifecycle_stage": "dormant",
-      "momentum": "accelerating",
-      "impact_level": "medium",
-      "opportunity_level": "medium",
-      "confidence_level": "medium",
-      "summary": "Multiple reports focus on Anthropic's rapid revenue growth alongside widening losses, as well as its long-term compute contract commitments.",
-      "attention_driver": "High growth has not eliminated pressure from inference and infrastructure spending, and the market is paying closer attention to the economic return per task.",
-      "evidence": [
-        {
-          "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss",
-          "quote": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元",
-          "claim": "Supports reporting on Anthropic's revenue growth and widening losses.",
-          "source_tier": "independent_validation",
-          "used_for": "impact"
-        },
-        {
-          "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute",
-          "quote": "Anthropic's compute margins should be getting better, they’re getting worse.",
-          "claim": "Supports market concerns about Anthropic's compute margins.",
-          "source_tier": "attention",
-          "used_for": "sentiment"
-        },
-        {
-          "url": "https://x.com/rohanpaul_ai/status/2117368258571784296",
-          "quote": "算力与基础设施合同承诺总额约 $895.4B，其中 $447.5B 须在 2031 年前支付",
-          "claim": "Supports market discussion of Anthropic's long-term compute contract obligations.",
-          "source_tier": "attention",
-          "used_for": "impact"
-        }
-      ],
-      "first_detected": "2026-11-02T16:26:03Z",
-      "last_signal_update": "2026-11-03T17:16:20Z",
-      "so_what": "Product pricing should be tested against the cost of completing tasks and retention value, rather than expanding based only on call volume. Prepare model tiers, caching, and budget controls for high-frequency or long-chain agents to avoid worsening gross margins as scale grows."
+      "first_detected": "2026-11-03T16:30:34Z",
+      "last_signal_update": "2026-11-04T20:06:21Z",
+      "so_what": "Enterprise products should not tightly bind core search or collaboration capabilities to generative feature switches. Independent configuration, role-based enablement and clear data boundaries will directly affect procurement and renewals."
     }
   ],
   "watch_list": [
     {
-      "canonical_id": "e8fc40816836d9b3",
-      "run_trend_id": "GLOBAL_20261104_HARDWARE_AND_INFRA_NVIDIA_CHINA_CAPACITY_CONSTRAINTS",
-      "name": "NVIDIA compute supply faces regional constraints",
-      "category": "regional_and_geopolitical",
+      "canonical_id": "9549b6fd01b9e960",
+      "run_trend_id": "GLOBAL_20261105_SAFETY_AND_GOVERNANCE_MODEL_OUTPUT_PROVENANCE",
+      "name": "Verifiable model output provenance enters product discussions",
+      "category": "安全与治理",
       "primary_region": "全球",
-      "secondary_regions": [
-        "中国"
-      ],
+      "secondary_regions": [],
       "lifecycle_stage": "emerging",
       "momentum": "accelerating",
       "impact_level": "medium",
-      "opportunity_level": "low",
+      "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "Reports say NVIDIA has asked some cloud customers to reduce their China business, while Rubin production hardware has begun shipping with updated specifications.",
-      "attention_driver": "Chip supply, regional allocation among cloud customers, and export restrictions are combining to increase capacity uncertainty for cross-region deployments.",
+      "summary": "Anthropic's FlashProve prototype attempts to verify whether an answer came from the stated model without disclosing model weights.",
+      "attention_driver": "Model replacement, agent forwarding and compliance audit requirements make output provenance a product capability that can be verified independently.",
       "evidence": [
         {
-          "url": "https://the-decoder.com/nvidia-pushes-cloud-customers-to-cut-back-on-china-business",
-          "quote": "Nvidia has told some cloud customers to take on less business from Chinese companies.",
-          "claim": "Supports reports that NVIDIA's cloud business faces China-related regional restrictions.",
+          "url": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights",
+          "quote": "Anthropic has released FlashProve, a research prototype that uses cryptography to verify whether an AI response actually",
+          "claim": "Supports that FlashProve cryptographically verifies the model source of AI answers.",
           "source_tier": "independent_validation",
           "used_for": "existence"
         },
         {
-          "url": "https://servethehome.com/nvidia-updates-rubin-gpu-specs-as-first-production-hardware-arrives",
-          "quote": "As production hardware starts shipping, NVIDIA has updated some of the specifications for its Rubin GPU platforms",
-          "claim": "Supports Rubin platform entering the production hardware shipment stage.",
+          "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity",
+          "quote": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from",
+          "claim": "Supports that the system is designed for external verification of model identity rather than exposing model weights.",
           "source_tier": "attention",
-          "used_for": "impact"
-        },
-        {
-          "url": "https://the-decoder.com/huawei-tells-customers-to-find-their-own-ai-chip-memory-effectively-outsourcing-procurement-to-the-black-market",
-          "quote": "Huawei is telling customers to source the high-performance memory for its AI chips on their own",
-          "claim": "Supports continued procurement friction in the supply chain for high-performance AI hardware.",
-          "source_tier": "independent_validation",
           "used_for": "impact"
         }
       ],
-      "first_detected": "2026-11-01T03:00:28Z",
-      "last_signal_update": "2026-11-03T12:22:12Z",
-      "so_what": "Products involving multi-region inference should include regional availability, model fallback, and supplier switching in capacity plans. Do not treat a single GPU path or fixed regional pricing as a long-term assumption."
+      "first_detected": "2026-11-03T22:41:03Z",
+      "last_signal_update": "2026-11-04T15:23:49Z",
+      "so_what": "Products for high-trust settings can include provenance proof in output records and vendor acceptance, rather than relying only on API logs. Its commercial value depends on verification latency, coverage and cross-model compatibility."
     }
   ],
   "trend_evolution": [],
   "coverage": {
     "sources_configured": 93,
-    "source_keys_reporting": 80,
-    "signals_raw": 561,
-    "signals_accepted": 543,
-    "clusters_total": 343,
-    "clusters_synthesized": 146,
+    "source_keys_reporting": 92,
+    "signals_raw": 614,
+    "signals_accepted": 596,
+    "clusters_total": 378,
+    "clusters_synthesized": 162,
     "by_source": {
+      "404_media_rss": 1,
+      "ai": 1,
       "algorithmic_bridge": 2,
-      "amazon": 1,
+      "amazon": 2,
       "anthropic": 2,
       "apple": 2,
       "apple_podcasts_a16z_podcast": 3,
-      "apple_podcasts_latent_space": 2,
+      "apple_podcasts_ai_i": 1,
+      "apple_podcasts_latent_space": 3,
       "apple_podcasts_twiml_ai_podcast": 1,
       "apple_podcasts_unsupervised_learning": 1,
-      "ars_technica_ai": 4,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 5,
       "arxiv": 20,
       "astral_codex_ten": 1,
-      "brave_search_ai": 103,
-      "crunchbase_news": 2,
+      "brave_search_ai": 104,
+      "cognition_devin": 1,
+      "crunchbase_news": 5,
       "deepmind": 1,
-      "ec_digital_strategy": 2,
+      "ec_digital_strategy": 4,
       "ed_zitron_where_s_your_ed_at_rss": 1,
       "eetimes": 10,
-      "exponential_view": 3,
-      "gemini_api": 1,
-      "github": 13,
+      "exponential_view": 2,
+      "factory_rss": 1,
+      "github": 11,
       "github_awesome_claude": 3,
       "github_awesome_llm": 1,
-      "github_claude_skills": 12,
-      "github_cursor_rules": 5,
-      "google": 4,
+      "github_claude_skills": 14,
+      "github_cursor_rules": 6,
+      "google": 5,
       "hacker_news_ai": 1,
-      "hn": 18,
-      "huggingface_blog": 4,
+      "hn": 20,
+      "huggingface_blog": 5,
       "huggingface_papers": 18,
-      "ieee_spectrum_ai": 2,
+      "ieee_spectrum_ai": 1,
       "import_ai": 1,
       "infoq_ai_zh": 20,
+      "interconnects_lambert": 1,
+      "it": 1,
       "kr36_ai": 20,
-      "latent_space": 3,
-      "lennys_newsletter": 4,
-      "meta": 2,
-      "microsoft": 1,
+      "latent_space": 4,
+      "lennys_newsletter": 3,
+      "meta": 1,
       "mistral": 1,
-      "mit_tech_review_ai": 5,
-      "nextplatform": 2,
+      "mit_tech_review_ai": 7,
+      "nextplatform": 4,
       "nvidia": 2,
-      "openai": 11,
-      "openai_alignment_rss": 2,
+      "openai": 15,
+      "openai_alignment_rss": 1,
+      "platformer": 1,
       "pragmatic_engineer": 1,
-      "producthunt": 20,
-      "pytorch_blog": 2,
+      "preferred_networks_ai": 1,
+      "producthunt": 19,
+      "pytorch_blog": 3,
       "qbitai": 10,
-      "reddit_claudeai": 10,
+      "reddit_chatgptcoding": 1,
+      "reddit_claudeai": 9,
       "reddit_localllama": 20,
-      "reddit_ml": 6,
+      "reddit_ml": 8,
       "reddit_promptengineering": 8,
-      "rundown_ai": 2,
-      "semianalysis": 3,
-      "sequoia_blog": 1,
-      "servethehome": 4,
-      "simon_willison": 7,
-      "stratechery": 2,
+      "redwood_research_blog_rss": 1,
+      "rundown_ai": 3,
+      "semianalysis": 2,
+      "sequoia_blog": 2,
+      "servethehome": 5,
+      "simon_willison": 9,
+      "stratechery": 3,
       "techcrunch_ai": 20,
-      "techcrunch_venture": 2,
-      "the_decoder": 11,
+      "techcrunch_venture": 6,
+      "the_decoder": 10,
       "tldr_ai": 2,
       "unknown": 1,
       "verge_ai": 10,
-      "wired_ai": 5,
-      "x_addy_osmani_addyosmani": 1,
-      "x_amasad": 2,
-      "x_garrytan": 2,
-      "x_joshwoodward": 1,
-      "x_mistral_ai_mistralai": 1,
+      "wired_ai": 10,
+      "x__catwu": 1,
+      "x_amasad": 1,
+      "x_bcherny": 1,
+      "x_garrytan": 3,
+      "x_googlelabs": 1,
+      "x_higgsfield_ai_higgsfield": 1,
+      "x_levie": 1,
+      "x_openai_openai": 1,
       "x_petergyang": 3,
       "x_rauchg": 3,
-      "x_rohan_paul_rohanpaul_ai": 2,
-      "x_swyx": 3,
+      "x_rohan_paul_rohanpaul_ai": 1,
+      "x_swyx": 2,
       "x_thenanyu": 2,
-      "x_thsottiaux": 3,
+      "x_thsottiaux": 1,
       "x_trq212": 1,
-      "youtube_ai": 8,
-      "zh_podcast_crossing": 1,
-      "zhidx": 12,
+      "youtube_ai": 9,
+      "zhidx": 20,
       "zvi_mowshowitz": 2
     }
   },
   "provenance": {
     "pipeline_version": "tie-0.2.0",
     "config_hash": "d63f8e6755f92bfb",
-    "prompt_hash": "03d266241456ca92"
+    "prompt_hash": "eef0b12330c893f9"
   },
   "insights": [
     {
-      "text": "Agent permission experience becomes a product threshold: as cross-app execution entry points increase, confirmation, revocation, and auditing need to become default interactions",
+      "text": "Concurrent agents hit code collaboration first, Codex expansion puts version throughput and auditing ahead of product usability",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "Creative generation now requires a delivery chain, GIF generation, editing and export need to be measured as one task",
       "refs": [
         2
       ]
     },
     {
-      "text": "Cost per task faces greater scrutiny: revenue growth has not eliminated compute spending, and long-chain agents must control call budgets",
-      "refs": [
-        3
-      ]
-    },
-    {
-      "text": "Voice entry points continue to expand: continuous audio understanding has entered testing, and live products need to plan for accidental activation and privacy boundaries",
+      "text": "Agent access surfaces continue to expand, MCP and mobile capabilities appear at the same time, permissions and data scope must be defined first",
       "refs": []
     }
   ],
   "since_last": [
-    "Real-task evaluations as a basis for product selection did not continue this issue.",
-    "OpenAI direct supply to Cursor ends in 8 days."
+    "The 6 trends from the previous issue did not continue this issue.",
+    "7 days remain until OpenAI ends direct supply to Cursor"
   ],
   "countdowns": [
     {
-      "title": "OpenAI direct supply to Cursor ends",
+      "title": "OpenAI ends direct supply to Cursor",
       "kind": "Deprecation",
       "effective_date": "2026-11-12",
-      "days_left": 8,
+      "days_left": 7,
       "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
       "url": "https://x.com/thsottiaux/status/2093515916076343774"
     },
@@ -315,7 +318,7 @@
       "title": "OpenAI access policy update",
       "kind": "Policy",
       "effective_date": "2026-11-20",
-      "days_left": 16,
+      "days_left": 15,
       "description": "Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source",
       "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
     },
@@ -323,196 +326,195 @@
       "title": "Gemini 2.5 API automatic routing",
       "kind": "Deprecation",
       "effective_date": "2026-12-01",
-      "days_left": 27,
+      "days_left": 26,
       "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source",
       "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
     },
     {
-      "title": "Mandatory L3/L4 national standard takes effect",
+      "title": "Implementation of mandatory L3/L4 national standard",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 239,
-      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handover, and risk handling requirements. Source",
+      "days_left": 238,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "China L3/L4 safety national standard takes effect",
+      "title": "Implementation of China's L3/L4 national safety standard",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 239,
-      "description": "The mandatory national standard \"Safety Requirements for Automated Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027, and related autonomous driving products need to prepare for safety access and compliance validation. Source",
+      "days_left": 238,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027, and related autonomous driving products need to prepare for safety market access and compliance verification. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     },
     {
       "title": "EU AI Act high-risk rules",
       "kind": "Policy",
       "effective_date": "2027-12-02",
-      "days_left": 393,
-      "description": "The first clear application date for high-risk rules. Source",
+      "days_left": 392,
+      "description": "The first clear applicability date for high-risk rules. Source",
       "url": "https://theagentindex.io/guides/eu-ai-act-timeline/"
     }
   ],
   "leaderboard": [],
   "sections": {
-    "media": [
+    "pricing": [
       {
-        "title": "纯语音Personal Agent来了！或许，这就是乔布斯心中的Siri",
-        "note": "Use voice alone to have a personal assistant handle tasks",
-        "source": "qbitai",
+        "title": "Securing the agentic enterprise with data lineage",
+        "note": "Audit agent pricing sources with data lineage",
+        "source": "mit_tech_review_ai",
         "why": "",
-        "url": "https://www.qbitai.com/2026/11/507419.html"
+        "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/"
       },
       {
-        "title": "ufakzeka-kulak: Building and Evaluating a 31.6M-Pa…",
-        "note": "Transcribe Turkish while preserving punctuation and capitalization",
-        "source": "arxiv",
+        "title": "B70 Price Increase Incoming --> Intel Might Discon…",
+        "note": "Monitor B70 price increases and B580 discontinuation risk",
+        "source": "reddit_localllama",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.03605v1"
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnfzky/b70_price_increase_incoming_intel_might/"
       },
       {
-        "title": "Apple’s latest watchOS beta includes its new alway…",
-        "note": "Have a watch listen continuously and generate recaps",
-        "source": "verge_ai",
+        "title": "华泰证券：业绩韧性较为突出，银行板块仍具稳健配置价值",
+        "note": "Track valuation recovery from improved bank pricing",
+        "source": "kr36_ai",
         "why": "",
-        "url": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta"
+        "url": "https://36kr.com/newsflashes/4056133704749952?f=rss"
       },
       {
-        "title": "Indie games are missing launch dates because Steam…",
-        "note": "Allow more time for Steam review scheduling",
-        "source": "verge_ai",
+        "title": "曝OpenAI拿下超6.7亿年单！打“骨折”、送额度、配工程师，就为了抢Anthropic客户",
+        "note": "Compare plan discounts and increased quotas to win customers",
+        "source": "zhidx",
         "why": "",
-        "url": "https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates"
+        "url": "https://zhidx.com/p/606670.html"
       },
       {
-        "title": "前迪士尼 AI 高管出任 CPO，Utopai Studios 技术布局再提速",
-        "note": "Accelerate AI product and technology development for film and television",
-        "source": "infoq_ai_zh",
+        "title": "当流量退潮，新消费场景靠什么留住年轻人？",
+        "note": "Assess customer retention investment in coffee store scenarios",
+        "source": "kr36_ai",
         "why": "",
-        "url": "https://www.infoq.cn/article/z1ZeGD2FDqi6xLvSJjSl?utm_source=rss&utm_medium=article"
+        "url": "https://36kr.com/p/4054982649320583?f=rss"
       }
     ],
-    "incidents": [
+    "media": [
       {
-        "title": "October sponsors-only newsletter",
-        "note": "Watch for security vulnerabilities caused by vibe coding",
-        "source": "simon_willison",
+        "title": "Apple cracks the door open to Siri AI",
+        "note": "Generate three studio photos from one product image",
+        "source": "rundown_ai",
         "why": "",
-        "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/"
+        "url": "https://therundownai.beehiiv.com/p/apple-cracks-the-door-open-to-siri-ai"
       },
       {
-        "title": "From Natural Language to Exact Cover: A Neuro-Symb…",
-        "note": "Avoid relying only on chain of thought to solve zebra puzzles",
-        "source": "arxiv",
+        "title": "Wanaka Studio",
+        "note": "Edit and publish 3D games without code",
+        "source": "producthunt_ai",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.03641v1"
+        "url": "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "D&A: Decoupling Description and Assessment Enables…",
-        "note": "Separate description from evaluation to reduce reward hallucinations",
-        "source": "arxiv",
+        "title": "OpenAI内部新模型曝光！工程测试干翻GPT-6 Astra",
+        "note": "Use models to jointly design hardware prototypes",
+        "source": "zhidx",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.03622v1"
+        "url": "https://zhidx.com/p/607183.html"
       },
       {
-        "title": "Should We Combine Our Data? Algorithms and Limits…",
-        "note": "Evaluate privately before deciding whether to merge data",
-        "source": "arxiv",
+        "title": "Route Anything: A Study of Model and Policy Routin…",
+        "note": "Route each task to the most suitable model and strategy",
+        "source": "huggingface_papers",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.03599v1"
+        "url": "https://huggingface.co/papers/2611.05275"
       },
       {
-        "title": "Gitbook Breached",
-        "note": "Include document platforms in leak response procedures",
-        "source": "hn",
+        "title": "Behind Video Generation: Observations and Insights…",
+        "note": "Improve semantic controllability in video generation",
+        "source": "huggingface_papers",
         "why": "",
-        "url": "https://news.ycombinator.com/item?id=50354336"
+        "url": "https://huggingface.co/papers/2611.04916"
       }
     ],
     "tools": [
       {
-        "title": "danielvm-git/bigpowers",
-        "note": "Apply engineering methods to constrain independent development agents",
-        "source": "github_cursor_rules",
-        "why": "GitHub topic:cursor-rules is growing (288 ⭐), worth watching early, matches your interests in \"agent / skill / skills\" · View",
-        "url": "https://github.com/danielvm-git/bigpowers"
-      },
-      {
-        "title": "tt-a1i/archify",
-        "note": "Turn an idea or codebase into an interactive diagram",
+        "title": "nanocoai/nanoclaw",
+        "note": "Run secure messaging agents in containers",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills popular repository (93,134 ⭐), matches your interests in \"agent / claude / code\" · View",
-        "url": "https://github.com/tt-a1i/archify"
+        "why": "GitHub topic:claude-skills featured repository (31,086 ⭐), matches your interests in \"agent / agents / anthropic\" · View",
+        "url": "https://github.com/nanocoai/nanoclaw"
       },
       {
-        "title": "How to Structure Data Packages for System Reboots…",
-        "note": "Package context to restart AI and prevent memory drift",
-        "source": "reddit_promptengineering",
-        "why": "r/promptengineering popular post this week (recent discussion), matches your interests in \"chat / code / ide\" · View",
-        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xn45s3/how_to_structure_data_packages_for_system_reboots/"
+        "title": "alirezarezvani/claude-skills",
+        "note": "Batch-install skill plugins for coding agents",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills featured repository (29,298 ⭐), matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/alirezarezvani/claude-skills"
       },
       {
-        "title": "Teamily AI",
-        "note": "Collaborate with people and agents in the same messaging space",
+        "title": "OthmanAdi/planning-with-files",
+        "note": "Use file-based plans to resume long-running coding tasks",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills featured repository (27,886 ⭐), matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/OthmanAdi/planning-with-files"
+      },
+      {
+        "title": "Wanaka Studio",
+        "note": "Edit and publish 3D games without code",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI featured · 263 votes · 126 comments, matches your interests in \"agent / agents / workflow\" · View",
-        "url": "https://www.producthunt.com/products/teamily-ai-human-ai-social-network?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI Pick · 353 votes · 94 comments, matches your interests in \"agent / claude / code\" · View",
+        "url": "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "MachineMail",
-        "note": "Create dedicated email inboxes for AI agents",
+        "title": "OpenMail",
+        "note": "Let agents receive verification codes and reply to customer emails",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI featured · 112 votes · 8 comments, matches your interests in \"agent / agents / mcp\" · View",
-        "url": "https://www.producthunt.com/products/machinemail?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI Pick · 185 votes · 34 comments, matches your interests in \"agent / agents / code\" · View",
+        "url": "https://www.producthunt.com/products/openmail?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ],
     "frameworks": [
       {
-        "title": "nanocoai/nanoclaw",
-        "note": "Use containers to isolate multi-channel agents",
-        "source": "github_claude_skills",
+        "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
+        "note": "Kling 4.0 Flash opens access across multiple platforms",
+        "source": "公众号: 可灵AI（快手-视频）",
         "why": "",
-        "url": "https://github.com/nanocoai/nanoclaw"
+        "url": "https://mp.weixin.qq.com/s/V0GHwdHbKIFMjwg9AmBdDQ"
       },
       {
-        "title": "Gitbook Breached",
-        "note": "Include document platforms in leak response procedures",
-        "source": "hn",
+        "title": "Hermes Agent手机端要来了！能读取手机数据，内测名额秒没",
+        "note": "Hermes Agent begins mobile beta testing",
+        "source": "zhidx",
         "why": "",
-        "url": "https://news.ycombinator.com/item?id=50354336"
+        "url": "https://zhidx.com/p/607453.html"
       },
       {
-        "title": "MachineMail",
-        "note": "Create dedicated email inboxes for AI agents",
+        "title": "OpenMail",
+        "note": "Let agents receive verification codes and reply to customer emails",
         "source": "producthunt_ai",
         "why": "",
-        "url": "https://www.producthunt.com/products/machinemail?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "url": "https://www.producthunt.com/products/openmail?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "So bullish on WebMCP https://t.co/5FjPcItSW4",
-        "note": "Track WebMCP expansion of web agent capabilities",
-        "source": "@rauchg",
-        "why": "",
-        "url": "https://x.com/rauchg/status/2117419661654720671"
-      },
-      {
-        "title": "Xmind 2027",
-        "note": "Upgrade mind maps into AI collaboration spaces",
+        "title": "Orphex MCP",
+        "note": "Use a unified MCP to connect to marketing platforms",
         "source": "producthunt_ai",
         "why": "",
-        "url": "https://www.producthunt.com/products/xmind?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "url": "https://www.producthunt.com/products/orphex-mcp-let-s-do-agentic-marketing?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "腾讯Hy4开眼了！抢先实测操作微信、3D建模，价格看齐DeepSeek，昇腾生态已联动",
+        "note": "Hy4 adds vision and plans to open-source weights",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/607071.html"
       }
     ]
   },
   "sections_missing": [
     "leaderboard",
-    "pricing"
+    "incidents"
   ],
   "source_flags": [
-    "evidence_rewritten:GLOBAL_2-dd4f1d57a1959063",
-    "evidence_rewritten:GLOBAL_2-fc354f834c563cee",
-    "evidence_rewritten:GLOBAL_2-ff21e6bb9ef00cef",
-    "evidence_rewritten:GLOBAL_2-5abf062e228f2921",
-    "critic_missed:cluster-e934d181c4b94301"
+    "evidence_rewritten:GLOBAL_2-1a6cc49fcf15cf60",
+    "evidence_rewritten:GLOBAL_2-b8b2adb46a1441d0",
+    "evidence_rewritten:GLOBAL_2-60979df64ba67f76",
+    "evidence_rewritten:GLOBAL_2-a404186d5a77f04d"
   ],
   "caveats": [],
   "license": "MIT",
