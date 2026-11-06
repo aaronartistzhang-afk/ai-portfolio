@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-05",
+  "executed_at": "2026-11-06T01:00:27.137222Z",
+  "run_id": "2026-11-03-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-11-03T12:00:27.137190+11:00",
+    "to": "2026-11-06T12:00:27.137190+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-11-06T12:00:27.137190+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "1f58bf94c493eec2",
+      "run_trend_id": "GLOBAL_20261106_HARDWARE_AND_INFRA_COMPUTE_COMMUNITY_COMPACT",
+      "name": "Data center expansion faces community permitting constraints",
+      "category": "hardware_and_infra",
+      "primary_region": "美国",
+      "secondary_regions": [
+        "全球"
+      ],
+      "lifecycle_stage": "expired",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "high",
+      "summary": "OpenAI has released a community commitments and compute campus policy blueprint, after voter opposition to data center expansion became a public issue.",
+      "attention_driver": "Commitments on electricity, water use and community benefits affect the feasibility and delivery pace of compute campus construction.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+          "quote": "National Community Compact and Compute Campus Policy Blueprint",
+          "claim": "Supports OpenAI's formal infrastructure policy commitments for communities and compute campuses.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/after-midterm-rout-openai-tries-to-win-over-communities-it-needs-for-ai-expansion",
+          "quote": "voters against new data centers with voluntary commitments for future sites",
+          "claim": "Supports independent reporting that data center expansion faces resistance from communities and voters.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+          "quote": "voters resoundingly voiced their opposition to data center expansion",
+          "claim": "Supports continued media attention to resistance against data center expansion.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-04T11:00:00Z",
+      "last_signal_update": "2026-11-06T00:37:56Z",
+      "so_what": "Compute-dependent products should include regional capacity, energy constraints and latency in launch planning, rather than treating supply as unlimited and instantly available. Procurement and commercial commitments need to allow for construction delays and regional alternatives."
+    },
+    {
+      "canonical_id": "6e894e8b9c61b5db",
+      "run_trend_id": "GLOBAL_20261106_SAFETY_AND_GOVERNANCE_CYBERSECURITY_AGENTS",
+      "name": "Cybersecurity agents enter an integrated discovery and remediation phase",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "expired",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "OpenAI has released GPT-6 Cyber and disclosed vulnerability management cases using automated workflows to discover, validate and generate remediation patches.",
+      "attention_driver": "Attack and remediation capabilities are packaged into the same type of agent, and the value of security products is starting to depend on authorization, validation and remediation delivery.",
+      "evidence": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-cyber",
+          "quote": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes",
+          "claim": "Supports OpenAI's release of a cybersecurity model for finding exploitable vulnerabilities and developing remediation plans.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them",
+          "quote": "can both break into systems and propose how to fix them",
+          "claim": "Supports independent reporting that the model covers both offensive and defensive tasks.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+          "quote": "found, validated, and generated patches for 948 local privilege-escalation vuln",
+          "claim": "Supports the use of automated workflows for vulnerability discovery, validation and patch generation.",
+          "source_tier": "primary_release",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-04T08:00:00Z",
+      "last_signal_update": "2026-11-05T20:36:25Z",
+      "so_what": "When integrating security agents, make permission scope, human review and patch rollback default product paths. Billable value is more likely to come from verifiable remediation results than from the number of alerts scanned."
+    },
+    {
+      "canonical_id": "b427ff91c5e95287",
+      "run_trend_id": "GLOBAL_20261106_AUDIO_VIDEO_AND_VOICE_GEMINI_OMNI_FLASH",
+      "name": "Gemini Omni 1.2 Flash extends video generation and cuts prices",
+      "category": "audio_video_and_voice",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Google has released Gemini Omni 1.2 Flash, supporting longer video clips. Independent reporting says it generates 15-second videos and cuts prices by 30%.",
+      "attention_driver": "Video generation duration and unit costs are improving at the same time, making iterative generative video features easier to include in default product workflows.",
+      "evidence": [
+        {
+          "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
+          "quote": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "claim": "Supports Google's launch of a video generation model focused on longer clips and cost efficiency.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent",
+          "quote": "stretches AI video clips to 15 seconds and cuts pricing by 30 percent",
+          "claim": "Supports external reporting that this version extends video length to 15 seconds and lowers prices.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-05T17:00:00Z",
+      "last_signal_update": "2026-11-05T19:05:31Z",
+      "so_what": "Design video capabilities as workflows that support multiple rounds of revision, rather than one-off asset generation. Lower costs make previews, retries and batch variants more affordable. Evaluation should cover character and visual continuity, rather than only the quality of a single completed clip."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "6deaf802b0a7143c",
+      "run_trend_id": "GLOBAL_20261106_EVALUATION_FRAMEWORKS_AGENT_WORK_VALIDATION",
+      "name": "Agent evaluation moves toward real work and verifiable delivery",
+      "category": "evaluation_frameworks",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "The GDPx report found that all agents scored no more than 12% in simulated knowledge work, while Microsoft demonstrated formal verification for agent-generated applications during the same period.",
+      "attention_driver": "There is a large gap between general benchmark scores and end-to-end delivery reliability, drawing more attention to task-level evaluation and verification tools.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark",
+          "quote": "No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark",
+          "claim": "Supports the low completion rates of current agents in evaluations of simulated real-world knowledge work.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit",
+          "quote": "Formally verifying agent-written full-stack web apps with PDD Kit",
+          "claim": "Supports a technical approach that introduces formal verification for agent-generated applications.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://arxiv.org/abs/2611.06910v1",
+          "quote": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+          "claim": "Supports the continued expansion of end-to-end, domain task-based agent evaluations.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-05T05:00:00Z",
+      "last_signal_update": "2026-11-05T16:46:24Z",
+      "so_what": "Product selection should not use general benchmarks as a basis for deployment. Build internal evaluations for core tasks that include success rate, human intervention and failure recoverability. Code generation use cases also need to include verification costs in per-task costs."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 96,
+    "signals_raw": 626,
+    "signals_accepted": 603,
+    "clusters_total": 382,
+    "clusters_synthesized": 158,
+    "by_source": {
+      "a16z_news_rss": 1,
+      "algorithmic_bridge": 2,
+      "amazon": 2,
+      "anthropic": 2,
+      "apple": 2,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_ai_i": 1,
+      "apple_podcasts_latent_space": 2,
+      "apple_podcasts_no_priors": 1,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_training_data": 1,
+      "apple_podcasts_twiml_ai_podcast": 1,
+      "apple_podcasts_unsupervised_learning": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 6,
+      "arxiv": 20,
+      "astral_codex_ten": 1,
+      "brave_search_ai": 102,
+      "crunchbase_news": 7,
+      "cursor_changelog": 1,
+      "deepmind": 2,
+      "dwarkesh_blog": 1,
+      "ec_digital_strategy": 4,
+      "eetimes": 10,
+      "exponential_view": 1,
+      "gary_marcus": 1,
+      "github": 6,
+      "github_awesome_claude": 1,
+      "github_awesome_llm": 3,
+      "github_claude_skills": 12,
+      "github_cursor_rules": 4,
+      "google": 7,
+      "hn": 20,
+      "huggingface_blog": 5,
+      "huggingface_papers": 16,
+      "ieee_spectrum_ai": 2,
+      "index_ventures": 5,
+      "infoq_ai_zh": 20,
+      "interconnects_lambert": 1,
+      "kr36_ai": 20,
+      "latent_space": 3,
+      "lennys_newsletter": 1,
+      "meta": 4,
+      "metr_blog": 1,
+      "microsoft": 2,
+      "mistral": 1,
+      "mistral_ai_news": 1,
+      "mit_tech_review_ai": 4,
+      "nextplatform": 4,
+      "nvidia": 7,
+      "openai": 13,
+      "openclaw_blog": 1,
+      "platformer": 1,
+      "pragmatic_engineer": 2,
+      "producthunt": 20,
+      "pytorch_blog": 2,
+      "qbitai": 10,
+      "reddit_chatgptcoding": 3,
+      "reddit_claudeai": 6,
+      "reddit_localllama": 20,
+      "reddit_ml": 12,
+      "reddit_promptengineering": 8,
+      "reflection_blog": 1,
+      "rundown_ai": 3,
+      "semianalysis": 2,
+      "sequoia_blog": 1,
+      "servethehome": 3,
+      "simon_willison": 8,
+      "stratechery": 3,
+      "techcrunch_ai": 20,
+      "techcrunch_venture": 7,
+      "tencent_hunyuan": 1,
+      "the_decoder": 10,
+      "thinking_machines_lab_news": 1,
+      "tldr_ai": 2,
+      "unknown": 1,
+      "verge_ai": 10,
+      "wired_ai": 10,
+      "x__catwu": 1,
+      "x_amasad": 2,
+      "x_fei_fei_li_drfeifei_world_labs": 1,
+      "x_garrytan": 1,
+      "x_mustafa_suleyman_microsoft_ai_ceo_mustafasuleyman": 1,
+      "x_perplexity_perplexity_ai": 1,
+      "x_petergyang": 3,
+      "x_rauchg": 3,
+      "x_rohan_paul_rohanpaul_ai": 1,
+      "x_ryolu_": 1,
+      "x_swyx": 3,
+      "x_thenanyu": 1,
+      "x_thsottiaux": 3,
+      "x_tibo_thsottiaux": 1,
+      "x_trq212": 2,
+      "youtube_ai": 12,
+      "zhidx": 20,
+      "zvi_mowshowitz": 2
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "d63f8e6755f92bfb",
+    "prompt_hash": "5ee5d874651ab79b"
+  },
+  "insights": [
+    {
+      "text": "Delivery constraints enter product planning: community permitting for compute campuses affects regional capacity and launch timing, so release plans need to reserve alternative regions",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "Security agents are billed by outcome: vulnerability discovery, validation and remediation are linked into one workflow, and value depends on deliverables that can be rolled back",
+      "refs": [
+        2,
+        4
+      ]
+    },
+    {
+      "text": "The agent tool layer is still expanding: MCP and the developer tools ecosystem show new signals, and products need to control the boundaries of tool calls",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "All 6 key trends from the previous issue have left this issue's list.",
+    "6 days remain until OpenAI ends direct supply to Cursor."
+  ],
+  "countdowns": [
+    {
+      "title": "OpenAI ends direct supply to Cursor",
+      "kind": "Deprecation",
+      "effective_date": "2026-11-12",
+      "days_left": 6,
+      "description": "Reports say OpenAI will end model access for Cursor on November 12. Source",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774"
+    },
+    {
+      "title": "OpenAI access policy update",
+      "kind": "Policy",
+      "effective_date": "2026-11-20",
+      "days_left": 14,
+      "description": "Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source",
+      "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
+    },
+    {
+      "title": "Gemini 2.5 API automatic routing",
+      "kind": "Deprecation",
+      "effective_date": "2026-12-01",
+      "days_left": 25,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
+    },
+    {
+      "title": "Mandatory national standard for L3/L4 takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 237,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China's national L3/L4 safety standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 237,
+      "description": "The mandatory national standard \"Safety Requirements for Automated Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect from July 1, 2027. Relevant autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    },
+    {
+      "title": "EU AI Act high-risk rules",
+      "kind": "Policy",
+      "effective_date": "2027-12-02",
+      "days_left": 391,
+      "description": "The first clear applicability milestone for high-risk rules. Source",
+      "url": "https://theagentindex.io/guides/eu-ai-act-timeline/"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "pricing": [
+      {
+        "title": "腾讯混元感谢 Artificial Analysis 对 Hy4 的评测，模型获 Intellige…",
+        "note": "Check Hy4's position in the price-performance ranking",
+        "source": "X: 腾讯混元",
+        "why": "",
+        "url": "https://x.com/TencentHunyuan/status/2118288137973854397"
+      },
+      {
+        "title": "Google's Gemini Omni 1.2 Flash stretches AI video…",
+        "note": "Video generation unit prices cut by 30%",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/"
+      },
+      {
+        "title": "Clocknext",
+        "note": "Monetize based on agent usage",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/clocknext?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "GPT能做动图了！10秒一张，实测“穿帮”有点多",
+        "note": "Evaluate animated image generation cost and speed",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/607614.html"
+      },
+      {
+        "title": "AI Model Leaderboard November 2026 — LMSys Arena,…",
+        "note": "Select models by quality/price",
+        "source": "Swfte",
+        "why": "",
+        "url": "https://www.swfte.com/ai/leaderboard"
+      }
+    ],
+    "media": [
+      {
+        "title": "Arista Lines Up Networking For 10 Gigawatts Of AI…",
+        "note": "Plan networking for 10GW-scale AI clusters",
+        "source": "nextplatform",
+        "why": "",
+        "url": "https://www.nextplatform.com/connect/2026/11/05/arista-lines-up-networking-for-10-gigawatts-of-ai-systems/5307929"
+      },
+      {
+        "title": "A Closer Look at Phonon TTS. Launching High-Qualit…",
+        "note": "Generate high-quality speech on-device",
+        "source": "huggingface_blog",
+        "why": "",
+        "url": "https://huggingface.co/blog/phonon-tts"
+      },
+      {
+        "title": "Gemini Omni 1.2 Flash: Fast, cost-effective, and r…",
+        "note": "Generate product video ads in batches",
+        "source": "google_cloud_ai_blog",
+        "why": "",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available/"
+      },
+      {
+        "title": "You can post AI music straight to SoundCloud from…",
+        "note": "Publish AI music to platforms with one click",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs"
+      },
+      {
+        "title": "AI’s Next Trick? Speaking Dolphin",
+        "note": "Use audio and video to analyze dolphin communication",
+        "source": "wired_ai",
+        "why": "",
+        "url": "https://www.wired.com/story/wired-world-fair-2026-denise-herzing-wild-dolphin/"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "[AINews] It's Swapping Season",
+        "note": "Monitor the loss of core talent from AI teams",
+        "source": "latent_space",
+        "why": "",
+        "url": "https://latent.space/p/ainews-it-s-swapping-season/"
+      },
+      {
+        "title": "Lawsuit: Man introduced his wife to ChatGPT. She u…",
+        "note": "Strengthen interception of conversations involving dangerous uses",
+        "source": "ars_technica_ai",
+        "why": "",
+        "url": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/"
+      },
+      {
+        "title": "Reddit Founder Says Building Social Media Apps Is…",
+        "note": "Rebuild trust in contaminated UGC",
+        "source": "wired_ai",
+        "why": "",
+        "url": "https://www.wired.com/story/wired-world-fair-2026-alexis-ohanian/"
+      },
+      {
+        "title": "Best approach for demand forecasting across 40 loc…",
+        "note": "Avoid choosing the wrong forecasting model for multiple stores",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xohxyv/best_approach_for_demand_forecasting_across_40/"
+      },
+      {
+        "title": "Rather Qwen4-27b at 1M ctx than a big MOE at 128k",
+        "note": "Prioritize expanding context to reduce rereading",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoh2s7/rather_qwen427b_at_1m_ctx_than_a_big_moe_at_128k/"
+      }
+    ],
+    "tools": [
+      {
+        "title": "code-yeongyu/oh-my-openagent",
+        "note": "Use keywords to orchestrate graph engineering in batches",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (70,735 ⭐), matches your interests in \"agent / code / prompt\" · View",
+        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+      },
+      {
+        "title": "paperclipai/paperclip",
+        "note": "Manage office agent tasks centrally",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (111,443 ⭐), matches your interests in \"agent / agents\" · View",
+        "url": "https://github.com/paperclipai/paperclip"
+      },
+      {
+        "title": "7 prompt lines nobody tests. 3 got measured, 3 did…",
+        "note": "Test prompts and remove ineffective lines",
+        "source": "reddit_promptengineering",
+        "why": "r/promptengineering popular post this week (recent discussion), matches your interests in \"ide / prompt / rag\" · View",
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xohlji/7_prompt_lines_nobody_tests_3_got_measured_3/"
+      },
+      {
+        "title": "Glasshand",
+        "note": "Let agents remotely operate physical devices",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 305 votes · 71 comments, matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://www.producthunt.com/products/glasshand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Rerun",
+        "note": "Turn subscription models into task queues",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 194 votes · 12 comments, matches your interests in \"chat / claude / tool\" · View",
+        "url": "https://www.producthunt.com/products/rerun-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "frameworks"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-ea3a6e92d62eaa4e",
+    "evidence_rewritten:GLOBAL_2-6bc667742d1fa26d",
+    "evidence_rewritten:GLOBAL_2-41719f32f0209c4e",
+    "evidence_rewritten:GLOBAL_2-5221415eda6078d6"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}

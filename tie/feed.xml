@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Wed, 04 Nov 2026 17:00:21 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 17:00:27 -0800</lastBuildDate>
+    <item>
+      <title>Data center expansion faces community permitting constraints</title>
+      <link>https://aaronzhang.ai/tie/2026-11-05</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 17:00:27 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Delivery constraints enter product planning: community permitting for compute campuses affects regional capacity and launch timing, so release plans need to reserve alternative regions&lt;/li&gt;&lt;li&gt;Security agents are billed by outcome: vulnerability discovery, validation and remediation are linked into one workflow, and value depends on deliverables that can be rolled back&lt;/li&gt;&lt;li&gt;The agent tool layer is still expanding: MCP and the developer tools ecosystem show new signals, and products need to control the boundaries of tool calls&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Code agents drive upgrades to version control infrastructure</title>
       <link>https://aaronzhang.ai/tie/2026-11-04</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-25</guid>
       <pubDate>Fri, 25 Sep 2026 17:00:15 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent distribution is becoming productized: plugin directories and cross-environment component libraries are increasing, and review and compatibility of tool interfaces will affect adoption&lt;/li&gt;&lt;li&gt;Capacity commitments need slack: data center commissioning and power supply plans have become uncertain, so real-time products cannot be scheduled based only on nominal compute capacity&lt;/li&gt;&lt;li&gt;Cost signals continue to grow: 5 pricing and cost-related signals have appeared together, and products should continue to calculate task unit economics&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Gemini 3.8 expands real-time voice and avatars</title>
-      <link>https://aaronzhang.ai/tie/2026-09-24</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-24</guid>
-      <pubDate>Thu, 24 Sep 2026 17:00:27 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Voice agents are starting to complete tasks: real-time voice, avatars, and outbound phone calls are being placed in one product line, and experience should be measured by task completion rates&lt;/li&gt;&lt;li&gt;Long-task costs become a product variable: price competition for coding agents now covers long-context workloads, and routing and caching affect plan design&lt;/li&gt;&lt;li&gt;The agent tool layer is still expanding: MCP and lightweight frameworks continue to emerge, and permission models for tool access should come before feature accumulation&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
