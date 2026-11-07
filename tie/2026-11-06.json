@@ -1,0 +1,535 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-06",
+  "executed_at": "2026-11-07T01:00:17.866093Z",
+  "run_id": "2026-11-04-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-11-04T12:00:17.866067+11:00",
+    "to": "2026-11-07T12:00:17.866067+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-11-07T12:00:17.866067+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "84aab9f752a54c23",
+      "run_trend_id": "GLOBAL_20261107_AGENTS_AND_TOOLING_PERSISTENT_AGENT_WORKSPACES",
+      "name": "Persistent agents turn memory and collaboration interfaces into products",
+      "category": "agents_and_tooling",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Several vendors are productizing persistent execution, memory, and collaboration interfaces at the same time, including Perplexity and Anthropic.",
+      "attention_driver": "Long-running tasks require state persistence, asynchronous execution, and auditable human-machine collaboration.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/perplexity-now-has-its-own-always-on-ai-agent",
+          "quote": "Perplexity is launching \"Teammates,\" always-on agents that work through ongoing projects on their own virtual machines.",
+          "claim": "Products that support persistent agents continuously handling projects in independent virtual machines have emerged.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://anthropic.com/research/components-of-agent-memory",
+          "quote": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。",
+          "claim": "Agent memory has become a separable, evaluable system component.",
+          "source_tier": "primary_release",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app",
+          "quote": "we're introducing spaces, an interactive way to build a more customized experience in the Muse app.",
+          "claim": "Vendors are launching agent collaboration environments as customizable product interfaces.",
+          "source_tier": "companion",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-05T16:00:00Z",
+      "last_signal_update": "2026-11-06T18:00:58Z",
+      "so_what": "Products should treat task state, memory writes, and human takeover as first-class capabilities, rather than treating chat history as persistence. Persistent execution increases compute costs, so pricing should be tiered by task and budgets should be visible."
+    },
+    {
+      "canonical_id": "0e553c4f0e070190",
+      "run_trend_id": "GLOBAL_20261107_OPEN_SOURCE_RELEASES_MOE_DEPLOYMENT_CHOICES",
+      "name": "Open-weight models expand deployment options",
+      "category": "open_source_releases",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "中国"
+      ],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "The releases of Inkling 2 Small, ERNIE 5.5 Flash Base, and Ripple-65B have brought more attention to open-weight models for coding and agent tasks.",
+      "attention_driver": "MoE architectures and permissive licenses lower the barrier to self-hosting, fine-tuning, and multi-vendor deployment.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/thinking-machines-inkling-2-small-claims-top-spot-among-western-open-weight-models",
+          "quote": "Thinking Machines, the startup from former OpenAI CTO Mira Murati, is releasing Inkling 2 Small, a mixture-of-experts mo",
+          "claim": "A new group of open-weight MoE models has entered market discussion.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/baidu-releases-ernie-5-5-flash-base-with-280-billion-parameters-as-an-open-source-foundation-model",
+          "quote": "Baidu releases ERNIE 5.5 Flash Base: a 280-billion-parameter MoE model",
+          "claim": "Large open-weight MoE base models continue to expand.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model",
+          "quote": "Ripple-65B Preview delivers strong agentic coding results as a fully Apache 2.0 open US model",
+          "claim": "Open-license models are using agent coding capabilities as a competitive selling point.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-05T09:05:08Z",
+      "last_signal_update": "2026-11-06T19:47:04Z",
+      "so_what": "Model selection should not compare only a single leaderboard. It should also test licenses, VRAM usage, and real task success rates. As open-weight supply increases, differentiation depends more on data connections, workflow design, and operating cost control."
+    },
+    {
+      "canonical_id": "d4a2150a9fea91ee",
+      "run_trend_id": "GLOBAL_20261107_APPLICATION_INTEGRATIONS_SENSITIVE_ACCOUNT_ACCESS",
+      "name": "Assistants connect to highly sensitive account data",
+      "category": "application_integrations",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Claude's Personal Finance allows users to connect bank and credit card accounts to analyze spending records in natural language.",
+      "attention_driver": "Assistant value is starting to depend on external account data and ongoing authorization, rather than only model response quality.",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool",
+          "quote": "With Personal Finance in Claude, users can connect their bank and card accounts through Plaid",
+          "claim": "Claude has introduced bank and card account connections into assistant features.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://zhidx.com/p/608005.html",
+          "quote": "Anthropic宣布 为Claude推出个人财务功能 （Personal Finance），用户可以 连接银行和信用卡账户",
+          "claim": "The feature has received concurrent attention across multiple market media outlets.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://reddit.com/r/ClaudeAI/comments/1xp0qxj/claude_can_now_analyze_your_spending_with_its_new",
+          "quote": "Claude can now analyze your spending with its new Personal Finance tool",
+          "claim": "User communities have started discussing spending analysis capabilities after account connections.",
+          "source_tier": "attention",
+          "used_for": "sentiment"
+        }
+      ],
+      "first_detected": "2026-11-05T18:00:00Z",
+      "last_signal_update": "2026-11-06T07:44:47Z",
+      "so_what": "When connecting highly sensitive data, authorization scope, data retention, action confirmation, and revocation access should come before feature expansion. Product metrics should also distinguish between insights from reading data and executable actions, to avoid mixing trust risk into usage growth."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "4c6f64708aaa696d",
+      "run_trend_id": "GLOBAL_20261107_HARDWARE_AND_INFRA_AGENT_MEMORY_PRESSURE",
+      "name": "Long context and agents increase memory constraints",
+      "category": "hardware_and_infra",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "NVIDIA says larger models, longer context, and agent applications are increasing GPU memory pressure. External reporting also points to tight DRAM supply.",
+      "attention_driver": "Multi-turn reasoning and concurrent tool calls both increase KV cache and runtime memory requirements.",
+      "evidence": [
+        {
+          "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign",
+          "quote": "Larger models, longer contexts and agentic applications are increasing GPU memory pressure while supply tightens",
+          "claim": "Long-context and agent workloads are increasing GPU memory pressure.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://tomshardware.com/pc-components/dram/team-group-ceo-warns-memory-crisis-could-reach-point-where-even-money-cant-buy-goods-will-get-worse-next-year-with-no-downward-trend-in-price-whatsoever",
+          "quote": "memory crisis could reach point where 'even money can't buy goods'",
+          "claim": "Memory supply and pricing risks are becoming a focus of infrastructure discussions.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents",
+          "quote": "AI agents do more than generate answers. They search for information, query databases, write and test code and take acti",
+          "claim": "Agents' multi-step execution creates runtime loads different from single-turn Q&A.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-05T16:00:00Z",
+      "last_signal_update": "2026-11-05T20:00:41Z",
+      "so_what": "Treat long context and multi-agent concurrency as core variables in unit task cost. In the near term, stress-test KV cache, retrieval strategies, and fallback paths to avoid trading capability gains for uncontrollable latency and gross margins."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 91,
+    "signals_raw": 618,
+    "signals_accepted": 600,
+    "clusters_total": 385,
+    "clusters_synthesized": 169,
+    "by_source": {
+      "algorithmic_bridge": 1,
+      "amazon": 2,
+      "amp_chronicle": 1,
+      "anthropic": 2,
+      "anthropic_alignment_science_blog": 1,
+      "apple": 1,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_ai_i": 1,
+      "apple_podcasts_latent_space": 2,
+      "apple_podcasts_no_priors": 1,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_training_data": 1,
+      "apple_podcasts_unsupervised_learning": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 6,
+      "arxiv": 20,
+      "astral_codex_ten": 2,
+      "brave_search_ai": 103,
+      "crunchbase_news": 9,
+      "cursor_changelog": 2,
+      "deepmind": 1,
+      "dwarkesh_blog": 1,
+      "ec_digital_strategy": 3,
+      "eetimes": 10,
+      "exponential_view": 2,
+      "gary_marcus": 2,
+      "github": 8,
+      "github_awesome_llm": 2,
+      "github_claude_skills": 14,
+      "github_cursor_rules": 5,
+      "google": 7,
+      "hn": 19,
+      "huggingface_blog": 5,
+      "huggingface_papers": 18,
+      "ieee_spectrum_ai": 1,
+      "index_ventures": 5,
+      "infoq_ai_zh": 20,
+      "interconnects_lambert": 1,
+      "kr36_ai": 20,
+      "latent_space": 4,
+      "ling": 1,
+      "meta": 4,
+      "meta_ai_research_blog": 1,
+      "microsoft": 1,
+      "mistral": 1,
+      "mit_tech_review_ai": 3,
+      "nextplatform": 4,
+      "not_boring": 1,
+      "nvidia": 6,
+      "openai": 14,
+      "openrouter_announcements_rss": 1,
+      "platformer": 2,
+      "pragmatic_engineer": 2,
+      "producthunt": 20,
+      "pytorch_blog": 1,
+      "qbitai": 10,
+      "reddit_chatgptcoding": 2,
+      "reddit_claudeai": 6,
+      "reddit_localllama": 20,
+      "reddit_ml": 12,
+      "reddit_promptengineering": 9,
+      "rundown_ai": 3,
+      "semianalysis": 1,
+      "sequoia_blog": 1,
+      "servethehome": 4,
+      "simon_willison": 3,
+      "stratechery": 4,
+      "techcrunch_ai": 20,
+      "techcrunch_venture": 3,
+      "the_decoder": 10,
+      "tldr_ai": 2,
+      "unknown": 1,
+      "verge_ai": 10,
+      "wired_ai": 10,
+      "x_amasad": 2,
+      "x_artificial_analysis_artificialanlys": 1,
+      "x_fei_fei_li_drfeifei_world_labs": 1,
+      "x_garrytan": 2,
+      "x_levie": 2,
+      "x_petergyang": 3,
+      "x_rauchg": 3,
+      "x_realmadhuguru": 1,
+      "x_rohan_paul_rohanpaul_ai": 2,
+      "x_swyx": 3,
+      "x_thsottiaux": 3,
+      "x_tibo_thsottiaux": 1,
+      "x_trq212": 1,
+      "x_x_pin_thexpin": 1,
+      "youtube_ai": 13,
+      "zhidx": 20,
+      "zvi_mowshowitz": 2
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "d63f8e6755f92bfb",
+    "prompt_hash": "01df64b6886dde6d"
+  },
+  "insights": [
+    {
+      "text": "Agent state becomes a product surface: persistent tasks require memory, budgets, and human takeover to be visible controls",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "Open model selection depends more on the deployment ledger: licenses and real task success rates will affect product direction more than a single leaderboard",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "Cost signals have formed a theme: 5 pricing and cost signals have appeared, and unit task cost should be part of feature tradeoffs",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "The 6 trends that made the list in the previous issue have dropped off today's list.",
+    "There are 5 days remaining until OpenAI ends direct supply to Cursor."
+  ],
+  "countdowns": [
+    {
+      "title": "OpenAI ends direct supply to Cursor",
+      "kind": "Deprecation",
+      "effective_date": "2026-11-12",
+      "days_left": 5,
+      "description": "Reports say OpenAI will end Cursor's model access on November 12. Source",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774"
+    },
+    {
+      "title": "OpenAI access policy update",
+      "kind": "Policy",
+      "effective_date": "2026-11-20",
+      "days_left": 13,
+      "description": "Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source",
+      "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
+    },
+    {
+      "title": "Gemini 2.5 API automatic routing",
+      "kind": "Deprecation",
+      "effective_date": "2026-12-01",
+      "days_left": 24,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
+    },
+    {
+      "title": "Mandatory national standard for L3/L4 takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 236,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover, and risk handling requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China's L3/L4 national safety standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 236,
+      "description": "The mandatory national standard \"Intelligent Connected Vehicles, Safety Requirements for Autonomous Driving Systems\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    },
+    {
+      "title": "EU AI Act high-risk rules",
+      "kind": "Policy",
+      "effective_date": "2027-12-02",
+      "days_left": 390,
+      "description": "The first clear application date for high-risk rules. Source",
+      "url": "https://theagentindex.io/guides/eu-ai-act-timeline/"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "pricing": [
+      {
+        "title": "Ramp data shows AI spending stalling just as Anthr…",
+        "note": "Track how AI price cuts reduce enterprise spending",
+        "source": "techcrunch_ai",
+        "why": "",
+        "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/"
+      },
+      {
+        "title": "Plans & pricing | Claude by Anthropic",
+        "note": "Calculate Claude enterprise seat fees plus usage charges",
+        "source": "Claude",
+        "why": "",
+        "url": "https://claude.com/pricing"
+      },
+      {
+        "title": "前OpenAI CTO推新模型，让用户自己训AI！创企估值被曝冲刺2600亿",
+        "note": "Assess how open weights reduce fine-tuning costs",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/608120.html"
+      },
+      {
+        "title": "Inside Salesforce’s $100 Billion M&A Playbook | Jo…",
+        "note": "Use acquisitions to accelerate product roadmaps",
+        "source": "apple_podcasts_a16z_podcast",
+        "why": "",
+        "url": "https://a16z.simplecast.com/episodes/inside-salesforces-100-billion-ma-playbook-john-somorjai-taKdd7nQ"
+      },
+      {
+        "title": "GPU Relief Pushed to 2028 as DRAM Jumps 95% [2026]",
+        "note": "Track GPU and DRAM price increase risks",
+        "source": "Tech-Insider",
+        "why": "",
+        "url": "https://tech-insider.org/gpu-relief-pushed-2028-dram-price-jump-2026/"
+      }
+    ],
+    "media": [
+      {
+        "title": "Higgs Realtime Duplex: a 45B MoE full-duplex model…",
+        "note": "Test full-duplex voice and visual interaction",
+        "source": "reddit_ml",
+        "why": "",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1xpn5pv/higgs_realtime_duplex_a_45b_moe_fullduplex_model/"
+      },
+      {
+        "title": "A 0.1B model just killed 8B embedding models... I…",
+        "note": "Use small embedding models for local retrieval",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpdk0i/a_01b_model_just_killed_8b_embedding_models_i/"
+      },
+      {
+        "title": "pi + strata + qwen 3.8 flash next q4 k xl --> funn…",
+        "note": "Investigate hallucination logs in agent execution",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xp8ys0/pi_strata_qwen_38_flash_next_q4_k_xl_funny_stuff/"
+      },
+      {
+        "title": "A set of design principles to help AI create less…",
+        "note": "Optimize prompts to avoid a poster-template feel",
+        "source": "reddit_promptengineering",
+        "why": "",
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xp6fwm/a_set_of_design_principles_to_help_ai_create_less/"
+      },
+      {
+        "title": "能和Muse打视频电话了！网友整活，自建动态虚拟形象、让AI角色扮演",
+        "note": "Create AI avatars that can make video calls",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/607981.html"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "Adversarial Training with Large Step Sizes: Implic…",
+        "note": "Watch for sharp solutions caused by large-step training",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.08457v1"
+      },
+      {
+        "title": "NousResearch/Arete-27B · Hugging Face (Qwen finetu…",
+        "note": "Review bias risks in values fine-tuning",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpmj33/nousresearcharete27b_hugging_face_qwen_finetune/"
+      },
+      {
+        "title": "Can prompt engineering alone make AI coding agents…",
+        "note": "Constrain coding agents with host permissions",
+        "source": "reddit_promptengineering",
+        "why": "",
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xpb0zb/can_prompt_engineering_alone_make_ai_coding/"
+      },
+      {
+        "title": "Latest Open-Source Labs are gutting away cybersecu…",
+        "note": "Watch for weakened safety capabilities in open-source models",
+        "source": "reddit_localllama",
+        "why": "",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xp9jt1/latest_opensource_labs_are_gutting_away/"
+      },
+      {
+        "title": "Lawsuit Claims Student's Google AI Use Turned Into…",
+        "note": "Track AI addiction and safety litigation risks",
+        "source": "Gizmodo",
+        "why": "",
+        "url": "https://gizmodo.com/lawsuit-claims-students-google-ai-use-turned-into-life-threatening-obsession-2000835894"
+      }
+    ],
+    "tools": [
+      {
+        "title": "teng-lin/notebooklm-py",
+        "note": "Use Python to automate NotebookLM",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (20,149 ⭐), matching your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/teng-lin/notebooklm-py"
+      },
+      {
+        "title": "thedotmack/claude-mem",
+        "note": "Save cross-session context for agents",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (114,026 ⭐), matching your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "title": "coreyhaines31/marketingskills",
+        "note": "Have agents execute marketing growth tasks",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (58,929 ⭐), matching your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/coreyhaines31/marketingskills"
+      },
+      {
+        "title": "Tobira Site Agent",
+        "note": "Turn an official website into a customer acquisition AI agent",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 325 votes · 99 comments, matching your interests in \"agent / agents / chat\" · View",
+        "url": "https://www.producthunt.com/products/tobira-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Wonder Dev View",
+        "note": "Run multiple coding agents in parallel for mutual review",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 146 votes · 16 comments, matching your interests in \"agent / agents / claude\" · View",
+        "url": "https://www.producthunt.com/products/wonder-dev-view?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "frameworks"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-db93f5e834589697",
+    "evidence_rewritten:GLOBAL_2-09d2d0a83e4d1eb0",
+    "evidence_rewritten:GLOBAL_2-123a6cf40376b24b",
+    "evidence_rewritten:GLOBAL_2-4fb6a7d877c95ecf",
+    "critic_missed:cluster-c4473f581149de9d"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}
