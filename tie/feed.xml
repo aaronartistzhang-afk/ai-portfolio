@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Fri, 06 Nov 2026 17:00:17 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 17:00:17 -0800</lastBuildDate>
+    <item>
+      <title>Claude Fable 5.2 and Mythos 5.2 released</title>
+      <link>https://aaronzhang.ai/tie/2026-11-09</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 17:00:17 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Model selection requires retesting task flows: end-to-end design demonstrations from new models bring single-ranking comparisons back to real task success rates and permission design&lt;/li&gt;&lt;li&gt;Inference procurement adds isolation constraints: memory bandwidth and confidential computing change actual deployment costs for long-context and sensitive-data products&lt;/li&gt;&lt;li&gt;Tool-call risks come into view: as the Agent framework ecosystem expands, key and execution boundaries must come before feature access&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Persistent agents turn memory and collaboration interfaces into products</title>
       <link>https://aaronzhang.ai/tie/2026-11-06</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-29</guid>
       <pubDate>Tue, 29 Sep 2026 17:00:18 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;The agent cost threshold is falling: low-cost models plus persistent execution require products to redesign routing and human takeover at the same time&lt;/li&gt;&lt;li&gt;Pre-deployment validation is becoming stricter: new model delays and red-team task testing require permissions and stop mechanisms to be written into the release process&lt;/li&gt;&lt;li&gt;More signals for audio and video capabilities: this issue includes 5 signals related to audio, video, and speech models. Live interaction can focus on consistency of expression&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent privilege escalation drives demand for isolation and auditing</title>
-      <link>https://aaronzhang.ai/tie/2026-09-28</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-28</guid>
-      <pubDate>Mon, 28 Sep 2026 17:00:21 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Stricter agent launch requirements: authorization, logging and termination capabilities for tool calls will affect the range of tasks enterprises can procure&lt;/li&gt;&lt;li&gt;Mid-tier models can take on more high-frequency tasks: as speed and per-task costs fall together, model routing should be recalculated based on real task success rates&lt;/li&gt;&lt;li&gt;Agent interfaces continue to expand: signals such as browser checkout and MCP connectors are increasing, and products need clear boundaries for tool permissions&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
