@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 09 Nov 2026 17:00:17 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 17:00:14 -0800</lastBuildDate>
+    <item>
+      <title>ChatGPT introduces business pages and verified business agents</title>
+      <link>https://aaronzhang.ai/tie/2026-11-10</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 17:00:14 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Assistant interfaces are beginning to handle transactions: conversational products need to manage discovery, trust, and execution, while distribution entry points affect conversion&lt;/li&gt;&lt;li&gt;Model procurement needs replacement capabilities by design: listing pressure will bring supply stability and unit economics into product roadmaps&lt;/li&gt;&lt;li&gt;More cost signals: pricing changes have become direct inputs for feature trade-offs and user segmentation&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Claude Fable 5.2 and Mythos 5.2 released</title>
       <link>https://aaronzhang.ai/tie/2026-11-09</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-30</guid>
       <pubDate>Wed, 30 Sep 2026 17:00:21 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Multi-model routing becomes a required capability: as frontier model gaps narrow, task success rates and per-task costs should jointly determine calling strategy&lt;/li&gt;&lt;li&gt;Agent reliability enters purchasing criteria: recovery, permissions, and evidence verification for long-running tasks directly affect paid workflow retention&lt;/li&gt;&lt;li&gt;Inference cost discussion heats up: pricing and cost signals appear in concentration, and products need to put usage controls into experience design&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>OpenAI brings low-cost models and persistent agents into the workspace</title>
-      <link>https://aaronzhang.ai/tie/2026-09-29</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-09-29</guid>
-      <pubDate>Tue, 29 Sep 2026 17:00:18 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;The agent cost threshold is falling: low-cost models plus persistent execution require products to redesign routing and human takeover at the same time&lt;/li&gt;&lt;li&gt;Pre-deployment validation is becoming stricter: new model delays and red-team task testing require permissions and stop mechanisms to be written into the release process&lt;/li&gt;&lt;li&gt;More signals for audio and video capabilities: this issue includes 5 signals related to audio, video, and speech models. Live interaction can focus on consistency of expression&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
