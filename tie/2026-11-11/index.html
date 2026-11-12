@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>AI Daily — 2026-11-11</title>
+<meta name="description" content="Security researchers say many Grok Build apps can be accessed without logging in, including patient data and plaintext passwords.">
+<link rel="canonical" href="https://aaronzhang.ai/tie/2026-11-11">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="aaronzhang.ai">
+<meta property="og:title" content="AI Daily — 2026-11-11">
+<meta property="og:description" content="Security researchers say many Grok Build apps can be accessed without logging in, including patient data and plaintext passwords.">
+<meta property="og:url" content="https://aaronzhang.ai/tie/2026-11-11">
+<meta property="og:image" content="https://aaronzhang.ai/card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aaronzhang42">
+<meta name="twitter:creator" content="@aaronzhang42">
+<link rel="alternate" type="application/rss+xml" title="AI Daily" href="https://aaronzhang.ai/tie/feed.xml">
+<link rel="stylesheet" href="/tie/tie.css">
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <a class="name" href="/">
+      <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="64" cy="64" r="13.5" fill="currentColor"/><circle cx="93.1" cy="34.9" r="8.5" fill="currentColor"/><circle cx="31.7" cy="87" r="8.5" fill="currentColor"/>
+        <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.18" stroke-width="2"/>
+      </svg>
+      Aaron Zhang
+    </a>
+    <a href="/#writing">Writing</a>
+    <details class="menu">
+      <summary>AI Daily</summary>
+      <div class="menupanel">
+        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this US weekday</span></a>
+        <a href="/tie/archive?from=menu"><b>Archive</b><span>Every issue so far, quiet days included</span></a>
+        <a href="/tie/how-it-works?from=menu"><b>How it works</b><span>How the sources become three trends, in two pictures</span></a>
+        <a href="/tie/sources?from=menu"><b>What it reads</b><span>Every source and how much weight it carries</span></a>
+        <a href="/tie/data?from=menu"><b>Get it as data</b><span>A JSON file per issue. No key, no rate limit</span></a>
+        <a href="/tie/terms?from=menu"><b>Licence</b><span>MIT, and what that lets you do with the data</span></a>
+      </div>
+    </details>
+    <a href="/deck/?from=nav">Talk</a>
+    <a href="/about/">About</a>
+  </header>
+
+  <div class="tiegrid">
+  <article class="tie">
+    <p class="crumb"><a href="/tie/">AI Daily</a><span class="sep">/</span><a href="/tie/archive">Archive</a><span class="sep">/</span><span class="here">Issue</span> <span class="sep">&middot;</span> 2026-11-11</p>
+    <h1>AI Daily</h1>
+    <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
+    93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
+
+    <p class="runbar"><span class="live"></span> <b>~2 min read</b>
+      &middot; covering 8&ndash;11 November &middot; updated weekdays, 17:10 Pacific</p>
+
+    <div class="ribbon">
+      <p><span class="lbl">Deadlines</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener"><b>8d</b> OpenAI access policy update</a> <span class="sep">·</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>19d</b> Gemini 2.5 API automatic routing</a> <span class="sep">·</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener"><b>231d</b> Mandatory national standard implementation for L3/L4</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
+    </div>
+
+    <section class="lead">
+      <h2 id="the-read">The read</h2>
+      <ul>
+        <li>Verifiable delivery enters procurement metrics: delivery evaluations for high-risk code will place more weight on reproducible proofs than generation volume <a class="xref" href="#t2">#2</a></li>
+        <li>Generative apps need release gates: default public configurations turn low-code development speed directly into data leak risk <a class="xref" href="#t1">#1</a></li>
+        <li>Agent tools are still expanding: new signals for containerization and lightweight frameworks reached 5 </li>
+      </ul>
+    </section>
+
+    <p class="counts"><b>1</b> major &middot; <b>2</b> watch
+      &middot; <b>1</b> monitoring</p>
+
+    <article class="trend major" id="t1">
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Safety &amp; governance</span></p>
+      <h2 id="grok-build-apps-exposed-public-data">Grok Build apps exposed public data</h2>
+      <p class="stage"><b>High impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 1 press</span></p>
+      <p class="body">Security researchers say many Grok Build apps can be accessed without logging in, including patient data and plaintext passwords.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Make public access, secret scanning and sensitive data detection hard gates before generative apps are released. Independently audit backend configurations generated by agents. Do not treat runnable code as ready for production.</p>
+      <details>
+        <summary>Evidence &middot; 2</summary>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;more than 35,000 Grok-built apps open to anyone without login, including patient data&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi" rel="nofollow noopener">arstechnica.com</a></p>
+        <p class="quote">&ldquo;35,000 Grok Build apps wide open to anyone who looked for them.&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t2">
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Research breakthroughs</span></p>
+      <h2 id="alphaproof-code-demonstrates-large-scale-formal-software-verification">AlphaProof Code demonstrates large-scale formal software verification</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent</span></p>
+      <p class="body">DeepMind says AlphaProof Code verified Signal&#x27;s core encryption code with three million lines of Lean proofs.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Product promises for coding agents should distinguish between &quot;generation&quot; and &quot;verifiable delivery&quot;. Configure formal checks or reproducible evidence for high-risk changes. Reliability will affect enterprise procurement more than code output volume alone.</p>
+      <details>
+        <summary>Evidence &middot; 2</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://deepmind.google/blog/introducing-alphaproof-code" rel="nofollow noopener">deepmind.google</a></p>
+        <p class="quote">&ldquo;AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;verified Signal&#x27;s cryptographic core in four weeks instead of years&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t3">
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Model releases</span></p>
+      <h2 id="gemini-4-carbon-opens-to-developers-and-users">Gemini 4 Carbon opens to developers and users</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 press</span></p>
+      <p class="body">Google announced that Gemini 4 Carbon is available and expanded access to developers, enterprises and Gemini App users.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Include Gemini 4 Carbon in selection tests using real tasks, with a focus on complex programming and multi-step work quality. Do not switch models based on rankings alone. Also measure latency, failure recovery and cost per task.</p>
+      <details>
+        <summary>Evidence &middot; 2</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available" rel="nofollow noopener">deepmind.google</a></p>
+        <p class="quote">&ldquo;Gemini 4 Carbon is now available&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://zhidx.com/p/608996.html" rel="nofollow noopener">zhidx.com</a></p>
+        <p class="quote">&ldquo;谷歌Gemini新旗舰全面上线，一夜复刻OpenCode桌面应用&rdquo;</p>
+      </div>
+      </details>
+    </article>
+
+    <section class="mod">
+      <h3 id="on-the-radar">On the radar</h3>
+      <ul class="bullets">
+      <li><b>Google TPU 8 expands inference deployment options</b> &mdash; Reports focus on Google adjusting TPU accelerators to support a broader range of inference workloads, with different memory and confidential computing configurations.</li>
+      </ul>
+    </section>
+
+    <section class="mod">
+      <h3 id="since-last-issue">Since last issue</h3>
+      <ul class="bullets">
+        <li>Four topics from the previous issue did not reappear today.</li>
+        <li>0 days remain until OpenAI ends direct supply to Cursor.</li>
+      </ul>
+    </section>
+
+
+    <section class="also">
+      <h3 id="also-worth-knowing">Also worth knowing &middot; 26</h3>
+      <p class="sub">Everything else that made the cut today but was not big enough to lead.
+      Grouped by desk, open only what you need.</p>
+      <details class="cat" id="deadlines">
+        <summary><span class="cname">Deadlines ahead</span><span class="cn">6</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><span class="dd">Noned</span> <a href="https://x.com/thsottiaux/status/2093515916076343774" rel="nofollow noopener">OpenAI ends direct supply to Cursor</a> &middot; 2026-11-12</p><p class="n">Reports say OpenAI will end model access for Cursor on November 12. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">8d</span> <a href="https://36kr.com/newsflashes/4036266116567944?f=rss" rel="nofollow noopener">OpenAI access policy update</a> &middot; 2026-11-20</p><p class="n">Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">19d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">231d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory national standard implementation for L3/L4</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover</p></div>
+        <div class="r"><p class="t"><span class="dd">231d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">Implementation of China&#x27;s L3/L4 safety national standard</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Automated Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027. Related autonomous</p></div>
+        <div class="r"><p class="t"><span class="dd">385d</span> <a href="https://theagentindex.io/guides/eu-ai-act-timeline/" rel="nofollow noopener">EU AI Act high-risk rules</a> &middot; 2027-12-02</p><p class="n">The first clear applicability date for high-risk rules. Source</p></div>
+        </div>
+      </details>
+      <details class="cat" id="pricing">
+        <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" rel="nofollow noopener">Gemini Decisions API</a></p><p class="n">Bulk answers are non-multiple-choice grading questions</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/" rel="nofollow noopener">[AINews] Mercor $750m Series D at $20B valuation,…</a></p><p class="n">Train evaluation models with hiring data</p><p class="m">Latent Space</p></div>
+        <div class="r"><p class="t"><a href="https://cloud.google.com/blog/products/databases/ai-classify-and-ai-extract-functions-in-alloydb-ai/" rel="nofollow noopener">Introducing new AI functions for AlloyDB: ai.class…</a></p><p class="n">Assess the cost of AI functions in databases</p><p class="m">Google Cloud · AI &amp; ML</p></div>
+        <div class="r"><p class="t"><a href="https://x.com/rohanpaul_ai/status/2120320127484969162" rel="nofollow noopener">Anthropic 投资需求火热，承销商拟将 IPO 目标估值上调回 $1.5T 或更高</a></p><p class="n">Track higher IPO valuations and fundraising size</p><p class="m">X: Rohan Paul</p></div>
+        <div class="r"><p class="t"><a href="https://www.youtube.com/watch?v=l32KKNKdpIk" rel="nofollow noopener">Gemini 4 Carbon is Live!</a></p><p class="n">Check the Gemini 4 Carbon subscription threshold</p><p class="m">YouTube · AI channels</p></div>
+        </div>
+      </details>
+      <details class="cat" id="media">
+        <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://runwayml.com/news/company-news/praxis-1-is-now-available" rel="nofollow noopener">Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可</a></p><p class="n">Generate robot actions and video predictions</p><p class="m">Runway: News（网页）</p></div>
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" rel="nofollow noopener">Gemini Decisions API</a></p><p class="n">Bulk answers are non-multiple-choice grading questions</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/" rel="nofollow noopener">Google joins the decision-model wave with Gemini D…</a></p><p class="n">Evaluate a thousand multimodal questions at once</p><p class="m">The Decoder</p></div>
+        <div class="r"><p class="t"><a href="https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/" rel="nofollow noopener">[AINews] Mercor $750m Series D at $20B valuation,…</a></p><p class="n">Train evaluation models with hiring data</p><p class="m">Latent Space</p></div>
+        <div class="r"><p class="t"><a href="https://gemini.google/subscriptions/" rel="nofollow noopener">Google AI Pro &amp; Ultra — get access to Gemini 4 Arg…</a></p><p class="n">Unlock video generation and deep research</p><p class="m">Gemini</p></div>
+        </div>
+      </details>
+      <details class="cat" id="incidents">
+        <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://www.amazon.science/blog/using-mathematics-to-validate-network-configurations" rel="nofollow noopener">Using mathematics to validate network configuratio…</a></p><p class="n">Prevent network configuration from exposing sensitive data</p><p class="m">Amazon Science</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.14519v1" rel="nofollow noopener">Medical Image Segmentation: Foundation Model Adapt…</a></p><p class="n">Watch for generalization failures in medical segmentation</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.14508v1" rel="nofollow noopener">When Does the Real Wiring Win? Testing connectome…</a></p><p class="n">Investigate confusion in connectome model parameter tuning</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://www.reddit.com/r/ClaudeAI/comments/1xt44ar/claude_helped_me_organize_my_legal_database_into/" rel="nofollow noopener">Claude helped me organize my legal database into a…</a></p><p class="n">Fill gaps in public searches for military rulings</p><p class="m">r/ClaudeAI</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2611.14488" rel="nofollow noopener">Is Your Robot&#x27;s Memory Just a Clock? Temporal Shor…</a></p><p class="n">Identify temporal shortcuts in robot memory</p><p class="m">Hugging Face Papers</p></div>
+        </div>
+      </details>
+      <details class="cat" id="tools">
+        <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/SwankyMan88/ithaca" rel="nofollow noopener">SwankyMan88/ithaca</a></p><p class="n">Run multimodal AI locally on Windows</p><p class="m">GitHub · topic:awesome-llm</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/tt-a1i/archify" rel="nofollow noopener">tt-a1i/archify</a></p><p class="n">Turn idea code into interactive diagrams</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/OthmanAdi/planning-with-files" rel="nofollow noopener">OthmanAdi/planning-with-files</a></p><p class="n">Use files to save long-term agent plans</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/call-e?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">CALL-E</a></p><p class="n">Have AI make calls for appointments and quotes</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/skillbox-5?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Skillbox</a></p><p class="n">Sync AI skills and review injection risks</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+    </section>
+
+    <p class="tiefoot">Read 649 stories across
+      93 sources today and published 3.
+      <a href="/tie/archive">Archive</a> &middot;
+      <a href="/tie/2026-11-11.json">This issue as data</a> &middot;
+      <a href="/tie/sources">What it reads</a></p>
+  </article>
+
+    <aside class="rail">
+      <h2>AI Daily</h2>
+      <nav>
+        <a href="/tie/">Today&#x27;s issue</a>
+        <a href="/tie/archive">Archive</a>
+        <a href="/tie/how-it-works">How it works</a>
+        <a href="/tie/sources">What it reads</a>
+        <a href="/tie/data">Get it as data</a>
+        <a href="/tie/terms">Licence</a>
+      </nav>
+      <h2>On this page</h2>
+      <nav class="toc">
+        <a href="#the-read">The read</a>
+        <a href="#grok-build-apps-exposed-public-data">Grok Build apps exposed public data</a>
+        <a href="#alphaproof-code-demonstrates-large-scale-formal-software-verification">AlphaProof Code demonstrates large-scale formal software verification</a>
+        <a href="#gemini-4-carbon-opens-to-developers-and-users">Gemini 4 Carbon opens to developers and users</a>
+        <a href="#on-the-radar">On the radar</a>
+        <a href="#since-last-issue">Since last issue</a>
+        <a href="#also-worth-knowing">Also worth knowing</a>
+      </nav>
+      <a class="back" href="/">&larr; aaronzhang.ai</a>
+    </aside>
+  </div>
+
+  <footer>
+    Aaron Zhang ·
+    <a href="/#writing">Writing</a> ·
+    <a href="/tie/">AI Daily</a> ·
+    <a href="/deck/">Talk</a> ·
+    <a href="/about/">About</a> ·
+    <a href="https://x.com/aaronzhang42">X</a> ·
+    <a href="https://github.com/aaronartistzhang-afk">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/aaronzhangai/">LinkedIn</a> ·
+    <a href="mailto:aaronartistzhang@gmail.com">Email</a> ·
+    <a href="/tie/feed.xml">RSS</a>
+  </footer>
+
+</main>
+<script>
+  // The menu is a <details>: it opens, closes and takes keyboard focus without
+  // this. All that is missing natively is click-away and Escape.
+  (function () {
+    var shut = function (skip) {
+      document.querySelectorAll('header.site .menu[open]').forEach(function (d) {
+        if (!skip || !d.contains(skip)) d.open = false;
+      });
+    };
+    document.addEventListener('click', function (e) { shut(e.target); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(null); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a693901685644241abd983662d731b5f"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
