@@ -1,277 +1,252 @@
 {
   "schema_version": "1.0",
-  "date": "2026-11-12",
-  "executed_at": "2026-11-13T01:00:24.692222Z",
-  "run_id": "2026-11-10-ai_industry",
+  "date": "2026-11-13",
+  "executed_at": "2026-11-14T01:00:22.147904Z",
+  "run_id": "2026-11-11-ai_industry",
   "domain": "ai_industry",
   "locale": "en",
   "window": {
-    "from": "2026-11-10T12:00:24.692188+11:00",
-    "to": "2026-11-13T12:00:24.692188+11:00",
+    "from": "2026-11-11T12:00:22.147842+11:00",
+    "to": "2026-11-14T12:00:22.147842+11:00",
     "timezone": "Australia/Sydney",
     "days": 3
   },
-  "generated_at": "2026-11-13T12:00:24.692188+11:00",
+  "generated_at": "2026-11-14T12:00:22.147842+11:00",
   "status": "ok",
   "status_detail": null,
   "trends": [
     {
-      "canonical_id": "b0080cbe961226f5",
-      "run_trend_id": "GLOBAL_20261113_SAFETY_AND_GOVERNANCE_FIREWORKS_TRANSCRIPT_BREACH",
-      "name": "Fireworks AI incident exposes third-party model supply chain risks",
-      "category": "safety_and_governance",
+      "canonical_id": "1a958cebe02fdf81",
+      "run_trend_id": "GLOBAL_20261114_AGENTS_AND_TOOLING_AGENT_PAYMENT_EXECUTION",
+      "name": "Agent payments move into the product execution layer",
+      "category": "agents_and_tooling",
       "primary_region": "全球",
-      "secondary_regions": [],
-      "lifecycle_stage": "dormant",
-      "momentum": "accelerating",
-      "impact_level": "high",
-      "opportunity_level": "medium",
-      "confidence_level": "medium",
-      "summary": "Reports say Fireworks AI suffered a cyberattack that affected Notion customer chat records.",
-      "attention_driver": "A security incident at the same supplier again within months has drawn attention to model providers' data isolation capabilities.",
-      "evidence": [
-        {
-          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts",
-          "quote": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
-          "claim": "Reporting supports that the Fireworks AI cyberattack affected Notion customer chat records.",
-          "source_tier": "attention",
-          "used_for": "existence"
-        },
-        {
-          "url": "https://notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-          "quote": "Fireworks AI security breach impacts Notion and their customers",
-          "claim": "Supports Notion's characterization of the incident as a security incident involving a third-party AI supplier.",
-          "source_tier": "attention",
-          "used_for": "impact"
-        }
+      "secondary_regions": [
+        "美国"
       ],
-      "first_detected": "2026-11-10T07:19:38Z",
-      "last_signal_update": "2026-11-12T15:02:28Z",
-      "so_what": "If a product sends prompts, conversations, or business materials to external inference providers, review data minimization, retention periods, and supplier incident notification terms within two weeks. Design supplier switching, key rotation, and conversation isolation as capabilities that can be rehearsed, rather than relying only on procurement reviews."
-    },
-    {
-      "canonical_id": "effe5d7c08af6b1a",
-      "run_trend_id": "GLOBAL_20261113_MODEL_RELEASES_GEMINI_4_HYDROGEN",
-      "name": "Gemini 4 Hydrogen enters coding and search at low cost",
-      "category": "model_releases",
-      "primary_region": "全球",
-      "secondary_regions": [],
-      "lifecycle_stage": "recurring",
-      "momentum": "accelerating",
-      "impact_level": "medium",
-      "opportunity_level": "high",
-      "confidence_level": "high",
-      "summary": "Google released Gemini 4 Hydrogen and integrated it into developer workflows and Google Search at the same time.",
-      "attention_driver": "The low-cost model covers programming, debugging, and search entry points, and global distribution has begun.",
-      "evidence": [
-        {
-          "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen",
-          "quote": "Introducing Gemini 4 Hydrogen",
-          "claim": "Supports that Gemini 4 Hydrogen has been officially released.",
-          "source_tier": "primary_release",
-          "used_for": "existence"
-        },
-        {
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen",
-          "quote": "cost-efficient agentic coding and debugging",
-          "claim": "Supports that the model is aimed at low-cost agent coding and debugging workflows.",
-          "source_tier": "primary_release",
-          "used_for": "impact"
-        },
-        {
-          "url": "https://simonwillison.net/2026/Nov/12/llm-gemini",
-          "quote": "the lowest cost member of the Gemini 4 family",
-          "claim": "Independent developer reporting confirms it is positioned as the lowest-cost member of the Gemini 4 series.",
-          "source_tier": "independent_validation",
-          "used_for": "impact"
-        },
-        {
-          "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash",
-          "quote": "Google rolls out Gemini 4 Hydrogen",
-          "claim": "Supports that the product has entered the public rollout stage.",
-          "source_tier": "attention",
-          "used_for": "momentum"
-        }
-      ],
-      "first_detected": "2026-11-12T18:00:00Z",
-      "last_signal_update": "2026-11-12T20:50:50Z",
-      "so_what": "Change model routing to select by task quality, latency, and total cost, rather than fixing on a flagship model. Changes to default models in search and coding entry points will narrow the differentiation available to general Q&A products."
-    },
-    {
-      "canonical_id": "09ca9ab4ef5a9a1b",
-      "run_trend_id": "GLOBAL_20261113_ENTERPRISE_DEPLOYMENT_CLAUDE_MEETINGS",
-      "name": "Claude Meetings brings agents into video meetings",
-      "category": "enterprise_deployment",
-      "primary_region": "全球",
-      "secondary_regions": [],
       "lifecycle_stage": "emerging",
       "momentum": "accelerating",
-      "impact_level": "medium",
+      "impact_level": "high",
       "opportunity_level": "high",
       "confidence_level": "high",
-      "summary": "Anthropic launched a beta of Claude Meetings, allowing Claude to join video calls as a visible participant.",
-      "attention_driver": "In-meeting Q&A, document collaboration, and action item organization are integrated into a single work interface.",
+      "summary": "OpenAI launches ChatGPT Wallet, and Google connects Google Wallet to Gemini. Agents are beginning to gain user-approved payment capabilities.",
+      "attention_driver": "Payment tokens, approvals, and spending actions are becoming competitive entry points for general-purpose agent products.",
       "evidence": [
         {
-          "url": "https://claude.com/blog/claude-meetings",
-          "quote": "Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。",
-          "claim": "Supports that Anthropic has announced Claude Meetings' in-meeting collaboration capabilities.",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet",
+          "quote": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases",
+          "claim": "Supports OpenAI introducing approved purchasing capabilities for agents within ChatGPT.",
           "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls",
-          "quote": "Claude Meetings lets Anthropic's AI join your video calls",
-          "claim": "Independent reporting confirms that Claude Meetings can join video calls.",
+          "url": "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet",
+          "quote": "OpenAI rebuilt AI shopping from scratch with ChatGPT Wallet",
+          "claim": "Supports ChatGPT Wallet being positioned as a rebuilt agent shopping solution.",
           "source_tier": "independent_validation",
           "used_for": "impact"
         },
         {
-          "url": "https://claude.com/blog/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work",
-          "quote": "推荐将其作为研究、分析和写作等知识工作的日常主力。",
-          "claim": "Supports that Anthropic also strengthened Claude's product positioning in everyday knowledge work.",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app",
+          "quote": "Connect Google Wallet to Gemini for personal finance insights",
+          "claim": "Supports Google connecting Wallet data to Gemini for personal finance scenarios.",
           "source_tier": "primary_release",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://x.com/amasad/status/2121018020520931712",
+          "quote": "You can now ask Replit Agent to buy stuff for your business, including buying ads to acquire new customers!",
+          "claim": "Supports the expansion of product experiments in which agents execute commercial procurement and ad purchases.",
+          "source_tier": "attention",
           "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-11-12T00:00:00Z",
-      "last_signal_update": "2026-11-12T20:26:50Z",
-      "so_what": "The competitive point for meeting products is no longer only transcription accuracy, but whether they can complete in-meeting collaboration within permission boundaries and leave auditable outputs. Prioritize attendee consent, material boundaries, and human confirmation to avoid treating automated summaries directly as execution instructions."
-    }
-  ],
-  "watch_list": [
+      "first_detected": "2026-11-12T23:11:17Z",
+      "last_signal_update": "2026-11-13T18:55:21Z",
+      "so_what": "Agents involving purchases, ad placements, or billing should treat per-transaction approval, spending limits, revocable records, and failure fallback as launch capabilities. Payment execution will shift how the value of subscription assistants is measured toward attributable transaction outcomes."
+    },
     {
-      "canonical_id": "8745014d5b302831",
-      "run_trend_id": "GLOBAL_20261113_HARDWARE_AND_INFRA_SCALE_NETWORK_AND_SERVING",
-      "name": "Large-scale training networks and single-machine inference for ultra-large models advance in parallel",
+      "canonical_id": "4c6f64708aaa696d",
+      "run_trend_id": "GLOBAL_20261114_HARDWARE_AND_INFRA_NVIDIA_CEO_TRANSITION",
+      "name": "NVIDIA leadership transition causes volatility in compute supply expectations",
       "category": "hardware_and_infra",
       "primary_region": "全球",
-      "secondary_regions": [],
-      "lifecycle_stage": "expired",
-      "momentum": "stable",
+      "secondary_regions": [
+        "美国"
+      ],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
       "impact_level": "medium",
       "opportunity_level": "medium",
-      "confidence_level": "medium",
-      "summary": "Meta demonstrated the MetaRoCE network adapter for million-GPU clusters, while PyTorch demonstrated an 816B MoE model running on a single TPU v7 host.",
-      "attention_driver": "Cluster networking and model parallelism efficiency continue to determine the feasible cost of training and inference for ultra-large models.",
+      "confidence_level": "high",
+      "summary": "NVIDIA officially announces a CEO transition, with external discussion focused on its effects on chip supply and AI startup funding.",
+      "attention_driver": "Leadership changes at a core compute supplier have increased market attention to capital allocation and long-term supply stability.",
       "evidence": [
         {
-          "url": "https://servethehome.com/this-is-the-meta-metaroce-network-adapter",
-          "quote": "Meta showed off its MetaRoCE adapter designed to scale to million-GPU training clusters",
-          "claim": "Supports Meta's demonstration of a network adapter for million-GPU training clusters.",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+          "quote": "NVIDIA Announces CEO Transition",
+          "claim": "Supports that NVIDIA has formally announced a CEO transition.",
           "source_tier": "attention",
           "used_for": "existence"
         },
         {
-          "url": "https://pytorch.org/blog/optimizing-muse-spark-open-on-tpu-v7-with-sglang-torchtpu",
-          "quote": "serve Meta’s Muse Spark Open, an 816B-parameter mixture-of-experts model, on a single TPU v7 host of four chips",
-          "claim": "Supports a case of deploying an ultra-large MoE model on a single four-chip TPU host.",
+          "url": "https://nextplatform.com/ai/2026/11/12/the-nvidia-machine-is-self-sustaining-and-was-already-facing-a-tougher-future/5309473",
+          "quote": "The Nvidia Machine Is Self-Sustaining – And Was Already Facing A Tougher Future",
+          "claim": "Supports that the market is also watching the operational and supply challenges NVIDIA faced before the transition.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
+          "quote": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+          "claim": "Supports that the leadership change is seen as potentially affecting AI startup funding expectations.",
           "source_tier": "attention",
+          "used_for": "sentiment"
+        }
+      ],
+      "first_detected": "2026-11-12T13:48:00Z",
+      "last_signal_update": "2026-11-13T22:43:00Z",
+      "so_what": "There is no need to rewrite technical roadmaps on this basis in the near term, but GPU capacity, cloud commitments, and alternative suppliers should be included in quarterly scenario planning. For products sensitive to long-term inference costs, retaining multi-cloud and multi-chip deployment options has become more valuable."
+    },
+    {
+      "canonical_id": "c86fd07f39fe605f",
+      "run_trend_id": "GLOBAL_20261114_SAFETY_AND_GOVERNANCE_AGENT_COUNTERPART_ACCESS",
+      "name": "External services begin restricting agent proxy access",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "美国"
+      ],
+      "lifecycle_stage": "expired",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "United Airlines bans agents from booking flights on behalf of users. Meta Muse's agent phone calls also face businesses refusing to answer.",
+      "attention_driver": "Service providers' control over identity, automated traffic, and liability boundaries is beginning to limit cross-site task automation.",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks",
+          "quote": "The airline said it will not allow customers to use AI agents to book flights and manage reservations.",
+          "claim": "Supports that airline service providers restrict agent ticket booking and reservation management due to security concerns.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
+          "quote": "United Airlines bans AI agents from booking flights on behalf of travelers",
+          "claim": "Supports that United Airlines' restrictions on agent ticket booking received independent coverage.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai",
+          "quote": "Meta's AI agent Muse can now call businesses on behalf of paying US subscribers",
+          "claim": "Supports a product experiment that lets paid users have Meta Muse contact businesses on their behalf.",
+          "source_tier": "independent_validation",
           "used_for": "impact"
         }
       ],
-      "first_detected": "2026-11-10T16:45:24Z",
-      "last_signal_update": "2026-11-12T12:00:07Z",
-      "so_what": "When planning large model features, include networking, memory, and parallelism strategy in per-task costs rather than comparing only per-token pricing. For high-value workflows, prioritize testing the throughput and failure recovery limits of large models on a single machine or small cluster."
+      "first_detected": "2026-11-12T17:17:58Z",
+      "last_signal_update": "2026-11-13T15:12:44Z",
+      "so_what": "Do not treat web or phone proxy services as stable foundational capabilities. Products should plan for partner interfaces, human takeover, and user review. When measuring task success rates, track service-provider rejection rates separately rather than looking only at model completion rates."
     }
   ],
+  "watch_list": [],
   "trend_evolution": [],
   "coverage": {
     "sources_configured": 93,
-    "source_keys_reporting": 91,
-    "signals_raw": 630,
-    "signals_accepted": 606,
-    "clusters_total": 361,
-    "clusters_synthesized": 144,
+    "source_keys_reporting": 88,
+    "signals_raw": 619,
+    "signals_accepted": 595,
+    "clusters_total": 366,
+    "clusters_synthesized": 167,
     "by_source": {
-      "algorithmic_bridge": 2,
-      "amazon": 3,
-      "anthropic": 3,
-      "apple": 3,
+      "algorithmic_bridge": 1,
+      "amazon": 2,
+      "anthropic": 1,
+      "apple": 1,
+      "apple_newsroom_rss": 1,
       "apple_podcasts_a16z_podcast": 3,
       "apple_podcasts_ai_i": 1,
-      "apple_podcasts_latent_space": 1,
-      "apple_podcasts_lex_fridman_podcast": 1,
       "apple_podcasts_no_priors": 1,
-      "apple_podcasts_the_cognitive_revolution": 2,
-      "apple_podcasts_twiml_ai_podcast": 1,
-      "ars_technica_ai": 13,
-      "astral_codex_ten": 2,
-      "brave_search_ai": 103,
-      "chipsandcheese": 2,
-      "cohere": 1,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "ars_technica_ai": 9,
+      "arxiv": 20,
+      "astral_codex_ten": 3,
+      "brave_search_ai": 104,
+      "chipsandcheese": 1,
+      "cohere": 2,
       "crunchbase_news": 6,
-      "deepmind": 4,
+      "deepmind": 2,
+      "deepseek_api": 1,
+      "dwarkesh_blog": 1,
       "eetimes": 10,
-      "epoch_ai_gradient_updates_rss": 1,
-      "exponential_view": 2,
-      "gary_marcus": 4,
-      "github": 9,
-      "github_awesome_claude": 1,
+      "eu_ai_act_newsroom": 1,
+      "exponential_view": 1,
+      "gary_marcus": 5,
+      "github": 10,
       "github_awesome_llm": 2,
-      "github_claude_skills": 10,
+      "github_claude_skills": 11,
       "github_cursor_rules": 5,
-      "google": 16,
-      "hn": 14,
-      "huggingface_blog": 4,
-      "huggingface_papers": 20,
-      "ieee_spectrum_ai": 2,
+      "google": 13,
+      "hn": 19,
+      "huggingface_blog": 6,
+      "huggingface_papers": 19,
+      "ieee_spectrum_ai": 3,
       "index_ventures": 5,
       "infoq_ai_zh": 20,
       "kr36_ai": 20,
-      "latent_space": 7,
-      "lennys_newsletter": 2,
-      "meta": 5,
-      "microsoft": 4,
+      "latent_space": 6,
+      "lennys_newsletter": 1,
+      "meta": 4,
+      "microsoft": 3,
       "mistral": 1,
       "mit_tech_review_ai": 1,
-      "nextplatform": 5,
-      "not_boring": 1,
-      "nvidia": 5,
-      "openai": 12,
-      "openai_alignment_rss": 1,
+      "newcomer_rss": 1,
+      "nextplatform": 4,
+      "not_boring": 2,
+      "nvidia": 4,
+      "openai": 8,
+      "openmoss_nlp_mosi": 1,
       "platformer": 1,
-      "pragmatic_engineer": 2,
+      "pragmatic_engineer": 1,
       "producthunt": 20,
-      "pytorch_blog": 5,
+      "pytorch_blog": 3,
       "qbitai": 10,
-      "reddit_chatgptcoding": 3,
-      "reddit_claudeai": 13,
+      "reddit_chatgptcoding": 2,
+      "reddit_claudeai": 6,
       "reddit_localllama": 20,
-      "reddit_ml": 11,
-      "reddit_promptengineering": 8,
-      "replit_blog_rss": 1,
+      "reddit_ml": 9,
+      "reddit_promptengineering": 10,
       "rundown_ai": 3,
       "semianalysis": 1,
-      "sequoia_blog": 1,
       "servethehome": 3,
-      "simon_willison": 10,
-      "stratechery": 3,
-      "techcrunch_ai": 20,
+      "sierra_blog_rss": 1,
+      "simon_willison": 8,
+      "stratechery": 4,
+      "techcrunch_ai": 19,
       "techcrunch_venture": 2,
       "the_decoder": 10,
       "tldr_ai": 2,
-      "tomasz_tunguz_vc": 1,
       "unknown": 1,
       "verge_ai": 10,
       "wired_ai": 10,
-      "x_amasad": 1,
-      "x_artificial_analysis_artificialanlys": 1,
-      "x_fei_fei_li_drfeifei_world_labs": 1,
-      "x_garrytan": 3,
-      "x_gemini_geminiapp": 1,
-      "x_google_deepmind_googledeepmind": 1,
-      "x_googlelabs": 2,
-      "x_josh_woodward_joshwoodward_google_labs_vp": 1,
-      "x_joshwoodward": 1,
-      "x_matt_palmer_spacexsi_grok_bot_mattyp": 1,
+      "x_ado_kukic_anthropic_claude_code_adocomplete": 1,
+      "x_alexalbert__": 1,
+      "x_amasad": 3,
+      "x_anthropic_anthropicai": 1,
+      "x_chatgpt_chatgpt": 1,
+      "x_cl_ment_delangue_hugging_face_ceo_clementdelangue": 1,
+      "x_joshwoodward": 3,
+      "x_levie": 1,
       "x_petergyang": 3,
-      "x_rauchg": 3,
-      "x_rohan_paul_rohanpaul_ai": 1,
+      "x_rauchg": 1,
+      "x_rohan_paul_rohanpaul_ai": 4,
       "x_swyx": 3,
-      "x_thsottiaux": 2,
+      "x_thsottiaux": 3,
       "x_trq212": 2,
-      "youtube_ai": 9,
+      "youtube_ai": 6,
       "zh_podcast_zhangxiaojun": 1,
       "zhidx": 20,
       "zvi_mowshowitz": 3
@@ -280,37 +255,36 @@
   "provenance": {
     "pipeline_version": "tie-0.2.0",
     "config_hash": "d63f8e6755f92bfb",
-    "prompt_hash": "17baf9050a98247f"
+    "prompt_hash": "d3af4f57f3f97277"
   },
   "insights": [
     {
-      "text": "Low-cost agents enter default entry points, coding and meeting scenarios launched in the same week, so task-level model routing and human confirmation need to be productized at the same time",
-      "refs": [
-        2,
-        3
-      ]
-    },
-    {
-      "text": "External inference needs rehearsable isolation, conversation data exposure incidents require products to predefine switching, rotation, and audit paths",
+      "text": "Agents are beginning to handle transactions: payments and ad procurement are entering product experiments, and permission design will directly affect whether tasks can launch",
       "refs": [
         1
       ]
     },
     {
-      "text": "Lightweight agent tools are gaining attention, five framework ecosystem signals have clustered, and containerized runtime approaches are worth tracking",
+      "text": "Cross-site proxy task success rates are under pressure: service-provider refusals and identity verification will become independent variables in task completion rates",
+      "refs": [
+        3
+      ]
+    },
+    {
+      "text": "Agent tools continue to expand: protocols, frameworks, and observability are showing new signals at the same time, and products need to reserve integration points",
       "refs": []
     }
   ],
   "since_last": [
-    "Earlier trends including Grok Build and AlphaProof Code have exited this issue.",
-    "7 days remain until the OpenAI access policy update."
+    "All 6 trends that ranked in the previous period have exited this period.",
+    "OpenAI access policy update has 6 days remaining."
   ],
   "countdowns": [
     {
       "title": "OpenAI access policy update",
       "kind": "Policy",
       "effective_date": "2026-11-20",
-      "days_left": 7,
+      "days_left": 6,
       "description": "Model routers and AI gateways must undergo OpenAI review and approval before providing direct model access. Source",
       "url": "https://36kr.com/newsflashes/4036266116567944?f=rss"
     },
@@ -318,196 +292,195 @@
       "title": "Gemini 2.5 API automatic routing",
       "kind": "Deprecation",
       "effective_date": "2026-12-01",
-      "days_left": 18,
-      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed from December 1. Source",
+      "days_left": 17,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio. API requests will be automatically routed starting December 1. Source",
       "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
     },
     {
       "title": "Mandatory national standard implementation for L3/L4",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 230,
-      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect from July 1, 2027, covering requirements for Safety Case, human-machine handover, and risk handling. Source",
+      "days_left": 229,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handoff, and risk response requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "China L3/L4 safety national standard implementation",
+      "title": "Implementation of China's L3/L4 national safety standard",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 230,
-      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect from July 1, 2027, and related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "days_left": 229,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     },
     {
       "title": "EU AI Act high-risk rules",
       "kind": "Policy",
       "effective_date": "2027-12-02",
-      "days_left": 384,
-      "description": "The first clear applicability date for high-risk rules. Source",
+      "days_left": 383,
+      "description": "The first clear effective date for high-risk rules. Source",
       "url": "https://theagentindex.io/guides/eu-ai-act-timeline/"
     }
   ],
   "leaderboard": [],
   "sections": {
-    "media": [
+    "pricing": [
       {
-        "title": "Gemini 4 Hydrogen: everyday coding and agentic wor…",
-        "note": "Generate low-cost coding and debugging agents",
-        "source": "google_gemini_blog",
-        "why": "",
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
-      },
-      {
-        "title": "ElevenLabs Scribe v3 Live uses conversational cont…",
-        "note": "Transcribe speech with noise and overlapping speakers",
-        "source": "the_decoder",
-        "why": "",
-        "url": "https://the-decoder.com/elevenlabs-scribe-v3-live-uses-conversational-context-to-stop-voice-agents-from-cutting-off-callers-mid-sentence/"
-      },
-      {
-        "title": "[AINews] D-Day (Decision Models Day)",
-        "note": "Produce structured decisions and scores",
+        "title": "[AINews] Jensen Huang resigns after 33 years leadi…",
+        "note": "Verify the NVIDIA leadership change",
         "source": "latent_space",
         "why": "",
-        "url": "https://latent.space/p/ainews-d-day-decision-models-day/"
+        "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/"
       },
       {
-        "title": "3 YC-backed wearables that NEED to be on your rada…",
-        "note": "Generate real-time emotion and focus scores",
-        "source": "Substack",
+        "title": "Quantifying structural stability of transparent mo…",
+        "note": "Monitor stability after insurance model repricing",
+        "source": "arxiv",
         "why": "",
-        "url": "https://nothingofnotee.substack.com/p/3-yc-backed-wearables-that-need-to"
+        "url": "https://arxiv.org/abs/2611.17308v1"
       },
       {
-        "title": "Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道",
-        "note": "Call Gemini models across multiple channels",
-        "source": "X: Google DeepMind",
+        "title": "Introducing GPT-6.1 Sol | OpenAI",
+        "note": "Assess GPT-6.1 interface pricing changes",
+        "source": "Openai",
         "why": "",
-        "url": "https://x.com/GoogleDeepMind/status/2120940342505566438"
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+      },
+      {
+        "title": "llm-gemini 0.37",
+        "note": "Compare Gemini 4 low-cost model costs",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/"
+      },
+      {
+        "title": "Our agents share one account history but each runs…",
+        "note": "Put distributed agent prompts under version control",
+        "source": "reddit_promptengineering",
+        "why": "",
+        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xva8jq/our_agents_share_one_account_history_but_each/"
+      }
+    ],
+    "media": [
+      {
+        "title": "DeepSeek重磅开放全套App能力API：开发者可直接接入搜索、文件解析与语音 -区块周刊Blo…",
+        "note": "Integrate a search, parsing, and voice generation application",
+        "source": "Blockweeks",
+        "why": "",
+        "url": "https://blockweeks.com/news/340715"
+      },
+      {
+        "title": "梁圣再放大招：人人都能手搓DeepSeek App了",
+        "note": "Combine search, scraping, OCR, and voice calls",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/610514.html"
+      },
+      {
+        "title": "Models — Google DeepMind",
+        "note": "Choose multimodal models such as Gemini",
+        "source": "Deepmind",
+        "why": "",
+        "url": "https://deepmind.google/models/"
+      },
+      {
+        "title": "ElevenLabs’ new app combines meeting note-taking a…",
+        "note": "Generate meeting minutes and dictation for teams",
+        "source": "techcrunch_ai",
+        "why": "",
+        "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/"
+      },
+      {
+        "title": "AI Startup Funding Options: VC vs. Debt vs. Strate…",
+        "note": "Match AI startup funding paths",
+        "source": "Techyorker",
+        "why": "",
+        "url": "https://techyorker.com/ai-startup-funding-choose-equity-debt-or-a-strategic-investor/"
       }
     ],
     "incidents": [
       {
-        "title": "The Jev Revolution: What Engineers Are Already Bui…",
-        "note": "Do not use generative models as a substitute for rapid judgment",
-        "source": "latent_space",
+        "title": "Linking Rapid Learning to Compositional Structure…",
+        "note": "Identify why neural networks struggle to learn quickly",
+        "source": "arxiv",
         "why": "",
-        "url": "https://latent.space/p/jev-revolution/"
+        "url": "https://arxiv.org/abs/2611.17314v1"
       },
       {
-        "title": "No, AI agents did not discover a previously unknow…",
-        "note": "Verify whether AI archaeology discoveries have already been publicly disclosed",
-        "source": "verge_ai",
+        "title": "LiveGeo: Benchmarking Geographic Agents in Continu…",
+        "note": "Test dynamic decision-making errors in geospatial agents",
+        "source": "arxiv",
         "why": "",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery"
+        "url": "https://arxiv.org/abs/2611.17267v1"
       },
       {
-        "title": "Google faces calls for AI moratoriums in schools a…",
-        "note": "Pause default AI deployment on campus first",
-        "source": "ars_technica_ai",
+        "title": "Microsoft 365 Crawls Back to Life After a 24-Hour…",
+        "note": "Review a bad update that caused a global outage",
+        "source": "wired_ai",
         "why": "",
-        "url": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/"
+        "url": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/"
       },
       {
-        "title": "I built a 5-agent AI council that debates startup…",
-        "note": "Constrain startup evaluations to avoid blind optimism",
-        "source": "reddit_promptengineering",
+        "title": "How Microcredentials Help Engineers Build Trustwor…",
+        "note": "Fill AI compliance capability gaps in engineering teams",
+        "source": "ieee_spectrum_ai",
         "why": "",
-        "url": "https://www.reddit.com/r/PromptEngineering/comments/1xudxqy/i_built_a_5agent_ai_council_that_debates_startup/"
+        "url": "https://spectrum.ieee.org/microcredentials-trustworthy-ai"
       },
       {
-        "title": "Design Smarter – Energy Harvesting for Battery-Fre…",
-        "note": "Reduce battery sensor maintenance failures",
-        "source": "eetimes",
+        "title": "We announced new tools we're developing for cybers…",
+        "note": "Use automated red teaming to find patch risks",
+        "source": "@thsottiaux",
         "why": "",
-        "url": "https://www.eetimes.com/design-smarter-energy-harvesting-for-battery-free-and-low-maintenance-devices-in-safety-security-applications/"
+        "url": "https://x.com/thsottiaux/status/2121036562058400200"
       }
     ],
     "tools": [
       {
-        "title": "KbWen/agentic-os",
-        "note": "Add evidence gates to coding agents",
-        "source": "github_cursor_rules",
-        "why": "GitHub topic:cursor-rules is growing (233 ⭐), worth watching early, matches your interests in \"agent / agents / claude\" · View",
-        "url": "https://github.com/KbWen/agentic-os"
-      },
-      {
-        "title": "nanocoai/nanoclaw",
-        "note": "Connect chat applications to deploy security agents",
+        "title": "teng-lin/notebooklm-py",
+        "note": "Use Python to automate NotebookLM",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills featured repository (31,111 ⭐), matches your interests in \"agent / agents / anthropic\" · View",
-        "url": "https://github.com/nanocoai/nanoclaw"
+        "why": "GitHub topic:claude-skills starred repository (20,225 ⭐), matching your interests: \"agent / agents / claude\" · View",
+        "url": "https://github.com/teng-lin/notebooklm-py"
       },
       {
-        "title": "My game got removed from gamedev subs for using AI…",
-        "note": "Use AI to independently create a small game",
-        "source": "reddit_claudeai",
-        "why": "r/claudeai popular post this week (recent discussion), matches your interests in \"agent / agents / claude\" · View",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xul18m/my_game_got_removed_from_gamedev_subs_for_using/"
-      },
-      {
-        "title": "Plurai Simulation",
-        "note": "Simulate users to find agent flaws early",
-        "source": "producthunt_ai",
-        "why": "Product Hunt AI featured · 348 votes · 122 comments, matches your interests in \"agent / claude / code\" · View",
-        "url": "https://www.producthunt.com/products/plurai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
-      },
-      {
-        "title": "YouArt Desktop App",
-        "note": "Give local materials to AI for video editing",
-        "source": "producthunt_ai",
-        "why": "Product Hunt AI featured · 282 votes · 43 comments, matches your interests in \"agent / code / ide\" · View",
-        "url": "https://www.producthunt.com/products/youart?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
-      }
-    ],
-    "frameworks": [
-      {
-        "title": "nanocoai/nanoclaw",
-        "note": "Connect chat applications to deploy security agents",
+        "title": "code-yeongyu/oh-my-openagent",
+        "note": "Use keywords to orchestrate graph agents in batches",
         "source": "github_claude_skills",
-        "why": "",
-        "url": "https://github.com/nanocoai/nanoclaw"
+        "why": "GitHub topic:claude-skills starred repository (70,893 ⭐), matching your interests: \"agent / code / prompt\" · View",
+        "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
-        "title": "My game got removed from gamedev subs for using AI…",
-        "note": "Use AI to independently create a small game",
-        "source": "reddit_claudeai",
-        "why": "",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xul18m/my_game_got_removed_from_gamedev_subs_for_using/"
+        "title": "thedotmack/claude-mem",
+        "note": "Save and inject agent memory across sessions",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (116,853 ⭐), matching your interests: \"agent / claude / code\" · View",
+        "url": "https://github.com/thedotmack/claude-mem"
       },
       {
-        "title": "B2A崛起！Agent 14大应用与Infra赛道一文看懂",
-        "note": "Rebuild business entry points for agent traffic",
-        "source": "zhidx",
-        "why": "",
-        "url": "https://zhidx.com/p/609934.html"
+        "title": "Trainn MCP",
+        "note": "Turn screen recordings into tutorials and help documentation",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 168 votes · 43 comments, matching your interests: \"agent / chat / claude\" · View",
+        "url": "https://www.producthunt.com/products/trainn?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "chat : refactor gemma4 to build loose schema rules…",
-        "note": "Fix Gemma tool calling rules",
-        "source": "reddit_localllama",
-        "why": "",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu6td8/chat_refactor_gemma4_to_build_loose_schema_rules/"
-      },
-      {
-        "title": "输出不要钱？100个问题仅用0.41秒！谷歌Gemini Decisions API上线",
-        "note": "Use APIs to make multimodal judgments in batches",
-        "source": "zhidx",
-        "why": "",
-        "url": "https://zhidx.com/p/609608.html"
+        "title": "Gemini 4 Hydrogen",
+        "note": "Use low-cost models for coding and debugging",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 127 votes · 2 comments, matching your interests: \"agent / code / coding\" · View",
+        "url": "https://www.producthunt.com/products/gemini-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ]
   },
   "sections_missing": [
     "leaderboard",
-    "pricing"
+    "frameworks"
   ],
   "source_flags": [
-    "evidence_rewritten:GLOBAL_2-139a890f0c9cb8ac",
-    "evidence_rewritten:GLOBAL_2-5b91ca68fcf75851",
-    "evidence_rewritten:GLOBAL_2-d628f6830e52f1a8",
-    "evidence_rewritten:GLOBAL_2-b06a84e4d4851f14",
-    "critic_missed:cluster-82d892a77508e767"
+    "evidence_rewritten:GLOBAL_2-03c81266e80552bc",
+    "evidence_rewritten:GLOBAL_2-3a7f3008964d19ee",
+    "evidence_rewritten:GLOBAL_2-fd90c33f103df32f",
+    "critic_missed:cluster-ccb448f0f2960d23"
   ],
   "caveats": [],
   "license": "MIT",

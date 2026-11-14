@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 12 Nov 2026 17:00:24 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 17:00:22 -0800</lastBuildDate>
+    <item>
+      <title>Agent payments move into the product execution layer</title>
+      <link>https://aaronzhang.ai/tie/2026-11-13</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 17:00:22 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agents are beginning to handle transactions: payments and ad procurement are entering product experiments, and permission design will directly affect whether tasks can launch&lt;/li&gt;&lt;li&gt;Cross-site proxy task success rates are under pressure: service-provider refusals and identity verification will become independent variables in task completion rates&lt;/li&gt;&lt;li&gt;Agent tools continue to expand: protocols, frameworks, and observability are showing new signals at the same time, and products need to reserve integration points&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Fireworks AI incident exposes third-party model supply chain risks</title>
       <link>https://aaronzhang.ai/tie/2026-11-12</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-05</guid>
       <pubDate>Mon, 05 Oct 2026 17:00:17 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;AI acceptance testing needs evidence: static leaderboards cannot cover test memory and low-quality submissions, so products need to verify real execution results&lt;/li&gt;&lt;li&gt;Compliance interfaces enter default design: provenance marking and data permissions will both affect product paths for enterprise and EU users&lt;/li&gt;&lt;li&gt;More cost and pricing signals: this issue has 5 related signals, and cost control will continue to affect product packaging&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Apple tightens Full Disk Access permissions for macOS agents</title>
-      <link>https://aaronzhang.ai/tie/2026-10-02</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-02</guid>
-      <pubDate>Fri, 02 Oct 2026 17:00:21 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Permission design has become a threshold for agent products: tighter system permissions and regulatory investigations are appearing at the same time, so authorization records and human confirmation should enter default workflows&lt;/li&gt;&lt;li&gt;Audio generation depends on editability: speech and music can be generated in one step, but product retention depends on whether later revisions are stable&lt;/li&gt;&lt;li&gt;Cost and pricing affect model selection: 5 related signals have appeared together, and model routing needs to compare quality and price together&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
