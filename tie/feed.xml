@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 16 Nov 2026 17:00:15 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 17:00:18 -0800</lastBuildDate>
+    <item>
+      <title>GPT-6.2 Astra and Sol expand tool execution at lower cost</title>
+      <link>https://aaronzhang.ai/tie/2026-11-17</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 17:00:18 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Routing design replaces single-model lock-in: price cuts and access to open models are appearing together, so products need to select models by task cost and success rate&lt;/li&gt;&lt;li&gt;Tool identity becomes a release requirement: MCP misbinding and dependency poisoning both point to gaps in default protections for execution paths&lt;/li&gt;&lt;li&gt;Cost signals are appearing in concentration: this issue has 5 pricing and cost change signals, so monetization design needs room for price adjustments&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Computer-use agents enter cross-system workflows</title>
       <link>https://aaronzhang.ai/tie/2026-11-16</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-07</guid>
       <pubDate>Wed, 07 Oct 2026 17:00:26 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Chat will handle task operations: interactive components and typed decisions need separate measurement of completion rates and response times&lt;/li&gt;&lt;li&gt;Model routing is beginning to affect gross margin: after small-model price cuts, quality thresholds and retry costs determine whether savings materialize&lt;/li&gt;&lt;li&gt;Agent frameworks are still changing interfaces: Skills, MCP state management, and design tool integration are appearing at the same time&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Open multimodal embedding models become an option for lightweight deployment</title>
-      <link>https://aaronzhang.ai/tie/2026-10-06</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-06</guid>
-      <pubDate>Tue, 06 Oct 2026 17:00:30 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;The retrieval layer can be separated from large models: open multimodal embedding models allow the quality and cost of local recall to be optimized separately&lt;/li&gt;&lt;li&gt;Enterprise agents must clear governance first: knowledge access and external actions both require permissions, auditing and fallback to come first&lt;/li&gt;&lt;li&gt;Lightweight agent tools are increasing: containerization and tool-calling frameworks are appearing frequently, while integration costs still need testing&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
