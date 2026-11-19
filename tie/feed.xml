@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 17 Nov 2026 17:00:18 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 17:00:16 -0800</lastBuildDate>
+    <item>
+      <title>Gemini 4 Neon launches and enters multiple channels</title>
+      <link>https://aaronzhang.ai/tie/2026-11-18</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 17:00:16 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Model routing becomes a necessity: new models are launching in quick succession and entering multi-channel distribution, so default models should switch based on real tasks&lt;/li&gt;&lt;li&gt;Independent evaluation becomes a delivery requirement: agents connected to tools or sensitive data need reviewable execution records&lt;/li&gt;&lt;li&gt;Per-task costs will continue to fluctuate: 5 pricing and cost signals suggest that high-frequency agent features must be calculated by task&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>GPT-6.2 Astra and Sol expand tool execution at lower cost</title>
       <link>https://aaronzhang.ai/tie/2026-11-17</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-08</guid>
       <pubDate>Thu, 08 Oct 2026 17:00:21 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Trustworthy outputs need a verification path: the dispute over mathematical results shows that specialist tasks cannot deliver conclusions alone&lt;/li&gt;&lt;li&gt;On-device offline experiences are becoming viable: inference engines and offline transcription appear together, so device constraints need to enter product design early&lt;/li&gt;&lt;li&gt;Agent toolchains are still expanding: MCP state management and framework tools have produced 5 new signals&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>GPT-6 extends chat output into interactive interfaces and structured decisions</title>
-      <link>https://aaronzhang.ai/tie/2026-10-07</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-07</guid>
-      <pubDate>Wed, 07 Oct 2026 17:00:26 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Chat will handle task operations: interactive components and typed decisions need separate measurement of completion rates and response times&lt;/li&gt;&lt;li&gt;Model routing is beginning to affect gross margin: after small-model price cuts, quality thresholds and retry costs determine whether savings materialize&lt;/li&gt;&lt;li&gt;Agent frameworks are still changing interfaces: Skills, MCP state management, and design tool integration are appearing at the same time&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
