@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Wed, 18 Nov 2026 17:00:16 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 17:00:22 -0800</lastBuildDate>
+    <item>
+      <title>Anthropic&#x27;s listing puts frontier model commercialization under public scrutiny</title>
+      <link>https://aaronzhang.ai/tie/2026-11-19</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 17:00:22 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent delivery is stuck at the control plane: as execution capability improves, permission boundaries and review queues become default product workflows&lt;/li&gt;&lt;li&gt;Model procurement will include financial constraints: after frontier labs list, supply stability and per-task cost need to enter product selection&lt;/li&gt;&lt;li&gt;More cost-routing signals: 5 pricing and cost signals this period indicate that products need to continuously calibrate model invocation strategies&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Gemini 4 Neon launches and enters multiple channels</title>
       <link>https://aaronzhang.ai/tie/2026-11-18</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-09</guid>
       <pubDate>Fri, 09 Oct 2026 17:00:27 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Agent acceptance testing must measure erroneous actions: large-scale orchestration increases output, while also increasing the consequences of unauthorized calls. Permission and recovery design must come first.&lt;/li&gt;&lt;li&gt;Supplier costs can no longer be assumed to be static: revenue expectations and fundraising discussions will affect pricing, capacity, and long-term service planning.&lt;/li&gt;&lt;li&gt;Pricing signals were concentrated this period: 5 pricing/cost change signals indicate that feature budgets should support dynamic limits.&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Claude will add governance and open-source security scanning to its service capabilities</title>
-      <link>https://aaronzhang.ai/tie/2026-10-08</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-08</guid>
-      <pubDate>Thu, 08 Oct 2026 17:00:21 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Trustworthy outputs need a verification path: the dispute over mathematical results shows that specialist tasks cannot deliver conclusions alone&lt;/li&gt;&lt;li&gt;On-device offline experiences are becoming viable: inference engines and offline transcription appear together, so device constraints need to enter product design early&lt;/li&gt;&lt;li&gt;Agent toolchains are still expanding: MCP state management and framework tools have produced 5 new signals&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
