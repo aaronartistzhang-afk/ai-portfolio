@@ -50,5 +50,5 @@ What makes the data unusual is the evidence model. A trend is not published unle
 
 ## Optional
 
-- [Suggest a source](mailto:aaronartistzhang@gmail.com?subject=AI%20Daily%20source%20suggestion): 7 of the 93 are currently broken and the list is thin on policy.
+- [Suggest a source](mailto:aaronartistzhang@gmail.com?subject=AI%20Daily%20source%20suggestion): 12 of the 93 are currently broken and the list is thin on policy.
 - The pipeline source code is not public. Each record instead publishes `provenance.pipeline_version` plus hashes over the configuration and the synthesis prompts, so a change of method is visible and datable.

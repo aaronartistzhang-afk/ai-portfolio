@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Thu, 19 Nov 2026 17:00:22 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 17:00:25 -0800</lastBuildDate>
+    <item>
+      <title>Gemini 4 Neon expands the model and tool-calling combination</title>
+      <link>https://aaronzhang.ai/tie/2026-11-20</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-20</guid>
+      <pubDate>Fri, 20 Nov 2026 17:00:25 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Model integration needs task-based replacement: competition among new models is concentrated in tool retrieval and long-chain execution, so products cannot select models solely by general leaderboards&lt;/li&gt;&lt;li&gt;Local deployment is becoming a procurement condition: offline operation, sensitive context and per-task cost will directly affect enterprise deployment choices&lt;/li&gt;&lt;li&gt;Cost signals are still accumulating: 5 pricing and infrastructure signals suggest that inference costs should be included in feature pricing design&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Anthropic&#x27;s listing puts frontier model commercialization under public scrutiny</title>
       <link>https://aaronzhang.ai/tie/2026-11-19</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-12</guid>
       <pubDate>Mon, 12 Oct 2026 17:00:26 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Long-task costs need separate governance: multi-agent quality gains are limited, while historical context and call strategies have a greater effect on task economics&lt;/li&gt;&lt;li&gt;Model selection returns to the per-task ledger: improved agent capabilities in new models may come with substantially higher per-task costs&lt;/li&gt;&lt;li&gt;The tool ecosystem is still expanding: MCP, skill packages and inference monitoring tools are all appearing, and products need to control their integration surface&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>The cost of agent errors in external actions becomes explicit</title>
-      <link>https://aaronzhang.ai/tie/2026-10-09</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-09</guid>
-      <pubDate>Fri, 09 Oct 2026 17:00:27 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Agent acceptance testing must measure erroneous actions: large-scale orchestration increases output, while also increasing the consequences of unauthorized calls. Permission and recovery design must come first.&lt;/li&gt;&lt;li&gt;Supplier costs can no longer be assumed to be static: revenue expectations and fundraising discussions will affect pricing, capacity, and long-term service planning.&lt;/li&gt;&lt;li&gt;Pricing signals were concentrated this period: 5 pricing/cost change signals indicate that feature budgets should support dynamic limits.&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

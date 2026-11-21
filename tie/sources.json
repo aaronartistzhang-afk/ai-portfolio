@@ -329,14 +329,14 @@
       "tier": "attention",
       "type": "social",
       "host": "www.reddit.com",
-      "status": "ok"
+      "status": "blocked_abandoned"
     },
     {
       "id": "reddit_localllama",
       "tier": "attention",
       "type": "social",
       "host": "www.reddit.com",
-      "status": "ok"
+      "status": "blocked_abandoned"
     },
     {
       "id": "github_trending",
@@ -378,21 +378,21 @@
       "tier": "attention",
       "type": "social",
       "host": "www.reddit.com",
-      "status": "ok"
+      "status": "blocked_abandoned"
     },
     {
       "id": "reddit_claudeai",
       "tier": "attention",
       "type": "social",
       "host": "www.reddit.com",
-      "status": "ok"
+      "status": "blocked_abandoned"
     },
     {
       "id": "reddit_promptengineering",
       "tier": "attention",
       "type": "social",
       "host": "www.reddit.com",
-      "status": "ok"
+      "status": "blocked_abandoned"
     },
     {
       "id": "techcrunch_ai",
