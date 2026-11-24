@@ -1,25 +1,66 @@
 {
   "schema_version": "1.0",
-  "date": "2026-11-20",
-  "executed_at": "2026-11-21T01:00:25.992483Z",
-  "run_id": "2026-11-18-ai_industry",
+  "date": "2026-11-23",
+  "executed_at": "2026-11-24T01:00:27.538608Z",
+  "run_id": "2026-11-21-ai_industry",
   "domain": "ai_industry",
   "locale": "en",
   "window": {
-    "from": "2026-11-18T12:00:25.992445+11:00",
-    "to": "2026-11-21T12:00:25.992445+11:00",
+    "from": "2026-11-21T12:00:27.538568+11:00",
+    "to": "2026-11-24T12:00:27.538568+11:00",
     "timezone": "Australia/Sydney",
     "days": 3
   },
-  "generated_at": "2026-11-21T12:00:25.992445+11:00",
+  "generated_at": "2026-11-24T12:00:27.538568+11:00",
   "status": "ok",
   "status_detail": null,
   "trends": [
     {
-      "canonical_id": "266d276b594c6a15",
-      "run_trend_id": "GLOBAL_20261121_MODEL_RELEASES_GEMINI_4_NEON",
-      "name": "Gemini 4 Neon expands the model and tool-calling combination",
-      "category": "model_releases",
+      "canonical_id": "022b9812a4d01734",
+      "run_trend_id": "GLOBAL_20261124_DEVELOPER_EXPERIENCE_CLAUDE_SHIP_GOVERNED_CODE_DELIVERY",
+      "name": "Claude Ship moves code agents into policy-constrained delivery",
+      "category": "developer_experience",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "high",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Anthropic released a beta of Claude Ship, covering PR review, fixes and approvals; Claude also unified connectors and skills as plugins.",
+      "attention_driver": "Code agents are beginning to reach merge approvals, and team policy files are becoming executable constraints.",
+      "evidence": [
+        {
+          "url": "https://claude.com/blog/introducing-claude-ship",
+          "quote": "Anthropic 发布 Claude Ship 测试版，由 Code Review（已正式可用）、PR Steward 和 Claude Approvals 两个 beta 智能体组成，可审查 PR、推送修复并按团队写进仓库的策略文件决定能否合并。",
+          "claim": "Supports that Claude Ship brings code review, fixes and approvals into a workflow controlled by team policies.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
+          "quote": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+          "claim": "Independent reporting confirms that the feature covers review, fixes and approval of code changes.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://x.com/claudeai/status/2124970294523945328",
+          "quote": "Claude 官方宣布将连接器和技能合并为插件，提供统一的方式为 Claude 接入工具或教授新技能。",
+          "claim": "Supports that Claude unifies tool integration and skills distribution in a plugin layer.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-23T00:00:00Z",
+      "last_signal_update": "2026-11-23T22:05:50Z",
+      "so_what": "Code agents now cover review, fixes and approvals; define the product boundary as a policy-constrained change queue, and assess it using post-merge defect rates and human review rates."
+    },
+    {
+      "canonical_id": "93766eeb2ae8c657",
+      "run_trend_id": "GLOBAL_20261124_ENTERPRISE_DEPLOYMENT_GOOGLE_PERSONAL_INTELLIGENCE",
+      "name": "Google Search connects personal data to form a personalized intelligent entry point",
+      "category": "enterprise_deployment",
       "primary_region": "全球",
       "secondary_regions": [],
       "lifecycle_stage": "emerging",
@@ -27,259 +68,237 @@
       "impact_level": "medium",
       "opportunity_level": "high",
       "confidence_level": "high",
-      "summary": "Google has released Gemini 4 Neon and added tool retrieval capabilities to the Gemini API. The community has started comparing its real-world performance with models such as Opus and Astra.",
-      "attention_driver": "Competition among frontier models is extending to tool selection, desktop operations and robotics tasks.",
+      "summary": "Google introduced Personal Intelligence into AI Mode and connected Drive, Wallet and the Gemini app.",
+      "attention_driver": "After search and assistants gain authorized personal data, they can answer requests with more context.",
       "evidence": [
         {
-          "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
-          "quote": "Introducing Gemini 4 Neon",
-          "claim": "Google DeepMind has officially released Gemini 4 Neon.",
+          "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps",
+          "quote": "Google Search bar with the text \"Personal Intelligence\" surrounded by the Google Wallet, Google Drive, GMail, Google Photos, Google Calendar",
+          "claim": "Supports that Personal Intelligence in Google Search is linked to data sources from multiple personal apps.",
           "source_tier": "primary_release",
           "used_for": "existence"
         },
         {
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
-          "quote": "Introducing Tool Retrieval in the Gemini API",
-          "claim": "The Gemini API provides tool retrieval capabilities at the same time.",
+          "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses",
+          "quote": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+          "claim": "Independent reporting confirms that AI Mode can read Drive and Wallet to provide personalized responses.",
           "source_tier": "attention",
           "used_for": "impact"
-        },
-        {
-          "url": "https://latent.space/p/ainews-gemini-4-neon-gdm-s-opus-sol-contender",
-          "quote": "Google DeepMind shipped Gemini 4 Neon",
-          "claim": "The release has received attention from independent industry media.",
-          "source_tier": "independent_validation",
-          "used_for": "momentum"
-        },
-        {
-          "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
-          "quote": "Today Google introduced Gemini 4 Neon",
-          "claim": "The developer community has started focusing on its integration and pricing.",
-          "source_tier": "independent_validation",
-          "used_for": "creator_relevance"
         }
       ],
-      "first_detected": "2026-11-18T21:00:00Z",
-      "last_signal_update": "2026-11-20T11:00:00Z",
-      "so_what": "Product design should treat model replacement as a configurable layer rather than a one-time binding. Prioritize task-level evaluations to validate tool calling, long-chain execution and cost performance."
+      "first_detected": "2026-11-23T17:00:00Z",
+      "last_signal_update": "2026-11-23T19:14:46Z",
+      "so_what": "Personal data integration makes authorization design and explainable citations core parts of the experience, rather than simply improving response fluency. Prioritize granular permissions, source display and revocable access."
     },
     {
-      "canonical_id": "3f19af4ca632c6c0",
-      "run_trend_id": "GLOBAL_20261121_OPEN_SOURCE_RELEASES_LOCAL_AGENT_DEPLOYMENT",
-      "name": "Open weights and local agents lower the barrier to deployment autonomy",
-      "category": "open_source_releases",
-      "primary_region": "全球",
+      "canonical_id": "669311851c59addb",
+      "run_trend_id": "GLOBAL_20261124_RESEARCH_BREAKTHROUGHS_GLM54_LOOP_TRANSFORMER",
+      "name": "GLM-5.4 claims higher parameter efficiency with a recurrent Transformer",
+      "category": "research_breakthroughs",
+      "primary_region": "中国",
       "secondary_regions": [
-        "中国"
+        "全球"
       ],
       "lifecycle_stage": "emerging",
-      "momentum": "accelerating",
+      "momentum": "stable",
       "impact_level": "medium",
-      "opportunity_level": "high",
+      "opportunity_level": "medium",
       "confidence_level": "medium",
-      "summary": "Tencent Hunyuan has opened the Hy4 weights, Inkling 2 Mini is aimed at local operation, and Linger promotes personal agents that do not depend on data centers.",
-      "attention_driver": "Model weights, lightweight local models and self-hosted assistants are appearing at the same time, making deployment control a product differentiator.",
+      "summary": "Z.ai's GLM-5.4 uses a recurrent Transformer; reports say it pursues deeper reasoning and fewer parameters by repeatedly executing shared layers.",
+      "attention_driver": "Claims of architectural efficiency extend model competition from parameter expansion to the reuse of inference compute.",
       "evidence": [
         {
-          "url": "https://x.com/TencentHunyuan/status/2123625549147070538",
-          "quote": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型",
-          "claim": "Tencent Hunyuan has announced the release of Hy4 model weights.",
-          "source_tier": "primary_release",
+          "url": "https://simonwillison.net/2026/Nov/23/glm-54",
+          "quote": "",
+          "claim": "Supports that GLM-5.4 has been released and uses a recurrent Transformer architecture.",
+          "source_tier": "independent_validation",
           "used_for": "existence"
         },
         {
-          "url": "https://huggingface.co/blog/inkling2mini",
-          "quote": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-          "claim": "Model products designed for local environments are gaining distribution through developer channels.",
+          "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model",
+          "quote": "28 layers run twice, which the company says lets the 750-billion-parameter model match models with 2 to 3 trillion parameters.",
+          "claim": "Supports the model's claim of higher parameter efficiency through layer reuse, though public benchmarks remain limited.",
           "source_tier": "independent_validation",
-          "used_for": "momentum"
+          "used_for": "impact"
         },
         {
-          "url": "https://zhidx.com/p/612775.html",
-          "quote": "开源本地版Muse，实现token自由",
-          "claim": "Local personal agents are being positioned as an option to reduce dependence on cloud calls.",
+          "url": "https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ",
+          "quote": "让28层共享权重循环执行两轮，在参数量不变下获得更深推理",
+          "claim": "Supports the company's technical description of recurrent execution with shared weights and deeper reasoning.",
           "source_tier": "attention",
-          "used_for": "impact"
+          "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-11-20T00:00:00Z",
-      "last_signal_update": "2026-11-20T20:12:19Z",
-      "so_what": "Assess the product boundaries of hybrid cloud and local operation: sensitive context, offline availability and per-task cost may affect procurement more than model rankings alone."
+      "first_detected": "2026-11-23T09:42:11Z",
+      "last_signal_update": "2026-11-23T23:40:49Z",
+      "so_what": "Do not treat parameter count as a substitute metric for procurement or routing; measure quality, latency and cost per successful task together on real coding tasks. If the recurrent architecture can be reproduced, the cost curve for long tasks may change."
     }
   ],
   "watch_list": [
     {
-      "canonical_id": "0ce536cccb62bc72",
-      "run_trend_id": "GLOBAL_20261121_EVALUATION_FRAMEWORKS_FORMAL_VERIFICATION",
-      "name": "Formal verification enters the AI reliability evaluation agenda",
-      "category": "evaluation_frameworks",
-      "primary_region": "全球",
+      "canonical_id": "07647096c22a759d",
+      "run_trend_id": "GLOBAL_20261124_SAFETY_AND_GOVERNANCE_GROK_GENERATIVE_IMAGE_LITIGATION",
+      "name": "Safety issues with Grok-generated content enter the state lawsuit stage",
+      "category": "safety_and_governance",
+      "primary_region": "美国",
       "secondary_regions": [],
       "lifecycle_stage": "dormant",
-      "momentum": "stable",
-      "impact_level": "low",
+      "momentum": "accelerating",
+      "impact_level": "medium",
       "opportunity_level": "medium",
-      "confidence_level": "low",
-      "summary": "Discussion around low-quality model outputs is starting to connect with proof checking, self-consistency certification and verifiable reasoning methods.",
-      "attention_driver": "High-risk or high-precision tasks need stronger verification evidence than the correctness rate of a single answer.",
+      "confidence_level": "medium",
+      "summary": "Oregon and Virginia filed lawsuits over allegations involving Grok and unauthorized intimate imagery and child sexual exploitation content.",
+      "attention_driver": "Failures in safeguards for generated images have become concrete state-level enforcement and product liability risks.",
       "evidence": [
         {
-          "url": "https://latent.space/p/formal-verification",
-          "quote": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
-          "claim": "Formal verification has been proposed as a way to address low-quality generated content.",
-          "source_tier": "independent_validation",
-          "used_for": "sentiment"
+          "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn",
+          "quote": "X says every Grok output is screened, but state AGs say Grok is still making CSAM.",
+          "claim": "Supports that state attorneys general question the effectiveness of Grok's output screening.",
+          "source_tier": "attention",
+          "used_for": "existence"
         },
         {
-          "url": "https://amazon.science/blog/mathematical-proof-powered-by-ai-and-no-hallucinations",
-          "quote": "new tools that make it easier to check mathematical proofs",
-          "claim": "Checking tools in proof construction already have research-level application discussions.",
-          "source_tier": "independent_validation",
+          "url": "https://theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+          "quote": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+          "claim": "Supports that Oregon and Virginia have filed lawsuits over Grok-related deepfake content.",
+          "source_tier": "attention",
           "used_for": "impact"
         },
         {
-          "url": "https://arxiv.org/abs/2611.26592v1",
-          "quote": "Self-consistency certification treats repeated sampling from a language model as sequential evidence accumulation",
-          "claim": "Researchers are exploring methods to statistically certify the reliability of model reasoning.",
-          "source_tier": "independent_validation",
-          "used_for": "existence"
+          "url": "https://wired.com/story/states-sue-spacex-over-grok-deepfakes",
+          "quote": "The attorneys general of Oregon and Virginia are suing several of Elon Musk’s companies, alleging they implemented weak",
+          "claim": "Supports legal allegations by the two states' attorneys general that the company took insufficient safety measures.",
+          "source_tier": "attention",
+          "used_for": "momentum"
         }
       ],
-      "first_detected": "2026-11-18T18:55:35Z",
-      "last_signal_update": "2026-11-20T21:18:41Z",
-      "so_what": "For decidable critical steps, include verifiers, constraint checks or repeated-sampling consistency in evaluations. This reduces the risk of erroneous delivery more than continuing to stack general benchmark scores."
+      "first_detected": "2026-11-23T11:00:00Z",
+      "last_signal_update": "2026-11-23T21:30:44Z",
+      "so_what": "Image-generation products for the general public need default capabilities for intercepting high-risk requests, handling appeals and maintaining auditable logs. Output screening alone is insufficient to support launch decisions for high-risk scenarios."
     }
   ],
   "trend_evolution": [],
   "coverage": {
     "sources_configured": 93,
-    "source_keys_reporting": 78,
-    "signals_raw": 577,
-    "signals_accepted": 547,
-    "clusters_total": 326,
-    "clusters_synthesized": 160,
+    "source_keys_reporting": 70,
+    "signals_raw": 436,
+    "signals_accepted": 417,
+    "clusters_total": 246,
+    "clusters_synthesized": 121,
     "by_source": {
-      "algorithmic_bridge": 2,
-      "amazon": 2,
-      "anthropic": 2,
-      "apple": 3,
+      "ai_security_institute_blog": 1,
+      "algorithmic_bridge": 1,
+      "anthropic": 3,
       "apple_podcasts_a16z_podcast": 3,
-      "apple_podcasts_ai_i": 1,
-      "apple_podcasts_latent_space": 2,
-      "apple_podcasts_lex_fridman_podcast": 1,
-      "apple_podcasts_no_priors": 1,
-      "apple_podcasts_y_combinator_startup_podcast": 1,
-      "ars_technica_ai": 6,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "ars_technica_ai": 3,
       "arxiv": 20,
       "astral_codex_ten": 2,
       "brave_search_ai": 103,
-      "browser_use": 1,
-      "cohere": 5,
-      "conductor": 1,
-      "crunchbase_news": 10,
-      "deepmind": 2,
-      "ec_digital_strategy": 1,
-      "eetimes": 10,
+      "crunchbase_news": 1,
+      "deepmind": 1,
+      "eetimes": 4,
+      "eugene_yan": 1,
+      "exponential_view": 2,
+      "figma_ai_agent_make": 1,
       "gary_marcus": 3,
-      "github": 11,
+      "github": 10,
       "github_awesome_claude": 1,
-      "github_awesome_llm": 2,
+      "github_awesome_llm": 3,
       "github_claude_skills": 14,
-      "github_cursor_rules": 4,
-      "google": 16,
-      "hn": 18,
-      "huggingface_blog": 5,
-      "huggingface_papers": 14,
-      "ieee_spectrum_ai": 3,
+      "github_cursor_rules": 6,
+      "glm": 1,
+      "google": 5,
+      "hn": 12,
+      "huggingface_blog": 2,
+      "import_ai": 1,
       "index_ventures": 5,
       "infoq_ai_zh": 20,
-      "kr36_ai": 20,
-      "latent_space": 5,
-      "meta": 8,
-      "metr_research": 1,
-      "minimax_blog": 1,
+      "it": 1,
+      "latent_space": 1,
+      "lennys_newsletter": 4,
+      "meta": 2,
       "mistral": 1,
-      "mit_news_rss": 1,
-      "mit_tech_review_ai": 3,
-      "nextplatform": 3,
-      "not_boring": 1,
-      "nvidia": 5,
-      "openai": 13,
-      "platformer": 2,
-      "pragmatic_engineer": 2,
+      "mit_tech_review_ai": 1,
+      "nextplatform": 1,
+      "nvidia": 2,
+      "openai": 4,
       "producthunt": 20,
       "qbitai": 10,
-      "rundown_ai": 3,
+      "rundown_ai": 1,
+      "sequoia_blog": 1,
       "servethehome": 3,
-      "simon_willison": 8,
-      "stratechery": 4,
-      "techcrunch_ai": 20,
-      "techcrunch_venture": 3,
-      "tencent_hunyuan": 1,
-      "tldr_ai": 2,
-      "unknown": 1,
+      "simon_willison": 5,
+      "stratechery": 1,
+      "techcrunch_ai": 19,
+      "the_decoder": 11,
+      "tldr_ai": 1,
       "verge_ai": 10,
-      "wired_ai": 10,
-      "x_amasad": 3,
-      "x_anthropic_anthropicai": 1,
-      "x_aravind_srinivas_perplexity_ceo_aravsrinivas": 1,
-      "x_arena_arena": 1,
-      "x_chatgpt_chatgpt": 1,
-      "x_garrytan": 1,
-      "x_joshwoodward": 1,
-      "x_karina_nguyen_karinanguyen": 1,
+      "wired_ai": 8,
+      "wiz_research": 1,
+      "x_amasad": 2,
+      "x_claude_claudeai": 1,
+      "x_danshipper": 1,
+      "x_levie": 1,
+      "x_mattturck": 2,
+      "x_nikunj": 3,
+      "x_openbmb_openbmb": 2,
       "x_petergyang": 3,
-      "x_philipp_schmid_google_deepmind_philschmid": 1,
-      "x_rauchg": 3,
+      "x_rauchg": 2,
+      "x_rohan_paul_rohanpaul_ai": 1,
+      "x_ryolu_": 1,
+      "x_sama": 1,
       "x_swyx": 3,
-      "x_thsottiaux": 3,
-      "x_trq212": 3,
-      "youtube_ai": 10,
-      "zhidx": 20,
-      "zvi_mowshowitz": 2
+      "x_thenanyu": 1,
+      "x_tibo_thsottiaux": 1,
+      "x_x_pin_thexpin": 1,
+      "youtube_ai": 7,
+      "zh_podcast_guigu101": 1,
+      "zhidx": 10,
+      "zvi_mowshowitz": 1
     }
   },
   "provenance": {
     "pipeline_version": "tie-0.2.0",
     "config_hash": "d22f4852810ccef9",
-    "prompt_hash": "6ef2881772d70b6f"
+    "prompt_hash": "d0568d039686a58e"
   },
   "insights": [
     {
-      "text": "Model integration needs task-based replacement: competition among new models is concentrated in tool retrieval and long-chain execution, so products cannot select models solely by general leaderboards",
+      "text": "Agent products enter controlled delivery: code agents are beginning to participate in merge decisions, and policy files and human review will become product acceptance criteria",
       "refs": [
         1
       ]
     },
     {
-      "text": "Local deployment is becoming a procurement condition: offline operation, sensitive context and per-task cost will directly affect enterprise deployment choices",
+      "text": "Personalization depends on the authorization experience: after personal data is connected, source display and permission revocation will directly affect user trust",
       "refs": [
         2
       ]
     },
     {
-      "text": "Cost signals are still accumulating: 5 pricing and infrastructure signals suggest that inference costs should be included in feature pricing design",
+      "text": "Audio and video signals have increased: this issue includes 5 related signals, and the effect of real-time generation on interactive content costs needs attention",
       "refs": []
     }
   ],
   "since_last": [
-    "3 trends from the previous issue have left this issue's focus.",
-    "Gemini 2.5 API automatic routing has 10 days remaining."
+    "None of the 6 top trends from the previous issue continued this issue.",
+    "Gemini 2.5 API automatic routing has 7 days remaining."
   ],
   "countdowns": [
     {
       "title": "Gemini 2.5 API automatic routing",
       "kind": "Deprecation",
       "effective_date": "2026-12-01",
-      "days_left": 10,
-      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio. API requests will be automatically routed starting December 1. Source",
+      "days_left": 7,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source",
       "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
     },
     {
       "title": "EU AI Act obligations take effect",
       "kind": "Policy",
       "effective_date": "2026-12-02",
-      "days_left": 11,
+      "days_left": 8,
       "description": "Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source",
       "url": "https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50"
     },
@@ -287,194 +306,197 @@
       "title": "Anthropic vulnerability disclosure deadline",
       "kind": "Policy",
       "effective_date": "2027-01-01",
-      "days_left": 41,
-      "description": "The disclosure window for high-risk and critical vulnerabilities has been shortened to 30 days, applying to vulnerabilities reported on or after that date. Source",
+      "days_left": 38,
+      "description": "The disclosure window for high-severity and critical vulnerabilities has been shortened to 30 days, applying to vulnerabilities reported on or after that date. Source",
       "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines"
     },
     {
-      "title": "Mandatory national standard for L3/L4 takes effect",
+      "title": "L3/L4 mandatory national standard implementation",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 222,
-      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handover and risk handling requirements. Source",
+      "days_left": 219,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover and risk handling requirements. Source",
       "url": "https://www.ithome.com/0/966/272.htm"
     },
     {
-      "title": "China's L3/L4 safety national standard takes effect",
+      "title": "China L3/L4 safety national standard implementation",
       "kind": "Policy",
       "effective_date": "2027-07-01",
-      "days_left": 222,
-      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect from July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance verification. Source",
+      "days_left": 219,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
       "url": "https://www.ithome.com/0/985/665.htm"
     },
     {
       "title": "EU AI Act high-risk rules",
       "kind": "Policy",
       "effective_date": "2027-12-02",
-      "days_left": 376,
+      "days_left": 373,
       "description": "The first clear applicability date for high-risk rules. Source",
       "url": "https://theagentindex.io/guides/eu-ai-act-timeline/"
     }
   ],
   "leaderboard": [],
   "sections": {
-    "pricing": [
-      {
-        "title": "Public Markets Are Frequently Wrong. The SaaSpocal…",
-        "note": "Reassess pricing elasticity for AI-benefiting SaaS",
-        "source": "crunchbase_news",
-        "why": "",
-        "url": "https://news.crunchbase.com/saas/public-market-value-regulations-ai-anton-oxx/"
-      },
-      {
-        "title": "英伟达投的AI Infra创企发模型工厂！支持数千卡集群训练万亿MoE",
-        "note": "Buy model training by compute configuration",
-        "source": "zhidx",
-        "why": "",
-        "url": "https://zhidx.com/p/612488.html"
-      },
-      {
-        "title": "Coinbase计划于2027年上半年推出自有预测市场合约",
-        "note": "Keep more transaction revenue through direct contracts",
-        "source": "kr36_ai",
-        "why": "",
-        "url": "https://36kr.com/newsflashes/4078019778548608?f=rss"
-      },
-      {
-        "title": "8点1氪丨Anthropic上市首日暴涨17%；宗馥莉原“心腹”起诉娃哈哈；OpenAI进军手机领域",
-        "note": "Watch IPO pricing and first-day premiums",
-        "source": "kr36_ai",
-        "why": "",
-        "url": "https://36kr.com/p/4077339293242504?f=rss"
-      },
-      {
-        "title": "GPT-6.2 Astra and Sol",
-        "note": "Choose Astra or Sol by difficulty",
-        "source": "producthunt_ai",
-        "why": "",
-        "url": "https://www.producthunt.com/products/openai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
-      }
-    ],
     "media": [
       {
-        "title": "Token fraud is here and it’s BAD (YouTube)",
-        "note": "Identify and block abnormal token consumption",
-        "source": "simon_willison",
+        "title": "Grok — Useful AI Chatbot with Voice & Image Genera…",
+        "note": "Generate voice, images, video and code",
+        "source": "X",
         "why": "",
-        "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
+        "url": "https://x.ai/grok"
       },
       {
-        "title": "Ultimate guide for fixing your team’s API keys",
-        "note": "Move prototype API keys to secure management",
-        "source": "google_cloud_ai_blog",
-        "why": "",
-        "url": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-fix-your-teams-api-keys/"
-      },
-      {
-        "title": "What The Telecom Bust Taught Me About AI’s Debt Bo…",
-        "note": "Calculate debt repayment risks for AI infrastructure",
-        "source": "crunchbase_news",
-        "why": "",
-        "url": "https://news.crunchbase.com/venture/telecom-bust-ai-startup-debt-boom-spreng-runway-growth/"
-      },
-      {
-        "title": "AI时代，华为要再造一个“荣耀”！首款鸿蒙AI手机来了",
-        "note": "Use HarmonyOS AI phones to host on-device assistants",
+        "title": "百灵甩出健康模型全家桶：开源、专业、死磕智效比",
+        "note": "Detect fatigue in video and provide health recommendations",
         "source": "zhidx",
         "why": "",
-        "url": "https://zhidx.com/p/612756.html"
+        "url": "https://zhidx.com/p/613306.html"
       },
       {
-        "title": "Posterior Matching Distillation",
-        "note": "Generate image and video with few-step sampling",
-        "source": "huggingface_papers",
+        "title": "Token生意爆发！云知声Q3毛利飙升近80%，股价单日大涨21.7%",
+        "note": "Use Token services to increase AI gross revenue margin",
+        "source": "zhidx",
         "why": "",
-        "url": "https://huggingface.co/papers/2611.26629"
+        "url": "https://zhidx.com/p/613322.html"
+      },
+      {
+        "title": "Hydrilla",
+        "note": "Generate usable 3D assets with prompts",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/hydrilla?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "2899元，荣耀做了个AI手机，把豆包放到屏上了",
+        "note": "Use voice to wake an AI assistant on a phone's rear display",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/613181.html"
       }
     ],
     "incidents": [
       {
-        "title": "The Storm Is Over, but Costs Keep Coming: How Util…",
-        "note": "Costs remain out of control after the storm",
-        "source": "nextplatform",
-        "why": "",
-        "url": "https://intelligence.theregister.com/paper/view/21319"
-      },
-      {
-        "title": "SoK: Assessing the Evolution of LLM Capability in…",
-        "note": "Vulnerability research capabilities are assessed by inconsistent standards",
+        "title": "BioEmu2: Scalable Emulation of Biomolecular Dynami…",
+        "note": "Structure prediction still struggles to represent molecular dynamics",
         "source": "arxiv",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.26601v1"
+        "url": "https://arxiv.org/abs/2611.27924v1"
       },
       {
-        "title": "Realized versus Population Reliability: Anytime-Va…",
-        "note": "Correlated reasoning can overestimate self-consistency confidence",
+        "title": "Star Panoptic Quality: Selectively Evaluating Spli…",
+        "note": "Heuristic instance labeling can mislead evaluation",
         "source": "arxiv",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.26592v1"
+        "url": "https://arxiv.org/abs/2611.27913v1"
       },
       {
-        "title": "MM-SystemOneBias: Evaluating Bias in Multimodal Je…",
-        "note": "Multimodal decisions are affected by presentation bias",
+        "title": "FairITR: Fairness-Aware Learning of Multicategory…",
+        "note": "Personalized treatment rules may produce unfairness",
         "source": "arxiv",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.26557v1"
+        "url": "https://arxiv.org/abs/2611.27894v1"
       },
       {
-        "title": "Replication of Agentic Security Events: Audit and…",
-        "note": "New agent security incident reproduction experiments",
-        "source": "arxiv",
+        "title": "Oregon and Virginia sue SpaceX over Grok’s porn de…",
+        "note": "Lack of safeguards for pornographic deepfakes leads to lawsuits",
+        "source": "verge_ai",
         "why": "",
-        "url": "https://arxiv.org/abs/2611.26553v1"
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
+      },
+      {
+        "title": "Polylane Swarms",
+        "note": "Investigating production incidents can lead to errors because evidence is scattered",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/polylane?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       }
     ],
     "tools": [
       {
-        "title": "code-yeongyu/oh-my-openagent",
-        "note": "Use prompts for batch image production",
+        "title": "thedotmack/claude-mem",
+        "note": "Save and inject agent memory across sessions",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills featured repository (71,031 ⭐), matches your interests in \"agent / code / prompt\" · View",
-        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+        "why": "GitHub topic:claude-skills starred repository (119,328 ⭐), matching your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/thedotmack/claude-mem"
       },
       {
-        "title": "nanocoai/nanoclaw",
-        "note": "Self-host a persistent AI assistant in chat",
+        "title": "wshobson/agents",
+        "note": "Write agent plugins for multiple platforms at once",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills featured repository (31,132 ⭐), matches your interests in \"agent / claude / code\" · View",
-        "url": "https://github.com/nanocoai/nanoclaw"
+        "why": "GitHub topic:claude-skills starred repository (42,845 ⭐), matching your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/wshobson/agents"
       },
       {
-        "title": "alchaincyf/huashu-design",
-        "note": "Generate deliverable design drafts from a single sentence",
+        "title": "google/elephant-goldfish-model",
+        "note": "Use agents to assist software design and review",
         "source": "github_claude_skills",
-        "why": "GitHub topic:claude-skills featured repository (29,964 ⭐), matches your interests in \"agent / claude / code\" · View",
-        "url": "https://github.com/alchaincyf/huashu-design"
+        "why": "GitHub topic:claude-skills starred repository (22,430 ⭐), matching your interests in \"agent / agents / model\" · View",
+        "url": "https://github.com/google/elephant-goldfish-model"
       },
       {
-        "title": "Docker",
-        "note": "Use containers to isolate and govern AI agents",
+        "title": "Motionflare",
+        "note": "Paste a URL to generate a product launch video",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 211 votes · 4 comments, matches your interests in \"agent / agents / ide\" · View",
-        "url": "https://www.producthunt.com/products/docker?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI selection · 234 votes · 38 comments, matching your interests in \"chat / ide / video\" · View",
+        "url": "https://www.producthunt.com/products/motionflare?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
       },
       {
-        "title": "Tripmojo",
-        "note": "Plan, book and execute travel in group chat",
+        "title": "Modem",
+        "note": "Monitor customer feedback and automatically assign fixes",
         "source": "producthunt_ai",
-        "why": "Product Hunt AI selection · 244 votes · 94 comments, matches your interests in \"agent / chat\" · View",
-        "url": "https://www.producthunt.com/products/tripmojo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+        "why": "Product Hunt AI selection · 195 votes · 27 comments, matching your interests in \"agent / chat / coding\" · View",
+        "url": "https://www.producthunt.com/products/modem?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "frameworks": [
+      {
+        "title": "XinaTian/MROffice",
+        "note": "Connect Copilot to a browser office suite",
+        "source": "github_trending",
+        "why": "",
+        "url": "https://github.com/XinaTian/MROffice"
+      },
+      {
+        "title": "Product Hunt – The best new products in tech.",
+        "note": "Connect new product discovery to AI tool workflows",
+        "source": "Producthunt",
+        "why": "",
+        "url": "https://www.producthunt.com/"
+      },
+      {
+        "title": "Resurf",
+        "note": "Provide a local knowledge base to AI through MCP",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/resurf-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Rankhog",
+        "note": "Automatically discover and reply to leads according to community rules",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/rankhog?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Pandex – Official European Law for AI Agents, over…",
+        "note": "Use MCP to provide EU law to agents",
+        "source": "hn",
+        "why": "",
+        "url": "https://www.pandex.io/"
       }
     ]
   },
   "sections_missing": [
     "leaderboard",
-    "frameworks"
+    "pricing"
   ],
   "source_flags": [
-    "evidence_rewritten:GLOBAL_2-08fa234f6a93fa1e",
-    "evidence_rewritten:GLOBAL_2-5b69ed9c0e2020bc",
-    "critic_missed:cluster-dfafd143f537ea49"
+    "evidence_rewritten:GLOBAL_2-e69c43451d77f400",
+    "evidence_rewritten:GLOBAL_2-dce5fda154943667",
+    "evidence_rewritten:GLOBAL_2-b28e34803765b3e5",
+    "evidence_rewritten:GLOBAL_2-48b7a0c0bc6248a4",
+    "critic_missed:cluster-f39a3a3c7957b7af",
+    "critic_missed:cluster-eff45cb2f47c5bee"
   ],
   "caveats": [],
   "license": "MIT",

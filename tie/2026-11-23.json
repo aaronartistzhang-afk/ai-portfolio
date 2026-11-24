@@ -1,0 +1,508 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-23",
+  "executed_at": "2026-11-24T01:00:27.538608Z",
+  "run_id": "2026-11-21-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-11-21T12:00:27.538568+11:00",
+    "to": "2026-11-24T12:00:27.538568+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-11-24T12:00:27.538568+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "022b9812a4d01734",
+      "run_trend_id": "GLOBAL_20261124_DEVELOPER_EXPERIENCE_CLAUDE_SHIP_GOVERNED_CODE_DELIVERY",
+      "name": "Claude Ship moves code agents into policy-constrained delivery",
+      "category": "developer_experience",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "high",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Anthropic released a beta of Claude Ship, covering PR review, fixes and approvals; Claude also unified connectors and skills as plugins.",
+      "attention_driver": "Code agents are beginning to reach merge approvals, and team policy files are becoming executable constraints.",
+      "evidence": [
+        {
+          "url": "https://claude.com/blog/introducing-claude-ship",
+          "quote": "Anthropic 发布 Claude Ship 测试版，由 Code Review（已正式可用）、PR Steward 和 Claude Approvals 两个 beta 智能体组成，可审查 PR、推送修复并按团队写进仓库的策略文件决定能否合并。",
+          "claim": "Supports that Claude Ship brings code review, fixes and approvals into a workflow controlled by team policies.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
+          "quote": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+          "claim": "Independent reporting confirms that the feature covers review, fixes and approval of code changes.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://x.com/claudeai/status/2124970294523945328",
+          "quote": "Claude 官方宣布将连接器和技能合并为插件，提供统一的方式为 Claude 接入工具或教授新技能。",
+          "claim": "Supports that Claude unifies tool integration and skills distribution in a plugin layer.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-23T00:00:00Z",
+      "last_signal_update": "2026-11-23T22:05:50Z",
+      "so_what": "Code agents now cover review, fixes and approvals; define the product boundary as a policy-constrained change queue, and assess it using post-merge defect rates and human review rates."
+    },
+    {
+      "canonical_id": "93766eeb2ae8c657",
+      "run_trend_id": "GLOBAL_20261124_ENTERPRISE_DEPLOYMENT_GOOGLE_PERSONAL_INTELLIGENCE",
+      "name": "Google Search connects personal data to form a personalized intelligent entry point",
+      "category": "enterprise_deployment",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Google introduced Personal Intelligence into AI Mode and connected Drive, Wallet and the Gemini app.",
+      "attention_driver": "After search and assistants gain authorized personal data, they can answer requests with more context.",
+      "evidence": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps",
+          "quote": "Google Search bar with the text \"Personal Intelligence\" surrounded by the Google Wallet, Google Drive, GMail, Google Photos, Google Calendar",
+          "claim": "Supports that Personal Intelligence in Google Search is linked to data sources from multiple personal apps.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses",
+          "quote": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+          "claim": "Independent reporting confirms that AI Mode can read Drive and Wallet to provide personalized responses.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-23T17:00:00Z",
+      "last_signal_update": "2026-11-23T19:14:46Z",
+      "so_what": "Personal data integration makes authorization design and explainable citations core parts of the experience, rather than simply improving response fluency. Prioritize granular permissions, source display and revocable access."
+    },
+    {
+      "canonical_id": "669311851c59addb",
+      "run_trend_id": "GLOBAL_20261124_RESEARCH_BREAKTHROUGHS_GLM54_LOOP_TRANSFORMER",
+      "name": "GLM-5.4 claims higher parameter efficiency with a recurrent Transformer",
+      "category": "research_breakthroughs",
+      "primary_region": "中国",
+      "secondary_regions": [
+        "全球"
+      ],
+      "lifecycle_stage": "emerging",
+      "momentum": "stable",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Z.ai's GLM-5.4 uses a recurrent Transformer; reports say it pursues deeper reasoning and fewer parameters by repeatedly executing shared layers.",
+      "attention_driver": "Claims of architectural efficiency extend model competition from parameter expansion to the reuse of inference compute.",
+      "evidence": [
+        {
+          "url": "https://simonwillison.net/2026/Nov/23/glm-54",
+          "quote": "",
+          "claim": "Supports that GLM-5.4 has been released and uses a recurrent Transformer architecture.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model",
+          "quote": "28 layers run twice, which the company says lets the 750-billion-parameter model match models with 2 to 3 trillion parameters.",
+          "claim": "Supports the model's claim of higher parameter efficiency through layer reuse, though public benchmarks remain limited.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ",
+          "quote": "让28层共享权重循环执行两轮，在参数量不变下获得更深推理",
+          "claim": "Supports the company's technical description of recurrent execution with shared weights and deeper reasoning.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-23T09:42:11Z",
+      "last_signal_update": "2026-11-23T23:40:49Z",
+      "so_what": "Do not treat parameter count as a substitute metric for procurement or routing; measure quality, latency and cost per successful task together on real coding tasks. If the recurrent architecture can be reproduced, the cost curve for long tasks may change."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "07647096c22a759d",
+      "run_trend_id": "GLOBAL_20261124_SAFETY_AND_GOVERNANCE_GROK_GENERATIVE_IMAGE_LITIGATION",
+      "name": "Safety issues with Grok-generated content enter the state lawsuit stage",
+      "category": "safety_and_governance",
+      "primary_region": "美国",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Oregon and Virginia filed lawsuits over allegations involving Grok and unauthorized intimate imagery and child sexual exploitation content.",
+      "attention_driver": "Failures in safeguards for generated images have become concrete state-level enforcement and product liability risks.",
+      "evidence": [
+        {
+          "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn",
+          "quote": "X says every Grok output is screened, but state AGs say Grok is still making CSAM.",
+          "claim": "Supports that state attorneys general question the effectiveness of Grok's output screening.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+          "quote": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+          "claim": "Supports that Oregon and Virginia have filed lawsuits over Grok-related deepfake content.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://wired.com/story/states-sue-spacex-over-grok-deepfakes",
+          "quote": "The attorneys general of Oregon and Virginia are suing several of Elon Musk’s companies, alleging they implemented weak",
+          "claim": "Supports legal allegations by the two states' attorneys general that the company took insufficient safety measures.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-23T11:00:00Z",
+      "last_signal_update": "2026-11-23T21:30:44Z",
+      "so_what": "Image-generation products for the general public need default capabilities for intercepting high-risk requests, handling appeals and maintaining auditable logs. Output screening alone is insufficient to support launch decisions for high-risk scenarios."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 70,
+    "signals_raw": 436,
+    "signals_accepted": 417,
+    "clusters_total": 246,
+    "clusters_synthesized": 121,
+    "by_source": {
+      "ai_security_institute_blog": 1,
+      "algorithmic_bridge": 1,
+      "anthropic": 3,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "ars_technica_ai": 3,
+      "arxiv": 20,
+      "astral_codex_ten": 2,
+      "brave_search_ai": 103,
+      "crunchbase_news": 1,
+      "deepmind": 1,
+      "eetimes": 4,
+      "eugene_yan": 1,
+      "exponential_view": 2,
+      "figma_ai_agent_make": 1,
+      "gary_marcus": 3,
+      "github": 10,
+      "github_awesome_claude": 1,
+      "github_awesome_llm": 3,
+      "github_claude_skills": 14,
+      "github_cursor_rules": 6,
+      "glm": 1,
+      "google": 5,
+      "hn": 12,
+      "huggingface_blog": 2,
+      "import_ai": 1,
+      "index_ventures": 5,
+      "infoq_ai_zh": 20,
+      "it": 1,
+      "latent_space": 1,
+      "lennys_newsletter": 4,
+      "meta": 2,
+      "mistral": 1,
+      "mit_tech_review_ai": 1,
+      "nextplatform": 1,
+      "nvidia": 2,
+      "openai": 4,
+      "producthunt": 20,
+      "qbitai": 10,
+      "rundown_ai": 1,
+      "sequoia_blog": 1,
+      "servethehome": 3,
+      "simon_willison": 5,
+      "stratechery": 1,
+      "techcrunch_ai": 19,
+      "the_decoder": 11,
+      "tldr_ai": 1,
+      "verge_ai": 10,
+      "wired_ai": 8,
+      "wiz_research": 1,
+      "x_amasad": 2,
+      "x_claude_claudeai": 1,
+      "x_danshipper": 1,
+      "x_levie": 1,
+      "x_mattturck": 2,
+      "x_nikunj": 3,
+      "x_openbmb_openbmb": 2,
+      "x_petergyang": 3,
+      "x_rauchg": 2,
+      "x_rohan_paul_rohanpaul_ai": 1,
+      "x_ryolu_": 1,
+      "x_sama": 1,
+      "x_swyx": 3,
+      "x_thenanyu": 1,
+      "x_tibo_thsottiaux": 1,
+      "x_x_pin_thexpin": 1,
+      "youtube_ai": 7,
+      "zh_podcast_guigu101": 1,
+      "zhidx": 10,
+      "zvi_mowshowitz": 1
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "d22f4852810ccef9",
+    "prompt_hash": "d0568d039686a58e"
+  },
+  "insights": [
+    {
+      "text": "Agent products enter controlled delivery: code agents are beginning to participate in merge decisions, and policy files and human review will become product acceptance criteria",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "Personalization depends on the authorization experience: after personal data is connected, source display and permission revocation will directly affect user trust",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "Audio and video signals have increased: this issue includes 5 related signals, and the effect of real-time generation on interactive content costs needs attention",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "None of the 6 top trends from the previous issue continued this issue.",
+    "Gemini 2.5 API automatic routing has 7 days remaining."
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini 2.5 API automatic routing",
+      "kind": "Deprecation",
+      "effective_date": "2026-12-01",
+      "days_left": 7,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
+    },
+    {
+      "title": "EU AI Act obligations take effect",
+      "kind": "Policy",
+      "effective_date": "2026-12-02",
+      "days_left": 8,
+      "description": "Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source",
+      "url": "https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50"
+    },
+    {
+      "title": "Anthropic vulnerability disclosure deadline",
+      "kind": "Policy",
+      "effective_date": "2027-01-01",
+      "days_left": 38,
+      "description": "The disclosure window for high-severity and critical vulnerabilities has been shortened to 30 days, applying to vulnerabilities reported on or after that date. Source",
+      "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines"
+    },
+    {
+      "title": "L3/L4 mandatory national standard implementation",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 219,
+      "description": "The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover and risk handling requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China L3/L4 safety national standard implementation",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 219,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    },
+    {
+      "title": "EU AI Act high-risk rules",
+      "kind": "Policy",
+      "effective_date": "2027-12-02",
+      "days_left": 373,
+      "description": "The first clear applicability date for high-risk rules. Source",
+      "url": "https://theagentindex.io/guides/eu-ai-act-timeline/"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "media": [
+      {
+        "title": "Grok — Useful AI Chatbot with Voice & Image Genera…",
+        "note": "Generate voice, images, video and code",
+        "source": "X",
+        "why": "",
+        "url": "https://x.ai/grok"
+      },
+      {
+        "title": "百灵甩出健康模型全家桶：开源、专业、死磕智效比",
+        "note": "Detect fatigue in video and provide health recommendations",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/613306.html"
+      },
+      {
+        "title": "Token生意爆发！云知声Q3毛利飙升近80%，股价单日大涨21.7%",
+        "note": "Use Token services to increase AI gross revenue margin",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/613322.html"
+      },
+      {
+        "title": "Hydrilla",
+        "note": "Generate usable 3D assets with prompts",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/hydrilla?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "2899元，荣耀做了个AI手机，把豆包放到屏上了",
+        "note": "Use voice to wake an AI assistant on a phone's rear display",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/613181.html"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "BioEmu2: Scalable Emulation of Biomolecular Dynami…",
+        "note": "Structure prediction still struggles to represent molecular dynamics",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.27924v1"
+      },
+      {
+        "title": "Star Panoptic Quality: Selectively Evaluating Spli…",
+        "note": "Heuristic instance labeling can mislead evaluation",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.27913v1"
+      },
+      {
+        "title": "FairITR: Fairness-Aware Learning of Multicategory…",
+        "note": "Personalized treatment rules may produce unfairness",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.27894v1"
+      },
+      {
+        "title": "Oregon and Virginia sue SpaceX over Grok’s porn de…",
+        "note": "Lack of safeguards for pornographic deepfakes leads to lawsuits",
+        "source": "verge_ai",
+        "why": "",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
+      },
+      {
+        "title": "Polylane Swarms",
+        "note": "Investigating production incidents can lead to errors because evidence is scattered",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/polylane?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "tools": [
+      {
+        "title": "thedotmack/claude-mem",
+        "note": "Save and inject agent memory across sessions",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (119,328 ⭐), matching your interests in \"agent / claude / code\" · View",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "title": "wshobson/agents",
+        "note": "Write agent plugins for multiple platforms at once",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (42,845 ⭐), matching your interests in \"agent / agents / claude\" · View",
+        "url": "https://github.com/wshobson/agents"
+      },
+      {
+        "title": "google/elephant-goldfish-model",
+        "note": "Use agents to assist software design and review",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (22,430 ⭐), matching your interests in \"agent / agents / model\" · View",
+        "url": "https://github.com/google/elephant-goldfish-model"
+      },
+      {
+        "title": "Motionflare",
+        "note": "Paste a URL to generate a product launch video",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 234 votes · 38 comments, matching your interests in \"chat / ide / video\" · View",
+        "url": "https://www.producthunt.com/products/motionflare?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Modem",
+        "note": "Monitor customer feedback and automatically assign fixes",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 195 votes · 27 comments, matching your interests in \"agent / chat / coding\" · View",
+        "url": "https://www.producthunt.com/products/modem?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "frameworks": [
+      {
+        "title": "XinaTian/MROffice",
+        "note": "Connect Copilot to a browser office suite",
+        "source": "github_trending",
+        "why": "",
+        "url": "https://github.com/XinaTian/MROffice"
+      },
+      {
+        "title": "Product Hunt – The best new products in tech.",
+        "note": "Connect new product discovery to AI tool workflows",
+        "source": "Producthunt",
+        "why": "",
+        "url": "https://www.producthunt.com/"
+      },
+      {
+        "title": "Resurf",
+        "note": "Provide a local knowledge base to AI through MCP",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/resurf-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Rankhog",
+        "note": "Automatically discover and reply to leads according to community rules",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/rankhog?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Pandex – Official European Law for AI Agents, over…",
+        "note": "Use MCP to provide EU law to agents",
+        "source": "hn",
+        "why": "",
+        "url": "https://www.pandex.io/"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "pricing"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-e69c43451d77f400",
+    "evidence_rewritten:GLOBAL_2-dce5fda154943667",
+    "evidence_rewritten:GLOBAL_2-b28e34803765b3e5",
+    "evidence_rewritten:GLOBAL_2-48b7a0c0bc6248a4",
+    "critic_missed:cluster-f39a3a3c7957b7af",
+    "critic_missed:cluster-eff45cb2f47c5bee"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}

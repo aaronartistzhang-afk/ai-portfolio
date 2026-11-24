@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>AI Daily — 2026-11-20</title>
-<meta name="description" content="Google has released Gemini 4 Neon and added tool retrieval capabilities to the Gemini API. The community has started comparing its real-world performance with m">
+<title>AI Daily — 2026-11-23</title>
+<meta name="description" content="Anthropic released a beta of Claude Ship, covering PR review, fixes and approvals; Claude also unified connectors and skills as plugins.">
 <link rel="canonical" href="https://aaronzhang.ai/tie/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="aaronzhang.ai">
-<meta property="og:title" content="AI Daily — 2026-11-20">
-<meta property="og:description" content="Google has released Gemini 4 Neon and added tool retrieval capabilities to the Gemini API. The community has started comparing its real-world performance with m">
+<meta property="og:title" content="AI Daily — 2026-11-23">
+<meta property="og:description" content="Anthropic released a beta of Claude Ship, covering PR review, fixes and approvals; Claude also unified connectors and skills as plugins.">
 <meta property="og:url" content="https://aaronzhang.ai/tie/">
 <meta property="og:image" content="https://aaronzhang.ai/card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -49,91 +49,108 @@
 
   <div class="tiegrid">
   <article class="tie">
-    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-11-20</p>
+    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-11-23</p>
     <h1>AI Daily</h1>
     <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
     93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
 
     <p class="runbar"><span class="live"></span> <b>~2 min read</b>
-      &middot; covering 17&ndash;20 November &middot; updated weekdays, 17:10 Pacific</p>
+      &middot; covering 20&ndash;23 November &middot; updated weekdays, 17:10 Pacific</p>
 
     <div class="ribbon">
-      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>10d</b> Gemini 2.5 API automatic routing</a> <span class="sep">·</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener"><b>11d</b> EU AI Act obligations take effect</a> <span class="sep">·</span> <a href="https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines" rel="nofollow noopener"><b>41d</b> Anthropic vulnerability disclosure deadline</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
+      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>7d</b> Gemini 2.5 API automatic routing</a> <span class="sep">·</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener"><b>8d</b> EU AI Act obligations take effect</a> <span class="sep">·</span> <a href="https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines" rel="nofollow noopener"><b>38d</b> Anthropic vulnerability disclosure deadline</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
     </div>
 
     <section class="lead">
       <h2 id="the-read">The read</h2>
       <ul>
-        <li>Model integration needs task-based replacement: competition among new models is concentrated in tool retrieval and long-chain execution, so products cannot select models solely by general leaderboards <a class="xref" href="#t1">#1</a></li>
-        <li>Local deployment is becoming a procurement condition: offline operation, sensitive context and per-task cost will directly affect enterprise deployment choices <a class="xref" href="#t2">#2</a></li>
-        <li>Cost signals are still accumulating: 5 pricing and infrastructure signals suggest that inference costs should be included in feature pricing design </li>
+        <li>Agent products enter controlled delivery: code agents are beginning to participate in merge decisions, and policy files and human review will become product acceptance criteria <a class="xref" href="#t1">#1</a></li>
+        <li>Personalization depends on the authorization experience: after personal data is connected, source display and permission revocation will directly affect user trust <a class="xref" href="#t2">#2</a></li>
+        <li>Audio and video signals have increased: this issue includes 5 related signals, and the effect of real-time generation on interactive content costs needs attention </li>
       </ul>
     </section>
 
-    <p class="counts"><b>1</b> major &middot; <b>1</b> watch
+    <p class="counts"><b>1</b> major &middot; <b>2</b> watch
       &middot; <b>1</b> monitoring</p>
 
     <article class="trend major" id="t1">
-      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Model releases</span></p>
-      <h2 id="gemini-4-neon-expands-the-model-and-tool-calling-combination">Gemini 4 Neon expands the model and tool-calling combination</h2>
-      <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 1 company, 2 independent, 1 press</span></p>
-      <p class="body">Google has released Gemini 4 Neon and added tool retrieval capabilities to the Gemini API. The community has started comparing its real-world performance with models such as Opus and Astra.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Product design should treat model replacement as a configurable layer rather than a one-time binding. Prioritize task-level evaluations to validate tool calling, long-chain execution and cost performance.</p>
-      <details>
-        <summary>Evidence &middot; 4</summary>
-      <div class="ev t1">
-        <p class="ev-h"><span class="tier">Company</span>
-          <span class="used">· it happened</span>
-          <a href="https://deepmind.google/blog/introducing-gemini-4-neon" rel="nofollow noopener">deepmind.google</a></p>
-        <p class="quote">&ldquo;Introducing Gemini 4 Neon&rdquo;</p>
-      </div>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· why it matters</span>
-          <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval" rel="nofollow noopener">blog.google</a></p>
-        <p class="quote">&ldquo;Introducing Tool Retrieval in the Gemini API&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
-          <span class="used">· it&#x27;s spreading</span>
-          <a href="https://latent.space/p/ainews-gemini-4-neon-gdm-s-opus-sol-contender" rel="nofollow noopener">latent.space</a></p>
-        <p class="quote">&ldquo;Google DeepMind shipped Gemini 4 Neon&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
-          <span class="used">· creator_relevance</span>
-          <a href="https://simonwillison.net/2026/Nov/18/llm-gemini" rel="nofollow noopener">simonwillison.net</a></p>
-        <p class="quote">&ldquo;Today Google introduced Gemini 4 Neon&rdquo;</p>
-      </div>
-      </details>
-    </article>
-    <article class="trend watch" id="t2">
-      <p class="rank"><span class="tag">#2 WATCH</span> <span>Open source releases</span></p>
-      <h2 id="open-weights-and-local-agents-lower-the-barrier-to-deployment-autonomy">Open weights and local agents lower the barrier to deployment autonomy</h2>
-      <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent, 1 press</span></p>
-      <p class="body">Tencent Hunyuan has opened the Hy4 weights, Inkling 2 Mini is aimed at local operation, and Linger promotes personal agents that do not depend on data centers.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Assess the product boundaries of hybrid cloud and local operation: sensitive context, offline availability and per-task cost may affect procurement more than model rankings alone.</p>
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Developer experience</span></p>
+      <h2 id="claude-ship-moves-code-agents-into-policy-constrained-delivery">Claude Ship moves code agents into policy-constrained delivery</h2>
+      <p class="stage"><b>High impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 2 press</span></p>
+      <p class="body">Anthropic released a beta of Claude Ship, covering PR review, fixes and approvals; Claude also unified connectors and skills as plugins.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Code agents now cover review, fixes and approvals; define the product boundary as a policy-constrained change queue, and assess it using post-merge defect rates and human review rates.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
       <div class="ev t1">
         <p class="ev-h"><span class="tier">Company</span>
           <span class="used">· it happened</span>
-          <a href="https://x.com/TencentHunyuan/status/2123625549147070538" rel="nofollow noopener">x.com</a></p>
-        <p class="quote">&ldquo;腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
-          <span class="used">· it&#x27;s spreading</span>
-          <a href="https://huggingface.co/blog/inkling2mini" rel="nofollow noopener">huggingface.co</a></p>
-        <p class="quote">&ldquo;Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup&rdquo;</p>
+          <a href="https://claude.com/blog/introducing-claude-ship" rel="nofollow noopener">claude.com</a></p>
+        <p class="quote">&ldquo;Anthropic 发布 Claude Ship 测试版，由 Code Review（已正式可用）、PR Steward 和 Claude Approvals 两个 beta 智能体组成，可审查 PR、推送修复并按团队写进仓库的策略文件决定能否合并。&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· why it matters</span>
-          <a href="https://zhidx.com/p/612775.html" rel="nofollow noopener">zhidx.com</a></p>
-        <p class="quote">&ldquo;开源本地版Muse，实现token自由&rdquo;</p>
+          <a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://x.com/claudeai/status/2124970294523945328" rel="nofollow noopener">x.com</a></p>
+        <p class="quote">&ldquo;Claude 官方宣布将连接器和技能合并为插件，提供统一的方式为 Claude 接入工具或教授新技能。&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t2">
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Enterprise deployment</span></p>
+      <h2 id="google-search-connects-personal-data-to-form-a-personalized-intelligent-entry-point">Google Search connects personal data to form a personalized intelligent entry point</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 press</span></p>
+      <p class="body">Google introduced Personal Intelligence into AI Mode and connected Drive, Wallet and the Gemini app.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Personal data integration makes authorization design and explainable citations core parts of the experience, rather than simply improving response fluency. Prioritize granular permissions, source display and revocable access.</p>
+      <details>
+        <summary>Evidence &middot; 2</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps" rel="nofollow noopener">blog.google</a></p>
+        <p class="quote">&ldquo;Google Search bar with the text &quot;Personal Intelligence&quot; surrounded by the Google Wallet, Google Drive, GMail, Google Photos, Google Calendar&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses" rel="nofollow noopener">techcrunch.com</a></p>
+        <p class="quote">&ldquo;Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t3">
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Research breakthroughs</span></p>
+      <h2 id="glm-54-claims-higher-parameter-efficiency-with-a-recurrent-transformer">GLM-5.4 claims higher parameter efficiency with a recurrent Transformer</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 2 independent, 1 press</span></p>
+      <p class="body">Z.ai&#x27;s GLM-5.4 uses a recurrent Transformer; reports say it pursues deeper reasoning and fewer parameters by repeatedly executing shared layers.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Do not treat parameter count as a substitute metric for procurement or routing; measure quality, latency and cost per successful task together on real coding tasks. If the recurrent architecture can be reproduced, the cost curve for long tasks may change.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it happened</span>
+          <a href="https://simonwillison.net/2026/Nov/23/glm-54" rel="nofollow noopener">simonwillison.net</a></p>
+        <p class="quote">&ldquo;&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;28 layers run twice, which the company says lets the 750-billion-parameter model match models with 2 to 3 trillion parameters.&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ" rel="nofollow noopener">mp.weixin.qq.com</a></p>
+        <p class="quote">&ldquo;让28层共享权重循环执行两轮，在参数量不变下获得更深推理&rdquo;</p>
       </div>
       </details>
     </article>
@@ -141,15 +158,15 @@
     <section class="mod">
       <h3 id="on-the-radar">On the radar</h3>
       <ul class="bullets">
-      <li><b>Formal verification enters the AI reliability evaluation agenda</b> &mdash; Discussion around low-quality model outputs is starting to connect with proof checking, self-consistency certification and verifiable reasoning methods.</li>
+      <li><b>Safety issues with Grok-generated content enter the state lawsuit stage</b> &mdash; Oregon and Virginia filed lawsuits over allegations involving Grok and unauthorized intimate imagery and child sexual exploitation content.</li>
       </ul>
     </section>
 
     <section class="mod">
       <h3 id="since-last-issue">Since last issue</h3>
       <ul class="bullets">
-        <li>3 trends from the previous issue have left this issue&#x27;s focus.</li>
-        <li>Gemini 2.5 API automatic routing has 10 days remaining.</li>
+        <li>None of the 6 top trends from the previous issue continued this issue.</li>
+        <li>Gemini 2.5 API automatic routing has 7 days remaining.</li>
       </ul>
     </section>
 
@@ -161,60 +178,60 @@
       <details class="cat" id="deadlines">
         <summary><span class="cname">Deadlines ahead</span><span class="cn">6</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><span class="dd">10d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio. API requests will be automatically routed starting December 1. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">11d</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener">EU AI Act obligations take effect</a> &middot; 2026-12-02</p><p class="n">Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">41d</span> <a href="https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines" rel="nofollow noopener">Anthropic vulnerability disclosure deadline</a> &middot; 2027-01-01</p><p class="n">The disclosure window for high-risk and critical vulnerabilities has been shortened to 30 days, applying to vulnerabilities reported on or after that date. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">222d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory national standard for L3/L4 takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine han</p></div>
-        <div class="r"><p class="t"><span class="dd">222d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China&#x27;s L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect from July 1, 2027. Related autonom</p></div>
-        <div class="r"><p class="t"><span class="dd">376d</span> <a href="https://theagentindex.io/guides/eu-ai-act-timeline/" rel="nofollow noopener">EU AI Act high-risk rules</a> &middot; 2027-12-02</p><p class="n">The first clear applicability date for high-risk rules. Source</p></div>
-        </div>
-      </details>
-      <details class="cat" id="pricing">
-        <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
-        <div class="rows">
-        <div class="r"><p class="t"><a href="https://news.crunchbase.com/saas/public-market-value-regulations-ai-anton-oxx/" rel="nofollow noopener">Public Markets Are Frequently Wrong. The SaaSpocal…</a></p><p class="n">Reassess pricing elasticity for AI-benefiting SaaS</p><p class="m">Crunchbase News</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/612488.html" rel="nofollow noopener">英伟达投的AI Infra创企发模型工厂！支持数千卡集群训练万亿MoE</a></p><p class="n">Buy model training by compute configuration</p><p class="m">智东西 Zhidx</p></div>
-        <div class="r"><p class="t"><a href="https://36kr.com/newsflashes/4078019778548608?f=rss" rel="nofollow noopener">Coinbase计划于2027年上半年推出自有预测市场合约</a></p><p class="n">Keep more transaction revenue through direct contracts</p><p class="m">36Kr</p></div>
-        <div class="r"><p class="t"><a href="https://36kr.com/p/4077339293242504?f=rss" rel="nofollow noopener">8点1氪丨Anthropic上市首日暴涨17%；宗馥莉原“心腹”起诉娃哈哈；OpenAI进军手机领域</a></p><p class="n">Watch IPO pricing and first-day premiums</p><p class="m">36Kr</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/openai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">GPT-6.2 Astra and Sol</a></p><p class="n">Choose Astra or Sol by difficulty</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><span class="dd">7d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">8d</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener">EU AI Act obligations take effect</a> &middot; 2026-12-02</p><p class="n">Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">38d</span> <a href="https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines" rel="nofollow noopener">Anthropic vulnerability disclosure deadline</a> &middot; 2027-01-01</p><p class="n">The disclosure window for high-severity and critical vulnerabilities has been shortened to 30 days, applying to vulnerabilities reported on or after that date. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">219d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">L3/L4 mandatory national standard implementation</a> &middot; 2027-07-01</p><p class="n">The safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine hand</p></div>
+        <div class="r"><p class="t"><span class="dd">219d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China L3/L4 safety national standard implementation</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027. Related autonomou</p></div>
+        <div class="r"><p class="t"><span class="dd">373d</span> <a href="https://theagentindex.io/guides/eu-ai-act-timeline/" rel="nofollow noopener">EU AI Act high-risk rules</a> &middot; 2027-12-02</p><p class="n">The first clear applicability date for high-risk rules. Source</p></div>
         </div>
       </details>
       <details class="cat" id="media">
         <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/" rel="nofollow noopener">Token fraud is here and it’s BAD (YouTube)</a></p><p class="n">Identify and block abnormal token consumption</p><p class="m">Simon Willison</p></div>
-        <div class="r"><p class="t"><a href="https://cloud.google.com/blog/topics/developers-practitioners/how-to-fix-your-teams-api-keys/" rel="nofollow noopener">Ultimate guide for fixing your team’s API keys</a></p><p class="n">Move prototype API keys to secure management</p><p class="m">Google Cloud · AI &amp; ML</p></div>
-        <div class="r"><p class="t"><a href="https://news.crunchbase.com/venture/telecom-bust-ai-startup-debt-boom-spreng-runway-growth/" rel="nofollow noopener">What The Telecom Bust Taught Me About AI’s Debt Bo…</a></p><p class="n">Calculate debt repayment risks for AI infrastructure</p><p class="m">Crunchbase News</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/612756.html" rel="nofollow noopener">AI时代，华为要再造一个“荣耀”！首款鸿蒙AI手机来了</a></p><p class="n">Use HarmonyOS AI phones to host on-device assistants</p><p class="m">智东西 Zhidx</p></div>
-        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2611.26629" rel="nofollow noopener">Posterior Matching Distillation</a></p><p class="n">Generate image and video with few-step sampling</p><p class="m">Hugging Face Papers</p></div>
+        <div class="r"><p class="t"><a href="https://x.ai/grok" rel="nofollow noopener">Grok — Useful AI Chatbot with Voice &amp; Image Genera…</a></p><p class="n">Generate voice, images, video and code</p><p class="m">X</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/613306.html" rel="nofollow noopener">百灵甩出健康模型全家桶：开源、专业、死磕智效比</a></p><p class="n">Detect fatigue in video and provide health recommendations</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/613322.html" rel="nofollow noopener">Token生意爆发！云知声Q3毛利飙升近80%，股价单日大涨21.7%</a></p><p class="n">Use Token services to increase AI gross revenue margin</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/hydrilla?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Hydrilla</a></p><p class="n">Generate usable 3D assets with prompts</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/613181.html" rel="nofollow noopener">2899元，荣耀做了个AI手机，把豆包放到屏上了</a></p><p class="n">Use voice to wake an AI assistant on a phone&#x27;s rear display</p><p class="m">智东西 Zhidx</p></div>
         </div>
       </details>
       <details class="cat" id="incidents">
         <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://intelligence.theregister.com/paper/view/21319" rel="nofollow noopener">The Storm Is Over, but Costs Keep Coming: How Util…</a></p><p class="n">Costs remain out of control after the storm</p><p class="m">The Next Platform</p></div>
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.26601v1" rel="nofollow noopener">SoK: Assessing the Evolution of LLM Capability in…</a></p><p class="n">Vulnerability research capabilities are assessed by inconsistent standards</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.26592v1" rel="nofollow noopener">Realized versus Population Reliability: Anytime-Va…</a></p><p class="n">Correlated reasoning can overestimate self-consistency confidence</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.26557v1" rel="nofollow noopener">MM-SystemOneBias: Evaluating Bias in Multimodal Je…</a></p><p class="n">Multimodal decisions are affected by presentation bias</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.26553v1" rel="nofollow noopener">Replication of Agentic Security Events: Audit and…</a></p><p class="n">New agent security incident reproduction experiments</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.27924v1" rel="nofollow noopener">BioEmu2: Scalable Emulation of Biomolecular Dynami…</a></p><p class="n">Structure prediction still struggles to represent molecular dynamics</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.27913v1" rel="nofollow noopener">Star Panoptic Quality: Selectively Evaluating Spli…</a></p><p class="n">Heuristic instance labeling can mislead evaluation</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.27894v1" rel="nofollow noopener">FairITR: Fairness-Aware Learning of Multicategory…</a></p><p class="n">Personalized treatment rules may produce unfairness</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit" rel="nofollow noopener">Oregon and Virginia sue SpaceX over Grok’s porn de…</a></p><p class="n">Lack of safeguards for pornographic deepfakes leads to lawsuits</p><p class="m">The Verge</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/polylane?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Polylane Swarms</a></p><p class="n">Investigating production incidents can lead to errors because evidence is scattered</p><p class="m">Product Hunt · AI</p></div>
         </div>
       </details>
       <details class="cat" id="tools">
         <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://github.com/code-yeongyu/oh-my-openagent" rel="nofollow noopener">code-yeongyu/oh-my-openagent</a></p><p class="n">Use prompts for batch image production</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/nanocoai/nanoclaw" rel="nofollow noopener">nanocoai/nanoclaw</a></p><p class="n">Self-host a persistent AI assistant in chat</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/alchaincyf/huashu-design" rel="nofollow noopener">alchaincyf/huashu-design</a></p><p class="n">Generate deliverable design drafts from a single sentence</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/docker?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Docker</a></p><p class="n">Use containers to isolate and govern AI agents</p><p class="m">Product Hunt · AI</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/tripmojo?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Tripmojo</a></p><p class="n">Plan, book and execute travel in group chat</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/thedotmack/claude-mem" rel="nofollow noopener">thedotmack/claude-mem</a></p><p class="n">Save and inject agent memory across sessions</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/wshobson/agents" rel="nofollow noopener">wshobson/agents</a></p><p class="n">Write agent plugins for multiple platforms at once</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/google/elephant-goldfish-model" rel="nofollow noopener">google/elephant-goldfish-model</a></p><p class="n">Use agents to assist software design and review</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/motionflare?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Motionflare</a></p><p class="n">Paste a URL to generate a product launch video</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/modem?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Modem</a></p><p class="n">Monitor customer feedback and automatically assign fixes</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+      <details class="cat" id="frameworks">
+        <summary><span class="cname">Agent frameworks</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/XinaTian/MROffice" rel="nofollow noopener">XinaTian/MROffice</a></p><p class="n">Connect Copilot to a browser office suite</p><p class="m">GitHub Trending</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/" rel="nofollow noopener">Product Hunt – The best new products in tech.</a></p><p class="n">Connect new product discovery to AI tool workflows</p><p class="m">Producthunt</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/resurf-2?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Resurf</a></p><p class="n">Provide a local knowledge base to AI through MCP</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/rankhog?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Rankhog</a></p><p class="n">Automatically discover and reply to leads according to community rules</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.pandex.io/" rel="nofollow noopener">Pandex – Official European Law for AI Agents, over…</a></p><p class="n">Use MCP to provide EU law to agents</p><p class="m">Hacker News</p></div>
         </div>
       </details>
     </section>
 
-    <p class="tiefoot">Read 547 stories across
-      93 sources today and published 2.
+    <p class="tiefoot">Read 417 stories across
+      93 sources today and published 3.
       <a href="/tie/archive">Archive</a> &middot;
-      <a href="/tie/2026-11-20.json">This issue as data</a> &middot;
+      <a href="/tie/2026-11-23.json">This issue as data</a> &middot;
       <a href="/tie/sources">What it reads</a></p>
   </article>
 
@@ -231,8 +248,9 @@
       <h2>On this page</h2>
       <nav class="toc">
         <a href="#the-read">The read</a>
-        <a href="#gemini-4-neon-expands-the-model-and-tool-calling-combination">Gemini 4 Neon expands the model and tool-calling combination</a>
-        <a href="#open-weights-and-local-agents-lower-the-barrier-to-deployment-autonomy">Open weights and local agents lower the barrier to deployment autonomy</a>
+        <a href="#claude-ship-moves-code-agents-into-policy-constrained-delivery">Claude Ship moves code agents into policy-constrained delivery</a>
+        <a href="#google-search-connects-personal-data-to-form-a-personalized-intelligent-entry-point">Google Search connects personal data to form a personalized intelligent entry point</a>
+        <a href="#glm-54-claims-higher-parameter-efficiency-with-a-recurrent-transformer">GLM-5.4 claims higher parameter efficiency with a recurrent Transformer</a>
         <a href="#on-the-radar">On the radar</a>
         <a href="#since-last-issue">Since last issue</a>
         <a href="#also-worth-knowing">Also worth knowing</a>

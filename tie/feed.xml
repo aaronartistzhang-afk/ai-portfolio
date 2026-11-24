@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Fri, 20 Nov 2026 17:00:25 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 17:00:27 -0800</lastBuildDate>
+    <item>
+      <title>Claude Ship moves code agents into policy-constrained delivery</title>
+      <link>https://aaronzhang.ai/tie/2026-11-23</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 17:00:27 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent products enter controlled delivery: code agents are beginning to participate in merge decisions, and policy files and human review will become product acceptance criteria&lt;/li&gt;&lt;li&gt;Personalization depends on the authorization experience: after personal data is connected, source display and permission revocation will directly affect user trust&lt;/li&gt;&lt;li&gt;Audio and video signals have increased: this issue includes 5 related signals, and the effect of real-time generation on interactive content costs needs attention&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Gemini 4 Neon expands the model and tool-calling combination</title>
       <link>https://aaronzhang.ai/tie/2026-11-20</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-13</guid>
       <pubDate>Tue, 13 Oct 2026 17:00:19 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Model selection moves into task testing, multi-entry-point launches let individual trials reach team procurement faster, and task success rates and costs need to be compared together&lt;/li&gt;&lt;li&gt;Generated apps are closer to direct distribution, private apps can be installed and shared, and products need to address permissions and publication checks early&lt;/li&gt;&lt;li&gt;More agent observability tools are available, tools such as natural-language trace search lower the barrier to diagnosing complex workflows&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Agent orchestration focuses on context and cost control</title>
-      <link>https://aaronzhang.ai/tie/2026-10-12</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 17:00:26 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Long-task costs need separate governance: multi-agent quality gains are limited, while historical context and call strategies have a greater effect on task economics&lt;/li&gt;&lt;li&gt;Model selection returns to the per-task ledger: improved agent capabilities in new models may come with substantially higher per-task costs&lt;/li&gt;&lt;li&gt;The tool ecosystem is still expanding: MCP, skill packages and inference monitoring tools are all appearing, and products need to control their integration surface&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
