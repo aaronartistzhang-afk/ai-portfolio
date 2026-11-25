@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Mon, 23 Nov 2026 17:00:27 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 17:00:22 -0800</lastBuildDate>
+    <item>
+      <title>Claude turns Artifacts and tool integration into distributable products</title>
+      <link>https://aaronzhang.ai/tie/2026-11-24</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 17:00:22 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent delivery is becoming productized: installable outputs and task-based deployments move acceptance toward permissions, versions and human takeover&lt;/li&gt;&lt;li&gt;Content distribution is starting to demand proof of origin: platforms can treat AI content differently based on human involvement, so provenance fields need to be designed in advance&lt;/li&gt;&lt;li&gt;Competition in tool integration is heating up: 5 new signals focus on MCP and Workspace connectors, and compatibility will affect product selection&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Claude Ship moves code agents into policy-constrained delivery</title>
       <link>https://aaronzhang.ai/tie/2026-11-23</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-14</guid>
       <pubDate>Wed, 14 Oct 2026 17:00:27 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Long-running agents need full cost accounting: beyond success rates, runtime, concurrency, and orchestration costs are starting to determine whether a product can scale&lt;/li&gt;&lt;li&gt;Generated content needs origin information: labels, edit records, and appeal channels will affect distribution clicks and creator revenue assessment&lt;/li&gt;&lt;li&gt;More signals on voice capabilities: this issue has 5 updates on audio, video, and voice models, and real-time interactive products are worth tracking&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Gemini 4 Argon launches globally and enters the developer toolchain</title>
-      <link>https://aaronzhang.ai/tie/2026-10-13</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-13</guid>
-      <pubDate>Tue, 13 Oct 2026 17:00:19 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Model selection moves into task testing, multi-entry-point launches let individual trials reach team procurement faster, and task success rates and costs need to be compared together&lt;/li&gt;&lt;li&gt;Generated apps are closer to direct distribution, private apps can be installed and shared, and products need to address permissions and publication checks early&lt;/li&gt;&lt;li&gt;More agent observability tools are available, tools such as natural-language trace search lower the barrier to diagnosing complex workflows&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
