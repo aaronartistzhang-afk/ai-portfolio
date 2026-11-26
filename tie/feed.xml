@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Tue, 24 Nov 2026 17:00:22 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 17:00:19 -0800</lastBuildDate>
+    <item>
+      <title>Coding agents enter the large-scale repository operations stage</title>
+      <link>https://aaronzhang.ai/tie/2026-11-25</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 17:00:19 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Agent operations become a product layer: as multi-agent coverage expands, permissions, task assignment and review will outweigh the single-generation experience&lt;/li&gt;&lt;li&gt;Costs need to be measured per successful task: context and prefill costs in long task chains will limit agent pricing and interaction depth&lt;/li&gt;&lt;li&gt;Agent tools continue to multiply: frameworks, terminal agents and MCP tools are launching in the same period, and integration burden will keep rising&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Claude turns Artifacts and tool integration into distributable products</title>
       <link>https://aaronzhang.ai/tie/2026-11-24</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-15</guid>
       <pubDate>Thu, 15 Oct 2026 17:00:26 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Model entry points have broader coverage: the same model serves development, apps and robotics, so procurement evaluations need to return to specific tasks&lt;/li&gt;&lt;li&gt;The barrier to trying open models is lower: local operation and Day 0 hosted support will compress premiums for general agents&lt;/li&gt;&lt;li&gt;The supply of agent tools is still increasing: lightweight frameworks and development tools continue to appear, and integration cost will become a selection criterion&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Long-running multi-agent operation enters the cost engineering stage</title>
-      <link>https://aaronzhang.ai/tie/2026-10-14</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 17:00:27 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Long-running agents need full cost accounting: beyond success rates, runtime, concurrency, and orchestration costs are starting to determine whether a product can scale&lt;/li&gt;&lt;li&gt;Generated content needs origin information: labels, edit records, and appeal channels will affect distribution clicks and creator revenue assessment&lt;/li&gt;&lt;li&gt;More signals on voice capabilities: this issue has 5 updates on audio, video, and voice models, and real-time interactive products are worth tracking&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

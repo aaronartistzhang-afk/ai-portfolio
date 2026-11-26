@@ -1,0 +1,526 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-25",
+  "executed_at": "2026-11-26T01:00:19.976175Z",
+  "run_id": "2026-11-23-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-11-23T12:00:19.976140+11:00",
+    "to": "2026-11-26T12:00:19.976140+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-11-26T12:00:19.976140+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "03a9317da3465f00",
+      "run_trend_id": "GLOBAL_20261126_DEVELOPER_EXPERIENCE_CODING_AGENT_OPERATIONS",
+      "name": "Coding agents enter the large-scale repository operations stage",
+      "category": "developer_experience",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "OpenAI showed iFood scaling coding agents across 15,000 code repositories, while the open-source community released team management and pluggable execution tools.",
+      "attention_driver": "As the number of repositories and tasks covered by agents rises, teams need unified task assignment, permissions and quality control.",
+      "evidence": [
+        {
+          "url": "https://openai.com/business/customer-stories/ifood",
+          "quote": "How iFood scales coding agents across 15,000 repositories",
+          "claim": "Supports that coding agents have organizational deployment cases across large numbers of code repositories.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points",
+          "quote": "Three LLM inflection points in twelve months",
+          "claim": "Supports that the developer community sees changes in agent capabilities as an important recent inflection point.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://github.com/paperclipai/paperclip",
+          "quote": "The open-source app everyone uses to manage agents at work",
+          "claim": "Supports that demand is forming for tools to manage agents in work settings.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-24T00:00:00Z",
+      "last_signal_update": "2026-11-26T00:57:48Z",
+      "so_what": "The bottleneck for coding agent products will lie in multi-repository context, change review and accountability tracking, rather than single-generation performance. Prioritize observable task queues and tiered execution permissions to avoid leaving scaling costs to engineering teams."
+    },
+    {
+      "canonical_id": "3dde9b37443bca91",
+      "run_trend_id": "GLOBAL_20261126_HARDWARE_AND_INFRA_AGENT_SERVING_EFFICIENCY",
+      "name": "Agent cost pressure drives model compression and inference optimization",
+      "category": "hardware_and_infra",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "Cost issues for multi-agent long contexts have appeared in the same cycle as model compression and faster prefill optimization.",
+      "attention_driver": "As task chains grow longer, repeated context reading and high-concurrency serving quickly raise the cost per task.",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/abs/2611.33098v1",
+          "quote": "Agents built on frontier language models are expensive.",
+          "claim": "Supports that multi-agent workflows driven by frontier models face clear cost pressure.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb",
+          "quote": "shrinks a 54 GB language model to 5.9 GB",
+          "claim": "Supports that model compression methods for low-storage deployment are being used for agent coding models.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://pytorch.org/blog/vllm-singapore-meetup-faster-prefill-agent-written-kernels-and-the-road-to-vera-rubin",
+          "quote": "Faster Prefill, Agent-Written Kernels",
+          "claim": "Supports that the serving community is focusing on prefill speed and inference kernel optimization.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-25T05:00:00Z",
+      "last_signal_update": "2026-11-26T00:05:35Z",
+      "so_what": "Agent pricing cannot be estimated only by call volume. Context reuse, model routing and prefill latency directly determine gross margin and interaction limits. Product teams should measure the cost of each successful completion on real task chains, rather than compare only single-turn prices."
+    },
+    {
+      "canonical_id": "a66d3afa82554e53",
+      "run_trend_id": "GLOBAL_20261126_SAFETY_AND_GOVERNANCE_PRIVATE_INFERENCE_ENTERPRISE_TRUST",
+      "name": "Sensitive enterprise tasks drive private inference commitments",
+      "category": "safety_and_governance",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "美国"
+      ],
+      "lifecycle_stage": "declining",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Reports say OpenAI is testing Private Inference, claiming enterprises can use powerful models without letting the service provider view query data.",
+      "attention_driver": "The usable boundary for sensitive data still limits enterprises from using agents in core processes.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data",
+          "quote": "OpenAI is testing a new feature called \"Private Inference\"",
+          "claim": "Supports that OpenAI is testing private inference features for sensitive enterprise tasks.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "quote": "GPT-6.1 Sol is available starting today to all Plus, Pro, Business, Enterprise, and Edu users",
+          "claim": "Supports that OpenAI continues to expand access to high-capability models for organizational accounts.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-23T22:13:01Z",
+      "last_signal_update": "2026-11-25T18:22:02Z",
+      "so_what": "Enterprise differentiation will be determined more by data isolation, audit evidence and key control, rather than model rankings alone. Product roadmaps should first identify which workloads must be verifiably isolated, then match retrieval, logging and operations design."
+    }
+  ],
+  "watch_list": [
+    {
+      "canonical_id": "34320ec5717a32d0",
+      "run_trend_id": "GLOBAL_20261126_ENTERPRISE_DEPLOYMENT_META_MUSE_COMMERCE_AGENT_ACCESS",
+      "name": "Meta Muse seeks e-commerce entry points and integrates with Instagram DMs",
+      "category": "enterprise_deployment",
+      "primary_region": "全球",
+      "secondary_regions": [
+        "美国"
+      ],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Meta Muse has entered Walmart shopping scenarios, and reports say Amazon is discussing lifting its access restrictions.",
+      "attention_driver": "Whether shopping agents can obtain platform entry points, complete transactions and retain attribution has become a focus of product competition.",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse",
+          "quote": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
+          "claim": "Supports that Muse has gained access to retail shopping scenarios.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store",
+          "quote": "Amazon and Meta are in talks to bring back Muse",
+          "claim": "Supports that Amazon and Meta are discussing market access arrangements for Muse.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms",
+          "quote": "Meta brings its Muse AI assistant directly into Instagram DMs",
+          "claim": "Supports that Muse is expanding distribution through Meta-owned user touchpoints.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-24T17:00:00Z",
+      "last_signal_update": "2026-11-25T16:44:37Z",
+      "so_what": "Transaction-facing agents do not depend only on conversational ability. Entry permissions, merchant data and settlement responsibility determine deliverable features. If your product involves acting on behalf of users or making purchases, make authorization, failure fallback and attribution primary experiences."
+    }
+  ],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 86,
+    "signals_raw": 551,
+    "signals_accepted": 531,
+    "clusters_total": 329,
+    "clusters_synthesized": 142,
+    "by_source": {
+      "algorithmic_bridge": 1,
+      "amazon": 2,
+      "anthropic": 2,
+      "app": 1,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_latent_space": 1,
+      "apple_podcasts_training_data": 1,
+      "apple_podcasts_twiml_ai_podcast": 1,
+      "apple_podcasts_unsupervised_learning": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 10,
+      "arxiv": 20,
+      "astral_codex_ten": 2,
+      "brave_search_ai": 104,
+      "claude": 1,
+      "cognition_devin": 1,
+      "crunchbase_news": 5,
+      "deepmind": 2,
+      "dwarkesh_blog": 1,
+      "ed_zitron_where_s_your_ed_at_rss": 1,
+      "eetimes": 10,
+      "exponential_view": 1,
+      "fireworks_ai": 1,
+      "gary_marcus": 4,
+      "github": 13,
+      "github_awesome_claude": 2,
+      "github_awesome_llm": 4,
+      "github_claude_skills": 16,
+      "github_cursor_rules": 3,
+      "google": 9,
+      "hn": 10,
+      "huggingface_blog": 4,
+      "huggingface_papers": 16,
+      "ieee_spectrum_ai": 1,
+      "import_ai": 1,
+      "index_ventures": 5,
+      "infoq_ai_zh": 20,
+      "it": 1,
+      "kr36_ai": 20,
+      "latent_space": 4,
+      "lennys_newsletter": 3,
+      "meta": 4,
+      "metr_blog": 1,
+      "mistral": 1,
+      "mit_tech_review_ai": 2,
+      "nextplatform": 4,
+      "nvidia": 2,
+      "openai": 8,
+      "platformer": 1,
+      "pragmatic_engineer": 2,
+      "producthunt": 18,
+      "pydantic_ai": 1,
+      "pytorch_blog": 2,
+      "qbitai": 10,
+      "rundown_ai": 3,
+      "semianalysis": 1,
+      "servethehome": 3,
+      "simon_willison": 7,
+      "stratechery": 2,
+      "techcrunch_ai": 20,
+      "techcrunch_venture": 1,
+      "the_decoder": 10,
+      "thinking_machines_lab_news": 1,
+      "tldr_ai": 2,
+      "unknown": 1,
+      "verge_ai": 9,
+      "wired_ai": 10,
+      "x_amasad": 3,
+      "x_anthropic_anthropicai": 1,
+      "x_bcherny": 1,
+      "x_greg_brockman_gdb": 1,
+      "x_openbmb_openbmb": 1,
+      "x_openclaw_openclaw": 1,
+      "x_petergyang": 3,
+      "x_philipp_schmid_google_deepmind_philschmid": 1,
+      "x_rauchg": 3,
+      "x_realmadhuguru": 1,
+      "x_rohan_paul_rohanpaul_ai": 1,
+      "x_swyx": 3,
+      "x_thenanyu": 2,
+      "x_thsottiaux": 3,
+      "x_trq212": 1,
+      "youtube_ai": 11,
+      "zh_podcast_guigu101": 1,
+      "zhidx": 19,
+      "zvi_mowshowitz": 2
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "d22f4852810ccef9",
+    "prompt_hash": "67be25e25ebc1f24"
+  },
+  "insights": [
+    {
+      "text": "Agent operations become a product layer: as multi-agent coverage expands, permissions, task assignment and review will outweigh the single-generation experience",
+      "refs": [
+        1,
+        3
+      ]
+    },
+    {
+      "text": "Costs need to be measured per successful task: context and prefill costs in long task chains will limit agent pricing and interaction depth",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "Agent tools continue to multiply: frameworks, terminal agents and MCP tools are launching in the same period, and integration burden will keep rising",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "Claude's Artifacts and tool integration as a distributable product has dropped out of this period's tracking.",
+    "Gemini 2.5 API automatic routing has 5 days left."
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini 2.5 API automatic routing",
+      "kind": "deprecation",
+      "effective_date": "2026-12-01",
+      "days_left": 5,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
+    },
+    {
+      "title": "EU AI Act obligations take effect",
+      "kind": "policy",
+      "effective_date": "2026-12-02",
+      "days_left": 6,
+      "description": "Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source",
+      "url": "https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50"
+    },
+    {
+      "title": "Tidal ban on fully generated AI music",
+      "kind": "policy",
+      "effective_date": "2026-12-09",
+      "days_left": 13,
+      "description": "Tidal will ban fully generated AI music on December 9. Reports also say AI-assisted creation remains acceptable. Source",
+      "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"
+    },
+    {
+      "title": "Anthropic vulnerability disclosure deadline",
+      "kind": "policy",
+      "effective_date": "2027-01-01",
+      "days_left": 36,
+      "description": "The disclosure window for high-risk and critical vulnerabilities is shortened to 30 days, applying to vulnerabilities reported on or after that date. Source",
+      "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines"
+    },
+    {
+      "title": "mandatory national standard for L3/L4 takes effect",
+      "kind": "policy",
+      "effective_date": "2027-07-01",
+      "days_left": 217,
+      "description": "Safety requirements for intelligent connected vehicle L3/L4 autonomous driving systems are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handoff and risk handling requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China L3/L4 safety national standard takes effect",
+      "kind": "policy",
+      "effective_date": "2027-07-01",
+      "days_left": 217,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is planned to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance verification. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "pricing": [
+      {
+        "title": "点心债市场扩容，人民币资产更受青睐",
+        "note": "Track improvements in dim sum bond benchmark pricing",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/newsflashes/4085831083043209?f=rss"
+      },
+      {
+        "title": "8点1氪丨英伟达市值一夜蒸发近9800亿元；福布斯中国辟谣“8万元包上榜”；斗鱼及创始人陈少杰被执行…",
+        "note": "Watch for revaluation triggered by a tech stock pullback",
+        "source": "kr36_ai",
+        "why": "",
+        "url": "https://36kr.com/p/4085847020153478?f=rss"
+      },
+      {
+        "title": "Plans and Pricing | ChatGPT",
+        "note": "Apply for discounts of up to 75% for nonprofits",
+        "source": "Chatgpt",
+        "why": "",
+        "url": "https://chatgpt.com/pricing/"
+      },
+      {
+        "title": "LLM Leaderboard (September 2026): Raw Benchmark Sc…",
+        "note": "Compare model unit prices by leaderboard",
+        "source": "Iternal",
+        "why": "",
+        "url": "https://iternal.ai/llm-benchmark-repository"
+      },
+      {
+        "title": "Introducing GPT-6.1 Sol | OpenAI",
+        "note": "Check GPT-6.1 API pricing",
+        "source": "Openai",
+        "why": "",
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+      }
+    ],
+    "media": [
+      {
+        "title": "An Indic Voice Agent with CUGA",
+        "note": "Generate Indian-language voice conversation agents",
+        "source": "huggingface_blog",
+        "why": "",
+        "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
+      },
+      {
+        "title": "DiaCap: Jointly Learning Who Speaks When for Audio…",
+        "note": "Output video dialogue subtitles and speakers",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.33153v1"
+      },
+      {
+        "title": "Google AI Pro & Ultra — get access to Gemini 4 Neo…",
+        "note": "Generate video and audio summaries with the premium plan",
+        "source": "Gemini",
+        "why": "",
+        "url": "https://gemini.google/subscriptions/"
+      },
+      {
+        "title": "神秘大模型火速杀进OpenCode前三！做MV、开发游戏、3D建模全拿捏，免费可蹬",
+        "note": "Generate music videos, games and 3D models with one sentence",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/614323.html"
+      },
+      {
+        "title": "Read My Lips: Context-aware Lip Reading Using Lang…",
+        "note": "Restore speech using lip movements and context",
+        "source": "huggingface_papers",
+        "why": "",
+        "url": "https://huggingface.co/papers/2611.33117"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "Back-to-back cyber incidents at US financial inves…",
+        "note": "Investigate AI-related intrusions at federal agencies",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/"
+      },
+      {
+        "title": "elementalsouls/Claude-BugHunter",
+        "note": "Use Claude for vulnerability hunting at scale",
+        "source": "github_claude_skills",
+        "why": "",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter"
+      },
+      {
+        "title": "BriConstrain: Geometrically Constrained Decoding f…",
+        "note": "Fix collisions and floating bricks in block generation",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.33135v1"
+      },
+      {
+        "title": "A Bias in Disguise: Tiny Gradient Edits Stop a Sma…",
+        "note": "Handle failed reasoning loops in small models",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.33133v1"
+      },
+      {
+        "title": "The best AI agents in 2026 | Product Hunt",
+        "note": "Watch for agents becoming too deeply embedded in workflows",
+        "source": "Producthunt",
+        "why": "",
+        "url": "https://www.producthunt.com/categories/ai-agents"
+      }
+    ],
+    "tools": [
+      {
+        "title": "elementalsouls/Claude-BugHunter",
+        "note": "Use Claude for vulnerability hunting at scale",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (23,018 ⭐), matches your interests in \"claude / code / ide\" · View",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter"
+      },
+      {
+        "title": "obsidianmd/obsidian-skills",
+        "note": "Let agents read and write an Obsidian knowledge base",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (53,770 ⭐), matches your interests in \"agent / obs / skill\" · View",
+        "url": "https://github.com/obsidianmd/obsidian-skills"
+      },
+      {
+        "title": "ayghri/i-have-adhd",
+        "note": "Make coding agents give the conclusion first",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (62,364 ⭐), matches your interests in \"agent / coding / skill\" · View",
+        "url": "https://github.com/ayghri/i-have-adhd"
+      },
+      {
+        "title": "MyClaw 3.0",
+        "note": "Build an AI team with shared memory",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI pick · 262 votes · 38 comments, matches your interests in \"agent / agents / claude\" · View",
+        "url": "https://www.producthunt.com/products/myclaw-3-0?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "tday.com",
+        "note": "Make coding agents automatically record product demos",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI pick · 122 votes · 12 comments, matches your interests in \"agent / claude / code\" · View",
+        "url": "https://www.producthunt.com/products/tday?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "frameworks"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-70c698355031a8d2",
+    "evidence_rewritten:GLOBAL_2-ccb21320b328b01b",
+    "evidence_rewritten:GLOBAL_2-76bdd3cd63af5990",
+    "evidence_rewritten:GLOBAL_2-10addc3a53ee1f5b",
+    "critic_missed:cluster-5db70796a94aec7c"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}

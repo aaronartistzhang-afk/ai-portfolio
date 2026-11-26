@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>AI Daily — 2026-11-25</title>
+<meta name="description" content="OpenAI showed iFood scaling coding agents across 15,000 code repositories, while the open-source community released team management and pluggable execution tool">
+<link rel="canonical" href="https://aaronzhang.ai/tie/2026-11-25">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="aaronzhang.ai">
+<meta property="og:title" content="AI Daily — 2026-11-25">
+<meta property="og:description" content="OpenAI showed iFood scaling coding agents across 15,000 code repositories, while the open-source community released team management and pluggable execution tool">
+<meta property="og:url" content="https://aaronzhang.ai/tie/2026-11-25">
+<meta property="og:image" content="https://aaronzhang.ai/card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aaronzhang42">
+<meta name="twitter:creator" content="@aaronzhang42">
+<link rel="alternate" type="application/rss+xml" title="AI Daily" href="https://aaronzhang.ai/tie/feed.xml">
+<link rel="stylesheet" href="/tie/tie.css">
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <a class="name" href="/">
+      <svg width="21" height="21" viewBox="0 0 128 128" fill="none" aria-hidden="true">
+        <path d="M94.5 36.5C82.8 22.5 61.6 18.2 44.8 27.5C25.2 38.3 18.1 63 28.9 82.6C39.7 102.2 64.4 109.3 84 98.5C94.6 92.7 101.4 82.9 103.4 72.1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="64" cy="64" r="13.5" fill="currentColor"/><circle cx="93.1" cy="34.9" r="8.5" fill="currentColor"/><circle cx="31.7" cy="87" r="8.5" fill="currentColor"/>
+        <circle cx="64" cy="64" r="31" stroke="currentColor" stroke-opacity="0.18" stroke-width="2"/>
+      </svg>
+      Aaron Zhang
+    </a>
+    <a href="/#writing">Writing</a>
+    <details class="menu">
+      <summary>AI Daily</summary>
+      <div class="menupanel">
+        <a href="/tie/?from=menu"><b>Today's issue</b><span>The three trends published this US weekday</span></a>
+        <a href="/tie/archive?from=menu"><b>Archive</b><span>Every issue so far, quiet days included</span></a>
+        <a href="/tie/how-it-works?from=menu"><b>How it works</b><span>How the sources become three trends, in two pictures</span></a>
+        <a href="/tie/sources?from=menu"><b>What it reads</b><span>Every source and how much weight it carries</span></a>
+        <a href="/tie/data?from=menu"><b>Get it as data</b><span>A JSON file per issue. No key, no rate limit</span></a>
+        <a href="/tie/terms?from=menu"><b>Licence</b><span>MIT, and what that lets you do with the data</span></a>
+      </div>
+    </details>
+    <a href="/deck/?from=nav">Talk</a>
+    <a href="/about/">About</a>
+  </header>
+
+  <div class="tiegrid">
+  <article class="tie">
+    <p class="crumb"><a href="/tie/">AI Daily</a><span class="sep">/</span><a href="/tie/archive">Archive</a><span class="sep">/</span><span class="here">Issue</span> <span class="sep">&middot;</span> 2026-11-25</p>
+    <h1>AI Daily</h1>
+    <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
+    93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
+
+    <p class="runbar"><span class="live"></span> <b>~3 min read</b>
+      &middot; covering 22&ndash;25 November &middot; updated weekdays, 17:10 Pacific</p>
+
+    <div class="ribbon">
+      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>5d</b> Gemini 2.5 API automatic routing</a> <span class="sep">·</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener"><b>6d</b> EU AI Act obligations take effect</a> <span class="sep">·</span> <a href="https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/" rel="nofollow noopener"><b>13d</b> Tidal ban on fully generated AI music</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
+    </div>
+
+    <section class="lead">
+      <h2 id="the-read">The read</h2>
+      <ul>
+        <li>Agent operations become a product layer: as multi-agent coverage expands, permissions, task assignment and review will outweigh the single-generation experience <a class="xref" href="#t1">#1</a> <a class="xref" href="#t3">#3</a></li>
+        <li>Costs need to be measured per successful task: context and prefill costs in long task chains will limit agent pricing and interaction depth <a class="xref" href="#t2">#2</a></li>
+        <li>Agent tools continue to multiply: frameworks, terminal agents and MCP tools are launching in the same period, and integration burden will keep rising </li>
+      </ul>
+    </section>
+
+    <p class="counts"><b>1</b> major &middot; <b>2</b> watch
+      &middot; <b>1</b> monitoring</p>
+
+    <article class="trend major" id="t1">
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Developer experience</span></p>
+      <h2 id="coding-agents-enter-the-large-scale-repository-operations-stage">Coding agents enter the large-scale repository operations stage</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>Well sourced &mdash; 1 company, 1 independent, 1 press</span></p>
+      <p class="body">OpenAI showed iFood scaling coding agents across 15,000 code repositories, while the open-source community released team management and pluggable execution tools.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>The bottleneck for coding agent products will lie in multi-repository context, change review and accountability tracking, rather than single-generation performance. Prioritize observable task queues and tiered execution permissions to avoid leaving scaling costs to engineering teams.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t1">
+        <p class="ev-h"><span class="tier">Company</span>
+          <span class="used">· it happened</span>
+          <a href="https://openai.com/business/customer-stories/ifood" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;How iFood scales coding agents across 15,000 repositories&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://simonwillison.net/2026/Nov/24/llm-inflection-points" rel="nofollow noopener">simonwillison.net</a></p>
+        <p class="quote">&ldquo;Three LLM inflection points in twelve months&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://github.com/paperclipai/paperclip" rel="nofollow noopener">github.com</a></p>
+        <p class="quote">&ldquo;The open-source app everyone uses to manage agents at work&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t2">
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Hardware &amp; infra</span></p>
+      <h2 id="agent-cost-pressure-drives-model-compression-and-inference-optimization">Agent cost pressure drives model compression and inference optimization</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 2 independent, 1 press</span></p>
+      <p class="body">Cost issues for multi-agent long contexts have appeared in the same cycle as model compression and faster prefill optimization.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Agent pricing cannot be estimated only by call volume. Context reuse, model routing and prefill latency directly determine gross margin and interaction limits. Product teams should measure the cost of each successful completion on real task chains, rather than compare only single-turn prices.</p>
+      <details>
+        <summary>Evidence &middot; 3</summary>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it happened</span>
+          <a href="https://arxiv.org/abs/2611.33098v1" rel="nofollow noopener">arxiv.org</a></p>
+        <p class="quote">&ldquo;Agents built on frontier language models are expensive.&rdquo;</p>
+      </div>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· why it matters</span>
+          <a href="https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;shrinks a 54 GB language model to 5.9 GB&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it&#x27;s spreading</span>
+          <a href="https://pytorch.org/blog/vllm-singapore-meetup-faster-prefill-agent-written-kernels-and-the-road-to-vera-rubin" rel="nofollow noopener">pytorch.org</a></p>
+        <p class="quote">&ldquo;Faster Prefill, Agent-Written Kernels&rdquo;</p>
+      </div>
+      </details>
+    </article>
+    <article class="trend watch" id="t3">
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Safety &amp; governance</span></p>
+      <h2 id="sensitive-enterprise-tasks-drive-private-inference-commitments">Sensitive enterprise tasks drive private inference commitments</h2>
+      <p class="stage"><b>Medium impact</b>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 1 press</span></p>
+      <p class="body">Reports say OpenAI is testing Private Inference, claiming enterprises can use powerful models without letting the service provider view query data.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Enterprise differentiation will be determined more by data isolation, audit evidence and key control, rather than model rankings alone. Product roadmaps should first identify which workloads must be verifiably isolated, then match retrieval, logging and operations design.</p>
+      <details>
+        <summary>Evidence &middot; 2</summary>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
+          <span class="used">· it happened</span>
+          <a href="https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;OpenAI is testing a new feature called &quot;Private Inference&quot;&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://openai.com/index/introducing-gpt-6-1-sol" rel="nofollow noopener">openai.com</a></p>
+        <p class="quote">&ldquo;GPT-6.1 Sol is available starting today to all Plus, Pro, Business, Enterprise, and Edu users&rdquo;</p>
+      </div>
+      </details>
+    </article>
+
+    <section class="mod">
+      <h3 id="on-the-radar">On the radar</h3>
+      <ul class="bullets">
+      <li><b>Meta Muse seeks e-commerce entry points and integrates with Instagram DMs</b> &mdash; Meta Muse has entered Walmart shopping scenarios, and reports say Amazon is discussing lifting its access restrictions.</li>
+      </ul>
+    </section>
+
+    <section class="mod">
+      <h3 id="since-last-issue">Since last issue</h3>
+      <ul class="bullets">
+        <li>Claude&#x27;s Artifacts and tool integration as a distributable product has dropped out of this period&#x27;s tracking.</li>
+        <li>Gemini 2.5 API automatic routing has 5 days left.</li>
+      </ul>
+    </section>
+
+
+    <section class="also">
+      <h3 id="also-worth-knowing">Also worth knowing &middot; 26</h3>
+      <p class="sub">Everything else that made the cut today but was not big enough to lead.
+      Grouped by desk, open only what you need.</p>
+      <details class="cat" id="deadlines">
+        <summary><span class="cname">Deadlines ahead</span><span class="cn">6</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><span class="dd">5d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">6d</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener">EU AI Act obligations take effect</a> &middot; 2026-12-02</p><p class="n">Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">13d</span> <a href="https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/" rel="nofollow noopener">Tidal ban on fully generated AI music</a> &middot; 2026-12-09</p><p class="n">Tidal will ban fully generated AI music on December 9. Reports also say AI-assisted creation remains acceptable. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">36d</span> <a href="https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines" rel="nofollow noopener">Anthropic vulnerability disclosure deadline</a> &middot; 2027-01-01</p><p class="n">The disclosure window for high-risk and critical vulnerabilities is shortened to 30 days, applying to vulnerabilities reported on or after that date. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">217d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">mandatory national standard for L3/L4 takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for intelligent connected vehicle L3/L4 autonomous driving systems are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handoff</p></div>
+        <div class="r"><p class="t"><span class="dd">217d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles&quot; is planned to take effect on July 1, 2027. Related autonomous</p></div>
+        </div>
+      </details>
+      <details class="cat" id="pricing">
+        <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://36kr.com/newsflashes/4085831083043209?f=rss" rel="nofollow noopener">点心债市场扩容，人民币资产更受青睐</a></p><p class="n">Track improvements in dim sum bond benchmark pricing</p><p class="m">36Kr</p></div>
+        <div class="r"><p class="t"><a href="https://36kr.com/p/4085847020153478?f=rss" rel="nofollow noopener">8点1氪丨英伟达市值一夜蒸发近9800亿元；福布斯中国辟谣“8万元包上榜”；斗鱼及创始人陈少杰被执行…</a></p><p class="n">Watch for revaluation triggered by a tech stock pullback</p><p class="m">36Kr</p></div>
+        <div class="r"><p class="t"><a href="https://chatgpt.com/pricing/" rel="nofollow noopener">Plans and Pricing | ChatGPT</a></p><p class="n">Apply for discounts of up to 75% for nonprofits</p><p class="m">Chatgpt</p></div>
+        <div class="r"><p class="t"><a href="https://iternal.ai/llm-benchmark-repository" rel="nofollow noopener">LLM Leaderboard (September 2026): Raw Benchmark Sc…</a></p><p class="n">Compare model unit prices by leaderboard</p><p class="m">Iternal</p></div>
+        <div class="r"><p class="t"><a href="https://openai.com/index/introducing-gpt-6-1-sol/" rel="nofollow noopener">Introducing GPT-6.1 Sol | OpenAI</a></p><p class="n">Check GPT-6.1 API pricing</p><p class="m">Openai</p></div>
+        </div>
+      </details>
+      <details class="cat" id="media">
+        <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga" rel="nofollow noopener">An Indic Voice Agent with CUGA</a></p><p class="n">Generate Indian-language voice conversation agents</p><p class="m">Hugging Face Blog</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.33153v1" rel="nofollow noopener">DiaCap: Jointly Learning Who Speaks When for Audio…</a></p><p class="n">Output video dialogue subtitles and speakers</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://gemini.google/subscriptions/" rel="nofollow noopener">Google AI Pro &amp; Ultra — get access to Gemini 4 Neo…</a></p><p class="n">Generate video and audio summaries with the premium plan</p><p class="m">Gemini</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/614323.html" rel="nofollow noopener">神秘大模型火速杀进OpenCode前三！做MV、开发游戏、3D建模全拿捏，免费可蹬</a></p><p class="n">Generate music videos, games and 3D models with one sentence</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2611.33117" rel="nofollow noopener">Read My Lips: Context-aware Lip Reading Using Lang…</a></p><p class="n">Restore speech using lip movements and context</p><p class="m">Hugging Face Papers</p></div>
+        </div>
+      </details>
+      <details class="cat" id="incidents">
+        <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/" rel="nofollow noopener">Back-to-back cyber incidents at US financial inves…</a></p><p class="n">Investigate AI-related intrusions at federal agencies</p><p class="m">The Decoder</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/elementalsouls/Claude-BugHunter" rel="nofollow noopener">elementalsouls/Claude-BugHunter</a></p><p class="n">Use Claude for vulnerability hunting at scale</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.33135v1" rel="nofollow noopener">BriConstrain: Geometrically Constrained Decoding f…</a></p><p class="n">Fix collisions and floating bricks in block generation</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.33133v1" rel="nofollow noopener">A Bias in Disguise: Tiny Gradient Edits Stop a Sma…</a></p><p class="n">Handle failed reasoning loops in small models</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/categories/ai-agents" rel="nofollow noopener">The best AI agents in 2026 | Product Hunt</a></p><p class="n">Watch for agents becoming too deeply embedded in workflows</p><p class="m">Producthunt</p></div>
+        </div>
+      </details>
+      <details class="cat" id="tools">
+        <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://github.com/elementalsouls/Claude-BugHunter" rel="nofollow noopener">elementalsouls/Claude-BugHunter</a></p><p class="n">Use Claude for vulnerability hunting at scale</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/obsidianmd/obsidian-skills" rel="nofollow noopener">obsidianmd/obsidian-skills</a></p><p class="n">Let agents read and write an Obsidian knowledge base</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/ayghri/i-have-adhd" rel="nofollow noopener">ayghri/i-have-adhd</a></p><p class="n">Make coding agents give the conclusion first</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/myclaw-3-0?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">MyClaw 3.0</a></p><p class="n">Build an AI team with shared memory</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/tday?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">tday.com</a></p><p class="n">Make coding agents automatically record product demos</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+    </section>
+
+    <p class="tiefoot">Read 531 stories across
+      93 sources today and published 3.
+      <a href="/tie/archive">Archive</a> &middot;
+      <a href="/tie/2026-11-25.json">This issue as data</a> &middot;
+      <a href="/tie/sources">What it reads</a></p>
+  </article>
+
+    <aside class="rail">
+      <h2>AI Daily</h2>
+      <nav>
+        <a href="/tie/">Today&#x27;s issue</a>
+        <a href="/tie/archive">Archive</a>
+        <a href="/tie/how-it-works">How it works</a>
+        <a href="/tie/sources">What it reads</a>
+        <a href="/tie/data">Get it as data</a>
+        <a href="/tie/terms">Licence</a>
+      </nav>
+      <h2>On this page</h2>
+      <nav class="toc">
+        <a href="#the-read">The read</a>
+        <a href="#coding-agents-enter-the-large-scale-repository-operations-stage">Coding agents enter the large-scale repository operations stage</a>
+        <a href="#agent-cost-pressure-drives-model-compression-and-inference-optimization">Agent cost pressure drives model compression and inference optimization</a>
+        <a href="#sensitive-enterprise-tasks-drive-private-inference-commitments">Sensitive enterprise tasks drive private inference commitments</a>
+        <a href="#on-the-radar">On the radar</a>
+        <a href="#since-last-issue">Since last issue</a>
+        <a href="#also-worth-knowing">Also worth knowing</a>
+      </nav>
+      <a class="back" href="/">&larr; aaronzhang.ai</a>
+    </aside>
+  </div>
+
+  <footer>
+    Aaron Zhang ·
+    <a href="/#writing">Writing</a> ·
+    <a href="/tie/">AI Daily</a> ·
+    <a href="/deck/">Talk</a> ·
+    <a href="/about/">About</a> ·
+    <a href="https://x.com/aaronzhang42">X</a> ·
+    <a href="https://github.com/aaronartistzhang-afk">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/aaronzhangai/">LinkedIn</a> ·
+    <a href="mailto:aaronartistzhang@gmail.com">Email</a> ·
+    <a href="/tie/feed.xml">RSS</a>
+  </footer>
+
+</main>
+<script>
+  // The menu is a <details>: it opens, closes and takes keyboard focus without
+  // this. All that is missing natively is click-away and Escape.
+  (function () {
+    var shut = function (skip) {
+      document.querySelectorAll('header.site .menu[open]').forEach(function (d) {
+        if (!skip || !d.contains(skip)) d.open = false;
+      });
+    };
+    document.addEventListener('click', function (e) { shut(e.target); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(null); });
+  })();
+</script>
+<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a693901685644241abd983662d731b5f"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
