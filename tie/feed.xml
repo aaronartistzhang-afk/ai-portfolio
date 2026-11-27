@@ -7,7 +7,14 @@
     <description>Three trends a day, each bound to a quoted source. Machine-produced over 93 sources; nothing hand-picked.</description>
     <language>en</language>
     <managingEditor>aaronartistzhang@gmail.com (Aaron Zhang)</managingEditor>
-    <lastBuildDate>Wed, 25 Nov 2026 17:00:19 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 17:00:26 -0800</lastBuildDate>
+    <item>
+      <title>Gemini 4 Neon draws attention in multi-source real-world testing</title>
+      <link>https://aaronzhang.ai/tie/2026-11-26</link>
+      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 17:00:26 -0800</pubDate>
+      <description>&lt;ul&gt;&lt;li&gt;Model selection relies more on task retesting: multi-task evaluations reach opposite conclusions, so products need task-level routing and fallback options&lt;/li&gt;&lt;li&gt;Regional compute scheduling risk rises: the pause in Southeast Asian server shipments may affect both capacity and inference costs&lt;/li&gt;&lt;li&gt;Discussion of agent interfaces heats up: signals related to MCP, Skills and CLI form 5 clusters, and tool integration methods are still competing&lt;/li&gt;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Coding agents enter the large-scale repository operations stage</title>
       <link>https://aaronzhang.ai/tie/2026-11-25</link>
@@ -210,13 +217,6 @@
       <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-16</guid>
       <pubDate>Fri, 16 Oct 2026 17:00:22 -0700</pubDate>
       <description>&lt;ul&gt;&lt;li&gt;Local execution needs capability tiers: as models and devices update together, low-latency and private-data features can be made available based on device capability&lt;/li&gt;&lt;li&gt;Agent launches require in-house acceptance sets: high scores on general-purpose leaderboards cannot prove that complex tasks can be delivered reliably&lt;/li&gt;&lt;li&gt;More tool orchestration signals: updates related to Agent Harness and MCP are appearing in concentration, and products need room to replace tool protocols&lt;/li&gt;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Gemini 4 Argon expands to development and robotics tasks</title>
-      <link>https://aaronzhang.ai/tie/2026-10-15</link>
-      <guid isPermaLink="true">https://aaronzhang.ai/tie/2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 17:00:26 -0700</pubDate>
-      <description>&lt;ul&gt;&lt;li&gt;Model entry points have broader coverage: the same model serves development, apps and robotics, so procurement evaluations need to return to specific tasks&lt;/li&gt;&lt;li&gt;The barrier to trying open models is lower: local operation and Day 0 hosted support will compress premiums for general agents&lt;/li&gt;&lt;li&gt;The supply of agent tools is still increasing: lightweight frameworks and development tools continue to appear, and integration cost will become a selection criterion&lt;/li&gt;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

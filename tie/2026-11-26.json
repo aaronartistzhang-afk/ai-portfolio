@@ -1,0 +1,488 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-26",
+  "executed_at": "2026-11-27T01:00:26.038684Z",
+  "run_id": "2026-11-24-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-11-24T12:00:26.038602+11:00",
+    "to": "2026-11-27T12:00:26.038602+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-11-27T12:00:26.038602+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "e28589e75c2412ec",
+      "run_trend_id": "GLOBAL_20261127_MODEL_RELEASES_GEMINI_4_NEON_EVALS",
+      "name": "Gemini 4 Neon draws attention in multi-source real-world testing",
+      "category": "model_releases",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "high",
+      "summary": "Google presented build cases for Gemini 4 Neon, and several independent evaluations have begun comparing its task performance with GPT-6.2 and Claude.",
+      "attention_driver": "Differences in real-task evaluations after the new model's release are prompting developers to compare model choices again.",
+      "evidence": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders",
+          "quote": "Collage of creations using Gemini 4 Neon",
+          "claim": "Google officially showed that developers are using Gemini 4 Neon for specific build projects.",
+          "source_tier": "primary_release",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://newsletter.semianalysis.com/p/evaluating-recent-model-releases",
+          "quote": "GPT-6.2 Astra takes the crown but bad at software engineering, Gemini 4 Neon is an impressive improvement",
+          "claim": "Independent evaluations found clear differences in the model's performance across tasks.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude",
+          "quote": "Gemini 4 Neon beat GPT-6.2 and Claude in my 25-task AI benchmark",
+          "claim": "Third-party multi-task testing has further driven discussion of Gemini 4 Neon's performance.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-24T16:00:00Z",
+      "last_signal_update": "2026-11-26T00:05:35Z",
+      "so_what": "Product teams should use retesting on their own workflows as the basis for model selection, while retaining task-level routing and fallback options. General leaderboards are insufficient for judging specific experiences such as coding and knowledge processing."
+    },
+    {
+      "canonical_id": "e8fc40816836d9b3",
+      "run_trend_id": "GLOBAL_20261127_REGIONAL_AND_GEOPOLITICAL_GPU_EXPORT_CONTROLS",
+      "name": "Export controls disrupt AI server supply in Southeast Asia",
+      "category": "regional_and_geopolitical",
+      "primary_region": "东南亚",
+      "secondary_regions": [
+        "中国",
+        "全球"
+      ],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Reports say Nvidia has paused shipments of some servers to Malaysia, Singapore, Thailand and Indonesia. Restrictions on chip and data access have also been reported as affecting the pace of Chinese labs.",
+      "attention_driver": "Tighter US export restrictions have increased uncertainty around regional compute procurement and model development resources.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls",
+          "quote": "Nvidia has told partners such as Dell and Supermicro to stop shipping servers to Malaysia, Singapore, Thailand, and Indo",
+          "claim": "Reports say that after stricter export controls, Nvidia asked partners to pause server shipments to several Southeast Asian markets.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia",
+          "quote": "Nvidia hits pause on chip shipments to Southeast Asia",
+          "claim": "Another media report confirmed that the pause in chip shipments to Southeast Asia has become a market concern.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs",
+          "quote": "shrinking access to Nvidia hardware abroad are putting growing pressu",
+          "claim": "Reports link restrictions on hardware access with development pressure on Chinese AI labs.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-25T20:51:02Z",
+      "last_signal_update": "2026-11-26T20:03:54Z",
+      "so_what": "Products delivered to affected regions should review compute capacity, deployment locations and alternative supplier options. Inference costs and launch schedules may face pressure at the same time."
+    },
+    {
+      "canonical_id": "b9840e8f89dbb9c8",
+      "run_trend_id": "GLOBAL_20261127_INFERENCE_ECONOMICS_GPT62_BILLING_CORRECTION",
+      "name": "GPT-6.2 billing correction exposes quota planning risk",
+      "category": "inference_economics",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "OpenAI said GPT-6.2 had an incorrect discount at launch. After the fix, quota consumption by Astra and Sol users was reported to have risen significantly.",
+      "attention_driver": "The billing correction directly changes available quotas and expected per-task costs for frequent users.",
+      "evidence": [
+        {
+          "url": "https://x.com/thsottiaux/status/2125784147889393806",
+          "quote": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users.",
+          "claim": "An OpenAI-related account acknowledged that GPT-6.2 Astra and Sol had an incorrect discount at release.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error",
+          "quote": "GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error",
+          "claim": "Independent reporting quantified the impact of some users reaching quota limits faster after the fix.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://zhidx.com/p/614548.html",
+          "quote": "此前 GPT-6.2上线时出现了额度计算错误",
+          "claim": "Chinese media reports show that the quota calculation correction has become a user-side topic of concern.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-26T02:50:10Z",
+      "last_signal_update": "2026-11-26T17:28:56Z",
+      "so_what": "Products that depend on model quotas should include vendor billing changes in budget alerts, and monitor gross margin by task cost rather than list price. Reserve quota adjustment and alternative model options for heavy users."
+    }
+  ],
+  "watch_list": [],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 85,
+    "signals_raw": 505,
+    "signals_accepted": 491,
+    "clusters_total": 299,
+    "clusters_synthesized": 141,
+    "by_source": {
+      "algorithmic_bridge": 1,
+      "amazon": 2,
+      "ant_inclusion_ai": 1,
+      "anthropic": 1,
+      "app": 1,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_latent_space": 2,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "apple_podcasts_training_data": 1,
+      "apple_podcasts_twiml_ai_podcast": 1,
+      "apple_podcasts_unsupervised_learning": 1,
+      "apple_podcasts_y_combinator_startup_podcast": 1,
+      "ars_technica_ai": 7,
+      "arxiv": 20,
+      "astral_codex_ten": 1,
+      "brave_search_ai": 104,
+      "calif_research_ai": 2,
+      "chipsandcheese": 1,
+      "crunchbase_news": 4,
+      "deepmind": 1,
+      "dwarkesh_blog": 1,
+      "ec_digital_strategy": 1,
+      "eetimes": 10,
+      "fireworks_ai": 1,
+      "gary_marcus": 2,
+      "github": 14,
+      "github_awesome_claude": 1,
+      "github_awesome_llm": 3,
+      "github_claude_skills": 14,
+      "github_cursor_rules": 4,
+      "google": 4,
+      "hn": 12,
+      "huggingface_blog": 6,
+      "huggingface_papers": 19,
+      "ieee_spectrum_ai": 1,
+      "index_ventures": 2,
+      "infoq_ai_zh": 20,
+      "it": 1,
+      "latent_space": 5,
+      "lennys_newsletter": 1,
+      "meta": 3,
+      "mistral": 1,
+      "mit_tech_review_ai": 1,
+      "nextplatform": 3,
+      "nvidia": 1,
+      "openai": 2,
+      "platformer": 1,
+      "pragmatic_engineer": 2,
+      "producthunt": 18,
+      "pydantic_ai": 1,
+      "pytorch_blog": 3,
+      "qbitai": 10,
+      "rundown_ai": 3,
+      "semianalysis": 1,
+      "servethehome": 2,
+      "simon_willison": 10,
+      "stratechery": 1,
+      "techcrunch_ai": 20,
+      "the_decoder": 10,
+      "thinking_machines_lab_news": 1,
+      "tldr_ai": 2,
+      "unknown": 1,
+      "verge_ai": 10,
+      "wired_ai": 7,
+      "x_amasad": 1,
+      "x_anthropic_anthropicai": 1,
+      "x_elon_musk_elonmusk_xai": 1,
+      "x_greg_brockman_gdb": 1,
+      "x_joshwoodward": 3,
+      "x_karpathy": 1,
+      "x_openbmb_openbmb": 1,
+      "x_openclaw_openclaw": 1,
+      "x_petergyang": 3,
+      "x_philipp_schmid_google_deepmind_philschmid": 1,
+      "x_rauchg": 1,
+      "x_realmadhuguru": 1,
+      "x_rohan_paul_rohanpaul_ai": 2,
+      "x_swyx": 3,
+      "x_thenanyu": 3,
+      "x_thsottiaux": 1,
+      "x_trq212": 3,
+      "youtube_ai": 9,
+      "zh_podcast_guigu101": 2,
+      "zhidx": 20,
+      "zvi_mowshowitz": 3
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "d22f4852810ccef9",
+    "prompt_hash": "45eb910579f03150"
+  },
+  "insights": [
+    {
+      "text": "Model selection relies more on task retesting: multi-task evaluations reach opposite conclusions, so products need task-level routing and fallback options",
+      "refs": [
+        1
+      ]
+    },
+    {
+      "text": "Regional compute scheduling risk rises: the pause in Southeast Asian server shipments may affect both capacity and inference costs",
+      "refs": [
+        2
+      ]
+    },
+    {
+      "text": "Discussion of agent interfaces heats up: signals related to MCP, Skills and CLI form 5 clusters, and tool integration methods are still competing",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "All 6 hot topics from the previous issue have dropped out of this issue.",
+    "Gemini 2.5 API automatic routing has 4 days remaining"
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini 2.5 API automatic routing",
+      "kind": "Deprecation",
+      "effective_date": "2026-12-01",
+      "days_left": 4,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
+    },
+    {
+      "title": "EU AI Act obligations take effect",
+      "kind": "Policy",
+      "effective_date": "2026-12-02",
+      "days_left": 5,
+      "description": "Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source",
+      "url": "https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50"
+    },
+    {
+      "title": "Tidal ban on fully AI-generated music",
+      "kind": "Policy",
+      "effective_date": "2026-12-09",
+      "days_left": 12,
+      "description": "Tidal will ban fully AI-generated music on December 9. Reports also say AI-assisted creation remains acceptable. Source",
+      "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"
+    },
+    {
+      "title": "Anthropic vulnerability disclosure deadline",
+      "kind": "Policy",
+      "effective_date": "2027-01-01",
+      "days_left": 35,
+      "description": "The disclosure window for high-risk and critical vulnerabilities is reduced to 30 days, applying to vulnerabilities reported on or after that date. Source",
+      "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines"
+    },
+    {
+      "title": "Implementation of mandatory national standards for L3/L4",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 216,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "Implementation of China's L3/L4 safety national standard",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 216,
+      "description": "The mandatory national standard \"Safety Requirements for Automated Driving Systems of Intelligent and Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance validation. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "pricing": [
+      {
+        "title": "GPT-6.2 Astra users now hit limits 40% faster afte…",
+        "note": "Calculate the impact of faster Astra quota consumption",
+        "source": "the_decoder",
+        "why": "",
+        "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/"
+      },
+      {
+        "title": "Nvidia gaming GPU shortages could worsen with 20–3…",
+        "note": "Lock in GPU supply and budgets early",
+        "source": "Notebookcheck",
+        "why": "",
+        "url": "https://www.notebookcheck.net/Nvidia-gaming-GPU-shortages-could-worsen-with-20-30-supply-cuts.1460659.0.html"
+      },
+      {
+        "title": "目标估值2200亿！曝英国AI语音创企寻求新融资",
+        "note": "Watch commercialization signals for AI voice generation",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/614573.html"
+      },
+      {
+        "title": "突发！ChatGPT额度爆砍接近一半？",
+        "note": "Reassess GPT-6.2 call quota costs",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/614548.html"
+      },
+      {
+        "title": "\"Cost per task is a misleading metric; the scarce…",
+        "note": "Watch for reliability traps in low-cost models",
+        "source": "@swyx",
+        "why": "",
+        "url": "https://x.com/swyx/status/2125627281230205435"
+      }
+    ],
+    "media": [
+      {
+        "title": "$\\mu$-Bench: Benchmarking Multi-User Task Completi…",
+        "note": "Test multi-person voice task completion capability",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.34920v1"
+      },
+      {
+        "title": "Qwen3.8-Max - QwenCloud",
+        "note": "Integrate the Qwen3.8-Max cloud API",
+        "source": "Qwencloud",
+        "why": "",
+        "url": "https://www.qwencloud.com/models/qwen3.8-max?region=ap-southeast-1"
+      },
+      {
+        "title": "从语音基座到语音应用：讯飞语音大模型能力全解",
+        "note": "Break down the application capabilities of large voice models",
+        "source": "infoq_ai_zh",
+        "why": "",
+        "url": "https://www.infoq.cn/minibook/h1BlHGoTKyeLgs0KmAhe?utm_source=rss&utm_medium=article"
+      },
+      {
+        "title": "目标估值2200亿！曝英国AI语音创企寻求新融资",
+        "note": "Watch commercialization signals for AI voice generation",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/614573.html"
+      },
+      {
+        "title": "Agentic LongLive: Asynchronous Agentic Memory for…",
+        "note": "Maintain character consistency when generating long videos",
+        "source": "huggingface_papers",
+        "why": "",
+        "url": "https://huggingface.co/papers/2611.34907"
+      }
+    ],
+    "incidents": [
+      {
+        "title": "Stranger Things: When Objects Appear Without Their…",
+        "note": "Identify scenarios with excessive reliance on vision models",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.34881v1"
+      },
+      {
+        "title": "Shape-Aware Three-Way Merge for RDF Knowledge Grap…",
+        "note": "Fix semantic conflicts in RDF merges",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.34870v1"
+      },
+      {
+        "title": "Model Weights, Airlocks and Sandboxes: A Call for…",
+        "note": "Validate compliance risks in model re-identification",
+        "source": "arxiv",
+        "why": "",
+        "url": "https://arxiv.org/abs/2611.34859v1"
+      },
+      {
+        "title": "Collect for Coverage, Replay with Evidence: Adapti…",
+        "note": "Reduce the cost of long-horizon agent distillation",
+        "source": "huggingface_papers",
+        "why": "",
+        "url": "https://huggingface.co/papers/2611.34756"
+      },
+      {
+        "title": "\"Cost per task is a misleading metric; the scarce…",
+        "note": "Watch for reliability traps in low-cost models",
+        "source": "@swyx",
+        "why": "",
+        "url": "https://x.com/swyx/status/2125627281230205435"
+      }
+    ],
+    "tools": [
+      {
+        "title": "alirezarezvani/claude-skills",
+        "note": "Install a skills library for coding agents",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (30,544 ⭐), matches your interests: \"agent / agents / claude\" · View",
+        "url": "https://github.com/alirezarezvani/claude-skills"
+      },
+      {
+        "title": "coreyhaines31/marketingskills",
+        "note": "Use agents for SEO and conversion optimization",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills starred repository (62,853 ⭐), matches your interests: \"agent / agents / claude\" · View",
+        "url": "https://github.com/coreyhaines31/marketingskills"
+      },
+      {
+        "title": "danielvm-git/bigpowers",
+        "note": "Apply independent developer engineering methodology",
+        "source": "github_cursor_rules",
+        "why": "GitHub topic:cursor-rules growing (298 ⭐), worth seeing early, matches your interests: \"agent / skill / skills\" · View",
+        "url": "https://github.com/danielvm-git/bigpowers"
+      },
+      {
+        "title": "Hub",
+        "note": "Schedule hundreds of coding agent sessions in parallel",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 358 votes · 169 comments, matches your interests: \"agent / agents / chat\" · View",
+        "url": "https://www.producthunt.com/products/hub-20?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Pax by Pydantic",
+        "note": "Run coding agents in a plugin-based terminal",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 118 votes · 6 comments, matches your interests: \"agent / coding / model\" · View",
+        "url": "https://www.producthunt.com/products/pydantic?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "frameworks"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-08fa234f6a93fa1e",
+    "evidence_rewritten:GLOBAL_2-ffdf2a2accef94c9",
+    "evidence_rewritten:GLOBAL_2-92343dd4dc8bf772",
+    "critic_missed:cluster-08f7ccf367b6ddc8",
+    "critic_missed:cluster-61cc94cfe444c735"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}
