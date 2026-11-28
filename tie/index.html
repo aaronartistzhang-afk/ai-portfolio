@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>AI Daily — 2026-11-26</title>
-<meta name="description" content="Google presented build cases for Gemini 4 Neon, and several independent evaluations have begun comparing its task performance with GPT-6.2 and Claude.">
+<title>AI Daily — 2026-11-27</title>
+<meta name="description" content="Several open-source tools provide cross-session memory and skill libraries, and Pydantic AI has released Pax, a pluggable terminal coding agent.">
 <link rel="canonical" href="https://aaronzhang.ai/tie/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="aaronzhang.ai">
-<meta property="og:title" content="AI Daily — 2026-11-26">
-<meta property="og:description" content="Google presented build cases for Gemini 4 Neon, and several independent evaluations have begun comparing its task performance with GPT-6.2 and Claude.">
+<meta property="og:title" content="AI Daily — 2026-11-27">
+<meta property="og:description" content="Several open-source tools provide cross-session memory and skill libraries, and Pydantic AI has released Pax, a pluggable terminal coding agent.">
 <meta property="og:url" content="https://aaronzhang.ai/tie/">
 <meta property="og:image" content="https://aaronzhang.ai/card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -49,24 +49,24 @@
 
   <div class="tiegrid">
   <article class="tie">
-    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-11-26</p>
+    <p class="crumb"><span class="here">Today</span> <span class="sep">&middot;</span> 2026-11-27</p>
     <h1>AI Daily</h1>
     <p class="dek">Three trends a day, each bound to a quoted source. Machine-produced over
     93 sources; nothing hand-picked. <a href="/tie/how-it-works">How it works</a>.</p>
 
-    <p class="runbar"><span class="live"></span> <b>~3 min read</b>
-      &middot; covering 23&ndash;26 November &middot; updated weekdays, 17:10 Pacific</p>
+    <p class="runbar"><span class="live"></span> <b>~2 min read</b>
+      &middot; covering 24&ndash;27 November &middot; updated weekdays, 17:10 Pacific</p>
 
     <div class="ribbon">
-      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>4d</b> Gemini 2.5 API automatic routing</a> <span class="sep">·</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener"><b>5d</b> EU AI Act obligations take effect</a> <span class="sep">·</span> <a href="https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/" rel="nofollow noopener"><b>12d</b> Tidal ban on fully AI-generated music</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
+      <p><span class="lbl">Deadlines</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener"><b>3d</b> Gemini 2.5 API automatic routing</a> <span class="sep">·</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener"><b>4d</b> EU AI Act obligations take effect</a> <span class="sep">·</span> <a href="https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/" rel="nofollow noopener"><b>11d</b> Tidal ban on fully generated AI music</a> <a class="more" href="#deadlines">see all 6 &rarr;</a></p>
     </div>
 
     <section class="lead">
       <h2 id="the-read">The read</h2>
       <ul>
-        <li>Model selection relies more on task retesting: multi-task evaluations reach opposite conclusions, so products need task-level routing and fallback options <a class="xref" href="#t1">#1</a></li>
-        <li>Regional compute scheduling risk rises: the pause in Southeast Asian server shipments may affect both capacity and inference costs <a class="xref" href="#t2">#2</a></li>
-        <li>Discussion of agent interfaces heats up: signals related to MCP, Skills and CLI form 5 clusters, and tool integration methods are still competing </li>
+        <li>Agent reliability depends on external layers: memory, business semantics and verifiable results are becoming key conditions for products to complete tasks <a class="xref" href="#t1">#1</a> <a class="xref" href="#t2">#2</a> <a class="xref" href="#t3">#3</a></li>
+        <li>Verification interfaces become a product differentiator: for independently verifiable tasks, build the evidence chain and recovery process into the workflow <a class="xref" href="#t1">#1</a> <a class="xref" href="#t3">#3</a></li>
+        <li>The tool ecosystem continues to expand: MCP, data tools and vertical agent frameworks show 5 new signals </li>
       </ul>
     </section>
 
@@ -74,89 +74,83 @@
       &middot; <b>0</b> monitoring</p>
 
     <article class="trend major" id="t1">
-      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Model releases</span></p>
-      <h2 id="gemini-4-neon-draws-attention-in-multi-source-real-world-testing">Gemini 4 Neon draws attention in multi-source real-world testing</h2>
+      <p class="rank"><span class="tag">#1 MAJOR</span> <span>Developer experience</span></p>
+      <h2 id="agent-engineering-emphasizes-portable-skills-and-persistent-memory">Agent engineering emphasizes portable skills and persistent memory</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>Well sourced &mdash; 1 company, 2 independent</span></p>
-      <p class="body">Google presented build cases for Gemini 4 Neon, and several independent evaluations have begun comparing its task performance with GPT-6.2 and Claude.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Product teams should use retesting on their own workflows as the basis for model selection, while retaining task-level routing and fallback options. General leaderboards are insufficient for judging specific experiences such as coding and knowledge processing.</p>
+        <span>·</span> <span>No company statement yet &mdash; 3 press</span></p>
+      <p class="body">Several open-source tools provide cross-session memory and skill libraries, and Pydantic AI has released Pax, a pluggable terminal coding agent.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>Design skill packages and session memory as replaceable layers to avoid locking workflows into a single model or coding assistant. Evaluate based on task completion rates and recovery capability.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
-      <div class="ev t1">
-        <p class="ev-h"><span class="tier">Company</span>
-          <span class="used">· it happened</span>
-          <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders" rel="nofollow noopener">blog.google</a></p>
-        <p class="quote">&ldquo;Collage of creations using Gemini 4 Neon&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
-          <span class="used">· why it matters</span>
-          <a href="https://newsletter.semianalysis.com/p/evaluating-recent-model-releases" rel="nofollow noopener">newsletter.semianalysis.com</a></p>
-        <p class="quote">&ldquo;GPT-6.2 Astra takes the crown but bad at software engineering, Gemini 4 Neon is an impressive improvement&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude" rel="nofollow noopener">lennysnewsletter.com</a></p>
-        <p class="quote">&ldquo;Gemini 4 Neon beat GPT-6.2 and Claude in my 25-task AI benchmark&rdquo;</p>
+          <a href="https://github.com/thedotmack/claude-mem" rel="nofollow noopener">github.com</a></p>
+        <p class="quote">&ldquo;Persistent Context Across Sessions for Every Agent&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· it happened</span>
+          <a href="https://pydantic.dev/articles/pax-harness-beta" rel="nofollow noopener">pydantic.dev</a></p>
+        <p class="quote">&ldquo;一切皆插件，支持 --agent 接入自定义 Pydantic AI Agent&rdquo;</p>
+      </div>
+      <div class="ev t3">
+        <p class="ev-h"><span class="tier">Press</span>
+          <span class="used">· why it matters</span>
+          <a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview" rel="nofollow noopener">platform.claude.com</a></p>
+        <p class="quote">&ldquo;Custom Skills let you package domain expertise and organizational knowledge.&rdquo;</p>
       </div>
       </details>
     </article>
     <article class="trend watch" id="t2">
-      <p class="rank"><span class="tag">#2 WATCH</span> <span>Regional &amp; geopolitical</span></p>
-      <h2 id="export-controls-disrupt-ai-server-supply-in-southeast-asia">Export controls disrupt AI server supply in Southeast Asia</h2>
+      <p class="rank"><span class="tag">#2 WATCH</span> <span>Enterprise deployment</span></p>
+      <h2 id="enterprise-agents-add-a-business-semantics-layer">Enterprise agents add a business semantics layer</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>No company statement yet &mdash; 2 independent, 1 press</span></p>
-      <p class="body">Reports say Nvidia has paused shipments of some servers to Malaysia, Singapore, Thailand and Indonesia. Restrictions on chip and data access have also been reported as affecting the pace of Chinese labs.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Products delivered to affected regions should review compute capacity, deployment locations and alternative supplier options. Inference costs and launch schedules may face pressure at the same time.</p>
+        <span>·</span> <span>No company statement yet &mdash; 1 independent, 1 press</span></p>
+      <p class="body">Reports say OpenAI is building the Athena semantic layer for ChatGPT Work to unify business metric definitions and reduce data agent guesswork.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>For agents that work with business data, make metric definitions and permissions product-layer capabilities first. Model upgrades cannot replace this determinism.</p>
       <details>
-        <summary>Evidence &middot; 3</summary>
+        <summary>Evidence &middot; 2</summary>
       <div class="ev t2">
         <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· it happened</span>
-          <a href="https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls" rel="nofollow noopener">the-decoder.com</a></p>
-        <p class="quote">&ldquo;Nvidia has told partners such as Dell and Supermicro to stop shipping servers to Malaysia, Singapore, Thailand, and Indo&rdquo;</p>
+          <a href="https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;OpenAI&#x27;s data agent in ChatGPT Work still isn&#x27;t accurate enough.&rdquo;</p>
       </div>
       <div class="ev t3">
         <p class="ev-h"><span class="tier">Press</span>
-          <span class="used">· it&#x27;s spreading</span>
-          <a href="https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia" rel="nofollow noopener">techcrunch.com</a></p>
-        <p class="quote">&ldquo;Nvidia hits pause on chip shipments to Southeast Asia&rdquo;</p>
-      </div>
-      <div class="ev t2">
-        <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· why it matters</span>
-          <a href="https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs" rel="nofollow noopener">the-decoder.com</a></p>
-        <p class="quote">&ldquo;shrinking access to Nvidia hardware abroad are putting growing pressu&rdquo;</p>
+          <a href="https://zhidx.com/p/614219.html" rel="nofollow noopener">zhidx.com</a></p>
+        <p class="quote">&ldquo;OpenAI要给GPT做个“翻译官”，让智能体更懂业务&rdquo;</p>
       </div>
       </details>
     </article>
     <article class="trend watch" id="t3">
-      <p class="rank"><span class="tag">#3 WATCH</span> <span>Inference economics</span></p>
-      <h2 id="gpt-62-billing-correction-exposes-quota-planning-risk">GPT-6.2 billing correction exposes quota planning risk</h2>
+      <p class="rank"><span class="tag">#3 WATCH</span> <span>Research breakthroughs</span></p>
+      <h2 id="verifiable-mathematical-reasoning-becomes-a-test-of-capability">Verifiable mathematical reasoning becomes a test of capability</h2>
       <p class="stage"><b>Medium impact</b>
-        <span>·</span> <span>No company statement yet &mdash; 1 independent, 2 press</span></p>
-      <p class="body">OpenAI said GPT-6.2 had an incorrect discount at launch. After the fix, quota consumption by Astra and Sol users was reported to have risen significantly.</p>
-      <p class="sowhat"><span class="lbl">Why this matters</span>Products that depend on model quotas should include vendor billing changes in budget alerts, and monitor gross margin by task cost rather than list price. Reserve quota adjustment and alternative model options for heavy users.</p>
+        <span>·</span> <span>No company statement yet &mdash; 3 independent</span></p>
+      <p class="body">Discussion around AI mathematical proofs focuses on the speed of proof generation and the importance of formal verification with Lean and Mathlib.</p>
+      <p class="sowhat"><span class="lbl">Why this matters</span>In high-value tasks that can be formally verified, product opportunities depend more on verification workbenches and evidence presentation than on whether a model gets the answer right in one attempt. Include human review time and reproducibility in evaluation.</p>
       <details>
         <summary>Evidence &middot; 3</summary>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· it happened</span>
-          <a href="https://x.com/thsottiaux/status/2125784147889393806" rel="nofollow noopener">x.com</a></p>
-        <p class="quote">&ldquo;We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users.&rdquo;</p>
+          <a href="https://thezvi.wordpress.com/2026/11/25/claude-and-levent-alpoge-prove-the-riemann-hypothesis" rel="nofollow noopener">thezvi.wordpress.com</a></p>
+        <p class="quote">&ldquo;The Lean and Mathlib communities have verified that the proof is correc&rdquo;</p>
       </div>
       <div class="ev t2">
         <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· why it matters</span>
-          <a href="https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error" rel="nofollow noopener">the-decoder.com</a></p>
-        <p class="quote">&ldquo;GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error&rdquo;</p>
+          <a href="https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it" rel="nofollow noopener">the-decoder.com</a></p>
+        <p class="quote">&ldquo;AI&#x27;s recent math breakthroughs matter far be&rdquo;</p>
       </div>
-      <div class="ev t3">
-        <p class="ev-h"><span class="tier">Press</span>
+      <div class="ev t2">
+        <p class="ev-h"><span class="tier">Independent</span>
           <span class="used">· it&#x27;s spreading</span>
-          <a href="https://zhidx.com/p/614548.html" rel="nofollow noopener">zhidx.com</a></p>
-        <p class="quote">&ldquo;此前 GPT-6.2上线时出现了额度计算错误&rdquo;</p>
+          <a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them" rel="nofollow noopener">latent.space</a></p>
+        <p class="quote">&ldquo;Math Proofs Are Landing Faster Than We Can Read Them&rdquo;</p>
       </div>
       </details>
     </article>
@@ -165,73 +159,63 @@
     <section class="mod">
       <h3 id="since-last-issue">Since last issue</h3>
       <ul class="bullets">
-        <li>All 6 hot topics from the previous issue have dropped out of this issue.</li>
-        <li>Gemini 2.5 API automatic routing has 4 days remaining</li>
+        <li>All 6 key trends from the previous issue have dropped off the list this issue.</li>
+        <li>Gemini 2.5 API automatic routing has 3 days remaining.</li>
       </ul>
     </section>
 
 
     <section class="also">
-      <h3 id="also-worth-knowing">Also worth knowing &middot; 26</h3>
+      <h3 id="also-worth-knowing">Also worth knowing &middot; 21</h3>
       <p class="sub">Everything else that made the cut today but was not big enough to lead.
       Grouped by desk, open only what you need.</p>
       <details class="cat" id="deadlines">
         <summary><span class="cname">Deadlines ahead</span><span class="cn">6</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><span class="dd">4d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio, and API requests will be automatically routed starting December 1. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">5d</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener">EU AI Act obligations take effect</a> &middot; 2026-12-02</p><p class="n">Two sets of EU AI Act obligations will take effect on December 2. Product teams serving the EU market need to check compliance requirements. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">12d</span> <a href="https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/" rel="nofollow noopener">Tidal ban on fully AI-generated music</a> &middot; 2026-12-09</p><p class="n">Tidal will ban fully AI-generated music on December 9. Reports also say AI-assisted creation remains acceptable. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">35d</span> <a href="https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines" rel="nofollow noopener">Anthropic vulnerability disclosure deadline</a> &middot; 2027-01-01</p><p class="n">The disclosure window for high-risk and critical vulnerabilities is reduced to 30 days, applying to vulnerabilities reported on or after that date. Source</p></div>
-        <div class="r"><p class="t"><span class="dd">216d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Implementation of mandatory national standards for L3/L4</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are recommended to take effect from July 1, 2027, covering Safety Case, human-machine han</p></div>
-        <div class="r"><p class="t"><span class="dd">216d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">Implementation of China&#x27;s L3/L4 safety national standard</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Automated Driving Systems of Intelligent and Connected Vehicles&quot; is proposed to take effect on July 1, 2027. Related autono</p></div>
-        </div>
-      </details>
-      <details class="cat" id="pricing">
-        <summary><span class="cname">Pricing &amp; cost</span><span class="cn">5</span></summary>
-        <div class="rows">
-        <div class="r"><p class="t"><a href="https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/" rel="nofollow noopener">GPT-6.2 Astra users now hit limits 40% faster afte…</a></p><p class="n">Calculate the impact of faster Astra quota consumption</p><p class="m">The Decoder</p></div>
-        <div class="r"><p class="t"><a href="https://www.notebookcheck.net/Nvidia-gaming-GPU-shortages-could-worsen-with-20-30-supply-cuts.1460659.0.html" rel="nofollow noopener">Nvidia gaming GPU shortages could worsen with 20–3…</a></p><p class="n">Lock in GPU supply and budgets early</p><p class="m">Notebookcheck</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/614573.html" rel="nofollow noopener">目标估值2200亿！曝英国AI语音创企寻求新融资</a></p><p class="n">Watch commercialization signals for AI voice generation</p><p class="m">智东西 Zhidx</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/614548.html" rel="nofollow noopener">突发！ChatGPT额度爆砍接近一半？</a></p><p class="n">Reassess GPT-6.2 call quota costs</p><p class="m">智东西 Zhidx</p></div>
-        <div class="r"><p class="t"><a href="https://x.com/swyx/status/2125627281230205435" rel="nofollow noopener">&quot;Cost per task is a misleading metric; the scarce…</a></p><p class="n">Watch for reliability traps in low-cost models</p><p class="m">@swyx</p></div>
+        <div class="r"><p class="t"><span class="dd">3d</span> <a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" rel="nofollow noopener">Gemini 2.5 API automatic routing</a> &middot; 2026-12-01</p><p class="n">Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio. API requests will be automatically routed starting December 1. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">4d</span> <a href="https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50" rel="nofollow noopener">EU AI Act obligations take effect</a> &middot; 2026-12-02</p><p class="n">Two sets of EU AI Act obligations will take effect on December 2. Product teams involved in the EU market need to check compliance requirements. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">11d</span> <a href="https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/" rel="nofollow noopener">Tidal ban on fully generated AI music</a> &middot; 2026-12-09</p><p class="n">Tidal will ban fully generated AI music on December 9. Reports also say AI-assisted creation remains acceptable. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">34d</span> <a href="https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines" rel="nofollow noopener">Anthropic vulnerability disclosure deadline</a> &middot; 2027-01-01</p><p class="n">The disclosure window for high-severity and critical vulnerabilities has been shortened to 30 days, applying to vulnerabilities reported on or after that date. Source</p></div>
+        <div class="r"><p class="t"><span class="dd">215d</span> <a href="https://www.ithome.com/0/966/272.htm" rel="nofollow noopener">Mandatory national standard for L3/L4 takes effect</a> &middot; 2027-07-01</p><p class="n">Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover</p></div>
+        <div class="r"><p class="t"><span class="dd">215d</span> <a href="https://www.ithome.com/0/985/665.htm" rel="nofollow noopener">China L3/L4 safety national standard takes effect</a> &middot; 2027-07-01</p><p class="n">The mandatory national standard &quot;Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles&quot; is proposed to take effect on July 1, 2027. Related autonomou</p></div>
         </div>
       </details>
       <details class="cat" id="media">
         <summary><span class="cname">Audio, video &amp; speech</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.34920v1" rel="nofollow noopener">$\mu$-Bench: Benchmarking Multi-User Task Completi…</a></p><p class="n">Test multi-person voice task completion capability</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://www.qwencloud.com/models/qwen3.8-max?region=ap-southeast-1" rel="nofollow noopener">Qwen3.8-Max - QwenCloud</a></p><p class="n">Integrate the Qwen3.8-Max cloud API</p><p class="m">Qwencloud</p></div>
-        <div class="r"><p class="t"><a href="https://www.infoq.cn/minibook/h1BlHGoTKyeLgs0KmAhe?utm_source=rss&amp;utm_medium=article" rel="nofollow noopener">从语音基座到语音应用：讯飞语音大模型能力全解</a></p><p class="n">Break down the application capabilities of large voice models</p><p class="m">InfoQ 中国</p></div>
-        <div class="r"><p class="t"><a href="https://zhidx.com/p/614573.html" rel="nofollow noopener">目标估值2200亿！曝英国AI语音创企寻求新融资</a></p><p class="n">Watch commercialization signals for AI voice generation</p><p class="m">智东西 Zhidx</p></div>
-        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2611.34907" rel="nofollow noopener">Agentic LongLive: Asynchronous Agentic Memory for…</a></p><p class="n">Maintain character consistency when generating long videos</p><p class="m">Hugging Face Papers</p></div>
-        </div>
-      </details>
-      <details class="cat" id="incidents">
-        <summary><span class="cname">Failures, incidents &amp; red-team</span><span class="cn">5</span></summary>
-        <div class="rows">
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.34881v1" rel="nofollow noopener">Stranger Things: When Objects Appear Without Their…</a></p><p class="n">Identify scenarios with excessive reliance on vision models</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.34870v1" rel="nofollow noopener">Shape-Aware Three-Way Merge for RDF Knowledge Grap…</a></p><p class="n">Fix semantic conflicts in RDF merges</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://arxiv.org/abs/2611.34859v1" rel="nofollow noopener">Model Weights, Airlocks and Sandboxes: A Call for…</a></p><p class="n">Validate compliance risks in model re-identification</p><p class="m">arXiv · cs.AI / cs.CL / cs.LG</p></div>
-        <div class="r"><p class="t"><a href="https://huggingface.co/papers/2611.34756" rel="nofollow noopener">Collect for Coverage, Replay with Evidence: Adapti…</a></p><p class="n">Reduce the cost of long-horizon agent distillation</p><p class="m">Hugging Face Papers</p></div>
-        <div class="r"><p class="t"><a href="https://x.com/swyx/status/2125627281230205435" rel="nofollow noopener">&quot;Cost per task is a misleading metric; the scarce…</a></p><p class="n">Watch for reliability traps in low-cost models</p><p class="m">@swyx</p></div>
+        <div class="r"><p class="t"><a href="https://x.com/OpenBMB/status/2126308118741323853" rel="nofollow noopener">OpenBMB 点评 InternLM 基于 MiniCPM-o 4.5 打造的 Sage-Inte…</a></p><p class="n">Generate full-duplex voice and video interactions</p><p class="m">X: 面壁智能 OpenBMB</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/615139.html" rel="nofollow noopener">颤抖吧剪辑师！你豆姐能直接操控剪映了！</a></p><p class="n">Use natural language to drive video editing</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/wizstar?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Wizstar R1</a></p><p class="n">Generate short videos using reference materials</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://zhidx.com/p/614968.html" rel="nofollow noopener">DeepSeek的账本来了！聊天多少钱，一目了然</a></p><p class="n">View estimated costs for each conversation turn</p><p class="m">智东西 Zhidx</p></div>
+        <div class="r"><p class="t"><a href="https://help.aliyun.com/zh/model-studio/newly-released-models" rel="nofollow noopener">模型上架与更新-大模型服务平台百炼-阿里云_大模型服务平台百炼(Model Studio)-大模型服…</a></p><p class="n">Handle multimodal and agent tasks</p><p class="m">Aliyun</p></div>
         </div>
       </details>
       <details class="cat" id="tools">
         <summary><span class="cname">Tools &amp; skills worth a look</span><span class="cn">5</span></summary>
         <div class="rows">
-        <div class="r"><p class="t"><a href="https://github.com/alirezarezvani/claude-skills" rel="nofollow noopener">alirezarezvani/claude-skills</a></p><p class="n">Install a skills library for coding agents</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/coreyhaines31/marketingskills" rel="nofollow noopener">coreyhaines31/marketingskills</a></p><p class="n">Use agents for SEO and conversion optimization</p><p class="m">GitHub · topic:claude-skills</p></div>
-        <div class="r"><p class="t"><a href="https://github.com/danielvm-git/bigpowers" rel="nofollow noopener">danielvm-git/bigpowers</a></p><p class="n">Apply independent developer engineering methodology</p><p class="m">GitHub · topic:cursor-rules</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/hub-20?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Hub</a></p><p class="n">Schedule hundreds of coding agent sessions in parallel</p><p class="m">Product Hunt · AI</p></div>
-        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/pydantic?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Pax by Pydantic</a></p><p class="n">Run coding agents in a plugin-based terminal</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/SwankyMan88/ithaca" rel="nofollow noopener">SwankyMan88/ithaca</a></p><p class="n">Run multimodal AI locally on Windows</p><p class="m">GitHub · topic:awesome-llm</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/tt-a1i/archify" rel="nofollow noopener">tt-a1i/archify</a></p><p class="n">Turn plans or code into interactive diagrams</p><p class="m">GitHub · topic:claude-skills</p></div>
+        <div class="r"><p class="t"><a href="https://github.com/KbWen/agentic-os" rel="nofollow noopener">KbWen/agentic-os</a></p><p class="n">Constrain AI coding workflows with evidence</p><p class="m">GitHub · topic:cursor-rules</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/depost-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Depost AI</a></p><p class="n">Plan and ghostwrite monthly LinkedIn content</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/contral?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Contral</a></p><p class="n">Have coding agents self-check and explain</p><p class="m">Product Hunt · AI</p></div>
+        </div>
+      </details>
+      <details class="cat" id="frameworks">
+        <summary><span class="cname">Agent frameworks</span><span class="cn">5</span></summary>
+        <div class="rows">
+        <div class="r"><p class="t"><a href="https://simonwillison.net/2026/Nov/27/datasette-mcp/" rel="nofollow noopener">datasette-mcp 0.4</a></p><p class="n">Adapt to the new Datasette interface</p><p class="m">Simon Willison</p></div>
+        <div class="r"><p class="t"><a href="https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/" rel="nofollow noopener">How Clay Builds GTM Agents — Jeff Barg, Head of AI</a></p><p class="n">Unify internal and external GTM agent calls</p><p class="m">Latent Space</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/depost-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Depost AI</a></p><p class="n">Plan and ghostwrite monthly LinkedIn content</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://www.producthunt.com/products/periscope-4?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29" rel="nofollow noopener">Periscope</a></p><p class="n">Package screen tasks as APIs</p><p class="m">Product Hunt · AI</p></div>
+        <div class="r"><p class="t"><a href="https://x.com/_philschmid/status/2125945282072297794" rel="nofollow noopener">Philipp Schmid 撰文解释为何在 Skills 与 CLI 兴起后仍更看好 MCP</a></p><p class="n">Validate frequent cross-team adoption of MCP</p><p class="m">X: Philipp Schmid（Google DeepMind 开发者体验）</p></div>
         </div>
       </details>
     </section>
 
-    <p class="tiefoot">Read 491 stories across
+    <p class="tiefoot">Read 446 stories across
       93 sources today and published 3.
       <a href="/tie/archive">Archive</a> &middot;
-      <a href="/tie/2026-11-26.json">This issue as data</a> &middot;
+      <a href="/tie/2026-11-27.json">This issue as data</a> &middot;
       <a href="/tie/sources">What it reads</a></p>
   </article>
 
@@ -248,9 +232,9 @@
       <h2>On this page</h2>
       <nav class="toc">
         <a href="#the-read">The read</a>
-        <a href="#gemini-4-neon-draws-attention-in-multi-source-real-world-testing">Gemini 4 Neon draws attention in multi-source real-world testing</a>
-        <a href="#export-controls-disrupt-ai-server-supply-in-southeast-asia">Export controls disrupt AI server supply in Southeast Asia</a>
-        <a href="#gpt-62-billing-correction-exposes-quota-planning-risk">GPT-6.2 billing correction exposes quota planning risk</a>
+        <a href="#agent-engineering-emphasizes-portable-skills-and-persistent-memory">Agent engineering emphasizes portable skills and persistent memory</a>
+        <a href="#enterprise-agents-add-a-business-semantics-layer">Enterprise agents add a business semantics layer</a>
+        <a href="#verifiable-mathematical-reasoning-becomes-a-test-of-capability">Verifiable mathematical reasoning becomes a test of capability</a>
         <a href="#since-last-issue">Since last issue</a>
         <a href="#also-worth-knowing">Also worth knowing</a>
       </nav>

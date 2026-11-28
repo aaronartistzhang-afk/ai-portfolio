@@ -1,0 +1,433 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-27",
+  "executed_at": "2026-11-28T01:00:23.054318Z",
+  "run_id": "2026-11-25-ai_industry",
+  "domain": "ai_industry",
+  "locale": "en",
+  "window": {
+    "from": "2026-11-25T12:00:23.054292+11:00",
+    "to": "2026-11-28T12:00:23.054292+11:00",
+    "timezone": "Australia/Sydney",
+    "days": 3
+  },
+  "generated_at": "2026-11-28T12:00:23.054292+11:00",
+  "status": "ok",
+  "status_detail": null,
+  "trends": [
+    {
+      "canonical_id": "f2e9c768d34c3c70",
+      "run_trend_id": "GLOBAL_20261128_DEVELOPER_EXPERIENCE_PORTABLE_AGENT_OPERATIONS",
+      "name": "Agent engineering emphasizes portable skills and persistent memory",
+      "category": "developer_experience",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "Several open-source tools provide cross-session memory and skill libraries, and Pydantic AI has released Pax, a pluggable terminal coding agent.",
+      "attention_driver": "Demand for long-task stability and cross-model migration is driving the componentization of skills, memory and execution orchestration.",
+      "evidence": [
+        {
+          "url": "https://github.com/thedotmack/claude-mem",
+          "quote": "Persistent Context Across Sessions for Every Agent",
+          "claim": "Supports the claim that developers are adding persistent cross-session context for multiple types of agents.",
+          "source_tier": "attention",
+          "used_for": "momentum"
+        },
+        {
+          "url": "https://pydantic.dev/articles/pax-harness-beta",
+          "quote": "一切皆插件，支持 --agent 接入自定义 Pydantic AI Agent",
+          "claim": "Supports the claim that terminal coding agents are adopting pluggable agent access methods.",
+          "source_tier": "attention",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+          "quote": "Custom Skills let you package domain expertise and organizational knowledge.",
+          "claim": "Supports the claim that skill packages are used to encapsulate organizational knowledge and reuse it in agent workflows.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-25T09:00:00Z",
+      "last_signal_update": "2026-11-28T00:55:35Z",
+      "so_what": "Design skill packages and session memory as replaceable layers to avoid locking workflows into a single model or coding assistant. Evaluate based on task completion rates and recovery capability."
+    },
+    {
+      "canonical_id": "ec8b3f6e062bfb4d",
+      "run_trend_id": "GLOBAL_20261128_ENTERPRISE_DEPLOYMENT_AGENT_SEMANTIC_LAYER",
+      "name": "Enterprise agents add a business semantics layer",
+      "category": "enterprise_deployment",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "dormant",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "high",
+      "confidence_level": "medium",
+      "summary": "Reports say OpenAI is building the Athena semantic layer for ChatGPT Work to unify business metric definitions and reduce data agent guesswork.",
+      "attention_driver": "Errors by data analysis agents have exposed product gaps in metric definitions and permission management.",
+      "evidence": [
+        {
+          "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork",
+          "quote": "OpenAI's data agent in ChatGPT Work still isn't accurate enough.",
+          "claim": "Supports the claim that OpenAI is reportedly using a semantic layer to reduce errors in data agents' business understanding.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://zhidx.com/p/614219.html",
+          "quote": "OpenAI要给GPT做个“翻译官”，让智能体更懂业务",
+          "claim": "Supports the claim that Athena is described as a data management layer that helps agents understand enterprise business semantics.",
+          "source_tier": "attention",
+          "used_for": "impact"
+        }
+      ],
+      "first_detected": "2026-11-25T08:47:40Z",
+      "last_signal_update": "2026-11-27T16:05:23Z",
+      "so_what": "For agents that work with business data, make metric definitions and permissions product-layer capabilities first. Model upgrades cannot replace this determinism."
+    },
+    {
+      "canonical_id": "b36344393e0a38cb",
+      "run_trend_id": "GLOBAL_20261128_RESEARCH_BREAKTHROUGHS_FORMAL_MATH_VERIFICATION",
+      "name": "Verifiable mathematical reasoning becomes a test of capability",
+      "category": "research_breakthroughs",
+      "primary_region": "全球",
+      "secondary_regions": [],
+      "lifecycle_stage": "emerging",
+      "momentum": "accelerating",
+      "impact_level": "medium",
+      "opportunity_level": "medium",
+      "confidence_level": "medium",
+      "summary": "Discussion around AI mathematical proofs focuses on the speed of proof generation and the importance of formal verification with Lean and Mathlib.",
+      "attention_driver": "When complex outputs can be verified by independent systems, improvements in model capability can more readily accumulate into trusted work results.",
+      "evidence": [
+        {
+          "url": "https://thezvi.wordpress.com/2026/11/25/claude-and-levent-alpoge-prove-the-riemann-hypothesis",
+          "quote": "The Lean and Mathlib communities have verified that the proof is correc",
+          "claim": "Supports the claim that the related mathematical proof has been reported as verified by the formal tools community.",
+          "source_tier": "independent_validation",
+          "used_for": "existence"
+        },
+        {
+          "url": "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it",
+          "quote": "AI's recent math breakthroughs matter far be",
+          "claim": "Supports the claim that the industry is focusing on AI systems' ability to continuously produce mathematical results.",
+          "source_tier": "independent_validation",
+          "used_for": "impact"
+        },
+        {
+          "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them",
+          "quote": "Math Proofs Are Landing Faster Than We Can Read Them",
+          "claim": "Supports the claim that the speed of mathematical proof generation has become a topic of ongoing recent discussion.",
+          "source_tier": "independent_validation",
+          "used_for": "momentum"
+        }
+      ],
+      "first_detected": "2026-11-25T17:24:35Z",
+      "last_signal_update": "2026-11-26T19:31:46Z",
+      "so_what": "In high-value tasks that can be formally verified, product opportunities depend more on verification workbenches and evidence presentation than on whether a model gets the answer right in one attempt. Include human review time and reproducibility in evaluation."
+    }
+  ],
+  "watch_list": [],
+  "trend_evolution": [],
+  "coverage": {
+    "sources_configured": 93,
+    "source_keys_reporting": 74,
+    "signals_raw": 456,
+    "signals_accepted": 446,
+    "clusters_total": 283,
+    "clusters_synthesized": 122,
+    "by_source": {
+      "algorithmic_bridge": 1,
+      "ant_inclusion_ai": 1,
+      "anthropic": 1,
+      "app": 1,
+      "apple_podcasts_a16z_podcast": 3,
+      "apple_podcasts_latent_space": 3,
+      "apple_podcasts_the_cognitive_revolution": 1,
+      "ars_technica_ai": 2,
+      "astral_codex_ten": 2,
+      "brave_search_ai": 103,
+      "calif_research_ai": 2,
+      "chipsandcheese": 1,
+      "cohere": 5,
+      "crunchbase_news": 2,
+      "dwarkesh_blog": 1,
+      "ec_digital_strategy": 1,
+      "eetimes": 10,
+      "github": 12,
+      "github_awesome_llm": 2,
+      "github_claude_skills": 13,
+      "github_cursor_rules": 5,
+      "google": 1,
+      "hn": 13,
+      "huggingface_blog": 6,
+      "huggingface_papers": 20,
+      "ieee_spectrum_ai": 1,
+      "infoq_ai_zh": 20,
+      "it": 1,
+      "kr36_ai": 20,
+      "latent_space": 5,
+      "lennys_newsletter": 1,
+      "meta": 2,
+      "minimax_blog": 1,
+      "mistral": 1,
+      "mit_tech_review_ai": 1,
+      "nextplatform": 3,
+      "not_boring": 1,
+      "nvidia": 1,
+      "pragmatic_engineer": 1,
+      "producthunt": 20,
+      "pydantic_ai": 1,
+      "pytorch_blog": 2,
+      "qbitai": 10,
+      "rundown_ai": 3,
+      "semianalysis": 2,
+      "servethehome": 3,
+      "simon_willison": 7,
+      "techcrunch_ai": 11,
+      "the_decoder": 10,
+      "tldr_ai": 2,
+      "verge_ai": 7,
+      "wired_ai": 3,
+      "x_adityaag": 1,
+      "x_amasad": 1,
+      "x_elon_musk_elonmusk_xai": 1,
+      "x_greg_brockman_gdb": 1,
+      "x_levie": 1,
+      "x_mattturck": 1,
+      "x_nikunj": 1,
+      "x_openbmb_openbmb": 2,
+      "x_openclaw_openclaw": 1,
+      "x_petergyang": 3,
+      "x_philipp_schmid_google_deepmind_philschmid": 1,
+      "x_rauchg": 1,
+      "x_rohan_paul_rohanpaul_ai": 3,
+      "x_sama": 3,
+      "x_swyx": 3,
+      "x_thenanyu": 1,
+      "x_thsottiaux": 1,
+      "x_zarazhangrui": 1,
+      "youtube_ai": 9,
+      "zh_podcast_guigu101": 1,
+      "zhidx": 20,
+      "zvi_mowshowitz": 3
+    }
+  },
+  "provenance": {
+    "pipeline_version": "tie-0.2.0",
+    "config_hash": "d22f4852810ccef9",
+    "prompt_hash": "611e3a3a648440fd"
+  },
+  "insights": [
+    {
+      "text": "Agent reliability depends on external layers: memory, business semantics and verifiable results are becoming key conditions for products to complete tasks",
+      "refs": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "text": "Verification interfaces become a product differentiator: for independently verifiable tasks, build the evidence chain and recovery process into the workflow",
+      "refs": [
+        1,
+        3
+      ]
+    },
+    {
+      "text": "The tool ecosystem continues to expand: MCP, data tools and vertical agent frameworks show 5 new signals",
+      "refs": []
+    }
+  ],
+  "since_last": [
+    "All 6 key trends from the previous issue have dropped off the list this issue.",
+    "Gemini 2.5 API automatic routing has 3 days remaining."
+  ],
+  "countdowns": [
+    {
+      "title": "Gemini 2.5 API automatic routing",
+      "kind": "Deprecation",
+      "effective_date": "2026-12-01",
+      "days_left": 3,
+      "description": "Gemini 2.5 Pro and 2.5 Flash can no longer be selected in Google AI Studio. API requests will be automatically routed starting December 1. Source",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#11-02-2026"
+    },
+    {
+      "title": "EU AI Act obligations take effect",
+      "kind": "Policy",
+      "effective_date": "2026-12-02",
+      "days_left": 4,
+      "description": "Two sets of EU AI Act obligations will take effect on December 2. Product teams involved in the EU market need to check compliance requirements. Source",
+      "url": "https://casrai.org/news/eu-ai-act-2-december-2026-obligations-article-50"
+    },
+    {
+      "title": "Tidal ban on fully generated AI music",
+      "kind": "Policy",
+      "effective_date": "2026-12-09",
+      "days_left": 11,
+      "description": "Tidal will ban fully generated AI music on December 9. Reports also say AI-assisted creation remains acceptable. Source",
+      "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"
+    },
+    {
+      "title": "Anthropic vulnerability disclosure deadline",
+      "kind": "Policy",
+      "effective_date": "2027-01-01",
+      "days_left": 34,
+      "description": "The disclosure window for high-severity and critical vulnerabilities has been shortened to 30 days, applying to vulnerabilities reported on or after that date. Source",
+      "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines"
+    },
+    {
+      "title": "Mandatory national standard for L3/L4 takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 215,
+      "description": "Safety requirements for L3/L4 autonomous driving systems in intelligent connected vehicles are proposed to take effect on July 1, 2027, covering Safety Case, human-machine handover and risk response requirements. Source",
+      "url": "https://www.ithome.com/0/966/272.htm"
+    },
+    {
+      "title": "China L3/L4 safety national standard takes effect",
+      "kind": "Policy",
+      "effective_date": "2027-07-01",
+      "days_left": 215,
+      "description": "The mandatory national standard \"Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles\" is proposed to take effect on July 1, 2027. Related autonomous driving products need to prepare for safety market access and compliance verification. Source",
+      "url": "https://www.ithome.com/0/985/665.htm"
+    }
+  ],
+  "leaderboard": [],
+  "sections": {
+    "media": [
+      {
+        "title": "OpenBMB 点评 InternLM 基于 MiniCPM-o 4.5 打造的 Sage-Inte…",
+        "note": "Generate full-duplex voice and video interactions",
+        "source": "X: 面壁智能 OpenBMB",
+        "why": "",
+        "url": "https://x.com/OpenBMB/status/2126308118741323853"
+      },
+      {
+        "title": "颤抖吧剪辑师！你豆姐能直接操控剪映了！",
+        "note": "Use natural language to drive video editing",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/615139.html"
+      },
+      {
+        "title": "Wizstar R1",
+        "note": "Generate short videos using reference materials",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/wizstar?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "DeepSeek的账本来了！聊天多少钱，一目了然",
+        "note": "View estimated costs for each conversation turn",
+        "source": "zhidx",
+        "why": "",
+        "url": "https://zhidx.com/p/614968.html"
+      },
+      {
+        "title": "模型上架与更新-大模型服务平台百炼-阿里云_大模型服务平台百炼(Model Studio)-大模型服…",
+        "note": "Handle multimodal and agent tasks",
+        "source": "Aliyun",
+        "why": "",
+        "url": "https://help.aliyun.com/zh/model-studio/newly-released-models"
+      }
+    ],
+    "tools": [
+      {
+        "title": "SwankyMan88/ithaca",
+        "note": "Run multimodal AI locally on Windows",
+        "source": "github_awesome_llm",
+        "why": "GitHub topic:awesome-llm, early stage (2 ⭐), matches your interests: \"chat / ide / video\" · View",
+        "url": "https://github.com/SwankyMan88/ithaca"
+      },
+      {
+        "title": "tt-a1i/archify",
+        "note": "Turn plans or code into interactive diagrams",
+        "source": "github_claude_skills",
+        "why": "GitHub topic:claude-skills, starred repository (100,973 ⭐), matches your interests: \"agent / claude / code\" · View",
+        "url": "https://github.com/tt-a1i/archify"
+      },
+      {
+        "title": "KbWen/agentic-os",
+        "note": "Constrain AI coding workflows with evidence",
+        "source": "github_cursor_rules",
+        "why": "GitHub topic:cursor-rules, growing (244 ⭐), worth watching early, matches your interests: \"agent / agents / claude\" · View",
+        "url": "https://github.com/KbWen/agentic-os"
+      },
+      {
+        "title": "Depost AI",
+        "note": "Plan and ghostwrite monthly LinkedIn content",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 197 votes · 36 comments, matches your interests: \"agent / chat / claude\" · View",
+        "url": "https://www.producthunt.com/products/depost-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Contral",
+        "note": "Have coding agents self-check and explain",
+        "source": "producthunt_ai",
+        "why": "Product Hunt AI selection · 170 votes · 31 comments, matches your interests: \"agent / claude / code\" · View",
+        "url": "https://www.producthunt.com/products/contral?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      }
+    ],
+    "frameworks": [
+      {
+        "title": "datasette-mcp 0.4",
+        "note": "Adapt to the new Datasette interface",
+        "source": "simon_willison",
+        "why": "",
+        "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/"
+      },
+      {
+        "title": "How Clay Builds GTM Agents — Jeff Barg, Head of AI",
+        "note": "Unify internal and external GTM agent calls",
+        "source": "latent_space",
+        "why": "",
+        "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/"
+      },
+      {
+        "title": "Depost AI",
+        "note": "Plan and ghostwrite monthly LinkedIn content",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/depost-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Periscope",
+        "note": "Package screen tasks as APIs",
+        "source": "producthunt_ai",
+        "why": "",
+        "url": "https://www.producthunt.com/products/periscope-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+TrendEngine+%28ID%3A+285457%29"
+      },
+      {
+        "title": "Philipp Schmid 撰文解释为何在 Skills 与 CLI 兴起后仍更看好 MCP",
+        "note": "Validate frequent cross-team adoption of MCP",
+        "source": "X: Philipp Schmid（Google DeepMind 开发者体验）",
+        "why": "",
+        "url": "https://x.com/_philschmid/status/2125945282072297794"
+      }
+    ]
+  },
+  "sections_missing": [
+    "leaderboard",
+    "pricing",
+    "incidents"
+  ],
+  "source_flags": [
+    "evidence_rewritten:GLOBAL_2-01689ec472c46a38",
+    "evidence_rewritten:GLOBAL_2-29970c383848d449",
+    "evidence_rewritten:GLOBAL_2-ea8d762bc47bfd96",
+    "critic_missed:cluster-7ac8f3bcc7fc3129"
+  ],
+  "caveats": [],
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Zhang",
+    "url": "https://aaronzhang.ai"
+  },
+  "style_flags": []
+}
